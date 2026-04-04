@@ -1,0 +1,53 @@
+name: Update disruptions
+
+on:
+  schedule:
+    - cron: '0 5 * * *'   # Daily at 05:00 UTC
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: astral-sh/setup-uv@v8
+        with:
+          python-version: "3.13"
+
+      - run: uv sync
+
+      - name: Fetch disruptions
+        env:
+          PRIM_TOKEN: ${{ secrets.PRIM_TOKEN }}
+        run: uv run python scripts/fetch.py
+
+      - name: Check for changes
+        id: diff
+        run: |
+          git status --porcelain public/ data/ | grep -q . \
+            && echo "changed=true"  >> "$GITHUB_OUTPUT" \
+            || echo "changed=false" >> "$GITHUB_OUTPUT"
+
+      - name: Open PR if changed
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          TS=$(date -u +%H%M%S)
+          BRANCH="update/disruptions-${DATE}-${TS}"
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add public/ data/
+          git commit -m "chore: update disruptions ${DATE}"
+          git push origin "$BRANCH"
+          gh pr create \
+            --title "Travaux métro — ${DATE}" \
+            --body-file data/summary.md \
+            --base main
