@@ -3,6 +3,6 @@ name = "travaux-metro"
 version = "0.1.0"
 requires-python = ">=3.13"
 dependencies = [
-    "icalendar>=5.0.12",
-    "requests>=2.31.0",
+    "icalendar>=5.0.12,<8",
+    "requests>=2.31.0,<3",
 ]

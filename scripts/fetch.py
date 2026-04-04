@@ -179,11 +179,15 @@ def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, fetched
         "|-------|--------------|",
     ]
     for line_name, dis_ids in sorted(by_line.items(), key=lambda x: line_sort_key(x[0])):
-        lines.append(f"| M{line_name} | {len(dis_ids)} |")
+        bg, _ = METRO_LINE_COLORS.get(line_name, ("#888888", "#FFFFFF"))
+        badge = f"![M{line_name}](https://img.shields.io/badge/M{line_name}-{bg[1:]}?style=flat-square)"
+        lines.append(f"| {badge} | {len(dis_ids)} |")
 
     lines += ["", "---", ""]
     for line_name, dis_ids in sorted(by_line.items(), key=lambda x: line_sort_key(x[0])):
-        lines.append(f"#### Ligne {line_name}")
+        bg, _ = METRO_LINE_COLORS.get(line_name, ("#888888", "#FFFFFF"))
+        badge = f"![M{line_name}](https://img.shields.io/badge/M{line_name}-{bg[1:]}?style=flat-square)"
+        lines.append(f"#### {badge} Ligne {line_name}")
         for dis_id in dis_ids:
             d = dis_by_id[dis_id]
             title = d.get("title", "Perturbation")
@@ -253,6 +257,8 @@ def generate_index(line_stats: list[tuple]) -> str:
     <strong>Comment s'abonner :</strong> copiez une URL ci-dessous et ajoutez-la comme <em>calendrier par abonnement</em> dans votre application (Google Calendar, Apple Calendar, Outlook…). Le calendrier se met à jour automatiquement.
   </div>
 
+  <p><a href="overview.html">→ Aperçu visuel des perturbations</a></p>
+
   <h2>Toutes les lignes</h2>
   <p><code>{all_url}</code> &nbsp;<a href="all.ics">↓ Télécharger all.ics</a></p>
 
@@ -270,10 +276,6 @@ def generate_index(line_stats: list[tuple]) -> str:
   </footer>
 </body>
 </html>"""
-
-
-MONTHS_FR = ["jan.", "fév.", "mars", "avr.", "mai", "juin",
-             "juil.", "août", "sep.", "oct.", "nov.", "déc."]
 
 
 def fmt_dt(s: str) -> str:
@@ -341,7 +343,7 @@ def generate_preview(
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aperçu travaux métro — {date_str}</title>
+  <title>Vue d'ensemble travaux métro — {date_str}</title>
   <style>
     *, *::before, *::after {{ box-sizing: border-box; }}
     body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 960px; margin: 2rem auto; padding: 0 1rem; color: #222; line-height: 1.5; background: #f7f7f7; }}
@@ -361,7 +363,7 @@ def generate_preview(
   </style>
 </head>
 <body>
-  <h1>Aperçu travaux métro</h1>
+  <h1>Vue d'ensemble — Travaux métro</h1>
   <p class="meta">Données du {date_str} — <a href="index.html">← Retour</a></p>
   {sections}
 </body>
@@ -428,7 +430,7 @@ def main():
                 all_cal.add_component(event)
                 event_count += 1
 
-        filename = f"line-{line_name}.ics"
+        filename = f"ligne-{line_name}.ics"
         (PUBLIC / filename).write_bytes(cal.to_ical())
         line_stats.append((line_name, filename, event_count))
         print(f"  M{line_name}: {event_count} event(s) → {filename}")
@@ -442,7 +444,7 @@ def main():
     }
     (DATA / "summary.md").write_text(generate_summary(by_line, dis_to_stops, dis_by_id, fetched_at))
     (PUBLIC / "index.html").write_text(generate_index(line_stats))
-    (PUBLIC / "preview.html").write_text(generate_preview(by_line, dis_by_id, dis_to_stops, metro_lines, fetched_at))
+    (PUBLIC / "overview.html").write_text(generate_preview(by_line, dis_by_id, dis_to_stops, metro_lines, fetched_at))
     print(f"Done. Generated all.ics + {len(line_stats)} line file(s).")
 
 
