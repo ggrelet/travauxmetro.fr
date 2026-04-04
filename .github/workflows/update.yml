@@ -47,6 +47,8 @@ jobs:
           git add public/ data/
           git commit -m "chore: update disruptions ${DATE}"
           git push origin "$BRANCH"
+          echo "" >> data/summary.md
+          echo "[📄 snapshot.json](https://github.com/${{ github.repository }}/blob/${BRANCH}/data/snapshot.json)" >> data/summary.md
           gh pr create \
             --title "Travaux métro — ${DATE}" \
             --body-file data/summary.md \

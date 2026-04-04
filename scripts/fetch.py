@@ -169,8 +169,9 @@ def line_sort_key(name: str) -> tuple:
 
 
 def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, fetched_at: str) -> str:
+    date_str = f"{fetched_at[8:10]}-{fetched_at[5:7]}-{fetched_at[:4]}"
     lines = [
-        f"## Travaux métro — {fetched_at[:10]}",
+        f"## Travaux métro — {date_str}",
         "",
         f"**Lignes concernées :** {len(by_line)}",
         "",
@@ -187,9 +188,17 @@ def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, fetched
             d = dis_by_id[dis_id]
             title = d.get("title", "Perturbation")
             periods = d.get("applicationPeriods", [])
-            period_str = f" ({periods[0]['begin'][:8]} → {periods[-1]['end'][:8]})" if periods else ""
+            period_str = (
+                f" ({fmt_date(periods[0]['begin'])} → {fmt_date(periods[-1]['end'])})"
+                if periods else ""
+            )
             lines.append(f"- {title}{period_str}")
         lines.append("")
+
+    lines += [
+        "---",
+        f"Source : [Île-de-France Mobilités — PRIM](https://prim.iledefrance-mobilites.fr/en/apis/idfm-disruptions_bulk)",
+    ]
     return "\n".join(lines)
 
 
@@ -262,9 +271,14 @@ MONTHS_FR = ["jan.", "fév.", "mars", "avr.", "mai", "juin",
 
 
 def fmt_dt(s: str) -> str:
-    """YYYYMMDDTHHmmss → '25 avr. 2026 06:00'"""
+    """YYYYMMDDTHHmmss → '25-04-2026 06:00'"""
     dt = datetime.strptime(s, "%Y%m%dT%H%M%S")
-    return f"{dt.day} {MONTHS_FR[dt.month - 1]} {dt.year} {dt.hour:02d}:{dt.minute:02d}"
+    return f"{dt.day:02d}-{dt.month:02d}-{dt.year} {dt.hour:02d}:{dt.minute:02d}"
+
+
+def fmt_date(s: str) -> str:
+    """YYYYMMDD... → 'DD-MM-YYYY'"""
+    return f"{s[6:8]}-{s[4:6]}-{s[:4]}"
 
 
 def generate_preview(
