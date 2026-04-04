@@ -2,7 +2,7 @@
 
 Calendriers ICS des travaux planifiés sur le réseau métro parisien, mis à jour quotidiennement.
 
-**Site :** https://ggrelet.github.io/travaux-metro
+**Site :** https://travauxmetro.fr
 
 ## Utilisation
 
@@ -10,8 +10,8 @@ Copiez l'URL du calendrier souhaité et abonnez-vous depuis votre application (G
 
 | Calendrier | URL |
 |------------|-----|
-| Toutes les lignes | `https://ggrelet.github.io/travaux-metro/all.ics` |
-| Ligne X | `https://ggrelet.github.io/travaux-metro/ligne-X.ics` |
+| Toutes les lignes | `https://travauxmetro.fr/all.ics` |
+| Ligne X | `https://travauxmetro.fr/ligne-X.ics` |
 
 ## Fonctionnement
 

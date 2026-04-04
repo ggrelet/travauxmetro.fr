@@ -20,7 +20,7 @@ PUBLIC = ROOT / "public"
 DATA = ROOT / "data"
 
 PRIM_URL = "https://prim.iledefrance-mobilites.fr/marketplace/disruptions_bulk/disruptions/v2"
-BASE_URL = "https://ggrelet.github.io/travaux-metro"
+BASE_URL = "https://travauxmetro.fr"
 
 # Line names match IDFM shortName (e.g. "3B" not "3bis")
 # (bg_color, text_color)

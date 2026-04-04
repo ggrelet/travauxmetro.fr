@@ -127,7 +127,7 @@ wheels = [
 ]
 
 [[package]]
-name = "travaux-metro"
+name = "travauxmetro-fr"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
@@ -137,8 +137,8 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "icalendar", specifier = ">=5.0.12" },
-    { name = "requests", specifier = ">=2.31.0" },
+    { name = "icalendar", specifier = ">=5.0.12,<8" },
+    { name = "requests", specifier = ">=2.31.0,<3" },
 ]
 
 [[package]]
