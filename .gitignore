@@ -47,6 +47,9 @@ MANIFEST
 # macOS
 .DS_Store
 
+# Claude Code
+.claude/
+
 # Editors
 .idea/
 .vscode/

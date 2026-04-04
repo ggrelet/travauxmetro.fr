@@ -2,8 +2,10 @@
 """Fetch planned disruptions from PRIM API and generate ICS files per metro line."""
 
 import hashlib
+import html
 import json
 import os
+import re
 import sys
 from collections import defaultdict
 from datetime import datetime, timezone
@@ -17,110 +19,91 @@ ROOT = Path(__file__).parent.parent
 PUBLIC = ROOT / "public"
 DATA = ROOT / "data"
 
-PRIM_URL = "https://prim.iledefrance-mobilites.fr/marketplace/disruptions_bulk"
+PRIM_URL = "https://prim.iledefrance-mobilites.fr/marketplace/disruptions_bulk/disruptions/v2"
 BASE_URL = "https://ggrelet.github.io/travaux-metro"
 
-# Official RATP line colors
+# Line names match IDFM shortName (e.g. "3B" not "3bis")
+# (bg_color, text_color)
 METRO_LINE_COLORS = {
-    "1":    ("#FFCD00", "#000000"),
-    "2":    ("#003CA6", "#FFFFFF"),
-    "3":    ("#837902", "#FFFFFF"),
-    "3bis": ("#6EC4E8", "#000000"),
-    "4":    ("#CF009E", "#FFFFFF"),
-    "5":    ("#FF7E2E", "#000000"),
-    "6":    ("#6ECA97", "#000000"),
-    "7":    ("#FA9ABA", "#000000"),
-    "7bis": ("#83C491", "#000000"),
-    "8":    ("#E19BDF", "#000000"),
-    "9":    ("#B6BD00", "#000000"),
-    "10":   ("#C9910D", "#000000"),
-    "11":   ("#704B1C", "#FFFFFF"),
-    "12":   ("#007852", "#FFFFFF"),
-    "13":   ("#98D4E2", "#000000"),
-    "14":   ("#62259D", "#FFFFFF"),
+    "1":  ("#FFCD00", "#000000"),
+    "2":  ("#003CA6", "#FFFFFF"),
+    "3":  ("#837902", "#FFFFFF"),
+    "3B": ("#6EC4E8", "#000000"),
+    "4":  ("#CF009E", "#FFFFFF"),
+    "5":  ("#FF7E2E", "#000000"),
+    "6":  ("#6ECA97", "#000000"),
+    "7":  ("#FA9ABA", "#000000"),
+    "7B": ("#83C491", "#000000"),
+    "8":  ("#E19BDF", "#000000"),
+    "9":  ("#B6BD00", "#000000"),
+    "10": ("#C9910D", "#000000"),
+    "11": ("#704B1C", "#FFFFFF"),
+    "12": ("#007852", "#FFFFFF"),
+    "13": ("#98D4E2", "#000000"),
+    "14": ("#62259D", "#FFFFFF"),
 }
 
-LINE_SORT_KEY = {"3bis": "3.5", "7bis": "7.5"}
 
-
-def fetch_all_disruptions(token: str) -> list:
-    """Paginate through the disruptions_bulk endpoint."""
-    headers = {"apikey": token}
-    now = datetime.now(timezone.utc)
-    params = {
-        "since": now.strftime("%Y%m%dT%H%M%S"),
-        "count": 100,
-    }
-    disruptions = []
-    page = 0
-    while True:
-        params["start_page"] = page
-        resp = requests.get(PRIM_URL, headers=headers, params=params, timeout=30)
+def fetch_data(token: str) -> dict:
+    resp = requests.get(PRIM_URL, headers={"apikey": token}, timeout=30)
+    if not resp.ok:
+        print(f"HTTP {resp.status_code}: {resp.text[:500]}", file=sys.stderr)
         resp.raise_for_status()
-        data = resp.json()
-        batch = data.get("disruptions", [])
-        disruptions.extend(batch)
-        total = data.get("pagination", {}).get("total_result", len(disruptions))
-        if len(disruptions) >= total or not batch:
-            break
-        page += 1
-        print(f"  page {page}: {len(disruptions)}/{total}")
-    return disruptions
+    return resp.json()
 
 
-def is_metro_line(pt_object: dict) -> bool:
-    if pt_object.get("embedded_type") != "line":
-        return False
-    modes = pt_object.get("line", {}).get("physical_modes", [])
-    return any("Metro" in m.get("id", "") for m in modes)
+def build_metro_index(lines: list) -> tuple[dict, dict, dict]:
+    """
+    Returns:
+      metro_lines: {line_id -> line_dict}
+      dis_to_line_ids: {disruption_id -> set of line_ids}
+      dis_to_stops: {disruption_id -> {line_id -> [stop_name, ...]}}
+    """
+    metro_lines: dict = {}
+    dis_to_line_ids: dict = defaultdict(set)
+    dis_to_stops: dict = defaultdict(lambda: defaultdict(list))
+
+    for line in lines:
+        if line.get("mode") != "Metro":
+            continue
+        line_id = line["id"]
+        metro_lines[line_id] = line
+        for obj in line.get("impactedObjects", []):
+            for dis_id in obj.get("disruptionIds", []):
+                dis_to_line_ids[dis_id].add(line_id)
+                if obj["type"] == "stop_point":
+                    name = obj.get("name", "").strip()
+                    stops = dis_to_stops[dis_id][line_id]
+                    if name and name not in stops:
+                        stops.append(name)
+
+    return metro_lines, dis_to_line_ids, dis_to_stops
 
 
-def get_metro_line_name(pt_object: dict) -> str | None:
-    if is_metro_line(pt_object):
-        return pt_object.get("name") or pt_object.get("line", {}).get("name")
-    return None
+def strip_html(text: str) -> str:
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = html.unescape(text)
+    return re.sub(r" +", " ", text).strip()
 
 
-def get_stops_for_line(disruption: dict, line_name: str) -> list[str]:
-    stops = []
-    for obj in disruption.get("impacted_objects", []):
-        if get_metro_line_name(obj.get("pt_object", {})) == line_name:
-            for stop in obj.get("impacted_stops", []):
-                name = (
-                    stop.get("stop_point", {}).get("name")
-                    or stop.get("stop_point", {}).get("stop_area", {}).get("name")
-                )
-                if name and name not in stops:
-                    stops.append(name)
-    return stops
-
-
-def get_message(disruption: dict) -> str:
-    messages = disruption.get("messages", [])
-    for msg in messages:
-        if msg.get("channel", {}).get("name") == "titre":
-            return msg.get("text", "").strip()
-    return messages[0].get("text", "").strip() if messages else ""
-
-
-def parse_navitia_dt(s: str) -> datetime:
+def parse_dt(s: str) -> datetime:
     return datetime.strptime(s, "%Y%m%dT%H%M%S").replace(tzinfo=timezone.utc)
 
 
-def content_hash(disruptions: list) -> str:
-    """Hash of substantive disruption data, ignoring fetch timestamps."""
+def content_hash(disruptions: list, metro_dis_ids: set) -> str:
+    relevant = sorted(
+        [d for d in disruptions if d["id"] in metro_dis_ids],
+        key=lambda d: d["id"],
+    )
     key = [
         {
-            "id": d.get("id"),
-            "effect": d.get("severity", {}).get("effect"),
+            "id": d["id"],
+            "periods": d.get("applicationPeriods"),
+            "severity": d.get("severity"),
             "cause": d.get("cause"),
-            "periods": d.get("application_periods"),
-            "objects": sorted(
-                obj.get("pt_object", {}).get("id", "")
-                for obj in d.get("impacted_objects", [])
-            ),
+            "title": d.get("title"),
         }
-        for d in sorted(disruptions, key=lambda x: x.get("id", ""))
+        for d in relevant
     ]
     return hashlib.sha256(json.dumps(key, sort_keys=True).encode()).hexdigest()
 
@@ -137,55 +120,55 @@ def make_calendar(name: str, bg_color: str) -> Calendar:
     return cal
 
 
-def disruption_to_events(disruption: dict, line_name: str) -> list[Event]:
-    stops = get_stops_for_line(disruption, line_name)
-    message = get_message(disruption)
+def make_events(disruption: dict, line_name: str, stops: list[str]) -> list[Event]:
+    title = disruption.get("title", "").strip()
+    message = strip_html(disruption.get("message", ""))
+    short = disruption.get("shortMessage", "").strip()
     cause = disruption.get("cause", "")
-    severity_name = disruption.get("severity", {}).get("name", "Perturbation")
 
-    stops_str = ", ".join(stops) if stops else "toute la ligne"
-    summary = f"M{line_name} — {message[:60]}" if message else f"M{line_name} — {stops_str}"
+    summary = f"M{line_name} — {title or short or 'Perturbation'}"
 
-    description_parts = [f"Ligne {line_name}"]
+    desc_parts = [f"Ligne {line_name}"]
     if stops:
-        description_parts.append(f"Stations affectées : {', '.join(stops)}")
-    if severity_name:
-        description_parts.append(f"Type : {severity_name}")
+        desc_parts.append(f"Stations : {', '.join(stops)}")
+    if short:
+        desc_parts.append(short)
+    if message and message != title:
+        desc_parts.append(message)
     if cause:
-        description_parts.append(f"Cause : {cause}")
-    if message:
-        description_parts.append(f"\n{message}")
-    description = "\n".join(description_parts)
+        desc_parts.append(f"Cause : {cause}")
+    description = "\n\n".join(desc_parts)
 
     events = []
-    for period in disruption.get("application_periods", []):
+    for period in disruption.get("applicationPeriods", []):
         try:
-            dtstart = parse_navitia_dt(period["begin"])
-            dtend = parse_navitia_dt(period["end"])
+            dtstart = parse_dt(period["begin"])
+            dtend = parse_dt(period["end"])
         except (KeyError, ValueError):
             continue
-
-        event = Event()
-        event.add("uid", f"{disruption.get('id', uuid4())}_{period['begin']}@travaux-metro")
-        event.add("summary", summary)
-        event.add("description", description)
-        event.add("dtstart", dtstart)
-        event.add("dtend", dtend)
-        event.add("dtstamp", datetime.now(timezone.utc))
-        event.add("categories", [f"Ligne {line_name}", "Travaux Métro"])
-        events.append(event)
+        e = Event()
+        e.add("uid", f"{disruption['id']}_{period['begin']}@travaux-metro")
+        e.add("summary", summary)
+        e.add("description", description)
+        e.add("dtstart", dtstart)
+        e.add("dtend", dtend)
+        e.add("dtstamp", datetime.now(timezone.utc))
+        e.add("categories", [f"Ligne {line_name}", "Travaux Métro"])
+        events.append(e)
     return events
 
 
-def sort_line_key(name: str) -> tuple:
-    numeric = LINE_SORT_KEY.get(name, name)
+def line_sort_key(name: str) -> tuple:
+    mapping = {"3B": 3.5, "7B": 7.5}
+    if name in mapping:
+        return (mapping[name],)
     try:
-        return (0, float(numeric), "")
+        return (float(name),)
     except ValueError:
-        return (1, 0, name)
+        return (999,)
 
 
-def generate_summary(by_line: dict, line_stats: list, fetched_at: str) -> str:
+def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, fetched_at: str) -> str:
     lines = [
         f"## Travaux métro — {fetched_at[:10]}",
         "",
@@ -194,37 +177,34 @@ def generate_summary(by_line: dict, line_stats: list, fetched_at: str) -> str:
         "| Ligne | Perturbations |",
         "|-------|--------------|",
     ]
-    for line_name, _, count in line_stats:
-        lines.append(f"| M{line_name} | {count} période(s) |")
-    lines += ["", "### Détail", ""]
-    for line_name, _, _ in line_stats:
+    for line_name, dis_ids in sorted(by_line.items(), key=lambda x: line_sort_key(x[0])):
+        lines.append(f"| M{line_name} | {len(dis_ids)} |")
+
+    lines += ["", "---", ""]
+    for line_name, dis_ids in sorted(by_line.items(), key=lambda x: line_sort_key(x[0])):
         lines.append(f"#### Ligne {line_name}")
-        for d in by_line[line_name]:
-            msg = get_message(d)
-            stops = get_stops_for_line(d, line_name)
-            periods = d.get("application_periods", [])
-            period_str = ""
-            if periods:
-                p = periods[0]
-                period_str = f" ({p['begin'][:8]} → {p['end'][:8]})"
-            stops_str = f" — {', '.join(stops[:4])}" if stops else ""
-            lines.append(f"- {msg or 'Perturbation'}{stops_str}{period_str}")
+        for dis_id in dis_ids:
+            d = dis_by_id[dis_id]
+            title = d.get("title", "Perturbation")
+            periods = d.get("applicationPeriods", [])
+            period_str = f" ({periods[0]['begin'][:8]} → {periods[-1]['end'][:8]})" if periods else ""
+            lines.append(f"- {title}{period_str}")
         lines.append("")
     return "\n".join(lines)
 
 
-def generate_index(line_stats: list) -> str:
+def generate_index(line_stats: list[tuple]) -> str:
     rows = ""
     for line_name, filename, count in line_stats:
         bg, fg = METRO_LINE_COLORS.get(line_name, ("#888", "#fff"))
-        url = f"{BASE_URL}/{filename}"
+        full_url = f"{BASE_URL}/{filename}"
         badge = f'<span class="badge" style="background:{bg};color:{fg}">M{line_name}</span>'
         rows += f"""
       <tr>
         <td>{badge}</td>
-        <td>{count} période(s)</td>
-        <td><code>{url}</code></td>
-        <td><a href="{url}">↓ .ics</a></td>
+        <td>{count} perturbation(s)</td>
+        <td><code>{full_url}</code></td>
+        <td><a href="{filename}">↓ .ics</a></td>
       </tr>"""
 
     all_url = f"{BASE_URL}/all.ics"
@@ -259,7 +239,7 @@ def generate_index(line_stats: list) -> str:
   </div>
 
   <h2>Toutes les lignes</h2>
-  <p><code>{all_url}</code> &nbsp;<a href="{all_url}">↓ Télécharger all.ics</a></p>
+  <p><code>{all_url}</code> &nbsp;<a href="all.ics">↓ Télécharger all.ics</a></p>
 
   <h2>Par ligne</h2>
   <table>
@@ -277,75 +257,173 @@ def generate_index(line_stats: list) -> str:
 </html>"""
 
 
+MONTHS_FR = ["jan.", "fév.", "mars", "avr.", "mai", "juin",
+             "juil.", "août", "sep.", "oct.", "nov.", "déc."]
+
+
+def fmt_dt(s: str) -> str:
+    """YYYYMMDDTHHmmss → '25 avr. 2026 06:00'"""
+    dt = datetime.strptime(s, "%Y%m%dT%H%M%S")
+    return f"{dt.day} {MONTHS_FR[dt.month - 1]} {dt.year} {dt.hour:02d}:{dt.minute:02d}"
+
+
+def generate_preview(
+    by_line: dict,
+    dis_by_id: dict,
+    dis_to_stops: dict,
+    metro_lines: dict,
+    fetched_at: str,
+) -> str:
+    sections = ""
+    for line_name in sorted(by_line.keys(), key=line_sort_key):
+        bg, fg = METRO_LINE_COLORS.get(line_name, ("#888", "#fff"))
+        line_id = next(lid for lid, l in metro_lines.items() if l["shortName"] == line_name)
+        cards = ""
+        for dis_id in sorted(by_line[line_name]):
+            d = dis_by_id[dis_id]
+            title = d.get("title", "").strip()
+            short = d.get("shortMessage", "").strip()
+            message = strip_html(d.get("message", ""))
+            stops = dis_to_stops[dis_id].get(line_id, [])
+            periods = d.get("applicationPeriods", [])
+
+            periods_html = "".join(
+                f'<div class="period">📅 {fmt_dt(p["begin"])} → {fmt_dt(p["end"])}</div>'
+                for p in periods
+            )
+            stops_html = (
+                f'<div class="stops">🚉 {", ".join(stops)}</div>' if stops else ""
+            )
+            message_html = f'<div class="message">{message}</div>' if message else ""
+
+            cards += f"""
+        <div class="card">
+          <div class="card-title">{title or short or "Perturbation"}</div>
+          {periods_html}
+          {stops_html}
+          {message_html}
+        </div>"""
+
+        sections += f"""
+    <section class="line-section">
+      <h2>
+        <span class="badge" style="background:{bg};color:{fg}">M{line_name}</span>
+        Ligne {line_name}
+        <span class="count">{len(by_line[line_name])} perturbation(s)</span>
+      </h2>
+      <div class="cards">{cards}
+      </div>
+    </section>"""
+
+    date_str = fetched_at[:10]
+    return f"""<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aperçu travaux métro — {date_str}</title>
+  <style>
+    *, *::before, *::after {{ box-sizing: border-box; }}
+    body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 960px; margin: 2rem auto; padding: 0 1rem; color: #222; line-height: 1.5; background: #f7f7f7; }}
+    h1 {{ margin-bottom: .1rem; }}
+    .meta {{ color: #888; font-size: .9em; margin-bottom: 2rem; }}
+    .line-section {{ margin-bottom: 2.5rem; }}
+    .line-section h2 {{ display: flex; align-items: center; gap: .6rem; font-size: 1.1rem; margin-bottom: .75rem; }}
+    .badge {{ display: inline-block; padding: .2em .6em; border-radius: 5px; font-weight: 800; font-size: 1em; min-width: 2.4em; text-align: center; }}
+    .count {{ font-size: .8em; font-weight: 400; color: #888; }}
+    .cards {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }}
+    .card {{ background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem; }}
+    .card-title {{ font-weight: 600; margin-bottom: .5rem; }}
+    .period {{ font-size: .82em; color: #555; margin: .2rem 0; }}
+    .stops {{ font-size: .82em; color: #333; margin-top: .4rem; }}
+    .message {{ font-size: .8em; color: #666; margin-top: .5rem; border-top: 1px solid #f0f0f0; padding-top: .4rem; white-space: pre-wrap; }}
+    a {{ color: #6B318C; }}
+  </style>
+</head>
+<body>
+  <h1>Aperçu travaux métro</h1>
+  <p class="meta">Données du {date_str} — <a href="index.html">← Retour</a></p>
+  {sections}
+</body>
+</html>"""
+
+
 def main():
     token = os.environ.get("PRIM_TOKEN")
     if not token:
-        sys.exit("ERROR: PRIM_TOKEN environment variable not set")
+        sys.exit("ERROR: PRIM_TOKEN not set")
 
     print("Fetching disruptions from PRIM API...")
-    all_disruptions = fetch_all_disruptions(token)
-    print(f"Total disruptions: {len(all_disruptions)}")
+    data = fetch_data(token)
 
-    metro_disruptions = [d for d in all_disruptions if any(
-        is_metro_line(obj.get("pt_object", {}))
-        for obj in d.get("impacted_objects", [])
-    )]
-    print(f"Metro disruptions: {len(metro_disruptions)}")
+    metro_lines, dis_to_line_ids, dis_to_stops = build_metro_index(data.get("lines", []))
+    disruptions = data.get("disruptions", [])
+    dis_by_id = {d["id"]: d for d in disruptions}
 
-    # Skip writing files if content hasn't changed
+    # Keep only planned construction works, not real-time incidents
+    travaux_ids = {d["id"] for d in disruptions if d.get("cause") == "TRAVAUX"}
+    metro_dis_ids = set(dis_to_line_ids.keys()) & travaux_ids
+    metro_disruptions = [d for d in disruptions if d["id"] in metro_dis_ids]
+    print(f"Total disruptions: {len(disruptions)} — Metro travaux: {len(metro_disruptions)} across {len(metro_lines)} line(s)")
+
     DATA.mkdir(exist_ok=True)
     hash_file = DATA / "disruptions_hash.txt"
-    new_hash = content_hash(metro_disruptions)
-    old_hash = hash_file.read_text().strip() if hash_file.exists() else ""
-    if new_hash == old_hash:
-        print("No change in disruption data — skipping file generation.")
+    new_hash = content_hash(disruptions, metro_dis_ids)
+    if hash_file.exists() and hash_file.read_text().strip() == new_hash:
+        print("No change — skipping.")
         return
 
     print("Content changed, generating files...")
     fetched_at = datetime.now(timezone.utc).isoformat()
 
-    # Save raw snapshot for PR review
     (DATA / "snapshot.json").write_text(
         json.dumps({"fetched_at": fetched_at, "disruptions": metro_disruptions}, ensure_ascii=False, indent=2)
     )
     hash_file.write_text(new_hash)
 
-    # Group disruptions by metro line
-    by_line: dict[str, list] = defaultdict(list)
-    for d in metro_disruptions:
-        for obj in d.get("impacted_objects", []):
-            name = get_metro_line_name(obj.get("pt_object", {}))
-            if name and d not in by_line[name]:
-                by_line[name].append(d)
+    # Group disruption IDs by line name — only TRAVAUX
+    by_line: dict[str, set] = defaultdict(set)
+    for dis_id in metro_dis_ids:
+        for line_id in dis_to_line_ids[dis_id]:
+            line_name = metro_lines[line_id]["shortName"]
+            by_line[line_name].add(dis_id)
 
     PUBLIC.mkdir(exist_ok=True)
     all_cal = make_calendar("Paris Métro — Travaux", "#6B318C")
     line_stats = []
 
-    for line_name in sorted(by_line.keys(), key=sort_line_key):
+    for line_name in sorted(by_line.keys(), key=line_sort_key):
         bg, _ = METRO_LINE_COLORS.get(line_name, ("#888888", "#FFFFFF"))
         cal = make_calendar(f"Métro Ligne {line_name} — Travaux", bg)
         event_count = 0
-        for disruption in by_line[line_name]:
-            for event in disruption_to_events(disruption, line_name):
+
+        # Find the line_id for this line_name
+        line_id = next(lid for lid, l in metro_lines.items() if l["shortName"] == line_name)
+
+        for dis_id in by_line[line_name]:
+            disruption = dis_by_id[dis_id]
+            stops = dis_to_stops[dis_id].get(line_id, [])
+            for event in make_events(disruption, line_name, stops):
                 cal.add_component(event)
                 all_cal.add_component(event)
                 event_count += 1
+
         filename = f"line-{line_name}.ics"
         (PUBLIC / filename).write_bytes(cal.to_ical())
         line_stats.append((line_name, filename, event_count))
         print(f"  M{line_name}: {event_count} event(s) → {filename}")
 
     (PUBLIC / "all.ics").write_bytes(all_cal.to_ical())
-    print(f"Generated all.ics")
 
-    # Write PR summary
-    summary = generate_summary(by_line, line_stats, fetched_at)
-    (DATA / "summary.md").write_text(summary)
-
-    # Write index.html
+    # Build by_line with full disruption dicts for summary
+    by_line_dicts = {
+        name: [dis_by_id[did] for did in dis_ids]
+        for name, dis_ids in by_line.items()
+    }
+    (DATA / "summary.md").write_text(generate_summary(by_line, dis_to_stops, dis_by_id, fetched_at))
     (PUBLIC / "index.html").write_text(generate_index(line_stats))
-    print("Generated index.html")
+    (PUBLIC / "preview.html").write_text(generate_preview(by_line, dis_by_id, dis_to_stops, metro_lines, fetched_at))
+    print(f"Done. Generated all.ics + {len(line_stats)} line file(s).")
 
 
 if __name__ == "__main__":

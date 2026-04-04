@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ggrelet//travaux-metro//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Métro Ligne 10 — Travaux
+X-APPLE-CALENDAR-COLOR:#C9910D
+X-WR-TIMEZONE:Europe/Paris
+BEGIN:VEVENT
+SUMMARY:M10 — Métro 10 : Métro en panne - Reprise progressive / trafic
+  reste perturbé
+DTSTART:20260404T133254Z
+DTEND:20260404T133354Z
+DTSTAMP:20260404T123936Z
+UID:fbb83da6-8e0b-430b-ba9c-04d42adf84bb_20260404T133254@travaux-metro
+CATEGORIES:Ligne 10,Travaux Métro
+DESCRIPTION:Ligne 10\n\nStations : Boulogne Jean Jaurès\, Porte d'Auteuil
+ \, Boulogne Pont de Saint-Cloud\n\nReprise progressive / trafic reste pert
+ urbé\n\nLe trafic reprend mais reste perturbé entre Boulogne Pont de Sai
+ nt-Cloud et Boulogne Jean Jaurès\, et entre Porte d'Auteuil et Boulogne P
+ ont de Saint-Cloud en répercussion d'un métro en panne entre Boulogne Je
+ an Jaurès et Boulogne Pont de Saint-Cloud .\n\nCause : PERTURBATION
+END:VEVENT
+END:VCALENDAR
