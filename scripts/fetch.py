@@ -197,7 +197,13 @@ def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, fetched
 
     lines += [
         "---",
-        f"Source : [Île-de-France Mobilités — PRIM](https://prim.iledefrance-mobilites.fr/en/apis/idfm-disruptions_bulk)",
+        "**Source :** [Île-de-France Mobilités — PRIM](https://prim.iledefrance-mobilites.fr/en/apis/idfm-disruptions_bulk)",
+        "",
+        "```bash",
+        "curl -s -H \"apikey: $PRIM_TOKEN\" \\",
+        "  \"https://prim.iledefrance-mobilites.fr/marketplace/disruptions_bulk/disruptions/v2\" \\",
+        "  | jq '[.disruptions[] | select(.cause == \"TRAVAUX\")]'",
+        "```",
     ]
     return "\n".join(lines)
 
