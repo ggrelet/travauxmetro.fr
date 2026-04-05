@@ -516,7 +516,9 @@ def main():
     DATA.mkdir(exist_ok=True)
     hash_file = DATA / "disruptions_hash.txt"
     new_hash = content_hash(disruptions, metro_dis_ids)
-    if hash_file.exists() and hash_file.read_text().strip() == new_hash:
+    expected_ics = [PUBLIC / f"ligne-{name}.ics" for name in METRO_LINE_COLORS]
+    missing_ics = any(not f.exists() for f in expected_ics)
+    if hash_file.exists() and hash_file.read_text().strip() == new_hash and not missing_ics:
         print("No change — skipping.")
         return
 
