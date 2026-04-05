@@ -10,11 +10,13 @@ BEGIN:VEVENT
 SUMMARY:M14 — Métro 14 : Travaux de modernisation - Trafic interrompu
 DTSTART:20260405T044500Z
 DTEND:20260405T140000Z
-DTSTAMP:20260404T143245Z
-UID:fd2391fc-16dd-11f1-9e08-0a58a9feac02_20260405T044500@travaux-metro
+DTSTAMP:20260405T053129Z
+UID:93900174-1259-4c97-8ace-e258619d4225_20260405T044500@travaux-metro
 CATEGORIES:Ligne 14,Travaux Métro
 DESCRIPTION:Ligne 14\n\nTrafic interrompu\n\nLe 5 avril jusqu'à 14:00\, l
- e trafic sera interrompu sur toute la ligne en raison de travaux de modern
- isation. Bus de remplacement Gare de Lyon - Olympiades\n\nCause : TRAVAUX
+ e trafic est interrompu sur toute la ligne en raison de travaux de moderni
+ sation. Bus de substitution entre Gare de Lyon et Olympiades. Pour rejoind
+ re l'aéroport d'Orly\, nous vous invitons à emprunter la ligne 7 du mét
+ ro et le tramway T7.\n\nCause : TRAVAUX
 END:VEVENT
 END:VCALENDAR
