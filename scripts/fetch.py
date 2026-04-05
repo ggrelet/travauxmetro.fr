@@ -559,18 +559,17 @@ def main():
     all_cal = make_calendar("Paris Métro — Travaux", "#6B318C")
     line_stats = []
 
-    for line_name in sorted(by_line.keys(), key=line_sort_key):
-        bg, _ = METRO_LINE_COLORS.get(line_name, ("#888888", "#FFFFFF"))
+    for line_name in sorted(METRO_LINE_COLORS.keys(), key=line_sort_key):
+        bg, _ = METRO_LINE_COLORS[line_name]
         cal = make_calendar(f"Métro Ligne {line_name} — Travaux", bg)
         event_count = 0
 
-        # Find the line_id for this line_name
-        line_id = next(lid for lid, l in metro_lines.items() if l["shortName"] == line_name)
+        line_id_match = next((lid for lid, l in metro_lines.items() if l["shortName"] == line_name), None)
 
         events = []
-        for dis_id in by_line[line_name]:
+        for dis_id in by_line.get(line_name, set()):
             disruption = dis_by_id[dis_id]
-            stops = dis_to_stops[dis_id].get(line_id, [])
+            stops = dis_to_stops[dis_id].get(line_id_match, []) if line_id_match else []
             events.extend(make_events(disruption, line_name, stops))
 
         for event in deduplicate_events(events):
@@ -580,7 +579,8 @@ def main():
 
         filename = f"ligne-{line_name}.ics"
         (PUBLIC / filename).write_bytes(cal.to_ical())
-        line_stats.append((line_name, filename, event_count))
+        if event_count:
+            line_stats.append((line_name, filename, event_count))
         print(f"  M{line_name}: {event_count} event(s) → {filename}")
 
     (PUBLIC / "all.ics").write_bytes(all_cal.to_ical())
