@@ -210,7 +210,7 @@ def line_sort_key(name: str) -> tuple:
         return (999,)
 
 
-def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, metro_lines: dict, fetched_at: str, diff: dict | None = None) -> str:
+def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, metro_lines: dict, fetched_at: str, diff: dict | None = None, event_counts: dict | None = None) -> str:
     date_str = f"{fetched_at[8:10]}-{fetched_at[5:7]}-{fetched_at[:4]}"
     name_to_id = {l["shortName"]: lid for lid, l in metro_lines.items()}
 
@@ -230,7 +230,7 @@ def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, metro_l
                 parts.append(f"+{d['added']}")
             if d["removed"]:
                 parts.append(f"-{d['removed']}")
-            lines.append(f"- {badge(line_name)} {'  '.join(parts)}")
+            lines.append(f"{badge(line_name)} {' '.join(parts)}")
         lines.append("")
         lines.append("---")
         lines.append("")
@@ -242,23 +242,41 @@ def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, metro_l
         "|-------|--------------|",
     ]
     for line_name, dis_ids in sorted(by_line.items(), key=lambda x: line_sort_key(x[0])):
-        lines.append(f"| {badge(line_name)} | {len(dis_ids)} |")
+        count = event_counts.get(line_name, len(dis_ids)) if event_counts else len(dis_ids)
+        lines.append(f"| {badge(line_name)} | {count} |")
 
     lines += ["", "---", ""]
     for line_name, dis_ids in sorted(by_line.items(), key=lambda x: line_sort_key(x[0])):
         lines.append(f"#### {badge(line_name)}")
         line_id = name_to_id.get(line_name)
+
+        # Build the same deduplicated period set used for ICS generation
+        all_events = []
         for dis_id in dis_ids:
+            all_events.extend(make_events(dis_by_id[dis_id], line_name, dis_to_stops[dis_id].get(line_id, [])))
+        available = {(e.get("dtstart").dt, e.get("dtend").dt) for e in deduplicate_events(all_events)}
+
+        for dis_id in sorted(dis_ids):
             d = dis_by_id[dis_id]
             title = d.get("title", "Perturbation").strip()
             short = d.get("shortMessage", "").strip()
             message = strip_html(d.get("message", ""))
-            periods = d.get("applicationPeriods", [])
             stops = dis_to_stops[dis_id].get(line_id, []) if line_id else []
 
+            # Only show periods that survived deduplication
+            surviving = []
+            for p in d.get("applicationPeriods", []):
+                key = (parse_dt(p["begin"]), parse_dt(p["end"]))
+                if key in available:
+                    surviving.append(p)
+                    available.discard(key)
+
+            if not surviving:
+                continue
+
             period_str = (
-                f"{fmt_date(periods[0]['begin'])} → {fmt_date(periods[-1]['end'])}"
-                if periods else ""
+                f"{fmt_date(surviving[0]['begin'])} → {fmt_date(surviving[-1]['end'])}"
+                if surviving else ""
             )
             lines.append(f"- **{title}**" + (f" — {period_str}" if period_str else ""))
             if stops:
@@ -567,12 +585,8 @@ def main():
 
     (PUBLIC / "all.ics").write_bytes(all_cal.to_ical())
 
-    # Build by_line with full disruption dicts for summary
-    by_line_dicts = {
-        name: [dis_by_id[did] for did in dis_ids]
-        for name, dis_ids in by_line.items()
-    }
-    (DATA / "summary.md").write_text(generate_summary(by_line, dis_to_stops, dis_by_id, metro_lines, fetched_at, diff))
+    event_counts = {name: count for name, _, count in line_stats}
+    (DATA / "summary.md").write_text(generate_summary(by_line, dis_to_stops, dis_by_id, metro_lines, fetched_at, diff, event_counts))
     (PUBLIC / "index.html").write_text(generate_index(line_stats))
     (PUBLIC / "overview.html").write_text(generate_preview(by_line, dis_by_id, dis_to_stops, metro_lines, fetched_at))
     print(f"Done. Generated all.ics + {len(line_stats)} line file(s).")
