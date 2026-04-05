@@ -10,10 +10,10 @@ BEGIN:VEVENT
 SUMMARY:M3 — Métro 3 : Travaux - Trafic interrompu
 DTSTART:20260408T044500Z
 DTEND:20260513T043000Z
-DTSTAMP:20260405T053129Z
+DTSTAMP:20260405T203820Z
 UID:eba0ead8-1642-11f1-9e08-0a58a9feac02_20260408T044500@travaux-metro
 CATEGORIES:Ligne 3,Travaux Métro
-DESCRIPTION:Ligne 3\n\nStations : Gambetta\, Gallieni\, Porte de Bagnolet\
+DESCRIPTION:Ligne 3\n\nStations : Porte de Bagnolet\, Gallieni\, Gambetta\
  n\nTrafic interrompu\n\nDu 8 avril au 12 mai inclus\, le trafic sera inter
  rompu entre Gallieni et Gambetta en raison de travaux. Bus de remplacement
  .\n\nCause : TRAVAUX
