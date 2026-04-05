@@ -29,7 +29,7 @@ jobs:
       - name: Check for changes
         id: diff
         run: |
-          git status --porcelain public/ data/ | grep -q . \
+          git status --porcelain data/disruptions_hash.txt | grep -q . \
             && echo "changed=true"  >> "$GITHUB_OUTPUT" \
             || echo "changed=false" >> "$GITHUB_OUTPUT"
 
@@ -52,4 +52,5 @@ jobs:
           gh pr create \
             --title "Travaux métro — ${DATE}" \
             --body-file data/summary.md \
-            --base main
+            --base main \
+            --reviewer ggrelet

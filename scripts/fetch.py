@@ -21,6 +21,7 @@ DATA = ROOT / "data"
 
 PRIM_URL = "https://prim.iledefrance-mobilites.fr/marketplace/disruptions_bulk/disruptions/v2"
 BASE_URL = "https://travauxmetro.fr"
+UMAMI = '<script defer src="https://cloud.umami.is/script.js" data-website-id="ef00b128-53c5-49eb-a0e9-e4da83748a67"></script>'
 
 # Line names match IDFM shortName (e.g. "3B" not "3bis")
 # (bg_color, text_color)
@@ -42,6 +43,31 @@ METRO_LINE_COLORS = {
     "13": ("#98D4E2", "#000000"),
     "14": ("#62259D", "#FFFFFF"),
 }
+
+
+# Google Calendar's fixed color palette (exact hex values from their API).
+# Using these prevents snapping to a random/wrong color when subscribing via ICS.
+_GOOGLE_PALETTE = {
+    "Cocoa": "#ac725e", "Flamingo": "#d06b64", "Tomato": "#f83a22",
+    "Tangerine": "#fa573c", "Pumpkin": "#ff7537", "Mango": "#ffad46",
+    "Eucalyptus": "#42d692", "Basil": "#16a765", "Pistachio": "#7bd148",
+    "Avocado": "#b3dc6c", "Citron": "#fbe983", "Banana": "#fad165",
+    "Sage": "#92e1c0", "Peacock": "#9fe1e7", "Cobalt": "#9fc6e7",
+    "Blueberry": "#4986e7", "Lavender": "#9a9cff", "Wisteria": "#b99aff",
+    "Graphite": "#c2c2c2", "Birch": "#cabdbf", "Beetroot": "#cca6ac",
+    "Cherry Blossom": "#f691b2", "Grape": "#cd74e6", "Amethyst": "#a47ae2",
+}
+
+
+def _nearest_google_color(hex_color: str) -> str:
+    def to_rgb(h: str) -> tuple:
+        h = h.lstrip("#")
+        return int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16)
+    r1, g1, b1 = to_rgb(hex_color)
+    return min(
+        _GOOGLE_PALETTE.values(),
+        key=lambda h: sum((a - b) ** 2 for a, b in zip(to_rgb(h), (r1, g1, b1))),
+    )
 
 
 def fetch_data(token: str) -> dict:
@@ -158,6 +184,22 @@ def make_events(disruption: dict, line_name: str, stops: list[str]) -> list[Even
     return events
 
 
+def deduplicate_events(events: list[Event]) -> list[Event]:
+    """PRIM sometimes emits both a batch record (all Sundays) and per-date records
+    for the same disruption. Deduplicate by (dtstart, dtend), keeping the
+    event with the longest description."""
+    seen: dict[tuple, Event] = {}
+    for event in events:
+        key = (event.get("dtstart").dt, event.get("dtend").dt)
+        existing = seen.get(key)
+        if existing is None:
+            seen[key] = event
+        else:
+            if len(str(event.get("description", ""))) > len(str(existing.get("description", ""))):
+                seen[key] = event
+    return list(seen.values())
+
+
 def line_sort_key(name: str) -> tuple:
     mapping = {"3B": 3.5, "7B": 7.5}
     if name in mapping:
@@ -168,35 +210,64 @@ def line_sort_key(name: str) -> tuple:
         return (999,)
 
 
-def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, fetched_at: str) -> str:
+def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, metro_lines: dict, fetched_at: str, diff: dict | None = None) -> str:
     date_str = f"{fetched_at[8:10]}-{fetched_at[5:7]}-{fetched_at[:4]}"
-    lines = [
-        f"## Travaux métro — {date_str}",
-        "",
+    name_to_id = {l["shortName"]: lid for lid, l in metro_lines.items()}
+
+    def badge(line_name: str) -> str:
+        bg, _ = METRO_LINE_COLORS.get(line_name, ("#888888", "#FFFFFF"))
+        return f"![M{line_name}](https://img.shields.io/badge/-M{line_name}-{bg[1:]}?style=flat)"
+
+    lines = [f"## Travaux métro — {date_str}", ""]
+
+    if diff:
+        lines.append("### Changements")
+        lines.append("")
+        for line_name in sorted(diff.keys(), key=line_sort_key):
+            d = diff[line_name]
+            parts = []
+            if d["added"]:
+                parts.append(f"+{d['added']}")
+            if d["removed"]:
+                parts.append(f"-{d['removed']}")
+            lines.append(f"- {badge(line_name)} {'  '.join(parts)}")
+        lines.append("")
+        lines.append("---")
+        lines.append("")
+
+    lines += [
         f"**Lignes concernées :** {len(by_line)}",
         "",
         "| Ligne | Perturbations |",
         "|-------|--------------|",
     ]
     for line_name, dis_ids in sorted(by_line.items(), key=lambda x: line_sort_key(x[0])):
-        bg, _ = METRO_LINE_COLORS.get(line_name, ("#888888", "#FFFFFF"))
-        badge = f"![M{line_name}](https://img.shields.io/badge/M{line_name}-{bg[1:]}?style=flat-square)"
-        lines.append(f"| {badge} | {len(dis_ids)} |")
+        lines.append(f"| {badge(line_name)} | {len(dis_ids)} |")
 
     lines += ["", "---", ""]
     for line_name, dis_ids in sorted(by_line.items(), key=lambda x: line_sort_key(x[0])):
-        bg, _ = METRO_LINE_COLORS.get(line_name, ("#888888", "#FFFFFF"))
-        badge = f"![M{line_name}](https://img.shields.io/badge/M{line_name}-{bg[1:]}?style=flat-square)"
-        lines.append(f"#### {badge} Ligne {line_name}")
+        lines.append(f"#### {badge(line_name)}")
+        line_id = name_to_id.get(line_name)
         for dis_id in dis_ids:
             d = dis_by_id[dis_id]
-            title = d.get("title", "Perturbation")
+            title = d.get("title", "Perturbation").strip()
+            short = d.get("shortMessage", "").strip()
+            message = strip_html(d.get("message", ""))
             periods = d.get("applicationPeriods", [])
+            stops = dis_to_stops[dis_id].get(line_id, []) if line_id else []
+
             period_str = (
-                f" ({fmt_date(periods[0]['begin'])} → {fmt_date(periods[-1]['end'])})"
+                f"{fmt_date(periods[0]['begin'])} → {fmt_date(periods[-1]['end'])}"
                 if periods else ""
             )
-            lines.append(f"- {title}{period_str}")
+            lines.append(f"- **{title}**" + (f" — {period_str}" if period_str else ""))
+            if stops:
+                lines.append(f"  - 🚉 {', '.join(stops)}")
+            if short and short != title:
+                lines.append(f"  - {short}")
+            if message and message not in (title, short):
+                truncated = message[:300] + ("…" if len(message) > 300 else "")
+                lines.append(f"  - {truncated}")
         lines.append("")
 
     lines += [
@@ -223,7 +294,7 @@ def generate_index(line_stats: list[tuple]) -> str:
         <td>{badge}</td>
         <td>{count} perturbation(s)</td>
         <td><code>{full_url}</code></td>
-        <td><a href="{filename}">↓ .ics</a></td>
+        <td><button class="copy-btn" onclick="copyUrl('{full_url}', this)" data-umami-event="copy-url" data-umami-event-line="{line_name}">Copier l'URL</button></td>
       </tr>"""
 
     all_url = f"{BASE_URL}/all.ics"
@@ -234,6 +305,7 @@ def generate_index(line_stats: list[tuple]) -> str:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travaux Métro Paris — Calendrier ICS</title>
+  {UMAMI}
   <style>
     *, *::before, *::after {{ box-sizing: border-box; }}
     body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; color: #222; line-height: 1.5; }}
@@ -247,8 +319,20 @@ def generate_index(line_stats: list[tuple]) -> str:
     code {{ background: #f0f0f0; padding: .1em .4em; border-radius: 3px; font-size: .82em; word-break: break-all; }}
     a {{ color: #6B318C; }}
     footer {{ margin-top: 3rem; color: #888; font-size: .85em; }}
+    .copy-btn {{ cursor: pointer; background: #6B318C; color: #fff; border: none; border-radius: 4px; padding: .25em .7em; font-size: .85em; margin-left: .5rem; }}
+    .copy-btn:hover {{ background: #552070; }}
+    .copy-btn.copied {{ background: #2e7d32; }}
   </style>
 </head>
+<script>
+function copyUrl(url, btn) {{
+  navigator.clipboard.writeText(url).then(() => {{
+    btn.textContent = 'Copié !';
+    btn.classList.add('copied');
+    setTimeout(() => {{ btn.textContent = "Copier l'URL"; btn.classList.remove('copied'); }}, 2000);
+  }});
+}}
+</script>
 <body>
   <h1>Travaux Métro Paris</h1>
   <p class="subtitle">Perturbations et travaux planifiés — abonnez-vous au calendrier de votre ligne.</p>
@@ -260,7 +344,10 @@ def generate_index(line_stats: list[tuple]) -> str:
   <p><a href="overview.html">→ Aperçu visuel des perturbations</a></p>
 
   <h2>Toutes les lignes</h2>
-  <p><code>{all_url}</code> &nbsp;<a href="all.ics">↓ Télécharger all.ics</a></p>
+  <p>
+    <code>{all_url}</code>
+    <button class="copy-btn" onclick="copyUrl('{all_url}', this)" data-umami-event="copy-url" data-umami-event-line="all">Copier l'URL</button>
+  </p>
 
   <h2>Par ligne</h2>
   <table>
@@ -300,6 +387,13 @@ def generate_preview(
     for line_name in sorted(by_line.keys(), key=line_sort_key):
         bg, fg = METRO_LINE_COLORS.get(line_name, ("#888", "#fff"))
         line_id = next(lid for lid, l in metro_lines.items() if l["shortName"] == line_name)
+
+        # Build the same deduplicated period set used for ICS generation
+        all_events = []
+        for dis_id in by_line[line_name]:
+            all_events.extend(make_events(dis_by_id[dis_id], line_name, dis_to_stops[dis_id].get(line_id, [])))
+        available = {(e.get("dtstart").dt, e.get("dtend").dt) for e in deduplicate_events(all_events)}
+
         cards = ""
         for dis_id in sorted(by_line[line_name]):
             d = dis_by_id[dis_id]
@@ -307,11 +401,22 @@ def generate_preview(
             short = d.get("shortMessage", "").strip()
             message = strip_html(d.get("message", ""))
             stops = dis_to_stops[dis_id].get(line_id, [])
-            periods = d.get("applicationPeriods", [])
+
+            # Only show periods that survived deduplication; claim them so they
+            # don't appear again in another card for the same line
+            surviving = []
+            for p in d.get("applicationPeriods", []):
+                key = (parse_dt(p["begin"]), parse_dt(p["end"]))
+                if key in available:
+                    surviving.append(p)
+                    available.discard(key)
+
+            if not surviving:
+                continue
 
             periods_html = "".join(
                 f'<div class="period">📅 {fmt_dt(p["begin"])} → {fmt_dt(p["end"])}</div>'
-                for p in periods
+                for p in surviving
             )
             stops_html = (
                 f'<div class="stops">🚉 {", ".join(stops)}</div>' if stops else ""
@@ -326,12 +431,13 @@ def generate_preview(
           {message_html}
         </div>"""
 
+        card_count = cards.count('<div class="card">')
         sections += f"""
     <section class="line-section">
       <h2>
         <span class="badge" style="background:{bg};color:{fg}">M{line_name}</span>
         Ligne {line_name}
-        <span class="count">{len(by_line[line_name])} perturbation(s)</span>
+        <span class="count">{card_count} perturbation(s)</span>
       </h2>
       <div class="cards">{cards}
       </div>
@@ -344,6 +450,7 @@ def generate_preview(
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vue d'ensemble travaux métro — {date_str}</title>
+  {UMAMI}
   <style>
     *, *::before, *::after {{ box-sizing: border-box; }}
     body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 960px; margin: 2rem auto; padding: 0 1rem; color: #222; line-height: 1.5; background: #f7f7f7; }}
@@ -398,6 +505,10 @@ def main():
     print("Content changed, generating files...")
     fetched_at = datetime.now(timezone.utc).isoformat()
 
+    # Load previous by_line state for diff
+    by_line_file = DATA / "by_line.json"
+    old_by_line: dict[str, list] = json.loads(by_line_file.read_text()) if by_line_file.exists() else {}
+
     (DATA / "snapshot.json").write_text(
         json.dumps({"fetched_at": fetched_at, "disruptions": metro_disruptions}, ensure_ascii=False, indent=2)
     )
@@ -409,6 +520,22 @@ def main():
         for line_id in dis_to_line_ids[dis_id]:
             line_name = metro_lines[line_id]["shortName"]
             by_line[line_name].add(dis_id)
+
+    # Compute diff vs previous state
+    diff: dict[str, dict] = {}
+    all_lines = set(by_line.keys()) | set(old_by_line.keys())
+    for line in all_lines:
+        new_ids = by_line.get(line, set())
+        old_ids = set(old_by_line.get(line, []))
+        added = len(new_ids - old_ids)
+        removed = len(old_ids - new_ids)
+        if added or removed:
+            diff[line] = {"added": added, "removed": removed}
+
+    # Persist current by_line for next run
+    (by_line_file).write_text(
+        json.dumps({name: sorted(ids) for name, ids in by_line.items()}, ensure_ascii=False, indent=2)
+    )
 
     PUBLIC.mkdir(exist_ok=True)
     all_cal = make_calendar("Paris Métro — Travaux", "#6B318C")
@@ -422,13 +549,16 @@ def main():
         # Find the line_id for this line_name
         line_id = next(lid for lid, l in metro_lines.items() if l["shortName"] == line_name)
 
+        events = []
         for dis_id in by_line[line_name]:
             disruption = dis_by_id[dis_id]
             stops = dis_to_stops[dis_id].get(line_id, [])
-            for event in make_events(disruption, line_name, stops):
-                cal.add_component(event)
-                all_cal.add_component(event)
-                event_count += 1
+            events.extend(make_events(disruption, line_name, stops))
+
+        for event in deduplicate_events(events):
+            cal.add_component(event)
+            all_cal.add_component(event)
+            event_count += 1
 
         filename = f"ligne-{line_name}.ics"
         (PUBLIC / filename).write_bytes(cal.to_ical())
@@ -442,7 +572,7 @@ def main():
         name: [dis_by_id[did] for did in dis_ids]
         for name, dis_ids in by_line.items()
     }
-    (DATA / "summary.md").write_text(generate_summary(by_line, dis_to_stops, dis_by_id, fetched_at))
+    (DATA / "summary.md").write_text(generate_summary(by_line, dis_to_stops, dis_by_id, metro_lines, fetched_at, diff))
     (PUBLIC / "index.html").write_text(generate_index(line_stats))
     (PUBLIC / "overview.html").write_text(generate_preview(by_line, dis_by_id, dis_to_stops, metro_lines, fetched_at))
     print(f"Done. Generated all.ics + {len(line_stats)} line file(s).")

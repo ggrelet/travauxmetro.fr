@@ -17,8 +17,20 @@
     code { background: #f0f0f0; padding: .1em .4em; border-radius: 3px; font-size: .82em; word-break: break-all; }
     a { color: #6B318C; }
     footer { margin-top: 3rem; color: #888; font-size: .85em; }
+    .copy-btn { cursor: pointer; background: #6B318C; color: #fff; border: none; border-radius: 4px; padding: .25em .7em; font-size: .85em; margin-left: .5rem; }
+    .copy-btn:hover { background: #552070; }
+    .copy-btn.copied { background: #2e7d32; }
   </style>
 </head>
+<script>
+function copyUrl(url, btn) {
+  navigator.clipboard.writeText(url).then(() => {
+    btn.textContent = 'Copié !';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = "Copier l'URL"; btn.classList.remove('copied'); }, 2000);
+  });
+}
+</script>
 <body>
   <h1>Travaux Métro Paris</h1>
   <p class="subtitle">Perturbations et travaux planifiés — abonnez-vous au calendrier de votre ligne.</p>
@@ -30,7 +42,10 @@
   <p><a href="overview.html">→ Aperçu visuel des perturbations</a></p>
 
   <h2>Toutes les lignes</h2>
-  <p><code>https://travauxmetro.fr/all.ics</code> &nbsp;<a href="all.ics">↓ Télécharger all.ics</a></p>
+  <p>
+    <code>https://travauxmetro.fr/all.ics</code>
+    <button class="copy-btn" onclick="copyUrl('https://travauxmetro.fr/all.ics', this)" data-umami-event="copy-url" data-umami-event-line="all">Copier l'URL</button>
+  </p>
 
   <h2>Par ligne</h2>
   <table>
@@ -40,37 +55,31 @@
         <td><span class="badge" style="background:#837902;color:#FFFFFF">M3</span></td>
         <td>1 perturbation(s)</td>
         <td><code>https://travauxmetro.fr/ligne-3.ics</code></td>
-        <td><a href="ligne-3.ics">↓ .ics</a></td>
+        <td><button class="copy-btn" onclick="copyUrl('https://travauxmetro.fr/ligne-3.ics', this)" data-umami-event="copy-url" data-umami-event-line="3">Copier l'URL</button></td>
       </tr>
       <tr>
         <td><span class="badge" style="background:#6EC4E8;color:#000000">M3B</span></td>
-        <td>7 perturbation(s)</td>
+        <td>6 perturbation(s)</td>
         <td><code>https://travauxmetro.fr/ligne-3B.ics</code></td>
-        <td><a href="ligne-3B.ics">↓ .ics</a></td>
+        <td><button class="copy-btn" onclick="copyUrl('https://travauxmetro.fr/ligne-3B.ics', this)" data-umami-event="copy-url" data-umami-event-line="3B">Copier l'URL</button></td>
       </tr>
       <tr>
         <td><span class="badge" style="background:#CF009E;color:#FFFFFF">M4</span></td>
         <td>1 perturbation(s)</td>
         <td><code>https://travauxmetro.fr/ligne-4.ics</code></td>
-        <td><a href="ligne-4.ics">↓ .ics</a></td>
+        <td><button class="copy-btn" onclick="copyUrl('https://travauxmetro.fr/ligne-4.ics', this)" data-umami-event="copy-url" data-umami-event-line="4">Copier l'URL</button></td>
       </tr>
       <tr>
         <td><span class="badge" style="background:#007852;color:#FFFFFF">M12</span></td>
         <td>5 perturbation(s)</td>
         <td><code>https://travauxmetro.fr/ligne-12.ics</code></td>
-        <td><a href="ligne-12.ics">↓ .ics</a></td>
+        <td><button class="copy-btn" onclick="copyUrl('https://travauxmetro.fr/ligne-12.ics', this)" data-umami-event="copy-url" data-umami-event-line="12">Copier l'URL</button></td>
       </tr>
       <tr>
         <td><span class="badge" style="background:#98D4E2;color:#000000">M13</span></td>
-        <td>9 perturbation(s)</td>
+        <td>5 perturbation(s)</td>
         <td><code>https://travauxmetro.fr/ligne-13.ics</code></td>
-        <td><a href="ligne-13.ics">↓ .ics</a></td>
-      </tr>
-      <tr>
-        <td><span class="badge" style="background:#62259D;color:#FFFFFF">M14</span></td>
-        <td>1 perturbation(s)</td>
-        <td><code>https://travauxmetro.fr/ligne-14.ics</code></td>
-        <td><a href="ligne-14.ics">↓ .ics</a></td>
+        <td><button class="copy-btn" onclick="copyUrl('https://travauxmetro.fr/ligne-13.ics', this)" data-umami-event="copy-url" data-umami-event-line="13">Copier l'URL</button></td>
       </tr>
     </tbody>
   </table>
