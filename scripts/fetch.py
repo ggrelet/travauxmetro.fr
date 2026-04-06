@@ -387,7 +387,9 @@ def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, metro_l
 
 def _sub_buttons(full_url: str, line: str) -> str:
     webcal_url = full_url.replace("https://", "webcal://")
-    gcal_url = f"https://calendar.google.com/calendar/render?cid={webcal_url.replace('://', '%3A%2F%2F').replace('/', '%2F')}"
+    gcal_ics_url = full_url.replace(".ics", "-gcal.ics")
+    gcal_webcal = gcal_ics_url.replace("https://", "webcal://")
+    gcal_url = f"https://calendar.google.com/calendar/render?cid={gcal_webcal.replace('://', '%3A%2F%2F').replace('/', '%2F')}"
     return (
         f'<a class="sub-btn apple" href="{webcal_url}" data-umami-event="subscribe-apple" data-umami-event-line="{line}">Apple / iCal</a>'
         f'<a class="sub-btn google" href="{gcal_url}" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="{line}">Google Calendar</a>'
@@ -409,6 +411,7 @@ def generate_index(line_stats: list[tuple]) -> str:
       </tr>"""
 
     all_url = f"{BASE_URL}/all.ics"
+    # all-gcal.ics is handled automatically by _sub_buttons via the .ics → -gcal.ics substitution
 
     return f"""<!DOCTYPE html>
 <html lang="fr">
@@ -639,7 +642,7 @@ def main():
     DATA.mkdir(exist_ok=True)
     hash_file = DATA / "disruptions_hash.txt"
     new_hash = content_hash(disruptions, metro_dis_ids)
-    expected_ics = [PUBLIC / f"ligne-{name}.ics" for name in METRO_LINE_COLORS]
+    expected_ics = [f for name in METRO_LINE_COLORS for f in (PUBLIC / f"ligne-{name}.ics", PUBLIC / f"ligne-{name}-gcal.ics")]
     missing_ics = any(not f.exists() for f in expected_ics)
     if hash_file.exists() and hash_file.read_text().strip() == new_hash and not missing_ics:
         print("No change — skipping.")
@@ -681,9 +684,17 @@ def main():
     )
 
     PUBLIC.mkdir(exist_ok=True)
+    gcal_all_color = _nearest_google_color("#6B318C")
     all_cal = make_calendar(
         "Paris Métro — Travaux",
         "#6B318C",
+        "Perturbations et travaux planifiés sur toutes les lignes du métro parisien. "
+        "Mis à jour quotidiennement depuis les données Île-de-France Mobilités. "
+        "travauxmetro.fr",
+    )
+    all_cal_gcal = make_calendar(
+        "Paris Métro — Travaux",
+        gcal_all_color,
         "Perturbations et travaux planifiés sur toutes les lignes du métro parisien. "
         "Mis à jour quotidiennement depuis les données Île-de-France Mobilités. "
         "travauxmetro.fr",
@@ -692,13 +703,14 @@ def main():
 
     for line_name in sorted(METRO_LINE_COLORS.keys(), key=line_sort_key):
         bg, _ = METRO_LINE_COLORS[line_name]
-        cal = make_calendar(
-            f"Métro Ligne {line_name} — Travaux",
-            bg,
+        gcal_color = _nearest_google_color(bg)
+        desc = (
             f"Perturbations et travaux planifiés sur la ligne {line_name} du métro parisien. "
             "Mis à jour quotidiennement depuis les données Île-de-France Mobilités. "
-            "travauxmetro.fr",
+            "travauxmetro.fr"
         )
+        cal = make_calendar(f"Métro Ligne {line_name} — Travaux", bg, desc)
+        cal_gcal = make_calendar(f"Métro Ligne {line_name} — Travaux", gcal_color, desc)
         event_count = 0
 
         line_id_match = next((lid for lid, l in metro_lines.items() if l["shortName"] == line_name), None)
@@ -713,16 +725,20 @@ def main():
 
         for event in deduplicate_events(events):
             cal.add_component(event)
+            cal_gcal.add_component(event)
             all_cal.add_component(event)
+            all_cal_gcal.add_component(event)
             event_count += 1
 
         filename = f"ligne-{line_name}.ics"
         (PUBLIC / filename).write_bytes(cal.to_ical())
+        (PUBLIC / f"ligne-{line_name}-gcal.ics").write_bytes(cal_gcal.to_ical())
         if event_count:
             line_stats.append((line_name, filename, event_count))
         print(f"  M{line_name}: {event_count} event{'s' if event_count > 1 else ''} → {filename}")
 
     (PUBLIC / "all.ics").write_bytes(all_cal.to_ical())
+    (PUBLIC / "all-gcal.ics").write_bytes(all_cal_gcal.to_ical())
 
     event_counts = {name: count for name, _, count in line_stats}
     (DATA / "summary.md").write_text(generate_summary(by_line, dis_to_stops, dis_by_id, metro_lines, fetched_at, diff, event_counts))
