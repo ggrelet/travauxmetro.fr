@@ -33,6 +33,13 @@ DATA = ROOT / "data"
 PRIM_URL = "https://prim.iledefrance-mobilites.fr/marketplace/disruptions_bulk/disruptions/v2"
 BASE_URL = "https://travauxmetro.fr"
 UMAMI = '<script defer src="https://cloud.umami.is/script.js" data-website-id="ef00b128-53c5-49eb-a0e9-e4da83748a67"></script>'
+FAVICON = (
+    '<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">'
+    '<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">'
+    '<link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">'
+    '<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">'
+    '<link rel="manifest" href="/favicon/site.webmanifest">'
+)
 
 # Line names match IDFM shortName (e.g. "3B" not "3bis")
 # (bg_color, text_color)
@@ -436,6 +443,7 @@ def generate_index(line_stats: list[tuple]) -> str:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travaux Métro Paris — Calendrier ICS</title>
+  {FAVICON}
   {UMAMI}
   <style>
     *, *::before, *::after {{ box-sizing: border-box; }}
@@ -610,6 +618,7 @@ def generate_preview(
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vue d'ensemble travaux métro — {date_str}</title>
+  {FAVICON}
   {UMAMI}
   <style>
     *, *::before, *::after {{ box-sizing: border-box; }}
