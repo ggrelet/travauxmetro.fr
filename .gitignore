@@ -55,3 +55,4 @@ MANIFEST
 .vscode/
 *.swp
 *.swo
+data/line-colors.html
