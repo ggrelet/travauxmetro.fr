@@ -38,9 +38,6 @@
 - **Métro 12 : Travaux de modernisation - Trafic interrompu** — 05-04-2026 → 13-04-2026
   - Trafic interrompu
   - Jusqu'au 12 avril inclus, le dimanche dès 22:00, le trafic est interrompu sur toute la ligne en raison de travaux de modernisation.
-- **Métro 12 : Travaux de modernisation - Autre** — 09-03-2026 → 13-04-2026
-  - Autre
-  - Jusqu'au 12 avril, dès 22:00, tous les dimanches et certains mercredis et jeudis le trafic est interrompu sur toute la ligne en raison de travaux de modernisation. Détails et calendrier complet sur RATP.fr.
 
 #### ![M13](https://img.shields.io/badge/-M13-98D4E2?style=flat)
 - **Métro 13 : Travaux - Trafic interrompu** — 03-05-2026 → 03-05-2026

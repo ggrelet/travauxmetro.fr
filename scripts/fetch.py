@@ -8,7 +8,7 @@ import os
 import re
 import sys
 from collections import defaultdict
-from datetime import datetime, timezone
+from datetime import date, datetime, time as time_type, timedelta, timezone
 from pathlib import Path
 from uuid import uuid4
 
@@ -17,6 +17,13 @@ from icalendar import Calendar, Event
 from zoneinfo import ZoneInfo
 
 PARIS_TZ = ZoneInfo("Europe/Paris")
+
+# Night service ends around 01:30–02:00, resumes around 05:00.
+# Events ending before NIGHT_CUTOFF are "end of night", not start of next morning.
+NIGHT_CUTOFF = time_type(5, 0)
+# Night events (e.g. 22:00 → 04:30 next day) are stripped to NIGHT_STRIP_TO
+# to make clear they belong to the previous evening.
+NIGHT_STRIP_TO = time_type(2, 0)
 
 ROOT = Path(__file__).parent.parent
 PUBLIC = ROOT / "public"
@@ -119,6 +126,40 @@ def parse_dt(s: str) -> datetime:
     return datetime.strptime(s, "%Y%m%dT%H%M%S").replace(tzinfo=PARIS_TZ)
 
 
+def normalize_period(dtstart: datetime, dtend: datetime) -> tuple[date | datetime, date | datetime, bool]:
+    """
+    Normalize a PRIM period to calendar-friendly bounds. Returns (ns, ne, is_allday).
+
+    Full-day (is_allday=True): ns/ne are date objects; DTEND is ICS-exclusive.
+      - Triggered when end < NIGHT_CUTOFF AND (start < NIGHT_CUTOFF OR span > 1 day).
+      - Disrupted days: ns to ne-1 day inclusive (ne is exclusive in ICS).
+      - A period ending at 04:30 on day D+N means day D+N is NOT disrupted.
+
+    Night strip (is_allday=False): keep as datetime, strip end to NIGHT_STRIP_TO.
+      - Triggered when start >= NIGHT_CUTOFF AND span == 1 day AND end < NIGHT_CUTOFF.
+      - e.g. 22:00 Mon → 04:30 Tue becomes 22:00 Mon → 02:00 Tue.
+
+    Otherwise: returned as-is.
+    """
+    start_t = dtstart.time()
+    end_t = dtend.time()
+    span_days = (dtend.date() - dtstart.date()).days
+    end_before_cutoff = end_t < NIGHT_CUTOFF
+
+    if end_before_cutoff and (start_t < NIGHT_CUTOFF or span_days > 1):
+        return dtstart.date(), dtend.date(), True
+    if end_before_cutoff and span_days == 1 and start_t >= NIGHT_CUTOFF:
+        stripped = dtend.replace(hour=NIGHT_STRIP_TO.hour, minute=0, second=0, microsecond=0)
+        return dtstart, stripped, False
+    return dtstart, dtend, False
+
+
+def period_key(dtstart: datetime, dtend: datetime) -> tuple:
+    """Return the normalized (ns, ne) key for use in availability sets."""
+    ns, ne, _ = normalize_period(dtstart, dtend)
+    return (ns, ne)
+
+
 def content_hash(disruptions: list, metro_dis_ids: set) -> str:
     relevant = sorted(
         [d for d in disruptions if d["id"] in metro_dis_ids],
@@ -177,12 +218,13 @@ def make_events(disruption: dict, line_name: str, stops: list[str]) -> list[Even
             dtend = parse_dt(period["end"])
         except (KeyError, ValueError):
             continue
+        ns, ne, _ = normalize_period(dtstart, dtend)
         e = Event()
         e.add("uid", f"{disruption['id']}_{period['begin']}@travaux-metro")
         e.add("summary", summary)
         e.add("description", description)
-        e.add("dtstart", dtstart)
-        e.add("dtend", dtend)
+        e.add("dtstart", ns)
+        e.add("dtend", ne)
         e.add("dtstamp", datetime.now(timezone.utc))
         e.add("categories", [f"Ligne {line_name}", "Travaux Métro"])
         events.append(e)
@@ -292,12 +334,13 @@ def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, metro_l
         line_id = name_to_id.get(line_name)
 
         # Build the same deduplicated period set used for ICS generation
+        normal_ids, _ = classify_disruptions(dis_ids, dis_by_id)
         all_events = []
-        for dis_id in dis_ids:
+        for dis_id in normal_ids:
             all_events.extend(make_events(dis_by_id[dis_id], line_name, dis_to_stops[dis_id].get(line_id, [])))
         available = {(e.get("dtstart").dt, e.get("dtend").dt) for e in deduplicate_events(all_events)}
 
-        for dis_id in sorted(dis_ids):
+        for dis_id in sorted(normal_ids):
             d = dis_by_id[dis_id]
             title = d.get("title", "Perturbation").strip()
             short = d.get("shortMessage", "").strip()
@@ -307,7 +350,7 @@ def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, metro_l
             # Only show periods that survived deduplication
             surviving = []
             for p in d.get("applicationPeriods", []):
-                key = (parse_dt(p["begin"]), parse_dt(p["end"]))
+                key = period_key(parse_dt(p["begin"]), parse_dt(p["end"]))
                 if key in available:
                     surviving.append(p)
                     available.discard(key)
@@ -435,6 +478,21 @@ def fmt_date(s: str) -> str:
     return f"{s[6:8]}-{s[4:6]}-{s[:4]}"
 
 
+def fmt_period_display(p: dict) -> str:
+    """Format a PRIM period dict using normalized bounds."""
+    def fdate(d: date) -> str:
+        return f"{d.day:02d}-{d.month:02d}-{d.year}"
+
+    def fdt(dt: datetime) -> str:
+        return f"{dt.day:02d}-{dt.month:02d}-{dt.year} {dt.hour:02d}:{dt.minute:02d}"
+
+    ns, ne, is_allday = normalize_period(parse_dt(p["begin"]), parse_dt(p["end"]))
+    if is_allday:
+        last = ne - timedelta(days=1)
+        return fdate(ns) if ns == last else f"{fdate(ns)} → {fdate(last)}"
+    return f"{fdt(ns)} → {fdt(ne)}"
+
+
 def generate_preview(
     by_line: dict,
     dis_by_id: dict,
@@ -447,14 +505,25 @@ def generate_preview(
         bg, fg = METRO_LINE_COLORS.get(line_name, ("#888", "#fff"))
         line_id = next(lid for lid, l in metro_lines.items() if l["shortName"] == line_name)
 
-        # Build the same deduplicated period set used for ICS generation
+        all_ids = by_line[line_name]
+        normal_ids, umbrella_ids = classify_disruptions(all_ids, dis_by_id)
+
+        # Build available set from normal disruptions only
         all_events = []
-        for dis_id in by_line[line_name]:
+        for dis_id in normal_ids:
             all_events.extend(make_events(dis_by_id[dis_id], line_name, dis_to_stops[dis_id].get(line_id, [])))
         available = {(e.get("dtstart").dt, e.get("dtend").dt) for e in deduplicate_events(all_events)}
 
+        # Umbrella notes
+        notes_html = ""
+        for dis_id in sorted(umbrella_ids):
+            d = dis_by_id[dis_id]
+            msg = strip_html(d.get("message", "") or d.get("shortMessage", ""))
+            if msg:
+                notes_html += f'<p class="note">ℹ️ {html.escape(msg)}</p>'
+
         cards = ""
-        for dis_id in sorted(by_line[line_name]):
+        for dis_id in sorted(normal_ids):
             d = dis_by_id[dis_id]
             title = d.get("title", "").strip()
             short = d.get("shortMessage", "").strip()
@@ -465,7 +534,7 @@ def generate_preview(
             # don't appear again in another card for the same line
             surviving = []
             for p in d.get("applicationPeriods", []):
-                key = (parse_dt(p["begin"]), parse_dt(p["end"]))
+                key = period_key(parse_dt(p["begin"]), parse_dt(p["end"]))
                 if key in available:
                     surviving.append(p)
                     available.discard(key)
@@ -474,7 +543,7 @@ def generate_preview(
                 continue
 
             periods_html = "".join(
-                f'<div class="period">📅 {fmt_dt(p["begin"])} → {fmt_dt(p["end"])}</div>'
+                f'<div class="period">📅 {fmt_period_display(p)}</div>'
                 for p in surviving
             )
             stops_html = (
@@ -498,7 +567,7 @@ def generate_preview(
         Ligne {line_name}
         <span class="count">{card_count} perturbation{'s' if card_count > 1 else '' }</span>
       </h2>
-      <div class="cards">{cards}
+      {notes_html}<div class="cards">{cards}
       </div>
     </section>"""
 
@@ -525,6 +594,7 @@ def generate_preview(
     .period {{ font-size: .82em; color: #555; margin: .2rem 0; }}
     .stops {{ font-size: .82em; color: #333; margin-top: .4rem; }}
     .message {{ font-size: .8em; color: #666; margin-top: .5rem; border-top: 1px solid #f0f0f0; padding-top: .4rem; white-space: pre-wrap; }}
+    .note {{ font-size: .85em; color: #555; font-style: italic; margin: .25rem 0 .75rem; }}
     a {{ color: #6B318C; }}
   </style>
 </head>
