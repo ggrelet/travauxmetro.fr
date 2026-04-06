@@ -137,15 +137,17 @@ def content_hash(disruptions: list, metro_dis_ids: set) -> str:
     return hashlib.sha256(json.dumps(key, sort_keys=True).encode()).hexdigest()
 
 
-def make_calendar(name: str, bg_color: str) -> Calendar:
+def make_calendar(name: str, bg_color: str, description: str = "") -> Calendar:
     cal = Calendar()
     cal.add("prodid", "-//ggrelet//travaux-metro//FR")
     cal.add("version", "2.0")
     cal.add("calscale", "GREGORIAN")
     cal.add("method", "PUBLISH")
     cal.add("x-wr-calname", name)
+    cal.add("x-wr-caldesc", description)
     cal.add("x-wr-timezone", "Europe/Paris")
     cal.add("x-apple-calendar-color", bg_color)
+    cal.add("x-published-ttl", "PT12H")
     return cal
 
 
@@ -597,12 +599,24 @@ def main():
     )
 
     PUBLIC.mkdir(exist_ok=True)
-    all_cal = make_calendar("Paris Métro — Travaux", "#6B318C")
+    all_cal = make_calendar(
+        "Paris Métro — Travaux",
+        "#6B318C",
+        "Perturbations et travaux planifiés sur toutes les lignes du métro parisien. "
+        "Mis à jour quotidiennement depuis les données Île-de-France Mobilités. "
+        "travauxmetro.fr",
+    )
     line_stats = []
 
     for line_name in sorted(METRO_LINE_COLORS.keys(), key=line_sort_key):
         bg, _ = METRO_LINE_COLORS[line_name]
-        cal = make_calendar(f"Métro Ligne {line_name} — Travaux", bg)
+        cal = make_calendar(
+            f"Métro Ligne {line_name} — Travaux",
+            bg,
+            f"Perturbations et travaux planifiés sur la ligne {line_name} du métro parisien. "
+            "Mis à jour quotidiennement depuis les données Île-de-France Mobilités. "
+            "travauxmetro.fr",
+        )
         event_count = 0
 
         line_id_match = next((lid for lid, l in metro_lines.items() if l["shortName"] == line_name), None)
