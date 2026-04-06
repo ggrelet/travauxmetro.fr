@@ -19,17 +19,6 @@ from zoneinfo import ZoneInfo
 PARIS_TZ = ZoneInfo("Europe/Paris")
 
 
-def _load_gcal_colors() -> dict[str, str]:
-    """Read gcal colors from data/line-colors.md (source of truth)."""
-    md = ROOT / "data" / "line-colors.md"
-    colors: dict[str, str] = {}
-    for line in md.read_text().splitlines():
-        m = re.match(r"\|\s*M(\S+)\s*\|[^|]+\|\s*`(#[0-9a-fA-F]{6})`\s*\|", line)
-        if m:
-            colors[m.group(1)] = m.group(2)
-    return colors
-
-
 # Night service ends around 01:30–02:00, resumes around 05:00.
 # Events ending before NIGHT_CUTOFF are "end of night", not start of next morning.
 NIGHT_CUTOFF = time_type(5, 0)
@@ -40,8 +29,6 @@ NIGHT_STRIP_TO = time_type(2, 0)
 ROOT = Path(__file__).parent.parent
 PUBLIC = ROOT / "public"
 DATA = ROOT / "data"
-
-GCAL_COLORS: dict[str, str] = _load_gcal_colors()
 
 PRIM_URL = "https://prim.iledefrance-mobilites.fr/marketplace/disruptions_bulk/disruptions/v2"
 BASE_URL = "https://travauxmetro.fr"
@@ -81,6 +68,25 @@ _GOOGLE_PALETTE = {
     "Graphite": "#c2c2c2", "Birch": "#cabdbf", "Beetroot": "#cca6ac",
     "Cherry Blossom": "#f691b2", "Grape": "#cd74e6", "Amethyst": "#a47ae2",
 }
+
+
+def _load_gcal_colors() -> dict[str, str]:
+    """Read gcal palette names from data/line-colors.md and resolve to hex."""
+    palette_by_name = {k.lower(): v for k, v in _GOOGLE_PALETTE.items()}
+    colors: dict[str, str] = {}
+    for line in (ROOT / "data" / "line-colors.md").read_text().splitlines():
+        m = re.match(r"\|\s*M(\S+)\s*\|[^|]+\|\s*([A-Za-z ]+\S)\s*\|", line)
+        if m:
+            name = m.group(2).strip()
+            hex_color = palette_by_name.get(name.lower())
+            if hex_color:
+                colors[m.group(1)] = hex_color
+            else:
+                print(f"WARNING: unknown Google Calendar color '{name}' for M{m.group(1)}", file=sys.stderr)
+    return colors
+
+
+GCAL_COLORS: dict[str, str] = _load_gcal_colors()
 
 
 def _nearest_google_color(hex_color: str) -> str:

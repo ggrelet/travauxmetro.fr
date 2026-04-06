@@ -34,7 +34,8 @@ def swatch(hex_color: str, width: int = 60) -> str:
 
 # Load METRO_LINE_COLORS for text color (black/white) lookup
 sys.path.insert(0, str(ROOT))
-from scripts.fetch import METRO_LINE_COLORS
+from scripts.fetch import METRO_LINE_COLORS, _GOOGLE_PALETTE
+palette_by_name = {k.lower(): v for k, v in _GOOGLE_PALETTE.items()}
 
 text = MD.read_text()
 sections = re.split(r"^##\s+", text, flags=re.MULTILINE)
@@ -48,9 +49,9 @@ palette_table = parse_table(palette_rows_md)
 # Build line rows (skip header)
 line_html = ""
 for row in line_table[1:]:
-    ligne, ratp, gcal, name = row
+    ligne, ratp, palette_name = row
     bg = extract_hex(ratp)
-    gcal_hex = extract_hex(gcal)
+    gcal_hex = palette_by_name.get(palette_name.strip().lower(), "#ccc")
     line_id = ligne.replace("M", "")
     _, fg = METRO_LINE_COLORS.get(line_id, ("#000", "#000"))
     badge = f'<span style="background:{bg};color:{fg};padding:.2em .6em;border-radius:4px;font-weight:700">{ligne}</span>'
@@ -58,8 +59,7 @@ for row in line_table[1:]:
   <tr>
     <td>{badge}</td>
     <td>{swatch(bg)}<code>{bg}</code></td>
-    <td>{swatch(gcal_hex)}<code>{gcal_hex}</code></td>
-    <td>{name}</td>
+    <td>{swatch(gcal_hex)}<code>{gcal_hex}</code> {palette_name.strip()}</td>
   </tr>"""
 
 # Build palette rows (skip header)
@@ -89,7 +89,7 @@ html = f"""<!DOCTYPE html>
 <p class="note">Généré depuis <code>data/line-colors.md</code> — éditer le Markdown, pas ce fichier.</p>
 <h2>Mapping RATP → Google Calendar</h2>
 <table>
-  <thead><tr><th>Ligne</th><th>RATP (iCal)</th><th>Google Calendar</th><th>Palette name</th></tr></thead>
+  <thead><tr><th>Ligne</th><th>RATP (iCal)</th><th>Google Calendar</th></tr></thead>
   <tbody>{line_html}</tbody>
 </table>
 <h2>Google Calendar palette</h2>

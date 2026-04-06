@@ -1,27 +1,27 @@
 # Couleurs des lignes de métro
 
-Source of truth for line colors. Edit the **Google Calendar** column to change the color used in `-gcal.ics` files.
+Source of truth for line colors. Edit the **Google Calendar** column to change the color used in `-gcal.ics` files. Use a name from the palette table below.
 
 ## Mapping RATP → Google Calendar
 
-| Ligne | RATP (iCal) | Google Calendar | Palette name |
-|-------|-------------|-----------------|--------------|
-| M1 | `#FFCD00` | `#ffad46` | Mango |
-| M2 | `#003CA6` | `#4986e7` | Blueberry |
-| M3 | `#837902` | `#ac725e` | Cocoa |
-| M3B | `#6EC4E8` | `#9fc6e7` | Cobalt |
-| M4 | `#CF009E` | `#d06b64` | Flamingo |
-| M5 | `#FF7E2E` | `#ff7537` | Pumpkin |
-| M6 | `#6ECA97` | `#42d692` | Eucalyptus |
-| M7 | `#FA9ABA` | `#f691b2` | Cherry Blossom |
-| M7B | `#83C491` | `#92e1c0` | Sage |
-| M8 | `#E19BDF` | `#cd74e6` | Grape |
-| M9 | `#B6BD00` | `#7bd148` | Pistachio |
-| M10 | `#C9910D` | `#ff7537` | Pumpkin |
-| M11 | `#704B1C` | `#ac725e` | Cocoa |
-| M12 | `#007852` | `#16a765` | Basil |
-| M13 | `#98D4E2` | `#9fe1e7` | Peacock |
-| M14 | `#62259D` | `#ac725e` | Cocoa |
+| Ligne | RATP (iCal) | Google Calendar |
+|-------|-------------|-----------------|
+| M1 | `#FFCD00` | Mango |
+| M2 | `#003CA6` | Blueberry |
+| M3 | `#837902` | Cocoa |
+| M3B | `#6EC4E8` | Cobalt |
+| M4 | `#CF009E` | Flamingo |
+| M5 | `#FF7E2E` | Pumpkin |
+| M6 | `#6ECA97` | Eucalyptus |
+| M7 | `#FA9ABA` | Cherry Blossom |
+| M7B | `#83C491` | Sage |
+| M8 | `#E19BDF` | Grape |
+| M9 | `#B6BD00` | Pistachio |
+| M10 | `#C9910D` | Pumpkin |
+| M11 | `#704B1C` | Cocoa |
+| M12 | `#007852` | Basil |
+| M13 | `#98D4E2` | Peacock |
+| M14 | `#62259D` | Cocoa |
 
 ## Google Calendar palette
 
