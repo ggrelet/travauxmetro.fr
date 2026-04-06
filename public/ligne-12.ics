@@ -10,7 +10,7 @@ BEGIN:VEVENT
 SUMMARY:M12 — Métro 12 : Travaux de modernisation - Trafic interrompu
 DTSTART:20260405T220000Z
 DTEND:20260406T043000Z
-DTSTAMP:20260406T094017Z
+DTSTAMP:20260406T094425Z
 UID:4247e7e6-20b2-11f1-b269-0a58a9feac02_20260405T220000@travaux-metro
 CATEGORIES:Ligne 12,Travaux Métro
 DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nJusqu'au 12 avril inclus\, le
@@ -21,7 +21,7 @@ BEGIN:VEVENT
 SUMMARY:M12 — Métro 12 : Travaux de modernisation - Trafic interrompu
 DTSTART:20260412T220000Z
 DTEND:20260413T043000Z
-DTSTAMP:20260406T094017Z
+DTSTAMP:20260406T094425Z
 UID:4247e7e6-20b2-11f1-b269-0a58a9feac02_20260412T220000@travaux-metro
 CATEGORIES:Ligne 12,Travaux Métro
 DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nJusqu'au 12 avril inclus\, le
@@ -32,7 +32,7 @@ BEGIN:VEVENT
 SUMMARY:M12 — Métro 12 : Travaux de modernisation - Trafic interrompu
 DTSTART:20260401T220000Z
 DTEND:20260402T043000Z
-DTSTAMP:20260406T094017Z
+DTSTAMP:20260406T094425Z
 UID:09685fd6-36fa-4b9f-81de-919a3adda374_20260401T220000@travaux-metro
 CATEGORIES:Ligne 12,Travaux Métro
 DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nJusqu'au 8 avril\, le mercred
@@ -43,7 +43,7 @@ BEGIN:VEVENT
 SUMMARY:M12 — Métro 12 : Travaux de modernisation - Trafic interrompu
 DTSTART:20260408T220000Z
 DTEND:20260409T043000Z
-DTSTAMP:20260406T094017Z
+DTSTAMP:20260406T094425Z
 UID:09685fd6-36fa-4b9f-81de-919a3adda374_20260408T220000@travaux-metro
 CATEGORIES:Ligne 12,Travaux Métro
 DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nJusqu'au 8 avril\, le mercred
