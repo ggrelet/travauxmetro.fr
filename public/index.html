@@ -8,86 +8,235 @@
   <script defer src="https://cloud.umami.is/script.js" data-website-id="ef00b128-53c5-49eb-a0e9-e4da83748a67"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; color: #222; line-height: 1.5; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; color: #222; line-height: 1.5; background: #f7f7f7; }
     h1 { margin-bottom: .25rem; }
-    .subtitle { color: #555; margin-top: 0; }
-    .badge { display: inline-block; padding: .15em .55em; border-radius: 4px; font-weight: 700; font-size: .9em; min-width: 2.5em; text-align: center; }
-    .card { border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.25rem; margin: 1rem 0; background: #fafafa; }
-    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
-    th, td { border: 1px solid #e0e0e0; padding: .45rem .9rem; text-align: left; vertical-align: middle; }
-    th { background: #f4f4f4; font-weight: 600; }
+    .subtitle { color: #555; margin-top: 0; margin-bottom: 1.5rem; }
+    .meta { color: #888; font-size: .85em; }
+    .intro { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: .9rem 1.1rem; margin-bottom: 1.5rem; font-size: .95em; }
+    .all-sub { margin-bottom: 2rem; }
+    .all-sub h2 { font-size: 1rem; color: #555; font-weight: 600; margin-bottom: .4rem; }
     a { color: #6B318C; }
-    footer { margin-top: 3rem; color: #888; font-size: .85em; }
-    .sub-btn { display: inline-block; cursor: pointer; border: none; border-radius: 4px; padding: .25em .7em; font-size: .85em; margin: .15rem .2rem .15rem 0; text-decoration: none; white-space: nowrap; }
-    .sub-btn.apple { background: #555; color: #fff; }
-    .sub-btn.apple:hover { background: #333; }
+    footer { margin-top: 3rem; color: #888; font-size: .85em; border-top: 1px solid #e8e8e8; padding-top: 1rem; }
+    .badge { display: inline-block; padding: .2em .6em; border-radius: 5px; font-weight: 800; font-size: 1rem; min-width: 2.5em; text-align: center; flex-shrink: 0; }
+    .sub-btn { display: inline-flex; align-items: center; cursor: pointer; border: none; border-radius: 5px; padding: .3em .8em; font-size: .82em; margin: .1rem .25rem .1rem 0; text-decoration: none; white-space: nowrap; font-family: inherit; }
+    .sub-btn.apple { background: #444; color: #fff; }
+    .sub-btn.apple:hover { background: #222; }
     .sub-btn.google { background: #4285F4; color: #fff; }
     .sub-btn.google:hover { background: #2b6fd4; }
-    .sub-btn.copy { background: #6B318C; color: #fff; }
-    .sub-btn.copy:hover { background: #552070; }
-    .sub-btn.copied { background: #2e7d32 !important; }
+    .line-row { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: .85rem 1rem; margin-bottom: .75rem; }
+    .line-header { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
+    .line-actions { display: flex; flex-wrap: wrap; gap: .2rem; }
+    .quiet { color: #aaa; font-size: .85em; margin: .5rem 0 0; }
+    details { margin-top: .6rem; }
+    details summary { cursor: pointer; font-size: .88em; color: #6B318C; font-weight: 600; list-style: none; display: flex; align-items: center; gap: .4rem; user-select: none; }
+    details summary::before { content: "▶"; font-size: .7em; transition: transform .15s; }
+    details[open] summary::before { transform: rotate(90deg); }
+    .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: .75rem; margin-top: .75rem; }
+    .dis-card { background: #fafafa; border: 1px solid #e8e8e8; border-radius: 7px; padding: .8rem; }
+    .card-title { font-weight: 600; font-size: .9em; margin-bottom: .4rem; }
+    .period { font-size: .8em; color: #555; margin: .15rem 0; }
+    .stops { font-size: .8em; color: #333; margin-top: .35rem; }
+    .message { font-size: .78em; color: #666; margin-top: .45rem; border-top: 1px solid #eee; padding-top: .35rem; white-space: pre-wrap; }
+    .note { font-size: .82em; color: #666; font-style: italic; margin: .5rem 0 .5rem; }
   </style>
 </head>
-<script>
-function copyUrl(url, btn) {
-  navigator.clipboard.writeText(url).then(() => {
-    btn.textContent = 'Copié !';
-    btn.classList.add('copied');
-    setTimeout(() => { btn.textContent = 'Autre (copier)'; btn.classList.remove('copied'); }, 2000);
-  });
-}
-</script>
 <body>
   <h1>Travaux Métro Paris</h1>
   <p class="subtitle">Perturbations et travaux planifiés — abonnez-vous au calendrier de votre ligne.</p>
 
-  <div class="card">
+  <div class="intro">
     Cliquez sur <strong>Apple / iCal</strong> ou <strong>Google Calendar</strong> pour vous abonner en un clic.
-    Le bouton <strong>Autre</strong> copie l'URL pour les autres applications (Outlook, Proton…).
     Le calendrier se met à jour automatiquement.
   </div>
 
-  <p><a href="overview.html">→ Aperçu visuel des perturbations</a></p>
+  <div class="all-sub">
+    <h2>Toutes les lignes</h2>
+    <a class="sub-btn apple" href="webcal://travauxmetro.fr/all.ics" data-umami-event="subscribe-apple" data-umami-event-line="all">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fall.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="all"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a>
+  </div>
 
-  <h2>Toutes les lignes</h2>
-  <p><a class="sub-btn apple" href="webcal://travauxmetro.fr/all.ics" data-umami-event="subscribe-apple" data-umami-event-line="all">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fall.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="all">Google Calendar</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/all.ics', this)" data-umami-event="copy-url" data-umami-event-line="all">Autre (copier)</button></p>
-
-  <h2>Par ligne</h2>
-  <table>
-    <thead><tr><th>Ligne</th><th>Perturbations</th><th>S'abonner</th></tr></thead>
-    <tbody>
-      <tr>
-        <td><span class="badge" style="background:#837902;color:#FFFFFF">M3</span></td>
-        <td>1 perturbation</td>
-        <td><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-3.ics" data-umami-event="subscribe-apple" data-umami-event-line="3">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-3.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="3">Google Calendar</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-3.ics', this)" data-umami-event="copy-url" data-umami-event-line="3">Autre (copier)</button></td>
-      </tr>
-      <tr>
-        <td><span class="badge" style="background:#6EC4E8;color:#000000">M3B</span></td>
-        <td>6 perturbations</td>
-        <td><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-3B.ics" data-umami-event="subscribe-apple" data-umami-event-line="3B">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-3B.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="3B">Google Calendar</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-3B.ics', this)" data-umami-event="copy-url" data-umami-event-line="3B">Autre (copier)</button></td>
-      </tr>
-      <tr>
-        <td><span class="badge" style="background:#CF009E;color:#FFFFFF">M4</span></td>
-        <td>1 perturbation</td>
-        <td><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-4.ics" data-umami-event="subscribe-apple" data-umami-event-line="4">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-4.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="4">Google Calendar</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-4.ics', this)" data-umami-event="copy-url" data-umami-event-line="4">Autre (copier)</button></td>
-      </tr>
-      <tr>
-        <td><span class="badge" style="background:#007852;color:#FFFFFF">M12</span></td>
-        <td>4 perturbations</td>
-        <td><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-12.ics" data-umami-event="subscribe-apple" data-umami-event-line="12">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-12.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="12">Google Calendar</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-12.ics', this)" data-umami-event="copy-url" data-umami-event-line="12">Autre (copier)</button></td>
-      </tr>
-      <tr>
-        <td><span class="badge" style="background:#98D4E2;color:#000000">M13</span></td>
-        <td>5 perturbations</td>
-        <td><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-13.ics" data-umami-event="subscribe-apple" data-umami-event-line="13">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-13.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="13">Google Calendar</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-13.ics', this)" data-umami-event="copy-url" data-umami-event-line="13">Autre (copier)</button></td>
-      </tr>
-    </tbody>
-  </table>
+  
+    <div class="line-row">
+      <div class="line-header">
+        <span class="badge" style="background:#FFCD00;color:#000000">M1</span>
+        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-1.ics" data-umami-event="subscribe-apple" data-umami-event-line="1">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-1.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="1"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
+      </div>
+      <p class="quiet">Aucune perturbation en cours.</p>
+    </div>
+    <div class="line-row">
+      <div class="line-header">
+        <span class="badge" style="background:#003CA6;color:#FFFFFF">M2</span>
+        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-2.ics" data-umami-event="subscribe-apple" data-umami-event-line="2">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-2.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="2"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
+      </div>
+      <p class="quiet">Aucune perturbation en cours.</p>
+    </div>
+    <div class="line-row">
+      <div class="line-header">
+        <span class="badge" style="background:#837902;color:#FFFFFF">M3</span>
+        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-3.ics" data-umami-event="subscribe-apple" data-umami-event-line="3">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-3.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="3"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
+      </div>
+      <details>
+      <summary>1 perturbation en cours</summary>
+      <div class="cards">
+          <div class="dis-card">
+            <div class="card-title">Métro 3 : Travaux - Trafic interrompu</div>
+            <div class="period">📅 08-04-2026 → 12-05-2026</div><div class="message">Du 8 avril au 12 mai inclus, le trafic sera interrompu entre Gallieni et Gambetta en raison de travaux. Bus de remplacement.</div>
+          </div>
+      </div>
+    </details>
+    </div>
+    <div class="line-row">
+      <div class="line-header">
+        <span class="badge" style="background:#6EC4E8;color:#000000">M3B</span>
+        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-3B.ics" data-umami-event="subscribe-apple" data-umami-event-line="3B">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-3B.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="3B"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
+      </div>
+      <details>
+      <summary>2 perturbations en cours</summary>
+      <div class="cards">
+          <div class="dis-card">
+            <div class="card-title">Métro 3B : Travaux - Trafic interrompu</div>
+            <div class="period">📅 12-04-2026 22:15 → 13-04-2026 02:00</div><div class="period">📅 19-04-2026 22:15 → 20-04-2026 02:00</div><div class="period">📅 26-04-2026 22:15 → 27-04-2026 02:00</div><div class="period">📅 03-05-2026 22:15 → 04-05-2026 02:00</div><div class="period">📅 10-05-2026 22:15 → 11-05-2026 02:00</div><div class="message">Du 12 avril au 10 mai inclus, le dimanche dès 22:15, le trafic sera interrompu sur toute la ligne en raison de travaux.</div>
+          </div>
+          <div class="dis-card">
+            <div class="card-title">Métro 3B : Travaux - Trafic interrompu</div>
+            <div class="period">📅 16-05-2026 → 21-05-2026</div><div class="message">Du 16 mai au 21 mai inclus, le trafic sera interrompu sur toute la ligne en raison de travaux.</div>
+          </div>
+      </div>
+    </details>
+    </div>
+    <div class="line-row">
+      <div class="line-header">
+        <span class="badge" style="background:#CF009E;color:#FFFFFF">M4</span>
+        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-4.ics" data-umami-event="subscribe-apple" data-umami-event-line="4">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-4.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="4"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
+      </div>
+      <details>
+      <summary>1 perturbation en cours</summary>
+      <div class="cards">
+          <div class="dis-card">
+            <div class="card-title">Métro 4 : Travaux d'entretien - Trafic interrompu</div>
+            <div class="period">📅 20-04-2026 → 01-05-2026</div><div class="message">Du 20 avril au 1er mai inclus, le trafic sera interrompu entre Châtelet et Barbès - Rochechouart en raison de travaux d'entretien.</div>
+          </div>
+      </div>
+    </details>
+    </div>
+    <div class="line-row">
+      <div class="line-header">
+        <span class="badge" style="background:#FF7E2E;color:#000000">M5</span>
+        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-5.ics" data-umami-event="subscribe-apple" data-umami-event-line="5">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-5.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="5"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
+      </div>
+      <p class="quiet">Aucune perturbation en cours.</p>
+    </div>
+    <div class="line-row">
+      <div class="line-header">
+        <span class="badge" style="background:#6ECA97;color:#000000">M6</span>
+        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-6.ics" data-umami-event="subscribe-apple" data-umami-event-line="6">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-6.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="6"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
+      </div>
+      <p class="quiet">Aucune perturbation en cours.</p>
+    </div>
+    <div class="line-row">
+      <div class="line-header">
+        <span class="badge" style="background:#FA9ABA;color:#000000">M7</span>
+        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-7.ics" data-umami-event="subscribe-apple" data-umami-event-line="7">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-7.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="7"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
+      </div>
+      <p class="quiet">Aucune perturbation en cours.</p>
+    </div>
+    <div class="line-row">
+      <div class="line-header">
+        <span class="badge" style="background:#83C491;color:#000000">M7B</span>
+        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-7B.ics" data-umami-event="subscribe-apple" data-umami-event-line="7B">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-7B.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="7B"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
+      </div>
+      <p class="quiet">Aucune perturbation en cours.</p>
+    </div>
+    <div class="line-row">
+      <div class="line-header">
+        <span class="badge" style="background:#E19BDF;color:#000000">M8</span>
+        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-8.ics" data-umami-event="subscribe-apple" data-umami-event-line="8">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-8.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="8"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
+      </div>
+      <p class="quiet">Aucune perturbation en cours.</p>
+    </div>
+    <div class="line-row">
+      <div class="line-header">
+        <span class="badge" style="background:#B6BD00;color:#000000">M9</span>
+        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-9.ics" data-umami-event="subscribe-apple" data-umami-event-line="9">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-9.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="9"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
+      </div>
+      <p class="quiet">Aucune perturbation en cours.</p>
+    </div>
+    <div class="line-row">
+      <div class="line-header">
+        <span class="badge" style="background:#C9910D;color:#000000">M10</span>
+        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-10.ics" data-umami-event="subscribe-apple" data-umami-event-line="10">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-10.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="10"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
+      </div>
+      <p class="quiet">Aucune perturbation en cours.</p>
+    </div>
+    <div class="line-row">
+      <div class="line-header">
+        <span class="badge" style="background:#704B1C;color:#FFFFFF">M11</span>
+        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-11.ics" data-umami-event="subscribe-apple" data-umami-event-line="11">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-11.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="11"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
+      </div>
+      <p class="quiet">Aucune perturbation en cours.</p>
+    </div>
+    <div class="line-row">
+      <div class="line-header">
+        <span class="badge" style="background:#007852;color:#FFFFFF">M12</span>
+        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-12.ics" data-umami-event="subscribe-apple" data-umami-event-line="12">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-12.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="12"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
+      </div>
+      <details>
+      <summary>2 perturbations en cours</summary>
+      <p class="note">ℹ️ Jusqu&#x27;au 12 avril, dès 22:00, tous les dimanches et certains mercredis et jeudis le trafic est interrompu sur toute la ligne en raison de travaux de modernisation. Détails et calendrier complet sur RATP.fr.</p><div class="cards">
+          <div class="dis-card">
+            <div class="card-title">Métro 12 : Travaux de modernisation - Trafic interrompu</div>
+            <div class="period">📅 01-04-2026 22:00 → 02-04-2026 02:00</div><div class="period">📅 08-04-2026 22:00 → 09-04-2026 02:00</div><div class="message">Jusqu'au 8 avril, le mercredi dès 22:00, le trafic est interrompu sur toute la ligne en raison de travaux de modernisation.</div>
+          </div>
+          <div class="dis-card">
+            <div class="card-title">Métro 12 : Travaux de modernisation - Trafic interrompu</div>
+            <div class="period">📅 05-04-2026 22:00 → 06-04-2026 02:00</div><div class="period">📅 12-04-2026 22:00 → 13-04-2026 02:00</div><div class="message">Jusqu'au 12 avril inclus, le dimanche dès 22:00, le trafic est interrompu sur toute la ligne en raison de travaux de modernisation.</div>
+          </div>
+      </div>
+    </details>
+    </div>
+    <div class="line-row">
+      <div class="line-header">
+        <span class="badge" style="background:#98D4E2;color:#000000">M13</span>
+        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-13.ics" data-umami-event="subscribe-apple" data-umami-event-line="13">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-13.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="13"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
+      </div>
+      <details>
+      <summary>5 perturbations en cours</summary>
+      <div class="cards">
+          <div class="dis-card">
+            <div class="card-title">Métro 13 : Travaux - Trafic interrompu</div>
+            <div class="period">📅 03-05-2026 04:45 → 03-05-2026 12:00</div><div class="message">Les dimanches 3 et 17 mai ainsi que les 7 et 28 juin, jusqu'à 12 heures, le trafic est interrompu sur l'ensemble de la ligne en raison de travaux de modernisation.</div>
+          </div>
+          <div class="dis-card">
+            <div class="card-title">Métro 13 : Travaux de modernisation - Arrêt non desservi</div>
+            <div class="period">📅 09-04-2026 → 12-04-2026</div><div class="message">Du 9 avril au 12 avril inclus, l'arrêt ne sera pas desservi à Plaisance en raison de travaux de modernisation</div>
+          </div>
+          <div class="dis-card">
+            <div class="card-title">Métro 13 : Travaux - Trafic interrompu</div>
+            <div class="period">📅 28-06-2026 04:45 → 28-06-2026 12:00</div><div class="message">Le 28 juin jusqu'à 12:00, le trafic sera interrompu sur toute la ligne en raison de travaux.</div>
+          </div>
+          <div class="dis-card">
+            <div class="card-title">Métro 13 : Travaux - Trafic interrompu</div>
+            <div class="period">📅 17-05-2026 04:45 → 17-05-2026 12:00</div><div class="message">Le dimanche 17 mai ainsi que les 7 et 28 juin, jusqu'à 12 heures, le trafic est interrompu sur l'ensemble de la ligne en raison de travaux de modernisation.</div>
+          </div>
+          <div class="dis-card">
+            <div class="card-title">Métro 13 : Travaux - Trafic interrompu</div>
+            <div class="period">📅 07-06-2026 04:45 → 07-06-2026 12:00</div><div class="message">Les dimanches 7 et 28 juin, jusqu'à 12 heures, le trafic est interrompu sur l'ensemble de la ligne en raison de travaux de modernisation.</div>
+          </div>
+      </div>
+    </details>
+    </div>
+    <div class="line-row">
+      <div class="line-header">
+        <span class="badge" style="background:#62259D;color:#FFFFFF">M14</span>
+        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-14.ics" data-umami-event="subscribe-apple" data-umami-event-line="14">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-14.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="14"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
+      </div>
+      <p class="quiet">Aucune perturbation en cours.</p>
+    </div>
 
   <footer>
     Source : <a href="https://prim.iledefrance-mobilites.fr">Île-de-France Mobilités (PRIM)</a> —
     mis à jour quotidiennement via GitHub Actions —
-    <a href="https://github.com/ggrelet/travaux-metro">code source</a>
+    <a href="https://github.com/ggrelet/travaux-metro">code source</a> —
+    <span class="meta">données du 2026-04-06</span>
   </footer>
 </body>
 </html>

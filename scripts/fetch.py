@@ -412,99 +412,19 @@ def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, metro_l
     return "\n".join(lines)
 
 
+_GCAL_ICON = (
+    '<img src="https://cdn.simpleicons.org/googlecalendar/ffffff" '
+    'width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">'
+)
+
+
 def _sub_buttons(full_url: str, line: str) -> str:
     webcal_url = full_url.replace("https://", "webcal://")
     gcal_url = f"https://calendar.google.com/calendar/render?cid={webcal_url.replace('://', '%3A%2F%2F').replace('/', '%2F')}"
     return (
         f'<a class="sub-btn apple" href="{webcal_url}" data-umami-event="subscribe-apple" data-umami-event-line="{line}">Apple / iCal</a>'
-        f'<a class="sub-btn google" href="{gcal_url}" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="{line}">Google Calendar</a>'
-        f'<button class="sub-btn copy" onclick="copyUrl(\'{full_url}\', this)" data-umami-event="copy-url" data-umami-event-line="{line}">Autre (copier)</button>'
+        f'<a class="sub-btn google" href="{gcal_url}" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="{line}">{_GCAL_ICON}Google Calendar</a>'
     )
-
-
-def generate_index(line_stats: list[tuple]) -> str:
-    rows = ""
-    for line_name, filename, count in line_stats:
-        bg, fg = METRO_LINE_COLORS.get(line_name, ("#888", "#fff"))
-        full_url = f"{BASE_URL}/{filename}"
-        badge = f'<span class="badge" style="background:{bg};color:{fg}">M{line_name}</span>'
-        rows += f"""
-      <tr>
-        <td>{badge}</td>
-        <td>{count} perturbation{'s' if count > 1 else ''}</td>
-        <td>{_sub_buttons(full_url, line_name)}</td>
-      </tr>"""
-
-    all_url = f"{BASE_URL}/all.ics"
-
-    return f"""<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travaux Métro Paris — Calendrier ICS</title>
-  {FAVICON}
-  {UMAMI}
-  <style>
-    *, *::before, *::after {{ box-sizing: border-box; }}
-    body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; color: #222; line-height: 1.5; }}
-    h1 {{ margin-bottom: .25rem; }}
-    .subtitle {{ color: #555; margin-top: 0; }}
-    .badge {{ display: inline-block; padding: .15em .55em; border-radius: 4px; font-weight: 700; font-size: .9em; min-width: 2.5em; text-align: center; }}
-    .card {{ border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.25rem; margin: 1rem 0; background: #fafafa; }}
-    table {{ border-collapse: collapse; width: 100%; margin: 1rem 0; }}
-    th, td {{ border: 1px solid #e0e0e0; padding: .45rem .9rem; text-align: left; vertical-align: middle; }}
-    th {{ background: #f4f4f4; font-weight: 600; }}
-    a {{ color: #6B318C; }}
-    footer {{ margin-top: 3rem; color: #888; font-size: .85em; }}
-    .sub-btn {{ display: inline-block; cursor: pointer; border: none; border-radius: 4px; padding: .25em .7em; font-size: .85em; margin: .15rem .2rem .15rem 0; text-decoration: none; white-space: nowrap; }}
-    .sub-btn.apple {{ background: #555; color: #fff; }}
-    .sub-btn.apple:hover {{ background: #333; }}
-    .sub-btn.google {{ background: #4285F4; color: #fff; }}
-    .sub-btn.google:hover {{ background: #2b6fd4; }}
-    .sub-btn.copy {{ background: #6B318C; color: #fff; }}
-    .sub-btn.copy:hover {{ background: #552070; }}
-    .sub-btn.copied {{ background: #2e7d32 !important; }}
-  </style>
-</head>
-<script>
-function copyUrl(url, btn) {{
-  navigator.clipboard.writeText(url).then(() => {{
-    btn.textContent = 'Copié !';
-    btn.classList.add('copied');
-    setTimeout(() => {{ btn.textContent = 'Autre (copier)'; btn.classList.remove('copied'); }}, 2000);
-  }});
-}}
-</script>
-<body>
-  <h1>Travaux Métro Paris</h1>
-  <p class="subtitle">Perturbations et travaux planifiés — abonnez-vous au calendrier de votre ligne de Métro parisien.</p>
-
-  <div class="card">
-    Cliquez sur <strong>Apple / iCal</strong> ou <strong>Google Calendar</strong> pour vous abonner en un clic.
-    Le bouton <strong>Autre</strong> copie l'URL pour les autres applications (Outlook, Proton…).
-    Le calendrier se met à jour automatiquement.
-  </div>
-
-  <p><a href="overview.html">→ Aperçu visuel des perturbations</a></p>
-
-  <h2>Toutes les lignes</h2>
-  <p>{_sub_buttons(all_url, "all")}</p>
-
-  <h2>Par ligne</h2>
-  <table>
-    <thead><tr><th>Ligne</th><th>Perturbations</th><th>S'abonner</th></tr></thead>
-    <tbody>{rows}
-    </tbody>
-  </table>
-
-  <footer>
-    Source : <a href="https://prim.iledefrance-mobilites.fr">Île-de-France Mobilités (PRIM)</a> —
-    mis à jour quotidiennement via GitHub Actions —
-    <a href="https://github.com/ggrelet/travaux-metro">code source</a>
-  </footer>
-</body>
-</html>"""
 
 
 def fmt_dt(s: str) -> str:
@@ -533,116 +453,163 @@ def fmt_period_display(p: dict) -> str:
     return f"{fdt(ns)} → {fdt(ne)}"
 
 
-def generate_preview(
+def _line_disruption_html(
+    line_name: str,
+    by_line: dict,
+    dis_by_id: dict,
+    dis_to_stops: dict,
+    metro_lines: dict,
+) -> str:
+    """Return the disruption details block (accordion or quiet note) for one line."""
+    line_id = next((lid for lid, l in metro_lines.items() if l["shortName"] == line_name), None)
+    all_ids = by_line.get(line_name, set())
+    normal_ids, umbrella_ids = classify_disruptions(all_ids, dis_by_id)
+
+    all_events = []
+    for dis_id in normal_ids:
+        stops = dis_to_stops[dis_id].get(line_id, []) if line_id else []
+        all_events.extend(make_events(dis_by_id[dis_id], line_name, stops))
+    available = {(e.get("dtstart").dt, e.get("dtend").dt) for e in deduplicate_events(all_events)}
+
+    notes_html = ""
+    for dis_id in sorted(umbrella_ids):
+        d = dis_by_id[dis_id]
+        msg = strip_html(d.get("message", "") or d.get("shortMessage", ""))
+        if msg:
+            notes_html += f'<p class="note">ℹ️ {html.escape(msg)}</p>'
+
+    cards = ""
+    for dis_id in sorted(normal_ids):
+        d = dis_by_id[dis_id]
+        title = d.get("title", "").strip()
+        short = d.get("shortMessage", "").strip()
+        message = strip_html(d.get("message", ""))
+        stops = dis_to_stops[dis_id].get(line_id, []) if line_id else []
+
+        surviving = []
+        for p in d.get("applicationPeriods", []):
+            key = period_key(parse_dt(p["begin"]), parse_dt(p["end"]))
+            if key in available:
+                surviving.append(p)
+                available.discard(key)
+
+        if not surviving:
+            continue
+
+        periods_html = "".join(
+            f'<div class="period">📅 {fmt_period_display(p)}</div>'
+            for p in surviving
+        )
+        stops_html = f'<div class="stops">🚉 {", ".join(stops)}</div>' if stops else ""
+        message_html = f'<div class="message">{message}</div>' if message else ""
+
+        cards += f"""
+          <div class="dis-card">
+            <div class="card-title">{title or short or "Perturbation"}</div>
+            {periods_html}{stops_html}{message_html}
+          </div>"""
+
+    card_count = cards.count('<div class="dis-card">')
+    if card_count == 0:
+        return '<p class="quiet">Aucune perturbation en cours.</p>'
+
+    label = f"{card_count} perturbation{'s' if card_count > 1 else ''} en cours"
+    return f"""<details>
+      <summary>{label}</summary>
+      {notes_html}<div class="cards">{cards}
+      </div>
+    </details>"""
+
+
+def generate_index(
     by_line: dict,
     dis_by_id: dict,
     dis_to_stops: dict,
     metro_lines: dict,
     fetched_at: str,
 ) -> str:
-    sections = ""
-    for line_name in sorted(by_line.keys(), key=line_sort_key):
-        bg, fg = METRO_LINE_COLORS.get(line_name, ("#888", "#fff"))
-        line_id = next(lid for lid, l in metro_lines.items() if l["shortName"] == line_name)
-
-        all_ids = by_line[line_name]
-        normal_ids, umbrella_ids = classify_disruptions(all_ids, dis_by_id)
-
-        # Build available set from normal disruptions only
-        all_events = []
-        for dis_id in normal_ids:
-            all_events.extend(make_events(dis_by_id[dis_id], line_name, dis_to_stops[dis_id].get(line_id, [])))
-        available = {(e.get("dtstart").dt, e.get("dtend").dt) for e in deduplicate_events(all_events)}
-
-        # Umbrella notes
-        notes_html = ""
-        for dis_id in sorted(umbrella_ids):
-            d = dis_by_id[dis_id]
-            msg = strip_html(d.get("message", "") or d.get("shortMessage", ""))
-            if msg:
-                notes_html += f'<p class="note">ℹ️ {html.escape(msg)}</p>'
-
-        cards = ""
-        for dis_id in sorted(normal_ids):
-            d = dis_by_id[dis_id]
-            title = d.get("title", "").strip()
-            short = d.get("shortMessage", "").strip()
-            message = strip_html(d.get("message", ""))
-            stops = dis_to_stops[dis_id].get(line_id, [])
-
-            # Only show periods that survived deduplication; claim them so they
-            # don't appear again in another card for the same line
-            surviving = []
-            for p in d.get("applicationPeriods", []):
-                key = period_key(parse_dt(p["begin"]), parse_dt(p["end"]))
-                if key in available:
-                    surviving.append(p)
-                    available.discard(key)
-
-            if not surviving:
-                continue
-
-            periods_html = "".join(
-                f'<div class="period">📅 {fmt_period_display(p)}</div>'
-                for p in surviving
-            )
-            stops_html = (
-                f'<div class="stops">🚉 {", ".join(stops)}</div>' if stops else ""
-            )
-            message_html = f'<div class="message">{message}</div>' if message else ""
-
-            cards += f"""
-        <div class="card">
-          <div class="card-title">{title or short or "Perturbation"}</div>
-          {periods_html}
-          {stops_html}
-          {message_html}
-        </div>"""
-
-        card_count = cards.count('<div class="card">')
-        sections += f"""
-    <section class="line-section">
-      <h2>
-        <span class="badge" style="background:{bg};color:{fg}">M{line_name}</span>
-        Ligne {line_name}
-        <span class="count">{card_count} perturbation{'s' if card_count > 1 else '' }</span>
-      </h2>
-      {notes_html}<div class="cards">{cards}
-      </div>
-    </section>"""
-
+    all_url = f"{BASE_URL}/all.ics"
     date_str = fetched_at[:10]
+
+    line_sections = ""
+    for line_name in sorted(METRO_LINE_COLORS.keys(), key=line_sort_key):
+        bg, fg = METRO_LINE_COLORS[line_name]
+        full_url = f"{BASE_URL}/ligne-{line_name}.ics"
+        badge = f'<span class="badge" style="background:{bg};color:{fg}">M{line_name}</span>'
+        dis_html = _line_disruption_html(line_name, by_line, dis_by_id, dis_to_stops, metro_lines)
+        line_sections += f"""
+    <div class="line-row">
+      <div class="line-header">
+        {badge}
+        <div class="line-actions">{_sub_buttons(full_url, line_name)}</div>
+      </div>
+      {dis_html}
+    </div>"""
+
     return f"""<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vue d'ensemble travaux métro — {date_str}</title>
+  <title>Travaux Métro Paris — Calendrier ICS</title>
   {FAVICON}
   {UMAMI}
   <style>
     *, *::before, *::after {{ box-sizing: border-box; }}
-    body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 960px; margin: 2rem auto; padding: 0 1rem; color: #222; line-height: 1.5; background: #f7f7f7; }}
-    h1 {{ margin-bottom: .1rem; }}
-    .meta {{ color: #888; font-size: .9em; margin-bottom: 2rem; }}
-    .line-section {{ margin-bottom: 2.5rem; }}
-    .line-section h2 {{ display: flex; align-items: center; gap: .6rem; font-size: 1.1rem; margin-bottom: .75rem; }}
-    .badge {{ display: inline-block; padding: .2em .6em; border-radius: 5px; font-weight: 800; font-size: 1em; min-width: 2.4em; text-align: center; }}
-    .count {{ font-size: .8em; font-weight: 400; color: #888; }}
-    .cards {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }}
-    .card {{ background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem; }}
-    .card-title {{ font-weight: 600; margin-bottom: .5rem; }}
-    .period {{ font-size: .82em; color: #555; margin: .2rem 0; }}
-    .stops {{ font-size: .82em; color: #333; margin-top: .4rem; }}
-    .message {{ font-size: .8em; color: #666; margin-top: .5rem; border-top: 1px solid #f0f0f0; padding-top: .4rem; white-space: pre-wrap; }}
-    .note {{ font-size: .85em; color: #555; font-style: italic; margin: .25rem 0 .75rem; }}
+    body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; color: #222; line-height: 1.5; background: #f7f7f7; }}
+    h1 {{ margin-bottom: .25rem; }}
+    .subtitle {{ color: #555; margin-top: 0; margin-bottom: 1.5rem; }}
+    .meta {{ color: #888; font-size: .85em; }}
+    .intro {{ background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: .9rem 1.1rem; margin-bottom: 1.5rem; font-size: .95em; }}
+    .all-sub {{ margin-bottom: 2rem; }}
+    .all-sub h2 {{ font-size: 1rem; color: #555; font-weight: 600; margin-bottom: .4rem; }}
     a {{ color: #6B318C; }}
+    footer {{ margin-top: 3rem; color: #888; font-size: .85em; border-top: 1px solid #e8e8e8; padding-top: 1rem; }}
+    .badge {{ display: inline-block; padding: .2em .6em; border-radius: 5px; font-weight: 800; font-size: 1rem; min-width: 2.5em; text-align: center; flex-shrink: 0; }}
+    .sub-btn {{ display: inline-flex; align-items: center; cursor: pointer; border: none; border-radius: 5px; padding: .3em .8em; font-size: .82em; margin: .1rem .25rem .1rem 0; text-decoration: none; white-space: nowrap; font-family: inherit; }}
+    .sub-btn.apple {{ background: #444; color: #fff; }}
+    .sub-btn.apple:hover {{ background: #222; }}
+    .sub-btn.google {{ background: #4285F4; color: #fff; }}
+    .sub-btn.google:hover {{ background: #2b6fd4; }}
+    .line-row {{ background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: .85rem 1rem; margin-bottom: .75rem; }}
+    .line-header {{ display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }}
+    .line-actions {{ display: flex; flex-wrap: wrap; gap: .2rem; }}
+    .quiet {{ color: #aaa; font-size: .85em; margin: .5rem 0 0; }}
+    details {{ margin-top: .6rem; }}
+    details summary {{ cursor: pointer; font-size: .88em; color: #6B318C; font-weight: 600; list-style: none; display: flex; align-items: center; gap: .4rem; user-select: none; }}
+    details summary::before {{ content: "▶"; font-size: .7em; transition: transform .15s; }}
+    details[open] summary::before {{ transform: rotate(90deg); }}
+    .cards {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: .75rem; margin-top: .75rem; }}
+    .dis-card {{ background: #fafafa; border: 1px solid #e8e8e8; border-radius: 7px; padding: .8rem; }}
+    .card-title {{ font-weight: 600; font-size: .9em; margin-bottom: .4rem; }}
+    .period {{ font-size: .8em; color: #555; margin: .15rem 0; }}
+    .stops {{ font-size: .8em; color: #333; margin-top: .35rem; }}
+    .message {{ font-size: .78em; color: #666; margin-top: .45rem; border-top: 1px solid #eee; padding-top: .35rem; white-space: pre-wrap; }}
+    .note {{ font-size: .82em; color: #666; font-style: italic; margin: .5rem 0 .5rem; }}
   </style>
 </head>
 <body>
-  <h1>Vue d'ensemble — Travaux métro</h1>
-  <p class="meta">Données du {date_str} — <a href="index.html">← Retour</a></p>
-  {sections}
+  <h1>Travaux Métro Paris</h1>
+  <p class="subtitle">Perturbations et travaux planifiés — abonnez-vous au calendrier de votre ligne.</p>
+
+  <div class="intro">
+    Cliquez sur <strong>Apple / iCal</strong> ou <strong>Google Calendar</strong> pour vous abonner en un clic.
+    Le calendrier se met à jour automatiquement.
+  </div>
+
+  <div class="all-sub">
+    <h2>Toutes les lignes</h2>
+    {_sub_buttons(all_url, "all")}
+  </div>
+
+  {line_sections}
+
+  <footer>
+    Source : <a href="https://prim.iledefrance-mobilites.fr">Île-de-France Mobilités (PRIM)</a> —
+    mis à jour quotidiennement via GitHub Actions —
+    <a href="https://github.com/ggrelet/travaux-metro">code source</a> —
+    <span class="meta">données du {date_str}</span>
+  </footer>
 </body>
 </html>"""
 
@@ -754,8 +721,7 @@ def main():
 
     event_counts = {name: count for name, _, count in line_stats}
     (DATA / "summary.md").write_text(generate_summary(by_line, dis_to_stops, dis_by_id, metro_lines, fetched_at, diff, event_counts))
-    (PUBLIC / "index.html").write_text(generate_index(line_stats))
-    (PUBLIC / "overview.html").write_text(generate_preview(by_line, dis_by_id, dis_to_stops, metro_lines, fetched_at))
+    (PUBLIC / "index.html").write_text(generate_index(by_line, dis_by_id, dis_to_stops, metro_lines, fetched_at))
     print(f"Done. Generated all.ics + {len(line_stats)} line file{'s' if len(line_stats) else ''}.")
 
 
