@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travaux Métro à Paris</title>
+  <meta name="description" content="Abonnez-vous aux perturbations et travaux planifiés du métro parisien. Calendrier mis à jour automatiquement et quotidiennement pour chaque ligne.">
+  <meta name="theme-color" content="#003CA6">
+  <link rel="canonical" href="https://travauxmetro.fr/">
+  <meta property="og:title" content="Travaux Métro à Paris">
+  <meta property="og:description" content="Abonnez-vous aux perturbations et travaux planifiés du métro parisien. Calendrier mis à jour automatiquement et quotidiennement pour chaque ligne.">
+  <meta property="og:url" content="https://travauxmetro.fr/">
+  <meta property="og:type" content="website">
   <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg"><link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png"><link rel="icon" type="image/x-icon" href="/favicon/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"><link rel="manifest" href="/favicon/site.webmanifest">
   <script defer src="https://cloud.umami.is/script.js" data-website-id="ef00b128-53c5-49eb-a0e9-e4da83748a67"></script>
   <style>
@@ -34,6 +41,7 @@
     .line-row { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: .85rem 1rem; margin-bottom: .75rem; }
     .line-sep { border: none; border-top: 1px solid #f0f0f0; margin: .6rem 0 .5rem; }
     .section-note { font-size: .85em; color: #aaa; margin: -.25rem 0 .75rem; }
+    .contact-hint { font-size: .85em; color: #888; margin: 0 0 1.5rem; }
     .quiet { color: #aaa; font-size: .85em; margin: .5rem 0 0; }
     details { margin-top: .6rem; }
     details summary { cursor: pointer; font-size: .88em; color: #c0392b; font-weight: 600; list-style: none; display: flex; align-items: center; gap: .4rem; user-select: none; }
@@ -71,6 +79,8 @@
       </p>
     </details>
   </div>
+
+  <p class="contact-hint">Une question, suggestion, erreur ? → <a href="mailto:contact@travauxmetro.fr">contact@travauxmetro.fr</a></p>
 
   
   <section>
@@ -247,6 +257,7 @@
     <div>Source : <a href="https://prim.iledefrance-mobilites.fr">Île-de-France Mobilités (PRIM)</a> —
     <a href="https://github.com/ggrelet/travauxmetro.fr"><img src="/icons/github.svg" width="14" height="14" alt="GitHub" style="vertical-align:middle;margin-right:.25em;margin-bottom:2px">code source</a></div>
     <div>Dernière mise à jour des données : 2026-04-06 à 14:39</div>
+    <div><a href="mailto:contact@travauxmetro.fr">contact@travauxmetro.fr</a></div>
   </footer>
   <script>
   function copyUrl(url, btn) {
@@ -254,6 +265,7 @@
     btn.disabled = true;
     const orig = btn.innerHTML;
     btn.style.width = btn.offsetWidth + 'px';
+    btn.style.height = btn.offsetHeight + 'px';
     const done = () => {
       btn.classList.add('copied');
       btn.innerHTML = '✓ Copié !';
@@ -261,6 +273,7 @@
         btn.innerHTML = orig;
         btn.classList.remove('copied');
         btn.style.width = '';
+        btn.style.height = '';
         btn.disabled = false;
       }, 3000);
     };

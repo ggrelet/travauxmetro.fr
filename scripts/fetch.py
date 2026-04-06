@@ -549,7 +549,7 @@ def generate_index(
         if by_line.get(line_name):
             dis_html = _line_disruption_html(line_name, by_line, dis_by_id, dis_to_stops, metro_lines)
             disrupted_rows += f"""
-    <div class="line-row">
+    <div class="line-row" data-line="{line_name}">
       {badge}
       <hr class="line-sep">
       <div class="line-actions">{_sub_buttons(full_url, line_name)}</div>
@@ -587,6 +587,13 @@ def generate_index(
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travaux Métro à Paris</title>
+  <meta name="description" content="Abonnez-vous aux perturbations et travaux planifiés du métro parisien. Calendrier mis à jour automatiquement et quotidiennement pour chaque ligne.">
+  <meta name="theme-color" content="#003CA6">
+  <link rel="canonical" href="https://travauxmetro.fr/">
+  <meta property="og:title" content="Travaux Métro à Paris">
+  <meta property="og:description" content="Abonnez-vous aux perturbations et travaux planifiés du métro parisien. Calendrier mis à jour automatiquement et quotidiennement pour chaque ligne.">
+  <meta property="og:url" content="https://travauxmetro.fr/">
+  <meta property="og:type" content="website">
   {FAVICON}
   {UMAMI}
   <style>
@@ -617,6 +624,7 @@ def generate_index(
     .line-row {{ background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: .85rem 1rem; margin-bottom: .75rem; }}
     .line-sep {{ border: none; border-top: 1px solid #f0f0f0; margin: .6rem 0 .5rem; }}
     .section-note {{ font-size: .85em; color: #aaa; margin: -.25rem 0 .75rem; }}
+    .contact-hint {{ font-size: .85em; color: #888; margin: 0 0 1.5rem; }}
     .quiet {{ color: #aaa; font-size: .85em; margin: .5rem 0 0; }}
     details {{ margin-top: .6rem; }}
     details summary {{ cursor: pointer; font-size: .88em; color: #c0392b; font-weight: 600; list-style: none; display: flex; align-items: center; gap: .4rem; user-select: none; }}
@@ -655,6 +663,8 @@ def generate_index(
     </details>
   </div>
 
+  <p class="contact-hint">Une question, suggestion, erreur ? → <a href="mailto:contact@travauxmetro.fr">contact@travauxmetro.fr</a></p>
+
   {disrupted_section}
   {calm_section}
 
@@ -672,6 +682,7 @@ def generate_index(
     <div>Source : <a href="https://prim.iledefrance-mobilites.fr">Île-de-France Mobilités (PRIM)</a> —
     <a href="https://github.com/ggrelet/travauxmetro.fr"><img src="/icons/github.svg" width="14" height="14" alt="GitHub" style="vertical-align:middle;margin-right:.25em;margin-bottom:2px">code source</a></div>
     <div>Dernière mise à jour des données : {date_str} à {time_str}</div>
+    <div><a href="mailto:contact@travauxmetro.fr">contact@travauxmetro.fr</a></div>
   </footer>
   <script>
   function copyUrl(url, btn) {{
@@ -679,6 +690,7 @@ def generate_index(
     btn.disabled = true;
     const orig = btn.innerHTML;
     btn.style.width = btn.offsetWidth + 'px';
+    btn.style.height = btn.offsetHeight + 'px';
     const done = () => {{
       btn.classList.add('copied');
       btn.innerHTML = '✓ Copié !';
@@ -686,6 +698,7 @@ def generate_index(
         btn.innerHTML = orig;
         btn.classList.remove('copied');
         btn.style.width = '';
+        btn.style.height = '';
         btn.disabled = false;
       }}, 3000);
     }};
@@ -705,6 +718,15 @@ def generate_index(
       fallback();
     }}
   }}
+  document.querySelectorAll('.line-row details').forEach(d => {{
+    d.addEventListener('toggle', () => {{
+      if (d.open && typeof umami !== 'undefined') {{
+        const row = d.closest('.line-row');
+        const line = row ? row.dataset.line : 'unknown';
+        umami.track('accordion-open', {{ line }});
+      }}
+    }});
+  }});
   </script>
 </body>
 </html>"""
