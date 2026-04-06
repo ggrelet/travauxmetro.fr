@@ -2,6 +2,10 @@
 
 Source of truth for line colors. Edit the **Google Calendar** column to change the color used in `-gcal.ics` files. Use a name from the palette table below.
 
+## Calendrier toutes lignes
+
+`all.ics` uses `#003CA6` — RATP official blue.
+
 ## Mapping RATP → Google Calendar
 
 | Ligne | RATP (iCal) | Google Calendar |

@@ -3,32 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travaux Métro Paris — Calendrier ICS</title>
+  <title>Travaux Métro à Paris</title>
   <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg"><link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png"><link rel="icon" type="image/x-icon" href="/favicon/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"><link rel="manifest" href="/favicon/site.webmanifest">
   <script defer src="https://cloud.umami.is/script.js" data-website-id="ef00b128-53c5-49eb-a0e9-e4da83748a67"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; }
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; color: #222; line-height: 1.5; background: #f7f7f7; }
-    h1 { margin-bottom: .25rem; }
+    h1 { margin-bottom: .25rem; font-size: 2.8rem; }
     .subtitle { color: #555; margin-top: 0; margin-bottom: 1.5rem; }
     .meta { color: #888; font-size: .85em; }
     .intro { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: .9rem 1.1rem; margin-bottom: 1.5rem; font-size: .95em; }
-    .all-sub { margin-bottom: 2rem; }
-    .all-sub h2 { font-size: 1rem; color: #555; font-weight: 600; margin-bottom: .4rem; }
-    a { color: #6B318C; }
-    footer { margin-top: 3rem; color: #888; font-size: .85em; border-top: 1px solid #e8e8e8; padding-top: 1rem; }
-    .badge { display: inline-block; padding: .2em .6em; border-radius: 5px; font-weight: 800; font-size: 1rem; min-width: 2.5em; text-align: center; flex-shrink: 0; }
-    .sub-btn { display: inline-flex; align-items: center; cursor: pointer; border: none; border-radius: 5px; padding: .3em .8em; font-size: .82em; margin: .1rem .25rem .1rem 0; text-decoration: none; white-space: nowrap; font-family: inherit; }
-    .sub-btn.apple { background: #444; color: #fff; }
-    .sub-btn.apple:hover { background: #222; }
+    a { color: #555; }
+    footer { margin-top: 3rem; color: #888; font-size: .85em; border-top: 1px solid #e8e8e8; padding-top: 1rem; line-height: 1.8; }
+    .badge { display: inline-block; padding: .2em .6em; border-radius: 5px; font-weight: 800; font-size: 1.75rem; min-width: 2.5em; text-align: center; flex-shrink: 0; }
+    .line-actions { display: flex; align-items: stretch; gap: .4rem; flex-wrap: wrap; }
+    @media (max-width: 480px) { .line-actions { flex-direction: column; align-items: flex-start; } }
+    .sub-btn.copy { background: #888; color: #fff; }
+    .sub-btn.copy:hover { background: #666; }
+    .sub-btn.copy.copied { background: #2e7d32; justify-content: center; }
+    .sub-btn { display: inline-flex; align-items: center; cursor: pointer; border: none; border-radius: 5px; padding: .35em .85em; font-size: .82em; margin: 0; text-decoration: none; white-space: nowrap; font-family: inherit; line-height: 1; }
+    .sub-btn.webcal { background: #444; color: #fff; }
+    .sub-btn.webcal:hover { background: #222; }
+    .sub-btn.outlook { background: #0078d4; color: #fff; }
+    .sub-btn.outlook:hover { background: #005fa3; }
+    .sub-btn.o365 { background: #D83B01; color: #fff; }
+    .sub-btn.o365:hover { background: #b03000; }
     .sub-btn.google { background: #4285F4; color: #fff; }
     .sub-btn.google:hover { background: #2b6fd4; }
+    .section-title { font-size: 1.6rem; font-weight: 700; color: #333; text-transform: uppercase; letter-spacing: .06em; margin: 1.5rem 0 .75rem; }
     .line-row { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: .85rem 1rem; margin-bottom: .75rem; }
-    .line-header { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
-    .line-actions { display: flex; flex-wrap: wrap; gap: .2rem; }
+    .line-sep { border: none; border-top: 1px solid #f0f0f0; margin: .6rem 0 .5rem; }
+    .section-note { font-size: .85em; color: #aaa; margin: -.25rem 0 .75rem; }
     .quiet { color: #aaa; font-size: .85em; margin: .5rem 0 0; }
     details { margin-top: .6rem; }
-    details summary { cursor: pointer; font-size: .88em; color: #6B318C; font-weight: 600; list-style: none; display: flex; align-items: center; gap: .4rem; user-select: none; }
+    details summary { cursor: pointer; font-size: .88em; color: #c0392b; font-weight: 600; list-style: none; display: flex; align-items: center; gap: .4rem; user-select: none; }
     details summary::before { content: "▶"; font-size: .7em; transition: transform .15s; }
     details[open] summary::before { transform: rotate(90deg); }
     .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: .75rem; margin-top: .75rem; }
@@ -38,42 +46,40 @@
     .stops { font-size: .8em; color: #333; margin-top: .35rem; }
     .message { font-size: .78em; color: #666; margin-top: .45rem; border-top: 1px solid #eee; padding-top: .35rem; white-space: pre-wrap; }
     .note { font-size: .82em; color: #666; font-style: italic; margin: .5rem 0 .5rem; }
+    .all-badges { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 0; }
+    .all-badges .badge { font-size: .75rem; padding: .15em .5em; }
+    section { margin-bottom: 2.5rem; }
+    @keyframes redglow { 0%, 100% { color: #8b1a1a; } 50% { color: #e53935; } }
+    .line-row details summary { font-size: 1rem; animation: redglow 3s ease-in-out infinite; }
+    @keyframes fadein { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
+    details[open] .cards, details[open] .note { animation: fadein .5s ease; }
   </style>
 </head>
 <body>
-  <h1>Travaux Métro Paris</h1>
-  <p class="subtitle">Perturbations et travaux planifiés — abonnez-vous au calendrier de votre ligne.</p>
+  <h1>Travaux Métro</h1>
+  <p class="subtitle">Perturbations et travaux planifiés par Île-de-France Mobilités.</br>Abonnez-vous au calendrier d'interruptions de votre ligne de métro parisien.</p>
 
   <div class="intro">
-    Cliquez sur <strong>Apple / iCal</strong> ou <strong>Google Calendar</strong> pour vous abonner en un clic.
-    Le calendrier se met à jour automatiquement.
-  </div>
-
-  <div class="all-sub">
-    <h2>Toutes les lignes</h2>
-    <a class="sub-btn apple" href="webcal://travauxmetro.fr/all.ics" data-umami-event="subscribe-apple" data-umami-event-line="all">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fall.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="all"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a>
+    Cliquez sur <strong>le fournisseur de calendrier de votre choix</strong> pour vous abonner en un clic.</br>
+    Le calendrier se met à jour <strong>automatiquement</strong>.
+    <details style="margin-top:.6rem">
+      <summary style="color:#888;font-weight:500">Comment ça marche ?</summary>
+      <p style="margin:.5rem 0 0;font-size:.88em;color:#555">
+        Un abonnement <a href="https://fr.wikipedia.org/wiki/ICalendar" target="_blank" rel="noopener" style="color:#555">iCalendar (aussi abrégé iCal)</a> est un calendrier en lecture seule hébergé sur Internet que votre application de calendrier récupère à intervale régulier.
+        Les événements apparaissent directement dans votre agenda, sans compte supplémentaire à créer.
+        Dès que de nouvelles perturbations sont prévues et publiées par Île-de-France Mobilités, elles se synchronisent automatiquement.
+      </p>
+    </details>
   </div>
 
   
+  <section>
+    <h2 class="section-title">Lignes perturbées</h2>
+    
     <div class="line-row">
-      <div class="line-header">
-        <span class="badge" style="background:#FFCD00;color:#000000">M1</span>
-        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-1.ics" data-umami-event="subscribe-apple" data-umami-event-line="1">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-1.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="1"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
-      </div>
-      <p class="quiet">Aucune perturbation en cours.</p>
-    </div>
-    <div class="line-row">
-      <div class="line-header">
-        <span class="badge" style="background:#003CA6;color:#FFFFFF">M2</span>
-        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-2.ics" data-umami-event="subscribe-apple" data-umami-event-line="2">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-2.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="2"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
-      </div>
-      <p class="quiet">Aucune perturbation en cours.</p>
-    </div>
-    <div class="line-row">
-      <div class="line-header">
-        <span class="badge" style="background:#837902;color:#FFFFFF">M3</span>
-        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-3.ics" data-umami-event="subscribe-apple" data-umami-event-line="3">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-3.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="3"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
-      </div>
+      <span class="badge" style="background:#837902;color:#FFFFFF">M3</span>
+      <hr class="line-sep">
+      <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-3.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="3"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/ligne-3.ics" data-umami-event="subscribe-webcal" data-umami-event-line="3"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-3.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="3"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-3.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="3"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-3.ics',this)" data-umami-event="copy-url" data-umami-event-line="3"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
       <details>
       <summary>1 perturbation en cours</summary>
       <div class="cards">
@@ -85,10 +91,9 @@
     </details>
     </div>
     <div class="line-row">
-      <div class="line-header">
-        <span class="badge" style="background:#6EC4E8;color:#000000">M3B</span>
-        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-3B.ics" data-umami-event="subscribe-apple" data-umami-event-line="3B">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-3B.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="3B"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
-      </div>
+      <span class="badge" style="background:#6EC4E8;color:#000000">M3B</span>
+      <hr class="line-sep">
+      <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-3B.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="3B"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/ligne-3B.ics" data-umami-event="subscribe-webcal" data-umami-event-line="3B"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-3B.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="3B"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-3B.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="3B"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-3B.ics',this)" data-umami-event="copy-url" data-umami-event-line="3B"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
       <details>
       <summary>2 perturbations en cours</summary>
       <div class="cards">
@@ -104,10 +109,9 @@
     </details>
     </div>
     <div class="line-row">
-      <div class="line-header">
-        <span class="badge" style="background:#CF009E;color:#FFFFFF">M4</span>
-        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-4.ics" data-umami-event="subscribe-apple" data-umami-event-line="4">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-4.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="4"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
-      </div>
+      <span class="badge" style="background:#CF009E;color:#FFFFFF">M4</span>
+      <hr class="line-sep">
+      <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-4.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="4"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/ligne-4.ics" data-umami-event="subscribe-webcal" data-umami-event-line="4"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-4.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="4"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-4.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="4"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-4.ics',this)" data-umami-event="copy-url" data-umami-event-line="4"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
       <details>
       <summary>1 perturbation en cours</summary>
       <div class="cards">
@@ -119,66 +123,9 @@
     </details>
     </div>
     <div class="line-row">
-      <div class="line-header">
-        <span class="badge" style="background:#FF7E2E;color:#000000">M5</span>
-        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-5.ics" data-umami-event="subscribe-apple" data-umami-event-line="5">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-5.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="5"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
-      </div>
-      <p class="quiet">Aucune perturbation en cours.</p>
-    </div>
-    <div class="line-row">
-      <div class="line-header">
-        <span class="badge" style="background:#6ECA97;color:#000000">M6</span>
-        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-6.ics" data-umami-event="subscribe-apple" data-umami-event-line="6">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-6.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="6"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
-      </div>
-      <p class="quiet">Aucune perturbation en cours.</p>
-    </div>
-    <div class="line-row">
-      <div class="line-header">
-        <span class="badge" style="background:#FA9ABA;color:#000000">M7</span>
-        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-7.ics" data-umami-event="subscribe-apple" data-umami-event-line="7">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-7.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="7"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
-      </div>
-      <p class="quiet">Aucune perturbation en cours.</p>
-    </div>
-    <div class="line-row">
-      <div class="line-header">
-        <span class="badge" style="background:#83C491;color:#000000">M7B</span>
-        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-7B.ics" data-umami-event="subscribe-apple" data-umami-event-line="7B">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-7B.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="7B"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
-      </div>
-      <p class="quiet">Aucune perturbation en cours.</p>
-    </div>
-    <div class="line-row">
-      <div class="line-header">
-        <span class="badge" style="background:#E19BDF;color:#000000">M8</span>
-        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-8.ics" data-umami-event="subscribe-apple" data-umami-event-line="8">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-8.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="8"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
-      </div>
-      <p class="quiet">Aucune perturbation en cours.</p>
-    </div>
-    <div class="line-row">
-      <div class="line-header">
-        <span class="badge" style="background:#B6BD00;color:#000000">M9</span>
-        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-9.ics" data-umami-event="subscribe-apple" data-umami-event-line="9">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-9.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="9"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
-      </div>
-      <p class="quiet">Aucune perturbation en cours.</p>
-    </div>
-    <div class="line-row">
-      <div class="line-header">
-        <span class="badge" style="background:#C9910D;color:#000000">M10</span>
-        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-10.ics" data-umami-event="subscribe-apple" data-umami-event-line="10">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-10.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="10"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
-      </div>
-      <p class="quiet">Aucune perturbation en cours.</p>
-    </div>
-    <div class="line-row">
-      <div class="line-header">
-        <span class="badge" style="background:#704B1C;color:#FFFFFF">M11</span>
-        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-11.ics" data-umami-event="subscribe-apple" data-umami-event-line="11">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-11.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="11"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
-      </div>
-      <p class="quiet">Aucune perturbation en cours.</p>
-    </div>
-    <div class="line-row">
-      <div class="line-header">
-        <span class="badge" style="background:#007852;color:#FFFFFF">M12</span>
-        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-12.ics" data-umami-event="subscribe-apple" data-umami-event-line="12">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-12.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="12"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
-      </div>
+      <span class="badge" style="background:#007852;color:#FFFFFF">M12</span>
+      <hr class="line-sep">
+      <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-12.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="12"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/ligne-12.ics" data-umami-event="subscribe-webcal" data-umami-event-line="12"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-12.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="12"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-12.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="12"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-12.ics',this)" data-umami-event="copy-url" data-umami-event-line="12"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
       <details>
       <summary>2 perturbations en cours</summary>
       <p class="note">ℹ️ Jusqu&#x27;au 12 avril, dès 22:00, tous les dimanches et certains mercredis et jeudis le trafic est interrompu sur toute la ligne en raison de travaux de modernisation. Détails et calendrier complet sur RATP.fr.</p><div class="cards">
@@ -194,10 +141,9 @@
     </details>
     </div>
     <div class="line-row">
-      <div class="line-header">
-        <span class="badge" style="background:#98D4E2;color:#000000">M13</span>
-        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-13.ics" data-umami-event="subscribe-apple" data-umami-event-line="13">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-13.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="13"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
-      </div>
+      <span class="badge" style="background:#98D4E2;color:#000000">M13</span>
+      <hr class="line-sep">
+      <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-13.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="13"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/ligne-13.ics" data-umami-event="subscribe-webcal" data-umami-event-line="13"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-13.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="13"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-13.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="13"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-13.ics',this)" data-umami-event="copy-url" data-umami-event-line="13"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
       <details>
       <summary>5 perturbations en cours</summary>
       <div class="cards">
@@ -224,19 +170,116 @@
       </div>
     </details>
     </div>
+  </section>
+  
+  <section>
+    <h2 class="section-title">Autres lignes</h2>
+    <p class="section-note">Aucune perturbation en cours sur ces lignes. Abonnez-vous pour être notifié automatiquement si cela change.</p>
+    
     <div class="line-row">
-      <div class="line-header">
-        <span class="badge" style="background:#62259D;color:#FFFFFF">M14</span>
-        <div class="line-actions"><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-14.ics" data-umami-event="subscribe-apple" data-umami-event-line="14">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-14.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="14"><img src="https://cdn.simpleicons.org/googlecalendar/ffffff" width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">Google Calendar</a></div>
-      </div>
-      <p class="quiet">Aucune perturbation en cours.</p>
+      <span class="badge" style="background:#FFCD00;color:#000000">M1</span>
+      <hr class="line-sep">
+      <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-1.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="1"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/ligne-1.ics" data-umami-event="subscribe-webcal" data-umami-event-line="1"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-1.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="1"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-1.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="1"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-1.ics',this)" data-umami-event="copy-url" data-umami-event-line="1"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
     </div>
+    <div class="line-row">
+      <span class="badge" style="background:#003CA6;color:#FFFFFF">M2</span>
+      <hr class="line-sep">
+      <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-2.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="2"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/ligne-2.ics" data-umami-event="subscribe-webcal" data-umami-event-line="2"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-2.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="2"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-2.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="2"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-2.ics',this)" data-umami-event="copy-url" data-umami-event-line="2"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
+    </div>
+    <div class="line-row">
+      <span class="badge" style="background:#FF7E2E;color:#000000">M5</span>
+      <hr class="line-sep">
+      <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-5.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="5"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/ligne-5.ics" data-umami-event="subscribe-webcal" data-umami-event-line="5"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-5.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="5"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-5.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="5"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-5.ics',this)" data-umami-event="copy-url" data-umami-event-line="5"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
+    </div>
+    <div class="line-row">
+      <span class="badge" style="background:#6ECA97;color:#000000">M6</span>
+      <hr class="line-sep">
+      <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-6.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="6"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/ligne-6.ics" data-umami-event="subscribe-webcal" data-umami-event-line="6"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-6.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="6"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-6.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="6"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-6.ics',this)" data-umami-event="copy-url" data-umami-event-line="6"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
+    </div>
+    <div class="line-row">
+      <span class="badge" style="background:#FA9ABA;color:#000000">M7</span>
+      <hr class="line-sep">
+      <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-7.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="7"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/ligne-7.ics" data-umami-event="subscribe-webcal" data-umami-event-line="7"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-7.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="7"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-7.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="7"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-7.ics',this)" data-umami-event="copy-url" data-umami-event-line="7"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
+    </div>
+    <div class="line-row">
+      <span class="badge" style="background:#83C491;color:#000000">M7B</span>
+      <hr class="line-sep">
+      <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-7B.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="7B"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/ligne-7B.ics" data-umami-event="subscribe-webcal" data-umami-event-line="7B"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-7B.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="7B"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-7B.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="7B"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-7B.ics',this)" data-umami-event="copy-url" data-umami-event-line="7B"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
+    </div>
+    <div class="line-row">
+      <span class="badge" style="background:#E19BDF;color:#000000">M8</span>
+      <hr class="line-sep">
+      <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-8.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="8"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/ligne-8.ics" data-umami-event="subscribe-webcal" data-umami-event-line="8"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-8.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="8"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-8.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="8"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-8.ics',this)" data-umami-event="copy-url" data-umami-event-line="8"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
+    </div>
+    <div class="line-row">
+      <span class="badge" style="background:#B6BD00;color:#000000">M9</span>
+      <hr class="line-sep">
+      <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-9.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="9"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/ligne-9.ics" data-umami-event="subscribe-webcal" data-umami-event-line="9"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-9.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="9"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-9.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="9"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-9.ics',this)" data-umami-event="copy-url" data-umami-event-line="9"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
+    </div>
+    <div class="line-row">
+      <span class="badge" style="background:#C9910D;color:#000000">M10</span>
+      <hr class="line-sep">
+      <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-10.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="10"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/ligne-10.ics" data-umami-event="subscribe-webcal" data-umami-event-line="10"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-10.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="10"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-10.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="10"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-10.ics',this)" data-umami-event="copy-url" data-umami-event-line="10"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
+    </div>
+    <div class="line-row">
+      <span class="badge" style="background:#704B1C;color:#FFFFFF">M11</span>
+      <hr class="line-sep">
+      <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-11.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="11"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/ligne-11.ics" data-umami-event="subscribe-webcal" data-umami-event-line="11"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-11.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="11"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-11.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="11"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-11.ics',this)" data-umami-event="copy-url" data-umami-event-line="11"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
+    </div>
+    <div class="line-row">
+      <span class="badge" style="background:#62259D;color:#FFFFFF">M14</span>
+      <hr class="line-sep">
+      <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-14.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="14"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/ligne-14.ics" data-umami-event="subscribe-webcal" data-umami-event-line="14"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-14.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="14"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-14.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="14"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-14.ics',this)" data-umami-event="copy-url" data-umami-event-line="14"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Toutes les lignes</h2>
+    <p class="section-note">Un seul abonnement pour suivre toutes les perturbations du réseau en même temps.</p>
+    <div class="line-row">
+      <div class="all-badges"><span class="badge" style="background:#FFCD00;color:#000000">M1</span> <span class="badge" style="background:#003CA6;color:#FFFFFF">M2</span> <span class="badge" style="background:#837902;color:#FFFFFF">M3</span> <span class="badge" style="background:#6EC4E8;color:#000000">M3B</span> <span class="badge" style="background:#CF009E;color:#FFFFFF">M4</span> <span class="badge" style="background:#FF7E2E;color:#000000">M5</span> <span class="badge" style="background:#6ECA97;color:#000000">M6</span> <span class="badge" style="background:#FA9ABA;color:#000000">M7</span> <span class="badge" style="background:#83C491;color:#000000">M7B</span> <span class="badge" style="background:#E19BDF;color:#000000">M8</span> <span class="badge" style="background:#B6BD00;color:#000000">M9</span> <span class="badge" style="background:#C9910D;color:#000000">M10</span> <span class="badge" style="background:#704B1C;color:#FFFFFF">M11</span> <span class="badge" style="background:#007852;color:#FFFFFF">M12</span> <span class="badge" style="background:#98D4E2;color:#000000">M13</span> <span class="badge" style="background:#62259D;color:#FFFFFF">M14</span></div>
+      <hr class="line-sep">
+      <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fall.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="all"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/all.ics" data-umami-event="subscribe-webcal" data-umami-event-line="all"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fall.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="all"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fall.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="all"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/all.ics',this)" data-umami-event="copy-url" data-umami-event-line="all"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
+    </div>
+  </section>
 
   <footer>
-    Source : <a href="https://prim.iledefrance-mobilites.fr">Île-de-France Mobilités (PRIM)</a> —
-    mis à jour quotidiennement via GitHub Actions —
-    <a href="https://github.com/ggrelet/travaux-metro">code source</a> —
-    <span class="meta">données du 2026-04-06</span>
+    <div>Source : <a href="https://prim.iledefrance-mobilites.fr">Île-de-France Mobilités (PRIM)</a> —
+    <a href="https://github.com/ggrelet/travauxmetro.fr"><img src="/icons/github.svg" width="14" height="14" alt="GitHub" style="vertical-align:middle;margin-right:.25em;margin-bottom:2px">code source</a></div>
+    <div>Dernière mise à jour des données : 2026-04-06 à 14:39</div>
   </footer>
+  <script>
+  function copyUrl(url, btn) {
+    if (btn.disabled) return;
+    btn.disabled = true;
+    const orig = btn.innerHTML;
+    btn.style.width = btn.offsetWidth + 'px';
+    const done = () => {
+      btn.classList.add('copied');
+      btn.innerHTML = '✓ Copié !';
+      setTimeout(() => {
+        btn.innerHTML = orig;
+        btn.classList.remove('copied');
+        btn.style.width = '';
+        btn.disabled = false;
+      }, 3000);
+    };
+    const fallback = () => {
+      const ta = Object.assign(document.createElement('textarea'), {
+        value: url, style: 'position:fixed;opacity:0'
+      });
+      document.body.appendChild(ta);
+      ta.focus(); ta.select();
+      try { document.execCommand('copy'); } catch(e) {}
+      document.body.removeChild(ta);
+      done();
+    };
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(url).then(done).catch(fallback);
+    } else {
+      fallback();
+    }
+  }
+  </script>
 </body>
 </html>

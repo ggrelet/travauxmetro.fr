@@ -412,18 +412,25 @@ def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, metro_l
     return "\n".join(lines)
 
 
-_GCAL_ICON = (
-    '<img src="https://cdn.simpleicons.org/googlecalendar/ffffff" '
-    'width="13" height="13" alt="" style="vertical-align:middle;margin-right:.3em;margin-bottom:1px">'
-)
+_WEBCAL_ICON = '<img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">'
+_GCAL_ICON = '<img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">'
+_OUTLOOK_ICON = '<img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">'
+_O365_ICON = '<img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">'
+_COPY_ICON = '<img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">'
 
 
 def _sub_buttons(full_url: str, line: str) -> str:
     webcal_url = full_url.replace("https://", "webcal://")
+    encoded_https = full_url.replace("://", "%3A%2F%2F").replace("/", "%2F")
     gcal_url = f"https://calendar.google.com/calendar/render?cid={webcal_url.replace('://', '%3A%2F%2F').replace('/', '%2F')}"
+    outlook_url = f"https://outlook.live.com/calendar/0/addfromweb?url={encoded_https}"
+    o365_url = f"https://outlook.office.com/calendar/addfromweb?url={encoded_https}"
     return (
-        f'<a class="sub-btn apple" href="{webcal_url}" data-umami-event="subscribe-apple" data-umami-event-line="{line}">Apple / iCal</a>'
         f'<a class="sub-btn google" href="{gcal_url}" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="{line}">{_GCAL_ICON}Google Calendar</a>'
+        f'<a class="sub-btn webcal" href="{webcal_url}" data-umami-event="subscribe-webcal" data-umami-event-line="{line}">{_WEBCAL_ICON}iCal / webcal</a>'
+        f'<a class="sub-btn outlook" href="{outlook_url}" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="{line}">{_OUTLOOK_ICON}Outlook</a>'
+        f'<a class="sub-btn o365" href="{o365_url}" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="{line}">{_O365_ICON}Office 365</a>'
+        f'<button class="sub-btn copy" onclick="copyUrl(\'{full_url}\',this)" data-umami-event="copy-url" data-umami-event-line="{line}">{_COPY_ICON}Copier le lien</button>'
     )
 
 
@@ -511,7 +518,7 @@ def _line_disruption_html(
 
     card_count = cards.count('<div class="dis-card">')
     if card_count == 0:
-        return '<p class="quiet">Aucune perturbation en cours.</p>'
+        return '<p class="quiet">Aucune perturbation en cours, mais cela pourrait arriver dans le futur. Abonnez-vous pour ne pas les manquer.</p>'
 
     label = f"{card_count} perturbation{'s' if card_count > 1 else ''} en cours"
     return f"""<details>
@@ -530,53 +537,89 @@ def generate_index(
 ) -> str:
     all_url = f"{BASE_URL}/all.ics"
     date_str = fetched_at[:10]
+    fetched_dt = datetime.fromisoformat(fetched_at).astimezone(PARIS_TZ)
+    time_str = fetched_dt.strftime("%H:%M")
 
-    line_sections = ""
+    disrupted_rows = ""
+    calm_rows = ""
     for line_name in sorted(METRO_LINE_COLORS.keys(), key=line_sort_key):
         bg, fg = METRO_LINE_COLORS[line_name]
         full_url = f"{BASE_URL}/ligne-{line_name}.ics"
         badge = f'<span class="badge" style="background:{bg};color:{fg}">M{line_name}</span>'
-        dis_html = _line_disruption_html(line_name, by_line, dis_by_id, dis_to_stops, metro_lines)
-        line_sections += f"""
+        if by_line.get(line_name):
+            dis_html = _line_disruption_html(line_name, by_line, dis_by_id, dis_to_stops, metro_lines)
+            disrupted_rows += f"""
     <div class="line-row">
-      <div class="line-header">
-        {badge}
-        <div class="line-actions">{_sub_buttons(full_url, line_name)}</div>
-      </div>
+      {badge}
+      <hr class="line-sep">
+      <div class="line-actions">{_sub_buttons(full_url, line_name)}</div>
       {dis_html}
     </div>"""
+        else:
+            calm_rows += f"""
+    <div class="line-row">
+      {badge}
+      <hr class="line-sep">
+      <div class="line-actions">{_sub_buttons(full_url, line_name)}</div>
+    </div>"""
+
+    all_badges = " ".join(
+        f'<span class="badge" style="background:{bg};color:{fg}">M{n}</span>'
+        for n, (bg, fg) in sorted(METRO_LINE_COLORS.items(), key=lambda x: line_sort_key(x[0]))
+    )
+
+    disrupted_section = f"""
+  <section>
+    <h2 class="section-title">Lignes perturbées</h2>
+    {disrupted_rows}
+  </section>""" if disrupted_rows else '<p class="quiet" style="margin-bottom:1.5rem">Aucune perturbation en cours sur le réseau.</p>'
+
+    calm_section = f"""
+  <section>
+    <h2 class="section-title">Autres lignes</h2>
+    <p class="section-note">Aucune perturbation en cours sur ces lignes. Abonnez-vous pour être notifié automatiquement si cela change.</p>
+    {calm_rows}
+  </section>""" if calm_rows else ""
 
     return f"""<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travaux Métro Paris — Calendrier ICS</title>
+  <title>Travaux Métro à Paris</title>
   {FAVICON}
   {UMAMI}
   <style>
     *, *::before, *::after {{ box-sizing: border-box; }}
     body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; color: #222; line-height: 1.5; background: #f7f7f7; }}
-    h1 {{ margin-bottom: .25rem; }}
+    h1 {{ margin-bottom: .25rem; font-size: 2.8rem; }}
     .subtitle {{ color: #555; margin-top: 0; margin-bottom: 1.5rem; }}
     .meta {{ color: #888; font-size: .85em; }}
     .intro {{ background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: .9rem 1.1rem; margin-bottom: 1.5rem; font-size: .95em; }}
-    .all-sub {{ margin-bottom: 2rem; }}
-    .all-sub h2 {{ font-size: 1rem; color: #555; font-weight: 600; margin-bottom: .4rem; }}
-    a {{ color: #6B318C; }}
-    footer {{ margin-top: 3rem; color: #888; font-size: .85em; border-top: 1px solid #e8e8e8; padding-top: 1rem; }}
-    .badge {{ display: inline-block; padding: .2em .6em; border-radius: 5px; font-weight: 800; font-size: 1rem; min-width: 2.5em; text-align: center; flex-shrink: 0; }}
-    .sub-btn {{ display: inline-flex; align-items: center; cursor: pointer; border: none; border-radius: 5px; padding: .3em .8em; font-size: .82em; margin: .1rem .25rem .1rem 0; text-decoration: none; white-space: nowrap; font-family: inherit; }}
-    .sub-btn.apple {{ background: #444; color: #fff; }}
-    .sub-btn.apple:hover {{ background: #222; }}
+    a {{ color: #555; }}
+    footer {{ margin-top: 3rem; color: #888; font-size: .85em; border-top: 1px solid #e8e8e8; padding-top: 1rem; line-height: 1.8; }}
+    .badge {{ display: inline-block; padding: .2em .6em; border-radius: 5px; font-weight: 800; font-size: 1.75rem; min-width: 2.5em; text-align: center; flex-shrink: 0; }}
+    .line-actions {{ display: flex; align-items: stretch; gap: .4rem; flex-wrap: wrap; }}
+    @media (max-width: 480px) {{ .line-actions {{ flex-direction: column; align-items: flex-start; }} }}
+    .sub-btn.copy {{ background: #888; color: #fff; }}
+    .sub-btn.copy:hover {{ background: #666; }}
+    .sub-btn.copy.copied {{ background: #2e7d32; justify-content: center; }}
+    .sub-btn {{ display: inline-flex; align-items: center; cursor: pointer; border: none; border-radius: 5px; padding: .35em .85em; font-size: .82em; margin: 0; text-decoration: none; white-space: nowrap; font-family: inherit; line-height: 1; }}
+    .sub-btn.webcal {{ background: #444; color: #fff; }}
+    .sub-btn.webcal:hover {{ background: #222; }}
+    .sub-btn.outlook {{ background: #0078d4; color: #fff; }}
+    .sub-btn.outlook:hover {{ background: #005fa3; }}
+    .sub-btn.o365 {{ background: #D83B01; color: #fff; }}
+    .sub-btn.o365:hover {{ background: #b03000; }}
     .sub-btn.google {{ background: #4285F4; color: #fff; }}
     .sub-btn.google:hover {{ background: #2b6fd4; }}
+    .section-title {{ font-size: 1.6rem; font-weight: 700; color: #333; text-transform: uppercase; letter-spacing: .06em; margin: 1.5rem 0 .75rem; }}
     .line-row {{ background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: .85rem 1rem; margin-bottom: .75rem; }}
-    .line-header {{ display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }}
-    .line-actions {{ display: flex; flex-wrap: wrap; gap: .2rem; }}
+    .line-sep {{ border: none; border-top: 1px solid #f0f0f0; margin: .6rem 0 .5rem; }}
+    .section-note {{ font-size: .85em; color: #aaa; margin: -.25rem 0 .75rem; }}
     .quiet {{ color: #aaa; font-size: .85em; margin: .5rem 0 0; }}
     details {{ margin-top: .6rem; }}
-    details summary {{ cursor: pointer; font-size: .88em; color: #6B318C; font-weight: 600; list-style: none; display: flex; align-items: center; gap: .4rem; user-select: none; }}
+    details summary {{ cursor: pointer; font-size: .88em; color: #c0392b; font-weight: 600; list-style: none; display: flex; align-items: center; gap: .4rem; user-select: none; }}
     details summary::before {{ content: "▶"; font-size: .7em; transition: transform .15s; }}
     details[open] summary::before {{ transform: rotate(90deg); }}
     .cards {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: .75rem; margin-top: .75rem; }}
@@ -586,30 +629,83 @@ def generate_index(
     .stops {{ font-size: .8em; color: #333; margin-top: .35rem; }}
     .message {{ font-size: .78em; color: #666; margin-top: .45rem; border-top: 1px solid #eee; padding-top: .35rem; white-space: pre-wrap; }}
     .note {{ font-size: .82em; color: #666; font-style: italic; margin: .5rem 0 .5rem; }}
+    .all-badges {{ display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 0; }}
+    .all-badges .badge {{ font-size: .75rem; padding: .15em .5em; }}
+    section {{ margin-bottom: 2.5rem; }}
+    @keyframes redglow {{ 0%, 100% {{ color: #8b1a1a; }} 50% {{ color: #e53935; }} }}
+    .line-row details summary {{ font-size: 1rem; animation: redglow 3s ease-in-out infinite; }}
+    @keyframes fadein {{ from {{ opacity: 0; transform: translateY(-6px); }} to {{ opacity: 1; transform: translateY(0); }} }}
+    details[open] .cards, details[open] .note {{ animation: fadein .5s ease; }}
   </style>
 </head>
 <body>
-  <h1>Travaux Métro Paris</h1>
-  <p class="subtitle">Perturbations et travaux planifiés — abonnez-vous au calendrier de votre ligne.</p>
+  <h1>Travaux Métro</h1>
+  <p class="subtitle">Perturbations et travaux planifiés par Île-de-France Mobilités.</br>Abonnez-vous au calendrier d'interruptions de votre ligne de métro parisien.</p>
 
   <div class="intro">
-    Cliquez sur <strong>Apple / iCal</strong> ou <strong>Google Calendar</strong> pour vous abonner en un clic.
-    Le calendrier se met à jour automatiquement.
+    Cliquez sur <strong>le fournisseur de calendrier de votre choix</strong> pour vous abonner en un clic.</br>
+    Le calendrier se met à jour <strong>automatiquement</strong>.
+    <details style="margin-top:.6rem">
+      <summary style="color:#888;font-weight:500">Comment ça marche ?</summary>
+      <p style="margin:.5rem 0 0;font-size:.88em;color:#555">
+        Un abonnement <a href="https://fr.wikipedia.org/wiki/ICalendar" target="_blank" rel="noopener" style="color:#555">iCalendar (aussi abrégé iCal)</a> est un calendrier en lecture seule hébergé sur Internet que votre application de calendrier récupère à intervale régulier.
+        Les événements apparaissent directement dans votre agenda, sans compte supplémentaire à créer.
+        Dès que de nouvelles perturbations sont prévues et publiées par Île-de-France Mobilités, elles se synchronisent automatiquement.
+      </p>
+    </details>
   </div>
 
-  <div class="all-sub">
-    <h2>Toutes les lignes</h2>
-    {_sub_buttons(all_url, "all")}
-  </div>
+  {disrupted_section}
+  {calm_section}
 
-  {line_sections}
+  <section>
+    <h2 class="section-title">Toutes les lignes</h2>
+    <p class="section-note">Un seul abonnement pour suivre toutes les perturbations du réseau en même temps.</p>
+    <div class="line-row">
+      <div class="all-badges">{all_badges}</div>
+      <hr class="line-sep">
+      <div class="line-actions">{_sub_buttons(all_url, "all")}</div>
+    </div>
+  </section>
 
   <footer>
-    Source : <a href="https://prim.iledefrance-mobilites.fr">Île-de-France Mobilités (PRIM)</a> —
-    mis à jour quotidiennement via GitHub Actions —
-    <a href="https://github.com/ggrelet/travaux-metro">code source</a> —
-    <span class="meta">données du {date_str}</span>
+    <div>Source : <a href="https://prim.iledefrance-mobilites.fr">Île-de-France Mobilités (PRIM)</a> —
+    <a href="https://github.com/ggrelet/travauxmetro.fr"><img src="/icons/github.svg" width="14" height="14" alt="GitHub" style="vertical-align:middle;margin-right:.25em;margin-bottom:2px">code source</a></div>
+    <div>Dernière mise à jour des données : {date_str} à {time_str}</div>
   </footer>
+  <script>
+  function copyUrl(url, btn) {{
+    if (btn.disabled) return;
+    btn.disabled = true;
+    const orig = btn.innerHTML;
+    btn.style.width = btn.offsetWidth + 'px';
+    const done = () => {{
+      btn.classList.add('copied');
+      btn.innerHTML = '✓ Copié !';
+      setTimeout(() => {{
+        btn.innerHTML = orig;
+        btn.classList.remove('copied');
+        btn.style.width = '';
+        btn.disabled = false;
+      }}, 3000);
+    }};
+    const fallback = () => {{
+      const ta = Object.assign(document.createElement('textarea'), {{
+        value: url, style: 'position:fixed;opacity:0'
+      }});
+      document.body.appendChild(ta);
+      ta.focus(); ta.select();
+      try {{ document.execCommand('copy'); }} catch(e) {{}}
+      document.body.removeChild(ta);
+      done();
+    }};
+    if (navigator.clipboard) {{
+      navigator.clipboard.writeText(url).then(done).catch(fallback);
+    }} else {{
+      fallback();
+    }}
+  }}
+  </script>
 </body>
 </html>"""
 
@@ -679,7 +775,7 @@ def main():
     PUBLIC.mkdir(exist_ok=True)
     all_cal = make_calendar(
         "Paris Métro — Travaux",
-        "#6B318C",
+        "#003CA6",
         "Perturbations et travaux planifiés sur toutes les lignes du métro parisien. "
         "Mis à jour quotidiennement depuis les données Île-de-France Mobilités. "
         "travauxmetro.fr",
