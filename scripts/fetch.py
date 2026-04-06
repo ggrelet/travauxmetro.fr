@@ -156,7 +156,7 @@ def make_events(disruption: dict, line_name: str, stops: list[str]) -> list[Even
 
     desc_parts = [f"Ligne {line_name}"]
     if stops:
-        desc_parts.append(f"Stations : {', '.join(stops)}")
+        desc_parts.append(f"Station{'s' if len(stops) > 1 else ''} : {', '.join(stops)}")
     if short:
         desc_parts.append(short)
     if message and message != title:
@@ -198,6 +198,42 @@ def deduplicate_events(events: list[Event]) -> list[Event]:
             if len(str(event.get("description", ""))) > len(str(existing.get("description", ""))):
                 seen[key] = event
     return list(seen.values())
+
+
+def classify_disruptions(dis_ids: set, dis_by_id: dict) -> tuple[set, set]:
+    """Split disruption IDs into (normal, umbrella).
+
+    An umbrella is a single-period disruption whose span contains periods from
+    other disruptions on the same line. Genuine continuous closures (e.g. a
+    week-long shutdown) have no other disruptions nested inside them and are
+    classified as normal.
+    """
+    # Collect all specific periods: multi-period disruptions, or single-period
+    # ones shorter than 48 h — these are the concrete individual events.
+    specific_periods: list[tuple] = []
+    for dis_id in dis_ids:
+        periods = dis_by_id[dis_id].get("applicationPeriods", [])
+        if len(periods) > 1:
+            for p in periods:
+                specific_periods.append((parse_dt(p["begin"]), parse_dt(p["end"])))
+        elif len(periods) == 1:
+            dt_s, dt_e = parse_dt(periods[0]["begin"]), parse_dt(periods[0]["end"])
+            if (dt_e - dt_s).total_seconds() < 48 * 3600:
+                specific_periods.append((dt_s, dt_e))
+
+    normal: set = set()
+    umbrella: set = set()
+    for dis_id in dis_ids:
+        periods = dis_by_id[dis_id].get("applicationPeriods", [])
+        if len(periods) == 1:
+            dt_s, dt_e = parse_dt(periods[0]["begin"]), parse_dt(periods[0]["end"])
+            if (dt_e - dt_s).total_seconds() >= 48 * 3600:
+                if any(dt_s <= sp_s and sp_e <= dt_e for sp_s, sp_e in specific_periods):
+                    umbrella.add(dis_id)
+                    continue
+        normal.add(dis_id)
+
+    return normal, umbrella
 
 
 def line_sort_key(name: str) -> tuple:
@@ -310,7 +346,7 @@ def generate_index(line_stats: list[tuple]) -> str:
         rows += f"""
       <tr>
         <td>{badge}</td>
-        <td>{count} perturbation(s)</td>
+        <td>{count} perturbation{'s' if count > 1 else ''}</td>
         <td><code>{full_url}</code></td>
         <td><button class="copy-btn" onclick="copyUrl('{full_url}', this)" data-umami-event="copy-url" data-umami-event-line="{line_name}">Copier l'URL</button></td>
       </tr>"""
@@ -455,7 +491,7 @@ def generate_preview(
       <h2>
         <span class="badge" style="background:{bg};color:{fg}">M{line_name}</span>
         Ligne {line_name}
-        <span class="count">{card_count} perturbation(s)</span>
+        <span class="count">{card_count} perturbation{'s' if card_count > 1 else '' }</span>
       </h2>
       <div class="cards">{cards}
       </div>
@@ -511,7 +547,7 @@ def main():
     travaux_ids = {d["id"] for d in disruptions if d.get("cause") == "TRAVAUX"}
     metro_dis_ids = set(dis_to_line_ids.keys()) & travaux_ids
     metro_disruptions = [d for d in disruptions if d["id"] in metro_dis_ids]
-    print(f"Total disruptions: {len(disruptions)} — Metro travaux: {len(metro_disruptions)} across {len(metro_lines)} line(s)")
+    print(f"Total disruptions: {len(disruptions)} — Metro travaux: {len(metro_disruptions)} across {len(metro_lines)} line{'s' if len(metro_lines) > 1 else ''}")
 
     DATA.mkdir(exist_ok=True)
     hash_file = DATA / "disruptions_hash.txt"
@@ -567,9 +603,11 @@ def main():
         event_count = 0
 
         line_id_match = next((lid for lid, l in metro_lines.items() if l["shortName"] == line_name), None)
+        all_ids = by_line.get(line_name, set())
+        normal_ids, _ = classify_disruptions(all_ids, dis_by_id)
 
         events = []
-        for dis_id in by_line.get(line_name, set()):
+        for dis_id in normal_ids:
             disruption = dis_by_id[dis_id]
             stops = dis_to_stops[dis_id].get(line_id_match, []) if line_id_match else []
             events.extend(make_events(disruption, line_name, stops))
@@ -583,7 +621,7 @@ def main():
         (PUBLIC / filename).write_bytes(cal.to_ical())
         if event_count:
             line_stats.append((line_name, filename, event_count))
-        print(f"  M{line_name}: {event_count} event(s) → {filename}")
+        print(f"  M{line_name}: {event_count} event{'s' if event_count > 1 else ''} → {filename}")
 
     (PUBLIC / "all.ics").write_bytes(all_cal.to_ical())
 
@@ -591,7 +629,7 @@ def main():
     (DATA / "summary.md").write_text(generate_summary(by_line, dis_to_stops, dis_by_id, metro_lines, fetched_at, diff, event_counts))
     (PUBLIC / "index.html").write_text(generate_index(line_stats))
     (PUBLIC / "overview.html").write_text(generate_preview(by_line, dis_by_id, dis_to_stops, metro_lines, fetched_at))
-    print(f"Done. Generated all.ics + {len(line_stats)} line file(s).")
+    print(f"Done. Generated all.ics + {len(line_stats)} line file{'s' if len(line_stats) else ''}.")
 
 
 if __name__ == "__main__":
