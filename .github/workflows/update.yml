@@ -29,7 +29,9 @@ jobs:
       - name: Fetch disruptions
         env:
           PRIM_TOKEN: ${{ secrets.PRIM_TOKEN }}
-        run: uv run python scripts/fetch.py
+        run: |
+          [[ "${{ inputs.force }}" == "true" ]] && rm -f data/disruptions_hash.txt
+          uv run python scripts/fetch.py
 
       - name: Check for changes
         id: diff
