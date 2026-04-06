@@ -18,6 +18,18 @@ from zoneinfo import ZoneInfo
 
 PARIS_TZ = ZoneInfo("Europe/Paris")
 
+
+def _load_gcal_colors() -> dict[str, str]:
+    """Read gcal colors from data/line-colors.md (source of truth)."""
+    md = ROOT / "data" / "line-colors.md"
+    colors: dict[str, str] = {}
+    for line in md.read_text().splitlines():
+        m = re.match(r"\|\s*M(\S+)\s*\|[^|]+\|\s*`(#[0-9a-fA-F]{6})`\s*\|", line)
+        if m:
+            colors[m.group(1)] = m.group(2)
+    return colors
+
+
 # Night service ends around 01:30–02:00, resumes around 05:00.
 # Events ending before NIGHT_CUTOFF are "end of night", not start of next morning.
 NIGHT_CUTOFF = time_type(5, 0)
@@ -28,6 +40,8 @@ NIGHT_STRIP_TO = time_type(2, 0)
 ROOT = Path(__file__).parent.parent
 PUBLIC = ROOT / "public"
 DATA = ROOT / "data"
+
+GCAL_COLORS: dict[str, str] = _load_gcal_colors()
 
 PRIM_URL = "https://prim.iledefrance-mobilites.fr/marketplace/disruptions_bulk/disruptions/v2"
 BASE_URL = "https://travauxmetro.fr"
@@ -684,7 +698,7 @@ def main():
     )
 
     PUBLIC.mkdir(exist_ok=True)
-    gcal_all_color = _nearest_google_color("#6B318C")
+    gcal_all_color = _nearest_google_color("#6B318C")  # all.ics has no line entry in line-colors.md
     all_cal = make_calendar(
         "Paris Métro — Travaux",
         "#6B318C",
@@ -703,7 +717,7 @@ def main():
 
     for line_name in sorted(METRO_LINE_COLORS.keys(), key=line_sort_key):
         bg, _ = METRO_LINE_COLORS[line_name]
-        gcal_color = _nearest_google_color(bg)
+        gcal_color = GCAL_COLORS.get(line_name, _nearest_google_color(bg))
         desc = (
             f"Perturbations et travaux planifiés sur la ligne {line_name} du métro parisien. "
             "Mis à jour quotidiennement depuis les données Île-de-France Mobilités. "

@@ -2,6 +2,7 @@
 """Generate data/line-colors.html from data/line-colors.md (source of truth)."""
 
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
@@ -31,6 +32,10 @@ def swatch(hex_color: str, width: int = 60) -> str:
     )
 
 
+# Load METRO_LINE_COLORS for text color (black/white) lookup
+sys.path.insert(0, str(ROOT))
+from scripts.fetch import METRO_LINE_COLORS
+
 text = MD.read_text()
 sections = re.split(r"^##\s+", text, flags=re.MULTILINE)
 
@@ -43,16 +48,16 @@ palette_table = parse_table(palette_rows_md)
 # Build line rows (skip header)
 line_html = ""
 for row in line_table[1:]:
-    ligne, ratp, texte, gcal, name = row
+    ligne, ratp, gcal, name = row
     bg = extract_hex(ratp)
-    fg = extract_hex(texte)
     gcal_hex = extract_hex(gcal)
+    line_id = ligne.replace("M", "")
+    _, fg = METRO_LINE_COLORS.get(line_id, ("#000", "#000"))
     badge = f'<span style="background:{bg};color:{fg};padding:.2em .6em;border-radius:4px;font-weight:700">{ligne}</span>'
     line_html += f"""
   <tr>
     <td>{badge}</td>
     <td>{swatch(bg)}<code>{bg}</code></td>
-    <td><code>{fg}</code></td>
     <td>{swatch(gcal_hex)}<code>{gcal_hex}</code></td>
     <td>{name}</td>
   </tr>"""
@@ -84,7 +89,7 @@ html = f"""<!DOCTYPE html>
 <p class="note">Généré depuis <code>data/line-colors.md</code> — éditer le Markdown, pas ce fichier.</p>
 <h2>Mapping RATP → Google Calendar</h2>
 <table>
-  <thead><tr><th>Ligne</th><th>RATP (iCal)</th><th>Texte</th><th>Google Calendar</th><th>Palette name</th></tr></thead>
+  <thead><tr><th>Ligne</th><th>RATP (iCal)</th><th>Google Calendar</th><th>Palette name</th></tr></thead>
   <tbody>{line_html}</tbody>
 </table>
 <h2>Google Calendar palette</h2>
