@@ -14,6 +14,9 @@ from uuid import uuid4
 
 import requests
 from icalendar import Calendar, Event
+from zoneinfo import ZoneInfo
+
+PARIS_TZ = ZoneInfo("Europe/Paris")
 
 ROOT = Path(__file__).parent.parent
 PUBLIC = ROOT / "public"
@@ -113,7 +116,7 @@ def strip_html(text: str) -> str:
 
 
 def parse_dt(s: str) -> datetime:
-    return datetime.strptime(s, "%Y%m%dT%H%M%S").replace(tzinfo=timezone.utc)
+    return datetime.strptime(s, "%Y%m%dT%H%M%S").replace(tzinfo=PARIS_TZ)
 
 
 def content_hash(disruptions: list, metro_dis_ids: set) -> str:
