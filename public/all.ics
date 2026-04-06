@@ -10,7 +10,7 @@ BEGIN:VEVENT
 SUMMARY:M3 — Métro 3 : Travaux - Trafic interrompu
 DTSTART:20260408T044500Z
 DTEND:20260513T043000Z
-DTSTAMP:20260406T094425Z
+DTSTAMP:20260406T094923Z
 UID:eba0ead8-1642-11f1-9e08-0a58a9feac02_20260408T044500@travaux-metro
 CATEGORIES:Ligne 3,Travaux Métro
 DESCRIPTION:Ligne 3\n\nStations : Gambetta\, Gallieni\, Porte de Bagnolet\
@@ -20,9 +20,20 @@ DESCRIPTION:Ligne 3\n\nStations : Gambetta\, Gallieni\, Porte de Bagnolet\
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:M3B — Métro 3B : Travaux - Trafic interrompu
+DTSTART:20260516T044500Z
+DTEND:20260522T043000Z
+DTSTAMP:20260406T094923Z
+UID:f48ead46-07a0-4344-b4ef-835b6ca05c88_20260516T044500@travaux-metro
+CATEGORIES:Ligne 3B,Travaux Métro
+DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 16 mai au 21 mai inclus\, 
+ le trafic sera interrompu sur toute la ligne en raison de travaux.\n\nCaus
+ e : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:M3B — Métro 3B : Travaux - Trafic interrompu
 DTSTART:20260412T221500Z
 DTEND:20260413T043000Z
-DTSTAMP:20260406T094425Z
+DTSTAMP:20260406T094923Z
 UID:1dc83844-1e23-11f1-bb0b-0a58a9feac02_20260412T221500@travaux-metro
 CATEGORIES:Ligne 3B,Travaux Métro
 DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 12 avril au 10 mai inclus\
@@ -33,7 +44,7 @@ BEGIN:VEVENT
 SUMMARY:M3B — Métro 3B : Travaux - Trafic interrompu
 DTSTART:20260419T221500Z
 DTEND:20260420T043000Z
-DTSTAMP:20260406T094425Z
+DTSTAMP:20260406T094923Z
 UID:1dc83844-1e23-11f1-bb0b-0a58a9feac02_20260419T221500@travaux-metro
 CATEGORIES:Ligne 3B,Travaux Métro
 DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 12 avril au 10 mai inclus\
@@ -44,7 +55,7 @@ BEGIN:VEVENT
 SUMMARY:M3B — Métro 3B : Travaux - Trafic interrompu
 DTSTART:20260426T221500Z
 DTEND:20260427T043000Z
-DTSTAMP:20260406T094425Z
+DTSTAMP:20260406T094923Z
 UID:1dc83844-1e23-11f1-bb0b-0a58a9feac02_20260426T221500@travaux-metro
 CATEGORIES:Ligne 3B,Travaux Métro
 DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 12 avril au 10 mai inclus\
@@ -55,7 +66,7 @@ BEGIN:VEVENT
 SUMMARY:M3B — Métro 3B : Travaux - Trafic interrompu
 DTSTART:20260503T221500Z
 DTEND:20260504T043000Z
-DTSTAMP:20260406T094425Z
+DTSTAMP:20260406T094923Z
 UID:1dc83844-1e23-11f1-bb0b-0a58a9feac02_20260503T221500@travaux-metro
 CATEGORIES:Ligne 3B,Travaux Métro
 DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 12 avril au 10 mai inclus\
@@ -66,7 +77,7 @@ BEGIN:VEVENT
 SUMMARY:M3B — Métro 3B : Travaux - Trafic interrompu
 DTSTART:20260510T221500Z
 DTEND:20260511T043000Z
-DTSTAMP:20260406T094425Z
+DTSTAMP:20260406T094923Z
 UID:1dc83844-1e23-11f1-bb0b-0a58a9feac02_20260510T221500@travaux-metro
 CATEGORIES:Ligne 3B,Travaux Métro
 DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 12 avril au 10 mai inclus\
@@ -74,21 +85,10 @@ DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 12 avril au 10 mai inclus\
   raison de travaux.\n\nCause : TRAVAUX
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:M3B — Métro 3B : Travaux - Trafic interrompu
-DTSTART:20260516T044500Z
-DTEND:20260522T043000Z
-DTSTAMP:20260406T094425Z
-UID:f48ead46-07a0-4344-b4ef-835b6ca05c88_20260516T044500@travaux-metro
-CATEGORIES:Ligne 3B,Travaux Métro
-DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 16 mai au 21 mai inclus\, 
- le trafic sera interrompu sur toute la ligne en raison de travaux.\n\nCaus
- e : TRAVAUX
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:M4 — Métro 4 : Travaux d'entretien - Trafic interrompu
 DTSTART:20260420T044500Z
 DTEND:20260502T043000Z
-DTSTAMP:20260406T094425Z
+DTSTAMP:20260406T094923Z
 UID:ff1a101d-45f8-4942-b24b-50a00b079142_20260420T044500@travaux-metro
 CATEGORIES:Ligne 4,Travaux Métro
 DESCRIPTION:Ligne 4\n\nTrafic interrompu\n\nDu 20 avril au 1er mai inclus\
@@ -97,31 +97,9 @@ DESCRIPTION:Ligne 4\n\nTrafic interrompu\n\nDu 20 avril au 1er mai inclus\
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:M12 — Métro 12 : Travaux de modernisation - Trafic interrompu
-DTSTART:20260405T220000Z
-DTEND:20260406T043000Z
-DTSTAMP:20260406T094425Z
-UID:4247e7e6-20b2-11f1-b269-0a58a9feac02_20260405T220000@travaux-metro
-CATEGORIES:Ligne 12,Travaux Métro
-DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nJusqu'au 12 avril inclus\, le
-  dimanche dès 22:00\, le trafic est interrompu sur toute la ligne en rais
- on de travaux de modernisation.\n\nCause : TRAVAUX
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:M12 — Métro 12 : Travaux de modernisation - Trafic interrompu
-DTSTART:20260412T220000Z
-DTEND:20260413T043000Z
-DTSTAMP:20260406T094425Z
-UID:4247e7e6-20b2-11f1-b269-0a58a9feac02_20260412T220000@travaux-metro
-CATEGORIES:Ligne 12,Travaux Métro
-DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nJusqu'au 12 avril inclus\, le
-  dimanche dès 22:00\, le trafic est interrompu sur toute la ligne en rais
- on de travaux de modernisation.\n\nCause : TRAVAUX
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:M12 — Métro 12 : Travaux de modernisation - Trafic interrompu
 DTSTART:20260401T220000Z
 DTEND:20260402T043000Z
-DTSTAMP:20260406T094425Z
+DTSTAMP:20260406T094923Z
 UID:09685fd6-36fa-4b9f-81de-919a3adda374_20260401T220000@travaux-metro
 CATEGORIES:Ligne 12,Travaux Métro
 DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nJusqu'au 8 avril\, le mercred
@@ -132,7 +110,7 @@ BEGIN:VEVENT
 SUMMARY:M12 — Métro 12 : Travaux de modernisation - Trafic interrompu
 DTSTART:20260408T220000Z
 DTEND:20260409T043000Z
-DTSTAMP:20260406T094425Z
+DTSTAMP:20260406T094923Z
 UID:09685fd6-36fa-4b9f-81de-919a3adda374_20260408T220000@travaux-metro
 CATEGORIES:Ligne 12,Travaux Métro
 DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nJusqu'au 8 avril\, le mercred
@@ -140,10 +118,55 @@ DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nJusqu'au 8 avril\, le mercred
  avaux de modernisation.\n\nCause : TRAVAUX
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:M12 — Métro 12 : Travaux de modernisation - Trafic interrompu
+DTSTART:20260405T220000Z
+DTEND:20260406T043000Z
+DTSTAMP:20260406T094923Z
+UID:4247e7e6-20b2-11f1-b269-0a58a9feac02_20260405T220000@travaux-metro
+CATEGORIES:Ligne 12,Travaux Métro
+DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nJusqu'au 12 avril inclus\, le
+  dimanche dès 22:00\, le trafic est interrompu sur toute la ligne en rais
+ on de travaux de modernisation.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:M12 — Métro 12 : Travaux de modernisation - Trafic interrompu
+DTSTART:20260412T220000Z
+DTEND:20260413T043000Z
+DTSTAMP:20260406T094923Z
+UID:4247e7e6-20b2-11f1-b269-0a58a9feac02_20260412T220000@travaux-metro
+CATEGORIES:Ligne 12,Travaux Métro
+DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nJusqu'au 12 avril inclus\, le
+  dimanche dès 22:00\, le trafic est interrompu sur toute la ligne en rais
+ on de travaux de modernisation.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:M13 — Métro 13 : Travaux - Trafic interrompu
+DTSTART:20260628T044500Z
+DTEND:20260628T120000Z
+DTSTAMP:20260406T094923Z
+UID:63110a5c-f7da-49bf-be35-ea8aaf0b8358_20260628T044500@travaux-metro
+CATEGORIES:Ligne 13,Travaux Métro
+DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLe 28 juin jusqu'à 12:00\, l
+ e trafic sera interrompu sur toute la ligne en raison de travaux.\n\nCause
+  : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:M13 — Métro 13 : Travaux - Trafic interrompu
+DTSTART:20260517T044500Z
+DTEND:20260517T120000Z
+DTSTAMP:20260406T094923Z
+UID:71626f4a-75d9-49df-8a3b-16caf2277ebd_20260517T044500@travaux-metro
+CATEGORIES:Ligne 13,Travaux Métro
+DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLe dimanche 17 mai ainsi que 
+ les 7 et 28 juin\, jusqu'à 12 heures\, le trafic est interrompu sur l'ens
+ emble de la ligne en raison de travaux de modernisation.\n\nCause : TRAVAU
+ X
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:M13 — Métro 13 : Travaux - Trafic interrompu
 DTSTART:20260503T044500Z
 DTEND:20260503T120000Z
-DTSTAMP:20260406T094425Z
+DTSTAMP:20260406T094923Z
 UID:3f4523c5-b213-4672-a207-6555a464535d_20260503T044500@travaux-metro
 CATEGORIES:Ligne 13,Travaux Métro
 DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLes dimanches 3 et 17 mai ain
@@ -153,31 +176,9 @@ DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLes dimanches 3 et 17 mai ain
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:M13 — Métro 13 : Travaux - Trafic interrompu
-DTSTART:20260628T044500Z
-DTEND:20260628T120000Z
-DTSTAMP:20260406T094425Z
-UID:e569a1cc-9bfc-4680-94bd-e0609b8f05dd_20260628T044500@travaux-metro
-CATEGORIES:Ligne 13,Travaux Métro
-DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLe 28 juin jusqu'à 12:00\, l
- e trafic sera interrompu sur toute la ligne en raison de travaux.\n\nCause
-  : TRAVAUX
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:M13 — Métro 13 : Travaux de modernisation - Arrêt non desservi
-DTSTART:20260409T044500Z
-DTEND:20260413T043000Z
-DTSTAMP:20260406T094425Z
-UID:54805216-ed7e-11f0-9376-0a58a9feac02_20260409T044500@travaux-metro
-CATEGORIES:Ligne 13,Travaux Métro
-DESCRIPTION:Ligne 13\n\nStation : Plaisance\n\nArrêt non desservi\n\nDu 9
-  avril au 12 avril inclus\, l'arrêt ne sera pas desservi à Plaisance en 
- raison de travaux de modernisation\n\nCause : TRAVAUX
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:M13 — Métro 13 : Travaux - Trafic interrompu
 DTSTART:20260607T044500Z
 DTEND:20260607T120000Z
-DTSTAMP:20260406T094425Z
+DTSTAMP:20260406T094923Z
 UID:9ea051e5-b459-47da-a9f6-1ea9f8b4c611_20260607T044500@travaux-metro
 CATEGORIES:Ligne 13,Travaux Métro
 DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLes dimanches 7 et 28 juin\, 
@@ -185,15 +186,14 @@ DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLes dimanches 7 et 28 juin\,
  n raison de travaux de modernisation.\n\nCause : TRAVAUX
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:M13 — Métro 13 : Travaux - Trafic interrompu
-DTSTART:20260517T044500Z
-DTEND:20260517T120000Z
-DTSTAMP:20260406T094425Z
-UID:71626f4a-75d9-49df-8a3b-16caf2277ebd_20260517T044500@travaux-metro
+SUMMARY:M13 — Métro 13 : Travaux de modernisation - Arrêt non desservi
+DTSTART:20260409T044500Z
+DTEND:20260413T043000Z
+DTSTAMP:20260406T094923Z
+UID:54805216-ed7e-11f0-9376-0a58a9feac02_20260409T044500@travaux-metro
 CATEGORIES:Ligne 13,Travaux Métro
-DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLe dimanche 17 mai ainsi que 
- les 7 et 28 juin\, jusqu'à 12 heures\, le trafic est interrompu sur l'ens
- emble de la ligne en raison de travaux de modernisation.\n\nCause : TRAVAU
- X
+DESCRIPTION:Ligne 13\n\nStation : Plaisance\n\nArrêt non desservi\n\nDu 9
+  avril au 12 avril inclus\, l'arrêt ne sera pas desservi à Plaisance en 
+ raison de travaux de modernisation\n\nCause : TRAVAUX
 END:VEVENT
 END:VCALENDAR
