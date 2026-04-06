@@ -6,22 +6,22 @@ Source of truth for line colors. Edit the **Google Calendar** column to change t
 
 | Ligne | RATP (iCal) | Google Calendar |
 |-------|-------------|-----------------|
-| M1 | `#FFCD00` | Mango |
+| M1 | `#FFCD00` | Banana |
 | M2 | `#003CA6` | Blueberry |
-| M3 | `#837902` | Cocoa |
+| M3 | `#837902` | Pistachio |
 | M3B | `#6EC4E8` | Cobalt |
-| M4 | `#CF009E` | Flamingo |
+| M4 | `#CF009E` | Tomato |
 | M5 | `#FF7E2E` | Pumpkin |
 | M6 | `#6ECA97` | Eucalyptus |
 | M7 | `#FA9ABA` | Cherry Blossom |
 | M7B | `#83C491` | Sage |
 | M8 | `#E19BDF` | Grape |
-| M9 | `#B6BD00` | Pistachio |
-| M10 | `#C9910D` | Pumpkin |
+| M9 | `#B6BD00` | Avocado |
+| M10 | `#C9910D` | Mango |
 | M11 | `#704B1C` | Cocoa |
 | M12 | `#007852` | Basil |
 | M13 | `#98D4E2` | Peacock |
-| M14 | `#62259D` | Cocoa |
+| M14 | `#62259D` | Amethyst |
 
 ## Google Calendar palette
 
