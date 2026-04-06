@@ -13,14 +13,18 @@
     .badge { display: inline-block; padding: .15em .55em; border-radius: 4px; font-weight: 700; font-size: .9em; min-width: 2.5em; text-align: center; }
     .card { border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.25rem; margin: 1rem 0; background: #fafafa; }
     table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
-    th, td { border: 1px solid #e0e0e0; padding: .45rem .9rem; text-align: left; }
+    th, td { border: 1px solid #e0e0e0; padding: .45rem .9rem; text-align: left; vertical-align: middle; }
     th { background: #f4f4f4; font-weight: 600; }
-    code { background: #f0f0f0; padding: .1em .4em; border-radius: 3px; font-size: .82em; word-break: break-all; }
     a { color: #6B318C; }
     footer { margin-top: 3rem; color: #888; font-size: .85em; }
-    .copy-btn { cursor: pointer; background: #6B318C; color: #fff; border: none; border-radius: 4px; padding: .25em .7em; font-size: .85em; margin-left: .5rem; }
-    .copy-btn:hover { background: #552070; }
-    .copy-btn.copied { background: #2e7d32; }
+    .sub-btn { display: inline-block; cursor: pointer; border: none; border-radius: 4px; padding: .25em .7em; font-size: .85em; margin: .15rem .2rem .15rem 0; text-decoration: none; white-space: nowrap; }
+    .sub-btn.apple { background: #555; color: #fff; }
+    .sub-btn.apple:hover { background: #333; }
+    .sub-btn.google { background: #4285F4; color: #fff; }
+    .sub-btn.google:hover { background: #2b6fd4; }
+    .sub-btn.copy { background: #6B318C; color: #fff; }
+    .sub-btn.copy:hover { background: #552070; }
+    .sub-btn.copied { background: #2e7d32 !important; }
   </style>
 </head>
 <script>
@@ -28,7 +32,7 @@ function copyUrl(url, btn) {
   navigator.clipboard.writeText(url).then(() => {
     btn.textContent = 'Copié !';
     btn.classList.add('copied');
-    setTimeout(() => { btn.textContent = "Copier l'URL"; btn.classList.remove('copied'); }, 2000);
+    setTimeout(() => { btn.textContent = 'Autre (copier)'; btn.classList.remove('copied'); }, 2000);
   });
 }
 </script>
@@ -37,50 +41,44 @@ function copyUrl(url, btn) {
   <p class="subtitle">Perturbations et travaux planifiés — abonnez-vous au calendrier de votre ligne.</p>
 
   <div class="card">
-    <strong>Comment s'abonner :</strong> copiez une URL ci-dessous et ajoutez-la comme <em>calendrier par abonnement</em> dans votre application (Google Calendar, Apple Calendar, Outlook…). Le calendrier se met à jour automatiquement.
+    Cliquez sur <strong>Apple / iCal</strong> ou <strong>Google Calendar</strong> pour vous abonner en un clic.
+    Le bouton <strong>Autre</strong> copie l'URL pour les autres applications (Outlook, Proton…).
+    Le calendrier se met à jour automatiquement.
   </div>
 
   <p><a href="overview.html">→ Aperçu visuel des perturbations</a></p>
 
   <h2>Toutes les lignes</h2>
-  <p>
-    <code>https://travauxmetro.fr/all.ics</code>
-    <button class="copy-btn" onclick="copyUrl('https://travauxmetro.fr/all.ics', this)" data-umami-event="copy-url" data-umami-event-line="all">Copier l'URL</button>
-  </p>
+  <p><a class="sub-btn apple" href="webcal://travauxmetro.fr/all.ics" data-umami-event="subscribe-apple" data-umami-event-line="all">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fall.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="all">Google Calendar</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/all.ics', this)" data-umami-event="copy-url" data-umami-event-line="all">Autre (copier)</button></p>
 
   <h2>Par ligne</h2>
   <table>
-    <thead><tr><th>Ligne</th><th>Perturbations</th><th>URL d'abonnement</th><th></th></tr></thead>
+    <thead><tr><th>Ligne</th><th>Perturbations</th><th>S'abonner</th></tr></thead>
     <tbody>
       <tr>
         <td><span class="badge" style="background:#837902;color:#FFFFFF">M3</span></td>
         <td>1 perturbation</td>
-        <td><code>https://travauxmetro.fr/ligne-3.ics</code></td>
-        <td><button class="copy-btn" onclick="copyUrl('https://travauxmetro.fr/ligne-3.ics', this)" data-umami-event="copy-url" data-umami-event-line="3">Copier l'URL</button></td>
+        <td><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-3.ics" data-umami-event="subscribe-apple" data-umami-event-line="3">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-3.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="3">Google Calendar</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-3.ics', this)" data-umami-event="copy-url" data-umami-event-line="3">Autre (copier)</button></td>
       </tr>
       <tr>
         <td><span class="badge" style="background:#6EC4E8;color:#000000">M3B</span></td>
         <td>6 perturbations</td>
-        <td><code>https://travauxmetro.fr/ligne-3B.ics</code></td>
-        <td><button class="copy-btn" onclick="copyUrl('https://travauxmetro.fr/ligne-3B.ics', this)" data-umami-event="copy-url" data-umami-event-line="3B">Copier l'URL</button></td>
+        <td><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-3B.ics" data-umami-event="subscribe-apple" data-umami-event-line="3B">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-3B.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="3B">Google Calendar</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-3B.ics', this)" data-umami-event="copy-url" data-umami-event-line="3B">Autre (copier)</button></td>
       </tr>
       <tr>
         <td><span class="badge" style="background:#CF009E;color:#FFFFFF">M4</span></td>
         <td>1 perturbation</td>
-        <td><code>https://travauxmetro.fr/ligne-4.ics</code></td>
-        <td><button class="copy-btn" onclick="copyUrl('https://travauxmetro.fr/ligne-4.ics', this)" data-umami-event="copy-url" data-umami-event-line="4">Copier l'URL</button></td>
+        <td><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-4.ics" data-umami-event="subscribe-apple" data-umami-event-line="4">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-4.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="4">Google Calendar</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-4.ics', this)" data-umami-event="copy-url" data-umami-event-line="4">Autre (copier)</button></td>
       </tr>
       <tr>
         <td><span class="badge" style="background:#007852;color:#FFFFFF">M12</span></td>
         <td>4 perturbations</td>
-        <td><code>https://travauxmetro.fr/ligne-12.ics</code></td>
-        <td><button class="copy-btn" onclick="copyUrl('https://travauxmetro.fr/ligne-12.ics', this)" data-umami-event="copy-url" data-umami-event-line="12">Copier l'URL</button></td>
+        <td><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-12.ics" data-umami-event="subscribe-apple" data-umami-event-line="12">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-12.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="12">Google Calendar</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-12.ics', this)" data-umami-event="copy-url" data-umami-event-line="12">Autre (copier)</button></td>
       </tr>
       <tr>
         <td><span class="badge" style="background:#98D4E2;color:#000000">M13</span></td>
         <td>5 perturbations</td>
-        <td><code>https://travauxmetro.fr/ligne-13.ics</code></td>
-        <td><button class="copy-btn" onclick="copyUrl('https://travauxmetro.fr/ligne-13.ics', this)" data-umami-event="copy-url" data-umami-event-line="13">Copier l'URL</button></td>
+        <td><a class="sub-btn apple" href="webcal://travauxmetro.fr/ligne-13.ics" data-umami-event="subscribe-apple" data-umami-event-line="13">Apple / iCal</a><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-13.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="13">Google Calendar</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-13.ics', this)" data-umami-event="copy-url" data-umami-event-line="13">Autre (copier)</button></td>
       </tr>
     </tbody>
   </table>

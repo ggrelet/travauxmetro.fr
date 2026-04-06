@@ -385,6 +385,16 @@ def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, metro_l
     return "\n".join(lines)
 
 
+def _sub_buttons(full_url: str, line: str) -> str:
+    webcal_url = full_url.replace("https://", "webcal://")
+    gcal_url = f"https://calendar.google.com/calendar/render?cid={webcal_url.replace('://', '%3A%2F%2F').replace('/', '%2F')}"
+    return (
+        f'<a class="sub-btn apple" href="{webcal_url}" data-umami-event="subscribe-apple" data-umami-event-line="{line}">Apple / iCal</a>'
+        f'<a class="sub-btn google" href="{gcal_url}" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="{line}">Google Calendar</a>'
+        f'<button class="sub-btn copy" onclick="copyUrl(\'{full_url}\', this)" data-umami-event="copy-url" data-umami-event-line="{line}">Autre (copier)</button>'
+    )
+
+
 def generate_index(line_stats: list[tuple]) -> str:
     rows = ""
     for line_name, filename, count in line_stats:
@@ -395,8 +405,7 @@ def generate_index(line_stats: list[tuple]) -> str:
       <tr>
         <td>{badge}</td>
         <td>{count} perturbation{'s' if count > 1 else ''}</td>
-        <td><code>{full_url}</code></td>
-        <td><button class="copy-btn" onclick="copyUrl('{full_url}', this)" data-umami-event="copy-url" data-umami-event-line="{line_name}">Copier l'URL</button></td>
+        <td>{_sub_buttons(full_url, line_name)}</td>
       </tr>"""
 
     all_url = f"{BASE_URL}/all.ics"
@@ -416,14 +425,18 @@ def generate_index(line_stats: list[tuple]) -> str:
     .badge {{ display: inline-block; padding: .15em .55em; border-radius: 4px; font-weight: 700; font-size: .9em; min-width: 2.5em; text-align: center; }}
     .card {{ border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.25rem; margin: 1rem 0; background: #fafafa; }}
     table {{ border-collapse: collapse; width: 100%; margin: 1rem 0; }}
-    th, td {{ border: 1px solid #e0e0e0; padding: .45rem .9rem; text-align: left; }}
+    th, td {{ border: 1px solid #e0e0e0; padding: .45rem .9rem; text-align: left; vertical-align: middle; }}
     th {{ background: #f4f4f4; font-weight: 600; }}
-    code {{ background: #f0f0f0; padding: .1em .4em; border-radius: 3px; font-size: .82em; word-break: break-all; }}
     a {{ color: #6B318C; }}
     footer {{ margin-top: 3rem; color: #888; font-size: .85em; }}
-    .copy-btn {{ cursor: pointer; background: #6B318C; color: #fff; border: none; border-radius: 4px; padding: .25em .7em; font-size: .85em; margin-left: .5rem; }}
-    .copy-btn:hover {{ background: #552070; }}
-    .copy-btn.copied {{ background: #2e7d32; }}
+    .sub-btn {{ display: inline-block; cursor: pointer; border: none; border-radius: 4px; padding: .25em .7em; font-size: .85em; margin: .15rem .2rem .15rem 0; text-decoration: none; white-space: nowrap; }}
+    .sub-btn.apple {{ background: #555; color: #fff; }}
+    .sub-btn.apple:hover {{ background: #333; }}
+    .sub-btn.google {{ background: #4285F4; color: #fff; }}
+    .sub-btn.google:hover {{ background: #2b6fd4; }}
+    .sub-btn.copy {{ background: #6B318C; color: #fff; }}
+    .sub-btn.copy:hover {{ background: #552070; }}
+    .sub-btn.copied {{ background: #2e7d32 !important; }}
   </style>
 </head>
 <script>
@@ -431,7 +444,7 @@ function copyUrl(url, btn) {{
   navigator.clipboard.writeText(url).then(() => {{
     btn.textContent = 'Copié !';
     btn.classList.add('copied');
-    setTimeout(() => {{ btn.textContent = "Copier l'URL"; btn.classList.remove('copied'); }}, 2000);
+    setTimeout(() => {{ btn.textContent = 'Autre (copier)'; btn.classList.remove('copied'); }}, 2000);
   }});
 }}
 </script>
@@ -440,20 +453,19 @@ function copyUrl(url, btn) {{
   <p class="subtitle">Perturbations et travaux planifiés — abonnez-vous au calendrier de votre ligne.</p>
 
   <div class="card">
-    <strong>Comment s'abonner :</strong> copiez une URL ci-dessous et ajoutez-la comme <em>calendrier par abonnement</em> dans votre application (Google Calendar, Apple Calendar, Outlook…). Le calendrier se met à jour automatiquement.
+    Cliquez sur <strong>Apple / iCal</strong> ou <strong>Google Calendar</strong> pour vous abonner en un clic.
+    Le bouton <strong>Autre</strong> copie l'URL pour les autres applications (Outlook, Proton…).
+    Le calendrier se met à jour automatiquement.
   </div>
 
   <p><a href="overview.html">→ Aperçu visuel des perturbations</a></p>
 
   <h2>Toutes les lignes</h2>
-  <p>
-    <code>{all_url}</code>
-    <button class="copy-btn" onclick="copyUrl('{all_url}', this)" data-umami-event="copy-url" data-umami-event-line="all">Copier l'URL</button>
-  </p>
+  <p>{_sub_buttons(all_url, "all")}</p>
 
   <h2>Par ligne</h2>
   <table>
-    <thead><tr><th>Ligne</th><th>Perturbations</th><th>URL d'abonnement</th><th></th></tr></thead>
+    <thead><tr><th>Ligne</th><th>Perturbations</th><th>S'abonner</th></tr></thead>
     <tbody>{rows}
     </tbody>
   </table>
