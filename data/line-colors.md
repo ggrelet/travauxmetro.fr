@@ -4,7 +4,7 @@ Source of truth for line colors. Edit the **Google Calendar** column to change t
 
 ## Calendrier toutes lignes
 
-`all.ics` uses `#003CA6` — RATP official blue.
+`tousmetros.ics` uses `#003CA6` — RATP official blue.
 
 ## Mapping RATP → Google Calendar
 

@@ -10,7 +10,7 @@ Abonnez-vous depuis votre application de calendrier (Google Calendar, Apple Cale
 
 | Calendrier | URL |
 |------------|-----|
-| Toutes les lignes | `https://travauxmetro.fr/all.ics` |
+| Toutes les lignes | `https://travauxmetro.fr/tousmetros.ics` |
 | Ligne X | `https://travauxmetro.fr/ligne-X.ics` |
 
 Les calendriers sont mis à jour quotidiennement et votre application les synchronise automatiquement.

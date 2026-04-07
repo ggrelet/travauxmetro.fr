@@ -470,7 +470,7 @@ def _line_disruption_html(
     """Return the disruption details block (accordion or quiet note) for one line."""
     line_id = next((lid for lid, l in metro_lines.items() if l["shortName"] == line_name), None)
     all_ids = by_line.get(line_name, set())
-    normal_ids, umbrella_ids = classify_disruptions(all_ids, dis_by_id)
+    normal_ids, _ = classify_disruptions(all_ids, dis_by_id)
 
     all_events = []
     for dis_id in normal_ids:
@@ -479,11 +479,6 @@ def _line_disruption_html(
     available = {(e.get("dtstart").dt, e.get("dtend").dt) for e in deduplicate_events(all_events)}
 
     notes_html = ""
-    for dis_id in sorted(umbrella_ids):
-        d = dis_by_id[dis_id]
-        msg = strip_html(d.get("message", "") or d.get("shortMessage", ""))
-        if msg:
-            notes_html += f'<p class="note">ℹ️ {html.escape(msg)}</p>'
 
     cards = ""
     for dis_id in sorted(normal_ids):
@@ -521,11 +516,13 @@ def _line_disruption_html(
         return '<p class="quiet">Aucune perturbation en cours, mais cela pourrait arriver dans le futur. Abonnez-vous pour ne pas les manquer.</p>'
 
     label = f"{card_count} perturbation{'s' if card_count > 1 else ''} en cours"
-    return f"""<details>
-      <summary>{label}</summary>
-      {notes_html}<div class="cards">{cards}
-      </div>
-    </details>"""
+    dialog_id = f"dis-{line_name}"
+    return f"""<button class="dis-btn" data-dialog="{dialog_id}" data-umami-event="accordion-open" data-umami-event-line="{line_name}"><span style="font-size:.8em">▶</span> {label}</button>
+    <dialog id="{dialog_id}" class="dis-dialog">
+      <button class="dis-close" onclick="this.closest('dialog').close()">✕</button>
+      <p class="dis-dialog-title">Ligne {line_name} — {label}</p>
+      {notes_html}<div class="cards">{cards}</div>
+    </dialog>"""
 
 
 def generate_index(
@@ -535,7 +532,7 @@ def generate_index(
     metro_lines: dict,
     fetched_at: str,
 ) -> str:
-    all_url = f"{BASE_URL}/all.ics"
+    all_url = f"{BASE_URL}/tousmetros.ics"
     date_str = fetched_at[:10]
     fetched_dt = datetime.fromisoformat(fetched_at).astimezone(PARIS_TZ)
     time_str = fetched_dt.strftime("%H:%M")
@@ -545,40 +542,48 @@ def generate_index(
     for line_name in sorted(METRO_LINE_COLORS.keys(), key=line_sort_key):
         bg, fg = METRO_LINE_COLORS[line_name]
         full_url = f"{BASE_URL}/ligne-{line_name}.ics"
-        badge = f'<span class="badge" style="background:{bg};color:{fg}">M{line_name}</span>'
+        label = f'{line_name[:-1]}<span style="font-size:.42em;letter-spacing:-.02em">bis</span>' if line_name.endswith("B") else line_name
+        badge = f'<span class="badge" style="background:{bg};color:{fg}">{label}</span>'
         if by_line.get(line_name):
             dis_html = _line_disruption_html(line_name, by_line, dis_by_id, dis_to_stops, metro_lines)
             disrupted_rows += f"""
     <div class="line-row" data-line="{line_name}">
-      {badge}
-      <hr class="line-sep">
-      <div class="line-actions">{_sub_buttons(full_url, line_name)}</div>
+      <div class="line-header">
+        {badge}
+        <div class="line-vsep"></div>
+        <div class="line-actions">{_sub_buttons(full_url, line_name)}</div>
+      </div>
       {dis_html}
     </div>"""
         else:
             calm_rows += f"""
     <div class="line-row">
-      {badge}
-      <hr class="line-sep">
-      <div class="line-actions">{_sub_buttons(full_url, line_name)}</div>
+      <div class="line-header">
+        {badge}
+        <div class="line-vsep"></div>
+        <div class="line-actions">{_sub_buttons(full_url, line_name)}</div>
+      </div>
     </div>"""
 
+    def _badge_label(n: str) -> str:
+        return f'{n[:-1]}<span style="font-size:.42em;letter-spacing:-.02em">bis</span>' if n.endswith("B") else n
     all_badges = " ".join(
-        f'<span class="badge" style="background:{bg};color:{fg}">M{n}</span>'
+        f'<span class="badge" style="background:{bg};color:{fg}">{_badge_label(n)}</span>'
         for n, (bg, fg) in sorted(METRO_LINE_COLORS.items(), key=lambda x: line_sort_key(x[0]))
     )
 
     disrupted_section = f"""
   <section>
-    <h2 class="section-title">Lignes perturbées</h2>
-    {disrupted_rows}
+    <h2 class="section-title">Lignes interrompues</h2>
+    <p class="section-note">Île-de-France Mobilités a prévu des interruptions dues aux travaux sur ces lignes.</p>
+    <div class="lines-grid">{disrupted_rows}</div>
   </section>""" if disrupted_rows else '<p class="quiet" style="margin-bottom:1.5rem">Aucune perturbation en cours sur le réseau.</p>'
 
     calm_section = f"""
   <section>
     <h2 class="section-title">Autres lignes</h2>
     <p class="section-note">Aucune perturbation en cours sur ces lignes. Abonnez-vous pour être notifié automatiquement si cela change.</p>
-    {calm_rows}
+    <div class="lines-grid">{calm_rows}</div>
   </section>""" if calm_rows else ""
 
     return f"""<!DOCTYPE html>
@@ -615,18 +620,20 @@ def generate_index(
     *, *::before, *::after {{ box-sizing: border-box; }}
     body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; color: #222; line-height: 1.5; background: #f7f7f7; }}
     h1 {{ margin-bottom: .25rem; font-size: 2.8rem; }}
-    .subtitle {{ color: #555; margin-top: 0; margin-bottom: 1.5rem; }}
+    .subtitle {{ color: #555; margin-top: 0; margin-bottom: 1.5rem; font-size: 1.40rem; line-height: 1.3; }}
     .meta {{ color: #888; font-size: .85em; }}
     .intro {{ background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: .9rem 1.1rem; margin-bottom: 1.5rem; font-size: .95em; }}
     a {{ color: #555; }}
+    a {{ color: #555; }}
     footer {{ margin-top: 3rem; color: #888; font-size: .85em; border-top: 1px solid #e8e8e8; padding-top: 1rem; line-height: 1.8; }}
-    .badge {{ display: inline-block; padding: .2em .6em; border-radius: 5px; font-weight: 800; font-size: 1.75rem; min-width: 2.5em; text-align: center; flex-shrink: 0; }}
-    .line-actions {{ display: flex; align-items: stretch; gap: .4rem; flex-wrap: wrap; }}
-    @media (max-width: 480px) {{ .line-actions {{ flex-direction: column; align-items: flex-start; }} }}
+    .badge {{ display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: 700; font-size: 3.1rem; width: 4.5rem; height: 4.5rem; flex-shrink: 0; }}
+    .line-header {{ display: flex; align-items: center; gap: .85rem; }}
+    .line-vsep {{ width: 1px; background: #bbb; align-self: stretch; flex-shrink: 0; min-height: 2rem; }}
+    .line-actions {{ display: flex; align-items: flex-start; align-content: flex-start; gap: .4rem; flex-wrap: wrap; flex: 1; }}
     .sub-btn.copy {{ background: #888; color: #fff; }}
     .sub-btn.copy:hover {{ background: #666; }}
     .sub-btn.copy.copied {{ background: #2e7d32; justify-content: center; }}
-    .sub-btn {{ display: inline-flex; align-items: center; cursor: pointer; border: none; border-radius: 5px; padding: .35em .85em; font-size: .82em; margin: 0; text-decoration: none; white-space: nowrap; font-family: inherit; line-height: 1; }}
+    .sub-btn {{ display: inline-flex; align-items: center; cursor: pointer; border: none; border-radius: 5px; padding: .2em .55em; font-size: .68em; margin: 0; text-decoration: none; white-space: nowrap; font-family: inherit; line-height: 1; }}
     .sub-btn.webcal {{ background: #444; color: #fff; }}
     .sub-btn.webcal:hover {{ background: #222; }}
     .sub-btn.outlook {{ background: #0078d4; color: #fff; }}
@@ -636,29 +643,40 @@ def generate_index(
     .sub-btn.google {{ background: #4285F4; color: #fff; }}
     .sub-btn.google:hover {{ background: #2b6fd4; }}
     .section-title {{ font-size: 1.6rem; font-weight: 700; color: #333; text-transform: uppercase; letter-spacing: .06em; margin: 1.5rem 0 .75rem; }}
-    .line-row {{ background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: .85rem 1rem; margin-bottom: .75rem; }}
-    .line-sep {{ border: none; border-top: 1px solid #f0f0f0; margin: .6rem 0 .5rem; }}
-    .section-note {{ font-size: .85em; color: #aaa; margin: -.25rem 0 .75rem; }}
-    .contact-hint {{ font-size: .85em; color: #888; margin: 0 0 1.5rem; }}
+    .lines-grid {{ display: grid; grid-template-columns: repeat(2, 1fr); gap: .75rem; }}
+    @media (max-width: 600px) {{ .lines-grid {{ grid-template-columns: 1fr; }} }}
+    .line-row {{ background: #fff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 1rem 1.2rem; }}
+    .section-note {{ font-size: .85em; color: #222; margin: -.25rem 0 .75rem; }}
+    .contact-hint {{ font-size: .85em; color: #222; margin: 0 0 1.5rem; }}
     .quiet {{ color: #aaa; font-size: .85em; margin: .5rem 0 0; }}
     details {{ margin-top: .6rem; }}
-    details summary {{ cursor: pointer; font-size: .88em; color: #c0392b; font-weight: 600; list-style: none; display: flex; align-items: center; gap: .4rem; user-select: none; }}
+    details summary {{ cursor: pointer; font-size: .88em; color: #555; font-weight: 600; list-style: none; display: flex; align-items: center; gap: .4rem; user-select: none; }}
     details summary::before {{ content: "▶"; font-size: .7em; transition: transform .15s; }}
     details[open] summary::before {{ transform: rotate(90deg); }}
-    .cards {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: .75rem; margin-top: .75rem; }}
-    .dis-card {{ background: #fafafa; border: 1px solid #e8e8e8; border-radius: 7px; padding: .8rem; }}
+    @keyframes redglow {{ 0%, 100% {{ color: #8b1a1a; }} 50% {{ color: #e53935; }} }}
+    .dis-btn {{ background: none; border: none; cursor: pointer; font-family: inherit; font-size: .8em; font-weight: 600; color: #c0392b; padding: 1.6em 0 0; display: block; animation: redglow 3s ease-in-out infinite; }}
+    .dis-btn:hover {{ text-decoration: underline; }}
+    .dis-dialog {{ border: none; border-radius: 14px; padding: 1.5rem; max-width: 640px; width: calc(100vw - 2rem); box-shadow: 0 8px 40px rgba(0,0,0,.18); position: fixed; inset: 0; margin: auto; height: fit-content; overflow-y: auto; max-height: 90vh; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }}
+    .dis-dialog[open] {{ animation: dialogIn .25s cubic-bezier(0.16,1,0.3,1) forwards; }}
+    @keyframes dialogIn {{ from {{ opacity: 0; transform: scale(.95); }} to {{ opacity: 1; transform: scale(1); }} }}
+    .dis-dialog::backdrop {{ background: rgba(0,0,0,.45); animation: backdropIn .25s ease forwards; }}
+    @keyframes backdropIn {{ from {{ opacity: 0; }} to {{ opacity: 1; }} }}
+    .dis-close {{ position: absolute; top: .85rem; right: .85rem; background: none; border: none; cursor: pointer; font-size: 1rem; color: #999; padding: .2rem .45rem; border-radius: 5px; line-height: 1; }}
+    .dis-close:hover {{ background: #f0f0f0; color: #333; }}
+    .dis-dialog-title {{ font-weight: 700; font-size: 1rem; margin: 0 0 1rem; color: #333; }}
+    .cards {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: .75rem; }}
+    .dis-card {{ background: #fafafa; border: 1px solid #e8e8e8; border-radius: 10px; padding: .9rem; }}
     .card-title {{ font-weight: 600; font-size: .9em; margin-bottom: .4rem; }}
     .period {{ font-size: .8em; color: #555; margin: .15rem 0; }}
     .stops {{ font-size: .8em; color: #333; margin-top: .35rem; }}
     .message {{ font-size: .78em; color: #666; margin-top: .45rem; border-top: 1px solid #eee; padding-top: .35rem; white-space: pre-wrap; }}
     .note {{ font-size: .82em; color: #666; font-style: italic; margin: .5rem 0 .5rem; }}
-    .all-badges {{ display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 0; }}
-    .all-badges .badge {{ font-size: .75rem; padding: .15em .5em; }}
+    .all-badges {{ display: grid; grid-template-columns: repeat(8, auto); gap: .4rem; margin-bottom: 0; justify-content: start; }}
+    .all-badges .badge {{ width: 3rem; height: 3rem; font-size: 1.8rem; }}
+    @media (max-width: 600px) {{ .all-badges {{ grid-template-columns: repeat(4, auto); gap: .3rem; }} .all-badges .badge {{ width: 2.4rem; height: 2.4rem; font-size: 1.3rem; }} }}
     section {{ margin-bottom: 2.5rem; }}
-    @keyframes redglow {{ 0%, 100% {{ color: #8b1a1a; }} 50% {{ color: #e53935; }} }}
-    .line-row details summary {{ font-size: 1rem; animation: redglow 3s ease-in-out infinite; }}
-    @keyframes fadein {{ from {{ opacity: 0; transform: translateY(-6px); }} to {{ opacity: 1; transform: translateY(0); }} }}
-    details[open] .cards, details[open] .note {{ animation: fadein .5s ease; }}
+    @keyframes fadein {{ from {{ opacity: 0; transform: translateY(-8px); }} to {{ opacity: 1; transform: translateY(0); }} }}
+    .dis-dialog .cards, .dis-dialog .note {{ animation: fadein .2s ease; }}
   </style>
 </head>
 <body>
@@ -667,7 +685,7 @@ def generate_index(
 
   <div class="intro">
     Cliquez sur <strong>le fournisseur de calendrier de votre choix</strong> pour vous abonner en un clic.</br>
-    Le calendrier se met à jour <strong>automatiquement</strong>.
+    Le calendrier se met à jour <strong>automatiquement</strong> lorsque de nouvelles interruptions sont ajoutées.
     <details style="margin-top:.6rem">
       <summary style="color:#888;font-weight:500">Comment ça marche ?</summary>
       <p style="margin:.5rem 0 0;font-size:.88em;color:#555">
@@ -678,7 +696,7 @@ def generate_index(
     </details>
   </div>
 
-  <p class="contact-hint">Une question, suggestion, erreur ? → <a href="mailto:contact@travauxmetro.fr">contact@travauxmetro.fr</a></p>
+  <p class="contact-hint">Une question, une suggestion, une erreur à remonter ? <span style="white-space:nowrap">→ <a href="mailto:contact@travauxmetro.fr">contact@travauxmetro.fr</a></span></p>
 
   {disrupted_section}
   {calm_section}
@@ -687,9 +705,11 @@ def generate_index(
     <h2 class="section-title">Toutes les lignes</h2>
     <p class="section-note">Un seul abonnement pour suivre toutes les perturbations du réseau en même temps.</p>
     <div class="line-row">
-      <div class="all-badges">{all_badges}</div>
-      <hr class="line-sep">
-      <div class="line-actions">{_sub_buttons(all_url, "all")}</div>
+      <div class="line-header">
+        <div class="all-badges">{all_badges}</div>
+        <div class="line-vsep"></div>
+        <div class="line-actions">{_sub_buttons(all_url, "all")}</div>
+      </div>
     </div>
   </section>
 
@@ -733,14 +753,17 @@ def generate_index(
       fallback();
     }}
   }}
-  document.querySelectorAll('.line-row details').forEach(d => {{
-    d.addEventListener('toggle', () => {{
-      if (d.open && typeof umami !== 'undefined') {{
-        const row = d.closest('.line-row');
-        const line = row ? row.dataset.line : 'unknown';
-        umami.track('accordion-open', {{ line }});
-      }}
+  document.querySelectorAll('.dis-btn').forEach(btn => {{
+    btn.addEventListener('click', () => {{
+      const scrollY = window.scrollY;
+      document.getElementById(btn.dataset.dialog).showModal();
+      window.scrollTo({{ top: scrollY, behavior: 'instant' }});
+      document.body.style.overflow = 'hidden';
     }});
+  }});
+  document.querySelectorAll('.dis-dialog').forEach(dlg => {{
+    dlg.addEventListener('click', e => {{ if (e.target === dlg) dlg.close(); }});
+    dlg.addEventListener('close', () => {{ document.body.style.overflow = ''; }});
   }});
   </script>
 </body>
@@ -850,12 +873,12 @@ def main():
             line_stats.append((line_name, filename, event_count))
         print(f"  M{line_name}: {event_count} event{'s' if event_count > 1 else ''} → {filename}")
 
-    (PUBLIC / "all.ics").write_bytes(all_cal.to_ical())
+    (PUBLIC / "tousmetros.ics").write_bytes(all_cal.to_ical())
 
     event_counts = {name: count for name, _, count in line_stats}
     (DATA / "summary.md").write_text(generate_summary(by_line, dis_to_stops, dis_by_id, metro_lines, fetched_at, diff, event_counts))
     (PUBLIC / "index.html").write_text(generate_index(by_line, dis_by_id, dis_to_stops, metro_lines, fetched_at))
-    print(f"Done. Generated all.ics + {len(line_stats)} line file{'s' if len(line_stats) else ''}.")
+    print(f"Done. Generated tousmetros.ics + {len(line_stats)} line file{'s' if len(line_stats) else ''}.")
 
 
 if __name__ == "__main__":
