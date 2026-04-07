@@ -216,6 +216,7 @@ def make_calendar(name: str, bg_color: str, description: str = "") -> Calendar:
     cal.add("x-wr-timezone", "Europe/Paris")
     cal.add("x-apple-calendar-color", bg_color)
     cal.add("x-published-ttl", "PT12H")
+    cal.add("refresh-interval;value=duration", "PT12H")
     return cal
 
 
