@@ -18,7 +18,7 @@ Les calendriers sont mis à jour quotidiennement et votre application les synchr
 ## Fonctionnement
 
 1. Un workflow GitHub Actions s'exécute chaque jour à 05h00 UTC
-2. Il interroge l'API [PRIM d'Île-de-France Mobilités](https://prim.iledefrance-mobilites.fr/en/apis/idfm-disruptions_bulk) pour récupérer les perturbations de type `TRAVAUX` sur le réseau métro
+2. Il interroge l'API [PRIM d'Île-de-France Mobilités](https://prim.iledefrance-mobilites.fr/en/apis/idfm-disruptions_bulk) pour récupérer les interruptions de type `TRAVAUX` sur le réseau métro
 3. Si les données ont changé, une Pull Request est ouverte automatiquement pour validation avant mise en ligne
 4. Au merge, les calendriers et la page d'accueil sont regénérés et déployés
 
@@ -46,7 +46,7 @@ uv run python scripts/serve.py
 
 ## Source des données
 
-[Île-de-France Mobilités — PRIM](https://prim.iledefrance-mobilites.fr/en/apis/idfm-disruptions_bulk) — API publique des perturbations en temps réel.
+[Île-de-France Mobilités — PRIM](https://prim.iledefrance-mobilites.fr/en/apis/idfm-disruptions_bulk) — API publique des interruptions en temps réel.
 
 ## Format
 

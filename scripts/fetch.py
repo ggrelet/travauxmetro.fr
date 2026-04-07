@@ -226,7 +226,7 @@ def make_events(disruption: dict, line_name: str, stops: list[str]) -> list[Even
     short = disruption.get("shortMessage", "").strip()
     cause = disruption.get("cause", "")
 
-    summary = f"M{line_name} — {title or short or 'Perturbation'}"
+    summary = f"M{line_name} — {title or short or 'Interruption'}"
 
     desc_parts = [f"Ligne {line_name}"]
     if stops:
@@ -370,7 +370,7 @@ def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, metro_l
 
         for dis_id in sorted(normal_ids):
             d = dis_by_id[dis_id]
-            title = d.get("title", "Perturbation").strip()
+            title = d.get("title", "Interruption").strip()
             short = d.get("shortMessage", "").strip()
             message = strip_html(d.get("message", ""))
             stops = dis_to_stops[dis_id].get(line_id, []) if line_id else []
@@ -508,7 +508,7 @@ def _line_disruption_html(
 
         cards += f"""
           <div class="dis-card">
-            <div class="card-title">{title or short or "Perturbation"}</div>
+            <div class="card-title">{title or short or "Interruption"}</div>
             {periods_html}{stops_html}{message_html}
           </div>"""
 
