@@ -1,4 +1,4 @@
-## Travaux métro — 06-04-2026
+## Travaux métro — 07-04-2026
 
 **Lignes concernées :** 5
 
@@ -7,14 +7,14 @@
 | ![M3](https://img.shields.io/badge/-M3-837902?style=flat) | 1 |
 | ![M3B](https://img.shields.io/badge/-M3B-6EC4E8?style=flat) | 6 |
 | ![M4](https://img.shields.io/badge/-M4-CF009E?style=flat) | 1 |
-| ![M12](https://img.shields.io/badge/-M12-007852?style=flat) | 4 |
+| ![M12](https://img.shields.io/badge/-M12-007852?style=flat) | 3 |
 | ![M13](https://img.shields.io/badge/-M13-98D4E2?style=flat) | 5 |
 
 ---
 
 #### ![M3](https://img.shields.io/badge/-M3-837902?style=flat)
 - **Métro 3 : Travaux - Trafic interrompu** — 08-04-2026 → 13-05-2026
-  - 🚉 Gallieni, Gambetta, Porte de Bagnolet
+  - 🚉 Gallieni, Porte de Bagnolet, Gambetta
   - Trafic interrompu
   - Du 8 avril au 12 mai inclus, le trafic sera interrompu entre Gallieni et Gambetta en raison de travaux. Bus de remplacement.
 
@@ -32,7 +32,7 @@
   - Du 20 avril au 1er mai inclus, le trafic sera interrompu entre Châtelet et Barbès - Rochechouart en raison de travaux d'entretien.
 
 #### ![M12](https://img.shields.io/badge/-M12-007852?style=flat)
-- **Métro 12 : Travaux de modernisation - Trafic interrompu** — 01-04-2026 → 09-04-2026
+- **Métro 12 : Travaux de modernisation - Trafic interrompu** — 08-04-2026 → 09-04-2026
   - Trafic interrompu
   - Jusqu'au 8 avril, le mercredi dès 22:00, le trafic est interrompu sur toute la ligne en raison de travaux de modernisation.
 - **Métro 12 : Travaux de modernisation - Trafic interrompu** — 05-04-2026 → 13-04-2026
