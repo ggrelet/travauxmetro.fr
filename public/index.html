@@ -73,9 +73,10 @@
     @keyframes dialogIn { from { opacity: 0; transform: scale(.95); } to { opacity: 1; transform: scale(1); } }
     .dis-dialog::backdrop { background: rgba(0,0,0,.45); animation: backdropIn .25s ease forwards; }
     @keyframes backdropIn { from { opacity: 0; } to { opacity: 1; } }
-    .dis-close { position: absolute; top: .85rem; right: .85rem; background: none; border: none; cursor: pointer; font-size: 1rem; color: #999; padding: .2rem .45rem; border-radius: 5px; line-height: 1; }
+    .dis-close { position: absolute; top: .85rem; right: .85rem; background: none; border: none; cursor: pointer; font-size: 1.4rem; color: #999; padding: .2rem .45rem; border-radius: 5px; line-height: 1; }
     .dis-close:hover { background: #f0f0f0; color: #333; }
-    .dis-dialog-title { font-weight: 700; font-size: 1rem; margin: 0 0 1rem; color: #333; }
+    .dis-dialog-title { font-weight: 700; font-size: 1.05rem; margin: 0 0 .1rem; color: #333; }
+    .dis-dialog-subtitle { font-size: .9rem; color: #666; margin: 0 0 1rem; }
     .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: .75rem; }
     .dis-card { background: #fafafa; border: 1px solid #e8e8e8; border-radius: 10px; padding: .9rem; }
     .card-title { font-weight: 600; font-size: .9em; margin-bottom: .4rem; }
@@ -97,7 +98,7 @@
 
   <div class="intro">
     Cliquez sur <strong>le fournisseur de calendrier de votre choix</strong> pour vous abonner en un clic.</br>
-    Le calendrier se met à jour <strong>automatiquement</strong> lorsque de nouvelles interruptions sont ajoutées.
+    Le calendrier se met à jour <strong>automatiquement</strong> lorsque de nouvelles interruptions sont prévues sur le réseau.
     <details style="margin-top:.6rem">
       <summary style="color:#888;font-weight:500">Comment ça marche ?</summary>
       <p style="margin:.5rem 0 0;font-size:.88em;color:#555">
@@ -121,14 +122,15 @@
         <div class="line-vsep"></div>
         <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-3.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="3"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/ligne-3.ics" data-umami-event="subscribe-webcal" data-umami-event-line="3"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-3.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="3"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-3.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="3"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-3.ics',this)" data-umami-event="copy-url" data-umami-event-line="3"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
       </div>
-      <button class="dis-btn" data-dialog="dis-3" data-umami-event="accordion-open" data-umami-event-line="3"><span style="font-size:.8em">▶</span> 1 perturbation en cours</button>
+      <button class="dis-btn" data-dialog="dis-3" data-umami-event="accordion-open" data-umami-event-line="3"><span style="font-size:.8em">▶</span> 1 interruption prévue</button>
     <dialog id="dis-3" class="dis-dialog">
       <button class="dis-close" onclick="this.closest('dialog').close()">✕</button>
-      <p class="dis-dialog-title">Ligne 3 — 1 perturbation en cours</p>
+      <p class="dis-dialog-title">Ligne 3</p>
+      <p class="dis-dialog-subtitle">1 interruption prévue</p>
       <div class="cards">
           <div class="dis-card">
             <div class="card-title">Métro 3 : Travaux - Trafic interrompu</div>
-            <div class="period">📅 08-04-2026 → 12-05-2026</div><div class="stops">🚉 Gallieni, Porte de Bagnolet, Gambetta</div><div class="message">Du 8 avril au 12 mai inclus, le trafic sera interrompu entre Gallieni et Gambetta en raison de travaux. Bus de remplacement.</div>
+            <div class="period">📅 08-04-2026 → 12-05-2026</div><div class="stops">🚉 Gambetta, Gallieni, Porte de Bagnolet</div><div class="message">Du 8 avril au 12 mai inclus, le trafic sera interrompu entre Gallieni et Gambetta en raison de travaux. Bus de remplacement.</div>
           </div></div>
     </dialog>
     </div>
@@ -138,10 +140,11 @@
         <div class="line-vsep"></div>
         <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-3B.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="3B"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/ligne-3B.ics" data-umami-event="subscribe-webcal" data-umami-event-line="3B"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-3B.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="3B"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-3B.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="3B"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-3B.ics',this)" data-umami-event="copy-url" data-umami-event-line="3B"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
       </div>
-      <button class="dis-btn" data-dialog="dis-3B" data-umami-event="accordion-open" data-umami-event-line="3B"><span style="font-size:.8em">▶</span> 2 perturbations en cours</button>
+      <button class="dis-btn" data-dialog="dis-3B" data-umami-event="accordion-open" data-umami-event-line="3B"><span style="font-size:.8em">▶</span> 2 interruptions prévues</button>
     <dialog id="dis-3B" class="dis-dialog">
       <button class="dis-close" onclick="this.closest('dialog').close()">✕</button>
-      <p class="dis-dialog-title">Ligne 3B — 2 perturbations en cours</p>
+      <p class="dis-dialog-title">Ligne 3B</p>
+      <p class="dis-dialog-subtitle">2 interruptions prévues</p>
       <div class="cards">
           <div class="dis-card">
             <div class="card-title">Métro 3B : Travaux - Trafic interrompu</div>
@@ -159,10 +162,11 @@
         <div class="line-vsep"></div>
         <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-4.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="4"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/ligne-4.ics" data-umami-event="subscribe-webcal" data-umami-event-line="4"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-4.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="4"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-4.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="4"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-4.ics',this)" data-umami-event="copy-url" data-umami-event-line="4"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
       </div>
-      <button class="dis-btn" data-dialog="dis-4" data-umami-event="accordion-open" data-umami-event-line="4"><span style="font-size:.8em">▶</span> 1 perturbation en cours</button>
+      <button class="dis-btn" data-dialog="dis-4" data-umami-event="accordion-open" data-umami-event-line="4"><span style="font-size:.8em">▶</span> 1 interruption prévue</button>
     <dialog id="dis-4" class="dis-dialog">
       <button class="dis-close" onclick="this.closest('dialog').close()">✕</button>
-      <p class="dis-dialog-title">Ligne 4 — 1 perturbation en cours</p>
+      <p class="dis-dialog-title">Ligne 4</p>
+      <p class="dis-dialog-subtitle">1 interruption prévue</p>
       <div class="cards">
           <div class="dis-card">
             <div class="card-title">Métro 4 : Travaux d'entretien - Trafic interrompu</div>
@@ -176,10 +180,11 @@
         <div class="line-vsep"></div>
         <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-12.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="12"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/ligne-12.ics" data-umami-event="subscribe-webcal" data-umami-event-line="12"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-12.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="12"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-12.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="12"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-12.ics',this)" data-umami-event="copy-url" data-umami-event-line="12"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
       </div>
-      <button class="dis-btn" data-dialog="dis-12" data-umami-event="accordion-open" data-umami-event-line="12"><span style="font-size:.8em">▶</span> 2 perturbations en cours</button>
+      <button class="dis-btn" data-dialog="dis-12" data-umami-event="accordion-open" data-umami-event-line="12"><span style="font-size:.8em">▶</span> 2 interruptions prévues</button>
     <dialog id="dis-12" class="dis-dialog">
       <button class="dis-close" onclick="this.closest('dialog').close()">✕</button>
-      <p class="dis-dialog-title">Ligne 12 — 2 perturbations en cours</p>
+      <p class="dis-dialog-title">Ligne 12</p>
+      <p class="dis-dialog-subtitle">2 interruptions prévues</p>
       <div class="cards">
           <div class="dis-card">
             <div class="card-title">Métro 12 : Travaux de modernisation - Trafic interrompu</div>
@@ -197,10 +202,11 @@
         <div class="line-vsep"></div>
         <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Fligne-13.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="13"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/ligne-13.ics" data-umami-event="subscribe-webcal" data-umami-event-line="13"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-13.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="13"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Fligne-13.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="13"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/ligne-13.ics',this)" data-umami-event="copy-url" data-umami-event-line="13"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
       </div>
-      <button class="dis-btn" data-dialog="dis-13" data-umami-event="accordion-open" data-umami-event-line="13"><span style="font-size:.8em">▶</span> 5 perturbations en cours</button>
+      <button class="dis-btn" data-dialog="dis-13" data-umami-event="accordion-open" data-umami-event-line="13"><span style="font-size:.8em">▶</span> 5 interruptions prévues</button>
     <dialog id="dis-13" class="dis-dialog">
       <button class="dis-close" onclick="this.closest('dialog').close()">✕</button>
-      <p class="dis-dialog-title">Ligne 13 — 5 perturbations en cours</p>
+      <p class="dis-dialog-title">Ligne 13</p>
+      <p class="dis-dialog-subtitle">5 interruptions prévues</p>
       <div class="cards">
           <div class="dis-card">
             <div class="card-title">Métro 13 : Travaux - Trafic interrompu</div>
@@ -324,7 +330,7 @@
   <footer>
     <div>Source : <a href="https://prim.iledefrance-mobilites.fr">Île-de-France Mobilités (PRIM)</a> —
     <a href="https://github.com/ggrelet/travauxmetro.fr"><img src="/icons/github.svg" width="14" height="14" alt="GitHub" style="vertical-align:middle;margin-right:.25em;margin-bottom:2px">code source</a></div>
-    <div>Dernière mise à jour des données : 2026-04-07 à 20:53</div>
+    <div>Dernière mise à jour des données : 2026-04-07 à 21:04</div>
     <div><a href="mailto:contact@travauxmetro.fr">contact@travauxmetro.fr</a></div>
   </footer>
   <script>
@@ -366,12 +372,20 @@
       const scrollY = window.scrollY;
       document.getElementById(btn.dataset.dialog).showModal();
       window.scrollTo({ top: scrollY, behavior: 'instant' });
-      document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.width = '100%';
     });
   });
   document.querySelectorAll('.dis-dialog').forEach(dlg => {
     dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
-    dlg.addEventListener('close', () => { document.body.style.overflow = ''; });
+    dlg.addEventListener('close', () => {
+      const scrollY = Math.abs(parseInt(document.body.style.top || '0'));
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+      window.scrollTo({ top: scrollY, behavior: 'instant' });
+    });
   });
   </script>
 </body>

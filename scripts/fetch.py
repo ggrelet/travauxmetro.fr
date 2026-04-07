@@ -514,14 +514,15 @@ def _line_disruption_html(
 
     card_count = cards.count('<div class="dis-card">')
     if card_count == 0:
-        return '<p class="quiet">Aucune perturbation en cours, mais cela pourrait arriver dans le futur. Abonnez-vous pour ne pas les manquer.</p>'
+        return '<p class="quiet">Aucune interruption prévue, mais cela pourrait arriver dans le futur. Abonnez-vous pour ne pas les manquer.</p>'
 
-    label = f"{card_count} perturbation{'s' if card_count > 1 else ''} en cours"
+    label = f"{card_count} interruption{'s' if card_count > 1 else ''} prévue{'s' if card_count > 1 else ''}"
     dialog_id = f"dis-{line_name}"
     return f"""<button class="dis-btn" data-dialog="{dialog_id}" data-umami-event="accordion-open" data-umami-event-line="{line_name}"><span style="font-size:.8em">▶</span> {label}</button>
     <dialog id="{dialog_id}" class="dis-dialog">
       <button class="dis-close" onclick="this.closest('dialog').close()">✕</button>
-      <p class="dis-dialog-title">Ligne {line_name} — {label}</p>
+      <p class="dis-dialog-title">Ligne {line_name}</p>
+      <p class="dis-dialog-subtitle">{label}</p>
       {notes_html}<div class="cards">{cards}</div>
     </dialog>"""
 
@@ -662,9 +663,10 @@ def generate_index(
     @keyframes dialogIn {{ from {{ opacity: 0; transform: scale(.95); }} to {{ opacity: 1; transform: scale(1); }} }}
     .dis-dialog::backdrop {{ background: rgba(0,0,0,.45); animation: backdropIn .25s ease forwards; }}
     @keyframes backdropIn {{ from {{ opacity: 0; }} to {{ opacity: 1; }} }}
-    .dis-close {{ position: absolute; top: .85rem; right: .85rem; background: none; border: none; cursor: pointer; font-size: 1rem; color: #999; padding: .2rem .45rem; border-radius: 5px; line-height: 1; }}
+    .dis-close {{ position: absolute; top: .85rem; right: .85rem; background: none; border: none; cursor: pointer; font-size: 1.4rem; color: #999; padding: .2rem .45rem; border-radius: 5px; line-height: 1; }}
     .dis-close:hover {{ background: #f0f0f0; color: #333; }}
-    .dis-dialog-title {{ font-weight: 700; font-size: 1rem; margin: 0 0 1rem; color: #333; }}
+    .dis-dialog-title {{ font-weight: 700; font-size: 1.05rem; margin: 0 0 .1rem; color: #333; }}
+    .dis-dialog-subtitle {{ font-size: .9rem; color: #666; margin: 0 0 1rem; }}
     .cards {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: .75rem; }}
     .dis-card {{ background: #fafafa; border: 1px solid #e8e8e8; border-radius: 10px; padding: .9rem; }}
     .card-title {{ font-weight: 600; font-size: .9em; margin-bottom: .4rem; }}
@@ -686,7 +688,7 @@ def generate_index(
 
   <div class="intro">
     Cliquez sur <strong>le fournisseur de calendrier de votre choix</strong> pour vous abonner en un clic.</br>
-    Le calendrier se met à jour <strong>automatiquement</strong> lorsque de nouvelles interruptions sont ajoutées.
+    Le calendrier se met à jour <strong>automatiquement</strong> lorsque de nouvelles interruptions sont prévues sur le réseau.
     <details style="margin-top:.6rem">
       <summary style="color:#888;font-weight:500">Comment ça marche ?</summary>
       <p style="margin:.5rem 0 0;font-size:.88em;color:#555">
@@ -759,12 +761,20 @@ def generate_index(
       const scrollY = window.scrollY;
       document.getElementById(btn.dataset.dialog).showModal();
       window.scrollTo({{ top: scrollY, behavior: 'instant' }});
-      document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${{scrollY}}px`;
+      document.body.style.width = '100%';
     }});
   }});
   document.querySelectorAll('.dis-dialog').forEach(dlg => {{
     dlg.addEventListener('click', e => {{ if (e.target === dlg) dlg.close(); }});
-    dlg.addEventListener('close', () => {{ document.body.style.overflow = ''; }});
+    dlg.addEventListener('close', () => {{
+      const scrollY = Math.abs(parseInt(document.body.style.top || '0'));
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+      window.scrollTo({{ top: scrollY, behavior: 'instant' }});
+    }});
   }});
   </script>
 </body>
