@@ -594,6 +594,21 @@ def generate_index(
   <meta property="og:description" content="Abonnez-vous aux perturbations et travaux planifiés du métro parisien. Calendrier mis à jour automatiquement et quotidiennement pour chaque ligne.">
   <meta property="og:url" content="https://travauxmetro.fr/">
   <meta property="og:type" content="website">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Travaux Métro Paris",
+    "url": "https://travauxmetro.fr",
+    "description": "Abonnez-vous aux perturbations et travaux planifiés du métro parisien. Calendrier mis à jour automatiquement et quotidiennement pour chaque ligne.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "offers": {{ "@type": "Offer", "price": "0", "priceCurrency": "EUR" }},
+    "inLanguage": "fr",
+    "dateModified": "{date_str}"
+  }}
+  </script>
   {FAVICON}
   {UMAMI}
   <style>
