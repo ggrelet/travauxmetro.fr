@@ -349,7 +349,7 @@ def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, metro_l
     lines += [
         f"**Lignes concernées :** {len(by_line)}",
         "",
-        "| Ligne | Perturbations |",
+        "| Ligne | Interruptions |",
         "|-------|--------------|",
     ]
     for line_name, dis_ids in sorted(by_line.items(), key=lambda x: line_sort_key(x[0])):
@@ -684,7 +684,7 @@ def generate_index(
 </head>
 <body>
   <h1>Travaux Métro</h1>
-  <p class="subtitle">Perturbations et travaux planifiés par Île-de-France Mobilités.</br>Abonnez-vous au calendrier d'interruptions de votre ligne de métro parisien.</p>
+  <p class="subtitle">Interruptions et travaux planifiés par Île-de-France Mobilités.</br>Abonnez-vous au calendrier d'interruptions de votre ligne de métro parisien.</p>
 
   <div class="intro">
     Cliquez sur <strong>le fournisseur de calendrier de votre choix</strong> pour vous abonner en un clic.</br>
@@ -847,7 +847,7 @@ def main():
     all_cal = make_calendar(
         "Paris Métro — Travaux",
         "#003CA6",
-        "Perturbations et travaux planifiés sur toutes les lignes du métro parisien. "
+        "Interruptions et travaux planifiés sur toutes les lignes du métro parisien. "
         "Mis à jour quotidiennement depuis les données Île-de-France Mobilités. "
         "travauxmetro.fr",
     )
@@ -856,7 +856,7 @@ def main():
     for line_name in sorted(METRO_LINE_COLORS.keys(), key=line_sort_key):
         bg, _ = METRO_LINE_COLORS[line_name]
         desc = (
-            f"Perturbations et travaux planifiés sur la ligne {line_name} du métro parisien. "
+            f"Interruptions et travaux planifiés sur la ligne {line_name} du métro parisien. "
             "Mis à jour quotidiennement depuis les données Île-de-France Mobilités. "
             "travauxmetro.fr"
         )
