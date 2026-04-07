@@ -2,7 +2,7 @@
 
 **Lignes concernées :** 5
 
-| Ligne | Perturbations |
+| Ligne | Interruptions |
 |-------|--------------|
 | ![M3](https://img.shields.io/badge/-M3-837902?style=flat) | 1 |
 | ![M3B](https://img.shields.io/badge/-M3B-6EC4E8?style=flat) | 6 |
@@ -14,7 +14,7 @@
 
 #### ![M3](https://img.shields.io/badge/-M3-837902?style=flat)
 - **Métro 3 : Travaux - Trafic interrompu** — 08-04-2026 → 13-05-2026
-  - 🚉 Gallieni, Porte de Bagnolet, Gambetta
+  - 🚉 Porte de Bagnolet, Gambetta, Gallieni
   - Trafic interrompu
   - Du 8 avril au 12 mai inclus, le trafic sera interrompu entre Gallieni et Gambetta en raison de travaux. Bus de remplacement.
 

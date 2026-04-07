@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//ggrelet//travaux-metro//FR
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALDESC:Perturbations et travaux planifiés sur la ligne 13 du métro
+X-WR-CALDESC:Interruptions et travaux planifiés sur la ligne 13 du métro
   parisien. Mis à jour quotidiennement depuis les données Île-de-France 
  Mobilités. travauxmetro.fr
 X-WR-CALNAME:Métro Ligne 13 — Travaux
@@ -13,20 +13,21 @@ X-PUBLISHED-TTL:PT12H
 X-WR-TIMEZONE:Europe/Paris
 BEGIN:VEVENT
 SUMMARY:M13 — Métro 13 : Travaux - Trafic interrompu
-DTSTART;TZID=Europe/Paris:20260607T044500
-DTEND;TZID=Europe/Paris:20260607T120000
-DTSTAMP:20260407T185350Z
-UID:9ea051e5-b459-47da-a9f6-1ea9f8b4c611_20260607T044500@travaux-metro
+DTSTART;TZID=Europe/Paris:20260517T044500
+DTEND;TZID=Europe/Paris:20260517T120000
+DTSTAMP:20260407T193615Z
+UID:71626f4a-75d9-49df-8a3b-16caf2277ebd_20260517T044500@travaux-metro
 CATEGORIES:Ligne 13,Travaux Métro
-DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLes dimanches 7 et 28 juin\, 
- jusqu'à 12 heures\, le trafic est interrompu sur l'ensemble de la ligne e
- n raison de travaux de modernisation.\n\nCause : TRAVAUX
+DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLe dimanche 17 mai ainsi que 
+ les 7 et 28 juin\, jusqu'à 12 heures\, le trafic est interrompu sur l'ens
+ emble de la ligne en raison de travaux de modernisation.\n\nCause : TRAVAU
+ X
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:M13 — Métro 13 : Travaux - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260503T044500
 DTEND;TZID=Europe/Paris:20260503T120000
-DTSTAMP:20260407T185350Z
+DTSTAMP:20260407T193615Z
 UID:3f4523c5-b213-4672-a207-6555a464535d_20260503T044500@travaux-metro
 CATEGORIES:Ligne 13,Travaux Métro
 DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLes dimanches 3 et 17 mai ain
@@ -36,36 +37,35 @@ DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLes dimanches 3 et 17 mai ain
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:M13 — Métro 13 : Travaux - Trafic interrompu
-DTSTART;TZID=Europe/Paris:20260628T044500
-DTEND;TZID=Europe/Paris:20260628T120000
-DTSTAMP:20260407T185350Z
-UID:63110a5c-f7da-49bf-be35-ea8aaf0b8358_20260628T044500@travaux-metro
+DTSTART;TZID=Europe/Paris:20260607T044500
+DTEND;TZID=Europe/Paris:20260607T120000
+DTSTAMP:20260407T193615Z
+UID:9ea051e5-b459-47da-a9f6-1ea9f8b4c611_20260607T044500@travaux-metro
 CATEGORIES:Ligne 13,Travaux Métro
-DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLe 28 juin jusqu'à 12:00\, l
- e trafic sera interrompu sur toute la ligne en raison de travaux.\n\nCause
-  : TRAVAUX
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:M13 — Métro 13 : Travaux - Trafic interrompu
-DTSTART;TZID=Europe/Paris:20260517T044500
-DTEND;TZID=Europe/Paris:20260517T120000
-DTSTAMP:20260407T185350Z
-UID:71626f4a-75d9-49df-8a3b-16caf2277ebd_20260517T044500@travaux-metro
-CATEGORIES:Ligne 13,Travaux Métro
-DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLe dimanche 17 mai ainsi que 
- les 7 et 28 juin\, jusqu'à 12 heures\, le trafic est interrompu sur l'ens
- emble de la ligne en raison de travaux de modernisation.\n\nCause : TRAVAU
- X
+DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLes dimanches 7 et 28 juin\, 
+ jusqu'à 12 heures\, le trafic est interrompu sur l'ensemble de la ligne e
+ n raison de travaux de modernisation.\n\nCause : TRAVAUX
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:M13 — Métro 13 : Travaux de modernisation - Arrêt non desservi
 DTSTART;VALUE=DATE:20260409
 DTEND;VALUE=DATE:20260413
-DTSTAMP:20260407T185350Z
+DTSTAMP:20260407T193615Z
 UID:54805216-ed7e-11f0-9376-0a58a9feac02_20260409T044500@travaux-metro
 CATEGORIES:Ligne 13,Travaux Métro
 DESCRIPTION:Ligne 13\n\nStation : Plaisance\n\nArrêt non desservi\n\nDu 9
   avril au 12 avril inclus\, l'arrêt ne sera pas desservi à Plaisance en 
  raison de travaux de modernisation\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:M13 — Métro 13 : Travaux - Trafic interrompu
+DTSTART;TZID=Europe/Paris:20260628T044500
+DTEND;TZID=Europe/Paris:20260628T120000
+DTSTAMP:20260407T193615Z
+UID:e569a1cc-9bfc-4680-94bd-e0609b8f05dd_20260628T044500@travaux-metro
+CATEGORIES:Ligne 13,Travaux Métro
+DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLe 28 juin jusqu'à 12:00\, l
+ e trafic sera interrompu sur toute la ligne en raison de travaux.\n\nCause
+  : TRAVAUX
 END:VEVENT
 END:VCALENDAR
