@@ -520,7 +520,7 @@ def _line_disruption_html(
     dialog_id = f"dis-{line_name}"
     return f"""<button class="dis-btn" data-dialog="{dialog_id}" data-umami-event="accordion-open" data-umami-event-line="{line_name}"><span style="font-size:.8em">▶</span> {label}</button>
     <dialog id="{dialog_id}" class="dis-dialog">
-      <button class="dis-close" onclick="this.closest('dialog').close()">✕</button>
+      <button class="dis-close" autofocus onclick="this.closest('dialog').close()">✕</button>
       <p class="dis-dialog-title">Ligne {line_name}</p>
       <p class="dis-dialog-subtitle">{label}</p>
       {notes_html}<div class="cards">{cards}</div>
@@ -756,24 +756,25 @@ def generate_index(
       fallback();
     }}
   }}
+  document.querySelectorAll('.dis-dialog').forEach(dlg => {{
+    document.body.insertBefore(dlg, document.body.firstChild);
+  }});
   document.querySelectorAll('.dis-btn').forEach(btn => {{
     btn.addEventListener('click', () => {{
-      const scrollY = window.scrollY;
+      const sw = window.innerWidth - document.documentElement.clientWidth;
+      if (sw) document.body.style.paddingRight = sw + 'px';
+      document.documentElement.style.overflow = 'hidden';
+      const siv = Element.prototype.scrollIntoView;
+      Element.prototype.scrollIntoView = () => {{}};
       document.getElementById(btn.dataset.dialog).showModal();
-      window.scrollTo({{ top: scrollY, behavior: 'instant' }});
-      document.body.style.position = 'fixed';
-      document.body.style.top = `-${{scrollY}}px`;
-      document.body.style.width = '100%';
+      Element.prototype.scrollIntoView = siv;
     }});
   }});
   document.querySelectorAll('.dis-dialog').forEach(dlg => {{
     dlg.addEventListener('click', e => {{ if (e.target === dlg) dlg.close(); }});
     dlg.addEventListener('close', () => {{
-      const scrollY = Math.abs(parseInt(document.body.style.top || '0'));
-      document.body.style.position = '';
-      document.body.style.top = '';
-      document.body.style.width = '';
-      window.scrollTo({{ top: scrollY, behavior: 'instant' }});
+      document.documentElement.style.overflow = '';
+      document.body.style.paddingRight = '';
     }});
   }});
   </script>
