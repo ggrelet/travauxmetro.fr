@@ -579,12 +579,12 @@ def generate_index(
     <h2 class="section-title">Lignes interrompues</h2>
     <p class="section-note">Île-de-France Mobilités a prévu des interruptions dues aux travaux sur ces lignes.</p>
     <div class="lines-grid">{disrupted_rows}</div>
-  </section>""" if disrupted_rows else '<p class="quiet" style="margin-bottom:1.5rem">Aucune perturbation en cours sur le réseau.</p>'
+  </section>""" if disrupted_rows else '<p class="quiet" style="margin-bottom:1.5rem">Aucune interruption prévue sur le réseau.</p>'
 
     calm_section = f"""
   <section>
     <h2 class="section-title">Autres lignes</h2>
-    <p class="section-note">Aucune perturbation en cours sur ces lignes. Abonnez-vous pour être notifié automatiquement si cela change.</p>
+    <p class="section-note">Aucune interruption prévue sur ces lignes. Abonnez-vous pour être notifié automatiquement si cela change.</p>
     <div class="lines-grid">{calm_rows}</div>
   </section>""" if calm_rows else ""
 
@@ -594,11 +594,11 @@ def generate_index(
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travaux Métro à Paris</title>
-  <meta name="description" content="Abonnez-vous aux perturbations et travaux planifiés du métro parisien. Calendrier mis à jour automatiquement et quotidiennement pour chaque ligne.">
+  <meta name="description" content="Abonnez-vous aux interruptions et travaux planifiés du métro parisien. Calendrier mis à jour automatiquement et quotidiennement pour chaque ligne.">
   <meta name="theme-color" content="#003CA6">
   <link rel="canonical" href="https://travauxmetro.fr/">
   <meta property="og:title" content="Travaux Métro à Paris">
-  <meta property="og:description" content="Abonnez-vous aux perturbations et travaux planifiés du métro parisien. Calendrier mis à jour automatiquement et quotidiennement pour chaque ligne.">
+  <meta property="og:description" content="Abonnez-vous aux interruptions et travaux planifiés du métro parisien. Calendrier mis à jour automatiquement et quotidiennement pour chaque ligne.">
   <meta property="og:url" content="https://travauxmetro.fr/">
   <meta property="og:type" content="website">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
@@ -608,7 +608,7 @@ def generate_index(
     "@type": "WebApplication",
     "name": "Travaux Métro Paris",
     "url": "https://travauxmetro.fr",
-    "description": "Abonnez-vous aux perturbations et travaux planifiés du métro parisien. Calendrier mis à jour automatiquement et quotidiennement pour chaque ligne.",
+    "description": "Abonnez-vous aux interruptions et travaux planifiés du métro parisien. Calendrier mis à jour automatiquement et quotidiennement pour chaque ligne.",
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "All",
     "offers": {{ "@type": "Offer", "price": "0", "priceCurrency": "EUR" }},
@@ -694,7 +694,7 @@ def generate_index(
       <p style="margin:.5rem 0 0;font-size:.88em;color:#555">
         Un abonnement <a href="https://fr.wikipedia.org/wiki/ICalendar" target="_blank" rel="noopener" style="color:#555">iCalendar (aussi abrégé iCal)</a> est un calendrier en lecture seule hébergé sur Internet que votre application de calendrier récupère à intervale régulier.
         Les événements apparaissent directement dans votre agenda, sans compte supplémentaire à créer.
-        Dès que de nouvelles perturbations sont prévues et publiées par Île-de-France Mobilités, elles se synchronisent automatiquement.
+        Dès que de nouvelles interruptions sont prévues et publiées par Île-de-France Mobilités, elles se synchronisent automatiquement.
       </p>
     </details>
   </div>
@@ -706,7 +706,7 @@ def generate_index(
 
   <section>
     <h2 class="section-title">Toutes les lignes</h2>
-    <p class="section-note">Un seul abonnement pour suivre toutes les perturbations du réseau en même temps.</p>
+    <p class="section-note">Un seul abonnement pour suivre toutes les interruptions du réseau en même temps.</p>
     <div class="line-row">
       <div class="line-header">
         <div class="all-badges">{all_badges}</div>
