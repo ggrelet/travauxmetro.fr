@@ -1,12 +1,20 @@
-## Travaux métro — 07-04-2026
+## Travaux métro — 08-04-2026
 
-**Lignes concernées :** 5
+### Changements
 
-| Ligne | Perturbations |
+![M3](https://img.shields.io/badge/-M3-837902?style=flat) +1 -1
+![M9](https://img.shields.io/badge/-M9-B6BD00?style=flat) +2
+
+---
+
+**Lignes concernées :** 6
+
+| Ligne | Interruptions |
 |-------|--------------|
 | ![M3](https://img.shields.io/badge/-M3-837902?style=flat) | 1 |
 | ![M3B](https://img.shields.io/badge/-M3B-6EC4E8?style=flat) | 6 |
 | ![M4](https://img.shields.io/badge/-M4-CF009E?style=flat) | 1 |
+| ![M9](https://img.shields.io/badge/-M9-B6BD00?style=flat) | 2 |
 | ![M12](https://img.shields.io/badge/-M12-007852?style=flat) | 3 |
 | ![M13](https://img.shields.io/badge/-M13-98D4E2?style=flat) | 5 |
 
@@ -14,9 +22,9 @@
 
 #### ![M3](https://img.shields.io/badge/-M3-837902?style=flat)
 - **Métro 3 : Travaux - Trafic interrompu** — 08-04-2026 → 13-05-2026
-  - 🚉 Gallieni, Porte de Bagnolet, Gambetta
+  - 🚉 Porte de Bagnolet, Gallieni, Gambetta
   - Trafic interrompu
-  - Du 8 avril au 12 mai inclus, le trafic sera interrompu entre Gallieni et Gambetta en raison de travaux. Bus de remplacement.
+  - Jusqu'au 12 mai inclus, le trafic est interrompu entre Gallieni et Gambetta en raison de travaux. Bus de remplacement.
 
 #### ![M3B](https://img.shields.io/badge/-M3B-6EC4E8?style=flat)
 - **Métro 3B : Travaux - Trafic interrompu** — 12-04-2026 → 11-05-2026
@@ -30,6 +38,15 @@
 - **Métro 4 : Travaux d'entretien - Trafic interrompu** — 20-04-2026 → 02-05-2026
   - Trafic interrompu
   - Du 20 avril au 1er mai inclus, le trafic sera interrompu entre Châtelet et Barbès - Rochechouart en raison de travaux d'entretien.
+
+#### ![M9](https://img.shields.io/badge/-M9-B6BD00?style=flat)
+- **Alma - Marceau / Iéna / Saint-Philippe-du-Roule : Rallongement de durée de chantier - Station fermée (sans correspondances)** — 08-04-2026 → 08-04-2026
+  - 🚉 Saint-Philippe-du-Roule, Alma - Marceau, Iéna
+  - Station fermée (sans correspondances)
+  - Les accès aux stations Alma – Marceau, Iéna et Saint-Philippe-du-Roule sont fermés en raison d'un rallongement de durée de chantier
+- **Métro 9 : Rallongement de durée de chantier - Trafic perturbé** — 08-04-2026 → 09-04-2026
+  - Trafic perturbé
+  - Le trafic est perturbé sur toute la ligne en répercussion d'un rallongement de durée de chantier .
 
 #### ![M12](https://img.shields.io/badge/-M12-007852?style=flat)
 - **Métro 12 : Travaux de modernisation - Trafic interrompu** — 08-04-2026 → 09-04-2026

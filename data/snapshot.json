@@ -1,94 +1,40 @@
 {
-  "fetched_at": "2026-04-07T18:53:50.939580+00:00",
+  "fetched_at": "2026-04-08T05:31:45.313465+00:00",
   "disruptions": [
     {
-      "id": "f48ead46-07a0-4344-b4ef-835b6ca05c88",
-      "applicationPeriods": [
-        {
-          "begin": "20260516T044500",
-          "end": "20260522T043000"
-        }
-      ],
-      "lastUpdate": "20260323T151420",
-      "cause": "TRAVAUX",
-      "severity": "BLOQUANTE",
-      "tags": [
-        "Actualité"
-      ],
-      "title": "Métro 3B : Travaux - Trafic interrompu",
-      "message": "<p>Du 16 mai au 21 mai inclus, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
-      "shortMessage": "Trafic interrompu"
-    },
-    {
-      "id": "74a23352-56b4-4ad6-b1aa-a354ec27a786",
-      "applicationPeriods": [
-        {
-          "begin": "20260503T044500",
-          "end": "20260503T120000"
-        }
-      ],
-      "lastUpdate": "20260323T161610",
-      "cause": "TRAVAUX",
-      "severity": "BLOQUANTE",
-      "tags": [
-        "Actualité"
-      ],
-      "title": "Métro 13 : Travaux - Trafic interrompu",
-      "message": "<p>Le 3 mai jusqu'à 12:00, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
-      "shortMessage": "Trafic interrompu"
-    },
-    {
-      "id": "6eaf3c4a-1bd9-11f1-a4ee-0a58a9feac02",
-      "applicationPeriods": [
-        {
-          "begin": "20260309T175855",
-          "end": "20260413T043000"
-        }
-      ],
-      "lastUpdate": "20260309T180010",
-      "cause": "TRAVAUX",
-      "severity": "INFORMATION",
-      "tags": [
-        "Actualité"
-      ],
-      "title": "Métro 12 : Travaux de modernisation - Autre",
-      "message": "<p>Jusqu'au 12 avril, dès 22:00, tous les dimanches et certains mercredis et jeudis le trafic est interrompu sur toute la ligne en raison de travaux de modernisation. Détails et calendrier complet sur RATP.fr.</p>",
-      "shortMessage": "Autre"
-    },
-    {
-      "id": "9ea051e5-b459-47da-a9f6-1ea9f8b4c611",
+      "id": "b12c1eee-7589-4174-bc0e-badd318cee3f",
       "applicationPeriods": [
         {
           "begin": "20260607T044500",
           "end": "20260607T120000"
         }
       ],
-      "lastUpdate": "20260323T182621",
+      "lastUpdate": "20260323T171450",
       "cause": "TRAVAUX",
       "severity": "BLOQUANTE",
       "tags": [
         "Actualité"
       ],
       "title": "Métro 13 : Travaux - Trafic interrompu",
-      "message": "<p>Les dimanches 7 et 28 juin, jusqu'à 12 heures, le trafic est interrompu sur l'ensemble de la ligne en raison de travaux de modernisation.</p>",
+      "message": "<p>Le 7 juin jusqu'à 12:00, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
       "shortMessage": "Trafic interrompu"
     },
     {
-      "id": "f865eff0-7ef4-4144-976d-b172ec84dfbf",
+      "id": "09685fd6-36fa-4b9f-81de-919a3adda374",
       "applicationPeriods": [
         {
-          "begin": "20260517T044500",
-          "end": "20260517T120000"
+          "begin": "20260408T220000",
+          "end": "20260409T043000"
         }
       ],
-      "lastUpdate": "20260323T171443",
+      "lastUpdate": "20260325T220233",
       "cause": "TRAVAUX",
       "severity": "BLOQUANTE",
       "tags": [
         "Actualité"
       ],
-      "title": "Métro 13 : Travaux - Trafic interrompu",
-      "message": "<p>Le 17 mai jusqu'à 12:00, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
+      "title": "Métro 12 : Travaux de modernisation - Trafic interrompu",
+      "message": "<p>Jusqu'au 8 avril, le mercredi dès 22:00, le trafic est interrompu sur toute la ligne en raison de travaux de modernisation.</p>",
       "shortMessage": "Trafic interrompu"
     },
     {
@@ -110,22 +56,104 @@
       "shortMessage": "Trafic interrompu"
     },
     {
-      "id": "63110a5c-f7da-49bf-be35-ea8aaf0b8358",
+      "id": "54805216-ed7e-11f0-9376-0a58a9feac02",
       "applicationPeriods": [
         {
-          "begin": "20260628T044500",
-          "end": "20260628T120000"
+          "begin": "20260409T044500",
+          "end": "20260413T043000"
         }
       ],
-      "lastUpdate": "20260323T182630",
+      "lastUpdate": "20260109T181209",
+      "cause": "TRAVAUX",
+      "severity": "BLOQUANTE",
+      "tags": [
+        "Actualité"
+      ],
+      "title": "Métro 13 : Travaux de modernisation - Arrêt non desservi",
+      "message": "<p>Du 9 avril au 12 avril inclus, l'arrêt ne sera pas desservi à Plaisance en raison de travaux de modernisation</p>",
+      "shortMessage": "Arrêt non desservi"
+    },
+    {
+      "id": "f48ead46-07a0-4344-b4ef-835b6ca05c88",
+      "applicationPeriods": [
+        {
+          "begin": "20260516T044500",
+          "end": "20260522T043000"
+        }
+      ],
+      "lastUpdate": "20260323T151420",
+      "cause": "TRAVAUX",
+      "severity": "BLOQUANTE",
+      "tags": [
+        "Actualité"
+      ],
+      "title": "Métro 3B : Travaux - Trafic interrompu",
+      "message": "<p>Du 16 mai au 21 mai inclus, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
+      "shortMessage": "Trafic interrompu"
+    },
+    {
+      "id": "9ea051e5-b459-47da-a9f6-1ea9f8b4c611",
+      "applicationPeriods": [
+        {
+          "begin": "20260607T044500",
+          "end": "20260607T120000"
+        }
+      ],
+      "lastUpdate": "20260323T182621",
       "cause": "TRAVAUX",
       "severity": "BLOQUANTE",
       "tags": [
         "Actualité"
       ],
       "title": "Métro 13 : Travaux - Trafic interrompu",
-      "message": "<p>Le 28 juin jusqu'à 12:00, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
+      "message": "<p>Les dimanches 7 et 28 juin, jusqu'à 12 heures, le trafic est interrompu sur l'ensemble de la ligne en raison de travaux de modernisation.</p>",
       "shortMessage": "Trafic interrompu"
+    },
+    {
+      "id": "8b525ddc-3366-4ae5-8a98-9daf889819fe",
+      "applicationPeriods": [
+        {
+          "begin": "20260408T044500",
+          "end": "20260513T043000"
+        }
+      ],
+      "lastUpdate": "20260408T044826",
+      "cause": "TRAVAUX",
+      "severity": "BLOQUANTE",
+      "tags": [
+        "Actualité"
+      ],
+      "title": "Métro 3 : Travaux - Trafic interrompu",
+      "message": "<p>Jusqu'au 12 mai inclus, le trafic est interrompu entre Gallieni et Gambetta en raison de travaux.<br>Bus de remplacement.</p>",
+      "shortMessage": "Trafic interrompu",
+      "impactedSections": [
+        {
+          "lineId": "line:IDFM:C01373",
+          "from": {
+            "type": "stop_area",
+            "id": "stop_area:IDFM:71808",
+            "name": "Gambetta (Paris)"
+          },
+          "to": {
+            "type": "stop_area",
+            "id": "stop_area:IDFM:71817",
+            "name": "Gallieni (Bagnolet)"
+          }
+        },
+        {
+          "lineId": "line:IDFM:C01373",
+          "from": {
+            "type": "stop_area",
+            "id": "stop_area:IDFM:71817",
+            "name": "Gallieni (Bagnolet)"
+          },
+          "to": {
+            "type": "stop_area",
+            "id": "stop_area:IDFM:71808",
+            "name": "Gambetta (Paris)"
+          }
+        }
+      ]
     },
     {
       "id": "1dc83844-1e23-11f1-bb0b-0a58a9feac02",
@@ -162,39 +190,61 @@
       "shortMessage": "Trafic interrompu"
     },
     {
-      "id": "54805216-ed7e-11f0-9376-0a58a9feac02",
+      "id": "6eaf3c4a-1bd9-11f1-a4ee-0a58a9feac02",
       "applicationPeriods": [
         {
-          "begin": "20260409T044500",
+          "begin": "20260309T175855",
           "end": "20260413T043000"
         }
       ],
-      "lastUpdate": "20260109T181209",
+      "lastUpdate": "20260309T180010",
+      "cause": "TRAVAUX",
+      "severity": "INFORMATION",
+      "tags": [
+        "Actualité"
+      ],
+      "title": "Métro 12 : Travaux de modernisation - Autre",
+      "message": "<p>Jusqu'au 12 avril, dès 22:00, tous les dimanches et certains mercredis et jeudis le trafic est interrompu sur toute la ligne en raison de travaux de modernisation. Détails et calendrier complet sur RATP.fr.</p>",
+      "shortMessage": "Autre"
+    },
+    {
+      "id": "bd39102b-57d6-466d-8360-27893ec6baeb",
+      "applicationPeriods": [
+        {
+          "begin": "20260516T044500",
+          "end": "20260522T043000"
+        }
+      ],
+      "lastUpdate": "20260323T151412",
       "cause": "TRAVAUX",
       "severity": "BLOQUANTE",
       "tags": [
         "Actualité"
       ],
-      "title": "Métro 13 : Travaux de modernisation - Arrêt non desservi",
-      "message": "<p>Du 9 avril au 12 avril inclus, l'arrêt ne sera pas desservi à Plaisance en raison de travaux de modernisation</p>",
-      "shortMessage": "Arrêt non desservi"
+      "title": "Métro 3B : Travaux - Trafic interrompu",
+      "message": "<p>Du 16 mai au 21 mai inclus, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
+      "shortMessage": "Trafic interrompu"
     },
     {
-      "id": "09685fd6-36fa-4b9f-81de-919a3adda374",
+      "id": "4247e7e6-20b2-11f1-b269-0a58a9feac02",
       "applicationPeriods": [
         {
-          "begin": "20260408T220000",
-          "end": "20260409T043000"
+          "begin": "20260405T220000",
+          "end": "20260406T043000"
+        },
+        {
+          "begin": "20260412T220000",
+          "end": "20260413T043000"
         }
       ],
-      "lastUpdate": "20260325T220233",
+      "lastUpdate": "20260315T220221",
       "cause": "TRAVAUX",
       "severity": "BLOQUANTE",
       "tags": [
         "Actualité"
       ],
       "title": "Métro 12 : Travaux de modernisation - Trafic interrompu",
-      "message": "<p>Jusqu'au 8 avril, le mercredi dès 22:00, le trafic est interrompu sur toute la ligne en raison de travaux de modernisation.</p>",
+      "message": "<p>Jusqu'au 12 avril inclus, le dimanche dès 22:00, le trafic est interrompu sur toute la ligne en raison de travaux de modernisation.</p>",
       "shortMessage": "Trafic interrompu"
     },
     {
@@ -213,6 +263,114 @@
       ],
       "title": "Métro 13 : Travaux - Trafic interrompu",
       "message": "<p>Le 28 juin jusqu'à 12:00, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
+      "shortMessage": "Trafic interrompu"
+    },
+    {
+      "id": "ca5ae895-da90-4da7-8ae7-388819ea6405",
+      "applicationPeriods": [
+        {
+          "begin": "20260408T072211",
+          "end": "20260409T043000"
+        }
+      ],
+      "lastUpdate": "20260408T072410",
+      "cause": "TRAVAUX",
+      "severity": "PERTURBEE",
+      "tags": [
+        "Actualité"
+      ],
+      "title": "Métro 9 : Rallongement de durée de chantier - Trafic perturbé",
+      "message": "<p>Le trafic est perturbé sur toute la ligne en répercussion d'un rallongement de durée de chantier  .</p>",
+      "shortMessage": "Trafic perturbé"
+    },
+    {
+      "id": "71626f4a-75d9-49df-8a3b-16caf2277ebd",
+      "applicationPeriods": [
+        {
+          "begin": "20260517T044500",
+          "end": "20260517T120000"
+        }
+      ],
+      "lastUpdate": "20260323T182639",
+      "cause": "TRAVAUX",
+      "severity": "BLOQUANTE",
+      "tags": [
+        "Actualité"
+      ],
+      "title": "Métro 13 : Travaux - Trafic interrompu",
+      "message": "<p>Le dimanche 17 mai ainsi que les 7 et 28 juin, jusqu'à 12 heures, le trafic est interrompu sur l'ensemble de la ligne en raison de travaux de modernisation.</p>",
+      "shortMessage": "Trafic interrompu"
+    },
+    {
+      "id": "f865eff0-7ef4-4144-976d-b172ec84dfbf",
+      "applicationPeriods": [
+        {
+          "begin": "20260517T044500",
+          "end": "20260517T120000"
+        }
+      ],
+      "lastUpdate": "20260323T171443",
+      "cause": "TRAVAUX",
+      "severity": "BLOQUANTE",
+      "tags": [
+        "Actualité"
+      ],
+      "title": "Métro 13 : Travaux - Trafic interrompu",
+      "message": "<p>Le 17 mai jusqu'à 12:00, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
+      "shortMessage": "Trafic interrompu"
+    },
+    {
+      "id": "63110a5c-f7da-49bf-be35-ea8aaf0b8358",
+      "applicationPeriods": [
+        {
+          "begin": "20260628T044500",
+          "end": "20260628T120000"
+        }
+      ],
+      "lastUpdate": "20260323T182630",
+      "cause": "TRAVAUX",
+      "severity": "BLOQUANTE",
+      "tags": [
+        "Actualité"
+      ],
+      "title": "Métro 13 : Travaux - Trafic interrompu",
+      "message": "<p>Le 28 juin jusqu'à 12:00, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
+      "shortMessage": "Trafic interrompu"
+    },
+    {
+      "id": "68740f6e-c027-45d4-83d6-52231d9d008d",
+      "applicationPeriods": [
+        {
+          "begin": "20260408T065640",
+          "end": "20260408T065740"
+        }
+      ],
+      "lastUpdate": "20260408T070013",
+      "cause": "TRAVAUX",
+      "severity": "BLOQUANTE",
+      "tags": [
+        "Actualité"
+      ],
+      "title": "Alma - Marceau / Iéna / Saint-Philippe-du-Roule : Rallongement de durée de chantier - Station fermée (sans correspondances)",
+      "message": "<p>Les accès aux stations Alma – Marceau, Iéna et Saint-Philippe-du-Roule sont fermés  en raison d'un rallongement de durée de chantier</p>",
+      "shortMessage": "Station fermée (sans correspondances)"
+    },
+    {
+      "id": "74a23352-56b4-4ad6-b1aa-a354ec27a786",
+      "applicationPeriods": [
+        {
+          "begin": "20260503T044500",
+          "end": "20260503T120000"
+        }
+      ],
+      "lastUpdate": "20260323T161610",
+      "cause": "TRAVAUX",
+      "severity": "BLOQUANTE",
+      "tags": [
+        "Actualité"
+      ],
+      "title": "Métro 13 : Travaux - Trafic interrompu",
+      "message": "<p>Le 3 mai jusqu'à 12:00, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
       "shortMessage": "Trafic interrompu"
     },
     {
@@ -257,128 +415,6 @@
             "type": "stop_area",
             "id": "stop_area:IDFM:71264",
             "name": "Châtelet (Paris)"
-          }
-        }
-      ]
-    },
-    {
-      "id": "b12c1eee-7589-4174-bc0e-badd318cee3f",
-      "applicationPeriods": [
-        {
-          "begin": "20260607T044500",
-          "end": "20260607T120000"
-        }
-      ],
-      "lastUpdate": "20260323T171450",
-      "cause": "TRAVAUX",
-      "severity": "BLOQUANTE",
-      "tags": [
-        "Actualité"
-      ],
-      "title": "Métro 13 : Travaux - Trafic interrompu",
-      "message": "<p>Le 7 juin jusqu'à 12:00, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
-      "shortMessage": "Trafic interrompu"
-    },
-    {
-      "id": "71626f4a-75d9-49df-8a3b-16caf2277ebd",
-      "applicationPeriods": [
-        {
-          "begin": "20260517T044500",
-          "end": "20260517T120000"
-        }
-      ],
-      "lastUpdate": "20260323T182639",
-      "cause": "TRAVAUX",
-      "severity": "BLOQUANTE",
-      "tags": [
-        "Actualité"
-      ],
-      "title": "Métro 13 : Travaux - Trafic interrompu",
-      "message": "<p>Le dimanche 17 mai ainsi que les 7 et 28 juin, jusqu'à 12 heures, le trafic est interrompu sur l'ensemble de la ligne en raison de travaux de modernisation.</p>",
-      "shortMessage": "Trafic interrompu"
-    },
-    {
-      "id": "bd39102b-57d6-466d-8360-27893ec6baeb",
-      "applicationPeriods": [
-        {
-          "begin": "20260516T044500",
-          "end": "20260522T043000"
-        }
-      ],
-      "lastUpdate": "20260323T151412",
-      "cause": "TRAVAUX",
-      "severity": "BLOQUANTE",
-      "tags": [
-        "Actualité"
-      ],
-      "title": "Métro 3B : Travaux - Trafic interrompu",
-      "message": "<p>Du 16 mai au 21 mai inclus, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
-      "shortMessage": "Trafic interrompu"
-    },
-    {
-      "id": "4247e7e6-20b2-11f1-b269-0a58a9feac02",
-      "applicationPeriods": [
-        {
-          "begin": "20260405T220000",
-          "end": "20260406T043000"
-        },
-        {
-          "begin": "20260412T220000",
-          "end": "20260413T043000"
-        }
-      ],
-      "lastUpdate": "20260315T220221",
-      "cause": "TRAVAUX",
-      "severity": "BLOQUANTE",
-      "tags": [
-        "Actualité"
-      ],
-      "title": "Métro 12 : Travaux de modernisation - Trafic interrompu",
-      "message": "<p>Jusqu'au 12 avril inclus, le dimanche dès 22:00, le trafic est interrompu sur toute la ligne en raison de travaux de modernisation.</p>",
-      "shortMessage": "Trafic interrompu"
-    },
-    {
-      "id": "eba0ead8-1642-11f1-9e08-0a58a9feac02",
-      "applicationPeriods": [
-        {
-          "begin": "20260408T044500",
-          "end": "20260513T043000"
-        }
-      ],
-      "lastUpdate": "20260302T152010",
-      "cause": "TRAVAUX",
-      "severity": "BLOQUANTE",
-      "tags": [
-        "Actualité"
-      ],
-      "title": "Métro 3 : Travaux - Trafic interrompu",
-      "message": "<p>Du 8 avril au 12 mai inclus, le trafic sera interrompu entre Gallieni et Gambetta en raison de travaux.<br>Bus de remplacement.</p>",
-      "shortMessage": "Trafic interrompu",
-      "impactedSections": [
-        {
-          "lineId": "line:IDFM:C01373",
-          "from": {
-            "type": "stop_area",
-            "id": "stop_area:IDFM:71808",
-            "name": "Gambetta (Paris)"
-          },
-          "to": {
-            "type": "stop_area",
-            "id": "stop_area:IDFM:71817",
-            "name": "Gallieni (Bagnolet)"
-          }
-        },
-        {
-          "lineId": "line:IDFM:C01373",
-          "from": {
-            "type": "stop_area",
-            "id": "stop_area:IDFM:71817",
-            "name": "Gallieni (Bagnolet)"
-          },
-          "to": {
-            "type": "stop_area",
-            "id": "stop_area:IDFM:71808",
-            "name": "Gambetta (Paris)"
           }
         }
       ]

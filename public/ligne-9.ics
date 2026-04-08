@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//ggrelet//travaux-metro//FR
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALDESC:Perturbations et travaux planifiés sur la ligne 9 du métro 
+X-WR-CALDESC:Interruptions et travaux planifiés sur la ligne 9 du métro 
  parisien. Mis à jour quotidiennement depuis les données Île-de-France M
  obilités. travauxmetro.fr
 X-WR-CALNAME:Métro Ligne 9 — Travaux
@@ -11,4 +11,29 @@ REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-APPLE-CALENDAR-COLOR:#B6BD00
 X-PUBLISHED-TTL:PT12H
 X-WR-TIMEZONE:Europe/Paris
+BEGIN:VEVENT
+SUMMARY:M9 — Alma - Marceau / Iéna / Saint-Philippe-du-Roule : Rallonge
+ ment de durée de chantier - Station fermée (sans correspondances)
+DTSTART;TZID=Europe/Paris:20260408T065640
+DTEND;TZID=Europe/Paris:20260408T065740
+DTSTAMP:20260408T053145Z
+UID:68740f6e-c027-45d4-83d6-52231d9d008d_20260408T065640@travaux-metro
+CATEGORIES:Ligne 9,Travaux Métro
+DESCRIPTION:Ligne 9\n\nStations : Saint-Philippe-du-Roule\, Alma - Marceau
+ \, Iéna\n\nStation fermée (sans correspondances)\n\nLes accès aux stati
+ ons Alma – Marceau\, Iéna et Saint-Philippe-du-Roule sont fermés e
+ n raison d'un rallongement de durée de chantier\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:M9 — Métro 9 : Rallongement de durée de chantier - Trafic pert
+ urbé
+DTSTART;TZID=Europe/Paris:20260408T072211
+DTEND;TZID=Europe/Paris:20260409T020000
+DTSTAMP:20260408T053145Z
+UID:ca5ae895-da90-4da7-8ae7-388819ea6405_20260408T072211@travaux-metro
+CATEGORIES:Ligne 9,Travaux Métro
+DESCRIPTION:Ligne 9\n\nTrafic perturbé\n\nLe trafic est perturbé sur tou
+ te la ligne en répercussion d'un rallongement de durée de chantier .\n\n
+ Cause : TRAVAUX
+END:VEVENT
 END:VCALENDAR
