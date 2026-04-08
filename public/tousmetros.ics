@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//ggrelet//travaux-metro//FR
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALDESC:Perturbations et travaux planifiés sur toutes les lignes du 
+X-WR-CALDESC:Interruptions et travaux planifiés sur toutes les lignes du 
  métro parisien. Mis à jour quotidiennement depuis les données Île-de-F
  rance Mobilités. travauxmetro.fr
 X-WR-CALNAME:Paris Métro — Travaux
@@ -15,30 +15,19 @@ BEGIN:VEVENT
 SUMMARY:M3 — Métro 3 : Travaux - Trafic interrompu
 DTSTART;VALUE=DATE:20260408
 DTEND;VALUE=DATE:20260513
-DTSTAMP:20260407T185350Z
+DTSTAMP:20260407T193615Z
 UID:eba0ead8-1642-11f1-9e08-0a58a9feac02_20260408T044500@travaux-metro
 CATEGORIES:Ligne 3,Travaux Métro
-DESCRIPTION:Ligne 3\n\nStations : Gallieni\, Porte de Bagnolet\, Gambetta\
+DESCRIPTION:Ligne 3\n\nStations : Porte de Bagnolet\, Gambetta\, Gallieni\
  n\nTrafic interrompu\n\nDu 8 avril au 12 mai inclus\, le trafic sera inter
  rompu entre Gallieni et Gambetta en raison de travaux. Bus de remplacement
  .\n\nCause : TRAVAUX
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:M3B — Métro 3B : Travaux - Trafic interrompu
-DTSTART;VALUE=DATE:20260516
-DTEND;VALUE=DATE:20260522
-DTSTAMP:20260407T185350Z
-UID:f48ead46-07a0-4344-b4ef-835b6ca05c88_20260516T044500@travaux-metro
-CATEGORIES:Ligne 3B,Travaux Métro
-DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 16 mai au 21 mai inclus\, 
- le trafic sera interrompu sur toute la ligne en raison de travaux.\n\nCaus
- e : TRAVAUX
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:M3B — Métro 3B : Travaux - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260412T221500
 DTEND;TZID=Europe/Paris:20260413T020000
-DTSTAMP:20260407T185350Z
+DTSTAMP:20260407T193615Z
 UID:1dc83844-1e23-11f1-bb0b-0a58a9feac02_20260412T221500@travaux-metro
 CATEGORIES:Ligne 3B,Travaux Métro
 DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 12 avril au 10 mai inclus\
@@ -49,7 +38,7 @@ BEGIN:VEVENT
 SUMMARY:M3B — Métro 3B : Travaux - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260419T221500
 DTEND;TZID=Europe/Paris:20260420T020000
-DTSTAMP:20260407T185350Z
+DTSTAMP:20260407T193615Z
 UID:1dc83844-1e23-11f1-bb0b-0a58a9feac02_20260419T221500@travaux-metro
 CATEGORIES:Ligne 3B,Travaux Métro
 DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 12 avril au 10 mai inclus\
@@ -60,7 +49,7 @@ BEGIN:VEVENT
 SUMMARY:M3B — Métro 3B : Travaux - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260426T221500
 DTEND;TZID=Europe/Paris:20260427T020000
-DTSTAMP:20260407T185350Z
+DTSTAMP:20260407T193615Z
 UID:1dc83844-1e23-11f1-bb0b-0a58a9feac02_20260426T221500@travaux-metro
 CATEGORIES:Ligne 3B,Travaux Métro
 DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 12 avril au 10 mai inclus\
@@ -71,7 +60,7 @@ BEGIN:VEVENT
 SUMMARY:M3B — Métro 3B : Travaux - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260503T221500
 DTEND;TZID=Europe/Paris:20260504T020000
-DTSTAMP:20260407T185350Z
+DTSTAMP:20260407T193615Z
 UID:1dc83844-1e23-11f1-bb0b-0a58a9feac02_20260503T221500@travaux-metro
 CATEGORIES:Ligne 3B,Travaux Métro
 DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 12 avril au 10 mai inclus\
@@ -82,7 +71,7 @@ BEGIN:VEVENT
 SUMMARY:M3B — Métro 3B : Travaux - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260510T221500
 DTEND;TZID=Europe/Paris:20260511T020000
-DTSTAMP:20260407T185350Z
+DTSTAMP:20260407T193615Z
 UID:1dc83844-1e23-11f1-bb0b-0a58a9feac02_20260510T221500@travaux-metro
 CATEGORIES:Ligne 3B,Travaux Métro
 DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 12 avril au 10 mai inclus\
@@ -90,10 +79,21 @@ DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 12 avril au 10 mai inclus\
   raison de travaux.\n\nCause : TRAVAUX
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:M3B — Métro 3B : Travaux - Trafic interrompu
+DTSTART;VALUE=DATE:20260516
+DTEND;VALUE=DATE:20260522
+DTSTAMP:20260407T193615Z
+UID:bd39102b-57d6-466d-8360-27893ec6baeb_20260516T044500@travaux-metro
+CATEGORIES:Ligne 3B,Travaux Métro
+DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 16 mai au 21 mai inclus\, 
+ le trafic sera interrompu sur toute la ligne en raison de travaux.\n\nCaus
+ e : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:M4 — Métro 4 : Travaux d'entretien - Trafic interrompu
 DTSTART;VALUE=DATE:20260420
 DTEND;VALUE=DATE:20260502
-DTSTAMP:20260407T185350Z
+DTSTAMP:20260407T193615Z
 UID:ff1a101d-45f8-4942-b24b-50a00b079142_20260420T044500@travaux-metro
 CATEGORIES:Ligne 4,Travaux Métro
 DESCRIPTION:Ligne 4\n\nTrafic interrompu\n\nDu 20 avril au 1er mai inclus\
@@ -104,7 +104,7 @@ BEGIN:VEVENT
 SUMMARY:M12 — Métro 12 : Travaux de modernisation - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260408T220000
 DTEND;TZID=Europe/Paris:20260409T020000
-DTSTAMP:20260407T185350Z
+DTSTAMP:20260407T193615Z
 UID:09685fd6-36fa-4b9f-81de-919a3adda374_20260408T220000@travaux-metro
 CATEGORIES:Ligne 12,Travaux Métro
 DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nJusqu'au 8 avril\, le mercred
@@ -115,7 +115,7 @@ BEGIN:VEVENT
 SUMMARY:M12 — Métro 12 : Travaux de modernisation - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260405T220000
 DTEND;TZID=Europe/Paris:20260406T020000
-DTSTAMP:20260407T185350Z
+DTSTAMP:20260407T193615Z
 UID:4247e7e6-20b2-11f1-b269-0a58a9feac02_20260405T220000@travaux-metro
 CATEGORIES:Ligne 12,Travaux Métro
 DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nJusqu'au 12 avril inclus\, le
@@ -126,7 +126,7 @@ BEGIN:VEVENT
 SUMMARY:M12 — Métro 12 : Travaux de modernisation - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260412T220000
 DTEND;TZID=Europe/Paris:20260413T020000
-DTSTAMP:20260407T185350Z
+DTSTAMP:20260407T193615Z
 UID:4247e7e6-20b2-11f1-b269-0a58a9feac02_20260412T220000@travaux-metro
 CATEGORIES:Ligne 12,Travaux Métro
 DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nJusqu'au 12 avril inclus\, le
@@ -135,20 +135,21 @@ DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nJusqu'au 12 avril inclus\, le
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:M13 — Métro 13 : Travaux - Trafic interrompu
-DTSTART;TZID=Europe/Paris:20260607T044500
-DTEND;TZID=Europe/Paris:20260607T120000
-DTSTAMP:20260407T185350Z
-UID:9ea051e5-b459-47da-a9f6-1ea9f8b4c611_20260607T044500@travaux-metro
+DTSTART;TZID=Europe/Paris:20260517T044500
+DTEND;TZID=Europe/Paris:20260517T120000
+DTSTAMP:20260407T193615Z
+UID:71626f4a-75d9-49df-8a3b-16caf2277ebd_20260517T044500@travaux-metro
 CATEGORIES:Ligne 13,Travaux Métro
-DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLes dimanches 7 et 28 juin\, 
- jusqu'à 12 heures\, le trafic est interrompu sur l'ensemble de la ligne e
- n raison de travaux de modernisation.\n\nCause : TRAVAUX
+DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLe dimanche 17 mai ainsi que 
+ les 7 et 28 juin\, jusqu'à 12 heures\, le trafic est interrompu sur l'ens
+ emble de la ligne en raison de travaux de modernisation.\n\nCause : TRAVAU
+ X
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:M13 — Métro 13 : Travaux - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260503T044500
 DTEND;TZID=Europe/Paris:20260503T120000
-DTSTAMP:20260407T185350Z
+DTSTAMP:20260407T193615Z
 UID:3f4523c5-b213-4672-a207-6555a464535d_20260503T044500@travaux-metro
 CATEGORIES:Ligne 13,Travaux Métro
 DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLes dimanches 3 et 17 mai ain
@@ -158,36 +159,35 @@ DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLes dimanches 3 et 17 mai ain
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:M13 — Métro 13 : Travaux - Trafic interrompu
-DTSTART;TZID=Europe/Paris:20260628T044500
-DTEND;TZID=Europe/Paris:20260628T120000
-DTSTAMP:20260407T185350Z
-UID:63110a5c-f7da-49bf-be35-ea8aaf0b8358_20260628T044500@travaux-metro
+DTSTART;TZID=Europe/Paris:20260607T044500
+DTEND;TZID=Europe/Paris:20260607T120000
+DTSTAMP:20260407T193615Z
+UID:9ea051e5-b459-47da-a9f6-1ea9f8b4c611_20260607T044500@travaux-metro
 CATEGORIES:Ligne 13,Travaux Métro
-DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLe 28 juin jusqu'à 12:00\, l
- e trafic sera interrompu sur toute la ligne en raison de travaux.\n\nCause
-  : TRAVAUX
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:M13 — Métro 13 : Travaux - Trafic interrompu
-DTSTART;TZID=Europe/Paris:20260517T044500
-DTEND;TZID=Europe/Paris:20260517T120000
-DTSTAMP:20260407T185350Z
-UID:71626f4a-75d9-49df-8a3b-16caf2277ebd_20260517T044500@travaux-metro
-CATEGORIES:Ligne 13,Travaux Métro
-DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLe dimanche 17 mai ainsi que 
- les 7 et 28 juin\, jusqu'à 12 heures\, le trafic est interrompu sur l'ens
- emble de la ligne en raison de travaux de modernisation.\n\nCause : TRAVAU
- X
+DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLes dimanches 7 et 28 juin\, 
+ jusqu'à 12 heures\, le trafic est interrompu sur l'ensemble de la ligne e
+ n raison de travaux de modernisation.\n\nCause : TRAVAUX
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:M13 — Métro 13 : Travaux de modernisation - Arrêt non desservi
 DTSTART;VALUE=DATE:20260409
 DTEND;VALUE=DATE:20260413
-DTSTAMP:20260407T185350Z
+DTSTAMP:20260407T193615Z
 UID:54805216-ed7e-11f0-9376-0a58a9feac02_20260409T044500@travaux-metro
 CATEGORIES:Ligne 13,Travaux Métro
 DESCRIPTION:Ligne 13\n\nStation : Plaisance\n\nArrêt non desservi\n\nDu 9
   avril au 12 avril inclus\, l'arrêt ne sera pas desservi à Plaisance en 
  raison de travaux de modernisation\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:M13 — Métro 13 : Travaux - Trafic interrompu
+DTSTART;TZID=Europe/Paris:20260628T044500
+DTEND;TZID=Europe/Paris:20260628T120000
+DTSTAMP:20260407T193615Z
+UID:e569a1cc-9bfc-4680-94bd-e0609b8f05dd_20260628T044500@travaux-metro
+CATEGORIES:Ligne 13,Travaux Métro
+DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLe 28 juin jusqu'à 12:00\, l
+ e trafic sera interrompu sur toute la ligne en raison de travaux.\n\nCause
+  : TRAVAUX
 END:VEVENT
 END:VCALENDAR
