@@ -701,7 +701,7 @@ def generate_index(
   </style>
 </head>
 <body>
-  <h1 style="display:flex;align-items:center;gap:.35em;line-height:.95"><svg xmlns="http://www.w3.org/2000/svg" width="2.43em" height="2.43em" viewBox="-1.5 -1.5 27 27" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0"><g transform="rotate(90 12 12) translate(12 12) scale(1.1) translate(-12 -12)"><path d="M2 17 17 2"/><path d="m2 14 8 8"/><path d="m5 11 8 8"/><path d="m8 8 8 8"/><path d="m11 5 8 8"/><path d="m14 2 8 8"/><path d="M7 22 22 7"/></g><g transform="translate(12 12) scale(.6) translate(-12 -12)"><path stroke="#222" stroke-width="2.5" stroke-opacity="1" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/><path stroke="#E6B800" stroke-width="1" fill="#222" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></g></svg><span>Travaux<br><span style="display:block;padding-left:.4em"><span style="color:#E6B800;text-shadow:-2px -2px 0 #222,2px -2px 0 #222,-2px 2px 0 #222,2px 2px 0 #222,0 -2px 0 #222,0 2px 0 #222,-2px 0 0 #222,2px 0 0 #222,-1px -2px 0 #222,1px -2px 0 #222,-2px -1px 0 #222,2px -1px 0 #222,-2px 1px 0 #222,2px 1px 0 #222,-1px 2px 0 #222,1px 2px 0 black;letter-spacing:+.05em">M</span>étro</span></span></h1>
+  <h1 style="display:flex;align-items:center;gap:.35em;line-height:.95"><svg xmlns="http://www.w3.org/2000/svg" width="2.43em" height="2.43em" viewBox="-1.5 -1.5 27 27" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0"><g transform="rotate(90 12 12) translate(12 12) scale(1.1) translate(-12 -12)"><path d="M2 17 17 2"/><path d="m2 14 8 8"/><path d="m5 11 8 8"/><path d="m8 8 8 8"/><path d="m11 5 8 8"/><path d="m14 2 8 8"/><path d="M7 22 22 7"/></g><g transform="translate(12 12) scale(.6) translate(-12 -12)"><path stroke="#222" stroke-width="2.5" stroke-opacity="1" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/><path stroke="#E6B800" stroke-width="1" fill="#222" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></g></svg><span>Travaux<br><span style="display:block;padding-left:.09em"><span style="color:#E6B800;text-shadow:-2px -2px 0 #222,2px -2px 0 #222,-2px 2px 0 #222,2px 2px 0 #222,0 -2px 0 #222,0 2px 0 #222,-2px 0 0 #222,2px 0 0 #222,-1px -2px 0 #222,1px -2px 0 #222,-2px -1px 0 #222,2px -1px 0 #222,-2px 1px 0 #222,2px 1px 0 #222,-1px 2px 0 #222,1px 2px 0 black;letter-spacing:+.05em">M</span>étro</span></span></h1>
   <p class="subtitle" style="margin-top:2rem">Interruptions et travaux planifiés par Île-de-France Mobilités.</br>Abonnez-vous au calendrier d'interruptions de votre ligne de métro parisien.</p>
 
   <div class="intro">
@@ -919,6 +919,20 @@ def main():
     event_counts = {name: count for name, _, count in line_stats}
     (DATA / "summary.md").write_text(generate_summary(by_line, dis_to_stops, dis_by_id, metro_lines, fetched_at, diff, event_counts))
     (PUBLIC / "index.html").write_text(generate_index(by_line, dis_by_id, dis_to_stops, metro_lines, fetched_at))
+
+    today = date.today().isoformat()
+    (PUBLIC / "sitemap.xml").write_text(
+        f'<?xml version="1.0" encoding="UTF-8"?>\n'
+        f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f'  <url>\n'
+        f'    <loc>https://travauxmetro.fr/</loc>\n'
+        f'    <lastmod>{today}</lastmod>\n'
+        f'    <changefreq>daily</changefreq>\n'
+        f'    <priority>1.0</priority>\n'
+        f'  </url>\n'
+        f'</urlset>\n'
+    )
+
     print(f"Done. Generated tousmetros.ics + {len(line_stats)} line file{'s' if len(line_stats) else ''}.")
 
 
