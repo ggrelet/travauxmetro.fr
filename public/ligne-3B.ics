@@ -13,9 +13,20 @@ X-PUBLISHED-TTL:PT12H
 X-WR-TIMEZONE:Europe/Paris
 BEGIN:VEVENT
 SUMMARY:M3B — Métro 3B : Travaux - Trafic interrompu
+DTSTART;VALUE=DATE:20260516
+DTEND;VALUE=DATE:20260522
+DTSTAMP:20260409T070434Z
+UID:f48ead46-07a0-4344-b4ef-835b6ca05c88_20260516T044500@travaux-metro
+CATEGORIES:Ligne 3B,Travaux Métro
+DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 16 mai au 21 mai inclus\, 
+ le trafic sera interrompu sur toute la ligne en raison de travaux.\n\nCaus
+ e : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:M3B — Métro 3B : Travaux - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260412T221500
 DTEND;TZID=Europe/Paris:20260413T020000
-DTSTAMP:20260407T193615Z
+DTSTAMP:20260409T070434Z
 UID:1dc83844-1e23-11f1-bb0b-0a58a9feac02_20260412T221500@travaux-metro
 CATEGORIES:Ligne 3B,Travaux Métro
 DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 12 avril au 10 mai inclus\
@@ -26,7 +37,7 @@ BEGIN:VEVENT
 SUMMARY:M3B — Métro 3B : Travaux - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260419T221500
 DTEND;TZID=Europe/Paris:20260420T020000
-DTSTAMP:20260407T193615Z
+DTSTAMP:20260409T070434Z
 UID:1dc83844-1e23-11f1-bb0b-0a58a9feac02_20260419T221500@travaux-metro
 CATEGORIES:Ligne 3B,Travaux Métro
 DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 12 avril au 10 mai inclus\
@@ -37,7 +48,7 @@ BEGIN:VEVENT
 SUMMARY:M3B — Métro 3B : Travaux - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260426T221500
 DTEND;TZID=Europe/Paris:20260427T020000
-DTSTAMP:20260407T193615Z
+DTSTAMP:20260409T070434Z
 UID:1dc83844-1e23-11f1-bb0b-0a58a9feac02_20260426T221500@travaux-metro
 CATEGORIES:Ligne 3B,Travaux Métro
 DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 12 avril au 10 mai inclus\
@@ -48,7 +59,7 @@ BEGIN:VEVENT
 SUMMARY:M3B — Métro 3B : Travaux - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260503T221500
 DTEND;TZID=Europe/Paris:20260504T020000
-DTSTAMP:20260407T193615Z
+DTSTAMP:20260409T070434Z
 UID:1dc83844-1e23-11f1-bb0b-0a58a9feac02_20260503T221500@travaux-metro
 CATEGORIES:Ligne 3B,Travaux Métro
 DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 12 avril au 10 mai inclus\
@@ -59,22 +70,11 @@ BEGIN:VEVENT
 SUMMARY:M3B — Métro 3B : Travaux - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260510T221500
 DTEND;TZID=Europe/Paris:20260511T020000
-DTSTAMP:20260407T193615Z
+DTSTAMP:20260409T070434Z
 UID:1dc83844-1e23-11f1-bb0b-0a58a9feac02_20260510T221500@travaux-metro
 CATEGORIES:Ligne 3B,Travaux Métro
 DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 12 avril au 10 mai inclus\
  , le dimanche dès 22:15\, le trafic sera interrompu sur toute la ligne en
   raison de travaux.\n\nCause : TRAVAUX
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:M3B — Métro 3B : Travaux - Trafic interrompu
-DTSTART;VALUE=DATE:20260516
-DTEND;VALUE=DATE:20260522
-DTSTAMP:20260407T193615Z
-UID:bd39102b-57d6-466d-8360-27893ec6baeb_20260516T044500@travaux-metro
-CATEGORIES:Ligne 3B,Travaux Métro
-DESCRIPTION:Ligne 3B\n\nTrafic interrompu\n\nDu 16 mai au 21 mai inclus\, 
- le trafic sera interrompu sur toute la ligne en raison de travaux.\n\nCaus
- e : TRAVAUX
 END:VEVENT
 END:VCALENDAR
