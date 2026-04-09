@@ -15,7 +15,7 @@ BEGIN:VEVENT
 SUMMARY:M12 — Métro 12 : Travaux de modernisation - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260405T220000
 DTEND;TZID=Europe/Paris:20260406T020000
-DTSTAMP:20260409T202719Z
+DTSTAMP:20260409T225807Z
 UID:4247e7e6-20b2-11f1-b269-0a58a9feac02_20260405T220000@travaux-metro
 CATEGORIES:Ligne 12,Travaux Métro
 DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nJusqu'au 12 avril inclus\, le
@@ -26,7 +26,7 @@ BEGIN:VEVENT
 SUMMARY:M12 — Métro 12 : Travaux de modernisation - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260412T220000
 DTEND;TZID=Europe/Paris:20260413T020000
-DTSTAMP:20260409T202719Z
+DTSTAMP:20260409T225807Z
 UID:4247e7e6-20b2-11f1-b269-0a58a9feac02_20260412T220000@travaux-metro
 CATEGORIES:Ligne 12,Travaux Métro
 DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nJusqu'au 12 avril inclus\, le

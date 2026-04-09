@@ -437,7 +437,7 @@ def _sub_buttons(full_url: str, line: str) -> str:
     o365_url = f"https://outlook.office.com/calendar/addfromweb?url={encoded_https}"
     return (
         f'<a class="sub-btn google" href="{gcal_url}" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="{line}">{_GCAL_ICON}Google Calendar</a>'
-        f'<a class="sub-btn webcal" href="{webcal_url}" data-umami-event="subscribe-webcal" data-umami-event-line="{line}">{_WEBCAL_ICON}iCalendar / webcal</a>'
+        f'<a class="sub-btn webcal" href="{webcal_url}" data-umami-event="subscribe-webcal" data-umami-event-line="{line}">{_WEBCAL_ICON}iCal / webcal</a>'
         f'<a class="sub-btn outlook" href="{outlook_url}" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="{line}">{_OUTLOOK_ICON}Outlook</a>'
         f'<a class="sub-btn o365" href="{o365_url}" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="{line}">{_O365_ICON}Office 365</a>'
         f'<button class="sub-btn copy" onclick="copyUrl(\'{full_url}\',this)" data-umami-event="copy-url" data-umami-event-line="{line}">{_COPY_ICON}Copier le lien</button>'
@@ -457,11 +457,15 @@ def fmt_date(s: str) -> str:
 
 def fmt_period_display(p: dict) -> str:
     """Format a PRIM period dict using normalized bounds."""
+    _JOURS = ["lun.", "mar.", "mer.", "jeu.", "ven.", "sam.", "dim."]
+    _MOIS = ["janvier", "février", "mars", "avril", "mai", "juin",
+             "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
+
     def fdate(d: date) -> str:
-        return f"{d.day:02d}-{d.month:02d}-{d.year}"
+        return f"{_JOURS[d.weekday()]} {d.day} {_MOIS[d.month - 1]}"
 
     def fdt(dt: datetime) -> str:
-        return f"{dt.day:02d}-{dt.month:02d}-{dt.year} {dt.hour:02d}:{dt.minute:02d}"
+        return f"{_JOURS[dt.weekday()]} {dt.day} {_MOIS[dt.month - 1]} {dt.hour:02d}:{dt.minute:02d}"
 
     ns, ne, is_allday = normalize_period(parse_dt(p["begin"]), parse_dt(p["end"]))
     if is_allday:
@@ -512,7 +516,7 @@ def _line_disruption_html(
             f'<div class="period">📅 {fmt_period_display(p)}</div>'
             for p in surviving
         )
-        stops_html = f'<div class="stops">🚉 {", ".join(stops)}</div>' if stops else ""
+        stops_html = f'<div class="stops"><img src="/favicon/favicon.svg" width="18" height="18" alt="" style="vertical-align:-4px;margin-right:.25em">{", ".join(stops)}</div>' if stops else ""
         message_html = f'<div class="message">{message}</div>' if message else ""
 
         cards += f"""
@@ -529,10 +533,12 @@ def _line_disruption_html(
     dialog_id = f"dis-{line_name}"
     return f"""<button class="dis-btn" data-dialog="{dialog_id}" data-umami-event="accordion-open" data-umami-event-line="{line_name}"><span style="font-size:.8em">▶</span> {label}</button>
     <dialog id="{dialog_id}" class="dis-dialog">
-      <button class="dis-close" autofocus onclick="this.closest('dialog').close()">✕</button>
-      <p class="dis-dialog-title">Ligne {line_name}</p>
-      <p class="dis-dialog-subtitle">{label}</p>
-      {notes_html}<div class="cards">{cards}</div>
+      <div class="dis-dialog-header">
+        <span class="badge" style="background:{METRO_LINE_COLORS[line_name][0]};color:{METRO_LINE_COLORS[line_name][1]};width:2rem;height:2rem;font-size:1.2rem;flex-shrink:0">{line_name[:-1] + '<span style="font-size:.42em;letter-spacing:-.02em">bis</span>' if line_name.endswith("B") else line_name}</span>
+        <span class="dis-dialog-subtitle" style="margin:0;flex:1">{label}</span>
+        <button class="dis-close" autofocus onclick="this.closest('dialog').close()">✕</button>
+      </div>
+      <div class="dis-dialog-body">{notes_html}<div class="cards">{cards}</div></div>
     </dialog>"""
 
 
@@ -601,7 +607,7 @@ def generate_index(
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Travaux Métro</title>
   <meta name="description" content="Calendrier des interruptions et travaux planifiés du métro parisien, mis à jour quotidiennement. Abonnez-vous à votre ligne.">
   <meta name="theme-color" content="#003CA6">
@@ -676,19 +682,21 @@ def generate_index(
     @keyframes redglow {{ 0%, 100% {{ color: #8b1a1a; }} 50% {{ color: #e53935; }} }}
     .dis-btn {{ background: none; border: none; cursor: pointer; font-family: inherit; font-size: .8em; font-weight: 600; color: #c0392b; padding: 1.6em 0 0; display: block; animation: redglow 3s ease-in-out infinite; }}
     .dis-btn:hover {{ text-decoration: underline; }}
-    .dis-dialog {{ border: none; border-radius: 14px; padding: 1.5rem; max-width: 640px; width: calc(100vw - 2rem); box-shadow: 0 8px 40px rgba(0,0,0,.18); position: fixed; inset: 0; margin: auto; height: fit-content; overflow-y: auto; max-height: 90vh; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }}
-    .dis-dialog[open] {{ animation: dialogIn .25s cubic-bezier(0.16,1,0.3,1) forwards; }}
+    .dis-dialog {{ border: none; border-radius: 14px; padding: 0; max-width: 640px; width: calc(100vw - 2rem); box-shadow: 0 8px 40px rgba(0,0,0,.18); position: fixed; inset: 0; margin: auto; max-height: 90vh; overflow: hidden; }}
+    .dis-dialog[open] {{ display: flex; flex-direction: column; animation: dialogIn .25s cubic-bezier(0.16,1,0.3,1) forwards; }}
     @keyframes dialogIn {{ from {{ opacity: 0; transform: scale(.95); }} to {{ opacity: 1; transform: scale(1); }} }}
     .dis-dialog::backdrop {{ background: rgba(0,0,0,.45); animation: backdropIn .25s ease forwards; }}
     @keyframes backdropIn {{ from {{ opacity: 0; }} to {{ opacity: 1; }} }}
-    .dis-close {{ position: absolute; top: .85rem; right: .85rem; background: none; border: none; cursor: pointer; font-size: 1.4rem; color: #999; padding: .2rem .45rem; border-radius: 5px; line-height: 1; }}
+    .dis-dialog-header {{ display: flex; align-items: center; gap: .7em; padding: 1rem 1.2rem; background: #fff; flex-shrink: 0; border-bottom: 1px solid #e8e8e8; }}
+    .dis-dialog-body {{ padding: 1.2rem 1.5rem 1.5rem; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }}
+    .dis-close {{ background: none; border: none; cursor: pointer; font-size: 1.4rem; color: #999; padding: .2rem .45rem; border-radius: 5px; line-height: 1; flex-shrink: 0; }}
     .dis-close:hover {{ background: #f0f0f0; color: #333; }}
     .dis-dialog-title {{ font-weight: 700; font-size: 1.05rem; margin: 0 0 .1rem; color: #333; }}
     .dis-dialog-subtitle {{ font-size: .9rem; color: #666; margin: 0 0 1rem; }}
     .cards {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: .75rem; }}
     .dis-card {{ background: #fafafa; border: 1px solid #e8e8e8; border-radius: 10px; padding: .9rem; }}
     .card-title {{ font-weight: 600; font-size: .9em; margin-bottom: .4rem; }}
-    .period {{ font-size: .8em; color: #555; margin: .15rem 0; }}
+    .period {{ font-size: .8em; color: #555; margin: .15rem 0; white-space: nowrap; }}
     .stops {{ font-size: .8em; color: #333; margin-top: .35rem; }}
     .message {{ font-size: .78em; color: #666; margin-top: .45rem; border-top: 1px solid #eee; padding-top: .35rem; white-space: pre-wrap; }}
     .note {{ font-size: .82em; color: #666; font-style: italic; margin: .5rem 0 .5rem; }}
@@ -717,7 +725,7 @@ def generate_index(
     </details>
   </div>
 
-  <p class="contact-hint">Une question, une suggestion, une erreur à remonter ? <span style="white-space:nowrap">→ <a href="mailto:contact@travauxmetro.fr">contact@travauxmetro.fr</a></span></p>
+  <p class="contact-hint">Une question, une suggestion, une erreur à remonter&nbsp;? <span style="white-space:nowrap">→ <a href="mailto:contact@travauxmetro.fr">contact@travauxmetro.fr</a></span></p>
 
   {disrupted_section}
   {calm_section}
@@ -735,10 +743,10 @@ def generate_index(
   </section>
 
   <footer>
-    <div>Source : <a href="https://prim.iledefrance-mobilites.fr">Île-de-France Mobilités (PRIM)</a> —
-    <a href="https://github.com/ggrelet/travauxmetro.fr"><img src="/icons/github.svg" width="14" height="14" alt="GitHub" style="vertical-align:middle;margin-right:.25em;margin-bottom:2px">code source</a></div>
+    <div>Source : <a href="https://prim.iledefrance-mobilites.fr">Île-de-France Mobilités (PRIM)</a></div>
+    <div><a href="https://github.com/ggrelet/travauxmetro.fr"><img src="/icons/github.svg" width="14" height="14" alt="GitHub" style="vertical-align:middle;margin-right:.25em;margin-bottom:2px">code source</a></div>
     <div>Dernière mise à jour des données : {date_str} à {time_str}</div>
-    <div><a href="mailto:contact@travauxmetro.fr">contact@travauxmetro.fr</a></div>
+    <div>→ <a href="mailto:contact@travauxmetro.fr">contact@travauxmetro.fr</a></div>
   </footer>
   <script>
   function copyUrl(url, btn) {{
@@ -795,6 +803,11 @@ def generate_index(
       document.body.style.paddingRight = '';
     }});
   }});
+  document.addEventListener('touchmove', function(e) {{
+    if (e.scale !== 1) e.preventDefault();
+  }}, {{ passive: false }});
+  document.addEventListener('gesturestart', function(e) {{ e.preventDefault(); }});
+  document.addEventListener('gesturechange', function(e) {{ e.preventDefault(); }});
   </script>
 </body>
 </html>"""
