@@ -1,11 +1,5 @@
 ## Travaux métro — 09-04-2026
 
-### Changements
-
-![M12](https://img.shields.io/badge/-M12-007852?style=flat) -1
-
----
-
 **Lignes concernées :** 5
 
 | Ligne | Interruptions |
