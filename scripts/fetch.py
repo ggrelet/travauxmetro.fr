@@ -187,6 +187,15 @@ def period_key(dtstart: datetime, dtend: datetime) -> tuple:
     return (ns, ne)
 
 
+def dis_fingerprint(d: dict) -> list:
+    """Content fingerprint for a disruption, ignoring its ID.
+    Returns sorted list of [begin, end] pairs from applicationPeriods.
+    Two disruptions with the same fingerprint are considered the same event
+    even if PRIM re-issued them with a new UUID.
+    """
+    return sorted([p["begin"][:15], p["end"][:15]] for p in d.get("applicationPeriods", []))
+
+
 def content_hash(disruptions: list, metro_dis_ids: set) -> str:
     relevant = sorted(
         [d for d in disruptions if d["id"] in metro_dis_ids],
@@ -828,20 +837,31 @@ def main():
             line_name = metro_lines[line_id]["shortName"]
             by_line[line_name].add(dis_id)
 
-    # Compute diff vs previous state
+    # Compute diff vs previous state using content fingerprints (ignores UUID re-issues)
+    def fp_set(line: str, source: dict) -> set:
+        entries = source.get(line, [])
+        # Migration: old format stored raw ID strings, new format stores fingerprints (lists)
+        if entries and isinstance(entries[0], str):
+            return set()
+        return {frozenset(tuple(p) for p in fp) for fp in entries}
+
+    new_fps_by_line = {
+        line: [dis_fingerprint(dis_by_id[dis_id]) for dis_id in ids]
+        for line, ids in by_line.items()
+    }
     diff: dict[str, dict] = {}
     all_lines = set(by_line.keys()) | set(old_by_line.keys())
     for line in all_lines:
-        new_ids = by_line.get(line, set())
-        old_ids = set(old_by_line.get(line, []))
-        added = len(new_ids - old_ids)
-        removed = len(old_ids - new_ids)
+        old_set = fp_set(line, old_by_line)
+        new_set = {frozenset(tuple(p) for p in fp) for fp in new_fps_by_line.get(line, [])}
+        added = len(new_set - old_set)
+        removed = len(old_set - new_set)
         if added or removed:
             diff[line] = {"added": added, "removed": removed}
 
-    # Persist current by_line for next run
+    # Persist fingerprints (not IDs) so UUID re-issues don't show as changes next run
     (by_line_file).write_text(
-        json.dumps({name: sorted(ids) for name, ids in by_line.items()}, ensure_ascii=False, indent=2)
+        json.dumps(new_fps_by_line, ensure_ascii=False, indent=2)
     )
 
     PUBLIC.mkdir(exist_ok=True)
