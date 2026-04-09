@@ -437,7 +437,7 @@ def _sub_buttons(full_url: str, line: str) -> str:
     o365_url = f"https://outlook.office.com/calendar/addfromweb?url={encoded_https}"
     return (
         f'<a class="sub-btn google" href="{gcal_url}" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="{line}">{_GCAL_ICON}Google Calendar</a>'
-        f'<a class="sub-btn webcal" href="{webcal_url}" data-umami-event="subscribe-webcal" data-umami-event-line="{line}">{_WEBCAL_ICON}iCal / webcal</a>'
+        f'<a class="sub-btn webcal" href="{webcal_url}" data-umami-event="subscribe-webcal" data-umami-event-line="{line}">{_WEBCAL_ICON}iCalendar / webcal</a>'
         f'<a class="sub-btn outlook" href="{outlook_url}" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="{line}">{_OUTLOOK_ICON}Outlook</a>'
         f'<a class="sub-btn o365" href="{o365_url}" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="{line}">{_O365_ICON}Office 365</a>'
         f'<button class="sub-btn copy" onclick="copyUrl(\'{full_url}\',this)" data-umami-event="copy-url" data-umami-event-line="{line}">{_COPY_ICON}Copier le lien</button>'
@@ -602,14 +602,23 @@ def generate_index(
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travaux Métro à Paris</title>
-  <meta name="description" content="Abonnez-vous aux interruptions et travaux planifiés du métro parisien. Calendrier mis à jour automatiquement et quotidiennement pour chaque ligne.">
+  <title>Travaux Métro</title>
+  <meta name="description" content="Calendrier des interruptions et travaux planifiés du métro parisien, mis à jour quotidiennement. Abonnez-vous à votre ligne.">
   <meta name="theme-color" content="#003CA6">
   <link rel="canonical" href="https://travauxmetro.fr/">
-  <meta property="og:title" content="Travaux Métro à Paris">
-  <meta property="og:description" content="Abonnez-vous aux interruptions et travaux planifiés du métro parisien. Calendrier mis à jour automatiquement et quotidiennement pour chaque ligne.">
+  <meta property="og:title" content="Travaux Métro">
+  <meta property="og:description" content="Calendrier des interruptions et travaux planifiés du métro parisien, mis à jour quotidiennement. Abonnez-vous à votre ligne.">
   <meta property="og:url" content="https://travauxmetro.fr/">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Travaux Métro">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:image" content="https://travauxmetro.fr/assets/og-image-cream.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Travaux Métro">
+  <meta name="twitter:description" content="Calendrier des interruptions et travaux planifiés du métro parisien, mis à jour quotidiennement. Abonnez-vous à votre ligne.">
+  <meta name="twitter:image" content="https://travauxmetro.fr/assets/og-image-cream.png">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <script type="application/ld+json">
   {{
@@ -617,7 +626,7 @@ def generate_index(
     "@type": "WebApplication",
     "name": "Travaux Métro Paris",
     "url": "https://travauxmetro.fr",
-    "description": "Abonnez-vous aux interruptions et travaux planifiés du métro parisien. Calendrier mis à jour automatiquement et quotidiennement pour chaque ligne.",
+    "description": "Calendrier des interruptions et travaux planifiés du métro parisien, mis à jour quotidiennement. Abonnez-vous à votre ligne.",
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "All",
     "offers": {{ "@type": "Offer", "price": "0", "priceCurrency": "EUR" }},
@@ -692,7 +701,7 @@ def generate_index(
   </style>
 </head>
 <body>
-  <h1 style="display:flex;align-items:center;gap:.35em;line-height:.95"><svg xmlns="http://www.w3.org/2000/svg" width="2.43em" height="2.43em" viewBox="-1.5 -1.5 27 27" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0"><g transform="rotate(90 12 12) translate(12 12) scale(1.1) translate(-12 -12)"><path d="M2 17 17 2"/><path d="m2 14 8 8"/><path d="m5 11 8 8"/><path d="m8 8 8 8"/><path d="m11 5 8 8"/><path d="m14 2 8 8"/><path d="M7 22 22 7"/></g><g transform="translate(12 12) scale(.6) translate(-12 -12)"><path stroke="#222" stroke-width="2.5" stroke-opacity="1" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/><path stroke="#E6B800" stroke-width="1" fill="#222" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></g></svg><span>Travaux<br><span style="display:block;padding-left:.4em"><span style="color:#E6B800;text-shadow:-2px -2px 0 #222,2px -2px 0 #222,-2px 2px 0 #222,2px 2px 0 #222,0 -2px 0 #222,0 2px 0 #222,-2px 0 0 #222,2px 0 0 #222,-1px -2px 0 #222,1px -2px 0 #222,-2px -1px 0 #222,2px -1px 0 #222,-2px 1px 0 #222,2px 1px 0 #222,-1px 2px 0 #222,1px 2px 0 black;letter-spacing:-.3em">M</span>étro</span></span></h1>
+  <h1 style="display:flex;align-items:center;gap:.35em;line-height:.95"><svg xmlns="http://www.w3.org/2000/svg" width="2.43em" height="2.43em" viewBox="-1.5 -1.5 27 27" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0"><g transform="rotate(90 12 12) translate(12 12) scale(1.1) translate(-12 -12)"><path d="M2 17 17 2"/><path d="m2 14 8 8"/><path d="m5 11 8 8"/><path d="m8 8 8 8"/><path d="m11 5 8 8"/><path d="m14 2 8 8"/><path d="M7 22 22 7"/></g><g transform="translate(12 12) scale(.6) translate(-12 -12)"><path stroke="#222" stroke-width="2.5" stroke-opacity="1" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/><path stroke="#E6B800" stroke-width="1" fill="#222" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></g></svg><span>Travaux<br><span style="display:block;padding-left:.4em"><span style="color:#E6B800;text-shadow:-2px -2px 0 #222,2px -2px 0 #222,-2px 2px 0 #222,2px 2px 0 #222,0 -2px 0 #222,0 2px 0 #222,-2px 0 0 #222,2px 0 0 #222,-1px -2px 0 #222,1px -2px 0 #222,-2px -1px 0 #222,2px -1px 0 #222,-2px 1px 0 #222,2px 1px 0 #222,-1px 2px 0 #222,1px 2px 0 black;letter-spacing:+.05em">M</span>étro</span></span></h1>
   <p class="subtitle" style="margin-top:2rem">Interruptions et travaux planifiés par Île-de-France Mobilités.</br>Abonnez-vous au calendrier d'interruptions de votre ligne de métro parisien.</p>
 
   <div class="intro">
