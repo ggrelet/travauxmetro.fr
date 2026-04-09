@@ -1,4 +1,4 @@
-## Travaux métro — 07-04-2026
+## Travaux métro — 09-04-2026
 
 **Lignes concernées :** 5
 
@@ -7,16 +7,16 @@
 | ![M3](https://img.shields.io/badge/-M3-837902?style=flat) | 1 |
 | ![M3B](https://img.shields.io/badge/-M3B-6EC4E8?style=flat) | 6 |
 | ![M4](https://img.shields.io/badge/-M4-CF009E?style=flat) | 1 |
-| ![M12](https://img.shields.io/badge/-M12-007852?style=flat) | 3 |
+| ![M12](https://img.shields.io/badge/-M12-007852?style=flat) | 2 |
 | ![M13](https://img.shields.io/badge/-M13-98D4E2?style=flat) | 5 |
 
 ---
 
 #### ![M3](https://img.shields.io/badge/-M3-837902?style=flat)
 - **Métro 3 : Travaux - Trafic interrompu** — 08-04-2026 → 13-05-2026
-  - 🚉 Porte de Bagnolet, Gambetta, Gallieni
+  - 🚉 Gallieni, Gambetta, Porte de Bagnolet
   - Trafic interrompu
-  - Du 8 avril au 12 mai inclus, le trafic sera interrompu entre Gallieni et Gambetta en raison de travaux. Bus de remplacement.
+  - Jusqu'au 12 mai inclus, le trafic est interrompu entre Gallieni et Gambetta en raison de travaux. Bus de remplacement.
 
 #### ![M3B](https://img.shields.io/badge/-M3B-6EC4E8?style=flat)
 - **Métro 3B : Travaux - Trafic interrompu** — 12-04-2026 → 11-05-2026
@@ -32,9 +32,6 @@
   - Du 20 avril au 1er mai inclus, le trafic sera interrompu entre Châtelet et Barbès - Rochechouart en raison de travaux d'entretien.
 
 #### ![M12](https://img.shields.io/badge/-M12-007852?style=flat)
-- **Métro 12 : Travaux de modernisation - Trafic interrompu** — 08-04-2026 → 09-04-2026
-  - Trafic interrompu
-  - Jusqu'au 8 avril, le mercredi dès 22:00, le trafic est interrompu sur toute la ligne en raison de travaux de modernisation.
 - **Métro 12 : Travaux de modernisation - Trafic interrompu** — 05-04-2026 → 13-04-2026
   - Trafic interrompu
   - Jusqu'au 12 avril inclus, le dimanche dès 22:00, le trafic est interrompu sur toute la ligne en raison de travaux de modernisation.
@@ -43,16 +40,16 @@
 - **Métro 13 : Travaux - Trafic interrompu** — 03-05-2026 → 03-05-2026
   - Trafic interrompu
   - Les dimanches 3 et 17 mai ainsi que les 7 et 28 juin, jusqu'à 12 heures, le trafic est interrompu sur l'ensemble de la ligne en raison de travaux de modernisation.
-- **Métro 13 : Travaux de modernisation - Arrêt non desservi** — 09-04-2026 → 13-04-2026
-  - 🚉 Plaisance
-  - Arrêt non desservi
-  - Du 9 avril au 12 avril inclus, l'arrêt ne sera pas desservi à Plaisance en raison de travaux de modernisation
 - **Métro 13 : Travaux - Trafic interrompu** — 28-06-2026 → 28-06-2026
   - Trafic interrompu
   - Le 28 juin jusqu'à 12:00, le trafic sera interrompu sur toute la ligne en raison de travaux.
 - **Métro 13 : Travaux - Trafic interrompu** — 17-05-2026 → 17-05-2026
   - Trafic interrompu
   - Le dimanche 17 mai ainsi que les 7 et 28 juin, jusqu'à 12 heures, le trafic est interrompu sur l'ensemble de la ligne en raison de travaux de modernisation.
+- **Métro 13 : Travaux de modernisation - Arrêt non desservi** — 09-04-2026 → 13-04-2026
+  - 🚉 Plaisance
+  - Arrêt non desservi
+  - Jusqu'au 12 avril inclus, l'arrêt n'est pas desservi à Plaisance en raison de travaux de modernisation
 - **Métro 13 : Travaux - Trafic interrompu** — 07-06-2026 → 07-06-2026
   - Trafic interrompu
   - Les dimanches 7 et 28 juin, jusqu'à 12 heures, le trafic est interrompu sur l'ensemble de la ligne en raison de travaux de modernisation.
