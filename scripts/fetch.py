@@ -550,8 +550,11 @@ def generate_index(
     fetched_at: str,
 ) -> str:
     all_url = f"{BASE_URL}/tousmetros.ics"
-    date_str = fetched_at[:10]
     fetched_dt = datetime.fromisoformat(fetched_at).astimezone(PARIS_TZ)
+    _JOURS_FULL = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
+    _MOIS_FULL = ["janvier", "février", "mars", "avril", "mai", "juin",
+                  "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
+    date_str = f"{_JOURS_FULL[fetched_dt.weekday()]} {fetched_dt.day} {_MOIS_FULL[fetched_dt.month - 1]}"
     time_str = fetched_dt.strftime("%H:%M")
 
     disrupted_rows = ""
@@ -637,7 +640,7 @@ def generate_index(
     "operatingSystem": "All",
     "offers": {{ "@type": "Offer", "price": "0", "priceCurrency": "EUR" }},
     "inLanguage": "fr",
-    "dateModified": "{date_str}"
+    "dateModified": "{fetched_at[:10]}"
   }}
   </script>
   {FAVICON}
@@ -745,7 +748,7 @@ def generate_index(
   <footer>
     <div>Source : <a href="https://prim.iledefrance-mobilites.fr">Île-de-France Mobilités (PRIM)</a></div>
     <div><a href="https://github.com/ggrelet/travauxmetro.fr"><img src="/icons/github.svg" width="14" height="14" alt="GitHub" style="vertical-align:middle;margin-right:.25em;margin-bottom:2px">code source</a></div>
-    <div>Dernière mise à jour des données : {date_str} à {time_str}</div>
+    <div>Dernière mise à jour : <span style="white-space:nowrap">{date_str} à {time_str}</span></div>
     <div>→ <a href="mailto:contact@travauxmetro.fr">contact@travauxmetro.fr</a></div>
   </footer>
   <script>
