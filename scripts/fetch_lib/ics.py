@@ -68,13 +68,15 @@ def make_calendar(name: str, bg_color: str, description: str = "") -> Calendar:
     return cal
 
 
-def make_events(disruption: dict, line_name: str, stops: list[str]) -> list[Event]:
+def make_events(disruption: dict, line_name: str, stops: list[str], network: str = "Metro") -> list[Event]:
     title = disruption.get("title", "").strip()
     message = strip_html(disruption.get("message", ""))
     short = disruption.get("shortMessage", "").strip()
     cause = disruption.get("cause", "")
 
-    summary = f"M{line_name} — {title or short or 'Interruption'}"
+    # "M1 — ..." for metro, "RER A — ..." for RER.
+    line_label = f"M{line_name}" if network == "Metro" else f"RER {line_name}"
+    summary = f"{line_label} — {title or short or 'Interruption'}"
 
     desc_parts = [f"Ligne {line_name}"]
     if stops:

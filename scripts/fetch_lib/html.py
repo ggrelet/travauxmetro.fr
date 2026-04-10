@@ -6,7 +6,7 @@ from pathlib import Path
 from babel.dates import format_date
 from jinja2 import Environment, FileSystemLoader
 
-from .constants import BASE_URL, CONTACT_EMAIL, FAVICON, METRO_LINE_COLORS, PARIS_TZ, UMAMI
+from .constants import BASE_URL, CONTACT_EMAIL, FAVICON, METRO_LINE_COLORS, PARIS_TZ, RER_LINE_COLORS, UMAMI
 from .ics import deduplicate_events, make_events
 from .prim import (
     classify_disruptions,
@@ -60,18 +60,20 @@ def fmt_period_display(p: dict) -> str:
     return f"{fdt(ns)} → {fdt(ne)}"
 
 
-def _line_view(line_name: str, bg: str, fg: str) -> dict:
+def _line_view(line_name: str, bg: str, fg: str, network: str = "Metro") -> dict:
     """Common URL variants and label HTML for one line (independent of disruption state)."""
     ics_url = f"{BASE_URL}/ligne-{line_name}.ics"
     webcal_url = ics_url.replace("https://", "webcal://")
     encoded_url = ics_url.replace("://", "%3A%2F%2F").replace("/", "%2F")
     gcal_cid = webcal_url.replace("://", "%3A%2F%2F").replace("/", "%2F")
-    if line_name.endswith("B"):
+    # Only metro 3B/7B get the "bis" subscript; RER B is just "B".
+    if network == "Metro" and line_name.endswith("B"):
         label_html = f'{line_name[:-1]}<span style="font-size:.42em;letter-spacing:-.02em">bis</span>'
     else:
         label_html = line_name
     return {
         "name": line_name,
+        "network": network,
         "bg": bg,
         "fg": fg,
         "label_html": label_html,
@@ -88,6 +90,7 @@ def _build_cards(
     dis_by_id: dict,
     dis_to_stops: dict,
     metro_lines: dict,
+    network: str = "Metro",
 ) -> list[dict]:
     """Return the card view-models for a disrupted line (may be empty after filtering)."""
     line_id = next((lid for lid, l in metro_lines.items() if l["shortName"] == line_name), None)
@@ -97,7 +100,7 @@ def _build_cards(
     all_events = []
     for dis_id in normal_ids:
         stops = dis_to_stops[dis_id].get(line_id, []) if line_id else []
-        all_events.extend(make_events(dis_by_id[dis_id], line_name, stops))
+        all_events.extend(make_events(dis_by_id[dis_id], line_name, stops, network=network))
     available = {(e.get("dtstart").dt, e.get("dtend").dt) for e in deduplicate_events(all_events)}
 
     cards = []
@@ -127,6 +130,45 @@ def _build_cards(
     return cards
 
 
+def _all_sub(filename: str, name: str) -> dict:
+    url = f"{BASE_URL}/{filename}"
+    return {
+        "name": name,
+        "ics_url": url,
+        "webcal_url": url.replace("https://", "webcal://"),
+        "encoded_url": url.replace("://", "%3A%2F%2F").replace("/", "%2F"),
+        "gcal_cid": url.replace("https://", "webcal://").replace("://", "%3A%2F%2F").replace("/", "%2F"),
+    }
+
+
+def _build_network_views(
+    network: str,
+    line_colors: dict,
+    by_line: dict,
+    dis_by_id: dict,
+    dis_to_stops: dict,
+    net_lines: dict,
+) -> tuple[list, list, list]:
+    """Return (all_lines, disrupted_lines, calm_lines) for one network."""
+    all_lines = []
+    disrupted = []
+    calm = []
+    for line_name in sorted(line_colors.keys(), key=line_sort_key):
+        bg, fg = line_colors[line_name]
+        view = _line_view(line_name, bg, fg, network=network)
+        all_lines.append(view)
+        if by_line.get(line_name):
+            view["cards"] = _build_cards(line_name, by_line, dis_by_id, dis_to_stops, net_lines, network=network)
+            n = len(view["cards"])
+            view["card_count"] = n
+            view["dialog_id"] = f"dis-{line_name}"
+            view["label_text"] = f"{n} interruption{'s' if n > 1 else ''} prévue{'s' if n > 1 else ''}"
+            disrupted.append(view)
+        else:
+            calm.append(view)
+    return all_lines, disrupted, calm
+
+
 def generate_index(
     by_line: dict,
     dis_by_id: dict,
@@ -138,32 +180,17 @@ def generate_index(
     date_str = format_date(fetched_dt, "EEEE d MMMM", locale="fr")
     time_str = fetched_dt.strftime("%H:%M")
 
-    all_lines = []
-    disrupted_lines = []
-    calm_lines = []
-    for line_name in sorted(METRO_LINE_COLORS.keys(), key=line_sort_key):
-        bg, fg = METRO_LINE_COLORS[line_name]
-        view = _line_view(line_name, bg, fg)
-        all_lines.append(view)
+    # `metro_lines` here is actually the merged metro+RER index built in main.py.
+    # _build_cards looks up by shortName, so the merged dict is correct for both.
+    metro_all, metro_disrupted, metro_calm = _build_network_views(
+        "Metro", METRO_LINE_COLORS, by_line, dis_by_id, dis_to_stops, metro_lines,
+    )
+    rer_all, rer_disrupted, rer_calm = _build_network_views(
+        "RapidTransit", RER_LINE_COLORS, by_line, dis_by_id, dis_to_stops, metro_lines,
+    )
 
-        if by_line.get(line_name):
-            view["cards"] = _build_cards(line_name, by_line, dis_by_id, dis_to_stops, metro_lines)
-            n = len(view["cards"])
-            view["card_count"] = n
-            view["dialog_id"] = f"dis-{line_name}"
-            view["label_text"] = f"{n} interruption{'s' if n > 1 else ''} prévue{'s' if n > 1 else ''}"
-            disrupted_lines.append(view)
-        else:
-            calm_lines.append(view)
-
-    all_url = f"{BASE_URL}/tousmetros.ics"
-    all_sub = {
-        "name": "all",
-        "ics_url": all_url,
-        "webcal_url": all_url.replace("https://", "webcal://"),
-        "encoded_url": all_url.replace("://", "%3A%2F%2F").replace("/", "%2F"),
-        "gcal_cid": all_url.replace("https://", "webcal://").replace("://", "%3A%2F%2F").replace("/", "%2F"),
-    }
+    all_metro_sub = _all_sub("tousmetros.ics", "all-metro")
+    all_rer_sub = _all_sub("tousrer.ics", "all-rer")
 
     return _ENV.get_template("index.html.j2").render(
         fetched_at_date=fetched_at[:10],
@@ -172,10 +199,14 @@ def generate_index(
         css_inline=CSS_INLINE,
         js_inline=JS_INLINE,
         contact_email=CONTACT_EMAIL,
-        disrupted_lines=disrupted_lines,
-        calm_lines=calm_lines,
-        all_lines=all_lines,
-        all_sub=all_sub,
+        metro_disrupted=metro_disrupted,
+        metro_calm=metro_calm,
+        metro_all=metro_all,
+        rer_disrupted=rer_disrupted,
+        rer_calm=rer_calm,
+        rer_all=rer_all,
+        all_metro_sub=all_metro_sub,
+        all_rer_sub=all_rer_sub,
         date_str=date_str,
         time_str=time_str,
     )

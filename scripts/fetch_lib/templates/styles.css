@@ -7,6 +7,8 @@
     a { color: #555; }
     footer { margin-top: 3rem; color: #888; font-size: .85em; border-top: 1px solid #e8e8e8; padding-top: 1rem; line-height: 1.8; }
     .badge { display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: 700; font-size: 3.1rem; width: 4.5rem; height: 4.5rem; flex-shrink: 0; }
+    /* RER badges are squircles, matching the official IDFM icon (rx=63.78 on a 283.46 box ≈ 22.5%). */
+    .badge.badge-rer { border-radius: 22.5%; }
     .line-header { display: flex; align-items: center; gap: .85rem; }
     .line-vsep { width: 1px; background: #bbb; align-self: stretch; flex-shrink: 0; min-height: 2rem; }
     .line-actions { display: flex; align-items: flex-start; align-content: flex-start; gap: .4rem; flex-wrap: wrap; flex: 1; }
@@ -58,5 +60,6 @@
     .all-badges .badge { width: 3rem; height: 3rem; font-size: 1.8rem; }
     @media (max-width: 600px) { .all-badges { grid-template-columns: repeat(4, auto); gap: .3rem; } .all-badges .badge { width: 2.4rem; height: 2.4rem; font-size: 1.3rem; } }
     section { margin-bottom: 2.5rem; }
+    .network-sep { border: none; border-top: 1px solid #e8e8e8; margin: 1.25rem 0; }
     @keyframes fadein { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
     .dis-dialog .cards, .dis-dialog .note { animation: fadein .2s ease; }

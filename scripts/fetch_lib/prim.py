@@ -21,22 +21,24 @@ def fetch_data(token: str) -> dict:
     return resp.json()
 
 
-def build_metro_index(lines: list) -> tuple[dict, dict, dict]:
+def build_lines_index(lines: list, mode: str) -> tuple[dict, dict, dict]:
     """
     Returns:
-      metro_lines: {line_id -> line_dict}
+      net_lines: {line_id -> line_dict}     for lines whose mode == `mode`
       dis_to_line_ids: {disruption_id -> set of line_ids}
       dis_to_stops: {disruption_id -> {line_id -> [stop_name, ...]}}
+
+    `mode` matches IDFM/PRIM line modes: "Metro", "RapidTransit" (RER), etc.
     """
-    metro_lines: dict = {}
+    net_lines: dict = {}
     dis_to_line_ids: dict = defaultdict(set)
     dis_to_stops: dict = defaultdict(lambda: defaultdict(list))
 
     for line in lines:
-        if line.get("mode") != "Metro":
+        if line.get("mode") != mode:
             continue
         line_id = line["id"]
-        metro_lines[line_id] = line
+        net_lines[line_id] = line
         for obj in line.get("impactedObjects", []):
             for dis_id in obj.get("disruptionIds", []):
                 dis_to_line_ids[dis_id].add(line_id)
@@ -46,7 +48,7 @@ def build_metro_index(lines: list) -> tuple[dict, dict, dict]:
                     if name and name not in stops:
                         stops.append(name)
 
-    return metro_lines, dis_to_line_ids, dis_to_stops
+    return net_lines, dis_to_line_ids, dis_to_stops
 
 
 def strip_html(text: str) -> str:
@@ -163,4 +165,6 @@ def line_sort_key(name: str) -> tuple:
     try:
         return (float(name),)
     except ValueError:
-        return (999,)
+        # RER letters (A..E) and any other non-numeric line names sort
+        # alphabetically, after all numeric metro lines.
+        return (999, name)
