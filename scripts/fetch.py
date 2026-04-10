@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Fetch planned disruptions from PRIM API and generate ICS files per metro line."""
 
+import argparse
 import hashlib
 import html
 import json
@@ -19,6 +20,23 @@ from zoneinfo import ZoneInfo
 PARIS_TZ = ZoneInfo("Europe/Paris")
 
 
+# Test hook: when set (via --now), all calls to _utc_now() / _today() return
+# values derived from this fixed point, making fetch.py output deterministic.
+_FAKE_NOW: datetime | None = None
+
+
+def _utc_now() -> datetime:
+    if _FAKE_NOW is not None:
+        return _FAKE_NOW.astimezone(timezone.utc)
+    return datetime.now(timezone.utc)
+
+
+def _today() -> date:
+    if _FAKE_NOW is not None:
+        return _FAKE_NOW.astimezone(PARIS_TZ).date()
+    return date.today()
+
+
 # Night service ends around 01:30–02:00, resumes around 05:00.
 # Events ending before NIGHT_CUTOFF are "end of night", not start of next morning.
 NIGHT_CUTOFF = time_type(5, 0)
@@ -29,6 +47,12 @@ NIGHT_STRIP_TO = time_type(2, 0)
 ROOT = Path(__file__).parent.parent
 PUBLIC = ROOT / "public"
 DATA = ROOT / "data"
+TEMPLATES = Path(__file__).parent / "templates"
+
+# Inlined at build time into the <style>/<script> blocks in generate_index().
+# Kept as real files so editors/linters/Prettier work on them.
+CSS_INLINE = (TEMPLATES / "styles.css").read_text()
+JS_INLINE = (TEMPLATES / "app.js").read_text()
 
 PRIM_URL = "https://prim.iledefrance-mobilites.fr/marketplace/disruptions_bulk/disruptions/v2"
 BASE_URL = "https://travauxmetro.fr"
@@ -262,7 +286,7 @@ def make_events(disruption: dict, line_name: str, stops: list[str]) -> list[Even
         e.add("description", description)
         e.add("dtstart", ns)
         e.add("dtend", ne)
-        e.add("dtstamp", datetime.now(timezone.utc))
+        e.add("dtstamp", _utc_now())
         e.add("categories", [f"Ligne {line_name}", "Travaux Métro"])
         events.append(e)
     return events
@@ -646,70 +670,7 @@ def generate_index(
   {FAVICON}
   {UMAMI}
   <style>
-    *, *::before, *::after {{ box-sizing: border-box; }}
-    body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; color: #222; line-height: 1.5; background: #f7f7f7; }}
-    h1 {{ margin-bottom: .25rem; font-size: 2.8rem; }}
-    .subtitle {{ color: #555; margin-top: 0; margin-bottom: 1.5rem; font-size: 1.40rem; line-height: 1.3; }}
-    .meta {{ color: #888; font-size: .85em; }}
-    .intro {{ background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: .9rem 1.1rem; margin-bottom: 1.5rem; font-size: .95em; }}
-    a {{ color: #555; }}
-    a {{ color: #555; }}
-    footer {{ margin-top: 3rem; color: #888; font-size: .85em; border-top: 1px solid #e8e8e8; padding-top: 1rem; line-height: 1.8; }}
-    .badge {{ display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: 700; font-size: 3.1rem; width: 4.5rem; height: 4.5rem; flex-shrink: 0; }}
-    .line-header {{ display: flex; align-items: center; gap: .85rem; }}
-    .line-vsep {{ width: 1px; background: #bbb; align-self: stretch; flex-shrink: 0; min-height: 2rem; }}
-    .line-actions {{ display: flex; align-items: flex-start; align-content: flex-start; gap: .4rem; flex-wrap: wrap; flex: 1; }}
-    .sub-btn.copy {{ background: #888; color: #fff; }}
-    .sub-btn.copy:hover {{ background: #666; }}
-    .sub-btn.copy.copied {{ background: #2e7d32; justify-content: center; }}
-    .sub-btn {{ display: inline-flex; align-items: center; cursor: pointer; border: none; border-radius: 5px; padding: .2em .55em; font-size: .68em; margin: 0; text-decoration: none; white-space: nowrap; font-family: inherit; line-height: 1; }}
-    .sub-btn.webcal {{ background: #444; color: #fff; }}
-    .sub-btn.webcal:hover {{ background: #222; }}
-    .sub-btn.outlook {{ background: #0078d4; color: #fff; }}
-    .sub-btn.outlook:hover {{ background: #005fa3; }}
-    .sub-btn.o365 {{ background: #D83B01; color: #fff; }}
-    .sub-btn.o365:hover {{ background: #b03000; }}
-    .sub-btn.google {{ background: #4285F4; color: #fff; }}
-    .sub-btn.google:hover {{ background: #2b6fd4; }}
-    .section-title {{ font-size: 1.6rem; font-weight: 700; color: #333; text-transform: uppercase; letter-spacing: .06em; margin: 1.5rem 0 .75rem; }}
-    .lines-grid {{ display: grid; grid-template-columns: repeat(2, 1fr); gap: .75rem; }}
-    @media (max-width: 600px) {{ .lines-grid {{ grid-template-columns: 1fr; }} }}
-    .line-row {{ background: #fff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 1rem 1.2rem; }}
-    .section-note {{ font-size: .85em; color: #222; margin: -.25rem 0 .75rem; }}
-    .contact-hint {{ font-size: .85em; color: #222; margin: 0 0 1.5rem; }}
-    .quiet {{ color: #aaa; font-size: .85em; margin: .5rem 0 0; }}
-    details {{ margin-top: .6rem; }}
-    details summary {{ cursor: pointer; font-size: .88em; color: #555; font-weight: 600; list-style: none; display: flex; align-items: center; gap: .4rem; user-select: none; }}
-    details summary::before {{ content: "▶"; font-size: .7em; transition: transform .15s; }}
-    details[open] summary::before {{ transform: rotate(90deg); }}
-    @keyframes redglow {{ 0%, 100% {{ color: #8b1a1a; }} 50% {{ color: #e53935; }} }}
-    .dis-btn {{ background: none; border: none; cursor: pointer; font-family: inherit; font-size: .8em; font-weight: 600; color: #c0392b; padding: 1.6em 0 0; display: block; animation: redglow 3s ease-in-out infinite; }}
-    .dis-btn:hover {{ text-decoration: underline; }}
-    .dis-dialog {{ border: none; border-radius: 14px; padding: 0; max-width: 640px; width: calc(100vw - 2rem); box-shadow: 0 8px 40px rgba(0,0,0,.18); position: fixed; inset: 0; margin: auto; max-height: 90vh; overflow: hidden; }}
-    .dis-dialog[open] {{ display: flex; flex-direction: column; animation: dialogIn .25s cubic-bezier(0.16,1,0.3,1) forwards; }}
-    @keyframes dialogIn {{ from {{ opacity: 0; transform: scale(.95); }} to {{ opacity: 1; transform: scale(1); }} }}
-    .dis-dialog::backdrop {{ background: rgba(0,0,0,.45); animation: backdropIn .25s ease forwards; }}
-    @keyframes backdropIn {{ from {{ opacity: 0; }} to {{ opacity: 1; }} }}
-    .dis-dialog-header {{ display: flex; align-items: center; gap: .7em; padding: 1rem 1.2rem; background: #fff; flex-shrink: 0; border-bottom: 1px solid #e8e8e8; }}
-    .dis-dialog-body {{ padding: 1.2rem 1.5rem 1.5rem; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }}
-    .dis-close {{ background: none; border: none; cursor: pointer; font-size: 1.4rem; color: #999; padding: .2rem .45rem; border-radius: 5px; line-height: 1; flex-shrink: 0; }}
-    .dis-close:hover {{ background: #f0f0f0; color: #333; }}
-    .dis-dialog-title {{ font-weight: 700; font-size: 1.05rem; margin: 0 0 .1rem; color: #333; }}
-    .dis-dialog-subtitle {{ font-size: .9rem; color: #666; margin: 0 0 1rem; }}
-    .cards {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: .75rem; }}
-    .dis-card {{ background: #fafafa; border: 1px solid #e8e8e8; border-radius: 10px; padding: .9rem; }}
-    .card-title {{ font-weight: 600; font-size: .9em; margin-bottom: .4rem; }}
-    .period {{ font-size: .8em; color: #555; margin: .15rem 0; white-space: nowrap; }}
-    .stops {{ font-size: .8em; color: #333; margin-top: .35rem; }}
-    .message {{ font-size: .78em; color: #666; margin-top: .45rem; border-top: 1px solid #eee; padding-top: .35rem; white-space: pre-wrap; }}
-    .note {{ font-size: .82em; color: #666; font-style: italic; margin: .5rem 0 .5rem; }}
-    .all-badges {{ display: grid; grid-template-columns: repeat(8, auto); gap: .4rem; margin-bottom: 0; justify-content: start; }}
-    .all-badges .badge {{ width: 3rem; height: 3rem; font-size: 1.8rem; }}
-    @media (max-width: 600px) {{ .all-badges {{ grid-template-columns: repeat(4, auto); gap: .3rem; }} .all-badges .badge {{ width: 2.4rem; height: 2.4rem; font-size: 1.3rem; }} }}
-    section {{ margin-bottom: 2.5rem; }}
-    @keyframes fadein {{ from {{ opacity: 0; transform: translateY(-8px); }} to {{ opacity: 1; transform: translateY(0); }} }}
-    .dis-dialog .cards, .dis-dialog .note {{ animation: fadein .2s ease; }}
-  </style>
+{CSS_INLINE}  </style>
 </head>
 <body>
   <h1 style="display:flex;align-items:center;gap:.35em;line-height:.95"><svg xmlns="http://www.w3.org/2000/svg" width="2.43em" height="2.43em" viewBox="-1.5 -1.5 27 27" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0"><g transform="rotate(90 12 12) translate(12 12) scale(1.1) translate(-12 -12)"><path d="M2 17 17 2"/><path d="m2 14 8 8"/><path d="m5 11 8 8"/><path d="m8 8 8 8"/><path d="m11 5 8 8"/><path d="m14 2 8 8"/><path d="M7 22 22 7"/></g><g transform="translate(12 12) scale(.6) translate(-12 -12)"><path stroke="#222" stroke-width="2.5" stroke-opacity="1" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/><path stroke="#E6B800" stroke-width="1" fill="#222" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></g></svg><span>Travaux<br><span style="display:block;padding-left:.09em"><span style="color:#E6B800;text-shadow:-2px -2px 0 #222,2px -2px 0 #222,-2px 2px 0 #222,2px 2px 0 #222,0 -2px 0 #222,0 2px 0 #222,-2px 0 0 #222,2px 0 0 #222,-1px -2px 0 #222,1px -2px 0 #222,-2px -1px 0 #222,2px -1px 0 #222,-2px 1px 0 #222,2px 1px 0 #222,-1px 2px 0 #222,1px 2px 0 black;letter-spacing:+.05em">M</span>étro</span></span></h1>
@@ -752,77 +713,44 @@ def generate_index(
     <div>→ <a href="mailto:contact@travauxmetro.fr">contact@travauxmetro.fr</a></div>
   </footer>
   <script>
-  function copyUrl(url, btn) {{
-    if (btn.disabled) return;
-    btn.disabled = true;
-    const orig = btn.innerHTML;
-    btn.style.width = btn.offsetWidth + 'px';
-    btn.style.height = btn.offsetHeight + 'px';
-    const done = () => {{
-      btn.classList.add('copied');
-      btn.innerHTML = '✓ Copié !';
-      setTimeout(() => {{
-        btn.innerHTML = orig;
-        btn.classList.remove('copied');
-        btn.style.width = '';
-        btn.style.height = '';
-        btn.disabled = false;
-      }}, 3000);
-    }};
-    const fallback = () => {{
-      const ta = Object.assign(document.createElement('textarea'), {{
-        value: url, style: 'position:fixed;opacity:0'
-      }});
-      document.body.appendChild(ta);
-      ta.focus(); ta.select();
-      try {{ document.execCommand('copy'); }} catch(e) {{}}
-      document.body.removeChild(ta);
-      done();
-    }};
-    if (navigator.clipboard) {{
-      navigator.clipboard.writeText(url).then(done).catch(fallback);
-    }} else {{
-      fallback();
-    }}
-  }}
-  document.querySelectorAll('.dis-dialog').forEach(dlg => {{
-    document.body.insertBefore(dlg, document.body.firstChild);
-  }});
-  document.querySelectorAll('.dis-btn').forEach(btn => {{
-    btn.addEventListener('click', () => {{
-      const sw = window.innerWidth - document.documentElement.clientWidth;
-      if (sw) document.body.style.paddingRight = sw + 'px';
-      document.documentElement.style.overflow = 'hidden';
-      const siv = Element.prototype.scrollIntoView;
-      Element.prototype.scrollIntoView = () => {{}};
-      document.getElementById(btn.dataset.dialog).showModal();
-      Element.prototype.scrollIntoView = siv;
-    }});
-  }});
-  document.querySelectorAll('.dis-dialog').forEach(dlg => {{
-    dlg.addEventListener('click', e => {{ if (e.target === dlg) dlg.close(); }});
-    dlg.addEventListener('close', () => {{
-      document.documentElement.style.overflow = '';
-      document.body.style.paddingRight = '';
-    }});
-  }});
-  document.addEventListener('touchmove', function(e) {{
-    if (e.scale !== 1) e.preventDefault();
-  }}, {{ passive: false }});
-  document.addEventListener('gesturestart', function(e) {{ e.preventDefault(); }});
-  document.addEventListener('gesturechange', function(e) {{ e.preventDefault(); }});
-  </script>
+{JS_INLINE}  </script>
 </body>
 </html>"""
 
 
 def main():
-    token = os.environ.get("PRIM_TOKEN")
-    if not token:
-        sys.exit("ERROR: PRIM_TOKEN not set")
+    parser = argparse.ArgumentParser(description="Fetch PRIM disruptions and generate site files.")
+    parser.add_argument("--fixture", help="Load raw PRIM JSON from this path instead of calling the API.")
+    parser.add_argument("--now", help="Override current time (ISO 8601, e.g. 2026-04-10T01:01:00+02:00).")
+    parser.add_argument("--out-dir", help="Write outputs under this directory (creates public/ and data/ subdirs).")
+    parser.add_argument("--save-raw", help="Fetch raw PRIM response, write it to this path, and exit.")
+    parser.add_argument("--force", action="store_true", help="Skip the content-hash check and regenerate all files.")
+    args = parser.parse_args()
 
-    print("Fetching disruptions from PRIM API...")
-    data = fetch_data(token)
+    global _FAKE_NOW, PUBLIC, DATA
+    if args.now:
+        _FAKE_NOW = datetime.fromisoformat(args.now)
+    if args.out_dir:
+        out_root = Path(args.out_dir)
+        PUBLIC = out_root / "public"
+        DATA = out_root / "data"
+        PUBLIC.mkdir(parents=True, exist_ok=True)
+        DATA.mkdir(parents=True, exist_ok=True)
+
+    if args.fixture:
+        print(f"Loading fixture → {args.fixture}")
+        data = json.loads(Path(args.fixture).read_text())
+    else:
+        token = os.environ.get("PRIM_TOKEN")
+        if not token:
+            sys.exit("ERROR: PRIM_TOKEN not set")
+        print("Fetching disruptions from PRIM API...")
+        data = fetch_data(token)
+        if args.save_raw:
+            Path(args.save_raw).parent.mkdir(parents=True, exist_ok=True)
+            Path(args.save_raw).write_text(json.dumps(data, ensure_ascii=False))
+            print(f"Saved raw PRIM response → {args.save_raw}")
+            return
 
     metro_lines, dis_to_line_ids, dis_to_stops = build_metro_index(data.get("lines", []))
     disruptions = data.get("disruptions", [])
@@ -839,12 +767,12 @@ def main():
     new_hash = content_hash(disruptions, metro_dis_ids)
     expected_ics = [PUBLIC / f"ligne-{name}.ics" for name in METRO_LINE_COLORS]
     missing_ics = any(not f.exists() for f in expected_ics)
-    if hash_file.exists() and hash_file.read_text().strip() == new_hash and not missing_ics:
-        print("No change — skipping.")
+    if not args.force and hash_file.exists() and hash_file.read_text().strip() == new_hash and not missing_ics:
+        print("No change — skipping. (Pass --force to regenerate anyway.)")
         return
 
     print("Content changed, generating files...")
-    fetched_at = datetime.now(timezone.utc).isoformat()
+    fetched_at = _utc_now().isoformat()
 
     # Load previous by_line state for diff
     by_line_file = DATA / "by_line.json"
@@ -870,8 +798,9 @@ def main():
             return set()
         return {frozenset(tuple(p) for p in fp) for fp in entries}
 
+    # Sort IDs so by_line.json is byte-stable across runs (sets have random iteration order)
     new_fps_by_line = {
-        line: [dis_fingerprint(dis_by_id[dis_id]) for dis_id in ids]
+        line: [dis_fingerprint(dis_by_id[dis_id]) for dis_id in sorted(ids)]
         for line, ids in by_line.items()
     }
     diff: dict[str, dict] = {}
@@ -884,9 +813,10 @@ def main():
         if added or removed:
             diff[line] = {"added": added, "removed": removed}
 
-    # Persist fingerprints (not IDs) so UUID re-issues don't show as changes next run
+    # Persist fingerprints (not IDs) so UUID re-issues don't show as changes next run.
+    # sort_keys keeps the file byte-stable across runs (dict key order is set-iteration-dependent).
     (by_line_file).write_text(
-        json.dumps(new_fps_by_line, ensure_ascii=False, indent=2)
+        json.dumps(new_fps_by_line, ensure_ascii=False, indent=2, sort_keys=True)
     )
 
     PUBLIC.mkdir(exist_ok=True)
@@ -913,8 +843,9 @@ def main():
         all_ids = by_line.get(line_name, set())
         normal_ids, _ = classify_disruptions(all_ids, dis_by_id)
 
+        # Sort IDs so ICS event order is byte-stable across runs
         events = []
-        for dis_id in normal_ids:
+        for dis_id in sorted(normal_ids):
             disruption = dis_by_id[dis_id]
             stops = dis_to_stops[dis_id].get(line_id_match, []) if line_id_match else []
             events.extend(make_events(disruption, line_name, stops))
@@ -936,7 +867,7 @@ def main():
     (DATA / "summary.md").write_text(generate_summary(by_line, dis_to_stops, dis_by_id, metro_lines, fetched_at, diff, event_counts))
     (PUBLIC / "index.html").write_text(generate_index(by_line, dis_by_id, dis_to_stops, metro_lines, fetched_at))
 
-    today = date.today().isoformat()
+    today = _today().isoformat()
     (PUBLIC / "sitemap.xml").write_text(
         f'<?xml version="1.0" encoding="UTF-8"?>\n'
         f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'

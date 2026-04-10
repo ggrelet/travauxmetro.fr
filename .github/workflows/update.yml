@@ -30,8 +30,9 @@ jobs:
         env:
           PRIM_TOKEN: ${{ secrets.PRIM_TOKEN }}
         run: |
-          [[ "${{ inputs.force }}" == "true" ]] && rm -f data/disruptions_hash.txt
-          uv run python scripts/fetch.py
+          ARGS=""
+          [[ "${{ inputs.force }}" == "true" ]] && ARGS="--force"
+          uv run python scripts/fetch.py $ARGS
 
       - name: Check for changes
         id: diff
