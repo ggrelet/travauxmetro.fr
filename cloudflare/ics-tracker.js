@@ -8,7 +8,7 @@
  */
 
 const UMAMI_URL = "https://cloud.umami.is/api/send";
-const WEBSITE_ID = "YOUR_UMAMI_WEBSITE_ID"; // Umami → Settings → Websites
+const WEBSITE_ID = "ef00b128-53c5-49eb-a0e9-e4da83748a67"; // Public Umami site ID — also embedded in the page's data-website-id
 
 const UA_CLIENTS = [
   [/Google-Calendar|CalDAV|GoogleOther/i, "gcal"],
