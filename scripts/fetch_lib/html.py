@@ -3,7 +3,7 @@
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
-from .constants import BASE_URL, FAVICON, METRO_LINE_COLORS, PARIS_TZ, UMAMI
+from .constants import BASE_URL, CONTACT_EMAIL, FAVICON, METRO_LINE_COLORS, PARIS_TZ, UMAMI
 from .ics import deduplicate_events, make_events
 from .prim import (
     classify_disruptions,
@@ -265,7 +265,7 @@ def generate_index(
     </details>
   </div>
 
-  <p class="contact-hint">Une question, une suggestion, une erreur à remonter&nbsp;? <span style="white-space:nowrap">→ <a href="mailto:contact@travauxmetro.fr">contact@travauxmetro.fr</a></span></p>
+  <p class="contact-hint">Une question, une suggestion, une erreur à remonter&nbsp;? <span style="white-space:nowrap">→ <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a></span></p>
 
   {disrupted_section}
   {calm_section}
@@ -286,7 +286,7 @@ def generate_index(
     <div>Source : <a href="https://prim.iledefrance-mobilites.fr">Île-de-France Mobilités (PRIM)</a></div>
     <div><a href="https://github.com/ggrelet/travauxmetro.fr"><img src="/icons/github.svg" width="14" height="14" alt="GitHub" style="vertical-align:middle;margin-right:.25em;margin-bottom:2px">code source</a></div>
     <div>Dernière mise à jour : <span style="white-space:nowrap">{date_str} à {time_str}</span></div>
-    <div>→ <a href="mailto:contact@travauxmetro.fr">contact@travauxmetro.fr</a></div>
+    <div>→ <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a></div>
   </footer>
   <script>
 {JS_INLINE}  </script>

@@ -41,6 +41,7 @@ ROOT = Path(__file__).parent.parent.parent
 
 PRIM_URL = "https://prim.iledefrance-mobilites.fr/marketplace/disruptions_bulk/disruptions/v2"
 BASE_URL = "https://travauxmetro.fr"
+CONTACT_EMAIL = "contact@travauxmetro.fr"
 UMAMI = '<script defer src="https://cloud.umami.is/script.js" data-website-id="ef00b128-53c5-49eb-a0e9-e4da83748a67"></script>'
 FAVICON = (
     '<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">'
