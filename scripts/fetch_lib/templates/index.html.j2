@@ -9,6 +9,40 @@
 {#- -#}
 <button class="sub-btn copy" onclick="copyUrl('{{ x.ics_url }}',this)" data-umami-event="copy-url" data-umami-event-line="{{ x.name }}"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button>
 {%- endmacro -%}
+{%- macro badge_class(network) -%}badge{% if network == "RapidTransit" %} badge-rer{% endif %}{%- endmacro -%}
+{%- macro disrupted_grid(lines) -%}
+<div class="lines-grid">{% for line in lines %}
+    <div class="line-row" data-line="{{ line.name }}">
+      <div class="line-header">
+        <span class="{{ badge_class(line.network) }}" style="background:{{ line.bg }};color:{{ line.fg }}">{{ line.label_html|safe }}</span>
+        <div class="line-vsep"></div>
+        <div class="line-actions">{{ sub_buttons(line) }}</div>
+      </div>
+      {% if line.card_count == 0 -%}<p class="quiet">Aucune interruption prévue, mais cela pourrait arriver dans le futur. Abonnez-vous pour ne pas les manquer.</p>{%- else -%}<button class="dis-btn" data-dialog="{{ line.dialog_id }}" data-umami-event="accordion-open" data-umami-event-line="{{ line.name }}"><span style="font-size:.8em">▶</span> {{ line.label_text }}</button>
+    <dialog id="{{ line.dialog_id }}" class="dis-dialog">
+      <div class="dis-dialog-header">
+        <span class="{{ badge_class(line.network) }}" style="background:{{ line.bg }};color:{{ line.fg }};width:2rem;height:2rem;font-size:1.2rem;flex-shrink:0">{{ line.label_html|safe }}</span>
+        <span class="dis-dialog-subtitle" style="margin:0;flex:1">{{ line.label_text }}</span>
+        <button class="dis-close" autofocus onclick="this.closest('dialog').close()">✕</button>
+      </div>
+      <div class="dis-dialog-body"><div class="cards">{% for card in line.cards %}
+          <div class="dis-card">
+            <div class="card-title">{{ card.title }}</div>
+            {% for p in card.periods -%}<div class="period">📅 {{ p }}</div>{%- endfor %}{% if card.stops %}<div class="stops"><img src="/favicon/favicon.svg" width="18" height="18" alt="" style="vertical-align:-4px;margin-right:.25em">{{ card.stops }}</div>{% endif %}{% if card.message %}<div class="message">{{ card.message }}</div>{% endif %}
+          </div>{% endfor %}</div></div>
+    </dialog>{%- endif %}
+    </div>{% endfor %}</div>
+{%- endmacro -%}
+{%- macro calm_grid(lines) -%}
+<div class="lines-grid">{% for line in lines %}
+    <div class="line-row">
+      <div class="line-header">
+        <span class="{{ badge_class(line.network) }}" style="background:{{ line.bg }};color:{{ line.fg }}">{{ line.label_html|safe }}</span>
+        <div class="line-vsep"></div>
+        <div class="line-actions">{{ sub_buttons(line) }}</div>
+      </div>
+    </div>{% endfor %}</div>
+{%- endmacro -%}
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -70,44 +104,21 @@
 
   <p class="contact-hint">Une question, une suggestion, une erreur à remonter&nbsp;? <span style="white-space:nowrap">→ <a href="mailto:{{ contact_email }}">{{ contact_email }}</a></span></p>
 
-  {% if disrupted_lines %}
+  {% if metro_disrupted or rer_disrupted %}
   <section>
     <h2 class="section-title">Lignes interrompues</h2>
     <p class="section-note">Île-de-France Mobilités a prévu des interruptions dues aux travaux sur ces lignes.</p>
-    <div class="lines-grid">{% for line in disrupted_lines %}
-    <div class="line-row" data-line="{{ line.name }}">
-      <div class="line-header">
-        <span class="badge" style="background:{{ line.bg }};color:{{ line.fg }}">{{ line.label_html|safe }}</span>
-        <div class="line-vsep"></div>
-        <div class="line-actions">{{ sub_buttons(line) }}</div>
-      </div>
-      {% if line.card_count == 0 -%}<p class="quiet">Aucune interruption prévue, mais cela pourrait arriver dans le futur. Abonnez-vous pour ne pas les manquer.</p>{%- else -%}<button class="dis-btn" data-dialog="{{ line.dialog_id }}" data-umami-event="accordion-open" data-umami-event-line="{{ line.name }}"><span style="font-size:.8em">▶</span> {{ line.label_text }}</button>
-    <dialog id="{{ line.dialog_id }}" class="dis-dialog">
-      <div class="dis-dialog-header">
-        <span class="badge" style="background:{{ line.bg }};color:{{ line.fg }};width:2rem;height:2rem;font-size:1.2rem;flex-shrink:0">{{ line.label_html|safe }}</span>
-        <span class="dis-dialog-subtitle" style="margin:0;flex:1">{{ line.label_text }}</span>
-        <button class="dis-close" autofocus onclick="this.closest('dialog').close()">✕</button>
-      </div>
-      <div class="dis-dialog-body"><div class="cards">{% for card in line.cards %}
-          <div class="dis-card">
-            <div class="card-title">{{ card.title }}</div>
-            {% for p in card.periods -%}<div class="period">📅 {{ p }}</div>{%- endfor %}{% if card.stops %}<div class="stops"><img src="/favicon/favicon.svg" width="18" height="18" alt="" style="vertical-align:-4px;margin-right:.25em">{{ card.stops }}</div>{% endif %}{% if card.message %}<div class="message">{{ card.message }}</div>{% endif %}
-          </div>{% endfor %}</div></div>
-    </dialog>{%- endif %}
-    </div>{% endfor %}</div>
+    {% if metro_disrupted %}{{ disrupted_grid(metro_disrupted) }}{% endif %}
+    {% if metro_disrupted and rer_disrupted %}<hr class="network-sep">{% endif %}
+    {% if rer_disrupted %}{{ disrupted_grid(rer_disrupted) }}{% endif %}
   </section>{% else %}<p class="quiet" style="margin-bottom:1.5rem">Aucune interruption prévue sur le réseau.</p>{% endif %}
-  {% if calm_lines %}
+  {% if metro_calm or rer_calm %}
   <section>
     <h2 class="section-title">Autres lignes</h2>
     <p class="section-note">Aucune interruption prévue sur ces lignes. Abonnez-vous pour être notifié automatiquement si cela change.</p>
-    <div class="lines-grid">{% for line in calm_lines %}
-    <div class="line-row">
-      <div class="line-header">
-        <span class="badge" style="background:{{ line.bg }};color:{{ line.fg }}">{{ line.label_html|safe }}</span>
-        <div class="line-vsep"></div>
-        <div class="line-actions">{{ sub_buttons(line) }}</div>
-      </div>
-    </div>{% endfor %}</div>
+    {% if metro_calm %}{{ calm_grid(metro_calm) }}{% endif %}
+    {% if metro_calm and rer_calm %}<hr class="network-sep">{% endif %}
+    {% if rer_calm %}{{ calm_grid(rer_calm) }}{% endif %}
   </section>{% endif %}
 
   <section>
@@ -115,11 +126,19 @@
     <p class="section-note">Un seul abonnement pour suivre toutes les interruptions du réseau en même temps.</p>
     <div class="line-row">
       <div class="line-header">
-        <div class="all-badges">{% for line in all_lines %}{% if not loop.first %} {% endif %}<span class="badge" style="background:{{ line.bg }};color:{{ line.fg }}">{{ line.label_html|safe }}</span>{% endfor %}</div>
+        <div class="all-badges">{% for line in metro_all %}{% if not loop.first %} {% endif %}<span class="{{ badge_class(line.network) }}" style="background:{{ line.bg }};color:{{ line.fg }}">{{ line.label_html|safe }}</span>{% endfor %}</div>
         <div class="line-vsep"></div>
-        <div class="line-actions">{{ sub_buttons(all_sub) }}</div>
+        <div class="line-actions">{{ sub_buttons(all_metro_sub) }}</div>
       </div>
     </div>
+    {% if rer_all %}<hr class="network-sep">
+    <div class="line-row">
+      <div class="line-header">
+        <div class="all-badges">{% for line in rer_all %}{% if not loop.first %} {% endif %}<span class="{{ badge_class(line.network) }}" style="background:{{ line.bg }};color:{{ line.fg }}">{{ line.label_html|safe }}</span>{% endfor %}</div>
+        <div class="line-vsep"></div>
+        <div class="line-actions">{{ sub_buttons(all_rer_sub) }}</div>
+      </div>
+    </div>{% endif %}
   </section>
 
   <footer>
