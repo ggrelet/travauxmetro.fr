@@ -9,6 +9,7 @@ on:
       - 'scripts/**'
       - 'pyproject.toml'
       - 'uv.lock'
+      - '.github/workflows/ci.yml'
       - '.github/workflows/deploy.yml'
   workflow_dispatch:
 
@@ -22,7 +23,11 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  test:
+    uses: ./.github/workflows/ci.yml
+
   deploy:
+    needs: test
     runs-on: ubuntu-latest
     environment:
       name: github-pages
