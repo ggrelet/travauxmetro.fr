@@ -3,6 +3,7 @@
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
+from babel.dates import format_date
 from jinja2 import Environment, FileSystemLoader
 
 from .constants import BASE_URL, CONTACT_EMAIL, FAVICON, METRO_LINE_COLORS, PARIS_TZ, UMAMI
@@ -46,15 +47,11 @@ def fmt_date(s: str) -> str:
 
 def fmt_period_display(p: dict) -> str:
     """Format a PRIM period dict using normalized bounds."""
-    _JOURS = ["lun.", "mar.", "mer.", "jeu.", "ven.", "sam.", "dim."]
-    _MOIS = ["janvier", "février", "mars", "avril", "mai", "juin",
-             "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
-
     def fdate(d: date) -> str:
-        return f"{_JOURS[d.weekday()]} {d.day} {_MOIS[d.month - 1]}"
+        return format_date(d, "EEE d MMMM", locale="fr")
 
     def fdt(dt: datetime) -> str:
-        return f"{_JOURS[dt.weekday()]} {dt.day} {_MOIS[dt.month - 1]} {dt.hour:02d}:{dt.minute:02d}"
+        return f"{format_date(dt, 'EEE d MMMM', locale='fr')} {dt.hour:02d}:{dt.minute:02d}"
 
     ns, ne, is_allday = normalize_period(parse_dt(p["begin"]), parse_dt(p["end"]))
     if is_allday:
@@ -138,10 +135,7 @@ def generate_index(
     fetched_at: str,
 ) -> str:
     fetched_dt = datetime.fromisoformat(fetched_at).astimezone(PARIS_TZ)
-    _JOURS_FULL = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
-    _MOIS_FULL = ["janvier", "février", "mars", "avril", "mai", "juin",
-                  "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
-    date_str = f"{_JOURS_FULL[fetched_dt.weekday()]} {fetched_dt.day} {_MOIS_FULL[fetched_dt.month - 1]}"
+    date_str = format_date(fetched_dt, "EEEE d MMMM", locale="fr")
     time_str = fetched_dt.strftime("%H:%M")
 
     all_lines = []
