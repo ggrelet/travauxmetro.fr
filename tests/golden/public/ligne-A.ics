@@ -1,0 +1,628 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ggrelet//travaux-metro//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALDESC:Interruptions et travaux planifiés sur la ligne A du RER par
+ isien. Mis à jour quotidiennement depuis les données Île-de-France Mobi
+ lités. travauxmetro.fr
+X-WR-CALNAME:RER A — Travaux
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-APPLE-CALENDAR-COLOR:#E3051C
+X-PUBLISHED-TTL:PT12H
+X-WR-TIMEZONE:Europe/Paris
+BEGIN:VEVENT
+SUMMARY:RER A — RER A:Nanterre-P <->Achères-Ville et Nanterre-P<->Poiss
+ y 04-06/05
+DTSTART;TZID=Europe/Paris:20260504T221500
+DTEND;TZID=Europe/Paris:20260505T020000
+DTSTAMP:20260410T100000Z
+UID:059fe645-1fc7-4441-9612-da55a3187424_20260504T221500@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nStations : Achères Grand Cormier\, Maisons-Laffitt
+ e\, Poissy\, Houilles - Carrières-sur-Seine\, Achères Ville\, Sartrouvil
+ le\, Nanterre Préfecture\n\nArrêt(s) non desservi(s)\n\nPériode : à pa
+ rtir de 22h00. Dates : du lundi 04 au mercredi 06 mai. Le trafic est inter
+ rompu entre Nanterre Préfecture et Achères-Ville et entre Nanterre Préf
+ ecture et Poissy. Pour rejoindre Poissy\, vous devrez emprunter la ligne L
+  à Paris Saint-Lazare. La ligne L est exceptionnellement  prolongée ent
+ re Maisons-Laffitte et Poissy. Des trains navettes seront mis en place ent
+ re Poissy et Cergy–Le Haut. Les horaires du calculateur d'itinéraire ti
+ ennent compte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A:Nanterre-P <->Achères-Ville et Nanterre-P<->Poiss
+ y 04-06/05
+DTSTART;TZID=Europe/Paris:20260505T221500
+DTEND;TZID=Europe/Paris:20260506T020000
+DTSTAMP:20260410T100000Z
+UID:059fe645-1fc7-4441-9612-da55a3187424_20260505T221500@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nStations : Achères Grand Cormier\, Maisons-Laffitt
+ e\, Poissy\, Houilles - Carrières-sur-Seine\, Achères Ville\, Sartrouvil
+ le\, Nanterre Préfecture\n\nArrêt(s) non desservi(s)\n\nPériode : à pa
+ rtir de 22h00. Dates : du lundi 04 au mercredi 06 mai. Le trafic est inter
+ rompu entre Nanterre Préfecture et Achères-Ville et entre Nanterre Préf
+ ecture et Poissy. Pour rejoindre Poissy\, vous devrez emprunter la ligne L
+  à Paris Saint-Lazare. La ligne L est exceptionnellement  prolongée ent
+ re Maisons-Laffitte et Poissy. Des trains navettes seront mis en place ent
+ re Poissy et Cergy–Le Haut. Les horaires du calculateur d'itinéraire ti
+ ennent compte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A:Nanterre-P <->Achères-Ville et Nanterre-P<->Poiss
+ y 04-06/05
+DTSTART;TZID=Europe/Paris:20260506T221500
+DTEND;TZID=Europe/Paris:20260507T020000
+DTSTAMP:20260410T100000Z
+UID:059fe645-1fc7-4441-9612-da55a3187424_20260506T221500@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nStations : Achères Grand Cormier\, Maisons-Laffitt
+ e\, Poissy\, Houilles - Carrières-sur-Seine\, Achères Ville\, Sartrouvil
+ le\, Nanterre Préfecture\n\nArrêt(s) non desservi(s)\n\nPériode : à pa
+ rtir de 22h00. Dates : du lundi 04 au mercredi 06 mai. Le trafic est inter
+ rompu entre Nanterre Préfecture et Achères-Ville et entre Nanterre Préf
+ ecture et Poissy. Pour rejoindre Poissy\, vous devrez emprunter la ligne L
+  à Paris Saint-Lazare. La ligne L est exceptionnellement  prolongée ent
+ re Maisons-Laffitte et Poissy. Des trains navettes seront mis en place ent
+ re Poissy et Cergy–Le Haut. Les horaires du calculateur d'itinéraire ti
+ ennent compte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 11-12 et 18-1
+ 9/04
+DTSTART;VALUE=DATE:20260411
+DTEND;VALUE=DATE:20260412
+DTSTAMP:20260410T100000Z
+UID:36ee5394-1eeb-11f1-b269-0a58a9feac02_20260411T040000@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : toute la jo
+ urnée Dates : les week-ends 11-12 et 18-19 avril Le trafic est interrompu
+  entre Maisons-Laffitte et Cergy le Haut. Un service de bus de remplacemen
+ t est mis en place à Sartrouville\, avec desserte des gares intermédiair
+ es. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
+  Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 11-12 et 18-1
+ 9/04
+DTSTART;VALUE=DATE:20260412
+DTEND;VALUE=DATE:20260413
+DTSTAMP:20260410T100000Z
+UID:36ee5394-1eeb-11f1-b269-0a58a9feac02_20260412T040000@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : toute la jo
+ urnée Dates : les week-ends 11-12 et 18-19 avril Le trafic est interrompu
+  entre Maisons-Laffitte et Cergy le Haut. Un service de bus de remplacemen
+ t est mis en place à Sartrouville\, avec desserte des gares intermédiair
+ es. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
+  Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 11-12 et 18-1
+ 9/04
+DTSTART;VALUE=DATE:20260418
+DTEND;VALUE=DATE:20260419
+DTSTAMP:20260410T100000Z
+UID:36ee5394-1eeb-11f1-b269-0a58a9feac02_20260418T040000@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : toute la jo
+ urnée Dates : les week-ends 11-12 et 18-19 avril Le trafic est interrompu
+  entre Maisons-Laffitte et Cergy le Haut. Un service de bus de remplacemen
+ t est mis en place à Sartrouville\, avec desserte des gares intermédiair
+ es. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
+  Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 11-12 et 18-1
+ 9/04
+DTSTART;VALUE=DATE:20260419
+DTEND;VALUE=DATE:20260420
+DTSTAMP:20260410T100000Z
+UID:36ee5394-1eeb-11f1-b269-0a58a9feac02_20260419T040000@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : toute la jo
+ urnée Dates : les week-ends 11-12 et 18-19 avril Le trafic est interrompu
+  entre Maisons-Laffitte et Cergy le Haut. Un service de bus de remplacemen
+ t est mis en place à Sartrouville\, avec desserte des gares intermédiair
+ es. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
+  Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+DTSTART;TZID=Europe/Paris:20260407T221500
+DTEND;TZID=Europe/Paris:20260408T020000
+DTSTAMP:20260410T100000Z
+UID:40802e1a-58e0-4738-b4b1-7da4427365e7_20260407T221500@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
+ res Ville\, Cergy Préfecture\, Conflans Fin d'Oise\, Cergy Saint-Christop
+ he\, Neuville Université\n\nArrêt(s) non desservi(s)\n\nPériode : en se
+ maine à partir de 21h50 Dates : du mardi 07 au mercredi 29 avril Le trafi
+ c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
+ s de remplacement est mis en place à Sartrouville\, avec desserte des gar
+ es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+DTSTART;TZID=Europe/Paris:20260408T221500
+DTEND;TZID=Europe/Paris:20260409T020000
+DTSTAMP:20260410T100000Z
+UID:40802e1a-58e0-4738-b4b1-7da4427365e7_20260408T221500@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
+ res Ville\, Cergy Préfecture\, Conflans Fin d'Oise\, Cergy Saint-Christop
+ he\, Neuville Université\n\nArrêt(s) non desservi(s)\n\nPériode : en se
+ maine à partir de 21h50 Dates : du mardi 07 au mercredi 29 avril Le trafi
+ c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
+ s de remplacement est mis en place à Sartrouville\, avec desserte des gar
+ es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+DTSTART;TZID=Europe/Paris:20260409T221500
+DTEND;TZID=Europe/Paris:20260410T020000
+DTSTAMP:20260410T100000Z
+UID:40802e1a-58e0-4738-b4b1-7da4427365e7_20260409T221500@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
+ res Ville\, Cergy Préfecture\, Conflans Fin d'Oise\, Cergy Saint-Christop
+ he\, Neuville Université\n\nArrêt(s) non desservi(s)\n\nPériode : en se
+ maine à partir de 21h50 Dates : du mardi 07 au mercredi 29 avril Le trafi
+ c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
+ s de remplacement est mis en place à Sartrouville\, avec desserte des gar
+ es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+DTSTART;TZID=Europe/Paris:20260410T221500
+DTEND;TZID=Europe/Paris:20260411T020000
+DTSTAMP:20260410T100000Z
+UID:40802e1a-58e0-4738-b4b1-7da4427365e7_20260410T221500@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
+ res Ville\, Cergy Préfecture\, Conflans Fin d'Oise\, Cergy Saint-Christop
+ he\, Neuville Université\n\nArrêt(s) non desservi(s)\n\nPériode : en se
+ maine à partir de 21h50 Dates : du mardi 07 au mercredi 29 avril Le trafi
+ c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
+ s de remplacement est mis en place à Sartrouville\, avec desserte des gar
+ es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+DTSTART;TZID=Europe/Paris:20260413T221500
+DTEND;TZID=Europe/Paris:20260414T020000
+DTSTAMP:20260410T100000Z
+UID:40802e1a-58e0-4738-b4b1-7da4427365e7_20260413T221500@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
+ res Ville\, Cergy Préfecture\, Conflans Fin d'Oise\, Cergy Saint-Christop
+ he\, Neuville Université\n\nArrêt(s) non desservi(s)\n\nPériode : en se
+ maine à partir de 21h50 Dates : du mardi 07 au mercredi 29 avril Le trafi
+ c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
+ s de remplacement est mis en place à Sartrouville\, avec desserte des gar
+ es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+DTSTART;TZID=Europe/Paris:20260414T221500
+DTEND;TZID=Europe/Paris:20260415T020000
+DTSTAMP:20260410T100000Z
+UID:40802e1a-58e0-4738-b4b1-7da4427365e7_20260414T221500@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
+ res Ville\, Cergy Préfecture\, Conflans Fin d'Oise\, Cergy Saint-Christop
+ he\, Neuville Université\n\nArrêt(s) non desservi(s)\n\nPériode : en se
+ maine à partir de 21h50 Dates : du mardi 07 au mercredi 29 avril Le trafi
+ c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
+ s de remplacement est mis en place à Sartrouville\, avec desserte des gar
+ es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+DTSTART;TZID=Europe/Paris:20260415T221500
+DTEND;TZID=Europe/Paris:20260416T020000
+DTSTAMP:20260410T100000Z
+UID:40802e1a-58e0-4738-b4b1-7da4427365e7_20260415T221500@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
+ res Ville\, Cergy Préfecture\, Conflans Fin d'Oise\, Cergy Saint-Christop
+ he\, Neuville Université\n\nArrêt(s) non desservi(s)\n\nPériode : en se
+ maine à partir de 21h50 Dates : du mardi 07 au mercredi 29 avril Le trafi
+ c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
+ s de remplacement est mis en place à Sartrouville\, avec desserte des gar
+ es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+DTSTART;TZID=Europe/Paris:20260416T221500
+DTEND;TZID=Europe/Paris:20260417T020000
+DTSTAMP:20260410T100000Z
+UID:40802e1a-58e0-4738-b4b1-7da4427365e7_20260416T221500@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
+ res Ville\, Cergy Préfecture\, Conflans Fin d'Oise\, Cergy Saint-Christop
+ he\, Neuville Université\n\nArrêt(s) non desservi(s)\n\nPériode : en se
+ maine à partir de 21h50 Dates : du mardi 07 au mercredi 29 avril Le trafi
+ c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
+ s de remplacement est mis en place à Sartrouville\, avec desserte des gar
+ es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+DTSTART;TZID=Europe/Paris:20260417T221500
+DTEND;TZID=Europe/Paris:20260418T020000
+DTSTAMP:20260410T100000Z
+UID:40802e1a-58e0-4738-b4b1-7da4427365e7_20260417T221500@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
+ res Ville\, Cergy Préfecture\, Conflans Fin d'Oise\, Cergy Saint-Christop
+ he\, Neuville Université\n\nArrêt(s) non desservi(s)\n\nPériode : en se
+ maine à partir de 21h50 Dates : du mardi 07 au mercredi 29 avril Le trafi
+ c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
+ s de remplacement est mis en place à Sartrouville\, avec desserte des gar
+ es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+DTSTART;TZID=Europe/Paris:20260420T221500
+DTEND;TZID=Europe/Paris:20260421T020000
+DTSTAMP:20260410T100000Z
+UID:40802e1a-58e0-4738-b4b1-7da4427365e7_20260420T221500@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
+ res Ville\, Cergy Préfecture\, Conflans Fin d'Oise\, Cergy Saint-Christop
+ he\, Neuville Université\n\nArrêt(s) non desservi(s)\n\nPériode : en se
+ maine à partir de 21h50 Dates : du mardi 07 au mercredi 29 avril Le trafi
+ c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
+ s de remplacement est mis en place à Sartrouville\, avec desserte des gar
+ es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+DTSTART;TZID=Europe/Paris:20260421T221500
+DTEND;TZID=Europe/Paris:20260422T020000
+DTSTAMP:20260410T100000Z
+UID:40802e1a-58e0-4738-b4b1-7da4427365e7_20260421T221500@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
+ res Ville\, Cergy Préfecture\, Conflans Fin d'Oise\, Cergy Saint-Christop
+ he\, Neuville Université\n\nArrêt(s) non desservi(s)\n\nPériode : en se
+ maine à partir de 21h50 Dates : du mardi 07 au mercredi 29 avril Le trafi
+ c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
+ s de remplacement est mis en place à Sartrouville\, avec desserte des gar
+ es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+DTSTART;TZID=Europe/Paris:20260422T221500
+DTEND;TZID=Europe/Paris:20260423T020000
+DTSTAMP:20260410T100000Z
+UID:40802e1a-58e0-4738-b4b1-7da4427365e7_20260422T221500@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
+ res Ville\, Cergy Préfecture\, Conflans Fin d'Oise\, Cergy Saint-Christop
+ he\, Neuville Université\n\nArrêt(s) non desservi(s)\n\nPériode : en se
+ maine à partir de 21h50 Dates : du mardi 07 au mercredi 29 avril Le trafi
+ c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
+ s de remplacement est mis en place à Sartrouville\, avec desserte des gar
+ es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+DTSTART;TZID=Europe/Paris:20260423T221500
+DTEND;TZID=Europe/Paris:20260424T020000
+DTSTAMP:20260410T100000Z
+UID:40802e1a-58e0-4738-b4b1-7da4427365e7_20260423T221500@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
+ res Ville\, Cergy Préfecture\, Conflans Fin d'Oise\, Cergy Saint-Christop
+ he\, Neuville Université\n\nArrêt(s) non desservi(s)\n\nPériode : en se
+ maine à partir de 21h50 Dates : du mardi 07 au mercredi 29 avril Le trafi
+ c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
+ s de remplacement est mis en place à Sartrouville\, avec desserte des gar
+ es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+DTSTART;TZID=Europe/Paris:20260424T221500
+DTEND;TZID=Europe/Paris:20260425T020000
+DTSTAMP:20260410T100000Z
+UID:40802e1a-58e0-4738-b4b1-7da4427365e7_20260424T221500@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
+ res Ville\, Cergy Préfecture\, Conflans Fin d'Oise\, Cergy Saint-Christop
+ he\, Neuville Université\n\nArrêt(s) non desservi(s)\n\nPériode : en se
+ maine à partir de 21h50 Dates : du mardi 07 au mercredi 29 avril Le trafi
+ c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
+ s de remplacement est mis en place à Sartrouville\, avec desserte des gar
+ es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+DTSTART;TZID=Europe/Paris:20260427T221500
+DTEND;TZID=Europe/Paris:20260428T020000
+DTSTAMP:20260410T100000Z
+UID:40802e1a-58e0-4738-b4b1-7da4427365e7_20260427T221500@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
+ res Ville\, Cergy Préfecture\, Conflans Fin d'Oise\, Cergy Saint-Christop
+ he\, Neuville Université\n\nArrêt(s) non desservi(s)\n\nPériode : en se
+ maine à partir de 21h50 Dates : du mardi 07 au mercredi 29 avril Le trafi
+ c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
+ s de remplacement est mis en place à Sartrouville\, avec desserte des gar
+ es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+DTSTART;TZID=Europe/Paris:20260428T221500
+DTEND;TZID=Europe/Paris:20260429T020000
+DTSTAMP:20260410T100000Z
+UID:40802e1a-58e0-4738-b4b1-7da4427365e7_20260428T221500@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
+ res Ville\, Cergy Préfecture\, Conflans Fin d'Oise\, Cergy Saint-Christop
+ he\, Neuville Université\n\nArrêt(s) non desservi(s)\n\nPériode : en se
+ maine à partir de 21h50 Dates : du mardi 07 au mercredi 29 avril Le trafi
+ c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
+ s de remplacement est mis en place à Sartrouville\, avec desserte des gar
+ es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+DTSTART;TZID=Europe/Paris:20260429T221500
+DTEND;TZID=Europe/Paris:20260430T020000
+DTSTAMP:20260410T100000Z
+UID:40802e1a-58e0-4738-b4b1-7da4427365e7_20260429T221500@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
+ res Ville\, Cergy Préfecture\, Conflans Fin d'Oise\, Cergy Saint-Christop
+ he\, Neuville Université\n\nArrêt(s) non desservi(s)\n\nPériode : en se
+ maine à partir de 21h50 Dates : du mardi 07 au mercredi 29 avril Le trafi
+ c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
+ s de remplacement est mis en place à Sartrouville\, avec desserte des gar
+ es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : Entre Auber et Nation le 02/05\, à partir de 22
+ h45
+DTSTART;TZID=Europe/Paris:20260502T224500
+DTEND;TZID=Europe/Paris:20260503T020000
+DTSTAMP:20260410T100000Z
+UID:6ee74ba3-6365-488f-bcb3-ceaf5ab65ddc_20260502T224500@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nStations : Gare de Lyon\, Auber\, Nation\, Châtele
+ t - Les Halles\n\nArrêt(s) non desservi(s)\n\nPériode : à partir de 22h
+ 45. Dates : le samedi 02 mai. Le trafic sera interrompu entre Auber et Nat
+ ion. Merci de vous reporter sur les lignes de métro. Les horaires du calc
+ ulateur d'itinéraire tiennent compte des travaux. Motif : travaux.\n\nCau
+ se : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
+ , dès 21h45
+DTSTART;TZID=Europe/Paris:20260417T220000
+DTEND;TZID=Europe/Paris:20260418T020000
+DTSTAMP:20260410T100000Z
+UID:94446086-2131-11f1-8a6f-0a58a9feac02_20260417T220000@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
+ e 21h45 Dates : du vendredi 17 au jeudi 30 avril\, week-ends compris Le tr
+ afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
+  Un service de bus de remplacement est mis en place\, avec desserte des ga
+ res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
+ , dès 21h45
+DTSTART;TZID=Europe/Paris:20260418T220000
+DTEND;TZID=Europe/Paris:20260419T020000
+DTSTAMP:20260410T100000Z
+UID:94446086-2131-11f1-8a6f-0a58a9feac02_20260418T220000@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
+ e 21h45 Dates : du vendredi 17 au jeudi 30 avril\, week-ends compris Le tr
+ afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
+  Un service de bus de remplacement est mis en place\, avec desserte des ga
+ res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
+ , dès 21h45
+DTSTART;TZID=Europe/Paris:20260419T220000
+DTEND;TZID=Europe/Paris:20260420T020000
+DTSTAMP:20260410T100000Z
+UID:94446086-2131-11f1-8a6f-0a58a9feac02_20260419T220000@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
+ e 21h45 Dates : du vendredi 17 au jeudi 30 avril\, week-ends compris Le tr
+ afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
+  Un service de bus de remplacement est mis en place\, avec desserte des ga
+ res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
+ , dès 21h45
+DTSTART;TZID=Europe/Paris:20260420T220000
+DTEND;TZID=Europe/Paris:20260421T020000
+DTSTAMP:20260410T100000Z
+UID:94446086-2131-11f1-8a6f-0a58a9feac02_20260420T220000@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
+ e 21h45 Dates : du vendredi 17 au jeudi 30 avril\, week-ends compris Le tr
+ afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
+  Un service de bus de remplacement est mis en place\, avec desserte des ga
+ res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
+ , dès 21h45
+DTSTART;TZID=Europe/Paris:20260421T220000
+DTEND;TZID=Europe/Paris:20260422T020000
+DTSTAMP:20260410T100000Z
+UID:94446086-2131-11f1-8a6f-0a58a9feac02_20260421T220000@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
+ e 21h45 Dates : du vendredi 17 au jeudi 30 avril\, week-ends compris Le tr
+ afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
+  Un service de bus de remplacement est mis en place\, avec desserte des ga
+ res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
+ , dès 21h45
+DTSTART;TZID=Europe/Paris:20260422T220000
+DTEND;TZID=Europe/Paris:20260423T020000
+DTSTAMP:20260410T100000Z
+UID:94446086-2131-11f1-8a6f-0a58a9feac02_20260422T220000@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
+ e 21h45 Dates : du vendredi 17 au jeudi 30 avril\, week-ends compris Le tr
+ afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
+  Un service de bus de remplacement est mis en place\, avec desserte des ga
+ res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
+ , dès 21h45
+DTSTART;TZID=Europe/Paris:20260423T220000
+DTEND;TZID=Europe/Paris:20260424T020000
+DTSTAMP:20260410T100000Z
+UID:94446086-2131-11f1-8a6f-0a58a9feac02_20260423T220000@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
+ e 21h45 Dates : du vendredi 17 au jeudi 30 avril\, week-ends compris Le tr
+ afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
+  Un service de bus de remplacement est mis en place\, avec desserte des ga
+ res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
+ , dès 21h45
+DTSTART;TZID=Europe/Paris:20260424T220000
+DTEND;TZID=Europe/Paris:20260425T020000
+DTSTAMP:20260410T100000Z
+UID:94446086-2131-11f1-8a6f-0a58a9feac02_20260424T220000@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
+ e 21h45 Dates : du vendredi 17 au jeudi 30 avril\, week-ends compris Le tr
+ afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
+  Un service de bus de remplacement est mis en place\, avec desserte des ga
+ res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
+ , dès 21h45
+DTSTART;TZID=Europe/Paris:20260425T220000
+DTEND;TZID=Europe/Paris:20260426T020000
+DTSTAMP:20260410T100000Z
+UID:94446086-2131-11f1-8a6f-0a58a9feac02_20260425T220000@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
+ e 21h45 Dates : du vendredi 17 au jeudi 30 avril\, week-ends compris Le tr
+ afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
+  Un service de bus de remplacement est mis en place\, avec desserte des ga
+ res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
+ , dès 21h45
+DTSTART;TZID=Europe/Paris:20260426T220000
+DTEND;TZID=Europe/Paris:20260427T020000
+DTSTAMP:20260410T100000Z
+UID:94446086-2131-11f1-8a6f-0a58a9feac02_20260426T220000@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
+ e 21h45 Dates : du vendredi 17 au jeudi 30 avril\, week-ends compris Le tr
+ afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
+  Un service de bus de remplacement est mis en place\, avec desserte des ga
+ res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
+ , dès 21h45
+DTSTART;TZID=Europe/Paris:20260427T220000
+DTEND;TZID=Europe/Paris:20260428T020000
+DTSTAMP:20260410T100000Z
+UID:94446086-2131-11f1-8a6f-0a58a9feac02_20260427T220000@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
+ e 21h45 Dates : du vendredi 17 au jeudi 30 avril\, week-ends compris Le tr
+ afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
+  Un service de bus de remplacement est mis en place\, avec desserte des ga
+ res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
+ , dès 21h45
+DTSTART;TZID=Europe/Paris:20260428T220000
+DTEND;TZID=Europe/Paris:20260429T020000
+DTSTAMP:20260410T100000Z
+UID:94446086-2131-11f1-8a6f-0a58a9feac02_20260428T220000@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
+ e 21h45 Dates : du vendredi 17 au jeudi 30 avril\, week-ends compris Le tr
+ afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
+  Un service de bus de remplacement est mis en place\, avec desserte des ga
+ res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
+ , dès 21h45
+DTSTART;TZID=Europe/Paris:20260429T220000
+DTEND;TZID=Europe/Paris:20260430T020000
+DTSTAMP:20260410T100000Z
+UID:94446086-2131-11f1-8a6f-0a58a9feac02_20260429T220000@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
+ e 21h45 Dates : du vendredi 17 au jeudi 30 avril\, week-ends compris Le tr
+ afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
+  Un service de bus de remplacement est mis en place\, avec desserte des ga
+ res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
+ , dès 21h45
+DTSTART;TZID=Europe/Paris:20260430T220000
+DTEND;TZID=Europe/Paris:20260501T020000
+DTSTAMP:20260410T100000Z
+UID:94446086-2131-11f1-8a6f-0a58a9feac02_20260430T220000@travaux-metro
+CATEGORIES:Ligne A,Travaux Métro
+DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
+ e 21h45 Dates : du vendredi 17 au jeudi 30 avril\, week-ends compris Le tr
+ afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
+  Un service de bus de remplacement est mis en place\, avec desserte des ga
+ res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+END:VEVENT
+END:VCALENDAR

@@ -1,6 +1,6 @@
 """Markdown summary generation for data/summary.md."""
 
-from .constants import METRO_LINE_COLORS
+from .constants import METRO_LINE_COLORS, RER_LINE_COLORS
 from .html import fmt_date
 from .ics import deduplicate_events, make_events
 from .prim import (
@@ -11,14 +11,27 @@ from .prim import (
     strip_html,
 )
 
+_LINE_COLORS = {**METRO_LINE_COLORS, **RER_LINE_COLORS}
+
+
+def _network_for(line_name: str) -> str:
+    return "RapidTransit" if line_name in RER_LINE_COLORS else "Metro"
+
+
+def _line_label(line_name: str) -> str:
+    return f"RER {line_name}" if line_name in RER_LINE_COLORS else f"M{line_name}"
+
 
 def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, metro_lines: dict, fetched_at: str, diff: dict | None = None, event_counts: dict | None = None) -> str:
     date_str = f"{fetched_at[8:10]}-{fetched_at[5:7]}-{fetched_at[:4]}"
     name_to_id = {l["shortName"]: lid for lid, l in metro_lines.items()}
 
     def badge(line_name: str) -> str:
-        bg, _ = METRO_LINE_COLORS.get(line_name, ("#888888", "#FFFFFF"))
-        return f"![M{line_name}](https://img.shields.io/badge/-M{line_name}-{bg[1:]}?style=flat)"
+        bg, _ = _LINE_COLORS.get(line_name, ("#888888", "#FFFFFF"))
+        label = _line_label(line_name)
+        # shields.io needs spaces URL-encoded
+        url_label = label.replace(" ", "%20")
+        return f"![{label}](https://img.shields.io/badge/-{url_label}-{bg[1:]}?style=flat)"
 
     lines = [f"## Travaux métro — {date_str}", ""]
 
@@ -54,9 +67,10 @@ def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, metro_l
 
         # Build the same deduplicated period set used for ICS generation
         normal_ids, _ = classify_disruptions(dis_ids, dis_by_id)
+        network = _network_for(line_name)
         all_events = []
         for dis_id in normal_ids:
-            all_events.extend(make_events(dis_by_id[dis_id], line_name, dis_to_stops[dis_id].get(line_id, [])))
+            all_events.extend(make_events(dis_by_id[dis_id], line_name, dis_to_stops[dis_id].get(line_id, []), network=network))
         available = {(e.get("dtstart").dt, e.get("dtend").dt) for e in deduplicate_events(all_events)}
 
         for dis_id in sorted(normal_ids):

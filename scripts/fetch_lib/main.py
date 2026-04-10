@@ -9,11 +9,11 @@ from datetime import datetime
 from pathlib import Path
 
 from . import constants
-from .constants import METRO_LINE_COLORS, ROOT, _today, _utc_now
+from .constants import METRO_LINE_COLORS, RER_LINE_COLORS, ROOT, _today, _utc_now
 from .html import generate_index
 from .ics import deduplicate_events, make_calendar, make_events
 from .prim import (
-    build_metro_index,
+    build_lines_index,
     classify_disruptions,
     content_hash,
     dis_fingerprint,
@@ -60,20 +60,32 @@ def main():
             print(f"Saved raw PRIM response → {args.save_raw}")
             return
 
-    metro_lines, dis_to_line_ids, dis_to_stops = build_metro_index(data.get("lines", []))
+    raw_lines = data.get("lines", [])
+    metro_lines, m_dis_to_line_ids, m_dis_to_stops = build_lines_index(raw_lines, "Metro")
+    rer_lines, r_dis_to_line_ids, r_dis_to_stops = build_lines_index(raw_lines, "RapidTransit")
     disruptions = data.get("disruptions", [])
     dis_by_id = {d["id"]: d for d in disruptions}
 
     # Keep only planned construction works, not real-time incidents
     travaux_ids = {d["id"] for d in disruptions if d.get("cause") == "TRAVAUX"}
-    metro_dis_ids = set(dis_to_line_ids.keys()) & travaux_ids
-    metro_disruptions = [d for d in disruptions if d["id"] in metro_dis_ids]
-    print(f"Total disruptions: {len(disruptions)} — Metro travaux: {len(metro_disruptions)} across {len(metro_lines)} line{'s' if len(metro_lines) > 1 else ''}")
+    metro_dis_ids = set(m_dis_to_line_ids.keys()) & travaux_ids
+    rer_dis_ids = set(r_dis_to_line_ids.keys()) & travaux_ids
+    relevant_dis_ids = metro_dis_ids | rer_dis_ids
+    relevant_disruptions = [d for d in disruptions if d["id"] in relevant_dis_ids]
+    print(
+        f"Total disruptions: {len(disruptions)} — "
+        f"Metro travaux: {len(metro_dis_ids)} across {len(metro_lines)} lines, "
+        f"RER travaux: {len(rer_dis_ids)} across {len(rer_lines)} lines"
+    )
 
     data_dir.mkdir(exist_ok=True)
     hash_file = data_dir / "disruptions_hash.txt"
-    new_hash = content_hash(disruptions, metro_dis_ids)
-    expected_ics = [public / f"ligne-{name}.ics" for name in METRO_LINE_COLORS]
+    new_hash = content_hash(disruptions, relevant_dis_ids)
+    expected_ics = (
+        [public / f"ligne-{name}.ics" for name in METRO_LINE_COLORS]
+        + [public / f"ligne-{name}.ics" for name in RER_LINE_COLORS]
+        + [public / "tousmetros.ics", public / "tousrer.ics"]
+    )
     missing_ics = any(not f.exists() for f in expected_ics)
     if not args.force and hash_file.exists() and hash_file.read_text().strip() == new_hash and not missing_ics:
         print("No change — skipping. (Pass --force to regenerate anyway.)")
@@ -87,24 +99,30 @@ def main():
     old_by_line: dict[str, list] = json.loads(by_line_file.read_text()) if by_line_file.exists() else {}
 
     # snapshot.json is --fixture-compatible: CI deploy regenerates the site from it
-    # instead of committing generated HTML/ICS. Only metro lines are kept to keep
-    # the file small; disruptions are already metro-travaux-filtered above.
-    metro_line_entries = [line for line in data.get("lines", []) if line.get("id") in metro_lines]
+    # instead of committing generated HTML/ICS. Keep both metro and RER line entries;
+    # disruptions are already filtered to metro+RER travaux above.
+    line_entries = [
+        line for line in raw_lines
+        if line.get("id") in metro_lines or line.get("id") in rer_lines
+    ]
     (data_dir / "snapshot.json").write_text(
         json.dumps(
-            {"fetched_at": fetched_at, "lines": metro_line_entries, "disruptions": metro_disruptions},
+            {"fetched_at": fetched_at, "lines": line_entries, "disruptions": relevant_disruptions},
             ensure_ascii=False,
             indent=2,
         )
     )
     hash_file.write_text(new_hash)
 
-    # Group disruption IDs by line name — only TRAVAUX
+    # Group disruption IDs by line name — only TRAVAUX. Metro line names (1..14, 3B, 7B)
+    # and RER line names (A..E) don't collide, so a single dict is unambiguous.
     by_line: dict[str, set] = defaultdict(set)
     for dis_id in metro_dis_ids:
-        for line_id in dis_to_line_ids[dis_id]:
-            line_name = metro_lines[line_id]["shortName"]
-            by_line[line_name].add(dis_id)
+        for line_id in m_dis_to_line_ids[dis_id]:
+            by_line[metro_lines[line_id]["shortName"]].add(dis_id)
+    for dis_id in rer_dis_ids:
+        for line_id in r_dis_to_line_ids[dis_id]:
+            by_line[rer_lines[line_id]["shortName"]].add(dis_id)
 
     # Compute diff vs previous state using content fingerprints (ignores UUID re-issues)
     def fp_set(line: str, source: dict) -> set:
@@ -136,52 +154,95 @@ def main():
     )
 
     public.mkdir(exist_ok=True)
-    all_cal = make_calendar(
-        "Paris Métro — Travaux",
-        "#003CA6",
-        "Interruptions et travaux planifiés sur toutes les lignes du métro parisien. "
-        "Mis à jour quotidiennement depuis les données Île-de-France Mobilités. "
-        "travauxmetro.fr",
-    )
-    line_stats = []
+    line_stats: list[tuple[str, str, int]] = []
 
-    for line_name in sorted(METRO_LINE_COLORS.keys(), key=line_sort_key):
-        bg, _ = METRO_LINE_COLORS[line_name]
-        desc = (
-            f"Interruptions et travaux planifiés sur la ligne {line_name} du métro parisien. "
-            "Mis à jour quotidiennement depuis les données Île-de-France Mobilités. "
-            "travauxmetro.fr"
-        )
-        cal = make_calendar(f"Métro Ligne {line_name} — Travaux", bg, desc)
-        event_count = 0
+    networks = [
+        {
+            "network": "Metro",
+            "line_colors": METRO_LINE_COLORS,
+            "net_lines": metro_lines,
+            "dis_to_stops": m_dis_to_stops,
+            "all_filename": "tousmetros.ics",
+            "all_title": "Paris Métro — Travaux",
+            "all_color": "#003CA6",
+            "all_desc": (
+                "Interruptions et travaux planifiés sur toutes les lignes du métro parisien. "
+                "Mis à jour quotidiennement depuis les données Île-de-France Mobilités. "
+                "travauxmetro.fr"
+            ),
+            "line_desc_word": "du métro parisien",
+            "cal_name_fmt": "Métro Ligne {name} — Travaux",
+            "log_prefix": "M",
+        },
+        {
+            "network": "RapidTransit",
+            "line_colors": RER_LINE_COLORS,
+            "net_lines": rer_lines,
+            "dis_to_stops": r_dis_to_stops,
+            "all_filename": "tousrer.ics",
+            "all_title": "Paris RER — Travaux",
+            "all_color": "#E3051C",
+            "all_desc": (
+                "Interruptions et travaux planifiés sur toutes les lignes du RER parisien. "
+                "Mis à jour quotidiennement depuis les données Île-de-France Mobilités. "
+                "travauxmetro.fr"
+            ),
+            "line_desc_word": "du RER parisien",
+            "cal_name_fmt": "RER {name} — Travaux",
+            "log_prefix": "RER ",
+        },
+    ]
 
-        line_id_match = next((lid for lid, l in metro_lines.items() if l["shortName"] == line_name), None)
-        all_ids = by_line.get(line_name, set())
-        normal_ids, _ = classify_disruptions(all_ids, dis_by_id)
+    for cfg in networks:
+        all_cal = make_calendar(cfg["all_title"], cfg["all_color"], cfg["all_desc"])
+        net_lines = cfg["net_lines"]
+        net_dis_to_stops = cfg["dis_to_stops"]
 
-        # Sort IDs so ICS event order is byte-stable across runs
-        events = []
-        for dis_id in sorted(normal_ids):
-            disruption = dis_by_id[dis_id]
-            stops = dis_to_stops[dis_id].get(line_id_match, []) if line_id_match else []
-            events.extend(make_events(disruption, line_name, stops))
+        for line_name in sorted(cfg["line_colors"].keys(), key=line_sort_key):
+            bg, _ = cfg["line_colors"][line_name]
+            desc = (
+                f"Interruptions et travaux planifiés sur la ligne {line_name} {cfg['line_desc_word']}. "
+                "Mis à jour quotidiennement depuis les données Île-de-France Mobilités. "
+                "travauxmetro.fr"
+            )
+            cal = make_calendar(cfg["cal_name_fmt"].format(name=line_name), bg, desc)
+            event_count = 0
 
-        for event in deduplicate_events(events):
-            cal.add_component(event)
-            all_cal.add_component(event)
-            event_count += 1
+            line_id_match = next((lid for lid, l in net_lines.items() if l["shortName"] == line_name), None)
+            all_ids = by_line.get(line_name, set())
+            normal_ids, _ = classify_disruptions(all_ids, dis_by_id)
 
-        filename = f"ligne-{line_name}.ics"
-        (public / filename).write_bytes(cal.to_ical())
-        if event_count:
-            line_stats.append((line_name, filename, event_count))
-        print(f"  M{line_name}: {event_count} event{'s' if event_count > 1 else ''} → {filename}")
+            # Sort IDs so ICS event order is byte-stable across runs
+            events = []
+            for dis_id in sorted(normal_ids):
+                disruption = dis_by_id[dis_id]
+                stops = net_dis_to_stops[dis_id].get(line_id_match, []) if line_id_match else []
+                events.extend(make_events(disruption, line_name, stops, network=cfg["network"]))
 
-    (public / "tousmetros.ics").write_bytes(all_cal.to_ical())
+            for event in deduplicate_events(events):
+                cal.add_component(event)
+                all_cal.add_component(event)
+                event_count += 1
+
+            filename = f"ligne-{line_name}.ics"
+            (public / filename).write_bytes(cal.to_ical())
+            if event_count:
+                line_stats.append((line_name, filename, event_count))
+            print(f"  {cfg['log_prefix']}{line_name}: {event_count} event{'s' if event_count > 1 else ''} → {filename}")
+
+        (public / cfg["all_filename"]).write_bytes(all_cal.to_ical())
+
+    # Combined dis_to_stops for HTML/summary lookups (line_id namespaces don't collide).
+    dis_to_stops: dict = defaultdict(lambda: defaultdict(list))
+    for source in (m_dis_to_stops, r_dis_to_stops):
+        for dis_id, line_map in source.items():
+            for line_id, stops in line_map.items():
+                dis_to_stops[dis_id][line_id] = stops
+    all_net_lines = {**metro_lines, **rer_lines}
 
     event_counts = {name: count for name, _, count in line_stats}
-    (data_dir / "summary.md").write_text(generate_summary(by_line, dis_to_stops, dis_by_id, metro_lines, fetched_at, diff, event_counts))
-    (public / "index.html").write_text(generate_index(by_line, dis_by_id, dis_to_stops, metro_lines, fetched_at))
+    (data_dir / "summary.md").write_text(generate_summary(by_line, dis_to_stops, dis_by_id, all_net_lines, fetched_at, diff, event_counts))
+    (public / "index.html").write_text(generate_index(by_line, dis_by_id, dis_to_stops, all_net_lines, fetched_at))
 
     today = _today().isoformat()
     (public / "sitemap.xml").write_text(

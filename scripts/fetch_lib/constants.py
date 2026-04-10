@@ -71,3 +71,13 @@ METRO_LINE_COLORS = {
     "13": ("#98D4E2", "#000000"),
     "14": ("#62259D", "#FFFFFF"),
 }
+
+# Official IDFM RER colors (text color picked to match the SVG icon paths
+# at commons.wikimedia.org/wiki/File:Paris_transit_icons_-_RER_*.svg).
+RER_LINE_COLORS = {
+    "A": ("#E3051C", "#FFFFFF"),
+    "B": ("#5291CE", "#FFFFFF"),
+    "C": ("#FFCE00", "#25303B"),
+    "D": ("#00814F", "#FFFFFF"),
+    "E": ("#C04191", "#FFFFFF"),
+}
