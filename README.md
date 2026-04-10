@@ -1,48 +1,28 @@
-# Travaux Métro Paris
+# `travauxmetro.fr`
 
-Calendriers [iCalendar](https://fr.wikipedia.org/wiki/ICalendar) des travaux planifiés sur le réseau métro parisien, mis à jour quotidiennement.
-
-**Site :** https://travauxmetro.fr
+[iCalendar](https://fr.wikipedia.org/wiki/ICalendar) des travaux planifiés sur le réseau de métro parisien, mis à jour quotidiennement.
 
 ## Utilisation
 
-Abonnez-vous depuis votre application de calendrier (Google Calendar, Apple Calendar, Outlook…) :
-
-| Calendrier | URL |
-|------------|-----|
-| Toutes les lignes | `https://travauxmetro.fr/tousmetros.ics` |
-| Ligne X | `https://travauxmetro.fr/ligne-X.ics` |
-
-Les calendriers sont mis à jour quotidiennement et votre application les synchronise automatiquement.
+Abonnez-vous depuis votre appli de calendrier préférée (Google Calendar, Apple Calendar, Outlook…).  
+Les calendriers sont mis à jour quotidiennement s'il y a du neuf côté API.
+Votre application de calendrier, elle, les synchronise automatiquement.
 
 ## Fonctionnement
 
-1. Un workflow GitHub Actions s'exécute chaque jour à 05h00 UTC
-2. Il interroge l'API [PRIM d'Île-de-France Mobilités](https://prim.iledefrance-mobilites.fr/en/apis/idfm-disruptions_bulk) pour récupérer les interruptions de type `TRAVAUX` sur le réseau métro
-3. Si les données ont changé, une Pull Request est ouverte automatiquement pour validation avant mise en ligne
-4. Au merge, les calendriers et la page d'accueil sont regénérés et déployés
+1. Une GitHub Actions s'exécute chaque jour à 05h00
+2. Elle récupère les données d'API [PRIM d'Île-de-France Mobilités](https://prim.iledefrance-mobilites.fr/en/apis/idfm-disruptions_bulk) : interruptions de type `TRAVAUX` sur le réseau métro/RER
+3. Si les données ont changé, une PR est ouverte automatiquement
+4. Suite au merge, les calendriers et la page d'accueil sont regénérés et déployés
 
 ## Stack technique
 
-| Composant | Technologie |
+| Composant | Tech stack |
 |-----------|-------------|
-| Génération des calendriers et du HTML | Python ([`scripts/fetch.py`](scripts/fetch.py)) |
-| Automatisation | GitHub Actions |
-| Hébergement | GitHub Pages |
-| DNS & proxy | Cloudflare |
-| Serveur de développement local | Python ([`scripts/serve.py`](scripts/serve.py)) |
-
-## Développement local
-
-Requiert [uv](https://github.com/astral-sh/uv) et un token PRIM.
-
-```bash
-# Récupérer les données et regénérer la page et les calendriers
-PRIM_TOKEN=xxx uv run python scripts/fetch.py
-
-# Serveur local avec rechargement automatique (utilise le dernier snapshot)
-uv run python scripts/serve.py
-```
+| ICS and static site| Python / Jinja |
+| Refresh API | GitHub Actions |
+| Hosting | GitHub Pages |
+| DNS and proxy | Cloudflare |
 
 ## Source des données
 
@@ -50,8 +30,8 @@ uv run python scripts/serve.py
 
 ## Format
 
-Les calendriers utilisent le protocole [iCalendar](https://fr.wikipedia.org/wiki/ICalendar) (RFC 5545), servis avec l'extension `.ics`, reconnue par l'ensemble des applications de calendrier.
+Les calendriers utilisent le protocole [iCalendar](https://fr.wikipedia.org/wiki/ICalendar) (RFC 5545), servis avec l'extension `.ics`, utilisable avec la plupart des applications de calendrier (mobile/desktop).
 
-## Développé avec Claude
+## Vibe-coding
 
-L'ensemble du projet — scripts Python, workflows GitHub Actions, page web et infrastructure — a été développé en collaboration avec [Claude](https://claude.ai) (Anthropic), via [Claude Code](https://claude.ai/code).
+Autant être transparent : le projet a été en grande partie développé avec **Claude Sonnet 4.6 et Opus 4.6**.
