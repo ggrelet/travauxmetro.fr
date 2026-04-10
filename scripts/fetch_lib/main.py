@@ -86,8 +86,16 @@ def main():
     by_line_file = data_dir / "by_line.json"
     old_by_line: dict[str, list] = json.loads(by_line_file.read_text()) if by_line_file.exists() else {}
 
+    # snapshot.json is --fixture-compatible: CI deploy regenerates the site from it
+    # instead of committing generated HTML/ICS. Only metro lines are kept to keep
+    # the file small; disruptions are already metro-travaux-filtered above.
+    metro_line_entries = [line for line in data.get("lines", []) if line.get("id") in metro_lines]
     (data_dir / "snapshot.json").write_text(
-        json.dumps({"fetched_at": fetched_at, "disruptions": metro_disruptions}, ensure_ascii=False, indent=2)
+        json.dumps(
+            {"fetched_at": fetched_at, "lines": metro_line_entries, "disruptions": metro_disruptions},
+            ensure_ascii=False,
+            indent=2,
+        )
     )
     hash_file.write_text(new_hash)
 

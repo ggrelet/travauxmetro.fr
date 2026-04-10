@@ -1,5 +1,514 @@
 {
   "fetched_at": "2026-04-10T10:00:00+00:00",
+  "lines": [
+    {
+      "id": "line:IDFM:C01371",
+      "name": "1",
+      "shortName": "1",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463185",
+          "name": "George V",
+          "disruptionIds": [
+            "edb5dc5a-f0a3-4217-bb25-1c86c732ddac"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22084",
+          "name": "George V",
+          "disruptionIds": [
+            "edb5dc5a-f0a3-4217-bb25-1c86c732ddac"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line:IDFM:C01373",
+      "name": "3",
+      "shortName": "3",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "line",
+          "id": "line:IDFM:C01373",
+          "name": "3",
+          "disruptionIds": [
+            "8b525ddc-3366-4ae5-8a98-9daf889819fe"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:462991",
+          "name": "Gambetta",
+          "disruptionIds": [
+            "8b525ddc-3366-4ae5-8a98-9daf889819fe"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:21950",
+          "name": "Gambetta",
+          "disruptionIds": [
+            "8b525ddc-3366-4ae5-8a98-9daf889819fe"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22022",
+          "name": "Porte de Bagnolet",
+          "disruptionIds": [
+            "8b525ddc-3366-4ae5-8a98-9daf889819fe"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463276",
+          "name": "Porte de Bagnolet",
+          "disruptionIds": [
+            "8b525ddc-3366-4ae5-8a98-9daf889819fe"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22037",
+          "name": "Gallieni",
+          "disruptionIds": [
+            "8b525ddc-3366-4ae5-8a98-9daf889819fe"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463174",
+          "name": "Gallieni",
+          "disruptionIds": [
+            "8b525ddc-3366-4ae5-8a98-9daf889819fe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line:IDFM:C01386",
+      "name": "3B",
+      "shortName": "3B",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "line",
+          "id": "line:IDFM:C01386",
+          "name": "3B",
+          "disruptionIds": [
+            "bd39102b-57d6-466d-8360-27893ec6baeb",
+            "1dc83844-1e23-11f1-bb0b-0a58a9feac02",
+            "f48ead46-07a0-4344-b4ef-835b6ca05c88"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line:IDFM:C01374",
+      "name": "4",
+      "shortName": "4",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "line",
+          "id": "line:IDFM:C01374",
+          "name": "4",
+          "disruptionIds": [
+            "ff1a101d-45f8-4942-b24b-50a00b079142"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line:IDFM:C01376",
+      "name": "6",
+      "shortName": "6",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463268",
+          "name": "Trocadéro",
+          "disruptionIds": [
+            "6acb6730-49f5-4f90-8890-7ae332893fe4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line:IDFM:C01377",
+      "name": "7",
+      "shortName": "7",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "line",
+          "id": "line:IDFM:C01377",
+          "name": "7",
+          "disruptionIds": [
+            "6d0c1373-5c13-4d4c-97c1-1b84b48ba334"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22375",
+          "name": "Pyramides",
+          "disruptionIds": [
+            "72004c53-8d5c-4c4a-8873-8514db1d0b25"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463006",
+          "name": "Château Landon",
+          "disruptionIds": [
+            "76ed1f6e-7593-4f18-b487-07495a40f54c"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line:IDFM:C01378",
+      "name": "8",
+      "shortName": "8",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "line",
+          "id": "line:IDFM:C01378",
+          "name": "8",
+          "disruptionIds": [
+            "c2892acd-ad0b-48bc-b77d-cc5fd8510ac6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line:IDFM:C01379",
+      "name": "9",
+      "shortName": "9",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "line",
+          "id": "line:IDFM:C01379",
+          "name": "9",
+          "disruptionIds": [
+            "520d925c-605e-4ac7-8f83-ccc59b52e395",
+            "f5e658f0-d7e2-45b9-8a06-d9e6aa542ed1"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:21914",
+          "name": "Porte de Saint-Cloud",
+          "disruptionIds": [
+            "f5e658f0-d7e2-45b9-8a06-d9e6aa542ed1"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:21938",
+          "name": "Pont de Sèvres",
+          "disruptionIds": [
+            "f5e658f0-d7e2-45b9-8a06-d9e6aa542ed1",
+            "ee1b617e-c4ac-4561-b25b-cd1a28760f92"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:462914",
+          "name": "Marcel Sembat",
+          "disruptionIds": [
+            "f5e658f0-d7e2-45b9-8a06-d9e6aa542ed1"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:21940",
+          "name": "Marcel Sembat",
+          "disruptionIds": [
+            "f5e658f0-d7e2-45b9-8a06-d9e6aa542ed1"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463035",
+          "name": "Billancourt",
+          "disruptionIds": [
+            "f5e658f0-d7e2-45b9-8a06-d9e6aa542ed1"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463233",
+          "name": "Pont de Sèvres",
+          "disruptionIds": [
+            "f5e658f0-d7e2-45b9-8a06-d9e6aa542ed1"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:21939",
+          "name": "Billancourt",
+          "disruptionIds": [
+            "f5e658f0-d7e2-45b9-8a06-d9e6aa542ed1"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463259",
+          "name": "Porte de Saint-Cloud",
+          "disruptionIds": [
+            "f5e658f0-d7e2-45b9-8a06-d9e6aa542ed1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line:IDFM:C01381",
+      "name": "11",
+      "shortName": "11",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "line",
+          "id": "line:IDFM:C01381",
+          "name": "11",
+          "disruptionIds": [
+            "75e3ed54-fa94-40ea-af12-9a7d20425def"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line:IDFM:C01382",
+      "name": "12",
+      "shortName": "12",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "line",
+          "id": "line:IDFM:C01382",
+          "name": "12",
+          "disruptionIds": [
+            "6eaf3c4a-1bd9-11f1-a4ee-0a58a9feac02",
+            "4247e7e6-20b2-11f1-b269-0a58a9feac02"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22049",
+          "name": "Rennes",
+          "disruptionIds": [
+            "12133219-7183-4c56-be98-9015ac0904d6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line:IDFM:C01383",
+      "name": "13",
+      "shortName": "13",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "line",
+          "id": "line:IDFM:C01383",
+          "name": "13",
+          "disruptionIds": [
+            "71626f4a-75d9-49df-8a3b-16caf2277ebd",
+            "3f4523c5-b213-4672-a207-6555a464535d",
+            "e569a1cc-9bfc-4680-94bd-e0609b8f05dd",
+            "9ea051e5-b459-47da-a9f6-1ea9f8b4c611",
+            "f865eff0-7ef4-4144-976d-b172ec84dfbf",
+            "b12c1eee-7589-4174-bc0e-badd318cee3f",
+            "74a23352-56b4-4ad6-b1aa-a354ec27a786",
+            "da31d2ca-80cd-46c1-a639-7fe64782da3e",
+            "63110a5c-f7da-49bf-be35-ea8aaf0b8358"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463260",
+          "name": "Porte de Vanves",
+          "disruptionIds": [
+            "da31d2ca-80cd-46c1-a639-7fe64782da3e"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463214",
+          "name": "Malakoff - Rue Étienne Dolet",
+          "disruptionIds": [
+            "da31d2ca-80cd-46c1-a639-7fe64782da3e"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22236",
+          "name": "Malakoff - Rue Étienne Dolet",
+          "disruptionIds": [
+            "da31d2ca-80cd-46c1-a639-7fe64782da3e"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:462970",
+          "name": "Saint-Lazare",
+          "disruptionIds": [
+            "a76698d5-5eb9-4402-960f-0f1b7dc99058"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463184",
+          "name": "Gaîté",
+          "disruptionIds": [
+            "da31d2ca-80cd-46c1-a639-7fe64782da3e"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463213",
+          "name": "Malakoff - Plateau de Vanves",
+          "disruptionIds": [
+            "da31d2ca-80cd-46c1-a639-7fe64782da3e"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463085",
+          "name": "Plaisance",
+          "disruptionIds": [
+            "da31d2ca-80cd-46c1-a639-7fe64782da3e",
+            "94fb67d1-7b34-4de2-a7c4-0c9255c0bd55"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:495053",
+          "name": "Châtillon - Montrouge",
+          "disruptionIds": [
+            "da31d2ca-80cd-46c1-a639-7fe64782da3e"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22157",
+          "name": "Montparnasse Bienvenue",
+          "disruptionIds": [
+            "da31d2ca-80cd-46c1-a639-7fe64782da3e"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22235",
+          "name": "Malakoff - Plateau de Vanves",
+          "disruptionIds": [
+            "da31d2ca-80cd-46c1-a639-7fe64782da3e"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22222",
+          "name": "Pernety",
+          "disruptionIds": [
+            "da31d2ca-80cd-46c1-a639-7fe64782da3e"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22237",
+          "name": "Châtillon - Montrouge",
+          "disruptionIds": [
+            "da31d2ca-80cd-46c1-a639-7fe64782da3e"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463229",
+          "name": "Pernety",
+          "disruptionIds": [
+            "da31d2ca-80cd-46c1-a639-7fe64782da3e"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463087",
+          "name": "Châtillon - Montrouge",
+          "disruptionIds": [
+            "da31d2ca-80cd-46c1-a639-7fe64782da3e"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22221",
+          "name": "Porte de Vanves",
+          "disruptionIds": [
+            "da31d2ca-80cd-46c1-a639-7fe64782da3e"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:462954",
+          "name": "Montparnasse Bienvenue",
+          "disruptionIds": [
+            "da31d2ca-80cd-46c1-a639-7fe64782da3e"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22223",
+          "name": "Plaisance",
+          "disruptionIds": [
+            "da31d2ca-80cd-46c1-a639-7fe64782da3e",
+            "94fb67d1-7b34-4de2-a7c4-0c9255c0bd55"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22230",
+          "name": "Gaîté",
+          "disruptionIds": [
+            "da31d2ca-80cd-46c1-a639-7fe64782da3e"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line:IDFM:C01384",
+      "name": "14",
+      "shortName": "14",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "line",
+          "id": "line:IDFM:C01384",
+          "name": "14",
+          "disruptionIds": [
+            "c01e0e62-105b-443a-ad25-5483ae770324"
+          ]
+        }
+      ]
+    }
+  ],
   "disruptions": [
     {
       "id": "3f4523c5-b213-4672-a207-6555a464535d",

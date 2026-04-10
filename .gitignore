@@ -56,3 +56,10 @@ MANIFEST
 *.swp
 *.swo
 data/line-colors.html
+
+# Generated site outputs — built by CI from data/snapshot.json during deploy.
+# Keep static assets (favicon/, fonts/, icons/, assets/, 404.html, robots.txt, …) committed.
+public/index.html
+public/ligne-*.ics
+public/tousmetros.ics
+public/sitemap.xml

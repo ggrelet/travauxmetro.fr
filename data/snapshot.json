@@ -1,94 +1,473 @@
 {
-  "fetched_at": "2026-04-09T23:01:18.616046+00:00",
+  "fetched_at": "2026-04-10T13:03:58.982951+00:00",
+  "lines": [
+    {
+      "id": "line:IDFM:C01371",
+      "name": "1",
+      "shortName": "1",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22084",
+          "name": "George V",
+          "disruptionIds": [
+            "edb5dc5a-f0a3-4217-bb25-1c86c732ddac"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463185",
+          "name": "George V",
+          "disruptionIds": [
+            "edb5dc5a-f0a3-4217-bb25-1c86c732ddac"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line:IDFM:C01373",
+      "name": "3",
+      "shortName": "3",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "line",
+          "id": "line:IDFM:C01373",
+          "name": "3",
+          "disruptionIds": [
+            "8b525ddc-3366-4ae5-8a98-9daf889819fe"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22035",
+          "name": "Pont de Levallois - Bécon",
+          "disruptionIds": [
+            "96d71f62-0c68-44b7-9318-5c773ca58e05"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:21950",
+          "name": "Gambetta",
+          "disruptionIds": [
+            "8b525ddc-3366-4ae5-8a98-9daf889819fe"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22037",
+          "name": "Gallieni",
+          "disruptionIds": [
+            "8b525ddc-3366-4ae5-8a98-9daf889819fe"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:462991",
+          "name": "Gambetta",
+          "disruptionIds": [
+            "c78b9e49-11e8-463c-8bbb-7763c6bf861f",
+            "8b525ddc-3366-4ae5-8a98-9daf889819fe"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22022",
+          "name": "Porte de Bagnolet",
+          "disruptionIds": [
+            "8b525ddc-3366-4ae5-8a98-9daf889819fe"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463276",
+          "name": "Porte de Bagnolet",
+          "disruptionIds": [
+            "8b525ddc-3366-4ae5-8a98-9daf889819fe"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463174",
+          "name": "Gallieni",
+          "disruptionIds": [
+            "8b525ddc-3366-4ae5-8a98-9daf889819fe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line:IDFM:C01386",
+      "name": "3B",
+      "shortName": "3B",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "line",
+          "id": "line:IDFM:C01386",
+          "name": "3B",
+          "disruptionIds": [
+            "bd39102b-57d6-466d-8360-27893ec6baeb",
+            "1dc83844-1e23-11f1-bb0b-0a58a9feac02",
+            "90165ae5-ff3f-4102-a080-6872ef63c468",
+            "f48ead46-07a0-4344-b4ef-835b6ca05c88"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line:IDFM:C01374",
+      "name": "4",
+      "shortName": "4",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "line",
+          "id": "line:IDFM:C01374",
+          "name": "4",
+          "disruptionIds": [
+            "dd064033-a22a-4a69-8185-ba72acf95cd2",
+            "ff1a101d-45f8-4942-b24b-50a00b079142",
+            "2498d267-63df-4d40-b105-fe3aaef0ab1b"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22144",
+          "name": "Mouton-Duvernet",
+          "disruptionIds": [
+            "2498d267-63df-4d40-b105-fe3aaef0ab1b"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22140",
+          "name": "Porte d'Orléans",
+          "disruptionIds": [
+            "2498d267-63df-4d40-b105-fe3aaef0ab1b"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:26602",
+          "name": "Mairie de Montrouge",
+          "disruptionIds": [
+            "2498d267-63df-4d40-b105-fe3aaef0ab1b"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22154",
+          "name": "Alésia",
+          "disruptionIds": [
+            "2498d267-63df-4d40-b105-fe3aaef0ab1b"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line:IDFM:C01375",
+      "name": "5",
+      "shortName": "5",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22006",
+          "name": "Place d'Italie",
+          "disruptionIds": [
+            "2fcc0323-a4bb-4b28-af36-e096a2a9c9c6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line:IDFM:C01376",
+      "name": "6",
+      "shortName": "6",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463268",
+          "name": "Trocadéro",
+          "disruptionIds": [
+            "a0db9b52-85e6-409b-85af-a389a257f1b3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line:IDFM:C01378",
+      "name": "8",
+      "shortName": "8",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "line",
+          "id": "line:IDFM:C01378",
+          "name": "8",
+          "disruptionIds": [
+            "d2d6fd44-b236-484a-86b7-c66137ced9eb"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line:IDFM:C01379",
+      "name": "9",
+      "shortName": "9",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:21941",
+          "name": "Mairie de Montreuil",
+          "disruptionIds": [
+            "c886619d-8705-4d7e-84a2-0406fb3ca23b"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463221",
+          "name": "Mairie de Montreuil",
+          "disruptionIds": [
+            "c886619d-8705-4d7e-84a2-0406fb3ca23b"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line:IDFM:C01381",
+      "name": "11",
+      "shortName": "11",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463079",
+          "name": "Châtelet",
+          "disruptionIds": [
+            "e656fab5-4311-452c-b95e-88063fbcfe5d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line:IDFM:C01382",
+      "name": "12",
+      "shortName": "12",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "line",
+          "id": "line:IDFM:C01382",
+          "name": "12",
+          "disruptionIds": [
+            "6eaf3c4a-1bd9-11f1-a4ee-0a58a9feac02",
+            "4247e7e6-20b2-11f1-b269-0a58a9feac02"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line:IDFM:C01383",
+      "name": "13",
+      "shortName": "13",
+      "mode": "Metro",
+      "networkId": "network:IDFM:Operator_100",
+      "impactedObjects": [
+        {
+          "type": "line",
+          "id": "line:IDFM:C01383",
+          "name": "13",
+          "disruptionIds": [
+            "e569a1cc-9bfc-4680-94bd-e0609b8f05dd",
+            "9ea051e5-b459-47da-a9f6-1ea9f8b4c611",
+            "3f4523c5-b213-4672-a207-6555a464535d",
+            "f865eff0-7ef4-4144-976d-b172ec84dfbf",
+            "71626f4a-75d9-49df-8a3b-16caf2277ebd",
+            "e43b4bf1-825a-49ca-8b33-a0916f6d2f92",
+            "74a23352-56b4-4ad6-b1aa-a354ec27a786",
+            "b12c1eee-7589-4174-bc0e-badd318cee3f",
+            "63110a5c-f7da-49bf-be35-ea8aaf0b8358"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463214",
+          "name": "Malakoff - Rue Étienne Dolet",
+          "disruptionIds": [
+            "e43b4bf1-825a-49ca-8b33-a0916f6d2f92"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22229",
+          "name": "Duroc",
+          "disruptionIds": [
+            "e43b4bf1-825a-49ca-8b33-a0916f6d2f92"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22223",
+          "name": "Plaisance",
+          "disruptionIds": [
+            "94fb67d1-7b34-4de2-a7c4-0c9255c0bd55"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22226",
+          "name": "Varenne",
+          "disruptionIds": [
+            "e43b4bf1-825a-49ca-8b33-a0916f6d2f92"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463213",
+          "name": "Malakoff - Plateau de Vanves",
+          "disruptionIds": [
+            "e43b4bf1-825a-49ca-8b33-a0916f6d2f92"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463198",
+          "name": "Invalides",
+          "disruptionIds": [
+            "e43b4bf1-825a-49ca-8b33-a0916f6d2f92"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463109",
+          "name": "Asnières - Gennevilliers - Les Courtilles",
+          "disruptionIds": [
+            "96b17fcc-8084-47be-b2a8-07c27e0cdb51"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22217",
+          "name": "Saint-François-Xavier",
+          "disruptionIds": [
+            "e43b4bf1-825a-49ca-8b33-a0916f6d2f92"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22157",
+          "name": "Montparnasse Bienvenue",
+          "disruptionIds": [
+            "e43b4bf1-825a-49ca-8b33-a0916f6d2f92"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22237",
+          "name": "Châtillon - Montrouge",
+          "disruptionIds": [
+            "e43b4bf1-825a-49ca-8b33-a0916f6d2f92"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463260",
+          "name": "Porte de Vanves",
+          "disruptionIds": [
+            "e43b4bf1-825a-49ca-8b33-a0916f6d2f92"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22230",
+          "name": "Gaîté",
+          "disruptionIds": [
+            "e43b4bf1-825a-49ca-8b33-a0916f6d2f92"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:495053",
+          "name": "Châtillon - Montrouge",
+          "disruptionIds": [
+            "e43b4bf1-825a-49ca-8b33-a0916f6d2f92"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:463085",
+          "name": "Plaisance",
+          "disruptionIds": [
+            "e43b4bf1-825a-49ca-8b33-a0916f6d2f92",
+            "94fb67d1-7b34-4de2-a7c4-0c9255c0bd55"
+          ]
+        },
+        {
+          "type": "stop_point",
+          "id": "stop_point:IDFM:22222",
+          "name": "Pernety",
+          "disruptionIds": [
+            "e43b4bf1-825a-49ca-8b33-a0916f6d2f92"
+          ]
+        }
+      ]
+    }
+  ],
   "disruptions": [
     {
-      "id": "bd39102b-57d6-466d-8360-27893ec6baeb",
+      "id": "71626f4a-75d9-49df-8a3b-16caf2277ebd",
       "applicationPeriods": [
         {
-          "begin": "20260516T044500",
-          "end": "20260522T043000"
+          "begin": "20260517T044500",
+          "end": "20260517T120000"
         }
       ],
-      "lastUpdate": "20260323T151412",
+      "lastUpdate": "20260323T182639",
       "cause": "TRAVAUX",
       "severity": "BLOQUANTE",
       "tags": [
         "Actualité"
       ],
-      "title": "Métro 3B : Travaux - Trafic interrompu",
-      "message": "<p>Du 16 mai au 21 mai inclus, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
+      "title": "Métro 13 : Travaux - Trafic interrompu",
+      "message": "<p>Le dimanche 17 mai ainsi que les 7 et 28 juin, jusqu'à 12 heures, le trafic est interrompu sur l'ensemble de la ligne en raison de travaux de modernisation.</p>",
       "shortMessage": "Trafic interrompu"
     },
     {
-      "id": "94fb67d1-7b34-4de2-a7c4-0c9255c0bd55",
+      "id": "4247e7e6-20b2-11f1-b269-0a58a9feac02",
       "applicationPeriods": [
         {
-          "begin": "20260409T044500",
+          "begin": "20260405T220000",
+          "end": "20260406T043000"
+        },
+        {
+          "begin": "20260412T220000",
           "end": "20260413T043000"
         }
       ],
-      "lastUpdate": "20260409T044626",
+      "lastUpdate": "20260315T220221",
       "cause": "TRAVAUX",
       "severity": "BLOQUANTE",
       "tags": [
         "Actualité"
       ],
-      "title": "Métro 13 : Travaux de modernisation - Arrêt non desservi",
-      "message": "<p>Jusqu'au 12 avril inclus, l'arrêt n'est pas desservi à Plaisance en raison de travaux de modernisation</p>",
-      "shortMessage": "Arrêt non desservi"
-    },
-    {
-      "id": "74a23352-56b4-4ad6-b1aa-a354ec27a786",
-      "applicationPeriods": [
-        {
-          "begin": "20260503T044500",
-          "end": "20260503T120000"
-        }
-      ],
-      "lastUpdate": "20260323T161610",
-      "cause": "TRAVAUX",
-      "severity": "BLOQUANTE",
-      "tags": [
-        "Actualité"
-      ],
-      "title": "Métro 13 : Travaux - Trafic interrompu",
-      "message": "<p>Le 3 mai jusqu'à 12:00, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
-      "shortMessage": "Trafic interrompu"
-    },
-    {
-      "id": "f48ead46-07a0-4344-b4ef-835b6ca05c88",
-      "applicationPeriods": [
-        {
-          "begin": "20260516T044500",
-          "end": "20260522T043000"
-        }
-      ],
-      "lastUpdate": "20260323T151420",
-      "cause": "TRAVAUX",
-      "severity": "BLOQUANTE",
-      "tags": [
-        "Actualité"
-      ],
-      "title": "Métro 3B : Travaux - Trafic interrompu",
-      "message": "<p>Du 16 mai au 21 mai inclus, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
-      "shortMessage": "Trafic interrompu"
-    },
-    {
-      "id": "63110a5c-f7da-49bf-be35-ea8aaf0b8358",
-      "applicationPeriods": [
-        {
-          "begin": "20260628T044500",
-          "end": "20260628T120000"
-        }
-      ],
-      "lastUpdate": "20260323T182630",
-      "cause": "TRAVAUX",
-      "severity": "BLOQUANTE",
-      "tags": [
-        "Actualité"
-      ],
-      "title": "Métro 13 : Travaux - Trafic interrompu",
-      "message": "<p>Le 28 juin jusqu'à 12:00, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
+      "title": "Métro 12 : Travaux de modernisation - Trafic interrompu",
+      "message": "<p>Jusqu'au 12 avril inclus, le dimanche dès 22:00, le trafic est interrompu sur toute la ligne en raison de travaux de modernisation.</p>",
       "shortMessage": "Trafic interrompu"
     },
     {
@@ -110,6 +489,42 @@
       "shortMessage": "Trafic interrompu"
     },
     {
+      "id": "6eaf3c4a-1bd9-11f1-a4ee-0a58a9feac02",
+      "applicationPeriods": [
+        {
+          "begin": "20260309T175855",
+          "end": "20260413T043000"
+        }
+      ],
+      "lastUpdate": "20260309T180010",
+      "cause": "TRAVAUX",
+      "severity": "INFORMATION",
+      "tags": [
+        "Actualité"
+      ],
+      "title": "Métro 12 : Travaux de modernisation - Autre",
+      "message": "<p>Jusqu'au 12 avril, dès 22:00, tous les dimanches et certains mercredis et jeudis le trafic est interrompu sur toute la ligne en raison de travaux de modernisation. Détails et calendrier complet sur RATP.fr.</p>",
+      "shortMessage": "Autre"
+    },
+    {
+      "id": "bd39102b-57d6-466d-8360-27893ec6baeb",
+      "applicationPeriods": [
+        {
+          "begin": "20260516T044500",
+          "end": "20260522T043000"
+        }
+      ],
+      "lastUpdate": "20260323T151412",
+      "cause": "TRAVAUX",
+      "severity": "BLOQUANTE",
+      "tags": [
+        "Actualité"
+      ],
+      "title": "Métro 3B : Travaux - Trafic interrompu",
+      "message": "<p>Du 16 mai au 21 mai inclus, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
+      "shortMessage": "Trafic interrompu"
+    },
+    {
       "id": "9ea051e5-b459-47da-a9f6-1ea9f8b4c611",
       "applicationPeriods": [
         {
@@ -128,50 +543,40 @@
       "shortMessage": "Trafic interrompu"
     },
     {
-      "id": "ff1a101d-45f8-4942-b24b-50a00b079142",
+      "id": "f865eff0-7ef4-4144-976d-b172ec84dfbf",
       "applicationPeriods": [
         {
-          "begin": "20260420T044500",
-          "end": "20260502T043000"
+          "begin": "20260517T044500",
+          "end": "20260517T120000"
         }
       ],
-      "lastUpdate": "20260319T144825",
+      "lastUpdate": "20260323T171443",
       "cause": "TRAVAUX",
       "severity": "BLOQUANTE",
       "tags": [
         "Actualité"
       ],
-      "title": "Métro 4 : Travaux d'entretien - Trafic interrompu",
-      "message": "<p>Du 20 avril au 1er mai inclus, le trafic sera interrompu entre Châtelet et Barbès - Rochechouart en raison de travaux d'entretien.</p>",
-      "shortMessage": "Trafic interrompu",
-      "impactedSections": [
+      "title": "Métro 13 : Travaux - Trafic interrompu",
+      "message": "<p>Le 17 mai jusqu'à 12:00, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
+      "shortMessage": "Trafic interrompu"
+    },
+    {
+      "id": "63110a5c-f7da-49bf-be35-ea8aaf0b8358",
+      "applicationPeriods": [
         {
-          "lineId": "line:IDFM:C01374",
-          "from": {
-            "type": "stop_area",
-            "id": "stop_area:IDFM:71264",
-            "name": "Châtelet (Paris)"
-          },
-          "to": {
-            "type": "stop_area",
-            "id": "stop_area:IDFM:71426",
-            "name": "Barbès - Rochechouart (Paris)"
-          }
-        },
-        {
-          "lineId": "line:IDFM:C01374",
-          "from": {
-            "type": "stop_area",
-            "id": "stop_area:IDFM:71426",
-            "name": "Barbès - Rochechouart (Paris)"
-          },
-          "to": {
-            "type": "stop_area",
-            "id": "stop_area:IDFM:71264",
-            "name": "Châtelet (Paris)"
-          }
+          "begin": "20260628T044500",
+          "end": "20260628T120000"
         }
-      ]
+      ],
+      "lastUpdate": "20260323T182630",
+      "cause": "TRAVAUX",
+      "severity": "BLOQUANTE",
+      "tags": [
+        "Actualité"
+      ],
+      "title": "Métro 13 : Travaux - Trafic interrompu",
+      "message": "<p>Le 28 juin jusqu'à 12:00, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
+      "shortMessage": "Trafic interrompu"
     },
     {
       "id": "1dc83844-1e23-11f1-bb0b-0a58a9feac02",
@@ -208,43 +613,39 @@
       "shortMessage": "Trafic interrompu"
     },
     {
-      "id": "6eaf3c4a-1bd9-11f1-a4ee-0a58a9feac02",
+      "id": "94fb67d1-7b34-4de2-a7c4-0c9255c0bd55",
       "applicationPeriods": [
         {
-          "begin": "20260309T175855",
+          "begin": "20260409T044500",
           "end": "20260413T043000"
         }
       ],
-      "lastUpdate": "20260309T180010",
-      "cause": "TRAVAUX",
-      "severity": "INFORMATION",
-      "tags": [
-        "Actualité"
-      ],
-      "title": "Métro 12 : Travaux de modernisation - Autre",
-      "message": "<p>Jusqu'au 12 avril, dès 22:00, tous les dimanches et certains mercredis et jeudis le trafic est interrompu sur toute la ligne en raison de travaux de modernisation. Détails et calendrier complet sur RATP.fr.</p>",
-      "shortMessage": "Autre"
-    },
-    {
-      "id": "4247e7e6-20b2-11f1-b269-0a58a9feac02",
-      "applicationPeriods": [
-        {
-          "begin": "20260405T220000",
-          "end": "20260406T043000"
-        },
-        {
-          "begin": "20260412T220000",
-          "end": "20260413T043000"
-        }
-      ],
-      "lastUpdate": "20260315T220221",
+      "lastUpdate": "20260409T044626",
       "cause": "TRAVAUX",
       "severity": "BLOQUANTE",
       "tags": [
         "Actualité"
       ],
-      "title": "Métro 12 : Travaux de modernisation - Trafic interrompu",
-      "message": "<p>Jusqu'au 12 avril inclus, le dimanche dès 22:00, le trafic est interrompu sur toute la ligne en raison de travaux de modernisation.</p>",
+      "title": "Métro 13 : Travaux de modernisation - Arrêt non desservi",
+      "message": "<p>Jusqu'au 12 avril inclus, l'arrêt n'est pas desservi à Plaisance en raison de travaux de modernisation</p>",
+      "shortMessage": "Arrêt non desservi"
+    },
+    {
+      "id": "f48ead46-07a0-4344-b4ef-835b6ca05c88",
+      "applicationPeriods": [
+        {
+          "begin": "20260516T044500",
+          "end": "20260522T043000"
+        }
+      ],
+      "lastUpdate": "20260323T151420",
+      "cause": "TRAVAUX",
+      "severity": "BLOQUANTE",
+      "tags": [
+        "Actualité"
+      ],
+      "title": "Métro 3B : Travaux - Trafic interrompu",
+      "message": "<p>Du 16 mai au 21 mai inclus, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
       "shortMessage": "Trafic interrompu"
     },
     {
@@ -294,57 +695,21 @@
       ]
     },
     {
-      "id": "f865eff0-7ef4-4144-976d-b172ec84dfbf",
-      "applicationPeriods": [
-        {
-          "begin": "20260517T044500",
-          "end": "20260517T120000"
-        }
-      ],
-      "lastUpdate": "20260323T171443",
-      "cause": "TRAVAUX",
-      "severity": "BLOQUANTE",
-      "tags": [
-        "Actualité"
-      ],
-      "title": "Métro 13 : Travaux - Trafic interrompu",
-      "message": "<p>Le 17 mai jusqu'à 12:00, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
-      "shortMessage": "Trafic interrompu"
-    },
-    {
-      "id": "3f4523c5-b213-4672-a207-6555a464535d",
+      "id": "74a23352-56b4-4ad6-b1aa-a354ec27a786",
       "applicationPeriods": [
         {
           "begin": "20260503T044500",
           "end": "20260503T120000"
         }
       ],
-      "lastUpdate": "20260323T182611",
+      "lastUpdate": "20260323T161610",
       "cause": "TRAVAUX",
       "severity": "BLOQUANTE",
       "tags": [
         "Actualité"
       ],
       "title": "Métro 13 : Travaux - Trafic interrompu",
-      "message": "<p>Les dimanches 3 et 17 mai ainsi que les 7 et 28 juin, jusqu'à 12 heures, le trafic est interrompu sur l'ensemble de la ligne en raison de travaux de modernisation.</p>",
-      "shortMessage": "Trafic interrompu"
-    },
-    {
-      "id": "71626f4a-75d9-49df-8a3b-16caf2277ebd",
-      "applicationPeriods": [
-        {
-          "begin": "20260517T044500",
-          "end": "20260517T120000"
-        }
-      ],
-      "lastUpdate": "20260323T182639",
-      "cause": "TRAVAUX",
-      "severity": "BLOQUANTE",
-      "tags": [
-        "Actualité"
-      ],
-      "title": "Métro 13 : Travaux - Trafic interrompu",
-      "message": "<p>Le dimanche 17 mai ainsi que les 7 et 28 juin, jusqu'à 12 heures, le trafic est interrompu sur l'ensemble de la ligne en raison de travaux de modernisation.</p>",
+      "message": "<p>Le 3 mai jusqu'à 12:00, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
       "shortMessage": "Trafic interrompu"
     },
     {
@@ -363,6 +728,70 @@
       ],
       "title": "Métro 13 : Travaux - Trafic interrompu",
       "message": "<p>Le 28 juin jusqu'à 12:00, le trafic sera interrompu sur toute la ligne en raison de travaux.</p>",
+      "shortMessage": "Trafic interrompu"
+    },
+    {
+      "id": "ff1a101d-45f8-4942-b24b-50a00b079142",
+      "applicationPeriods": [
+        {
+          "begin": "20260420T044500",
+          "end": "20260502T043000"
+        }
+      ],
+      "lastUpdate": "20260319T144825",
+      "cause": "TRAVAUX",
+      "severity": "BLOQUANTE",
+      "tags": [
+        "Actualité"
+      ],
+      "title": "Métro 4 : Travaux d'entretien - Trafic interrompu",
+      "message": "<p>Du 20 avril au 1er mai inclus, le trafic sera interrompu entre Châtelet et Barbès - Rochechouart en raison de travaux d'entretien.</p>",
+      "shortMessage": "Trafic interrompu",
+      "impactedSections": [
+        {
+          "lineId": "line:IDFM:C01374",
+          "from": {
+            "type": "stop_area",
+            "id": "stop_area:IDFM:71264",
+            "name": "Châtelet (Paris)"
+          },
+          "to": {
+            "type": "stop_area",
+            "id": "stop_area:IDFM:71426",
+            "name": "Barbès - Rochechouart (Paris)"
+          }
+        },
+        {
+          "lineId": "line:IDFM:C01374",
+          "from": {
+            "type": "stop_area",
+            "id": "stop_area:IDFM:71426",
+            "name": "Barbès - Rochechouart (Paris)"
+          },
+          "to": {
+            "type": "stop_area",
+            "id": "stop_area:IDFM:71264",
+            "name": "Châtelet (Paris)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3f4523c5-b213-4672-a207-6555a464535d",
+      "applicationPeriods": [
+        {
+          "begin": "20260503T044500",
+          "end": "20260503T120000"
+        }
+      ],
+      "lastUpdate": "20260323T182611",
+      "cause": "TRAVAUX",
+      "severity": "BLOQUANTE",
+      "tags": [
+        "Actualité"
+      ],
+      "title": "Métro 13 : Travaux - Trafic interrompu",
+      "message": "<p>Les dimanches 3 et 17 mai ainsi que les 7 et 28 juin, jusqu'à 12 heures, le trafic est interrompu sur l'ensemble de la ligne en raison de travaux de modernisation.</p>",
       "shortMessage": "Trafic interrompu"
     }
   ]
