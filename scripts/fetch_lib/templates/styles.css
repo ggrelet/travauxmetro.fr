@@ -52,8 +52,9 @@
     .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: .75rem; }
     .dis-card { background: #fafafa; border: 1px solid #e8e8e8; border-radius: 10px; padding: .9rem; }
     .card-title { font-weight: 600; font-size: .9em; margin-bottom: .4rem; }
-    .period { font-size: .8em; color: #555; margin: .15rem 0; white-space: nowrap; }
-    .stops { font-size: .8em; color: #333; margin-top: .35rem; }
+    .period { font-size: .8em; color: #555; margin: .15rem 0; white-space: nowrap; display: flex; align-items: center; gap: .35em; }
+    .stops { font-size: .8em; color: #333; margin-top: .35rem; display: flex; align-items: center; gap: .35em; }
+    .row-icon { width: 1.1em; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
     .message { font-size: .78em; color: #666; margin-top: .45rem; border-top: 1px solid #eee; padding-top: .35rem; white-space: pre-wrap; }
     .note { font-size: .82em; color: #666; font-style: italic; margin: .5rem 0 .5rem; }
     .all-badges { display: grid; grid-template-columns: repeat(8, auto); gap: .4rem; margin-bottom: 0; justify-content: start; }
