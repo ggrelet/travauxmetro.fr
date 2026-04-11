@@ -76,10 +76,10 @@ def test_sitemap_has_lastmod(generated: Path) -> None:
     assert "2026-04-10" in xml
 
 
-def test_summary_has_lines_section(generated: Path) -> None:
+def test_summary_has_header_and_source(generated: Path) -> None:
     md = (generated / "data" / "summary.md").read_text()
     assert "Travaux métro" in md
-    assert "Lignes concernées" in md
+    assert "PRIM" in md
 
 
 def test_snapshot_json_has_fetched_at(generated: Path) -> None:

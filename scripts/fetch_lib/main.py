@@ -142,10 +142,16 @@ def main():
     for line in all_lines:
         old_set = fp_set(line, old_by_line)
         new_set = {frozenset(tuple(p) for p in fp) for fp in new_fps_by_line.get(line, [])}
-        added = len(new_set - old_set)
-        removed = len(old_set - new_set)
-        if added or removed:
-            diff[line] = {"added": added, "removed": removed}
+        added_fps = new_set - old_set
+        removed_fps = old_set - new_set
+        if not (added_fps or removed_fps):
+            continue
+        added_dis_ids = [
+            dis_id for dis_id in sorted(by_line.get(line, []))
+            if frozenset(tuple(p) for p in dis_fingerprint(dis_by_id[dis_id])) in added_fps
+        ]
+        removed_periods = sorted([sorted(list(p) for p in fp) for fp in removed_fps])
+        diff[line] = {"added": added_dis_ids, "removed": removed_periods}
 
     # Persist fingerprints (not IDs) so UUID re-issues don't show as changes next run.
     # sort_keys keeps the file byte-stable across runs (dict key order is set-iteration-dependent).
@@ -240,8 +246,7 @@ def main():
                 dis_to_stops[dis_id][line_id] = stops
     all_net_lines = {**metro_lines, **rer_lines}
 
-    event_counts = {name: count for name, _, count in line_stats}
-    (data_dir / "summary.md").write_text(generate_summary(by_line, dis_to_stops, dis_by_id, all_net_lines, fetched_at, diff, event_counts))
+    (data_dir / "summary.md").write_text(generate_summary(by_line, dis_to_stops, dis_by_id, all_net_lines, fetched_at, diff))
     (public / "index.html").write_text(generate_index(by_line, dis_by_id, dis_to_stops, all_net_lines, fetched_at))
 
     today = _today().isoformat()
