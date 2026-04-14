@@ -44,7 +44,7 @@ jobs:
       - name: Open PR if changed
         if: steps.diff.outputs.changed == 'true' || inputs.force == true
         env:
-          GH_TOKEN: ${{ secrets.PAT_BOT }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           DATE=$(date -u +%Y-%m-%d)
           TS=$(date -u +%H%M%S)
@@ -62,3 +62,7 @@ jobs:
             --body-file data/summary.md \
             --base main \
             --reviewer ggrelet
+
+  ci:
+    needs: update
+    uses: ./.github/workflows/ci.yml

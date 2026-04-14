@@ -1,8 +1,8 @@
 """Markdown summary generation for data/summary.md.
 
 Renders only what changed since the last run: per-line added/removed
-disruptions with period, stops, short message visible, and the long
-description collapsed inside a <details> block for cherry-picking.
+disruptions with date range always visible and details (stops, type,
+description) collapsed inside a <details> block for cherry-picking.
 """
 
 from .constants import METRO_LINE_COLORS, RER_LINE_COLORS
@@ -10,6 +10,10 @@ from .html import fmt_date
 from .prim import line_sort_key, strip_html
 
 _LINE_COLORS = {**METRO_LINE_COLORS, **RER_LINE_COLORS}
+
+# Colors for +/- count badges — neither is used by any metro/RER line.
+_GREEN = "28a745"  # GitHub success green
+_RED = "d73a49"    # GitHub danger red
 
 
 def _line_label(line_name: str) -> str:
@@ -19,9 +23,17 @@ def _line_label(line_name: str) -> str:
 def _badge(line_name: str) -> str:
     bg, _ = _LINE_COLORS.get(line_name, ("#888888", "#FFFFFF"))
     label = _line_label(line_name)
-    # shields.io needs spaces URL-encoded
     url_label = label.replace(" ", "%20")
     return f"![{label}](https://img.shields.io/badge/-{url_label}-{bg[1:]}?style=flat)"
+
+
+def _count_badge(n: int, added: bool) -> str:
+    if added:
+        # %2B = '+', green
+        return f"![+{n}](https://img.shields.io/badge/-%2B{n}-{_GREEN}?style=flat)"
+    else:
+        # %E2%88%92 = '−' (U+2212), red
+        return f"![-{n}](https://img.shields.io/badge/-%E2%88%92{n}-{_RED}?style=flat)"
 
 
 def _period_range(periods: list) -> str:
@@ -40,12 +52,18 @@ def _render_added(dis: dict, stops: list[str]) -> list[str]:
         if app_periods else ""
     )
     out = [f"- **{title}**" + (f" — {period_str}" if period_str else "")]
+
+    details_parts = []
     if stops:
-        out.append(f"  - 🚉 {', '.join(stops)}")
+        details_parts.append(f"🚉 {', '.join(stops)}")
     if short and short != title:
-        out.append(f"  - {short}")
+        details_parts.append(short)
     if message and message not in (title, short):
-        out.append(f"  - <details><summary>Description complète</summary><br>{message}</details>")
+        details_parts.append(message)
+
+    if details_parts:
+        content = "<br>".join(details_parts)
+        out.append(f"  <details><summary>Détails</summary><br>{content}</details>")
     return out
 
 
@@ -64,9 +82,9 @@ def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, metro_l
             removed = d.get("removed", [])
             counts = []
             if added:
-                counts.append(f"+{len(added)}")
+                counts.append(_count_badge(len(added), added=True))
             if removed:
-                counts.append(f"-{len(removed)}")
+                counts.append(_count_badge(len(removed), added=False))
             lines.append(f"### {_badge(line_name)} {' '.join(counts)}")
             lines.append("")
             line_id = name_to_id.get(line_name)
