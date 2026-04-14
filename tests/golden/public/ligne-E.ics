@@ -12,7 +12,7 @@ X-APPLE-CALENDAR-COLOR:#C04191
 X-PUBLISHED-TTL:PT12H
 X-WR-TIMEZONE:Europe/Paris
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260427T222500
 DTEND;TZID=Europe/Paris:20260428T020000
 DTSTAMP:20260410T100000Z
@@ -45,10 +45,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260428T222500
 DTEND;TZID=Europe/Paris:20260429T020000
 DTSTAMP:20260410T100000Z
@@ -81,10 +81,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260429T222500
 DTEND;TZID=Europe/Paris:20260430T020000
 DTSTAMP:20260410T100000Z
@@ -117,10 +117,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260430T222500
 DTEND;TZID=Europe/Paris:20260501T020000
 DTSTAMP:20260410T100000Z
@@ -153,10 +153,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260501T222500
 DTEND;TZID=Europe/Paris:20260502T020000
 DTSTAMP:20260410T100000Z
@@ -189,10 +189,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260504T222500
 DTEND;TZID=Europe/Paris:20260505T020000
 DTSTAMP:20260410T100000Z
@@ -225,10 +225,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260505T222500
 DTEND;TZID=Europe/Paris:20260506T020000
 DTSTAMP:20260410T100000Z
@@ -261,10 +261,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260506T222500
 DTEND;TZID=Europe/Paris:20260507T020000
 DTSTAMP:20260410T100000Z
@@ -297,10 +297,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260507T222500
 DTEND;TZID=Europe/Paris:20260508T020000
 DTSTAMP:20260410T100000Z
@@ -333,10 +333,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260508T222500
 DTEND;TZID=Europe/Paris:20260509T020000
 DTSTAMP:20260410T100000Z
@@ -369,10 +369,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260511T222500
 DTEND;TZID=Europe/Paris:20260512T020000
 DTSTAMP:20260410T100000Z
@@ -405,10 +405,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260512T222500
 DTEND;TZID=Europe/Paris:20260513T020000
 DTSTAMP:20260410T100000Z
@@ -441,10 +441,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260513T222500
 DTEND;TZID=Europe/Paris:20260514T020000
 DTSTAMP:20260410T100000Z
@@ -477,10 +477,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260514T222500
 DTEND;TZID=Europe/Paris:20260515T020000
 DTSTAMP:20260410T100000Z
@@ -513,10 +513,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260515T222500
 DTEND;TZID=Europe/Paris:20260516T020000
 DTSTAMP:20260410T100000Z
@@ -549,10 +549,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260518T222500
 DTEND;TZID=Europe/Paris:20260519T020000
 DTSTAMP:20260410T100000Z
@@ -585,10 +585,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260519T222500
 DTEND;TZID=Europe/Paris:20260520T020000
 DTSTAMP:20260410T100000Z
@@ -621,10 +621,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260520T222500
 DTEND;TZID=Europe/Paris:20260521T020000
 DTSTAMP:20260410T100000Z
@@ -657,10 +657,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260521T222500
 DTEND;TZID=Europe/Paris:20260522T020000
 DTSTAMP:20260410T100000Z
@@ -693,10 +693,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260522T222500
 DTEND;TZID=Europe/Paris:20260523T020000
 DTSTAMP:20260410T100000Z
@@ -729,10 +729,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260525T222500
 DTEND;TZID=Europe/Paris:20260526T020000
 DTSTAMP:20260410T100000Z
@@ -765,10 +765,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260526T222500
 DTEND;TZID=Europe/Paris:20260527T020000
 DTSTAMP:20260410T100000Z
@@ -801,10 +801,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260527T222500
 DTEND;TZID=Europe/Paris:20260528T020000
 DTSTAMP:20260410T100000Z
@@ -837,10 +837,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260528T222500
 DTEND;TZID=Europe/Paris:20260529T020000
 DTSTAMP:20260410T100000Z
@@ -873,10 +873,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260529T222500
 DTEND;TZID=Europe/Paris:20260530T020000
 DTSTAMP:20260410T100000Z
@@ -909,10 +909,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260601T222500
 DTEND;TZID=Europe/Paris:20260602T020000
 DTSTAMP:20260410T100000Z
@@ -945,10 +945,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260602T222500
 DTEND;TZID=Europe/Paris:20260603T020000
 DTSTAMP:20260410T100000Z
@@ -981,10 +981,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260603T222500
 DTEND;TZID=Europe/Paris:20260604T020000
 DTSTAMP:20260410T100000Z
@@ -1017,10 +1017,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260604T222500
 DTEND;TZID=Europe/Paris:20260605T020000
 DTSTAMP:20260410T100000Z
@@ -1053,10 +1053,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260605T222500
 DTEND;TZID=Europe/Paris:20260606T020000
 DTSTAMP:20260410T100000Z
@@ -1089,10 +1089,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260608T222500
 DTEND;TZID=Europe/Paris:20260609T020000
 DTSTAMP:20260410T100000Z
@@ -1125,10 +1125,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260609T222500
 DTEND;TZID=Europe/Paris:20260610T020000
 DTSTAMP:20260410T100000Z
@@ -1161,10 +1161,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260610T222500
 DTEND;TZID=Europe/Paris:20260611T020000
 DTSTAMP:20260410T100000Z
@@ -1197,10 +1197,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260611T222500
 DTEND;TZID=Europe/Paris:20260612T020000
 DTSTAMP:20260410T100000Z
@@ -1233,10 +1233,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260612T222500
 DTEND;TZID=Europe/Paris:20260613T020000
 DTSTAMP:20260410T100000Z
@@ -1269,10 +1269,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260615T222500
 DTEND;TZID=Europe/Paris:20260616T020000
 DTSTAMP:20260410T100000Z
@@ -1305,10 +1305,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260616T222500
 DTEND;TZID=Europe/Paris:20260617T020000
 DTSTAMP:20260410T100000Z
@@ -1341,10 +1341,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260617T222500
 DTEND;TZID=Europe/Paris:20260618T020000
 DTSTAMP:20260410T100000Z
@@ -1377,10 +1377,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260618T222500
 DTEND;TZID=Europe/Paris:20260619T020000
 DTSTAMP:20260410T100000Z
@@ -1413,10 +1413,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260619T222500
 DTEND;TZID=Europe/Paris:20260620T020000
 DTSTAMP:20260410T100000Z
@@ -1449,10 +1449,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260622T222500
 DTEND;TZID=Europe/Paris:20260623T020000
 DTSTAMP:20260410T100000Z
@@ -1485,10 +1485,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260623T222500
 DTEND;TZID=Europe/Paris:20260624T020000
 DTSTAMP:20260410T100000Z
@@ -1521,10 +1521,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260624T222500
 DTEND;TZID=Europe/Paris:20260625T020000
 DTSTAMP:20260410T100000Z
@@ -1557,10 +1557,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260625T222500
 DTEND;TZID=Europe/Paris:20260626T020000
 DTSTAMP:20260410T100000Z
@@ -1593,10 +1593,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260626T222500
 DTEND;TZID=Europe/Paris:20260627T020000
 DTSTAMP:20260410T100000Z
@@ -1629,10 +1629,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260629T222500
 DTEND;TZID=Europe/Paris:20260630T020000
 DTSTAMP:20260410T100000Z
@@ -1665,10 +1665,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260630T222500
 DTEND;TZID=Europe/Paris:20260701T020000
 DTSTAMP:20260410T100000Z
@@ -1701,10 +1701,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260701T222500
 DTEND;TZID=Europe/Paris:20260702T020000
 DTSTAMP:20260410T100000Z
@@ -1737,10 +1737,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260702T222500
 DTEND;TZID=Europe/Paris:20260703T020000
 DTSTAMP:20260410T100000Z
@@ -1773,10 +1773,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260703T222500
 DTEND;TZID=Europe/Paris:20260704T020000
 DTSTAMP:20260410T100000Z
@@ -1809,10 +1809,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260706T222500
 DTEND;TZID=Europe/Paris:20260707T020000
 DTSTAMP:20260410T100000Z
@@ -1845,10 +1845,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260707T222500
 DTEND;TZID=Europe/Paris:20260708T020000
 DTSTAMP:20260410T100000Z
@@ -1881,10 +1881,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260708T222500
 DTEND;TZID=Europe/Paris:20260709T020000
 DTSTAMP:20260410T100000Z
@@ -1917,10 +1917,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260709T222500
 DTEND;TZID=Europe/Paris:20260710T020000
 DTSTAMP:20260410T100000Z
@@ -1953,10 +1953,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
+SUMMARY:RER E : Nanterre – Villiers / Tournan 27/04 - 10/07
 DTSTART;TZID=Europe/Paris:20260710T222500
 DTEND;TZID=Europe/Paris:20260711T020000
 DTSTAMP:20260410T100000Z
@@ -1989,10 +1989,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  erroviaire (CDG Express\, Renouvellement des rails\, Maintenance de la voi
  e\, Accessibilité de la gare Rosny-Bois-Perrier\, Travaux spécifiques EO
  LE\, Grand Paris à Nogent-le-Perreux et Rosny-Bois-Perrier\, Grand Paris 
- Express à Bondy).\n\nCause : TRAVAUX
+ Express à Bondy).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 25/04 - 2/05
+SUMMARY:RER E : Nanterre – Villiers / Tournan 25/04 - 2/05
 DTSTART;TZID=Europe/Paris:20260425T222500
 DTEND;TZID=Europe/Paris:20260426T020000
 DTSTAMP:20260410T100000Z
@@ -2021,10 +2021,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
   départ de Tournan ont pour destination Gare de l'Est. Les horaires du ca
  lculateur d'itinéraire tiennent compte des travaux. Motif : travaux sur l
  e réseau ferroviaire (CDG Express\, Opérations de débroussaillage\, Tra
- vaux spécifique EOLE pour l'extension de la ligne).\n\nCause : TRAVAUX
+ vaux spécifique EOLE pour l'extension de la ligne).\n\nCause : TRAVAUX\n\
+ nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 25/04 - 2/05
+SUMMARY:RER E : Nanterre – Villiers / Tournan 25/04 - 2/05
 DTSTART;TZID=Europe/Paris:20260502T222500
 DTEND;TZID=Europe/Paris:20260503T020000
 DTSTAMP:20260410T100000Z
@@ -2053,10 +2054,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
   départ de Tournan ont pour destination Gare de l'Est. Les horaires du ca
  lculateur d'itinéraire tiennent compte des travaux. Motif : travaux sur l
  e réseau ferroviaire (CDG Express\, Opérations de débroussaillage\, Tra
- vaux spécifique EOLE pour l'extension de la ligne).\n\nCause : TRAVAUX
+ vaux spécifique EOLE pour l'extension de la ligne).\n\nCause : TRAVAUX\n\
+ nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 20 - 24/04
+SUMMARY:RER E : Nanterre - Chelles 20 - 24/04
 DTSTART;TZID=Europe/Paris:20260420T220000
 DTEND;TZID=Europe/Paris:20260421T020000
 DTSTAMP:20260410T100000Z
@@ -2076,10 +2078,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  us à destination de Chelles Gournay. Les horaires du calculateur d'itiné
  raire tiennent compte des travaux. Motif : travaux sur le réseau ferrovia
  ire (Maintenance préventive et curative de la voie par le passage d'un tr
- ain meuleur de rails entre Paris et Noisy-le-Sec).\n\nCause : TRAVAUX
+ ain meuleur de rails entre Paris et Noisy-le-Sec).\n\nCause : TRAVAUX\n\nh
+ ttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 20 - 24/04
+SUMMARY:RER E : Nanterre - Chelles 20 - 24/04
 DTSTART;TZID=Europe/Paris:20260421T220000
 DTEND;TZID=Europe/Paris:20260422T020000
 DTSTAMP:20260410T100000Z
@@ -2099,10 +2102,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  us à destination de Chelles Gournay. Les horaires du calculateur d'itiné
  raire tiennent compte des travaux. Motif : travaux sur le réseau ferrovia
  ire (Maintenance préventive et curative de la voie par le passage d'un tr
- ain meuleur de rails entre Paris et Noisy-le-Sec).\n\nCause : TRAVAUX
+ ain meuleur de rails entre Paris et Noisy-le-Sec).\n\nCause : TRAVAUX\n\nh
+ ttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 20 - 24/04
+SUMMARY:RER E : Nanterre - Chelles 20 - 24/04
 DTSTART;TZID=Europe/Paris:20260422T220000
 DTEND;TZID=Europe/Paris:20260423T020000
 DTSTAMP:20260410T100000Z
@@ -2122,10 +2126,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  us à destination de Chelles Gournay. Les horaires du calculateur d'itiné
  raire tiennent compte des travaux. Motif : travaux sur le réseau ferrovia
  ire (Maintenance préventive et curative de la voie par le passage d'un tr
- ain meuleur de rails entre Paris et Noisy-le-Sec).\n\nCause : TRAVAUX
+ ain meuleur de rails entre Paris et Noisy-le-Sec).\n\nCause : TRAVAUX\n\nh
+ ttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 20 - 24/04
+SUMMARY:RER E : Nanterre - Chelles 20 - 24/04
 DTSTART;TZID=Europe/Paris:20260423T220000
 DTEND;TZID=Europe/Paris:20260424T020000
 DTSTAMP:20260410T100000Z
@@ -2145,10 +2150,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  us à destination de Chelles Gournay. Les horaires du calculateur d'itiné
  raire tiennent compte des travaux. Motif : travaux sur le réseau ferrovia
  ire (Maintenance préventive et curative de la voie par le passage d'un tr
- ain meuleur de rails entre Paris et Noisy-le-Sec).\n\nCause : TRAVAUX
+ ain meuleur de rails entre Paris et Noisy-le-Sec).\n\nCause : TRAVAUX\n\nh
+ ttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 20 - 24/04
+SUMMARY:RER E : Nanterre - Chelles 20 - 24/04
 DTSTART;TZID=Europe/Paris:20260424T220000
 DTEND;TZID=Europe/Paris:20260425T020000
 DTSTAMP:20260410T100000Z
@@ -2168,10 +2174,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  us à destination de Chelles Gournay. Les horaires du calculateur d'itiné
  raire tiennent compte des travaux. Motif : travaux sur le réseau ferrovia
  ire (Maintenance préventive et curative de la voie par le passage d'un tr
- ain meuleur de rails entre Paris et Noisy-le-Sec).\n\nCause : TRAVAUX
+ ain meuleur de rails entre Paris et Noisy-le-Sec).\n\nCause : TRAVAUX\n\nh
+ ttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 25/04 - 7/06
+SUMMARY:RER E : Nanterre - Chelles 25/04 - 7/06
 DTSTART;TZID=Europe/Paris:20260523T224500
 DTEND;TZID=Europe/Paris:20260524T020000
 DTSTAMP:20260410T100000Z
@@ -2193,10 +2200,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : à partir de 22h45 D
  agny et Vaires-Torcy\, Renouvellement des appareils de voie\, de la voie e
  t du ballast à hauteur de Lagny-Thorigny\, Maintenance préventive des in
  stallations électriques\, de la signalisation et des caténaires).\n\nCau
- se : TRAVAUX
+ se : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 25/04 - 7/06
+SUMMARY:RER E : Nanterre - Chelles 25/04 - 7/06
 DTSTART;TZID=Europe/Paris:20260524T224500
 DTEND;TZID=Europe/Paris:20260525T020000
 DTSTAMP:20260410T100000Z
@@ -2218,10 +2225,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : à partir de 22h45 D
  agny et Vaires-Torcy\, Renouvellement des appareils de voie\, de la voie e
  t du ballast à hauteur de Lagny-Thorigny\, Maintenance préventive des in
  stallations électriques\, de la signalisation et des caténaires).\n\nCau
- se : TRAVAUX
+ se : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 25/04 - 7/06
+SUMMARY:RER E : Nanterre - Chelles 25/04 - 7/06
 DTSTART;TZID=Europe/Paris:20260530T224500
 DTEND;TZID=Europe/Paris:20260531T020000
 DTSTAMP:20260410T100000Z
@@ -2243,10 +2250,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : à partir de 22h45 D
  agny et Vaires-Torcy\, Renouvellement des appareils de voie\, de la voie e
  t du ballast à hauteur de Lagny-Thorigny\, Maintenance préventive des in
  stallations électriques\, de la signalisation et des caténaires).\n\nCau
- se : TRAVAUX
+ se : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 25/04 - 7/06
+SUMMARY:RER E : Nanterre - Chelles 25/04 - 7/06
 DTSTART;TZID=Europe/Paris:20260531T224500
 DTEND;TZID=Europe/Paris:20260601T020000
 DTSTAMP:20260410T100000Z
@@ -2268,10 +2275,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : à partir de 22h45 D
  agny et Vaires-Torcy\, Renouvellement des appareils de voie\, de la voie e
  t du ballast à hauteur de Lagny-Thorigny\, Maintenance préventive des in
  stallations électriques\, de la signalisation et des caténaires).\n\nCau
- se : TRAVAUX
+ se : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 13 - 17/04
+SUMMARY:RER E : Nanterre – Villiers / Tournan 13 - 17/04
 DTSTART;TZID=Europe/Paris:20260413T222500
 DTEND;TZID=Europe/Paris:20260414T020000
 DTSTAMP:20260410T100000Z
@@ -2303,10 +2310,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  ent compte des travaux. Motif : travaux sur le réseau ferroviaire (Grand 
  Paris à Nogent-le-Perreux\, Accessibilité et modernisation de la gare Ro
  sny-Bois-Perrier\, Intervention de géométrie des appareils de voie\, Ins
- pection des infrastructures).\n\nCause : TRAVAUX
+ pection des infrastructures).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.f
+ r/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 13 - 17/04
+SUMMARY:RER E : Nanterre – Villiers / Tournan 13 - 17/04
 DTSTART;TZID=Europe/Paris:20260414T222500
 DTEND;TZID=Europe/Paris:20260415T020000
 DTSTAMP:20260410T100000Z
@@ -2338,10 +2346,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  ent compte des travaux. Motif : travaux sur le réseau ferroviaire (Grand 
  Paris à Nogent-le-Perreux\, Accessibilité et modernisation de la gare Ro
  sny-Bois-Perrier\, Intervention de géométrie des appareils de voie\, Ins
- pection des infrastructures).\n\nCause : TRAVAUX
+ pection des infrastructures).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.f
+ r/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 13 - 17/04
+SUMMARY:RER E : Nanterre – Villiers / Tournan 13 - 17/04
 DTSTART;TZID=Europe/Paris:20260415T222500
 DTEND;TZID=Europe/Paris:20260416T020000
 DTSTAMP:20260410T100000Z
@@ -2373,10 +2382,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  ent compte des travaux. Motif : travaux sur le réseau ferroviaire (Grand 
  Paris à Nogent-le-Perreux\, Accessibilité et modernisation de la gare Ro
  sny-Bois-Perrier\, Intervention de géométrie des appareils de voie\, Ins
- pection des infrastructures).\n\nCause : TRAVAUX
+ pection des infrastructures).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.f
+ r/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 13 - 17/04
+SUMMARY:RER E : Nanterre – Villiers / Tournan 13 - 17/04
 DTSTART;TZID=Europe/Paris:20260416T222500
 DTEND;TZID=Europe/Paris:20260417T020000
 DTSTAMP:20260410T100000Z
@@ -2408,10 +2418,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  ent compte des travaux. Motif : travaux sur le réseau ferroviaire (Grand 
  Paris à Nogent-le-Perreux\, Accessibilité et modernisation de la gare Ro
  sny-Bois-Perrier\, Intervention de géométrie des appareils de voie\, Ins
- pection des infrastructures).\n\nCause : TRAVAUX
+ pection des infrastructures).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.f
+ r/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 13 - 17/04
+SUMMARY:RER E : Nanterre – Villiers / Tournan 13 - 17/04
 DTSTART;TZID=Europe/Paris:20260417T222500
 DTEND;TZID=Europe/Paris:20260418T020000
 DTSTAMP:20260410T100000Z
@@ -2443,10 +2454,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  ent compte des travaux. Motif : travaux sur le réseau ferroviaire (Grand 
  Paris à Nogent-le-Perreux\, Accessibilité et modernisation de la gare Ro
  sny-Bois-Perrier\, Intervention de géométrie des appareils de voie\, Ins
- pection des infrastructures).\n\nCause : TRAVAUX
+ pection des infrastructures).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.f
+ r/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 6 - 17/04
+SUMMARY:RER E : Nanterre - Chelles 6 - 17/04
 DTSTART;TZID=Europe/Paris:20260413T224500
 DTEND;TZID=Europe/Paris:20260414T020000
 DTSTAMP:20260410T100000Z
@@ -2467,10 +2479,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  res du calculateur d'itinéraire tiennent compte des travaux. Motif : trav
  aux sur le réseau ferroviaire (Renouvellement de la voie entre Noisy-le-S
  ec et Vaires\, Maintenance préventive de la voie entre Paris et Noisy-le-
- Sec\, Grand Paris Express Chelles Gournay).\n\nCause : TRAVAUX
+ Sec\, Grand Paris Express Chelles Gournay).\n\nCause : TRAVAUX\n\nhttps://
+ travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 6 - 17/04
+SUMMARY:RER E : Nanterre - Chelles 6 - 17/04
 DTSTART;TZID=Europe/Paris:20260414T224500
 DTEND;TZID=Europe/Paris:20260415T020000
 DTSTAMP:20260410T100000Z
@@ -2491,10 +2504,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  res du calculateur d'itinéraire tiennent compte des travaux. Motif : trav
  aux sur le réseau ferroviaire (Renouvellement de la voie entre Noisy-le-S
  ec et Vaires\, Maintenance préventive de la voie entre Paris et Noisy-le-
- Sec\, Grand Paris Express Chelles Gournay).\n\nCause : TRAVAUX
+ Sec\, Grand Paris Express Chelles Gournay).\n\nCause : TRAVAUX\n\nhttps://
+ travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 6 - 17/04
+SUMMARY:RER E : Nanterre - Chelles 6 - 17/04
 DTSTART;TZID=Europe/Paris:20260415T224500
 DTEND;TZID=Europe/Paris:20260416T020000
 DTSTAMP:20260410T100000Z
@@ -2515,10 +2529,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  res du calculateur d'itinéraire tiennent compte des travaux. Motif : trav
  aux sur le réseau ferroviaire (Renouvellement de la voie entre Noisy-le-S
  ec et Vaires\, Maintenance préventive de la voie entre Paris et Noisy-le-
- Sec\, Grand Paris Express Chelles Gournay).\n\nCause : TRAVAUX
+ Sec\, Grand Paris Express Chelles Gournay).\n\nCause : TRAVAUX\n\nhttps://
+ travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 6 - 17/04
+SUMMARY:RER E : Nanterre - Chelles 6 - 17/04
 DTSTART;TZID=Europe/Paris:20260416T224500
 DTEND;TZID=Europe/Paris:20260417T020000
 DTSTAMP:20260410T100000Z
@@ -2539,10 +2554,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  res du calculateur d'itinéraire tiennent compte des travaux. Motif : trav
  aux sur le réseau ferroviaire (Renouvellement de la voie entre Noisy-le-S
  ec et Vaires\, Maintenance préventive de la voie entre Paris et Noisy-le-
- Sec\, Grand Paris Express Chelles Gournay).\n\nCause : TRAVAUX
+ Sec\, Grand Paris Express Chelles Gournay).\n\nCause : TRAVAUX\n\nhttps://
+ travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 6 - 17/04
+SUMMARY:RER E : Nanterre - Chelles 6 - 17/04
 DTSTART;TZID=Europe/Paris:20260417T224500
 DTEND;TZID=Europe/Paris:20260418T020000
 DTSTAMP:20260410T100000Z
@@ -2563,10 +2579,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  res du calculateur d'itinéraire tiennent compte des travaux. Motif : trav
  aux sur le réseau ferroviaire (Renouvellement de la voie entre Noisy-le-S
  ec et Vaires\, Maintenance préventive de la voie entre Paris et Noisy-le-
- Sec\, Grand Paris Express Chelles Gournay).\n\nCause : TRAVAUX
+ Sec\, Grand Paris Express Chelles Gournay).\n\nCause : TRAVAUX\n\nhttps://
+ travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260511T224500
 DTEND;TZID=Europe/Paris:20260512T020000
 DTSTAMP:20260410T100000Z
@@ -2584,10 +2601,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : en semaine à partir
  y. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
    Motif : travaux sur le réseau ferroviaire (Remplacement des rails\, Gr
  and Paris Express à Chelles Gournay\, Grand Paris à Nanterre-la-Folie).\
- n\nCause : TRAVAUX
+ n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260512T224500
 DTEND;TZID=Europe/Paris:20260513T020000
 DTSTAMP:20260410T100000Z
@@ -2605,10 +2622,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : en semaine à partir
  y. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
    Motif : travaux sur le réseau ferroviaire (Remplacement des rails\, Gr
  and Paris Express à Chelles Gournay\, Grand Paris à Nanterre-la-Folie).\
- n\nCause : TRAVAUX
+ n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260513T224500
 DTEND;TZID=Europe/Paris:20260514T020000
 DTSTAMP:20260410T100000Z
@@ -2626,10 +2643,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : en semaine à partir
  y. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
    Motif : travaux sur le réseau ferroviaire (Remplacement des rails\, Gr
  and Paris Express à Chelles Gournay\, Grand Paris à Nanterre-la-Folie).\
- n\nCause : TRAVAUX
+ n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260514T224500
 DTEND;TZID=Europe/Paris:20260515T020000
 DTSTAMP:20260410T100000Z
@@ -2647,10 +2664,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : en semaine à partir
  y. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
    Motif : travaux sur le réseau ferroviaire (Remplacement des rails\, Gr
  and Paris Express à Chelles Gournay\, Grand Paris à Nanterre-la-Folie).\
- n\nCause : TRAVAUX
+ n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260515T224500
 DTEND;TZID=Europe/Paris:20260516T020000
 DTSTAMP:20260410T100000Z
@@ -2668,10 +2685,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : en semaine à partir
  y. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
    Motif : travaux sur le réseau ferroviaire (Remplacement des rails\, Gr
  and Paris Express à Chelles Gournay\, Grand Paris à Nanterre-la-Folie).\
- n\nCause : TRAVAUX
+ n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260518T224500
 DTEND;TZID=Europe/Paris:20260519T020000
 DTSTAMP:20260410T100000Z
@@ -2689,10 +2706,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : en semaine à partir
  y. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
    Motif : travaux sur le réseau ferroviaire (Remplacement des rails\, Gr
  and Paris Express à Chelles Gournay\, Grand Paris à Nanterre-la-Folie).\
- n\nCause : TRAVAUX
+ n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260519T224500
 DTEND;TZID=Europe/Paris:20260520T020000
 DTSTAMP:20260410T100000Z
@@ -2710,10 +2727,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : en semaine à partir
  y. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
    Motif : travaux sur le réseau ferroviaire (Remplacement des rails\, Gr
  and Paris Express à Chelles Gournay\, Grand Paris à Nanterre-la-Folie).\
- n\nCause : TRAVAUX
+ n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260520T224500
 DTEND;TZID=Europe/Paris:20260521T020000
 DTSTAMP:20260410T100000Z
@@ -2731,10 +2748,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : en semaine à partir
  y. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
    Motif : travaux sur le réseau ferroviaire (Remplacement des rails\, Gr
  and Paris Express à Chelles Gournay\, Grand Paris à Nanterre-la-Folie).\
- n\nCause : TRAVAUX
+ n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260521T224500
 DTEND;TZID=Europe/Paris:20260522T020000
 DTSTAMP:20260410T100000Z
@@ -2752,10 +2769,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : en semaine à partir
  y. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
    Motif : travaux sur le réseau ferroviaire (Remplacement des rails\, Gr
  and Paris Express à Chelles Gournay\, Grand Paris à Nanterre-la-Folie).\
- n\nCause : TRAVAUX
+ n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260522T224500
 DTEND;TZID=Europe/Paris:20260523T020000
 DTSTAMP:20260410T100000Z
@@ -2773,10 +2790,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : en semaine à partir
  y. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
    Motif : travaux sur le réseau ferroviaire (Remplacement des rails\, Gr
  and Paris Express à Chelles Gournay\, Grand Paris à Nanterre-la-Folie).\
- n\nCause : TRAVAUX
+ n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260525T224500
 DTEND;TZID=Europe/Paris:20260526T020000
 DTSTAMP:20260410T100000Z
@@ -2794,10 +2811,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : en semaine à partir
  y. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
    Motif : travaux sur le réseau ferroviaire (Remplacement des rails\, Gr
  and Paris Express à Chelles Gournay\, Grand Paris à Nanterre-la-Folie).\
- n\nCause : TRAVAUX
+ n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260526T224500
 DTEND;TZID=Europe/Paris:20260527T020000
 DTSTAMP:20260410T100000Z
@@ -2815,10 +2832,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : en semaine à partir
  y. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
    Motif : travaux sur le réseau ferroviaire (Remplacement des rails\, Gr
  and Paris Express à Chelles Gournay\, Grand Paris à Nanterre-la-Folie).\
- n\nCause : TRAVAUX
+ n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260527T224500
 DTEND;TZID=Europe/Paris:20260528T020000
 DTSTAMP:20260410T100000Z
@@ -2836,10 +2853,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : en semaine à partir
  y. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
    Motif : travaux sur le réseau ferroviaire (Remplacement des rails\, Gr
  and Paris Express à Chelles Gournay\, Grand Paris à Nanterre-la-Folie).\
- n\nCause : TRAVAUX
+ n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260528T224500
 DTEND;TZID=Europe/Paris:20260529T020000
 DTSTAMP:20260410T100000Z
@@ -2857,10 +2874,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : en semaine à partir
  y. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
    Motif : travaux sur le réseau ferroviaire (Remplacement des rails\, Gr
  and Paris Express à Chelles Gournay\, Grand Paris à Nanterre-la-Folie).\
- n\nCause : TRAVAUX
+ n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260529T224500
 DTEND;TZID=Europe/Paris:20260530T020000
 DTSTAMP:20260410T100000Z
@@ -2878,10 +2895,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : en semaine à partir
  y. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
    Motif : travaux sur le réseau ferroviaire (Remplacement des rails\, Gr
  and Paris Express à Chelles Gournay\, Grand Paris à Nanterre-la-Folie).\
- n\nCause : TRAVAUX
+ n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260601T224500
 DTEND;TZID=Europe/Paris:20260602T020000
 DTSTAMP:20260410T100000Z
@@ -2899,10 +2916,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : en semaine à partir
  y. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
    Motif : travaux sur le réseau ferroviaire (Remplacement des rails\, Gr
  and Paris Express à Chelles Gournay\, Grand Paris à Nanterre-la-Folie).\
- n\nCause : TRAVAUX
+ n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260602T224500
 DTEND;TZID=Europe/Paris:20260603T020000
 DTSTAMP:20260410T100000Z
@@ -2920,10 +2937,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : en semaine à partir
  y. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
    Motif : travaux sur le réseau ferroviaire (Remplacement des rails\, Gr
  and Paris Express à Chelles Gournay\, Grand Paris à Nanterre-la-Folie).\
- n\nCause : TRAVAUX
+ n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260603T224500
 DTEND;TZID=Europe/Paris:20260604T020000
 DTSTAMP:20260410T100000Z
@@ -2941,10 +2958,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : en semaine à partir
  y. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
    Motif : travaux sur le réseau ferroviaire (Remplacement des rails\, Gr
  and Paris Express à Chelles Gournay\, Grand Paris à Nanterre-la-Folie).\
- n\nCause : TRAVAUX
+ n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260604T224500
 DTEND;TZID=Europe/Paris:20260605T020000
 DTSTAMP:20260410T100000Z
@@ -2962,10 +2979,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : en semaine à partir
  y. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
    Motif : travaux sur le réseau ferroviaire (Remplacement des rails\, Gr
  and Paris Express à Chelles Gournay\, Grand Paris à Nanterre-la-Folie).\
- n\nCause : TRAVAUX
+ n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260605T224500
 DTEND;TZID=Europe/Paris:20260606T020000
 DTSTAMP:20260410T100000Z
@@ -2983,10 +3000,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : en semaine à partir
  y. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
    Motif : travaux sur le réseau ferroviaire (Remplacement des rails\, Gr
  and Paris Express à Chelles Gournay\, Grand Paris à Nanterre-la-Folie).\
- n\nCause : TRAVAUX
+ n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260427T224500
 DTEND;TZID=Europe/Paris:20260428T020000
 DTSTAMP:20260410T100000Z
@@ -3007,10 +3024,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  de Chelles Gournay. Les horaires du calculateur d'itinéraire tiennent com
  pte des travaux.  Motif : travaux sur le réseau ferroviaire (Remplacemen
  t des rails\, Grand Paris Express à Chelles Gournay\, Grand Paris à Nant
- erre-la-Folie).\n\nCause : TRAVAUX
+ erre-la-Folie).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260428T224500
 DTEND;TZID=Europe/Paris:20260429T020000
 DTSTAMP:20260410T100000Z
@@ -3031,10 +3048,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  de Chelles Gournay. Les horaires du calculateur d'itinéraire tiennent com
  pte des travaux.  Motif : travaux sur le réseau ferroviaire (Remplacemen
  t des rails\, Grand Paris Express à Chelles Gournay\, Grand Paris à Nant
- erre-la-Folie).\n\nCause : TRAVAUX
+ erre-la-Folie).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260429T224500
 DTEND;TZID=Europe/Paris:20260430T020000
 DTSTAMP:20260410T100000Z
@@ -3055,10 +3072,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  de Chelles Gournay. Les horaires du calculateur d'itinéraire tiennent com
  pte des travaux.  Motif : travaux sur le réseau ferroviaire (Remplacemen
  t des rails\, Grand Paris Express à Chelles Gournay\, Grand Paris à Nant
- erre-la-Folie).\n\nCause : TRAVAUX
+ erre-la-Folie).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260430T224500
 DTEND;TZID=Europe/Paris:20260501T020000
 DTSTAMP:20260410T100000Z
@@ -3079,10 +3096,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  de Chelles Gournay. Les horaires du calculateur d'itinéraire tiennent com
  pte des travaux.  Motif : travaux sur le réseau ferroviaire (Remplacemen
  t des rails\, Grand Paris Express à Chelles Gournay\, Grand Paris à Nant
- erre-la-Folie).\n\nCause : TRAVAUX
+ erre-la-Folie).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 27/04 - 5/06
+SUMMARY:RER E : Nanterre - Chelles 27/04 - 5/06
 DTSTART;TZID=Europe/Paris:20260501T224500
 DTEND;TZID=Europe/Paris:20260502T020000
 DTSTAMP:20260410T100000Z
@@ -3103,10 +3120,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  de Chelles Gournay. Les horaires du calculateur d'itinéraire tiennent com
  pte des travaux.  Motif : travaux sur le réseau ferroviaire (Remplacemen
  t des rails\, Grand Paris Express à Chelles Gournay\, Grand Paris à Nant
- erre-la-Folie).\n\nCause : TRAVAUX
+ erre-la-Folie).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 20/04 - 24/04
+SUMMARY:RER E : Nanterre – Villiers / Tournan 20/04 - 24/04
 DTSTART;TZID=Europe/Paris:20260420T215500
 DTEND;TZID=Europe/Paris:20260421T020000
 DTSTAMP:20260410T100000Z
@@ -3137,10 +3154,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  pour destination Gare de l'Est. Les horaires du calculateur d'itinéraire 
  tiennent compte des travaux. Motif : travaux sur le réseau ferroviaire (C
  DG Express\, Accessibilité et modernisation de la gare Rosny-Bois-Perrier
- \, Maintenance curative de la voie).\n\nCause : TRAVAUX
+ \, Maintenance curative de la voie).\n\nCause : TRAVAUX\n\nhttps://travaux
+ metro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 20/04 - 24/04
+SUMMARY:RER E : Nanterre – Villiers / Tournan 20/04 - 24/04
 DTSTART;TZID=Europe/Paris:20260421T215500
 DTEND;TZID=Europe/Paris:20260422T020000
 DTSTAMP:20260410T100000Z
@@ -3171,10 +3189,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  pour destination Gare de l'Est. Les horaires du calculateur d'itinéraire 
  tiennent compte des travaux. Motif : travaux sur le réseau ferroviaire (C
  DG Express\, Accessibilité et modernisation de la gare Rosny-Bois-Perrier
- \, Maintenance curative de la voie).\n\nCause : TRAVAUX
+ \, Maintenance curative de la voie).\n\nCause : TRAVAUX\n\nhttps://travaux
+ metro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 20/04 - 24/04
+SUMMARY:RER E : Nanterre – Villiers / Tournan 20/04 - 24/04
 DTSTART;TZID=Europe/Paris:20260422T215500
 DTEND;TZID=Europe/Paris:20260423T020000
 DTSTAMP:20260410T100000Z
@@ -3205,10 +3224,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  pour destination Gare de l'Est. Les horaires du calculateur d'itinéraire 
  tiennent compte des travaux. Motif : travaux sur le réseau ferroviaire (C
  DG Express\, Accessibilité et modernisation de la gare Rosny-Bois-Perrier
- \, Maintenance curative de la voie).\n\nCause : TRAVAUX
+ \, Maintenance curative de la voie).\n\nCause : TRAVAUX\n\nhttps://travaux
+ metro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 20/04 - 24/04
+SUMMARY:RER E : Nanterre – Villiers / Tournan 20/04 - 24/04
 DTSTART;TZID=Europe/Paris:20260423T215500
 DTEND;TZID=Europe/Paris:20260424T020000
 DTSTAMP:20260410T100000Z
@@ -3239,10 +3259,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  pour destination Gare de l'Est. Les horaires du calculateur d'itinéraire 
  tiennent compte des travaux. Motif : travaux sur le réseau ferroviaire (C
  DG Express\, Accessibilité et modernisation de la gare Rosny-Bois-Perrier
- \, Maintenance curative de la voie).\n\nCause : TRAVAUX
+ \, Maintenance curative de la voie).\n\nCause : TRAVAUX\n\nhttps://travaux
+ metro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 20/04 - 24/04
+SUMMARY:RER E : Nanterre – Villiers / Tournan 20/04 - 24/04
 DTSTART;TZID=Europe/Paris:20260424T215500
 DTEND;TZID=Europe/Paris:20260425T020000
 DTSTAMP:20260410T100000Z
@@ -3273,10 +3294,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  pour destination Gare de l'Est. Les horaires du calculateur d'itinéraire 
  tiennent compte des travaux. Motif : travaux sur le réseau ferroviaire (C
  DG Express\, Accessibilité et modernisation de la gare Rosny-Bois-Perrier
- \, Maintenance curative de la voie).\n\nCause : TRAVAUX
+ \, Maintenance curative de la voie).\n\nCause : TRAVAUX\n\nhttps://travaux
+ metro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 25/04 - 7/06
+SUMMARY:RER E : Nanterre - Chelles 25/04 - 7/06
 DTSTART;TZID=Europe/Paris:20260510T224500
 DTEND;TZID=Europe/Paris:20260511T020000
 DTSTAMP:20260410T100000Z
@@ -3298,10 +3320,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : à partir de 22h45 D
  agny et Vaires-Torcy\, Renouvellement des appareils de voie\, de la voie e
  t du ballast à hauteur de Lagny-Thorigny\, Maintenance préventive des in
  stallations électriques\, de la signalisation et des caténaires).\n\nCau
- se : TRAVAUX
+ se : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 25/04 - 7/06
+SUMMARY:RER E : Nanterre - Chelles 25/04 - 7/06
 DTSTART;TZID=Europe/Paris:20260517T224500
 DTEND;TZID=Europe/Paris:20260518T020000
 DTSTAMP:20260410T100000Z
@@ -3323,10 +3345,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : à partir de 22h45 D
  agny et Vaires-Torcy\, Renouvellement des appareils de voie\, de la voie e
  t du ballast à hauteur de Lagny-Thorigny\, Maintenance préventive des in
  stallations électriques\, de la signalisation et des caténaires).\n\nCau
- se : TRAVAUX
+ se : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 6 - 17/04
+SUMMARY:RER E : Nanterre - Chelles 6 - 17/04
 DTSTART;TZID=Europe/Paris:20260406T224500
 DTEND;TZID=Europe/Paris:20260407T020000
 DTSTAMP:20260410T100000Z
@@ -3347,10 +3369,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  res du calculateur d'itinéraire tiennent compte des travaux. Motif : trav
  aux sur le réseau ferroviaire (Renouvellement de la voie entre Noisy-le-S
  ec et Vaires\, Maintenance préventive de la voie entre Paris et Noisy-le-
- Sec\, Grand Paris Express Chelles Gournay).\n\nCause : TRAVAUX
+ Sec\, Grand Paris Express Chelles Gournay).\n\nCause : TRAVAUX\n\nhttps://
+ travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 6 - 17/04
+SUMMARY:RER E : Nanterre - Chelles 6 - 17/04
 DTSTART;TZID=Europe/Paris:20260407T224500
 DTEND;TZID=Europe/Paris:20260408T020000
 DTSTAMP:20260410T100000Z
@@ -3371,10 +3394,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  res du calculateur d'itinéraire tiennent compte des travaux. Motif : trav
  aux sur le réseau ferroviaire (Renouvellement de la voie entre Noisy-le-S
  ec et Vaires\, Maintenance préventive de la voie entre Paris et Noisy-le-
- Sec\, Grand Paris Express Chelles Gournay).\n\nCause : TRAVAUX
+ Sec\, Grand Paris Express Chelles Gournay).\n\nCause : TRAVAUX\n\nhttps://
+ travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 25/04 - 7/06
+SUMMARY:RER E : Nanterre - Chelles 25/04 - 7/06
 DTSTART;TZID=Europe/Paris:20260425T224500
 DTEND;TZID=Europe/Paris:20260426T020000
 DTSTAMP:20260410T100000Z
@@ -3399,10 +3423,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  ntre Le Chénay-Gagny et Vaires-Torcy\, Renouvellement des appareils de vo
  ie\, de la voie et du ballast à hauteur de Lagny-Thorigny\, Maintenance p
  réventive des installations électriques\, de la signalisation et des cat
- énaires).\n\nCause : TRAVAUX
+ énaires).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 25/04 - 7/06
+SUMMARY:RER E : Nanterre - Chelles 25/04 - 7/06
 DTSTART;TZID=Europe/Paris:20260502T224500
 DTEND;TZID=Europe/Paris:20260503T020000
 DTSTAMP:20260410T100000Z
@@ -3427,10 +3451,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  ntre Le Chénay-Gagny et Vaires-Torcy\, Renouvellement des appareils de vo
  ie\, de la voie et du ballast à hauteur de Lagny-Thorigny\, Maintenance p
  réventive des installations électriques\, de la signalisation et des cat
- énaires).\n\nCause : TRAVAUX
+ énaires).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 23/03 - 10/04
+SUMMARY:RER E : Nanterre – Villiers / Tournan 23/03 - 10/04
 DTSTART;TZID=Europe/Paris:20260406T215500
 DTEND;TZID=Europe/Paris:20260407T020000
 DTSTAMP:20260410T100000Z
@@ -3470,10 +3494,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  lateur d'itinéraire tiennent compte des travaux. Motif : travaux sur le r
  éseau ferroviaire (Remplacement des rails et du ballast à grand rendemen
  t\, Accèssibilité et modernisation de la gare Rosny-Bois-Perrier\, CDG E
- xpress\, Grand Paris à Nogent-le-Perreux).\n\nCause : TRAVAUX
+ xpress\, Grand Paris à Nogent-le-Perreux).\n\nCause : TRAVAUX\n\nhttps://
+ travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 23/03 - 10/04
+SUMMARY:RER E : Nanterre – Villiers / Tournan 23/03 - 10/04
 DTSTART;TZID=Europe/Paris:20260407T215500
 DTEND;TZID=Europe/Paris:20260408T020000
 DTSTAMP:20260410T100000Z
@@ -3513,10 +3538,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  lateur d'itinéraire tiennent compte des travaux. Motif : travaux sur le r
  éseau ferroviaire (Remplacement des rails et du ballast à grand rendemen
  t\, Accèssibilité et modernisation de la gare Rosny-Bois-Perrier\, CDG E
- xpress\, Grand Paris à Nogent-le-Perreux).\n\nCause : TRAVAUX
+ xpress\, Grand Paris à Nogent-le-Perreux).\n\nCause : TRAVAUX\n\nhttps://
+ travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 23/03 - 10/04
+SUMMARY:RER E : Nanterre – Villiers / Tournan 23/03 - 10/04
 DTSTART;TZID=Europe/Paris:20260408T215500
 DTEND;TZID=Europe/Paris:20260409T020000
 DTSTAMP:20260410T100000Z
@@ -3556,10 +3582,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  lateur d'itinéraire tiennent compte des travaux. Motif : travaux sur le r
  éseau ferroviaire (Remplacement des rails et du ballast à grand rendemen
  t\, Accèssibilité et modernisation de la gare Rosny-Bois-Perrier\, CDG E
- xpress\, Grand Paris à Nogent-le-Perreux).\n\nCause : TRAVAUX
+ xpress\, Grand Paris à Nogent-le-Perreux).\n\nCause : TRAVAUX\n\nhttps://
+ travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 23/03 - 10/04
+SUMMARY:RER E : Nanterre – Villiers / Tournan 23/03 - 10/04
 DTSTART;TZID=Europe/Paris:20260409T215500
 DTEND;TZID=Europe/Paris:20260410T020000
 DTSTAMP:20260410T100000Z
@@ -3599,10 +3626,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  lateur d'itinéraire tiennent compte des travaux. Motif : travaux sur le r
  éseau ferroviaire (Remplacement des rails et du ballast à grand rendemen
  t\, Accèssibilité et modernisation de la gare Rosny-Bois-Perrier\, CDG E
- xpress\, Grand Paris à Nogent-le-Perreux).\n\nCause : TRAVAUX
+ xpress\, Grand Paris à Nogent-le-Perreux).\n\nCause : TRAVAUX\n\nhttps://
+ travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre – Villiers / Tournan 23/03 - 10/04
+SUMMARY:RER E : Nanterre – Villiers / Tournan 23/03 - 10/04
 DTSTART;TZID=Europe/Paris:20260410T215500
 DTEND;TZID=Europe/Paris:20260411T020000
 DTSTAMP:20260410T100000Z
@@ -3642,10 +3670,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  lateur d'itinéraire tiennent compte des travaux. Motif : travaux sur le r
  éseau ferroviaire (Remplacement des rails et du ballast à grand rendemen
  t\, Accèssibilité et modernisation de la gare Rosny-Bois-Perrier\, CDG E
- xpress\, Grand Paris à Nogent-le-Perreux).\n\nCause : TRAVAUX
+ xpress\, Grand Paris à Nogent-le-Perreux).\n\nCause : TRAVAUX\n\nhttps://
+ travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 8 - 10/04
+SUMMARY:RER E : Nanterre - Chelles 8 - 10/04
 DTSTART;TZID=Europe/Paris:20260408T221500
 DTEND;TZID=Europe/Paris:20260409T020000
 DTSTAMP:20260410T100000Z
@@ -3665,10 +3694,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  s bus à destination de Chelles Gournay. Les horaires du calculateur d'iti
  néraire tiennent compte des travaux. Motif : travaux sur le réseau ferro
  viaire (Grand Paris Express Chelles Gournay\, Maintenance de la voie entre
-  Noisy-le-Sec et Château-Thierry).\n\nCause : TRAVAUX
+  Noisy-le-Sec et Château-Thierry).\n\nCause : TRAVAUX\n\nhttps://travauxm
+ etro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 8 - 10/04
+SUMMARY:RER E : Nanterre - Chelles 8 - 10/04
 DTSTART;TZID=Europe/Paris:20260409T221500
 DTEND;TZID=Europe/Paris:20260410T020000
 DTSTAMP:20260410T100000Z
@@ -3688,10 +3718,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  s bus à destination de Chelles Gournay. Les horaires du calculateur d'iti
  néraire tiennent compte des travaux. Motif : travaux sur le réseau ferro
  viaire (Grand Paris Express Chelles Gournay\, Maintenance de la voie entre
-  Noisy-le-Sec et Château-Thierry).\n\nCause : TRAVAUX
+  Noisy-le-Sec et Château-Thierry).\n\nCause : TRAVAUX\n\nhttps://travauxm
+ etro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 8 - 10/04
+SUMMARY:RER E : Nanterre - Chelles 8 - 10/04
 DTSTART;TZID=Europe/Paris:20260410T221500
 DTEND;TZID=Europe/Paris:20260411T020000
 DTSTAMP:20260410T100000Z
@@ -3711,10 +3742,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  s bus à destination de Chelles Gournay. Les horaires du calculateur d'iti
  néraire tiennent compte des travaux. Motif : travaux sur le réseau ferro
  viaire (Grand Paris Express Chelles Gournay\, Maintenance de la voie entre
-  Noisy-le-Sec et Château-Thierry).\n\nCause : TRAVAUX
+  Noisy-le-Sec et Château-Thierry).\n\nCause : TRAVAUX\n\nhttps://travauxm
+ etro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 4 - 8/05
+SUMMARY:RER E : Nanterre - Chelles 4 - 8/05
 DTSTART;TZID=Europe/Paris:20260504T214500
 DTEND;TZID=Europe/Paris:20260505T020000
 DTSTAMP:20260410T100000Z
@@ -3734,10 +3766,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
   destination de Chelles Gournay. Les horaires du calculateur d'itinéraire
   tiennent compte des travaux. Motif : travaux sur le réseau ferroviaire (
  Grand Paris Express Chelles Gournay\, Remplacement de la voie à grand ren
- dement).\n\nCause : TRAVAUX
+ dement).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 4 - 8/05
+SUMMARY:RER E : Nanterre - Chelles 4 - 8/05
 DTSTART;TZID=Europe/Paris:20260505T214500
 DTEND;TZID=Europe/Paris:20260506T020000
 DTSTAMP:20260410T100000Z
@@ -3757,10 +3789,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
   destination de Chelles Gournay. Les horaires du calculateur d'itinéraire
   tiennent compte des travaux. Motif : travaux sur le réseau ferroviaire (
  Grand Paris Express Chelles Gournay\, Remplacement de la voie à grand ren
- dement).\n\nCause : TRAVAUX
+ dement).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 4 - 8/05
+SUMMARY:RER E : Nanterre - Chelles 4 - 8/05
 DTSTART;TZID=Europe/Paris:20260506T214500
 DTEND;TZID=Europe/Paris:20260507T020000
 DTSTAMP:20260410T100000Z
@@ -3780,10 +3812,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
   destination de Chelles Gournay. Les horaires du calculateur d'itinéraire
   tiennent compte des travaux. Motif : travaux sur le réseau ferroviaire (
  Grand Paris Express Chelles Gournay\, Remplacement de la voie à grand ren
- dement).\n\nCause : TRAVAUX
+ dement).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 4 - 8/05
+SUMMARY:RER E : Nanterre - Chelles 4 - 8/05
 DTSTART;TZID=Europe/Paris:20260507T214500
 DTEND;TZID=Europe/Paris:20260508T020000
 DTSTAMP:20260410T100000Z
@@ -3803,10 +3835,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
   destination de Chelles Gournay. Les horaires du calculateur d'itinéraire
   tiennent compte des travaux. Motif : travaux sur le réseau ferroviaire (
  Grand Paris Express Chelles Gournay\, Remplacement de la voie à grand ren
- dement).\n\nCause : TRAVAUX
+ dement).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 4 - 8/05
+SUMMARY:RER E : Nanterre - Chelles 4 - 8/05
 DTSTART;TZID=Europe/Paris:20260508T214500
 DTEND;TZID=Europe/Paris:20260509T020000
 DTSTAMP:20260410T100000Z
@@ -3826,10 +3858,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
   destination de Chelles Gournay. Les horaires du calculateur d'itinéraire
   tiennent compte des travaux. Motif : travaux sur le réseau ferroviaire (
  Grand Paris Express Chelles Gournay\, Remplacement de la voie à grand ren
- dement).\n\nCause : TRAVAUX
+ dement).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 6 - 10/04
+SUMMARY:RER E : Nanterre - Chelles 6 - 10/04
 DTSTART;TZID=Europe/Paris:20260406T080000
 DTEND;TZID=Europe/Paris:20260406T161500
 DTSTAMP:20260410T100000Z
@@ -3845,10 +3877,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  rnay vers Nanterre-la-Folie.  Les horaires de certains trains sont avanc
  és jusqu'à 2 minutes.  Les horaires du calculateur d'itinéraire tienne
  nt compte des travaux. Motif : travaux sur le réseau ferroviaire (mainten
- ance de la voie et des installations électriques).\n\nCause : TRAVAUX
+ ance de la voie et des installations électriques).\n\nCause : TRAVAUX\n\n
+ https://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 6 - 10/04
+SUMMARY:RER E : Nanterre - Chelles 6 - 10/04
 DTSTART;TZID=Europe/Paris:20260407T080000
 DTEND;TZID=Europe/Paris:20260407T161500
 DTSTAMP:20260410T100000Z
@@ -3864,10 +3897,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  rnay vers Nanterre-la-Folie.  Les horaires de certains trains sont avanc
  és jusqu'à 2 minutes.  Les horaires du calculateur d'itinéraire tienne
  nt compte des travaux. Motif : travaux sur le réseau ferroviaire (mainten
- ance de la voie et des installations électriques).\n\nCause : TRAVAUX
+ ance de la voie et des installations électriques).\n\nCause : TRAVAUX\n\n
+ https://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 6 - 10/04
+SUMMARY:RER E : Nanterre - Chelles 6 - 10/04
 DTSTART;TZID=Europe/Paris:20260408T080000
 DTEND;TZID=Europe/Paris:20260408T161500
 DTSTAMP:20260410T100000Z
@@ -3883,10 +3917,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  rnay vers Nanterre-la-Folie.  Les horaires de certains trains sont avanc
  és jusqu'à 2 minutes.  Les horaires du calculateur d'itinéraire tienne
  nt compte des travaux. Motif : travaux sur le réseau ferroviaire (mainten
- ance de la voie et des installations électriques).\n\nCause : TRAVAUX
+ ance de la voie et des installations électriques).\n\nCause : TRAVAUX\n\n
+ https://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 6 - 10/04
+SUMMARY:RER E : Nanterre - Chelles 6 - 10/04
 DTSTART;TZID=Europe/Paris:20260409T080000
 DTEND;TZID=Europe/Paris:20260409T161500
 DTSTAMP:20260410T100000Z
@@ -3902,10 +3937,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  rnay vers Nanterre-la-Folie.  Les horaires de certains trains sont avanc
  és jusqu'à 2 minutes.  Les horaires du calculateur d'itinéraire tienne
  nt compte des travaux. Motif : travaux sur le réseau ferroviaire (mainten
- ance de la voie et des installations électriques).\n\nCause : TRAVAUX
+ ance de la voie et des installations électriques).\n\nCause : TRAVAUX\n\n
+ https://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Nanterre - Chelles 6 - 10/04
+SUMMARY:RER E : Nanterre - Chelles 6 - 10/04
 DTSTART;TZID=Europe/Paris:20260410T080000
 DTEND;TZID=Europe/Paris:20260410T161500
 DTSTAMP:20260410T100000Z
@@ -3921,10 +3957,11 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Na
  rnay vers Nanterre-la-Folie.  Les horaires de certains trains sont avanc
  és jusqu'à 2 minutes.  Les horaires du calculateur d'itinéraire tienne
  nt compte des travaux. Motif : travaux sur le réseau ferroviaire (mainten
- ance de la voie et des installations électriques).\n\nCause : TRAVAUX
+ ance de la voie et des installations électriques).\n\nCause : TRAVAUX\n\n
+ https://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : Villiers - Nanterre 3/05
+SUMMARY:RER E : Villiers - Nanterre 3/05
 DTSTART;TZID=Europe/Paris:20260503T220000
 DTEND;TZID=Europe/Paris:20260503T223500
 DTSTAMP:20260410T100000Z
@@ -3943,10 +3980,10 @@ DESCRIPTION:Ligne E\n\nStations : Magenta\, Noisy-le-Sec\, Rosa Parks\, Vi
  ris Est à partir de 23h10. Les horaires du calculateur d'itinéraire tien
  nent compte des travaux. Motif : travaux sur le réseau ferroviaire (trava
  ux spécifiques EOLE pour le prolongement du RER E vers l'ouest jusqu'à M
- antes-la-Jolie).\n\nCause : TRAVAUX
+ antes-la-Jolie).\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : ensemble de la ligne 3/05
+SUMMARY:RER E : ensemble de la ligne 3/05
 DTSTART;TZID=Europe/Paris:20260503T231000
 DTEND;TZID=Europe/Paris:20260504T020000
 DTSTAMP:20260410T100000Z
@@ -3970,10 +4007,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : à partir de 23h10 D
  de Tournan). Les horaires du calculateur d'itinéraire tiennent compte des
   travaux. Motif : travaux sur le réseau ferroviaire (travaux spécifiques
   EOLE pour le prolongement du RER E vers l'ouest jusqu'à Mantes-la-Jolie)
- .\n\nCause : TRAVAUX
+ .\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : ensemble de la ligne 7 - 10/04
+SUMMARY:RER E : ensemble de la ligne 7 - 10/04
 DTSTART;TZID=Europe/Paris:20260407T095000
 DTEND;TZID=Europe/Paris:20260407T152000
 DTSTAMP:20260410T100000Z
@@ -3984,10 +4021,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : de 9h50 à 15h20 Dat
   ou retardés de Nanterre-la-Folie à Chelles Gournay \, Villiers-sur-Marn
  e et Tournan.  Les horaires du calculateur d'itinéraire tiennent compte 
  des travaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : TRAVAU
- X
+ X\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : ensemble de la ligne 7 - 10/04
+SUMMARY:RER E : ensemble de la ligne 7 - 10/04
 DTSTART;TZID=Europe/Paris:20260408T095000
 DTEND;TZID=Europe/Paris:20260408T152000
 DTSTAMP:20260410T100000Z
@@ -3998,10 +4035,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : de 9h50 à 15h20 Dat
   ou retardés de Nanterre-la-Folie à Chelles Gournay \, Villiers-sur-Marn
  e et Tournan.  Les horaires du calculateur d'itinéraire tiennent compte 
  des travaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : TRAVAU
- X
+ X\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : ensemble de la ligne 7 - 10/04
+SUMMARY:RER E : ensemble de la ligne 7 - 10/04
 DTSTART;TZID=Europe/Paris:20260409T095000
 DTEND;TZID=Europe/Paris:20260409T152000
 DTSTAMP:20260410T100000Z
@@ -4012,10 +4049,10 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : de 9h50 à 15h20 Dat
   ou retardés de Nanterre-la-Folie à Chelles Gournay \, Villiers-sur-Marn
  e et Tournan.  Les horaires du calculateur d'itinéraire tiennent compte 
  des travaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : TRAVAU
- X
+ X\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER E — RER E : ensemble de la ligne 7 - 10/04
+SUMMARY:RER E : ensemble de la ligne 7 - 10/04
 DTSTART;TZID=Europe/Paris:20260410T095000
 DTEND;TZID=Europe/Paris:20260410T152000
 DTSTAMP:20260410T100000Z
@@ -4026,6 +4063,6 @@ DESCRIPTION:Ligne E\n\nTrafic perturbé\n\nPériode : de 9h50 à 15h20 Dat
   ou retardés de Nanterre-la-Folie à Chelles Gournay \, Villiers-sur-Marn
  e et Tournan.  Les horaires du calculateur d'itinéraire tiennent compte 
  des travaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : TRAVAU
- X
+ X\n\nhttps://travauxmetro.fr/
 END:VEVENT
 END:VCALENDAR

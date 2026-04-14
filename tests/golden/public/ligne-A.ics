@@ -12,8 +12,7 @@ X-APPLE-CALENDAR-COLOR:#E3051C
 X-PUBLISHED-TTL:PT12H
 X-WR-TIMEZONE:Europe/Paris
 BEGIN:VEVENT
-SUMMARY:RER A — RER A:Nanterre-P <->Achères-Ville et Nanterre-P<->Poiss
- y 04-06/05
+SUMMARY:RER A:Nanterre-P <->Achères-Ville et Nanterre-P<->Poissy 04-06/05
 DTSTART;TZID=Europe/Paris:20260504T221500
 DTEND;TZID=Europe/Paris:20260505T020000
 DTSTAMP:20260410T100000Z
@@ -28,11 +27,11 @@ DESCRIPTION:Ligne A\n\nStations : Achères Grand Cormier\, Maisons-Laffitt
   à Paris Saint-Lazare. La ligne L est exceptionnellement  prolongée ent
  re Maisons-Laffitte et Poissy. Des trains navettes seront mis en place ent
  re Poissy et Cergy–Le Haut. Les horaires du calculateur d'itinéraire ti
- ennent compte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ ennent compte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://
+ travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A:Nanterre-P <->Achères-Ville et Nanterre-P<->Poiss
- y 04-06/05
+SUMMARY:RER A:Nanterre-P <->Achères-Ville et Nanterre-P<->Poissy 04-06/05
 DTSTART;TZID=Europe/Paris:20260505T221500
 DTEND;TZID=Europe/Paris:20260506T020000
 DTSTAMP:20260410T100000Z
@@ -47,11 +46,11 @@ DESCRIPTION:Ligne A\n\nStations : Achères Grand Cormier\, Maisons-Laffitt
   à Paris Saint-Lazare. La ligne L est exceptionnellement  prolongée ent
  re Maisons-Laffitte et Poissy. Des trains navettes seront mis en place ent
  re Poissy et Cergy–Le Haut. Les horaires du calculateur d'itinéraire ti
- ennent compte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ ennent compte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://
+ travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A:Nanterre-P <->Achères-Ville et Nanterre-P<->Poiss
- y 04-06/05
+SUMMARY:RER A:Nanterre-P <->Achères-Ville et Nanterre-P<->Poissy 04-06/05
 DTSTART;TZID=Europe/Paris:20260506T221500
 DTEND;TZID=Europe/Paris:20260507T020000
 DTSTAMP:20260410T100000Z
@@ -66,11 +65,11 @@ DESCRIPTION:Ligne A\n\nStations : Achères Grand Cormier\, Maisons-Laffitt
   à Paris Saint-Lazare. La ligne L est exceptionnellement  prolongée ent
  re Maisons-Laffitte et Poissy. Des trains navettes seront mis en place ent
  re Poissy et Cergy–Le Haut. Les horaires du calculateur d'itinéraire ti
- ennent compte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ ennent compte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://
+ travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 11-12 et 18-1
- 9/04
+SUMMARY:RER A : Maisons-Laffitte <-> Cergy le Haut 11-12 et 18-19/04
 DTSTART;VALUE=DATE:20260411
 DTEND;VALUE=DATE:20260412
 DTSTAMP:20260410T100000Z
@@ -81,11 +80,10 @@ DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : toute la jo
   entre Maisons-Laffitte et Cergy le Haut. Un service de bus de remplacemen
  t est mis en place à Sartrouville\, avec desserte des gares intermédiair
  es. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
-  Motif : travaux.\n\nCause : TRAVAUX
+  Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 11-12 et 18-1
- 9/04
+SUMMARY:RER A : Maisons-Laffitte <-> Cergy le Haut 11-12 et 18-19/04
 DTSTART;VALUE=DATE:20260412
 DTEND;VALUE=DATE:20260413
 DTSTAMP:20260410T100000Z
@@ -96,11 +94,10 @@ DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : toute la jo
   entre Maisons-Laffitte et Cergy le Haut. Un service de bus de remplacemen
  t est mis en place à Sartrouville\, avec desserte des gares intermédiair
  es. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
-  Motif : travaux.\n\nCause : TRAVAUX
+  Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 11-12 et 18-1
- 9/04
+SUMMARY:RER A : Maisons-Laffitte <-> Cergy le Haut 11-12 et 18-19/04
 DTSTART;VALUE=DATE:20260418
 DTEND;VALUE=DATE:20260419
 DTSTAMP:20260410T100000Z
@@ -111,11 +108,10 @@ DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : toute la jo
   entre Maisons-Laffitte et Cergy le Haut. Un service de bus de remplacemen
  t est mis en place à Sartrouville\, avec desserte des gares intermédiair
  es. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
-  Motif : travaux.\n\nCause : TRAVAUX
+  Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 11-12 et 18-1
- 9/04
+SUMMARY:RER A : Maisons-Laffitte <-> Cergy le Haut 11-12 et 18-19/04
 DTSTART;VALUE=DATE:20260419
 DTEND;VALUE=DATE:20260420
 DTSTAMP:20260410T100000Z
@@ -126,10 +122,10 @@ DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : toute la jo
   entre Maisons-Laffitte et Cergy le Haut. Un service de bus de remplacemen
  t est mis en place à Sartrouville\, avec desserte des gares intermédiair
  es. Les horaires du calculateur d'itinéraire tiennent compte des travaux.
-  Motif : travaux.\n\nCause : TRAVAUX
+  Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+SUMMARY:RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
 DTSTART;TZID=Europe/Paris:20260407T221500
 DTEND;TZID=Europe/Paris:20260408T020000
 DTSTAMP:20260410T100000Z
@@ -142,10 +138,11 @@ DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
  c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
  s de remplacement est mis en place à Sartrouville\, avec desserte des gar
  es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
- pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmet
+ ro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+SUMMARY:RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
 DTSTART;TZID=Europe/Paris:20260408T221500
 DTEND;TZID=Europe/Paris:20260409T020000
 DTSTAMP:20260410T100000Z
@@ -158,10 +155,11 @@ DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
  c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
  s de remplacement est mis en place à Sartrouville\, avec desserte des gar
  es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
- pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmet
+ ro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+SUMMARY:RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
 DTSTART;TZID=Europe/Paris:20260409T221500
 DTEND;TZID=Europe/Paris:20260410T020000
 DTSTAMP:20260410T100000Z
@@ -174,10 +172,11 @@ DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
  c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
  s de remplacement est mis en place à Sartrouville\, avec desserte des gar
  es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
- pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmet
+ ro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+SUMMARY:RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
 DTSTART;TZID=Europe/Paris:20260410T221500
 DTEND;TZID=Europe/Paris:20260411T020000
 DTSTAMP:20260410T100000Z
@@ -190,10 +189,11 @@ DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
  c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
  s de remplacement est mis en place à Sartrouville\, avec desserte des gar
  es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
- pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmet
+ ro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+SUMMARY:RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
 DTSTART;TZID=Europe/Paris:20260413T221500
 DTEND;TZID=Europe/Paris:20260414T020000
 DTSTAMP:20260410T100000Z
@@ -206,10 +206,11 @@ DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
  c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
  s de remplacement est mis en place à Sartrouville\, avec desserte des gar
  es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
- pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmet
+ ro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+SUMMARY:RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
 DTSTART;TZID=Europe/Paris:20260414T221500
 DTEND;TZID=Europe/Paris:20260415T020000
 DTSTAMP:20260410T100000Z
@@ -222,10 +223,11 @@ DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
  c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
  s de remplacement est mis en place à Sartrouville\, avec desserte des gar
  es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
- pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmet
+ ro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+SUMMARY:RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
 DTSTART;TZID=Europe/Paris:20260415T221500
 DTEND;TZID=Europe/Paris:20260416T020000
 DTSTAMP:20260410T100000Z
@@ -238,10 +240,11 @@ DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
  c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
  s de remplacement est mis en place à Sartrouville\, avec desserte des gar
  es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
- pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmet
+ ro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+SUMMARY:RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
 DTSTART;TZID=Europe/Paris:20260416T221500
 DTEND;TZID=Europe/Paris:20260417T020000
 DTSTAMP:20260410T100000Z
@@ -254,10 +257,11 @@ DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
  c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
  s de remplacement est mis en place à Sartrouville\, avec desserte des gar
  es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
- pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmet
+ ro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+SUMMARY:RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
 DTSTART;TZID=Europe/Paris:20260417T221500
 DTEND;TZID=Europe/Paris:20260418T020000
 DTSTAMP:20260410T100000Z
@@ -270,10 +274,11 @@ DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
  c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
  s de remplacement est mis en place à Sartrouville\, avec desserte des gar
  es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
- pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmet
+ ro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+SUMMARY:RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
 DTSTART;TZID=Europe/Paris:20260420T221500
 DTEND;TZID=Europe/Paris:20260421T020000
 DTSTAMP:20260410T100000Z
@@ -286,10 +291,11 @@ DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
  c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
  s de remplacement est mis en place à Sartrouville\, avec desserte des gar
  es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
- pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmet
+ ro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+SUMMARY:RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
 DTSTART;TZID=Europe/Paris:20260421T221500
 DTEND;TZID=Europe/Paris:20260422T020000
 DTSTAMP:20260410T100000Z
@@ -302,10 +308,11 @@ DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
  c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
  s de remplacement est mis en place à Sartrouville\, avec desserte des gar
  es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
- pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmet
+ ro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+SUMMARY:RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
 DTSTART;TZID=Europe/Paris:20260422T221500
 DTEND;TZID=Europe/Paris:20260423T020000
 DTSTAMP:20260410T100000Z
@@ -318,10 +325,11 @@ DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
  c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
  s de remplacement est mis en place à Sartrouville\, avec desserte des gar
  es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
- pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmet
+ ro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+SUMMARY:RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
 DTSTART;TZID=Europe/Paris:20260423T221500
 DTEND;TZID=Europe/Paris:20260424T020000
 DTSTAMP:20260410T100000Z
@@ -334,10 +342,11 @@ DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
  c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
  s de remplacement est mis en place à Sartrouville\, avec desserte des gar
  es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
- pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmet
+ ro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+SUMMARY:RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
 DTSTART;TZID=Europe/Paris:20260424T221500
 DTEND;TZID=Europe/Paris:20260425T020000
 DTSTAMP:20260410T100000Z
@@ -350,10 +359,11 @@ DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
  c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
  s de remplacement est mis en place à Sartrouville\, avec desserte des gar
  es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
- pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmet
+ ro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+SUMMARY:RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
 DTSTART;TZID=Europe/Paris:20260427T221500
 DTEND;TZID=Europe/Paris:20260428T020000
 DTSTAMP:20260410T100000Z
@@ -366,10 +376,11 @@ DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
  c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
  s de remplacement est mis en place à Sartrouville\, avec desserte des gar
  es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
- pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmet
+ ro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+SUMMARY:RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
 DTSTART;TZID=Europe/Paris:20260428T221500
 DTEND;TZID=Europe/Paris:20260429T020000
 DTSTAMP:20260410T100000Z
@@ -382,10 +393,11 @@ DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
  c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
  s de remplacement est mis en place à Sartrouville\, avec desserte des gar
  es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
- pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmet
+ ro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
+SUMMARY:RER A : Maisons-Laffitte <-> Cergy le Haut 07-29/04
 DTSTART;TZID=Europe/Paris:20260429T221500
 DTEND;TZID=Europe/Paris:20260430T020000
 DTSTAMP:20260410T100000Z
@@ -398,11 +410,11 @@ DESCRIPTION:Ligne A\n\nStations : Maisons-Laffitte\, Cergy le Haut\, Achè
  c est interrompu entre Maisons-Laffitte et Cergy le Haut. Un service de bu
  s de remplacement est mis en place à Sartrouville\, avec desserte des gar
  es intermédiaires. Les horaires du calculateur d'itinéraire tiennent com
- pte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ pte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmet
+ ro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : Entre Auber et Nation le 02/05\, à partir de 22
- h45
+SUMMARY:RER A : Entre Auber et Nation le 02/05\, à partir de 22h45
 DTSTART;TZID=Europe/Paris:20260502T224500
 DTEND;TZID=Europe/Paris:20260503T020000
 DTSTAMP:20260410T100000Z
@@ -413,11 +425,11 @@ DESCRIPTION:Ligne A\n\nStations : Gare de Lyon\, Auber\, Nation\, Châtele
  45. Dates : le samedi 02 mai. Le trafic sera interrompu entre Auber et Nat
  ion. Merci de vous reporter sur les lignes de métro. Les horaires du calc
  ulateur d'itinéraire tiennent compte des travaux. Motif : travaux.\n\nCau
- se : TRAVAUX
+ se : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
- , dès 21h45
+SUMMARY:RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\, dès 21h
+ 45
 DTSTART;TZID=Europe/Paris:20260417T220000
 DTEND;TZID=Europe/Paris:20260418T020000
 DTSTAMP:20260410T100000Z
@@ -428,11 +440,12 @@ DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
  afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
   Un service de bus de remplacement est mis en place\, avec desserte des ga
  res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxme
+ tro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
- , dès 21h45
+SUMMARY:RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\, dès 21h
+ 45
 DTSTART;TZID=Europe/Paris:20260418T220000
 DTEND;TZID=Europe/Paris:20260419T020000
 DTSTAMP:20260410T100000Z
@@ -443,11 +456,12 @@ DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
  afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
   Un service de bus de remplacement est mis en place\, avec desserte des ga
  res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxme
+ tro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
- , dès 21h45
+SUMMARY:RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\, dès 21h
+ 45
 DTSTART;TZID=Europe/Paris:20260419T220000
 DTEND;TZID=Europe/Paris:20260420T020000
 DTSTAMP:20260410T100000Z
@@ -458,11 +472,12 @@ DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
  afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
   Un service de bus de remplacement est mis en place\, avec desserte des ga
  res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxme
+ tro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
- , dès 21h45
+SUMMARY:RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\, dès 21h
+ 45
 DTSTART;TZID=Europe/Paris:20260420T220000
 DTEND;TZID=Europe/Paris:20260421T020000
 DTSTAMP:20260410T100000Z
@@ -473,11 +488,12 @@ DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
  afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
   Un service de bus de remplacement est mis en place\, avec desserte des ga
  res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxme
+ tro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
- , dès 21h45
+SUMMARY:RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\, dès 21h
+ 45
 DTSTART;TZID=Europe/Paris:20260421T220000
 DTEND;TZID=Europe/Paris:20260422T020000
 DTSTAMP:20260410T100000Z
@@ -488,11 +504,12 @@ DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
  afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
   Un service de bus de remplacement est mis en place\, avec desserte des ga
  res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxme
+ tro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
- , dès 21h45
+SUMMARY:RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\, dès 21h
+ 45
 DTSTART;TZID=Europe/Paris:20260422T220000
 DTEND;TZID=Europe/Paris:20260423T020000
 DTSTAMP:20260410T100000Z
@@ -503,11 +520,12 @@ DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
  afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
   Un service de bus de remplacement est mis en place\, avec desserte des ga
  res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxme
+ tro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
- , dès 21h45
+SUMMARY:RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\, dès 21h
+ 45
 DTSTART;TZID=Europe/Paris:20260423T220000
 DTEND;TZID=Europe/Paris:20260424T020000
 DTSTAMP:20260410T100000Z
@@ -518,11 +536,12 @@ DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
  afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
   Un service de bus de remplacement est mis en place\, avec desserte des ga
  res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxme
+ tro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
- , dès 21h45
+SUMMARY:RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\, dès 21h
+ 45
 DTSTART;TZID=Europe/Paris:20260424T220000
 DTEND;TZID=Europe/Paris:20260425T020000
 DTSTAMP:20260410T100000Z
@@ -533,11 +552,12 @@ DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
  afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
   Un service de bus de remplacement est mis en place\, avec desserte des ga
  res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxme
+ tro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
- , dès 21h45
+SUMMARY:RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\, dès 21h
+ 45
 DTSTART;TZID=Europe/Paris:20260425T220000
 DTEND;TZID=Europe/Paris:20260426T020000
 DTSTAMP:20260410T100000Z
@@ -548,11 +568,12 @@ DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
  afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
   Un service de bus de remplacement est mis en place\, avec desserte des ga
  res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxme
+ tro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
- , dès 21h45
+SUMMARY:RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\, dès 21h
+ 45
 DTSTART;TZID=Europe/Paris:20260426T220000
 DTEND;TZID=Europe/Paris:20260427T020000
 DTSTAMP:20260410T100000Z
@@ -563,11 +584,12 @@ DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
  afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
   Un service de bus de remplacement est mis en place\, avec desserte des ga
  res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxme
+ tro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
- , dès 21h45
+SUMMARY:RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\, dès 21h
+ 45
 DTSTART;TZID=Europe/Paris:20260427T220000
 DTEND;TZID=Europe/Paris:20260428T020000
 DTSTAMP:20260410T100000Z
@@ -578,11 +600,12 @@ DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
  afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
   Un service de bus de remplacement est mis en place\, avec desserte des ga
  res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxme
+ tro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
- , dès 21h45
+SUMMARY:RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\, dès 21h
+ 45
 DTSTART;TZID=Europe/Paris:20260428T220000
 DTEND;TZID=Europe/Paris:20260429T020000
 DTSTAMP:20260410T100000Z
@@ -593,11 +616,12 @@ DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
  afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
   Un service de bus de remplacement est mis en place\, avec desserte des ga
  res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxme
+ tro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
- , dès 21h45
+SUMMARY:RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\, dès 21h
+ 45
 DTSTART;TZID=Europe/Paris:20260429T220000
 DTEND;TZID=Europe/Paris:20260430T020000
 DTSTAMP:20260410T100000Z
@@ -608,11 +632,12 @@ DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
  afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
   Un service de bus de remplacement est mis en place\, avec desserte des ga
  res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxme
+ tro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER A — RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\
- , dès 21h45
+SUMMARY:RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04\, dès 21h
+ 45
 DTSTART;TZID=Europe/Paris:20260430T220000
 DTEND;TZID=Europe/Paris:20260501T020000
 DTSTAMP:20260410T100000Z
@@ -623,6 +648,7 @@ DESCRIPTION:Ligne A\n\nArrêt(s) non desservi(s)\n\nPériode : à partir d
  afic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger.
   Un service de bus de remplacement est mis en place\, avec desserte des ga
  res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX
+ mpte des travaux. Motif : travaux.\n\nCause : TRAVAUX\n\nhttps://travauxme
+ tro.fr/
 END:VEVENT
 END:VCALENDAR

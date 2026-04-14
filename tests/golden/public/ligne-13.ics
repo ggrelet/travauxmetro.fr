@@ -12,7 +12,7 @@ X-APPLE-CALENDAR-COLOR:#98D4E2
 X-PUBLISHED-TTL:PT12H
 X-WR-TIMEZONE:Europe/Paris
 BEGIN:VEVENT
-SUMMARY:M13 — Métro 13 : Travaux - Trafic interrompu
+SUMMARY:Métro 13 : Travaux - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260503T044500
 DTEND;TZID=Europe/Paris:20260503T120000
 DTSTAMP:20260410T100000Z
@@ -21,10 +21,10 @@ CATEGORIES:Ligne 13,Travaux Métro
 DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLes dimanches 3 et 17 mai ain
  si que les 7 et 28 juin\, jusqu'à 12 heures\, le trafic est interrompu su
  r l'ensemble de la ligne en raison de travaux de modernisation.\n\nCause :
-  TRAVAUX
+  TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:M13 — Métro 13 : Travaux - Trafic interrompu
+SUMMARY:Métro 13 : Travaux - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260628T044500
 DTEND;TZID=Europe/Paris:20260628T120000
 DTSTAMP:20260410T100000Z
@@ -32,10 +32,10 @@ UID:63110a5c-f7da-49bf-be35-ea8aaf0b8358_20260628T044500@travaux-metro
 CATEGORIES:Ligne 13,Travaux Métro
 DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLe 28 juin jusqu'à 12:00\, l
  e trafic sera interrompu sur toute la ligne en raison de travaux.\n\nCause
-  : TRAVAUX
+  : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:M13 — Métro 13 : Travaux - Trafic interrompu
+SUMMARY:Métro 13 : Travaux - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260517T044500
 DTEND;TZID=Europe/Paris:20260517T120000
 DTSTAMP:20260410T100000Z
@@ -44,10 +44,10 @@ CATEGORIES:Ligne 13,Travaux Métro
 DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLe dimanche 17 mai ainsi que 
  les 7 et 28 juin\, jusqu'à 12 heures\, le trafic est interrompu sur l'ens
  emble de la ligne en raison de travaux de modernisation.\n\nCause : TRAVAU
- X
+ X\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:M13 — Métro 13 : Travaux de modernisation - Arrêt non desservi
+SUMMARY:Métro 13 : Travaux de modernisation - Arrêt non desservi
 DTSTART;VALUE=DATE:20260409
 DTEND;VALUE=DATE:20260413
 DTSTAMP:20260410T100000Z
@@ -55,10 +55,10 @@ UID:94fb67d1-7b34-4de2-a7c4-0c9255c0bd55_20260409T044500@travaux-metro
 CATEGORIES:Ligne 13,Travaux Métro
 DESCRIPTION:Ligne 13\n\nStation : Plaisance\n\nArrêt non desservi\n\nJusq
  u'au 12 avril inclus\, l'arrêt n'est pas desservi à Plaisance en raison 
- de travaux de modernisation\n\nCause : TRAVAUX
+ de travaux de modernisation\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:M13 — Métro 13 : Travaux - Trafic interrompu
+SUMMARY:Métro 13 : Travaux - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260607T044500
 DTEND;TZID=Europe/Paris:20260607T120000
 DTSTAMP:20260410T100000Z
@@ -66,6 +66,7 @@ UID:9ea051e5-b459-47da-a9f6-1ea9f8b4c611_20260607T044500@travaux-metro
 CATEGORIES:Ligne 13,Travaux Métro
 DESCRIPTION:Ligne 13\n\nTrafic interrompu\n\nLes dimanches 7 et 28 juin\, 
  jusqu'à 12 heures\, le trafic est interrompu sur l'ensemble de la ligne e
- n raison de travaux de modernisation.\n\nCause : TRAVAUX
+ n raison de travaux de modernisation.\n\nCause : TRAVAUX\n\nhttps://travau
+ xmetro.fr/
 END:VEVENT
 END:VCALENDAR

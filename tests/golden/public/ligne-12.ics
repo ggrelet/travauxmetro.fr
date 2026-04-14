@@ -12,7 +12,7 @@ X-APPLE-CALENDAR-COLOR:#007852
 X-PUBLISHED-TTL:PT12H
 X-WR-TIMEZONE:Europe/Paris
 BEGIN:VEVENT
-SUMMARY:M12 — Métro 12 : Travaux de modernisation - Trafic interrompu
+SUMMARY:Métro 12 : Travaux de modernisation - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260405T220000
 DTEND;TZID=Europe/Paris:20260406T020000
 DTSTAMP:20260410T100000Z
@@ -20,10 +20,11 @@ UID:4247e7e6-20b2-11f1-b269-0a58a9feac02_20260405T220000@travaux-metro
 CATEGORIES:Ligne 12,Travaux Métro
 DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nJusqu'au 12 avril inclus\, le
   dimanche dès 22:00\, le trafic est interrompu sur toute la ligne en rais
- on de travaux de modernisation.\n\nCause : TRAVAUX
+ on de travaux de modernisation.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
+ .fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:M12 — Métro 12 : Travaux de modernisation - Trafic interrompu
+SUMMARY:Métro 12 : Travaux de modernisation - Trafic interrompu
 DTSTART;TZID=Europe/Paris:20260412T220000
 DTEND;TZID=Europe/Paris:20260413T020000
 DTSTAMP:20260410T100000Z
@@ -31,6 +32,7 @@ UID:4247e7e6-20b2-11f1-b269-0a58a9feac02_20260412T220000@travaux-metro
 CATEGORIES:Ligne 12,Travaux Métro
 DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nJusqu'au 12 avril inclus\, le
   dimanche dès 22:00\, le trafic est interrompu sur toute la ligne en rais
- on de travaux de modernisation.\n\nCause : TRAVAUX
+ on de travaux de modernisation.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
+ .fr/
 END:VEVENT
 END:VCALENDAR

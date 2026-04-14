@@ -5,7 +5,7 @@ import sys
 
 from icalendar import Calendar, Event
 
-from .constants import ROOT, _utc_now
+from .constants import BASE_URL, ROOT, _utc_now
 from .prim import normalize_period, parse_dt, strip_html
 
 
@@ -74,9 +74,7 @@ def make_events(disruption: dict, line_name: str, stops: list[str], network: str
     short = disruption.get("shortMessage", "").strip()
     cause = disruption.get("cause", "")
 
-    # "M1 — ..." for metro, "RER A — ..." for RER.
-    line_label = f"M{line_name}" if network == "Metro" else f"RER {line_name}"
-    summary = f"{line_label} — {title or short or 'Interruption'}"
+    summary = title or short or "Interruption"
 
     desc_parts = [f"Ligne {line_name}"]
     if stops:
@@ -87,6 +85,7 @@ def make_events(disruption: dict, line_name: str, stops: list[str], network: str
         desc_parts.append(message)
     if cause:
         desc_parts.append(f"Cause : {cause}")
+    desc_parts.append(f"{BASE_URL}/")
     description = "\n\n".join(desc_parts)
 
     events = []

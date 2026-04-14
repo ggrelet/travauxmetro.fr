@@ -12,8 +12,7 @@ X-APPLE-CALENDAR-COLOR:#5291CE
 X-PUBLISHED-TTL:PT12H
 X-WR-TIMEZONE:Europe/Paris
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260407T224500
 DTEND;TZID=Europe/Paris:20260408T020000
 DTSTAMP:20260410T100000Z
@@ -31,11 +30,10 @@ DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
  aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
  us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
   d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260408T224500
 DTEND;TZID=Europe/Paris:20260409T020000
 DTSTAMP:20260410T100000Z
@@ -53,11 +51,10 @@ DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
  aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
  us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
   d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260409T224500
 DTEND;TZID=Europe/Paris:20260410T020000
 DTSTAMP:20260410T100000Z
@@ -75,11 +72,10 @@ DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
  aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
  us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
   d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260410T224500
 DTEND;TZID=Europe/Paris:20260411T020000
 DTSTAMP:20260410T100000Z
@@ -97,11 +93,10 @@ DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
  aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
  us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
   d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260413T224500
 DTEND;TZID=Europe/Paris:20260414T020000
 DTSTAMP:20260410T100000Z
@@ -119,11 +114,10 @@ DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
  aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
  us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
   d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260414T224500
 DTEND;TZID=Europe/Paris:20260415T020000
 DTSTAMP:20260410T100000Z
@@ -141,11 +135,10 @@ DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
  aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
  us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
   d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260415T224500
 DTEND;TZID=Europe/Paris:20260416T020000
 DTSTAMP:20260410T100000Z
@@ -163,11 +156,10 @@ DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
  aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
  us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
   d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260416T224500
 DTEND;TZID=Europe/Paris:20260417T020000
 DTSTAMP:20260410T100000Z
@@ -185,11 +177,10 @@ DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
  aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
  us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
   d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260417T224500
 DTEND;TZID=Europe/Paris:20260418T020000
 DTSTAMP:20260410T100000Z
@@ -207,11 +198,10 @@ DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
  aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
  us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
   d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260420T224500
 DTEND;TZID=Europe/Paris:20260421T020000
 DTSTAMP:20260410T100000Z
@@ -229,11 +219,10 @@ DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
  aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
  us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
   d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260421T224500
 DTEND;TZID=Europe/Paris:20260422T020000
 DTSTAMP:20260410T100000Z
@@ -251,11 +240,10 @@ DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
  aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
  us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
   d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260422T224500
 DTEND;TZID=Europe/Paris:20260423T020000
 DTSTAMP:20260410T100000Z
@@ -273,11 +261,10 @@ DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
  aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
  us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
   d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260423T224500
 DTEND;TZID=Europe/Paris:20260424T020000
 DTSTAMP:20260410T100000Z
@@ -295,11 +282,10 @@ DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
  aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
  us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
   d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260424T224500
 DTEND;TZID=Europe/Paris:20260425T020000
 DTSTAMP:20260410T100000Z
@@ -317,11 +303,10 @@ DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
  aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
  us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
   d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260427T224500
 DTEND;TZID=Europe/Paris:20260428T020000
 DTSTAMP:20260410T100000Z
@@ -339,11 +324,10 @@ DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
  aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
  us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
   d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260428T224500
 DTEND;TZID=Europe/Paris:20260429T020000
 DTSTAMP:20260410T100000Z
@@ -361,11 +345,10 @@ DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
  aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
  us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
   d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260429T224500
 DTEND;TZID=Europe/Paris:20260430T020000
 DTSTAMP:20260410T100000Z
@@ -383,11 +366,10 @@ DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
  aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
  us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
   d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260430T224500
 DTEND;TZID=Europe/Paris:20260501T020000
 DTSTAMP:20260410T100000Z
@@ -405,11 +387,10 @@ DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
  aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
  us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
   d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260504T224500
 DTEND;TZID=Europe/Paris:20260505T020000
 DTSTAMP:20260410T100000Z
@@ -427,11 +408,10 @@ DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
  aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
  us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
   d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260505T224500
 DTEND;TZID=Europe/Paris:20260506T020000
 DTSTAMP:20260410T100000Z
@@ -449,11 +429,10 @@ DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
  aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
  us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
   d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260506T224500
 DTEND;TZID=Europe/Paris:20260507T020000
 DTSTAMP:20260410T100000Z
@@ -471,11 +450,10 @@ DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
  aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
  us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
   d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260507T224500
 DTEND;TZID=Europe/Paris:20260508T020000
 DTSTAMP:20260410T100000Z
@@ -493,11 +471,10 @@ DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
  aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
  us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
   d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260511T224500
 DTEND;TZID=Europe/Paris:20260512T020000
 DTSTAMP:20260410T100000Z
@@ -510,11 +487,10 @@ DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
   Châtelet Les Halles et Mitry - Claye. Un dispositif de bus de remplaceme
  nt sera mis en place au départ du Gare du Nord. Pour plus d'informations\
  , consultez le site du RER B Motif : travaux sur le réseau ferroviaire.\n
- \nCause : TRAVAUX
+ \nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260512T224500
 DTEND;TZID=Europe/Paris:20260513T020000
 DTSTAMP:20260410T100000Z
@@ -527,11 +503,10 @@ DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
   Châtelet Les Halles et Mitry - Claye. Un dispositif de bus de remplaceme
  nt sera mis en place au départ du Gare du Nord. Pour plus d'informations\
  , consultez le site du RER B Motif : travaux sur le réseau ferroviaire.\n
- \nCause : TRAVAUX
+ \nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260513T224500
 DTEND;TZID=Europe/Paris:20260514T020000
 DTSTAMP:20260410T100000Z
@@ -544,11 +519,10 @@ DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
   Châtelet Les Halles et Mitry - Claye. Un dispositif de bus de remplaceme
  nt sera mis en place au départ du Gare du Nord. Pour plus d'informations\
  , consultez le site du RER B Motif : travaux sur le réseau ferroviaire.\n
- \nCause : TRAVAUX
+ \nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260518T224500
 DTEND;TZID=Europe/Paris:20260519T020000
 DTSTAMP:20260410T100000Z
@@ -561,11 +535,10 @@ DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
   Châtelet Les Halles et Mitry - Claye. Un dispositif de bus de remplaceme
  nt sera mis en place au départ du Gare du Nord. Pour plus d'informations\
  , consultez le site du RER B Motif : travaux sur le réseau ferroviaire.\n
- \nCause : TRAVAUX
+ \nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260519T224500
 DTEND;TZID=Europe/Paris:20260520T020000
 DTSTAMP:20260410T100000Z
@@ -578,11 +551,10 @@ DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
   Châtelet Les Halles et Mitry - Claye. Un dispositif de bus de remplaceme
  nt sera mis en place au départ du Gare du Nord. Pour plus d'informations\
  , consultez le site du RER B Motif : travaux sur le réseau ferroviaire.\n
- \nCause : TRAVAUX
+ \nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260520T224500
 DTEND;TZID=Europe/Paris:20260521T020000
 DTSTAMP:20260410T100000Z
@@ -595,11 +567,10 @@ DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
   Châtelet Les Halles et Mitry - Claye. Un dispositif de bus de remplaceme
  nt sera mis en place au départ du Gare du Nord. Pour plus d'informations\
  , consultez le site du RER B Motif : travaux sur le réseau ferroviaire.\n
- \nCause : TRAVAUX
+ \nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260521T224500
 DTEND;TZID=Europe/Paris:20260522T020000
 DTSTAMP:20260410T100000Z
@@ -612,11 +583,10 @@ DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
   Châtelet Les Halles et Mitry - Claye. Un dispositif de bus de remplaceme
  nt sera mis en place au départ du Gare du Nord. Pour plus d'informations\
  , consultez le site du RER B Motif : travaux sur le réseau ferroviaire.\n
- \nCause : TRAVAUX
+ \nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260522T224500
 DTEND;TZID=Europe/Paris:20260523T020000
 DTSTAMP:20260410T100000Z
@@ -629,11 +599,10 @@ DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
   Châtelet Les Halles et Mitry - Claye. Un dispositif de bus de remplaceme
  nt sera mis en place au départ du Gare du Nord. Pour plus d'informations\
  , consultez le site du RER B Motif : travaux sur le réseau ferroviaire.\n
- \nCause : TRAVAUX
+ \nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260526T224500
 DTEND;TZID=Europe/Paris:20260527T020000
 DTSTAMP:20260410T100000Z
@@ -646,11 +615,10 @@ DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
   Châtelet Les Halles et Mitry - Claye. Un dispositif de bus de remplaceme
  nt sera mis en place au départ du Gare du Nord. Pour plus d'informations\
  , consultez le site du RER B Motif : travaux sur le réseau ferroviaire.\n
- \nCause : TRAVAUX
+ \nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260527T224500
 DTEND;TZID=Europe/Paris:20260528T020000
 DTSTAMP:20260410T100000Z
@@ -663,11 +631,10 @@ DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
   Châtelet Les Halles et Mitry - Claye. Un dispositif de bus de remplaceme
  nt sera mis en place au départ du Gare du Nord. Pour plus d'informations\
  , consultez le site du RER B Motif : travaux sur le réseau ferroviaire.\n
- \nCause : TRAVAUX
+ \nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/
- 01-28/05
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260528T224500
 DTEND;TZID=Europe/Paris:20260529T020000
 DTSTAMP:20260410T100000Z
@@ -680,11 +647,10 @@ DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
   Châtelet Les Halles et Mitry - Claye. Un dispositif de bus de remplaceme
  nt sera mis en place au départ du Gare du Nord. Pour plus d'informations\
  , consultez le site du RER B Motif : travaux sur le réseau ferroviaire.\n
- \nCause : TRAVAUX
+ \nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Denfert <-> La Croix de Berny/Robinson 04-06 et 
- 18-19/04
+SUMMARY:RER B : Denfert <-> La Croix de Berny/Robinson 04-06 et 18-19/04
 DTSTART;VALUE=DATE:20260418
 DTEND;VALUE=DATE:20260419
 DTSTAMP:20260410T100000Z
@@ -697,11 +663,10 @@ DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : Les week en
  nt est mis en place au départ de Porte d'Orléans accessible depuis Denfe
  rt via la ligne de métro 4 Les horaires du calculateur d'itinéraire tien
  nent compte des travaux. Motif: Travaux de modernisation du réseau\n\nCau
- se : TRAVAUX
+ se : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Denfert <-> La Croix de Berny/Robinson 04-06 et 
- 18-19/04
+SUMMARY:RER B : Denfert <-> La Croix de Berny/Robinson 04-06 et 18-19/04
 DTSTART;VALUE=DATE:20260419
 DTEND;VALUE=DATE:20260420
 DTSTAMP:20260410T100000Z
@@ -714,11 +679,10 @@ DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : Les week en
  nt est mis en place au départ de Porte d'Orléans accessible depuis Denfe
  rt via la ligne de métro 4 Les horaires du calculateur d'itinéraire tien
  nent compte des travaux. Motif: Travaux de modernisation du réseau\n\nCau
- se : TRAVAUX
+ se : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Denfert <-> La Croix de Berny/Robinson 04-06 et 
- 18-19/04
+SUMMARY:RER B : Denfert <-> La Croix de Berny/Robinson 04-06 et 18-19/04
 DTSTART;VALUE=DATE:20260405
 DTEND;VALUE=DATE:20260406
 DTSTAMP:20260410T100000Z
@@ -731,11 +695,10 @@ DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : Les week en
  nt est mis en place au départ de Porte d'Orléans accessible depuis Denfe
  rt via la ligne de métro 4 Les horaires du calculateur d'itinéraire tien
  nent compte des travaux. Motif: Travaux de modernisation du réseau\n\nCau
- se : TRAVAUX
+ se : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B — RER B : Denfert <-> La Croix de Berny/Robinson 04-06 et 
- 18-19/04
+SUMMARY:RER B : Denfert <-> La Croix de Berny/Robinson 04-06 et 18-19/04
 DTSTART;VALUE=DATE:20260406
 DTEND;VALUE=DATE:20260407
 DTSTAMP:20260410T100000Z
@@ -748,6 +711,6 @@ DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : Les week en
  nt est mis en place au départ de Porte d'Orléans accessible depuis Denfe
  rt via la ligne de métro 4 Les horaires du calculateur d'itinéraire tien
  nent compte des travaux. Motif: Travaux de modernisation du réseau\n\nCau
- se : TRAVAUX
+ se : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 END:VCALENDAR

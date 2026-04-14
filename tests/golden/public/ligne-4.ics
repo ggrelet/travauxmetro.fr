@@ -12,7 +12,7 @@ X-APPLE-CALENDAR-COLOR:#CF009E
 X-PUBLISHED-TTL:PT12H
 X-WR-TIMEZONE:Europe/Paris
 BEGIN:VEVENT
-SUMMARY:M4 — Métro 4 : Travaux d'entretien - Trafic interrompu
+SUMMARY:Métro 4 : Travaux d'entretien - Trafic interrompu
 DTSTART;VALUE=DATE:20260420
 DTEND;VALUE=DATE:20260502
 DTSTAMP:20260410T100000Z
@@ -20,6 +20,7 @@ UID:ff1a101d-45f8-4942-b24b-50a00b079142_20260420T044500@travaux-metro
 CATEGORIES:Ligne 4,Travaux Métro
 DESCRIPTION:Ligne 4\n\nTrafic interrompu\n\nDu 20 avril au 1er mai inclus\
  , le trafic sera interrompu entre Châtelet et Barbès - Rochechouart en r
- aison de travaux d'entretien.\n\nCause : TRAVAUX
+ aison de travaux d'entretien.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.f
+ r/
 END:VEVENT
 END:VCALENDAR
