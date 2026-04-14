@@ -177,7 +177,7 @@ def generate_index(
     fetched_at: str,
 ) -> str:
     fetched_dt = datetime.fromisoformat(fetched_at).astimezone(PARIS_TZ)
-    date_str = format_date(fetched_dt, "EEEE d MMMM", locale="fr")
+    date_str = format_date(fetched_dt, "EEEE d MMMM yyyy", locale="fr")
     time_str = fetched_dt.strftime("%H:%M")
 
     # `metro_lines` here is actually the merged metro+RER index built in main.py.

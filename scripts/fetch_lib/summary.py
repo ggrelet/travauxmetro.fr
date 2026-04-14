@@ -85,7 +85,7 @@ def generate_summary(by_line: dict, dis_to_stops: dict, dis_by_id: dict, metro_l
                 counts.append(_count_badge(len(added), added=True))
             if removed:
                 counts.append(_count_badge(len(removed), added=False))
-            lines.append(f"### {_badge(line_name)} {' '.join(counts)}")
+            lines.append(f"### {_badge(line_name)} &nbsp;｜&nbsp; {' '.join(counts)}")
             lines.append("")
             line_id = name_to_id.get(line_name)
 

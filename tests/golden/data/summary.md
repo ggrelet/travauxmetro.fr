@@ -1,13 +1,13 @@
 ## Travaux métro — 10-04-2026
 
-### ![M3](https://img.shields.io/badge/-M3-837902?style=flat) ![+1](https://img.shields.io/badge/-%2B1-28a745?style=flat)
+### ![M3](https://img.shields.io/badge/-M3-837902?style=flat) &nbsp;｜&nbsp; ![+1](https://img.shields.io/badge/-%2B1-28a745?style=flat)
 
 **Ajouté**
 
 - **Métro 3 : Travaux - Trafic interrompu** — 08-04-2026 → 13-05-2026
   <details><summary>Détails</summary><br>🚉 Gambetta, Porte de Bagnolet, Gallieni<br>Trafic interrompu<br>Jusqu'au 12 mai inclus, le trafic est interrompu entre Gallieni et Gambetta en raison de travaux. Bus de remplacement.</details>
 
-### ![M3B](https://img.shields.io/badge/-M3B-6EC4E8?style=flat) ![+3](https://img.shields.io/badge/-%2B3-28a745?style=flat)
+### ![M3B](https://img.shields.io/badge/-M3B-6EC4E8?style=flat) &nbsp;｜&nbsp; ![+3](https://img.shields.io/badge/-%2B3-28a745?style=flat)
 
 **Ajouté**
 
@@ -18,14 +18,14 @@
 - **Métro 3B : Travaux - Trafic interrompu** — 16-05-2026 → 22-05-2026
   <details><summary>Détails</summary><br>Trafic interrompu<br>Du 16 mai au 21 mai inclus, le trafic sera interrompu sur toute la ligne en raison de travaux.</details>
 
-### ![M4](https://img.shields.io/badge/-M4-CF009E?style=flat) ![+1](https://img.shields.io/badge/-%2B1-28a745?style=flat)
+### ![M4](https://img.shields.io/badge/-M4-CF009E?style=flat) &nbsp;｜&nbsp; ![+1](https://img.shields.io/badge/-%2B1-28a745?style=flat)
 
 **Ajouté**
 
 - **Métro 4 : Travaux d'entretien - Trafic interrompu** — 20-04-2026 → 02-05-2026
   <details><summary>Détails</summary><br>Trafic interrompu<br>Du 20 avril au 1er mai inclus, le trafic sera interrompu entre Châtelet et Barbès - Rochechouart en raison de travaux d'entretien.</details>
 
-### ![M12](https://img.shields.io/badge/-M12-007852?style=flat) ![+2](https://img.shields.io/badge/-%2B2-28a745?style=flat)
+### ![M12](https://img.shields.io/badge/-M12-007852?style=flat) &nbsp;｜&nbsp; ![+2](https://img.shields.io/badge/-%2B2-28a745?style=flat)
 
 **Ajouté**
 
@@ -34,7 +34,7 @@
 - **Métro 12 : Travaux de modernisation - Autre** — 09-03-2026 → 13-04-2026
   <details><summary>Détails</summary><br>Autre<br>Jusqu'au 12 avril, dès 22:00, tous les dimanches et certains mercredis et jeudis le trafic est interrompu sur toute la ligne en raison de travaux de modernisation. Détails et calendrier complet sur RATP.fr.</details>
 
-### ![M13](https://img.shields.io/badge/-M13-98D4E2?style=flat) ![+9](https://img.shields.io/badge/-%2B9-28a745?style=flat)
+### ![M13](https://img.shields.io/badge/-M13-98D4E2?style=flat) &nbsp;｜&nbsp; ![+9](https://img.shields.io/badge/-%2B9-28a745?style=flat)
 
 **Ajouté**
 
@@ -57,7 +57,7 @@
 - **Métro 13 : Travaux - Trafic interrompu** — 17-05-2026 → 17-05-2026
   <details><summary>Détails</summary><br>Trafic interrompu<br>Le 17 mai jusqu'à 12:00, le trafic sera interrompu sur toute la ligne en raison de travaux.</details>
 
-### ![RER A](https://img.shields.io/badge/-RER%20A-E3051C?style=flat) ![+5](https://img.shields.io/badge/-%2B5-28a745?style=flat)
+### ![RER A](https://img.shields.io/badge/-RER%20A-E3051C?style=flat) &nbsp;｜&nbsp; ![+5](https://img.shields.io/badge/-%2B5-28a745?style=flat)
 
 **Ajouté**
 
@@ -72,7 +72,7 @@
 - **RER A : La Varenne Chenn. <-> Boissy-St-Léger 17-30/04, dès 21h45** — 17-04-2026 → 01-05-2026
   <details><summary>Détails</summary><br>Arrêt(s) non desservi(s)<br>Période : à partir de 21h45 Dates : du vendredi 17 au jeudi 30 avril, week-ends compris Le trafic est interrompu entre La Varenne Chennevières et Boissy-Saint-Léger. Un service de bus de remplacement est mis en place, avec desserte des gares intermédiaires. Les horaires du calculateur d'itinéraire tiennent compte des travaux. Motif : travaux.</details>
 
-### ![RER B](https://img.shields.io/badge/-RER%20B-5291CE?style=flat) ![+7](https://img.shields.io/badge/-%2B7-28a745?style=flat)
+### ![RER B](https://img.shields.io/badge/-RER%20B-5291CE?style=flat) &nbsp;｜&nbsp; ![+7](https://img.shields.io/badge/-%2B7-28a745?style=flat)
 
 **Ajouté**
 
@@ -91,7 +91,7 @@
 - **RER B : Denfert <-> La Croix de Berny/Robinson 04-06 et 18-19/04** — 05-04-2026 → 07-04-2026
   <details><summary>Détails</summary><br>Arrêt(s) non desservi(s)<br>Période : Les week ends Dates : du samedi 04 au lundi 06 avril et du samedi 18 au dimanche 19 avril. Le trafic est interrompu entre Denfert Rochereau et La Croix de Berny, et entre Denfert Rochereau et Robinson Un service de bus de remplacement est mis en place au départ de Porte d'Orléans accessible depuis Denfert via la ligne de métro 4 Les horaires du calculateur d'itinéraire tiennent compte des travaux. Motif: Travaux de modernisation du réseau</details>
 
-### ![RER C](https://img.shields.io/badge/-RER%20C-FFCE00?style=flat) ![+57](https://img.shields.io/badge/-%2B57-28a745?style=flat)
+### ![RER C](https://img.shields.io/badge/-RER%20C-FFCE00?style=flat) &nbsp;｜&nbsp; ![+57](https://img.shields.io/badge/-%2B57-28a745?style=flat)
 
 **Ajouté**
 
@@ -210,7 +210,7 @@
 - **RER C:entre St-Martin d'Étam. et Paris Auster. du 04/05 au 29/05** — 26-05-2026 → 30-05-2026
   <details><summary>Détails</summary><br>Arrêt(s) non desservi(s)<br>Période : les soirées. Dates : du lundi 4 au vendredi 29 mai (sauf samedi, dimanche, fête et le vendredi 15 mai). Le trafic est interrompu entre Saint-Martin d'Étampes et Paris Austerlitz :  - Dernier départ de Saint-Martin d'Étampes à 21h41 - Dernier départ de Paris Austerlitz à 22h31 Un service de bus de remplacement est mis en place, avec desserte des gares intermédiaires. Les horaires du calculateur d'itinéraire tiennent compte des travaux. Motif : travaux sur le réseau ferroviaire.</details>
 
-### ![RER D](https://img.shields.io/badge/-RER%20D-00814F?style=flat) ![+22](https://img.shields.io/badge/-%2B22-28a745?style=flat)
+### ![RER D](https://img.shields.io/badge/-RER%20D-00814F?style=flat) &nbsp;｜&nbsp; ![+22](https://img.shields.io/badge/-%2B22-28a745?style=flat)
 
 **Ajouté**
 
@@ -259,7 +259,7 @@
 - **RER D : Corbeil-Essonnes <-> Malesherbes 18-19/04, les week-ends** — 18-04-2026 → 20-04-2026
   <details><summary>Détails</summary><br>Arrêt(s) non desservi(s)<br>Période : les week-ends, toute la journée. Dates : du samedi 18 au dimanche 19 avril. Le trafic est interrompu entre Corbeil-Essonnes et Malesherbes. Un service de bus de remplacement est mis en place, avec desserte des gares intermédiaires. Les horaires du calculateur d'itinéraire tiennent compte des travaux.</details>
 
-### ![RER E](https://img.shields.io/badge/-RER%20E-C04191?style=flat) ![+19](https://img.shields.io/badge/-%2B19-28a745?style=flat)
+### ![RER E](https://img.shields.io/badge/-RER%20E-C04191?style=flat) &nbsp;｜&nbsp; ![+19](https://img.shields.io/badge/-%2B19-28a745?style=flat)
 
 **Ajouté**
 
