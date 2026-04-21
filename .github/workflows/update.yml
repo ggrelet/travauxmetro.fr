@@ -41,6 +41,10 @@ jobs:
             && echo "changed=true"  >> "$GITHUB_OUTPUT" \
             || echo "changed=false" >> "$GITHUB_OUTPUT"
 
+      - name: Smoke-check generated output
+        if: steps.diff.outputs.changed == 'true' || inputs.force == true
+        run: uv run python scripts/smoke.py
+
       - name: Open PR if changed
         if: steps.diff.outputs.changed == 'true' || inputs.force == true
         env:
@@ -57,11 +61,13 @@ jobs:
           git push origin "$BRANCH"
           echo "" >> data/summary.md
           echo "[📄 snapshot.json](https://github.com/${{ github.repository }}/blob/${BRANCH}/data/snapshot.json)" >> data/summary.md
-          gh pr create \
+          PR_URL=$(gh pr create \
             --title "Travaux métro — ${DATE}" \
             --body-file data/summary.md \
             --base main \
-            --reviewer ggrelet
+            --reviewer ggrelet)
+          echo "Opened $PR_URL"
+          gh pr merge --auto --squash --delete-branch "$PR_URL"
 
   ci:
     needs: update
