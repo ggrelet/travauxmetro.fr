@@ -33,6 +33,13 @@
     </dialog>{%- endif %}
     </div>{% endfor %}</div>
 {%- endmacro -%}
+{%- macro rer_expand(rer_all) -%}
+<details class="rer-expand">
+  <summary><span class="rer-summary-text"><span class="rer-text-long">Cliquez ici pour les</span><span class="rer-text-short">Voir</span> lignes de</span><span class="rer-summary-badges"><img src="/icons/rer.svg" class="rer-inline-icon" alt="RER" width="24" height="24">{% for line in rer_all %}<span class="badge badge-rer badge-sm" style="background:{{ line.bg }};color:{{ line.fg }}">{{ line.label_html|safe }}</span>{% endfor %}</span></summary>
+  <p class="rer-note">Les lignes de RER sont énormément impactées par les travaux du réseau. Abonnez-vous aux calendriers si l'information vous intéresse tout de même.</p>
+  {{ caller() }}
+</details>
+{%- endmacro -%}
 {%- macro calm_grid(lines) -%}
 <div class="lines-grid">{% for line in lines %}
     <div class="line-row">
@@ -110,7 +117,7 @@
     <p class="section-note">Les opérateurs du réseau ont prévu des interruptions dues aux travaux sur ces lignes.</p>
     {% if metro_disrupted %}{{ disrupted_grid(metro_disrupted) }}{% endif %}
     {% if metro_disrupted and rer_disrupted %}<hr class="network-sep">{% endif %}
-    {% if rer_disrupted %}{{ disrupted_grid(rer_disrupted) }}{% endif %}
+    {% if rer_disrupted %}{% call rer_expand(rer_all) %}{{ disrupted_grid(rer_disrupted) }}{% endcall %}{% endif %}
   </section>{% else %}<p class="quiet" style="margin-bottom:1.5rem">Aucune interruption prévue sur le réseau.</p>{% endif %}
   {% if metro_calm or rer_calm %}
   <section>
@@ -118,7 +125,7 @@
     <p class="section-note">Aucune interruption prévue sur ces lignes. Abonnez-vous pour être notifié automatiquement si cela change.</p>
     {% if metro_calm %}{{ calm_grid(metro_calm) }}{% endif %}
     {% if metro_calm and rer_calm %}<hr class="network-sep">{% endif %}
-    {% if rer_calm %}{{ calm_grid(rer_calm) }}{% endif %}
+    {% if rer_calm %}{% call rer_expand(rer_all) %}{{ calm_grid(rer_calm) }}{% endcall %}{% endif %}
   </section>{% endif %}
 
   <section>
@@ -132,13 +139,15 @@
       </div>
     </div>
     {% if rer_all %}<hr class="network-sep">
+    {% call rer_expand(rer_all) %}
     <div class="line-row">
       <div class="line-header">
         <div class="all-badges">{% for line in rer_all %}{% if not loop.first %} {% endif %}<span class="{{ badge_class(line.network) }}" style="background:{{ line.bg }};color:{{ line.fg }}">{{ line.label_html|safe }}</span>{% endfor %}</div>
         <div class="line-vsep"></div>
         <div class="line-actions">{{ sub_buttons(all_rer_sub) }}</div>
       </div>
-    </div>{% endif %}
+    </div>
+    {% endcall %}{% endif %}
   </section>
 
   <footer>

@@ -103,6 +103,21 @@
     @media (max-width: 600px) { .all-badges { grid-template-columns: repeat(4, auto); gap: .3rem; } .all-badges .badge { width: 2.4rem; height: 2.4rem; font-size: 1.3rem; } }
     section { margin-bottom: 2.5rem; }
     .network-sep { border: none; border-top: 1px solid #e8e8e8; margin: 1.25rem 0; }
+    .rer-expand { margin-top: 0; }
+    .rer-expand > summary { flex-wrap: wrap; gap: .26rem; padding: .5rem 0; }
+    .rer-summary-text { color: #333; }
+    .rer-text-short { display: none; }
+    @media (max-width: 600px) { .rer-text-long { display: none; } .rer-text-short { display: inline; } }
+    .rer-inline-icon { vertical-align: middle; display: inline-block; }
+    @media (max-width: 600px) {
+      .rer-inline-icon { width: 1.05rem; height: 1.05rem; }
+      .rer-expand > summary { gap: .4rem; }
+      .rer-summary-badges .badge-sm { width: 1.05rem; height: 1.05rem; font-size: .55rem; }
+      .rer-summary-badges { gap: .3rem; }
+    }
+    .rer-summary-badges { display: inline-flex; gap: .3rem; flex-wrap: wrap; align-items: center; }
+    .rer-summary-badges .badge-sm { width: 1.5rem; height: 1.5rem; font-size: .75rem; font-weight: 700; border-radius: 22.5%; }
+    .rer-note { font-size: .85em; color: #666; font-style: italic; margin: .6rem 0 1rem; }
     @keyframes fadein { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
     .dis-dialog .cards, .dis-dialog .note { animation: fadein .2s ease; }
   </style>
@@ -252,7 +267,10 @@
     </dialog>
     </div></div>
     <hr class="network-sep">
-    <div class="lines-grid">
+    <details class="rer-expand">
+  <summary><span class="rer-summary-text"><span class="rer-text-long">Cliquez ici pour les</span><span class="rer-text-short">Voir</span> lignes de</span><span class="rer-summary-badges"><img src="/icons/rer.svg" class="rer-inline-icon" alt="RER" width="24" height="24"><span class="badge badge-rer badge-sm" style="background:#E3051C;color:#FFFFFF">A</span><span class="badge badge-rer badge-sm" style="background:#5291CE;color:#FFFFFF">B</span><span class="badge badge-rer badge-sm" style="background:#FFCE00;color:#25303B">C</span><span class="badge badge-rer badge-sm" style="background:#00814F;color:#FFFFFF">D</span><span class="badge badge-rer badge-sm" style="background:#C04191;color:#FFFFFF">E</span></span></summary>
+  <p class="rer-note">Les lignes de RER sont énormément impactées par les travaux du réseau. Abonnez-vous aux calendriers si l'information vous intéresse tout de même.</p>
+  <div class="lines-grid">
     <div class="line-row" data-line="A">
       <div class="line-header">
         <span class="badge badge-rer" style="background:#E3051C;color:#FFFFFF">A</span>
@@ -633,6 +651,7 @@
           </div></div></div>
     </dialog>
     </div></div>
+</details>
   </section>
   
   <section>
@@ -731,6 +750,10 @@
       </div>
     </div>
     <hr class="network-sep">
+    <details class="rer-expand">
+  <summary><span class="rer-summary-text"><span class="rer-text-long">Cliquez ici pour les</span><span class="rer-text-short">Voir</span> lignes de</span><span class="rer-summary-badges"><img src="/icons/rer.svg" class="rer-inline-icon" alt="RER" width="24" height="24"><span class="badge badge-rer badge-sm" style="background:#E3051C;color:#FFFFFF">A</span><span class="badge badge-rer badge-sm" style="background:#5291CE;color:#FFFFFF">B</span><span class="badge badge-rer badge-sm" style="background:#FFCE00;color:#25303B">C</span><span class="badge badge-rer badge-sm" style="background:#00814F;color:#FFFFFF">D</span><span class="badge badge-rer badge-sm" style="background:#C04191;color:#FFFFFF">E</span></span></summary>
+  <p class="rer-note">Les lignes de RER sont énormément impactées par les travaux du réseau. Abonnez-vous aux calendriers si l'information vous intéresse tout de même.</p>
+  
     <div class="line-row">
       <div class="line-header">
         <div class="all-badges"><span class="badge badge-rer" style="background:#E3051C;color:#FFFFFF">A</span> <span class="badge badge-rer" style="background:#5291CE;color:#FFFFFF">B</span> <span class="badge badge-rer" style="background:#FFCE00;color:#25303B">C</span> <span class="badge badge-rer" style="background:#00814F;color:#FFFFFF">D</span> <span class="badge badge-rer" style="background:#C04191;color:#FFFFFF">E</span></div>
@@ -738,6 +761,8 @@
         <div class="line-actions"><a class="sub-btn google" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftravauxmetro.fr%2Ftousrer.ics" target="_blank" rel="noopener" data-umami-event="subscribe-google" data-umami-event-line="all-rer"><img src="/icons/googlecalendar.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Google Calendar</a><a class="sub-btn webcal" href="webcal://travauxmetro.fr/tousrer.ics" data-umami-event="subscribe-webcal" data-umami-event-line="all-rer"><img src="/icons/apple.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">iCal / webcal</a><a class="sub-btn outlook" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Ftousrer.ics" target="_blank" rel="noopener" data-umami-event="subscribe-outlook" data-umami-event-line="all-rer"><img src="/icons/outlook.svg" width="16" height="16" alt="" style="margin-right:.35em;flex-shrink:0">Outlook</a><a class="sub-btn o365" href="https://outlook.office.com/calendar/addfromweb?url=https%3A%2F%2Ftravauxmetro.fr%2Ftousrer.ics" target="_blank" rel="noopener" data-umami-event="subscribe-o365" data-umami-event-line="all-rer"><img src="/icons/office365.svg" width="15" height="15" alt="" style="margin-right:.35em;flex-shrink:0">Office 365</a><button class="sub-btn copy" onclick="copyUrl('https://travauxmetro.fr/tousrer.ics',this)" data-umami-event="copy-url" data-umami-event-line="all-rer"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button></div>
       </div>
     </div>
+    
+</details>
   </section>
 
   <footer>

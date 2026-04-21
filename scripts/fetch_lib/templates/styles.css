@@ -63,5 +63,20 @@
     @media (max-width: 600px) { .all-badges { grid-template-columns: repeat(4, auto); gap: .3rem; } .all-badges .badge { width: 2.4rem; height: 2.4rem; font-size: 1.3rem; } }
     section { margin-bottom: 2.5rem; }
     .network-sep { border: none; border-top: 1px solid #e8e8e8; margin: 1.25rem 0; }
+    .rer-expand { margin-top: 0; }
+    .rer-expand > summary { flex-wrap: wrap; gap: .26rem; padding: .5rem 0; }
+    .rer-summary-text { color: #333; }
+    .rer-text-short { display: none; }
+    @media (max-width: 600px) { .rer-text-long { display: none; } .rer-text-short { display: inline; } }
+    .rer-inline-icon { vertical-align: middle; display: inline-block; }
+    @media (max-width: 600px) {
+      .rer-inline-icon { width: 1.5rem; height: 1.5rem; }
+      .rer-expand > summary { gap: .4rem; }
+      .rer-summary-badges .badge-sm { width: 1.05rem; height: 1.05rem; font-size: .55rem; }
+      .rer-summary-badges { gap: .3rem; }
+    }
+    .rer-summary-badges { display: inline-flex; gap: .3rem; flex-wrap: wrap; align-items: center; }
+    .rer-summary-badges .badge-sm { width: 1.5rem; height: 1.5rem; font-size: .75rem; font-weight: 700; border-radius: 22.5%; }
+    .rer-note { font-size: .85em; color: #666; font-style: italic; margin: .6rem 0 1rem; }
     @keyframes fadein { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
     .dis-dialog .cards, .dis-dialog .note { animation: fadein .2s ease; }
