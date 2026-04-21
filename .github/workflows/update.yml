@@ -43,7 +43,7 @@ jobs:
 
       - name: Smoke-check generated output
         if: steps.diff.outputs.changed == 'true' || inputs.force == true
-        run: uv run python scripts/smoke.py
+        run: uv run pytest tests/ -m live -v
 
       - name: Open PR if changed
         if: steps.diff.outputs.changed == 'true' || inputs.force == true
