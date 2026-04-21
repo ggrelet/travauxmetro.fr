@@ -19,6 +19,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.PAT_BOT }}
 
       - uses: astral-sh/setup-uv@v7
         with:
@@ -48,7 +50,7 @@ jobs:
       - name: Open PR if changed
         if: steps.diff.outputs.changed == 'true' || inputs.force == true
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.PAT_BOT }}
         run: |
           DATE=$(date -u +%Y-%m-%d)
           TS=$(date -u +%H%M%S)
