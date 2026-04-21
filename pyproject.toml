@@ -17,3 +17,7 @@ dev = [
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["tests"]
+addopts = "-m 'not live'"
+markers = [
+    "live: checks against today's freshly generated output (opt-in with -m live)",
+]
