@@ -9,7 +9,7 @@ from datetime import datetime
 from pathlib import Path
 
 from . import constants
-from .constants import METRO_LINE_COLORS, RER_LINE_COLORS, ROOT, _today, _utc_now
+from .constants import METRO_LINE_COLORS, RER_LINE_COLORS, ROOT, TRAMWAY_LINE_COLORS, _today, _utc_now
 from .html import generate_index
 from .ics import deduplicate_events, make_calendar, make_events
 from .prim import (
@@ -63,6 +63,7 @@ def main():
     raw_lines = data.get("lines", [])
     metro_lines, m_dis_to_line_ids, m_dis_to_stops = build_lines_index(raw_lines, "Metro")
     rer_lines, r_dis_to_line_ids, r_dis_to_stops = build_lines_index(raw_lines, "RapidTransit")
+    tram_lines, t_dis_to_line_ids, t_dis_to_stops = build_lines_index(raw_lines, "Tramway")
     disruptions = data.get("disruptions", [])
     dis_by_id = {d["id"]: d for d in disruptions}
 
@@ -70,12 +71,14 @@ def main():
     travaux_ids = {d["id"] for d in disruptions if d.get("cause") == "TRAVAUX"}
     metro_dis_ids = set(m_dis_to_line_ids.keys()) & travaux_ids
     rer_dis_ids = set(r_dis_to_line_ids.keys()) & travaux_ids
-    relevant_dis_ids = metro_dis_ids | rer_dis_ids
+    tram_dis_ids = set(t_dis_to_line_ids.keys()) & travaux_ids
+    relevant_dis_ids = metro_dis_ids | rer_dis_ids | tram_dis_ids
     relevant_disruptions = [d for d in disruptions if d["id"] in relevant_dis_ids]
     print(
         f"Total disruptions: {len(disruptions)} — "
         f"Metro travaux: {len(metro_dis_ids)} across {len(metro_lines)} lines, "
-        f"RER travaux: {len(rer_dis_ids)} across {len(rer_lines)} lines"
+        f"RER travaux: {len(rer_dis_ids)} across {len(rer_lines)} lines, "
+        f"Tram travaux: {len(tram_dis_ids)} across {len(tram_lines)} lines"
     )
 
     data_dir.mkdir(exist_ok=True)
@@ -84,7 +87,8 @@ def main():
     expected_ics = (
         [public / f"ligne-{name}.ics" for name in METRO_LINE_COLORS]
         + [public / f"ligne-{name}.ics" for name in RER_LINE_COLORS]
-        + [public / "tousmetros.ics", public / "tousrer.ics"]
+        + [public / f"ligne-{name}.ics" for name in TRAMWAY_LINE_COLORS]
+        + [public / "tousmetros.ics", public / "tousrer.ics", public / "toustram.ics"]
     )
     missing_ics = any(not f.exists() for f in expected_ics)
     if not args.force and hash_file.exists() and hash_file.read_text().strip() == new_hash and not missing_ics:
@@ -103,7 +107,7 @@ def main():
     # disruptions are already filtered to metro+RER travaux above.
     line_entries = [
         line for line in raw_lines
-        if line.get("id") in metro_lines or line.get("id") in rer_lines
+        if line.get("id") in metro_lines or line.get("id") in rer_lines or line.get("id") in tram_lines
     ]
     (data_dir / "snapshot.json").write_text(
         json.dumps(
@@ -123,6 +127,9 @@ def main():
     for dis_id in rer_dis_ids:
         for line_id in r_dis_to_line_ids[dis_id]:
             by_line[rer_lines[line_id]["shortName"]].add(dis_id)
+    for dis_id in tram_dis_ids:
+        for line_id in t_dis_to_line_ids[dis_id]:
+            by_line[tram_lines[line_id]["shortName"]].add(dis_id)
 
     # Compute diff vs previous state using content fingerprints (ignores UUID re-issues)
     def fp_set(line: str, source: dict) -> set:
@@ -197,6 +204,23 @@ def main():
             "cal_name_fmt": "RER {name} — Travaux",
             "log_prefix": "RER ",
         },
+        {
+            "network": "Tramway",
+            "line_colors": TRAMWAY_LINE_COLORS,
+            "net_lines": tram_lines,
+            "dis_to_stops": t_dis_to_stops,
+            "all_filename": "toustram.ics",
+            "all_title": "Paris Tramway — Travaux",
+            "all_color": "#0064B0",
+            "all_desc": (
+                "Interruptions et travaux planifiés sur toutes les lignes du tramway francilien. "
+                "Mis à jour quotidiennement depuis les données Île-de-France Mobilités. "
+                "travauxmetro.fr"
+            ),
+            "line_desc_word": "du tramway francilien",
+            "cal_name_fmt": "Tram {name} — Travaux",
+            "log_prefix": "Tram ",
+        },
     ]
 
     for cfg in networks:
@@ -240,11 +264,11 @@ def main():
 
     # Combined dis_to_stops for HTML/summary lookups (line_id namespaces don't collide).
     dis_to_stops: dict = defaultdict(lambda: defaultdict(list))
-    for source in (m_dis_to_stops, r_dis_to_stops):
+    for source in (m_dis_to_stops, r_dis_to_stops, t_dis_to_stops):
         for dis_id, line_map in source.items():
             for line_id, stops in line_map.items():
                 dis_to_stops[dis_id][line_id] = stops
-    all_net_lines = {**metro_lines, **rer_lines}
+    all_net_lines = {**metro_lines, **rer_lines, **tram_lines}
 
     (data_dir / "summary.md").write_text(generate_summary(by_line, dis_to_stops, dis_by_id, all_net_lines, fetched_at, diff))
     (public / "index.html").write_text(generate_index(by_line, dis_by_id, dis_to_stops, all_net_lines, fetched_at))

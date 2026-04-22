@@ -13,26 +13,134 @@ X-PUBLISHED-TTL:PT12H
 X-WR-TIMEZONE:Europe/Paris
 BEGIN:VEVENT
 SUMMARY:Métro 12 : Travaux de modernisation - Trafic interrompu
-DTSTART;TZID=Europe/Paris:20260405T220000
-DTEND;TZID=Europe/Paris:20260406T020000
-DTSTAMP:20260410T100000Z
-UID:4247e7e6-20b2-11f1-b269-0a58a9feac02_20260405T220000@travaux-metro
+DTSTART;VALUE=DATE:20260531
+DTEND;VALUE=DATE:20260601
+DTSTAMP:20260422T225349Z
+UID:1d981f68-a4c7-4135-9ff8-67823468ca07_20260531T044500@travaux-metro
 CATEGORIES:Ligne 12,Travaux Métro
-DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nJusqu'au 12 avril inclus\, le
-  dimanche dès 22:00\, le trafic est interrompu sur toute la ligne en rais
- on de travaux de modernisation.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
- .fr/
+DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nLe 31 mai\, le trafic sera in
+ terrompu entre Porte de Versailles et Mairie d'Issy en raison de travaux d
+ e modernisation. Bus de remplacement.\n\nCause : TRAVAUX\n\nhttps://travau
+ xmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Métro 12 : Travaux de modernisation - Trafic interrompu
-DTSTART;TZID=Europe/Paris:20260412T220000
-DTEND;TZID=Europe/Paris:20260413T020000
-DTSTAMP:20260410T100000Z
-UID:4247e7e6-20b2-11f1-b269-0a58a9feac02_20260412T220000@travaux-metro
+DTSTART;TZID=Europe/Paris:20260603T220000
+DTEND;TZID=Europe/Paris:20260604T020000
+DTSTAMP:20260422T225349Z
+UID:4d281f6c-70d5-4075-bac9-c821d3cad92b_20260603T220000@travaux-metro
 CATEGORIES:Ligne 12,Travaux Métro
-DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nJusqu'au 12 avril inclus\, le
-  dimanche dès 22:00\, le trafic est interrompu sur toute la ligne en rais
- on de travaux de modernisation.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
- .fr/
+DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nDu 3 juin au 28 juin inclus\,
+  les mercredi et dimanche dès 22:00\, le trafic sera interrompu sur toute
+  la ligne en raison de travaux de modernisation.\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Métro 12 : Travaux de modernisation - Trafic interrompu
+DTSTART;TZID=Europe/Paris:20260607T220000
+DTEND;TZID=Europe/Paris:20260608T020000
+DTSTAMP:20260422T225349Z
+UID:4d281f6c-70d5-4075-bac9-c821d3cad92b_20260607T220000@travaux-metro
+CATEGORIES:Ligne 12,Travaux Métro
+DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nDu 3 juin au 28 juin inclus\,
+  les mercredi et dimanche dès 22:00\, le trafic sera interrompu sur toute
+  la ligne en raison de travaux de modernisation.\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Métro 12 : Travaux de modernisation - Trafic interrompu
+DTSTART;TZID=Europe/Paris:20260610T220000
+DTEND;TZID=Europe/Paris:20260611T020000
+DTSTAMP:20260422T225349Z
+UID:4d281f6c-70d5-4075-bac9-c821d3cad92b_20260610T220000@travaux-metro
+CATEGORIES:Ligne 12,Travaux Métro
+DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nDu 3 juin au 28 juin inclus\,
+  les mercredi et dimanche dès 22:00\, le trafic sera interrompu sur toute
+  la ligne en raison de travaux de modernisation.\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Métro 12 : Travaux de modernisation - Trafic interrompu
+DTSTART;TZID=Europe/Paris:20260614T220000
+DTEND;TZID=Europe/Paris:20260615T020000
+DTSTAMP:20260422T225349Z
+UID:4d281f6c-70d5-4075-bac9-c821d3cad92b_20260614T220000@travaux-metro
+CATEGORIES:Ligne 12,Travaux Métro
+DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nDu 3 juin au 28 juin inclus\,
+  les mercredi et dimanche dès 22:00\, le trafic sera interrompu sur toute
+  la ligne en raison de travaux de modernisation.\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Métro 12 : Travaux de modernisation - Trafic interrompu
+DTSTART;TZID=Europe/Paris:20260617T220000
+DTEND;TZID=Europe/Paris:20260618T020000
+DTSTAMP:20260422T225349Z
+UID:4d281f6c-70d5-4075-bac9-c821d3cad92b_20260617T220000@travaux-metro
+CATEGORIES:Ligne 12,Travaux Métro
+DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nDu 3 juin au 28 juin inclus\,
+  les mercredi et dimanche dès 22:00\, le trafic sera interrompu sur toute
+  la ligne en raison de travaux de modernisation.\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Métro 12 : Travaux de modernisation - Trafic interrompu
+DTSTART;TZID=Europe/Paris:20260621T220000
+DTEND;TZID=Europe/Paris:20260622T020000
+DTSTAMP:20260422T225349Z
+UID:4d281f6c-70d5-4075-bac9-c821d3cad92b_20260621T220000@travaux-metro
+CATEGORIES:Ligne 12,Travaux Métro
+DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nDu 3 juin au 28 juin inclus\,
+  les mercredi et dimanche dès 22:00\, le trafic sera interrompu sur toute
+  la ligne en raison de travaux de modernisation.\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Métro 12 : Travaux de modernisation - Trafic interrompu
+DTSTART;TZID=Europe/Paris:20260624T220000
+DTEND;TZID=Europe/Paris:20260625T020000
+DTSTAMP:20260422T225349Z
+UID:4d281f6c-70d5-4075-bac9-c821d3cad92b_20260624T220000@travaux-metro
+CATEGORIES:Ligne 12,Travaux Métro
+DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nDu 3 juin au 28 juin inclus\,
+  les mercredi et dimanche dès 22:00\, le trafic sera interrompu sur toute
+  la ligne en raison de travaux de modernisation.\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Métro 12 : Travaux de modernisation - Trafic interrompu
+DTSTART;TZID=Europe/Paris:20260628T220000
+DTEND;TZID=Europe/Paris:20260629T020000
+DTSTAMP:20260422T225349Z
+UID:4d281f6c-70d5-4075-bac9-c821d3cad92b_20260628T220000@travaux-metro
+CATEGORIES:Ligne 12,Travaux Métro
+DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nDu 3 juin au 28 juin inclus\,
+  les mercredi et dimanche dès 22:00\, le trafic sera interrompu sur toute
+  la ligne en raison de travaux de modernisation.\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Métro 12 : Travaux de modernisation - Trafic interrompu
+DTSTART;TZID=Europe/Paris:20260510T220000
+DTEND;TZID=Europe/Paris:20260511T020000
+DTSTAMP:20260422T225349Z
+UID:c6451e2f-f9d9-4c97-bec5-863acd965df5_20260510T220000@travaux-metro
+CATEGORIES:Ligne 12,Travaux Métro
+DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nDu 10 mai au 17 mai inclus\, 
+ le dimanche dès 22:00\, le trafic sera interrompu sur toute la ligne en r
+ aison de travaux de modernisation.\n\nCause : TRAVAUX\n\nhttps://travauxme
+ tro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Métro 12 : Travaux de modernisation - Trafic interrompu
+DTSTART;TZID=Europe/Paris:20260517T220000
+DTEND;TZID=Europe/Paris:20260518T020000
+DTSTAMP:20260422T225349Z
+UID:c6451e2f-f9d9-4c97-bec5-863acd965df5_20260517T220000@travaux-metro
+CATEGORIES:Ligne 12,Travaux Métro
+DESCRIPTION:Ligne 12\n\nTrafic interrompu\n\nDu 10 mai au 17 mai inclus\, 
+ le dimanche dès 22:00\, le trafic sera interrompu sur toute la ligne en r
+ aison de travaux de modernisation.\n\nCause : TRAVAUX\n\nhttps://travauxme
+ tro.fr/
 END:VEVENT
 END:VCALENDAR

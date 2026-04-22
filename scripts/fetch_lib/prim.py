@@ -165,6 +165,12 @@ def line_sort_key(name: str) -> tuple:
     try:
         return (float(name),)
     except ValueError:
+        # Tram lines "T<num>[suffix]" (T1, T3a, T3b, T11, ...) get their own
+        # numeric bucket so T11 sorts after T4, not between T1 and T3a.
+        if len(name) > 1 and name[0] == "T" and name[1].isdigit():
+            m = re.match(r"^T(\d+)([a-zA-Z]*)$", name)
+            if m:
+                return (500, int(m.group(1)), m.group(2))
         # RER letters (A..E) and any other non-numeric line names sort
         # alphabetically, after all numeric metro lines.
         return (999, name)

@@ -12,98 +12,226 @@ X-APPLE-CALENDAR-COLOR:#00814F
 X-PUBLISHED-TTL:PT12H
 X-WR-TIMEZONE:Europe/Paris
 BEGIN:VEVENT
-SUMMARY:RER D : Goussainville <-> Melun 25-26/04\, le week-end
-DTSTART;VALUE=DATE:20260425
-DTEND;VALUE=DATE:20260426
-DTSTAMP:20260410T100000Z
-UID:073ab3a9-20f4-495e-993a-abd39e6e78f0_20260425T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Maisons-Alfort - Alfortville\, Stade de 
- France Saint-Denis\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Gouss
- ainville\, Pierrefitte - Stains\, Châtelet - Les Halles\, Brunoy\, Le Mé
- e\, Lieusaint - Moissy\, Garges - Sarcelles\, Gare de Lyon\, Yerres\, Savi
- gny-le-Temple - Nandy\, Montgeron - Crosne\, Saint-Denis\, Cesson\, Le Ver
- t de Maisons\, Combs-la-Ville - Quincy\, Gare du Nord\, Melun\, Boussy-Sai
- nt-Antoine\, Villiers-le-Bel - Gonesse - Arnouville\, Villeneuve Triage\n\
- nTrafic perturbé\n\nPériode : le week-end\, toute la journée. Dates : d
- u samedi 25 au dimanche 26 avril. Trafic allégé entre Goussainville et M
- elun\, prévoir un train sur deux sur l'axe. Les horaires du calculateur d
- 'itinéraire tiennent compte des travaux.\n\nCause : TRAVAUX\n\nhttps://tr
- avauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Goussainville <-> Melun 25-26/04\, le week-end
-DTSTART;VALUE=DATE:20260426
-DTEND;VALUE=DATE:20260427
-DTSTAMP:20260410T100000Z
-UID:073ab3a9-20f4-495e-993a-abd39e6e78f0_20260426T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Maisons-Alfort - Alfortville\, Stade de 
- France Saint-Denis\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Gouss
- ainville\, Pierrefitte - Stains\, Châtelet - Les Halles\, Brunoy\, Le Mé
- e\, Lieusaint - Moissy\, Garges - Sarcelles\, Gare de Lyon\, Yerres\, Savi
- gny-le-Temple - Nandy\, Montgeron - Crosne\, Saint-Denis\, Cesson\, Le Ver
- t de Maisons\, Combs-la-Ville - Quincy\, Gare du Nord\, Melun\, Boussy-Sai
- nt-Antoine\, Villiers-le-Bel - Gonesse - Arnouville\, Villeneuve Triage\n\
- nTrafic perturbé\n\nPériode : le week-end\, toute la journée. Dates : d
- u samedi 25 au dimanche 26 avril. Trafic allégé entre Goussainville et M
- elun\, prévoir un train sur deux sur l'axe. Les horaires du calculateur d
- 'itinéraire tiennent compte des travaux.\n\nCause : TRAVAUX\n\nhttps://tr
- avauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Juvisy <> Corbeil-Essonnes 18-19/04
-DTSTART;VALUE=DATE:20260418
-DTEND;VALUE=DATE:20260419
-DTSTAMP:20260410T100000Z
-UID:09d84e70-13ef-11f1-b1a9-0a58a9feac02_20260418T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : le week-end
- \, toute la journée. Dates : du samedi 18 au dimanche 19 avril. Le trafic
-  est interrompu entre Juvisy et Corbeil-Essonnes via Ris-Orangis et entre 
- Juvisy et Corbeil-Essonnes via Évry - Courcouronnes. Un service de bus de
-  remplacement est mis en place\, avec desserte des gares intermédiaires. 
- entre Corbeil et Juvisy via Évry - Courcouronnes. Les horaires du calcul
- ateur d'itinéraire tiennent compte des travaux.\n\nCause : TRAVAUX\n\nhtt
- ps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Juvisy <> Corbeil-Essonnes 18-19/04
-DTSTART;VALUE=DATE:20260419
-DTEND;VALUE=DATE:20260420
-DTSTAMP:20260410T100000Z
-UID:09d84e70-13ef-11f1-b1a9-0a58a9feac02_20260419T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : le week-end
- \, toute la journée. Dates : du samedi 18 au dimanche 19 avril. Le trafic
-  est interrompu entre Juvisy et Corbeil-Essonnes via Ris-Orangis et entre 
- Juvisy et Corbeil-Essonnes via Évry - Courcouronnes. Un service de bus de
-  remplacement est mis en place\, avec desserte des gares intermédiaires. 
- entre Corbeil et Juvisy via Évry - Courcouronnes. Les horaires du calcul
- ateur d'itinéraire tiennent compte des travaux.\n\nCause : TRAVAUX\n\nhtt
- ps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:RER D : Paris Lyon <-> Combs-la-Ville / Juvisy 09-10/05
 DTSTART;TZID=Europe/Paris:20260509T231500
 DTEND;TZID=Europe/Paris:20260510T020000
-DTSTAMP:20260410T100000Z
+DTSTAMP:20260422T225349Z
 UID:11943a06-cae5-4d23-970f-f9c1649d62e9_20260509T231500@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nDates : du samedi 09 m
- ai au dimanche 10 mai à partir de 23h59 Période : à partir de 23h15 le 
- samedi\, à partir de 23h59 le dimanche Le trafic est interrompu entre Par
- is Gare de Lyon et Combs-la-Ville - Quincy et entre Paris Gare de Lyon et 
- Juvisy. Un service de bus de remplacement est mis en place\, avec desserte
-  des gares intermédiaires. Les horaires du calculateur d'itinéraire tien
- nent compte des travaux. Motif : travaux sur le réseau ferroviaire.\n\nCa
- use : TRAVAUX\n\nhttps://travauxmetro.fr/
+DESCRIPTION:Ligne D\n\nStations : Le Vert de Maisons\, Gare de Lyon\, Cré
+ teil Pompadour\, Vigneux-sur-Seine\, Juvisy\, Villeneuve Triage\, Villeneu
+ ve-Saint-Georges\, Maisons-Alfort - Alfortville\n\nArrêt(s) non desservi(
+ s)\n\nDates : du samedi 09 mai au dimanche 10 mai à partir de 23h59 Péri
+ ode : à partir de 23h15 le samedi\, à partir de 23h59 le dimanche Le tra
+ fic est interrompu entre Paris Gare de Lyon et Combs-la-Ville - Quincy et 
+ entre Paris Gare de Lyon et Juvisy. Un service de bus de remplacement est 
+ mis en place\, avec desserte des gares intermédiaires. Les horaires du ca
+ lculateur d'itinéraire tiennent compte des travaux. Motif : travaux sur l
+ e réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun / Corbeil-Essonnes 27-30/04
+DTSTART;TZID=Europe/Paris:20260427T231500
+DTEND;TZID=Europe/Paris:20260428T020000
+DTSTAMP:20260422T225349Z
+UID:16759c1b-f11c-4899-b684-3533225a373a_20260427T231500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : les lundi\, mardi\, mercredi\, jeudi dès 23h15. Dates : du lundi 27
+  au jeudi 30 avril. Le trafic est interrompu entre Paris Gare de Lyon et M
+ elun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de
+  remplacement est mis en place\, avec desserte des gares intermédiaires. 
+ Les horaires du calculateur d'itinéraire tiennent compte des travaux. Mot
+ if : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://tra
+ vauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun / Corbeil-Essonnes 27-30/04
+DTSTART;TZID=Europe/Paris:20260428T231500
+DTEND;TZID=Europe/Paris:20260429T020000
+DTSTAMP:20260422T225349Z
+UID:16759c1b-f11c-4899-b684-3533225a373a_20260428T231500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : les lundi\, mardi\, mercredi\, jeudi dès 23h15. Dates : du lundi 27
+  au jeudi 30 avril. Le trafic est interrompu entre Paris Gare de Lyon et M
+ elun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de
+  remplacement est mis en place\, avec desserte des gares intermédiaires. 
+ Les horaires du calculateur d'itinéraire tiennent compte des travaux. Mot
+ if : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://tra
+ vauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun / Corbeil-Essonnes 27-30/04
+DTSTART;TZID=Europe/Paris:20260429T231500
+DTEND;TZID=Europe/Paris:20260430T020000
+DTSTAMP:20260422T225349Z
+UID:16759c1b-f11c-4899-b684-3533225a373a_20260429T231500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : les lundi\, mardi\, mercredi\, jeudi dès 23h15. Dates : du lundi 27
+  au jeudi 30 avril. Le trafic est interrompu entre Paris Gare de Lyon et M
+ elun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de
+  remplacement est mis en place\, avec desserte des gares intermédiaires. 
+ Les horaires du calculateur d'itinéraire tiennent compte des travaux. Mot
+ if : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://tra
+ vauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun / Corbeil-Essonnes 27-30/04
+DTSTART;TZID=Europe/Paris:20260430T231500
+DTEND;TZID=Europe/Paris:20260501T020000
+DTSTAMP:20260422T225349Z
+UID:16759c1b-f11c-4899-b684-3533225a373a_20260430T231500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : les lundi\, mardi\, mercredi\, jeudi dès 23h15. Dates : du lundi 27
+  au jeudi 30 avril. Le trafic est interrompu entre Paris Gare de Lyon et M
+ elun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de
+  remplacement est mis en place\, avec desserte des gares intermédiaires. 
+ Les horaires du calculateur d'itinéraire tiennent compte des travaux. Mot
+ if : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://tra
+ vauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun / Corbeil-Essonnes 30/03-24/04
+DTSTART;TZID=Europe/Paris:20260420T231500
+DTEND;TZID=Europe/Paris:20260421T020000
+DTSTAMP:20260422T225349Z
+UID:ee1b0481-01c3-4bfd-9629-9fce8cb02427_20260420T231500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : de 23h15 à 02h. Dates : du lundi 30 mars au vendredi 24 avril\, sau
+ f week-end et jours fériés. Le trafic est interrompu entre Paris Gare de
+  Lyon et Melun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service
+  de bus de remplacement est mis en place\, avec desserte des gares interm
+ édiaires. Les horaires du calculateur d'itinéraire tiennent compte des t
+ ravaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\n
+ https://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun / Corbeil-Essonnes 30/03-24/04
+DTSTART;TZID=Europe/Paris:20260421T231500
+DTEND;TZID=Europe/Paris:20260422T020000
+DTSTAMP:20260422T225349Z
+UID:ee1b0481-01c3-4bfd-9629-9fce8cb02427_20260421T231500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : de 23h15 à 02h. Dates : du lundi 30 mars au vendredi 24 avril\, sau
+ f week-end et jours fériés. Le trafic est interrompu entre Paris Gare de
+  Lyon et Melun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service
+  de bus de remplacement est mis en place\, avec desserte des gares interm
+ édiaires. Les horaires du calculateur d'itinéraire tiennent compte des t
+ ravaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\n
+ https://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun / Corbeil-Essonnes 30/03-24/04
+DTSTART;TZID=Europe/Paris:20260422T231500
+DTEND;TZID=Europe/Paris:20260423T020000
+DTSTAMP:20260422T225349Z
+UID:ee1b0481-01c3-4bfd-9629-9fce8cb02427_20260422T231500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : de 23h15 à 02h. Dates : du lundi 30 mars au vendredi 24 avril\, sau
+ f week-end et jours fériés. Le trafic est interrompu entre Paris Gare de
+  Lyon et Melun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service
+  de bus de remplacement est mis en place\, avec desserte des gares interm
+ édiaires. Les horaires du calculateur d'itinéraire tiennent compte des t
+ ravaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\n
+ https://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun / Corbeil-Essonnes 30/03-24/04
+DTSTART;TZID=Europe/Paris:20260423T231500
+DTEND;TZID=Europe/Paris:20260424T020000
+DTSTAMP:20260422T225349Z
+UID:ee1b0481-01c3-4bfd-9629-9fce8cb02427_20260423T231500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : de 23h15 à 02h. Dates : du lundi 30 mars au vendredi 24 avril\, sau
+ f week-end et jours fériés. Le trafic est interrompu entre Paris Gare de
+  Lyon et Melun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service
+  de bus de remplacement est mis en place\, avec desserte des gares interm
+ édiaires. Les horaires du calculateur d'itinéraire tiennent compte des t
+ ravaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\n
+ https://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun / Corbeil-Essonnes 30/03-24/04
+DTSTART;TZID=Europe/Paris:20260424T231500
+DTEND;TZID=Europe/Paris:20260425T020000
+DTSTAMP:20260422T225349Z
+UID:ee1b0481-01c3-4bfd-9629-9fce8cb02427_20260424T231500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : de 23h15 à 02h. Dates : du lundi 30 mars au vendredi 24 avril\, sau
+ f week-end et jours fériés. Le trafic est interrompu entre Paris Gare de
+  Lyon et Melun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service
+  de bus de remplacement est mis en place\, avec desserte des gares interm
+ édiaires. Les horaires du calculateur d'itinéraire tiennent compte des t
+ ravaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\n
+ https://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:RER D : Paris Lyon <-> Combs-la-Ville / Juvisy 09-10/05
 DTSTART;TZID=Europe/Paris:20260510T235900
 DTEND;TZID=Europe/Paris:20260511T020000
-DTSTAMP:20260410T100000Z
+DTSTAMP:20260422T225349Z
 UID:221e790d-4c0f-4b6f-8a03-c705e336aa01_20260510T235900@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
 DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nDates : du samedi 09 m
@@ -116,1398 +244,10 @@ DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nDates : du samedi 09 m
  use : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER D : Corbeil-Essonnes <-> Malesherbes 27-30/04
-DTSTART;TZID=Europe/Paris:20260427T210000
-DTEND;TZID=Europe/Paris:20260428T020000
-DTSTAMP:20260410T100000Z
-UID:225dbe03-7d63-4de5-b147-4239557dc3e0_20260427T210000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : les lundi\,
-  mardi\, mercredi\, jeudi dès 21h00. Dates : du lundi 27 au jeudi 30 avri
- l. Le trafic est interrompu entre Corbeil-Essonnes et Malesherbes. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Corbeil-Essonnes <-> Malesherbes 27-30/04
-DTSTART;TZID=Europe/Paris:20260428T210000
-DTEND;TZID=Europe/Paris:20260429T020000
-DTSTAMP:20260410T100000Z
-UID:225dbe03-7d63-4de5-b147-4239557dc3e0_20260428T210000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : les lundi\,
-  mardi\, mercredi\, jeudi dès 21h00. Dates : du lundi 27 au jeudi 30 avri
- l. Le trafic est interrompu entre Corbeil-Essonnes et Malesherbes. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Corbeil-Essonnes <-> Malesherbes 27-30/04
-DTSTART;TZID=Europe/Paris:20260429T210000
-DTEND;TZID=Europe/Paris:20260430T020000
-DTSTAMP:20260410T100000Z
-UID:225dbe03-7d63-4de5-b147-4239557dc3e0_20260429T210000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : les lundi\,
-  mardi\, mercredi\, jeudi dès 21h00. Dates : du lundi 27 au jeudi 30 avri
- l. Le trafic est interrompu entre Corbeil-Essonnes et Malesherbes. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Corbeil-Essonnes <-> Malesherbes 27-30/04
-DTSTART;TZID=Europe/Paris:20260430T210000
-DTEND;TZID=Europe/Paris:20260501T020000
-DTSTAMP:20260410T100000Z
-UID:225dbe03-7d63-4de5-b147-4239557dc3e0_20260430T210000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : les lundi\,
-  mardi\, mercredi\, jeudi dès 21h00. Dates : du lundi 27 au jeudi 30 avri
- l. Le trafic est interrompu entre Corbeil-Essonnes et Malesherbes. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /  Corbeil-Essonnes 30/03-24/04
-DTSTART;TZID=Europe/Paris:20260407T231500
-DTEND;TZID=Europe/Paris:20260408T020000
-DTSTAMP:20260410T100000Z
-UID:26d6661e-d701-43d2-9904-a434a2ff7965_20260407T231500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : en semaine dès 23h15. Dates : du lundi 30 mars au vendredi 24 avril
- \, sauf les week-ends et jours fériés. Le trafic est interrompu entre Pa
- ris Gare de Lyon et Melun et entre Paris Gare de Lyon et Corbeil-Essonnes.
-  Un service de bus de remplacement est mis en place\, avec desserte des ga
- res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /  Corbeil-Essonnes 30/03-24/04
-DTSTART;TZID=Europe/Paris:20260408T231500
-DTEND;TZID=Europe/Paris:20260409T020000
-DTSTAMP:20260410T100000Z
-UID:26d6661e-d701-43d2-9904-a434a2ff7965_20260408T231500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : en semaine dès 23h15. Dates : du lundi 30 mars au vendredi 24 avril
- \, sauf les week-ends et jours fériés. Le trafic est interrompu entre Pa
- ris Gare de Lyon et Melun et entre Paris Gare de Lyon et Corbeil-Essonnes.
-  Un service de bus de remplacement est mis en place\, avec desserte des ga
- res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /  Corbeil-Essonnes 30/03-24/04
-DTSTART;TZID=Europe/Paris:20260409T231500
-DTEND;TZID=Europe/Paris:20260410T020000
-DTSTAMP:20260410T100000Z
-UID:26d6661e-d701-43d2-9904-a434a2ff7965_20260409T231500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : en semaine dès 23h15. Dates : du lundi 30 mars au vendredi 24 avril
- \, sauf les week-ends et jours fériés. Le trafic est interrompu entre Pa
- ris Gare de Lyon et Melun et entre Paris Gare de Lyon et Corbeil-Essonnes.
-  Un service de bus de remplacement est mis en place\, avec desserte des ga
- res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /  Corbeil-Essonnes 30/03-24/04
-DTSTART;TZID=Europe/Paris:20260410T231500
-DTEND;TZID=Europe/Paris:20260411T020000
-DTSTAMP:20260410T100000Z
-UID:26d6661e-d701-43d2-9904-a434a2ff7965_20260410T231500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : en semaine dès 23h15. Dates : du lundi 30 mars au vendredi 24 avril
- \, sauf les week-ends et jours fériés. Le trafic est interrompu entre Pa
- ris Gare de Lyon et Melun et entre Paris Gare de Lyon et Corbeil-Essonnes.
-  Un service de bus de remplacement est mis en place\, avec desserte des ga
- res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /  Corbeil-Essonnes 30/03-24/04
-DTSTART;TZID=Europe/Paris:20260413T231500
-DTEND;TZID=Europe/Paris:20260414T020000
-DTSTAMP:20260410T100000Z
-UID:26d6661e-d701-43d2-9904-a434a2ff7965_20260413T231500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : en semaine dès 23h15. Dates : du lundi 30 mars au vendredi 24 avril
- \, sauf les week-ends et jours fériés. Le trafic est interrompu entre Pa
- ris Gare de Lyon et Melun et entre Paris Gare de Lyon et Corbeil-Essonnes.
-  Un service de bus de remplacement est mis en place\, avec desserte des ga
- res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /  Corbeil-Essonnes 30/03-24/04
-DTSTART;TZID=Europe/Paris:20260414T231500
-DTEND;TZID=Europe/Paris:20260415T020000
-DTSTAMP:20260410T100000Z
-UID:26d6661e-d701-43d2-9904-a434a2ff7965_20260414T231500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : en semaine dès 23h15. Dates : du lundi 30 mars au vendredi 24 avril
- \, sauf les week-ends et jours fériés. Le trafic est interrompu entre Pa
- ris Gare de Lyon et Melun et entre Paris Gare de Lyon et Corbeil-Essonnes.
-  Un service de bus de remplacement est mis en place\, avec desserte des ga
- res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /  Corbeil-Essonnes 30/03-24/04
-DTSTART;TZID=Europe/Paris:20260415T231500
-DTEND;TZID=Europe/Paris:20260416T020000
-DTSTAMP:20260410T100000Z
-UID:26d6661e-d701-43d2-9904-a434a2ff7965_20260415T231500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : en semaine dès 23h15. Dates : du lundi 30 mars au vendredi 24 avril
- \, sauf les week-ends et jours fériés. Le trafic est interrompu entre Pa
- ris Gare de Lyon et Melun et entre Paris Gare de Lyon et Corbeil-Essonnes.
-  Un service de bus de remplacement est mis en place\, avec desserte des ga
- res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /  Corbeil-Essonnes 30/03-24/04
-DTSTART;TZID=Europe/Paris:20260416T231500
-DTEND;TZID=Europe/Paris:20260417T020000
-DTSTAMP:20260410T100000Z
-UID:26d6661e-d701-43d2-9904-a434a2ff7965_20260416T231500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : en semaine dès 23h15. Dates : du lundi 30 mars au vendredi 24 avril
- \, sauf les week-ends et jours fériés. Le trafic est interrompu entre Pa
- ris Gare de Lyon et Melun et entre Paris Gare de Lyon et Corbeil-Essonnes.
-  Un service de bus de remplacement est mis en place\, avec desserte des ga
- res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /  Corbeil-Essonnes 30/03-24/04
-DTSTART;TZID=Europe/Paris:20260417T231500
-DTEND;TZID=Europe/Paris:20260418T020000
-DTSTAMP:20260410T100000Z
-UID:26d6661e-d701-43d2-9904-a434a2ff7965_20260417T231500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : en semaine dès 23h15. Dates : du lundi 30 mars au vendredi 24 avril
- \, sauf les week-ends et jours fériés. Le trafic est interrompu entre Pa
- ris Gare de Lyon et Melun et entre Paris Gare de Lyon et Corbeil-Essonnes.
-  Un service de bus de remplacement est mis en place\, avec desserte des ga
- res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /  Corbeil-Essonnes 30/03-24/04
-DTSTART;TZID=Europe/Paris:20260420T231500
-DTEND;TZID=Europe/Paris:20260421T020000
-DTSTAMP:20260410T100000Z
-UID:26d6661e-d701-43d2-9904-a434a2ff7965_20260420T231500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : en semaine dès 23h15. Dates : du lundi 30 mars au vendredi 24 avril
- \, sauf les week-ends et jours fériés. Le trafic est interrompu entre Pa
- ris Gare de Lyon et Melun et entre Paris Gare de Lyon et Corbeil-Essonnes.
-  Un service de bus de remplacement est mis en place\, avec desserte des ga
- res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /  Corbeil-Essonnes 30/03-24/04
-DTSTART;TZID=Europe/Paris:20260421T231500
-DTEND;TZID=Europe/Paris:20260422T020000
-DTSTAMP:20260410T100000Z
-UID:26d6661e-d701-43d2-9904-a434a2ff7965_20260421T231500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : en semaine dès 23h15. Dates : du lundi 30 mars au vendredi 24 avril
- \, sauf les week-ends et jours fériés. Le trafic est interrompu entre Pa
- ris Gare de Lyon et Melun et entre Paris Gare de Lyon et Corbeil-Essonnes.
-  Un service de bus de remplacement est mis en place\, avec desserte des ga
- res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /  Corbeil-Essonnes 30/03-24/04
-DTSTART;TZID=Europe/Paris:20260422T231500
-DTEND;TZID=Europe/Paris:20260423T020000
-DTSTAMP:20260410T100000Z
-UID:26d6661e-d701-43d2-9904-a434a2ff7965_20260422T231500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : en semaine dès 23h15. Dates : du lundi 30 mars au vendredi 24 avril
- \, sauf les week-ends et jours fériés. Le trafic est interrompu entre Pa
- ris Gare de Lyon et Melun et entre Paris Gare de Lyon et Corbeil-Essonnes.
-  Un service de bus de remplacement est mis en place\, avec desserte des ga
- res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /  Corbeil-Essonnes 30/03-24/04
-DTSTART;TZID=Europe/Paris:20260423T231500
-DTEND;TZID=Europe/Paris:20260424T020000
-DTSTAMP:20260410T100000Z
-UID:26d6661e-d701-43d2-9904-a434a2ff7965_20260423T231500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : en semaine dès 23h15. Dates : du lundi 30 mars au vendredi 24 avril
- \, sauf les week-ends et jours fériés. Le trafic est interrompu entre Pa
- ris Gare de Lyon et Melun et entre Paris Gare de Lyon et Corbeil-Essonnes.
-  Un service de bus de remplacement est mis en place\, avec desserte des ga
- res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /  Corbeil-Essonnes 30/03-24/04
-DTSTART;TZID=Europe/Paris:20260424T231500
-DTEND;TZID=Europe/Paris:20260425T020000
-DTSTAMP:20260410T100000Z
-UID:26d6661e-d701-43d2-9904-a434a2ff7965_20260424T231500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : en semaine dès 23h15. Dates : du lundi 30 mars au vendredi 24 avril
- \, sauf les week-ends et jours fériés. Le trafic est interrompu entre Pa
- ris Gare de Lyon et Melun et entre Paris Gare de Lyon et Corbeil-Essonnes.
-  Un service de bus de remplacement est mis en place\, avec desserte des ga
- res intermédiaires. Les horaires du calculateur d'itinéraire tiennent co
- mpte des travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260504T233500
-DTEND;TZID=Europe/Paris:20260505T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260504T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260505T233500
-DTEND;TZID=Europe/Paris:20260506T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260505T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260506T233500
-DTEND;TZID=Europe/Paris:20260507T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260506T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260507T233500
-DTEND;TZID=Europe/Paris:20260508T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260507T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260509T233500
-DTEND;TZID=Europe/Paris:20260510T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260509T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260510T233500
-DTEND;TZID=Europe/Paris:20260511T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260510T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260511T233500
-DTEND;TZID=Europe/Paris:20260512T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260511T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260512T233500
-DTEND;TZID=Europe/Paris:20260513T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260512T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260513T233500
-DTEND;TZID=Europe/Paris:20260514T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260513T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260515T233500
-DTEND;TZID=Europe/Paris:20260516T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260515T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260516T233500
-DTEND;TZID=Europe/Paris:20260517T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260516T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260517T233500
-DTEND;TZID=Europe/Paris:20260518T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260517T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260518T233500
-DTEND;TZID=Europe/Paris:20260519T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260518T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260519T233500
-DTEND;TZID=Europe/Paris:20260520T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260519T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260520T233500
-DTEND;TZID=Europe/Paris:20260521T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260520T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260521T233500
-DTEND;TZID=Europe/Paris:20260522T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260521T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260522T233500
-DTEND;TZID=Europe/Paris:20260523T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260522T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260523T233500
-DTEND;TZID=Europe/Paris:20260524T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260523T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260524T233500
-DTEND;TZID=Europe/Paris:20260525T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260524T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260526T233500
-DTEND;TZID=Europe/Paris:20260527T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260526T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260527T233500
-DTEND;TZID=Europe/Paris:20260528T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260527T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260528T233500
-DTEND;TZID=Europe/Paris:20260529T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260528T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260529T233500
-DTEND;TZID=Europe/Paris:20260530T020000
-DTSTAMP:20260410T100000Z
-UID:2d93eda7-aaeb-4d91-aad6-c915671b0f7d_20260529T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Les Noues\, Creil\, Chantilly - Gouvieux\, Ga
- rges - Sarcelles\, Orry-la-Ville - Coye\, Saint-Denis\, Louvres\, Survilli
- ers - Fosses\, Gare du Nord\, La Borne Blanche (Gare)\, Villiers-le-Bel - 
- Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
-  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
- 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
- ice de bus de remplacement est mis en place\, avec desserte des gares inte
- rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
-  travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
-DTSTART;VALUE=DATE:20260504
-DTEND;VALUE=DATE:20260505
-DTSTAMP:20260410T100000Z
-UID:3eea2f95-00e9-4b13-8936-a14d70ca879e_20260504T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : dès 23h15 Dates : du lundi 04 au vendredi 29 ma\, \, sauf week-end 
- et jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Me
- lun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de 
- remplacement est mis en place\, avec desserte des gares intermédiaires. L
- es horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nC
- ause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
-DTSTART;VALUE=DATE:20260505
-DTEND;VALUE=DATE:20260506
-DTSTAMP:20260410T100000Z
-UID:3eea2f95-00e9-4b13-8936-a14d70ca879e_20260505T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : dès 23h15 Dates : du lundi 04 au vendredi 29 ma\, \, sauf week-end 
- et jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Me
- lun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de 
- remplacement est mis en place\, avec desserte des gares intermédiaires. L
- es horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nC
- ause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
-DTSTART;VALUE=DATE:20260506
-DTEND;VALUE=DATE:20260507
-DTSTAMP:20260410T100000Z
-UID:3eea2f95-00e9-4b13-8936-a14d70ca879e_20260506T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : dès 23h15 Dates : du lundi 04 au vendredi 29 ma\, \, sauf week-end 
- et jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Me
- lun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de 
- remplacement est mis en place\, avec desserte des gares intermédiaires. L
- es horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nC
- ause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
-DTSTART;VALUE=DATE:20260507
-DTEND;VALUE=DATE:20260508
-DTSTAMP:20260410T100000Z
-UID:3eea2f95-00e9-4b13-8936-a14d70ca879e_20260507T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : dès 23h15 Dates : du lundi 04 au vendredi 29 ma\, \, sauf week-end 
- et jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Me
- lun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de 
- remplacement est mis en place\, avec desserte des gares intermédiaires. L
- es horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nC
- ause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
-DTSTART;VALUE=DATE:20260509
-DTEND;VALUE=DATE:20260510
-DTSTAMP:20260410T100000Z
-UID:3eea2f95-00e9-4b13-8936-a14d70ca879e_20260509T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : dès 23h15 Dates : du lundi 04 au vendredi 29 ma\, \, sauf week-end 
- et jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Me
- lun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de 
- remplacement est mis en place\, avec desserte des gares intermédiaires. L
- es horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nC
- ause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
-DTSTART;VALUE=DATE:20260511
-DTEND;VALUE=DATE:20260512
-DTSTAMP:20260410T100000Z
-UID:3eea2f95-00e9-4b13-8936-a14d70ca879e_20260511T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : dès 23h15 Dates : du lundi 04 au vendredi 29 ma\, \, sauf week-end 
- et jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Me
- lun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de 
- remplacement est mis en place\, avec desserte des gares intermédiaires. L
- es horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nC
- ause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
-DTSTART;VALUE=DATE:20260512
-DTEND;VALUE=DATE:20260513
-DTSTAMP:20260410T100000Z
-UID:3eea2f95-00e9-4b13-8936-a14d70ca879e_20260512T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : dès 23h15 Dates : du lundi 04 au vendredi 29 ma\, \, sauf week-end 
- et jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Me
- lun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de 
- remplacement est mis en place\, avec desserte des gares intermédiaires. L
- es horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nC
- ause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
-DTSTART;VALUE=DATE:20260513
-DTEND;VALUE=DATE:20260514
-DTSTAMP:20260410T100000Z
-UID:3eea2f95-00e9-4b13-8936-a14d70ca879e_20260513T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : dès 23h15 Dates : du lundi 04 au vendredi 29 ma\, \, sauf week-end 
- et jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Me
- lun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de 
- remplacement est mis en place\, avec desserte des gares intermédiaires. L
- es horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nC
- ause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
-DTSTART;VALUE=DATE:20260515
-DTEND;VALUE=DATE:20260516
-DTSTAMP:20260410T100000Z
-UID:3eea2f95-00e9-4b13-8936-a14d70ca879e_20260515T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : dès 23h15 Dates : du lundi 04 au vendredi 29 ma\, \, sauf week-end 
- et jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Me
- lun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de 
- remplacement est mis en place\, avec desserte des gares intermédiaires. L
- es horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nC
- ause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
-DTSTART;VALUE=DATE:20260516
-DTEND;VALUE=DATE:20260517
-DTSTAMP:20260410T100000Z
-UID:3eea2f95-00e9-4b13-8936-a14d70ca879e_20260516T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : dès 23h15 Dates : du lundi 04 au vendredi 29 ma\, \, sauf week-end 
- et jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Me
- lun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de 
- remplacement est mis en place\, avec desserte des gares intermédiaires. L
- es horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nC
- ause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
-DTSTART;VALUE=DATE:20260518
-DTEND;VALUE=DATE:20260519
-DTSTAMP:20260410T100000Z
-UID:3eea2f95-00e9-4b13-8936-a14d70ca879e_20260518T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : dès 23h15 Dates : du lundi 04 au vendredi 29 ma\, \, sauf week-end 
- et jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Me
- lun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de 
- remplacement est mis en place\, avec desserte des gares intermédiaires. L
- es horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nC
- ause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
-DTSTART;VALUE=DATE:20260519
-DTEND;VALUE=DATE:20260520
-DTSTAMP:20260410T100000Z
-UID:3eea2f95-00e9-4b13-8936-a14d70ca879e_20260519T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : dès 23h15 Dates : du lundi 04 au vendredi 29 ma\, \, sauf week-end 
- et jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Me
- lun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de 
- remplacement est mis en place\, avec desserte des gares intermédiaires. L
- es horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nC
- ause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
-DTSTART;VALUE=DATE:20260520
-DTEND;VALUE=DATE:20260521
-DTSTAMP:20260410T100000Z
-UID:3eea2f95-00e9-4b13-8936-a14d70ca879e_20260520T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : dès 23h15 Dates : du lundi 04 au vendredi 29 ma\, \, sauf week-end 
- et jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Me
- lun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de 
- remplacement est mis en place\, avec desserte des gares intermédiaires. L
- es horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nC
- ause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
-DTSTART;VALUE=DATE:20260521
-DTEND;VALUE=DATE:20260522
-DTSTAMP:20260410T100000Z
-UID:3eea2f95-00e9-4b13-8936-a14d70ca879e_20260521T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : dès 23h15 Dates : du lundi 04 au vendredi 29 ma\, \, sauf week-end 
- et jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Me
- lun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de 
- remplacement est mis en place\, avec desserte des gares intermédiaires. L
- es horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nC
- ause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
-DTSTART;VALUE=DATE:20260522
-DTEND;VALUE=DATE:20260523
-DTSTAMP:20260410T100000Z
-UID:3eea2f95-00e9-4b13-8936-a14d70ca879e_20260522T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : dès 23h15 Dates : du lundi 04 au vendredi 29 ma\, \, sauf week-end 
- et jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Me
- lun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de 
- remplacement est mis en place\, avec desserte des gares intermédiaires. L
- es horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nC
- ause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
-DTSTART;VALUE=DATE:20260523
-DTEND;VALUE=DATE:20260524
-DTSTAMP:20260410T100000Z
-UID:3eea2f95-00e9-4b13-8936-a14d70ca879e_20260523T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : dès 23h15 Dates : du lundi 04 au vendredi 29 ma\, \, sauf week-end 
- et jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Me
- lun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de 
- remplacement est mis en place\, avec desserte des gares intermédiaires. L
- es horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nC
- ause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
-DTSTART;VALUE=DATE:20260526
-DTEND;VALUE=DATE:20260527
-DTSTAMP:20260410T100000Z
-UID:3eea2f95-00e9-4b13-8936-a14d70ca879e_20260526T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : dès 23h15 Dates : du lundi 04 au vendredi 29 ma\, \, sauf week-end 
- et jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Me
- lun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de 
- remplacement est mis en place\, avec desserte des gares intermédiaires. L
- es horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nC
- ause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
-DTSTART;VALUE=DATE:20260527
-DTEND;VALUE=DATE:20260528
-DTSTAMP:20260410T100000Z
-UID:3eea2f95-00e9-4b13-8936-a14d70ca879e_20260527T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : dès 23h15 Dates : du lundi 04 au vendredi 29 ma\, \, sauf week-end 
- et jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Me
- lun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de 
- remplacement est mis en place\, avec desserte des gares intermédiaires. L
- es horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nC
- ause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
-DTSTART;VALUE=DATE:20260528
-DTEND;VALUE=DATE:20260529
-DTSTAMP:20260410T100000Z
-UID:3eea2f95-00e9-4b13-8936-a14d70ca879e_20260528T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : dès 23h15 Dates : du lundi 04 au vendredi 29 ma\, \, sauf week-end 
- et jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Me
- lun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de 
- remplacement est mis en place\, avec desserte des gares intermédiaires. L
- es horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nC
- ause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
-DTSTART;VALUE=DATE:20260529
-DTEND;VALUE=DATE:20260530
-DTSTAMP:20260410T100000Z
-UID:3eea2f95-00e9-4b13-8936-a14d70ca879e_20260529T030000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : dès 23h15 Dates : du lundi 04 au vendredi 29 ma\, \, sauf week-end 
- et jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Me
- lun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de 
- remplacement est mis en place\, avec desserte des gares intermédiaires. L
- es horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nC
- ause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun / Corbeil-Essonnes 27-30/04
-DTSTART;TZID=Europe/Paris:20260427T231500
-DTEND;TZID=Europe/Paris:20260428T020000
-DTSTAMP:20260410T100000Z
-UID:dc215893-bb93-4eb5-9511-ae35d4e29181_20260427T231500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : les lundi\, mardi\, mercredi\, jeudi dès 23h15. Dates : du lundi 27
-  au jeudi 30 avril. Le trafic est interrompu entre Paris Gare de Lyon et M
- elun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de
-  remplacement est mis en place\, avec desserte des gares intermédiaires. 
- Les horaires du calculateur d'itinéraire tiennent compte des travaux.\n\n
- Cause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun / Corbeil-Essonnes 27-30/04
-DTSTART;TZID=Europe/Paris:20260428T231500
-DTEND;TZID=Europe/Paris:20260429T020000
-DTSTAMP:20260410T100000Z
-UID:dc215893-bb93-4eb5-9511-ae35d4e29181_20260428T231500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : les lundi\, mardi\, mercredi\, jeudi dès 23h15. Dates : du lundi 27
-  au jeudi 30 avril. Le trafic est interrompu entre Paris Gare de Lyon et M
- elun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de
-  remplacement est mis en place\, avec desserte des gares intermédiaires. 
- Les horaires du calculateur d'itinéraire tiennent compte des travaux.\n\n
- Cause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun / Corbeil-Essonnes 27-30/04
-DTSTART;TZID=Europe/Paris:20260429T231500
-DTEND;TZID=Europe/Paris:20260430T020000
-DTSTAMP:20260410T100000Z
-UID:dc215893-bb93-4eb5-9511-ae35d4e29181_20260429T231500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : les lundi\, mardi\, mercredi\, jeudi dès 23h15. Dates : du lundi 27
-  au jeudi 30 avril. Le trafic est interrompu entre Paris Gare de Lyon et M
- elun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de
-  remplacement est mis en place\, avec desserte des gares intermédiaires. 
- Les horaires du calculateur d'itinéraire tiennent compte des travaux.\n\n
- Cause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Paris Lyon <> Melun / Corbeil-Essonnes 27-30/04
-DTSTART;TZID=Europe/Paris:20260430T231500
-DTEND;TZID=Europe/Paris:20260501T020000
-DTSTAMP:20260410T100000Z
-UID:dc215893-bb93-4eb5-9511-ae35d4e29181_20260430T231500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Viry-Châtillon\, Maisons-Alfort - Alfor
- tville\, Créteil Pompadour\, Villeneuve-Saint-Georges\, Brunoy\, Évry - 
- Courcouronnes\, Vigneux-sur-Seine\, Le Mée\, Lieusaint - Moissy\, Orangis
-  Bois de l'Épine\, Juvisy\, Gare de Lyon\, Yerres\, Savigny-le-Temple - N
- andy\, Montgeron - Crosne\, Grigny Centre\, Cesson\, Corbeil-Essonnes\, Le
-  Vert de Maisons\, Le Bras de Fer\, Combs-la-Ville - Quincy\, Melun\, Bous
- sy-Saint-Antoine\, Villeneuve Triage\n\nArrêt(s) non desservi(s)\n\nPéri
- ode : les lundi\, mardi\, mercredi\, jeudi dès 23h15. Dates : du lundi 27
-  au jeudi 30 avril. Le trafic est interrompu entre Paris Gare de Lyon et M
- elun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de
-  remplacement est mis en place\, avec desserte des gares intermédiaires. 
- Les horaires du calculateur d'itinéraire tiennent compte des travaux.\n\n
- Cause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Creil <-> Paris Nord 30/03-30/04\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260407T233500
-DTEND;TZID=Europe/Paris:20260408T020000
-DTSTAMP:20260410T100000Z
-UID:492e0b82-1250-11f1-9e08-0a58a9feac02_20260407T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
- à partir de 23h35. Dates : du lundi 30 mars au jeudi 30 avril\, sauf les 
- jours fériés. Le trafic est interrompu entre Creil et Paris Gare du Nord
- . Un service de bus de remplacement est mis en place\, avec desserte des g
- ares intermédiaires. Les horaires du calculateur d'itinéraire tiennent c
- ompte des travaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : 
- TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Creil <-> Paris Nord 30/03-30/04\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260408T233500
-DTEND;TZID=Europe/Paris:20260409T020000
-DTSTAMP:20260410T100000Z
-UID:492e0b82-1250-11f1-9e08-0a58a9feac02_20260408T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
- à partir de 23h35. Dates : du lundi 30 mars au jeudi 30 avril\, sauf les 
- jours fériés. Le trafic est interrompu entre Creil et Paris Gare du Nord
- . Un service de bus de remplacement est mis en place\, avec desserte des g
- ares intermédiaires. Les horaires du calculateur d'itinéraire tiennent c
- ompte des travaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : 
- TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Creil <-> Paris Nord 30/03-30/04\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260409T233500
-DTEND;TZID=Europe/Paris:20260410T020000
-DTSTAMP:20260410T100000Z
-UID:492e0b82-1250-11f1-9e08-0a58a9feac02_20260409T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
- à partir de 23h35. Dates : du lundi 30 mars au jeudi 30 avril\, sauf les 
- jours fériés. Le trafic est interrompu entre Creil et Paris Gare du Nord
- . Un service de bus de remplacement est mis en place\, avec desserte des g
- ares intermédiaires. Les horaires du calculateur d'itinéraire tiennent c
- ompte des travaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : 
- TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Creil <-> Paris Nord 30/03-30/04\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260410T233500
-DTEND;TZID=Europe/Paris:20260411T020000
-DTSTAMP:20260410T100000Z
-UID:492e0b82-1250-11f1-9e08-0a58a9feac02_20260410T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
- à partir de 23h35. Dates : du lundi 30 mars au jeudi 30 avril\, sauf les 
- jours fériés. Le trafic est interrompu entre Creil et Paris Gare du Nord
- . Un service de bus de remplacement est mis en place\, avec desserte des g
- ares intermédiaires. Les horaires du calculateur d'itinéraire tiennent c
- ompte des travaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : 
- TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Creil <-> Paris Nord 30/03-30/04\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260413T233500
-DTEND;TZID=Europe/Paris:20260414T020000
-DTSTAMP:20260410T100000Z
-UID:492e0b82-1250-11f1-9e08-0a58a9feac02_20260413T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
- à partir de 23h35. Dates : du lundi 30 mars au jeudi 30 avril\, sauf les 
- jours fériés. Le trafic est interrompu entre Creil et Paris Gare du Nord
- . Un service de bus de remplacement est mis en place\, avec desserte des g
- ares intermédiaires. Les horaires du calculateur d'itinéraire tiennent c
- ompte des travaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : 
- TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Creil <-> Paris Nord 30/03-30/04\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260414T233500
-DTEND;TZID=Europe/Paris:20260415T020000
-DTSTAMP:20260410T100000Z
-UID:492e0b82-1250-11f1-9e08-0a58a9feac02_20260414T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
- à partir de 23h35. Dates : du lundi 30 mars au jeudi 30 avril\, sauf les 
- jours fériés. Le trafic est interrompu entre Creil et Paris Gare du Nord
- . Un service de bus de remplacement est mis en place\, avec desserte des g
- ares intermédiaires. Les horaires du calculateur d'itinéraire tiennent c
- ompte des travaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : 
- TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Creil <-> Paris Nord 30/03-30/04\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260415T233500
-DTEND;TZID=Europe/Paris:20260416T020000
-DTSTAMP:20260410T100000Z
-UID:492e0b82-1250-11f1-9e08-0a58a9feac02_20260415T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
- à partir de 23h35. Dates : du lundi 30 mars au jeudi 30 avril\, sauf les 
- jours fériés. Le trafic est interrompu entre Creil et Paris Gare du Nord
- . Un service de bus de remplacement est mis en place\, avec desserte des g
- ares intermédiaires. Les horaires du calculateur d'itinéraire tiennent c
- ompte des travaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : 
- TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Creil <-> Paris Nord 30/03-30/04\, en semaine dès 23h35
-DTSTART;TZID=Europe/Paris:20260416T233500
-DTEND;TZID=Europe/Paris:20260417T020000
-DTSTAMP:20260410T100000Z
-UID:492e0b82-1250-11f1-9e08-0a58a9feac02_20260416T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
- à partir de 23h35. Dates : du lundi 30 mars au jeudi 30 avril\, sauf les 
- jours fériés. Le trafic est interrompu entre Creil et Paris Gare du Nord
- . Un service de bus de remplacement est mis en place\, avec desserte des g
- ares intermédiaires. Les horaires du calculateur d'itinéraire tiennent c
- ompte des travaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : 
- TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:RER D : Creil <-> Paris Nord 30/03-30/04\, en semaine dès 23h35
 DTSTART;TZID=Europe/Paris:20260417T233500
 DTEND;TZID=Europe/Paris:20260418T020000
-DTSTAMP:20260410T100000Z
+DTSTAMP:20260422T225349Z
 UID:492e0b82-1250-11f1-9e08-0a58a9feac02_20260417T233500@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
 DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
@@ -1522,7 +262,7 @@ BEGIN:VEVENT
 SUMMARY:RER D : Creil <-> Paris Nord 30/03-30/04\, en semaine dès 23h35
 DTSTART;TZID=Europe/Paris:20260420T233500
 DTEND;TZID=Europe/Paris:20260421T020000
-DTSTAMP:20260410T100000Z
+DTSTAMP:20260422T225349Z
 UID:492e0b82-1250-11f1-9e08-0a58a9feac02_20260420T233500@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
 DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
@@ -1537,7 +277,7 @@ BEGIN:VEVENT
 SUMMARY:RER D : Creil <-> Paris Nord 30/03-30/04\, en semaine dès 23h35
 DTSTART;TZID=Europe/Paris:20260421T233500
 DTEND;TZID=Europe/Paris:20260422T020000
-DTSTAMP:20260410T100000Z
+DTSTAMP:20260422T225349Z
 UID:492e0b82-1250-11f1-9e08-0a58a9feac02_20260421T233500@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
 DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
@@ -1552,7 +292,7 @@ BEGIN:VEVENT
 SUMMARY:RER D : Creil <-> Paris Nord 30/03-30/04\, en semaine dès 23h35
 DTSTART;TZID=Europe/Paris:20260422T233500
 DTEND;TZID=Europe/Paris:20260423T020000
-DTSTAMP:20260410T100000Z
+DTSTAMP:20260422T225349Z
 UID:492e0b82-1250-11f1-9e08-0a58a9feac02_20260422T233500@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
 DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
@@ -1567,7 +307,7 @@ BEGIN:VEVENT
 SUMMARY:RER D : Creil <-> Paris Nord 30/03-30/04\, en semaine dès 23h35
 DTSTART;TZID=Europe/Paris:20260423T233500
 DTEND;TZID=Europe/Paris:20260424T020000
-DTSTAMP:20260410T100000Z
+DTSTAMP:20260422T225349Z
 UID:492e0b82-1250-11f1-9e08-0a58a9feac02_20260423T233500@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
 DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
@@ -1582,7 +322,7 @@ BEGIN:VEVENT
 SUMMARY:RER D : Creil <-> Paris Nord 30/03-30/04\, en semaine dès 23h35
 DTSTART;TZID=Europe/Paris:20260424T233500
 DTEND;TZID=Europe/Paris:20260425T020000
-DTSTAMP:20260410T100000Z
+DTSTAMP:20260422T225349Z
 UID:492e0b82-1250-11f1-9e08-0a58a9feac02_20260424T233500@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
 DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
@@ -1597,7 +337,7 @@ BEGIN:VEVENT
 SUMMARY:RER D : Creil <-> Paris Nord 30/03-30/04\, en semaine dès 23h35
 DTSTART;TZID=Europe/Paris:20260427T233500
 DTEND;TZID=Europe/Paris:20260428T020000
-DTSTAMP:20260410T100000Z
+DTSTAMP:20260422T225349Z
 UID:492e0b82-1250-11f1-9e08-0a58a9feac02_20260427T233500@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
 DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
@@ -1612,7 +352,7 @@ BEGIN:VEVENT
 SUMMARY:RER D : Creil <-> Paris Nord 30/03-30/04\, en semaine dès 23h35
 DTSTART;TZID=Europe/Paris:20260428T233500
 DTEND;TZID=Europe/Paris:20260429T020000
-DTSTAMP:20260410T100000Z
+DTSTAMP:20260422T225349Z
 UID:492e0b82-1250-11f1-9e08-0a58a9feac02_20260428T233500@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
 DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
@@ -1627,7 +367,7 @@ BEGIN:VEVENT
 SUMMARY:RER D : Creil <-> Paris Nord 30/03-30/04\, en semaine dès 23h35
 DTSTART;TZID=Europe/Paris:20260429T233500
 DTEND;TZID=Europe/Paris:20260430T020000
-DTSTAMP:20260410T100000Z
+DTSTAMP:20260422T225349Z
 UID:492e0b82-1250-11f1-9e08-0a58a9feac02_20260429T233500@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
 DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
@@ -1642,7 +382,7 @@ BEGIN:VEVENT
 SUMMARY:RER D : Creil <-> Paris Nord 30/03-30/04\, en semaine dès 23h35
 DTSTART;TZID=Europe/Paris:20260430T233500
 DTEND;TZID=Europe/Paris:20260501T020000
-DTSTAMP:20260410T100000Z
+DTSTAMP:20260422T225349Z
 UID:492e0b82-1250-11f1-9e08-0a58a9feac02_20260430T233500@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
 DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
@@ -1654,116 +394,33 @@ DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
  TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER D : Corbeil-Essonnes <> Malesherbes 13-17/04
-DTSTART;TZID=Europe/Paris:20260413T230500
-DTEND;TZID=Europe/Paris:20260414T020000
-DTSTAMP:20260410T100000Z
-UID:5c37a464-13ee-11f1-8d49-0a58a9feac02_20260413T230500@travaux-metro
+SUMMARY:RER D : Maisons-Alfort + Vert de Maisons 16/05 au 24/05 week-ends
+DTSTART;TZID=Europe/Paris:20260517T040000
+DTEND;TZID=Europe/Paris:20260517T130000
+DTSTAMP:20260422T225349Z
+UID:57381a84-b280-40de-952b-530ed29d1414_20260517T040000@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
- dès 23h05. Dates : du lundi 13 au vendredi 17 avril. Le trafic est interr
- ompu entre Corbeil-Essonnes et Malesherbes. Un service de bus de remplacem
- ent est mis en place\, avec desserte des gares intermédiaires. Les horair
- es du calculateur d'itinéraire tiennent compte des travaux.\n\nCause : TR
- AVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Corbeil-Essonnes <> Malesherbes 13-17/04
-DTSTART;TZID=Europe/Paris:20260414T230500
-DTEND;TZID=Europe/Paris:20260415T020000
-DTSTAMP:20260410T100000Z
-UID:5c37a464-13ee-11f1-8d49-0a58a9feac02_20260414T230500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
- dès 23h05. Dates : du lundi 13 au vendredi 17 avril. Le trafic est interr
- ompu entre Corbeil-Essonnes et Malesherbes. Un service de bus de remplacem
- ent est mis en place\, avec desserte des gares intermédiaires. Les horair
- es du calculateur d'itinéraire tiennent compte des travaux.\n\nCause : TR
- AVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Corbeil-Essonnes <> Malesherbes 13-17/04
-DTSTART;TZID=Europe/Paris:20260415T230500
-DTEND;TZID=Europe/Paris:20260416T020000
-DTSTAMP:20260410T100000Z
-UID:5c37a464-13ee-11f1-8d49-0a58a9feac02_20260415T230500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
- dès 23h05. Dates : du lundi 13 au vendredi 17 avril. Le trafic est interr
- ompu entre Corbeil-Essonnes et Malesherbes. Un service de bus de remplacem
- ent est mis en place\, avec desserte des gares intermédiaires. Les horair
- es du calculateur d'itinéraire tiennent compte des travaux.\n\nCause : TR
- AVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Corbeil-Essonnes <> Malesherbes 13-17/04
-DTSTART;TZID=Europe/Paris:20260416T230500
-DTEND;TZID=Europe/Paris:20260417T020000
-DTSTAMP:20260410T100000Z
-UID:5c37a464-13ee-11f1-8d49-0a58a9feac02_20260416T230500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
- dès 23h05. Dates : du lundi 13 au vendredi 17 avril. Le trafic est interr
- ompu entre Corbeil-Essonnes et Malesherbes. Un service de bus de remplacem
- ent est mis en place\, avec desserte des gares intermédiaires. Les horair
- es du calculateur d'itinéraire tiennent compte des travaux.\n\nCause : TR
- AVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Corbeil-Essonnes <> Malesherbes 13-17/04
-DTSTART;TZID=Europe/Paris:20260417T230500
-DTEND;TZID=Europe/Paris:20260418T020000
-DTSTAMP:20260410T100000Z
-UID:5c37a464-13ee-11f1-8d49-0a58a9feac02_20260417T230500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
- dès 23h05. Dates : du lundi 13 au vendredi 17 avril. Le trafic est interr
- ompu entre Corbeil-Essonnes et Malesherbes. Un service de bus de remplacem
- ent est mis en place\, avec desserte des gares intermédiaires. Les horair
- es du calculateur d'itinéraire tiennent compte des travaux.\n\nCause : TR
- AVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Orry-la-ville <-> Creil 18-19/04
-DTSTART;TZID=Europe/Paris:20260418T233500
-DTEND;TZID=Europe/Paris:20260419T020000
-DTSTAMP:20260410T100000Z
-UID:6bae918d-d30a-473d-a06d-13b55055874c_20260418T233500@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Goussainvi
- lle\, Pierrefitte - Stains\, Garges - Sarcelles\, Saint-Denis\, Gare du No
- rd\, Villiers-le-Bel - Gonesse - Arnouville\n\nArrêt(s) non desservi(s)\n
- \nPériode : les week-ends\, toute la journée. Dates : du samedi 18 au di
- manche 19 avril. Le trafic est interrompu entre Orry-la-ville et Creil. Au
- cun moyen de remplacement ne pourra être mis en place. Les horaires du ca
- lculateur d'itinéraire tiennent compte des travaux.\n\nCause : TRAVAUX\n\
- nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER D : Stade de France en direction de Creil 04-12/04
-DTSTART;TZID=Europe/Paris:20260411T225000
-DTEND;TZID=Europe/Paris:20260412T085000
-DTSTAMP:20260410T100000Z
-UID:7c690178-1241-11f1-9e08-0a58a9feac02_20260411T225000@travaux-metro
-CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Stade de France Saint-Denis\, Saint-Deni
- s\, Gare du Nord\n\nArrêt(s) non desservi(s)\n\nPériode : du samedi 22h5
- 0 au dimanche 08h50. Dates : les week-ends 04 et 11 avril. La gare de Stad
- e France St-Denis en direction de Creil n'est pas desservie. Les horaires 
- du calculateur d'itinéraire tiennent compte des travaux. Motif : travaux 
- sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+DESCRIPTION:Ligne D\n\nStations : Le Vert de Maisons\, Gare de Lyon\, Mais
+ ons-Alfort - Alfortville\n\nArrêt(s) non desservi(s)\n\nPériode : Toute 
+ la journée le samedi 16 mai et le dimanche 17 mai jusqu'à 13h Période 
+ : Toute la journée le samedi 23 mai et le dimanche 24 mai jusqu'à 13h L
+ a gare de Maisons-Alfort\, en direction de Corbeil-Essonnes et de Melun\, 
+ et Le Vert de Maisons\, dans les deux sens de circulation\, ne sont pas de
+ sservies. Les horaires du calculateur d'itinéraire tiennent compte des tr
+ avaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nh
+ ttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:RER D : Paris Nord <-> Juvisy / Combs-la-Ville 01-03/05
 DTSTART;TZID=Europe/Paris:20260503T000000
 DTEND;TZID=Europe/Paris:20260503T130000
-DTSTAMP:20260410T100000Z
+DTSTAMP:20260422T225349Z
 UID:9b6ad517-d0c2-4c25-bb5f-8eb22d06e7ec_20260503T000000@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Maisons-Alfort - Alfortville\, Créteil 
- Pompadour\, Villeneuve-Saint-Georges\, Châtelet - Les Halles\, Brunoy\, G
- are de Lyon\, Yerres\, Montgeron - Crosne\, Le Vert de Maisons\, Combs-la-
- Ville - Quincy\, Gare du Nord\, Boussy-Saint-Antoine\, Villeneuve Triage\n
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Le Ve
+ rt de Maisons\, Gare de Lyon\, Créteil Pompadour\, Brunoy\, Villeneuve Tr
+ iage\, Villeneuve-Saint-Georges\, Maisons-Alfort - Alfortville\, Montgeron
+  - Crosne\, Gare du Nord\, Châtelet - Les Halles\, Boussy-Saint-Antoine\n
  \nArrêt(s) non desservi(s)\n\nPériode : vendredi\, samedi\, toute la jou
  rnée et jusqu'au dimanche 13h Dates : du vendredi 01 au dimanche 03 mai. 
  Le trafic est interrompu entre Paris Gare du Nord et Juvisy et entre Paris
@@ -1776,52 +433,475 @@ DESCRIPTION:Ligne D\n\nStations : Maisons-Alfort - Alfortville\, Créteil
  e\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER D : Melun <> Corbeil-Essonnes 04-19/04\, les week-ends
-DTSTART;VALUE=DATE:20260405
-DTEND;VALUE=DATE:20260406
-DTSTAMP:20260410T100000Z
-UID:9d342d8e-13ee-11f1-b327-0a58a9feac02_20260405T030000@travaux-metro
+SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
+DTSTART;VALUE=DATE:20260504
+DTEND;VALUE=DATE:20260505
+DTSTAMP:20260422T225349Z
+UID:da031080-d4df-47d4-a88f-37794fba2633_20260504T030000@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : les week-en
- ds\, toute la journée. Dates : les samedis dimanches 04/05\, 11/12 et 18/
- 19 avril. Le trafic est interrompu entre Melun et Corbeil-Essonnes. Un ser
- vice de bus de remplacement est mis en place\, avec desserte des gares int
- ermédiaires. Les horaires du calculateur d'itinéraire tiennent compte de
- s travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : dès 23h15 Dates : du lundi 04 au vendredi 29 mai\, sauf week-end et
+  jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Melu
+ n et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de re
+ mplacement est mis en place\, avec desserte des gares intermédiaires. Les
+  horaires du calculateur d'itinéraire tiennent compte des travaux. Motif 
+ : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travau
+ xmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER D : Melun <> Corbeil-Essonnes 04-19/04\, les week-ends
-DTSTART;VALUE=DATE:20260411
-DTEND;VALUE=DATE:20260412
-DTSTAMP:20260410T100000Z
-UID:9d342d8e-13ee-11f1-b327-0a58a9feac02_20260411T030000@travaux-metro
+SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
+DTSTART;VALUE=DATE:20260505
+DTEND;VALUE=DATE:20260506
+DTSTAMP:20260422T225349Z
+UID:da031080-d4df-47d4-a88f-37794fba2633_20260505T030000@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : les week-en
- ds\, toute la journée. Dates : les samedis dimanches 04/05\, 11/12 et 18/
- 19 avril. Le trafic est interrompu entre Melun et Corbeil-Essonnes. Un ser
- vice de bus de remplacement est mis en place\, avec desserte des gares int
- ermédiaires. Les horaires du calculateur d'itinéraire tiennent compte de
- s travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : dès 23h15 Dates : du lundi 04 au vendredi 29 mai\, sauf week-end et
+  jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Melu
+ n et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de re
+ mplacement est mis en place\, avec desserte des gares intermédiaires. Les
+  horaires du calculateur d'itinéraire tiennent compte des travaux. Motif 
+ : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travau
+ xmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER D : Melun <> Corbeil-Essonnes 04-19/04\, les week-ends
-DTSTART;VALUE=DATE:20260412
-DTEND;VALUE=DATE:20260413
-DTSTAMP:20260410T100000Z
-UID:9d342d8e-13ee-11f1-b327-0a58a9feac02_20260412T030000@travaux-metro
+SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
+DTSTART;VALUE=DATE:20260506
+DTEND;VALUE=DATE:20260507
+DTSTAMP:20260422T225349Z
+UID:da031080-d4df-47d4-a88f-37794fba2633_20260506T030000@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : les week-en
- ds\, toute la journée. Dates : les samedis dimanches 04/05\, 11/12 et 18/
- 19 avril. Le trafic est interrompu entre Melun et Corbeil-Essonnes. Un ser
- vice de bus de remplacement est mis en place\, avec desserte des gares int
- ermédiaires. Les horaires du calculateur d'itinéraire tiennent compte de
- s travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : dès 23h15 Dates : du lundi 04 au vendredi 29 mai\, sauf week-end et
+  jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Melu
+ n et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de re
+ mplacement est mis en place\, avec desserte des gares intermédiaires. Les
+  horaires du calculateur d'itinéraire tiennent compte des travaux. Motif 
+ : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travau
+ xmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
+DTSTART;VALUE=DATE:20260507
+DTEND;VALUE=DATE:20260508
+DTSTAMP:20260422T225349Z
+UID:da031080-d4df-47d4-a88f-37794fba2633_20260507T030000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : dès 23h15 Dates : du lundi 04 au vendredi 29 mai\, sauf week-end et
+  jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Melu
+ n et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de re
+ mplacement est mis en place\, avec desserte des gares intermédiaires. Les
+  horaires du calculateur d'itinéraire tiennent compte des travaux. Motif 
+ : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travau
+ xmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Corbeil-Essonnes <> Malesherbes 04/05 au 29/05
+DTSTART;VALUE=DATE:20260510
+DTEND;VALUE=DATE:20260511
+DTSTAMP:20260422T225349Z
+UID:a78a372e-b2c6-4d72-a30c-4fe55386259f_20260510T030000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Boigneville\, Maisse\, La Ferté-Alais\,
+  Boutigny\, Buno - Gironville\, Mennecy\, Moulin Galant\, Corbeil-Essonnes
+ \, Malesherbes\, Ballancourt\n\nArrêt(s) non desservi(s)\n\nPériode : en
+  semaine de 21h à 5h. Dates : du lundi 04 mai au vendredi 29 mai\, sauf w
+ eek-end et jour férié. Le trafic est interrompu entre Corbeil-Essonnes e
+ t Malesherbes. Un service de bus de remplacement est mis en place\, avec d
+ esserte des gares intermédiaires. Les horaires du calculateur d'itinérai
+ re tiennent compte des travaux. Motif : travaux sur le réseau ferroviaire
+ .\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
+DTSTART;VALUE=DATE:20260511
+DTEND;VALUE=DATE:20260512
+DTSTAMP:20260422T225349Z
+UID:da031080-d4df-47d4-a88f-37794fba2633_20260511T030000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : dès 23h15 Dates : du lundi 04 au vendredi 29 mai\, sauf week-end et
+  jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Melu
+ n et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de re
+ mplacement est mis en place\, avec desserte des gares intermédiaires. Les
+  horaires du calculateur d'itinéraire tiennent compte des travaux. Motif 
+ : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travau
+ xmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
+DTSTART;VALUE=DATE:20260512
+DTEND;VALUE=DATE:20260513
+DTSTAMP:20260422T225349Z
+UID:da031080-d4df-47d4-a88f-37794fba2633_20260512T030000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : dès 23h15 Dates : du lundi 04 au vendredi 29 mai\, sauf week-end et
+  jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Melu
+ n et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de re
+ mplacement est mis en place\, avec desserte des gares intermédiaires. Les
+  horaires du calculateur d'itinéraire tiennent compte des travaux. Motif 
+ : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travau
+ xmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
+DTSTART;VALUE=DATE:20260513
+DTEND;VALUE=DATE:20260514
+DTSTAMP:20260422T225349Z
+UID:da031080-d4df-47d4-a88f-37794fba2633_20260513T030000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : dès 23h15 Dates : du lundi 04 au vendredi 29 mai\, sauf week-end et
+  jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Melu
+ n et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de re
+ mplacement est mis en place\, avec desserte des gares intermédiaires. Les
+  horaires du calculateur d'itinéraire tiennent compte des travaux. Motif 
+ : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travau
+ xmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
+DTSTART;VALUE=DATE:20260515
+DTEND;VALUE=DATE:20260516
+DTSTAMP:20260422T225349Z
+UID:da031080-d4df-47d4-a88f-37794fba2633_20260515T030000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : dès 23h15 Dates : du lundi 04 au vendredi 29 mai\, sauf week-end et
+  jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Melu
+ n et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de re
+ mplacement est mis en place\, avec desserte des gares intermédiaires. Les
+  horaires du calculateur d'itinéraire tiennent compte des travaux. Motif 
+ : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travau
+ xmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Corbeil-Essonnes <> Malesherbes 04/05 au 29/05
+DTSTART;VALUE=DATE:20260517
+DTEND;VALUE=DATE:20260518
+DTSTAMP:20260422T225349Z
+UID:a78a372e-b2c6-4d72-a30c-4fe55386259f_20260517T030000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Boigneville\, Maisse\, La Ferté-Alais\,
+  Boutigny\, Buno - Gironville\, Mennecy\, Moulin Galant\, Corbeil-Essonnes
+ \, Malesherbes\, Ballancourt\n\nArrêt(s) non desservi(s)\n\nPériode : en
+  semaine de 21h à 5h. Dates : du lundi 04 mai au vendredi 29 mai\, sauf w
+ eek-end et jour férié. Le trafic est interrompu entre Corbeil-Essonnes e
+ t Malesherbes. Un service de bus de remplacement est mis en place\, avec d
+ esserte des gares intermédiaires. Les horaires du calculateur d'itinérai
+ re tiennent compte des travaux. Motif : travaux sur le réseau ferroviaire
+ .\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
+DTSTART;VALUE=DATE:20260518
+DTEND;VALUE=DATE:20260519
+DTSTAMP:20260422T225349Z
+UID:da031080-d4df-47d4-a88f-37794fba2633_20260518T030000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : dès 23h15 Dates : du lundi 04 au vendredi 29 mai\, sauf week-end et
+  jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Melu
+ n et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de re
+ mplacement est mis en place\, avec desserte des gares intermédiaires. Les
+  horaires du calculateur d'itinéraire tiennent compte des travaux. Motif 
+ : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travau
+ xmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
+DTSTART;VALUE=DATE:20260519
+DTEND;VALUE=DATE:20260520
+DTSTAMP:20260422T225349Z
+UID:da031080-d4df-47d4-a88f-37794fba2633_20260519T030000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : dès 23h15 Dates : du lundi 04 au vendredi 29 mai\, sauf week-end et
+  jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Melu
+ n et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de re
+ mplacement est mis en place\, avec desserte des gares intermédiaires. Les
+  horaires du calculateur d'itinéraire tiennent compte des travaux. Motif 
+ : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travau
+ xmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
+DTSTART;VALUE=DATE:20260520
+DTEND;VALUE=DATE:20260521
+DTSTAMP:20260422T225349Z
+UID:da031080-d4df-47d4-a88f-37794fba2633_20260520T030000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : dès 23h15 Dates : du lundi 04 au vendredi 29 mai\, sauf week-end et
+  jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Melu
+ n et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de re
+ mplacement est mis en place\, avec desserte des gares intermédiaires. Les
+  horaires du calculateur d'itinéraire tiennent compte des travaux. Motif 
+ : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travau
+ xmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
+DTSTART;VALUE=DATE:20260521
+DTEND;VALUE=DATE:20260522
+DTSTAMP:20260422T225349Z
+UID:da031080-d4df-47d4-a88f-37794fba2633_20260521T030000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : dès 23h15 Dates : du lundi 04 au vendredi 29 mai\, sauf week-end et
+  jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Melu
+ n et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de re
+ mplacement est mis en place\, avec desserte des gares intermédiaires. Les
+  horaires du calculateur d'itinéraire tiennent compte des travaux. Motif 
+ : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travau
+ xmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
+DTSTART;VALUE=DATE:20260522
+DTEND;VALUE=DATE:20260523
+DTSTAMP:20260422T225349Z
+UID:da031080-d4df-47d4-a88f-37794fba2633_20260522T030000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : dès 23h15 Dates : du lundi 04 au vendredi 29 mai\, sauf week-end et
+  jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Melu
+ n et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de re
+ mplacement est mis en place\, avec desserte des gares intermédiaires. Les
+  horaires du calculateur d'itinéraire tiennent compte des travaux. Motif 
+ : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travau
+ xmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Corbeil-Essonnes <> Malesherbes 04/05 au 29/05
+DTSTART;VALUE=DATE:20260524
+DTEND;VALUE=DATE:20260525
+DTSTAMP:20260422T225349Z
+UID:a78a372e-b2c6-4d72-a30c-4fe55386259f_20260524T030000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Boigneville\, Maisse\, La Ferté-Alais\,
+  Boutigny\, Buno - Gironville\, Mennecy\, Moulin Galant\, Corbeil-Essonnes
+ \, Malesherbes\, Ballancourt\n\nArrêt(s) non desservi(s)\n\nPériode : en
+  semaine de 21h à 5h. Dates : du lundi 04 mai au vendredi 29 mai\, sauf w
+ eek-end et jour férié. Le trafic est interrompu entre Corbeil-Essonnes e
+ t Malesherbes. Un service de bus de remplacement est mis en place\, avec d
+ esserte des gares intermédiaires. Les horaires du calculateur d'itinérai
+ re tiennent compte des travaux. Motif : travaux sur le réseau ferroviaire
+ .\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
+DTSTART;VALUE=DATE:20260526
+DTEND;VALUE=DATE:20260527
+DTSTAMP:20260422T225349Z
+UID:da031080-d4df-47d4-a88f-37794fba2633_20260526T030000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : dès 23h15 Dates : du lundi 04 au vendredi 29 mai\, sauf week-end et
+  jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Melu
+ n et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de re
+ mplacement est mis en place\, avec desserte des gares intermédiaires. Les
+  horaires du calculateur d'itinéraire tiennent compte des travaux. Motif 
+ : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travau
+ xmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
+DTSTART;VALUE=DATE:20260527
+DTEND;VALUE=DATE:20260528
+DTSTAMP:20260422T225349Z
+UID:da031080-d4df-47d4-a88f-37794fba2633_20260527T030000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : dès 23h15 Dates : du lundi 04 au vendredi 29 mai\, sauf week-end et
+  jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Melu
+ n et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de re
+ mplacement est mis en place\, avec desserte des gares intermédiaires. Les
+  horaires du calculateur d'itinéraire tiennent compte des travaux. Motif 
+ : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travau
+ xmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
+DTSTART;VALUE=DATE:20260528
+DTEND;VALUE=DATE:20260529
+DTSTAMP:20260422T225349Z
+UID:da031080-d4df-47d4-a88f-37794fba2633_20260528T030000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : dès 23h15 Dates : du lundi 04 au vendredi 29 mai\, sauf week-end et
+  jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Melu
+ n et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de re
+ mplacement est mis en place\, avec desserte des gares intermédiaires. Les
+  horaires du calculateur d'itinéraire tiennent compte des travaux. Motif 
+ : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travau
+ xmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260530
+DTSTAMP:20260422T225349Z
+UID:da031080-d4df-47d4-a88f-37794fba2633_20260529T030000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : dès 23h15 Dates : du lundi 04 au vendredi 29 mai\, sauf week-end et
+  jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Melu
+ n et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de re
+ mplacement est mis en place\, avec desserte des gares intermédiaires. Les
+  horaires du calculateur d'itinéraire tiennent compte des travaux. Motif 
+ : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travau
+ xmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Goussainville <-> Melun 25-26/04\, le week-end
+DTSTART;VALUE=DATE:20260425
+DTEND;VALUE=DATE:20260426
+DTSTAMP:20260422T225349Z
+UID:a9e17114-f2a7-4fb0-95e0-72612a487f32_20260425T030000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Goussainville\, Le Vert de Maisons\, Villiers-le-Be
+ l - Gonesse - Arnouville\, Gare de Lyon\, Le Mée\, Saint-Denis\, Cesson\,
+  Créteil Pompadour\, Brunoy\, Garges - Sarcelles\, Stade de France Saint-
+ Denis\, Villeneuve Triage\, Lieusaint - Moissy\, Villeneuve-Saint-Georges\
+ , Melun\, Maisons-Alfort - Alfortville\, Montgeron - Crosne\, Pierrefitte 
+ - Stains\, Gare du Nord\, Châtelet - Les Halles\, Boussy-Saint-Antoine\n\
+ nTrafic perturbé\n\nPériode : le week-end\, toute la journée. Dates : d
+ u samedi 25 au dimanche 26 avril. Trafic allégé entre Goussainville et M
+ elun\, prévoir un train sur deux sur l'axe. Les horaires du calculateur d
+ 'itinéraire tiennent compte des travaux. Motif : travaux sur le réseau f
+ erroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Goussainville <-> Melun 25-26/04\, le week-end
+DTSTART;VALUE=DATE:20260426
+DTEND;VALUE=DATE:20260427
+DTSTAMP:20260422T225349Z
+UID:a9e17114-f2a7-4fb0-95e0-72612a487f32_20260426T030000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Goussainville\, Le Vert de Maisons\, Villiers-le-Be
+ l - Gonesse - Arnouville\, Gare de Lyon\, Le Mée\, Saint-Denis\, Cesson\,
+  Créteil Pompadour\, Brunoy\, Garges - Sarcelles\, Stade de France Saint-
+ Denis\, Villeneuve Triage\, Lieusaint - Moissy\, Villeneuve-Saint-Georges\
+ , Melun\, Maisons-Alfort - Alfortville\, Montgeron - Crosne\, Pierrefitte 
+ - Stains\, Gare du Nord\, Châtelet - Les Halles\, Boussy-Saint-Antoine\n\
+ nTrafic perturbé\n\nPériode : le week-end\, toute la journée. Dates : d
+ u samedi 25 au dimanche 26 avril. Trafic allégé entre Goussainville et M
+ elun\, prévoir un train sur deux sur l'axe. Les horaires du calculateur d
+ 'itinéraire tiennent compte des travaux. Motif : travaux sur le réseau f
+ erroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:RER D : Paris Nord <-> Juvisy / Combs-la-Ville 01-03/05
 DTSTART;VALUE=DATE:20260501
 DTEND;VALUE=DATE:20260502
-DTSTAMP:20260410T100000Z
+DTSTAMP:20260422T225349Z
 UID:b0b1c067-fa08-4af5-92da-ea40384ba8f6_20260501T030000@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
 DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : vendredi\, 
@@ -1839,7 +919,7 @@ BEGIN:VEVENT
 SUMMARY:RER D : Paris Nord <-> Juvisy / Combs-la-Ville 01-03/05
 DTSTART;VALUE=DATE:20260502
 DTEND;VALUE=DATE:20260503
-DTSTAMP:20260410T100000Z
+DTSTAMP:20260422T225349Z
 UID:b0b1c067-fa08-4af5-92da-ea40384ba8f6_20260502T030000@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
 DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : vendredi\, 
@@ -1854,134 +934,830 @@ DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : vendredi\,
  e réseau ferroviaire\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER D : Corbeil-Essonnes <-> Malesherbes 13-17/04
-DTSTART;TZID=Europe/Paris:20260413T101500
-DTEND;TZID=Europe/Paris:20260413T142000
-DTSTAMP:20260410T100000Z
-UID:e1389557-b84f-4054-8d9b-07a57575b996_20260413T101500@travaux-metro
+SUMMARY:RER D : Stade France St-Denis en direction de Creil le 24/05
+DTSTART;TZID=Europe/Paris:20260418T000000
+DTEND;TZID=Europe/Paris:20260418T235000
+DTSTAMP:20260422T225349Z
+UID:c5bb800a-a52c-409a-9677-2735ae84b696_20260418T000000@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Malesherbes\, La Ferté-Alais\, Ballanco
- urt\, Buno - Gironville\, Moulin Galant\, Boutigny\, Mennecy\, Boigneville
- \, Maisse\, Corbeil-Essonnes\n\nArrêt(s) non desservi(s)\n\nPériode : en
-  semaine de 10h15 à 14h20. Dates : du lundi 13 au vendredi 17 avril. Le t
- rafic est interrompu entre Corbeil-Essonnes et Malesherbes. Un service de 
- bus de remplacement est mis en place\, avec desserte des gares intermédia
- ires. Les horaires du calculateur d'itinéraire tiennent compte des travau
- x.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+DESCRIPTION:Ligne D\n\nStations : Saint-Denis\, Stade de France Saint-Deni
+ s\, Gare du Nord\n\nArrêt(s) non desservi(s)\n\nPériode : toute la journ
+ ée. Dates : le dimanche 24 mai 2026. La gare de Stade France St-Denis en 
+ direction de Creil n'est pas desservie. Pour rejoindre Stade de France\, d
+ escendez en gare de Saint-Denis et effectuez un changement en prenant un t
+ rain en direction du sud de la ligne.  Un service de bus de remplacement 
+ est mis en place\, avec desserte des gares intermédiaires. Les horaires d
+ u calculateur d'itinéraire tiennent compte des travaux. Motif : travaux s
+ ur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER D : Corbeil-Essonnes <-> Malesherbes 13-17/04
-DTSTART;TZID=Europe/Paris:20260414T101500
-DTEND;TZID=Europe/Paris:20260414T142000
-DTSTAMP:20260410T100000Z
-UID:e1389557-b84f-4054-8d9b-07a57575b996_20260414T101500@travaux-metro
+SUMMARY:RER D : Stade France St-Denis en direction de Creil le 24/05
+DTSTART;TZID=Europe/Paris:20260419T000000
+DTEND;TZID=Europe/Paris:20260419T235000
+DTSTAMP:20260422T225349Z
+UID:c5bb800a-a52c-409a-9677-2735ae84b696_20260419T000000@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Malesherbes\, La Ferté-Alais\, Ballanco
- urt\, Buno - Gironville\, Moulin Galant\, Boutigny\, Mennecy\, Boigneville
- \, Maisse\, Corbeil-Essonnes\n\nArrêt(s) non desservi(s)\n\nPériode : en
-  semaine de 10h15 à 14h20. Dates : du lundi 13 au vendredi 17 avril. Le t
- rafic est interrompu entre Corbeil-Essonnes et Malesherbes. Un service de 
- bus de remplacement est mis en place\, avec desserte des gares intermédia
- ires. Les horaires du calculateur d'itinéraire tiennent compte des travau
- x.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+DESCRIPTION:Ligne D\n\nStations : Saint-Denis\, Stade de France Saint-Deni
+ s\, Gare du Nord\n\nArrêt(s) non desservi(s)\n\nPériode : toute la journ
+ ée. Dates : le dimanche 24 mai 2026. La gare de Stade France St-Denis en 
+ direction de Creil n'est pas desservie. Pour rejoindre Stade de France\, d
+ escendez en gare de Saint-Denis et effectuez un changement en prenant un t
+ rain en direction du sud de la ligne.  Un service de bus de remplacement 
+ est mis en place\, avec desserte des gares intermédiaires. Les horaires d
+ u calculateur d'itinéraire tiennent compte des travaux. Motif : travaux s
+ ur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER D : Corbeil-Essonnes <-> Malesherbes 13-17/04
-DTSTART;TZID=Europe/Paris:20260415T101500
-DTEND;TZID=Europe/Paris:20260415T142000
-DTSTAMP:20260410T100000Z
-UID:e1389557-b84f-4054-8d9b-07a57575b996_20260415T101500@travaux-metro
+SUMMARY:RER D : Stade France St-Denis en direction de Creil le 24/05
+DTSTART;TZID=Europe/Paris:20260425T000000
+DTEND;TZID=Europe/Paris:20260425T235000
+DTSTAMP:20260422T225349Z
+UID:c5bb800a-a52c-409a-9677-2735ae84b696_20260425T000000@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Malesherbes\, La Ferté-Alais\, Ballanco
- urt\, Buno - Gironville\, Moulin Galant\, Boutigny\, Mennecy\, Boigneville
- \, Maisse\, Corbeil-Essonnes\n\nArrêt(s) non desservi(s)\n\nPériode : en
-  semaine de 10h15 à 14h20. Dates : du lundi 13 au vendredi 17 avril. Le t
- rafic est interrompu entre Corbeil-Essonnes et Malesherbes. Un service de 
- bus de remplacement est mis en place\, avec desserte des gares intermédia
- ires. Les horaires du calculateur d'itinéraire tiennent compte des travau
- x.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+DESCRIPTION:Ligne D\n\nStations : Saint-Denis\, Stade de France Saint-Deni
+ s\, Gare du Nord\n\nArrêt(s) non desservi(s)\n\nPériode : toute la journ
+ ée. Dates : le dimanche 24 mai 2026. La gare de Stade France St-Denis en 
+ direction de Creil n'est pas desservie. Pour rejoindre Stade de France\, d
+ escendez en gare de Saint-Denis et effectuez un changement en prenant un t
+ rain en direction du sud de la ligne.  Un service de bus de remplacement 
+ est mis en place\, avec desserte des gares intermédiaires. Les horaires d
+ u calculateur d'itinéraire tiennent compte des travaux. Motif : travaux s
+ ur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER D : Corbeil-Essonnes <-> Malesherbes 13-17/04
-DTSTART;TZID=Europe/Paris:20260416T101500
-DTEND;TZID=Europe/Paris:20260416T142000
-DTSTAMP:20260410T100000Z
-UID:e1389557-b84f-4054-8d9b-07a57575b996_20260416T101500@travaux-metro
+SUMMARY:RER D : Stade France St-Denis en direction de Creil le 24/05
+DTSTART;TZID=Europe/Paris:20260426T000000
+DTEND;TZID=Europe/Paris:20260426T235000
+DTSTAMP:20260422T225349Z
+UID:c5bb800a-a52c-409a-9677-2735ae84b696_20260426T000000@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Malesherbes\, La Ferté-Alais\, Ballanco
- urt\, Buno - Gironville\, Moulin Galant\, Boutigny\, Mennecy\, Boigneville
- \, Maisse\, Corbeil-Essonnes\n\nArrêt(s) non desservi(s)\n\nPériode : en
-  semaine de 10h15 à 14h20. Dates : du lundi 13 au vendredi 17 avril. Le t
- rafic est interrompu entre Corbeil-Essonnes et Malesherbes. Un service de 
- bus de remplacement est mis en place\, avec desserte des gares intermédia
- ires. Les horaires du calculateur d'itinéraire tiennent compte des travau
- x.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+DESCRIPTION:Ligne D\n\nStations : Saint-Denis\, Stade de France Saint-Deni
+ s\, Gare du Nord\n\nArrêt(s) non desservi(s)\n\nPériode : toute la journ
+ ée. Dates : le dimanche 24 mai 2026. La gare de Stade France St-Denis en 
+ direction de Creil n'est pas desservie. Pour rejoindre Stade de France\, d
+ escendez en gare de Saint-Denis et effectuez un changement en prenant un t
+ rain en direction du sud de la ligne.  Un service de bus de remplacement 
+ est mis en place\, avec desserte des gares intermédiaires. Les horaires d
+ u calculateur d'itinéraire tiennent compte des travaux. Motif : travaux s
+ ur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER D : Corbeil-Essonnes <-> Malesherbes 13-17/04
-DTSTART;TZID=Europe/Paris:20260417T101500
-DTEND;TZID=Europe/Paris:20260417T142000
-DTSTAMP:20260410T100000Z
-UID:e1389557-b84f-4054-8d9b-07a57575b996_20260417T101500@travaux-metro
+SUMMARY:RER D : Stade France St-Denis en direction de Creil le 24/05
+DTSTART;TZID=Europe/Paris:20260502T000000
+DTEND;TZID=Europe/Paris:20260502T235000
+DTSTAMP:20260422T225349Z
+UID:c5bb800a-a52c-409a-9677-2735ae84b696_20260502T000000@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Malesherbes\, La Ferté-Alais\, Ballanco
- urt\, Buno - Gironville\, Moulin Galant\, Boutigny\, Mennecy\, Boigneville
- \, Maisse\, Corbeil-Essonnes\n\nArrêt(s) non desservi(s)\n\nPériode : en
-  semaine de 10h15 à 14h20. Dates : du lundi 13 au vendredi 17 avril. Le t
- rafic est interrompu entre Corbeil-Essonnes et Malesherbes. Un service de 
- bus de remplacement est mis en place\, avec desserte des gares intermédia
- ires. Les horaires du calculateur d'itinéraire tiennent compte des travau
- x.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+DESCRIPTION:Ligne D\n\nStations : Saint-Denis\, Stade de France Saint-Deni
+ s\, Gare du Nord\n\nArrêt(s) non desservi(s)\n\nPériode : toute la journ
+ ée. Dates : le dimanche 24 mai 2026. La gare de Stade France St-Denis en 
+ direction de Creil n'est pas desservie. Pour rejoindre Stade de France\, d
+ escendez en gare de Saint-Denis et effectuez un changement en prenant un t
+ rain en direction du sud de la ligne.  Un service de bus de remplacement 
+ est mis en place\, avec desserte des gares intermédiaires. Les horaires d
+ u calculateur d'itinéraire tiennent compte des travaux. Motif : travaux s
+ ur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER D : Corbeil-Essonnes <> Malesherbes 04/05 au 29/05
-DTSTART;VALUE=DATE:20260510
-DTEND;VALUE=DATE:20260511
-DTSTAMP:20260410T100000Z
-UID:eed2deeb-2bd3-4947-9649-cc3643b842fc_20260510T030000@travaux-metro
+SUMMARY:RER D : Stade France St-Denis en direction de Creil le 24/05
+DTSTART;TZID=Europe/Paris:20260503T000000
+DTEND;TZID=Europe/Paris:20260503T235000
+DTSTAMP:20260422T225349Z
+UID:c5bb800a-a52c-409a-9677-2735ae84b696_20260503T000000@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Malesherbes\, La Ferté-Alais\, Ballanco
- urt\, Buno - Gironville\, Moulin Galant\, Boutigny\, Mennecy\, Boigneville
- \, Maisse\, Corbeil-Essonnes\n\nArrêt(s) non desservi(s)\n\nPériode : en
-  semaine de 21h à 5h. Dates : du lundi 04 mai au vendredi 29 mai\, sauf w
- eek-end et jour férié. Le trafic est interrompu entre Corbeil-Essonnes e
- t Malesherbes. Un service de bus de remplacement est mis en place\, avec d
- esserte des gares intermédiaires. Les horaires du calculateur d'itinérai
- re tiennent compte des travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
- .fr/
+DESCRIPTION:Ligne D\n\nStations : Saint-Denis\, Stade de France Saint-Deni
+ s\, Gare du Nord\n\nArrêt(s) non desservi(s)\n\nPériode : toute la journ
+ ée. Dates : le dimanche 24 mai 2026. La gare de Stade France St-Denis en 
+ direction de Creil n'est pas desservie. Pour rejoindre Stade de France\, d
+ escendez en gare de Saint-Denis et effectuez un changement en prenant un t
+ rain en direction du sud de la ligne.  Un service de bus de remplacement 
+ est mis en place\, avec desserte des gares intermédiaires. Les horaires d
+ u calculateur d'itinéraire tiennent compte des travaux. Motif : travaux s
+ ur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER D : Corbeil-Essonnes <> Malesherbes 04/05 au 29/05
-DTSTART;VALUE=DATE:20260517
-DTEND;VALUE=DATE:20260518
-DTSTAMP:20260410T100000Z
-UID:eed2deeb-2bd3-4947-9649-cc3643b842fc_20260517T030000@travaux-metro
+SUMMARY:RER D : Stade France St-Denis en direction de Creil le 24/05
+DTSTART;TZID=Europe/Paris:20260509T000000
+DTEND;TZID=Europe/Paris:20260509T235000
+DTSTAMP:20260422T225349Z
+UID:c5bb800a-a52c-409a-9677-2735ae84b696_20260509T000000@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Malesherbes\, La Ferté-Alais\, Ballanco
- urt\, Buno - Gironville\, Moulin Galant\, Boutigny\, Mennecy\, Boigneville
- \, Maisse\, Corbeil-Essonnes\n\nArrêt(s) non desservi(s)\n\nPériode : en
-  semaine de 21h à 5h. Dates : du lundi 04 mai au vendredi 29 mai\, sauf w
- eek-end et jour férié. Le trafic est interrompu entre Corbeil-Essonnes e
- t Malesherbes. Un service de bus de remplacement est mis en place\, avec d
- esserte des gares intermédiaires. Les horaires du calculateur d'itinérai
- re tiennent compte des travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
- .fr/
+DESCRIPTION:Ligne D\n\nStations : Saint-Denis\, Stade de France Saint-Deni
+ s\, Gare du Nord\n\nArrêt(s) non desservi(s)\n\nPériode : toute la journ
+ ée. Dates : le dimanche 24 mai 2026. La gare de Stade France St-Denis en 
+ direction de Creil n'est pas desservie. Pour rejoindre Stade de France\, d
+ escendez en gare de Saint-Denis et effectuez un changement en prenant un t
+ rain en direction du sud de la ligne.  Un service de bus de remplacement 
+ est mis en place\, avec desserte des gares intermédiaires. Les horaires d
+ u calculateur d'itinéraire tiennent compte des travaux. Motif : travaux s
+ ur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER D : Corbeil-Essonnes <> Malesherbes 04/05 au 29/05
-DTSTART;VALUE=DATE:20260524
-DTEND;VALUE=DATE:20260525
-DTSTAMP:20260410T100000Z
-UID:eed2deeb-2bd3-4947-9649-cc3643b842fc_20260524T030000@travaux-metro
+SUMMARY:RER D : Stade France St-Denis en direction de Creil le 24/05
+DTSTART;TZID=Europe/Paris:20260510T000000
+DTEND;TZID=Europe/Paris:20260510T235000
+DTSTAMP:20260422T225349Z
+UID:c5bb800a-a52c-409a-9677-2735ae84b696_20260510T000000@travaux-metro
 CATEGORIES:Ligne D,Travaux Métro
-DESCRIPTION:Ligne D\n\nStations : Malesherbes\, La Ferté-Alais\, Ballanco
- urt\, Buno - Gironville\, Moulin Galant\, Boutigny\, Mennecy\, Boigneville
- \, Maisse\, Corbeil-Essonnes\n\nArrêt(s) non desservi(s)\n\nPériode : en
-  semaine de 21h à 5h. Dates : du lundi 04 mai au vendredi 29 mai\, sauf w
- eek-end et jour férié. Le trafic est interrompu entre Corbeil-Essonnes e
- t Malesherbes. Un service de bus de remplacement est mis en place\, avec d
- esserte des gares intermédiaires. Les horaires du calculateur d'itinérai
- re tiennent compte des travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
- .fr/
+DESCRIPTION:Ligne D\n\nStations : Saint-Denis\, Stade de France Saint-Deni
+ s\, Gare du Nord\n\nArrêt(s) non desservi(s)\n\nPériode : toute la journ
+ ée. Dates : le dimanche 24 mai 2026. La gare de Stade France St-Denis en 
+ direction de Creil n'est pas desservie. Pour rejoindre Stade de France\, d
+ escendez en gare de Saint-Denis et effectuez un changement en prenant un t
+ rain en direction du sud de la ligne.  Un service de bus de remplacement 
+ est mis en place\, avec desserte des gares intermédiaires. Les horaires d
+ u calculateur d'itinéraire tiennent compte des travaux. Motif : travaux s
+ ur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Stade France St-Denis en direction de Creil le 24/05
+DTSTART;TZID=Europe/Paris:20260516T000000
+DTEND;TZID=Europe/Paris:20260516T235000
+DTSTAMP:20260422T225349Z
+UID:c5bb800a-a52c-409a-9677-2735ae84b696_20260516T000000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Saint-Denis\, Stade de France Saint-Deni
+ s\, Gare du Nord\n\nArrêt(s) non desservi(s)\n\nPériode : toute la journ
+ ée. Dates : le dimanche 24 mai 2026. La gare de Stade France St-Denis en 
+ direction de Creil n'est pas desservie. Pour rejoindre Stade de France\, d
+ escendez en gare de Saint-Denis et effectuez un changement en prenant un t
+ rain en direction du sud de la ligne.  Un service de bus de remplacement 
+ est mis en place\, avec desserte des gares intermédiaires. Les horaires d
+ u calculateur d'itinéraire tiennent compte des travaux. Motif : travaux s
+ ur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Stade France St-Denis en direction de Creil le 24/05
+DTSTART;TZID=Europe/Paris:20260517T000000
+DTEND;TZID=Europe/Paris:20260517T235000
+DTSTAMP:20260422T225349Z
+UID:c5bb800a-a52c-409a-9677-2735ae84b696_20260517T000000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Saint-Denis\, Stade de France Saint-Deni
+ s\, Gare du Nord\n\nArrêt(s) non desservi(s)\n\nPériode : toute la journ
+ ée. Dates : le dimanche 24 mai 2026. La gare de Stade France St-Denis en 
+ direction de Creil n'est pas desservie. Pour rejoindre Stade de France\, d
+ escendez en gare de Saint-Denis et effectuez un changement en prenant un t
+ rain en direction du sud de la ligne.  Un service de bus de remplacement 
+ est mis en place\, avec desserte des gares intermédiaires. Les horaires d
+ u calculateur d'itinéraire tiennent compte des travaux. Motif : travaux s
+ ur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Stade France St-Denis en direction de Creil le 24/05
+DTSTART;TZID=Europe/Paris:20260523T000000
+DTEND;TZID=Europe/Paris:20260523T235000
+DTSTAMP:20260422T225349Z
+UID:c5bb800a-a52c-409a-9677-2735ae84b696_20260523T000000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Saint-Denis\, Stade de France Saint-Deni
+ s\, Gare du Nord\n\nArrêt(s) non desservi(s)\n\nPériode : toute la journ
+ ée. Dates : le dimanche 24 mai 2026. La gare de Stade France St-Denis en 
+ direction de Creil n'est pas desservie. Pour rejoindre Stade de France\, d
+ escendez en gare de Saint-Denis et effectuez un changement en prenant un t
+ rain en direction du sud de la ligne.  Un service de bus de remplacement 
+ est mis en place\, avec desserte des gares intermédiaires. Les horaires d
+ u calculateur d'itinéraire tiennent compte des travaux. Motif : travaux s
+ ur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Stade France St-Denis en direction de Creil le 24/05
+DTSTART;TZID=Europe/Paris:20260524T000000
+DTEND;TZID=Europe/Paris:20260524T235000
+DTSTAMP:20260422T225349Z
+UID:c5bb800a-a52c-409a-9677-2735ae84b696_20260524T000000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Saint-Denis\, Stade de France Saint-Deni
+ s\, Gare du Nord\n\nArrêt(s) non desservi(s)\n\nPériode : toute la journ
+ ée. Dates : le dimanche 24 mai 2026. La gare de Stade France St-Denis en 
+ direction de Creil n'est pas desservie. Pour rejoindre Stade de France\, d
+ escendez en gare de Saint-Denis et effectuez un changement en prenant un t
+ rain en direction du sud de la ligne.  Un service de bus de remplacement 
+ est mis en place\, avec desserte des gares intermédiaires. Les horaires d
+ u calculateur d'itinéraire tiennent compte des travaux. Motif : travaux s
+ ur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Maisons-Alfort + Vert de Maisons 16/05 au 24/05 week-ends
+DTSTART;TZID=Europe/Paris:20260524T040000
+DTEND;TZID=Europe/Paris:20260524T130000
+DTSTAMP:20260422T225349Z
+UID:d01a934f-8ac2-4a22-8ceb-cec3d11fcac5_20260524T040000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : Toute la jo
+ urnée le samedi 16 mai et le dimanche 17 mai jusqu'à 13h Période : Tou
+ te la journée le samedi 23 mai et le dimanche 24 mai jusqu'à 13h La gar
+ e de Maisons-Alfort\, en direction de Corbeil-Essonnes et de Melun\, et Le
+  Vert de Maisons\, dans les deux sens de circulation\, ne sont pas desserv
+ ies. Les horaires du calculateur d'itinéraire tiennent compte des travaux
+ . Motif : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps:
+ //travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
+DTSTART;VALUE=DATE:20260509
+DTEND;VALUE=DATE:20260510
+DTSTAMP:20260422T225349Z
+UID:da031080-d4df-47d4-a88f-37794fba2633_20260509T030000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : dès 23h15 Dates : du lundi 04 au vendredi 29 mai\, sauf week-end et
+  jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Melu
+ n et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de re
+ mplacement est mis en place\, avec desserte des gares intermédiaires. Les
+  horaires du calculateur d'itinéraire tiennent compte des travaux. Motif 
+ : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travau
+ xmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
+DTSTART;VALUE=DATE:20260516
+DTEND;VALUE=DATE:20260517
+DTSTAMP:20260422T225349Z
+UID:da031080-d4df-47d4-a88f-37794fba2633_20260516T030000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : dès 23h15 Dates : du lundi 04 au vendredi 29 mai\, sauf week-end et
+  jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Melu
+ n et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de re
+ mplacement est mis en place\, avec desserte des gares intermédiaires. Les
+  horaires du calculateur d'itinéraire tiennent compte des travaux. Motif 
+ : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travau
+ xmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun /Corbeil-Essonnes 04-29/05
+DTSTART;VALUE=DATE:20260523
+DTEND;VALUE=DATE:20260524
+DTSTAMP:20260422T225349Z
+UID:da031080-d4df-47d4-a88f-37794fba2633_20260523T030000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : dès 23h15 Dates : du lundi 04 au vendredi 29 mai\, sauf week-end et
+  jours fériés. Le trafic est interrompu entre Paris Gare de Lyon et Melu
+ n et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service de bus de re
+ mplacement est mis en place\, avec desserte des gares intermédiaires. Les
+  horaires du calculateur d'itinéraire tiennent compte des travaux. Motif 
+ : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travau
+ xmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260504T233500
+DTEND;TZID=Europe/Paris:20260505T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260504T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260505T233500
+DTEND;TZID=Europe/Paris:20260506T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260505T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260506T233500
+DTEND;TZID=Europe/Paris:20260507T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260506T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260507T233500
+DTEND;TZID=Europe/Paris:20260508T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260507T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260509T233500
+DTEND;TZID=Europe/Paris:20260510T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260509T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260510T233500
+DTEND;TZID=Europe/Paris:20260511T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260510T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260511T233500
+DTEND;TZID=Europe/Paris:20260512T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260511T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260512T233500
+DTEND;TZID=Europe/Paris:20260513T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260512T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260513T233500
+DTEND;TZID=Europe/Paris:20260514T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260513T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260515T233500
+DTEND;TZID=Europe/Paris:20260516T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260515T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260516T233500
+DTEND;TZID=Europe/Paris:20260517T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260516T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260517T233500
+DTEND;TZID=Europe/Paris:20260518T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260517T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260518T233500
+DTEND;TZID=Europe/Paris:20260519T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260518T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260519T233500
+DTEND;TZID=Europe/Paris:20260520T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260519T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260520T233500
+DTEND;TZID=Europe/Paris:20260521T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260520T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260521T233500
+DTEND;TZID=Europe/Paris:20260522T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260521T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260522T233500
+DTEND;TZID=Europe/Paris:20260523T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260522T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260523T233500
+DTEND;TZID=Europe/Paris:20260524T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260523T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260524T233500
+DTEND;TZID=Europe/Paris:20260525T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260524T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260526T233500
+DTEND;TZID=Europe/Paris:20260527T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260526T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260527T233500
+DTEND;TZID=Europe/Paris:20260528T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260527T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260528T233500
+DTEND;TZID=Europe/Paris:20260529T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260528T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Nord <-> Creil 04-29/05\, en semaine dès 23h35
+DTSTART;TZID=Europe/Paris:20260529T233500
+DTEND;TZID=Europe/Paris:20260530T020000
+DTSTAMP:20260422T225349Z
+UID:e200d6d7-682a-4af5-b381-c4e9607193c3_20260529T233500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : La Borne Blanche (Gare)\, Goussainville\
+ , Villiers-le-Bel - Gonesse - Arnouville\, Orry-la-Ville - Coye\, Saint-De
+ nis\, Louvres\, Creil\, Garges - Sarcelles\, Stade de France Saint-Denis\,
+  Pierrefitte - Stains\, Gare du Nord\, Chantilly - Gouvieux\, Survilliers 
+ - Fosses\, Les Noues\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
+  à partir de 23h35\, sauf jour férié. Dates : du lundi 04 au vendredi 2
+ 9 mai. Le trafic est interrompu entre Paris Gare du Nord et Creil. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux le réseau ferroviaire\n\nCause : TRAVAUX\n\nhtt
+ ps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun / Corbeil-Essonnes 30/03-24/04
+DTSTART;TZID=Europe/Paris:20260418T231500
+DTEND;TZID=Europe/Paris:20260419T020000
+DTSTAMP:20260422T225349Z
+UID:ee1b0481-01c3-4bfd-9629-9fce8cb02427_20260418T231500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : de 23h15 à 02h. Dates : du lundi 30 mars au vendredi 24 avril\, sau
+ f week-end et jours fériés. Le trafic est interrompu entre Paris Gare de
+  Lyon et Melun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service
+  de bus de remplacement est mis en place\, avec desserte des gares interm
+ édiaires. Les horaires du calculateur d'itinéraire tiennent compte des t
+ ravaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\n
+ https://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Paris Lyon <> Melun / Corbeil-Essonnes 30/03-24/04
+DTSTART;TZID=Europe/Paris:20260419T231500
+DTEND;TZID=Europe/Paris:20260420T020000
+DTSTAMP:20260422T225349Z
+UID:ee1b0481-01c3-4bfd-9629-9fce8cb02427_20260419T231500@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nStations : Yerres\, Combs-la-Ville - Quincy\, Savig
+ ny-le-Temple - Nandy\, Le Bras de Fer\, Le Vert de Maisons\, Viry-Châtill
+ on\, Gare de Lyon\, Le Mée\, Cesson\, Créteil Pompadour\, Vigneux-sur-Se
+ ine\, Corbeil-Essonnes\, Brunoy\, Juvisy\, Orangis Bois de l'Épine\, Évr
+ y - Courcouronnes\, Grigny Centre\, Villeneuve Triage\, Lieusaint - Moissy
+ \, Villeneuve-Saint-Georges\, Melun\, Maisons-Alfort - Alfortville\, Montg
+ eron - Crosne\, Boussy-Saint-Antoine\n\nArrêt(s) non desservi(s)\n\nPéri
+ ode : de 23h15 à 02h. Dates : du lundi 30 mars au vendredi 24 avril\, sau
+ f week-end et jours fériés. Le trafic est interrompu entre Paris Gare de
+  Lyon et Melun et entre Paris Gare de Lyon et Corbeil-Essonnes. Un service
+  de bus de remplacement est mis en place\, avec desserte des gares interm
+ édiaires. Les horaires du calculateur d'itinéraire tiennent compte des t
+ ravaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n\n
+ https://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Corbeil-Essonnes <-> Malesherbes 27-30/04
+DTSTART;TZID=Europe/Paris:20260427T210000
+DTEND;TZID=Europe/Paris:20260428T020000
+DTSTAMP:20260422T225349Z
+UID:f76c0c6e-5b0d-490b-962d-403a17810a95_20260427T210000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : les lundi\,
+  mardi\, mercredi\, jeudi dès 23h00. Dates : du lundi 27 au jeudi 30 avri
+ l. Le trafic est interrompu entre Corbeil-Essonnes et Malesherbes. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n
+ \nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Corbeil-Essonnes <-> Malesherbes 27-30/04
+DTSTART;TZID=Europe/Paris:20260428T210000
+DTEND;TZID=Europe/Paris:20260429T020000
+DTSTAMP:20260422T225349Z
+UID:f76c0c6e-5b0d-490b-962d-403a17810a95_20260428T210000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : les lundi\,
+  mardi\, mercredi\, jeudi dès 23h00. Dates : du lundi 27 au jeudi 30 avri
+ l. Le trafic est interrompu entre Corbeil-Essonnes et Malesherbes. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n
+ \nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Corbeil-Essonnes <-> Malesherbes 27-30/04
+DTSTART;TZID=Europe/Paris:20260429T210000
+DTEND;TZID=Europe/Paris:20260430T020000
+DTSTAMP:20260422T225349Z
+UID:f76c0c6e-5b0d-490b-962d-403a17810a95_20260429T210000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : les lundi\,
+  mardi\, mercredi\, jeudi dès 23h00. Dates : du lundi 27 au jeudi 30 avri
+ l. Le trafic est interrompu entre Corbeil-Essonnes et Malesherbes. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n
+ \nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER D : Corbeil-Essonnes <-> Malesherbes 27-30/04
+DTSTART;TZID=Europe/Paris:20260430T210000
+DTEND;TZID=Europe/Paris:20260501T020000
+DTSTAMP:20260422T225349Z
+UID:f76c0c6e-5b0d-490b-962d-403a17810a95_20260430T210000@travaux-metro
+CATEGORIES:Ligne D,Travaux Métro
+DESCRIPTION:Ligne D\n\nArrêt(s) non desservi(s)\n\nPériode : les lundi\,
+  mardi\, mercredi\, jeudi dès 23h00. Dates : du lundi 27 au jeudi 30 avri
+ l. Le trafic est interrompu entre Corbeil-Essonnes et Malesherbes. Un serv
+ ice de bus de remplacement est mis en place\, avec desserte des gares inte
+ rmédiaires. Les horaires du calculateur d'itinéraire tiennent compte des
+  travaux. Motif : travaux sur le réseau ferroviaire.\n\nCause : TRAVAUX\n
+ \nhttps://travauxmetro.fr/
 END:VEVENT
 END:VCALENDAR

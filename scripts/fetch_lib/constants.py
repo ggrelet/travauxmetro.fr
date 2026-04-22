@@ -81,3 +81,24 @@ RER_LINE_COLORS = {
     "D": ("#00814F", "#FFFFFF"),
     "E": ("#C04191", "#FFFFFF"),
 }
+
+# Official IDFM Tramway colors, sourced from
+# fr.wikipedia.org/wiki/Modèle:Tramway_d'Île-de-France/couleur_fond
+# (IDFM graphic charter Pantone → hex).
+TRAMWAY_LINE_COLORS = {
+    "T1":  ("#0064B0", "#FFFFFF"),
+    "T2":  ("#C04191", "#FFFFFF"),
+    "T3a": ("#F28E42", "#FFFFFF"),
+    "T3b": ("#00814F", "#FFFFFF"),
+    "T4":  ("#E3B32A", "#25303B"),
+    "T5":  ("#662483", "#FFFFFF"),
+    "T6":  ("#E3051C", "#FFFFFF"),
+    "T7":  ("#8D5E2A", "#FFFFFF"),
+    "T8":  ("#9F9825", "#FFFFFF"),
+    "T9":  ("#5291CE", "#FFFFFF"),
+    "T10": ("#9F9825", "#FFFFFF"),
+    "T11": ("#F28E42", "#FFFFFF"),
+    "T12": ("#B90845", "#FFFFFF"),
+    "T13": ("#8D5E2A", "#FFFFFF"),
+    "T14": ("#00A88F", "#FFFFFF"),
+}

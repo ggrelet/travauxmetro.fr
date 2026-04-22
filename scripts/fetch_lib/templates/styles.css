@@ -10,6 +10,10 @@
     .badge { display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: 700; font-size: 3.1rem; width: 4.5rem; height: 4.5rem; flex-shrink: 0; }
     /* RER badges are squircles, matching the official IDFM icon (rx=63.78 on a 283.46 box ≈ 22.5%). */
     .badge.badge-rer { border-radius: 22.5%; }
+    /* Tramway badges are inline <svg> (two colored pill-bars + white center, IDFM style).
+       !important is needed because `.rer-summary-badges .badge-sm` sets border-radius: 22.5%
+       on any badge-sm inside the expand summary, which would clip the square tram SVG. */
+    .badge.badge-tram { border-radius: 0 !important; background: transparent; }
     .line-header { display: flex; align-items: center; gap: .85rem; }
     .line-vsep { width: 1px; background: #bbb; align-self: stretch; flex-shrink: 0; min-height: 2rem; }
     .line-actions { display: flex; align-items: flex-start; align-content: flex-start; gap: .4rem; flex-wrap: wrap; flex: 1; }
@@ -65,6 +69,7 @@
     .network-sep { border: none; border-top: 1px solid #e8e8e8; margin: 1.25rem 0; }
     .rer-expand { margin-top: 0; }
     .rer-expand > summary { flex-wrap: wrap; gap: .26rem; padding: .5rem 0; }
+    .rer-expand[open] > summary { margin-bottom: .75rem; }
     .rer-summary-text { color: #333; }
     .rer-text-short { display: none; }
     @media (max-width: 600px) { .rer-text-long { display: none; } .rer-text-short { display: inline; } }

@@ -6,7 +6,7 @@ from pathlib import Path
 from babel.dates import format_date
 from jinja2 import Environment, FileSystemLoader
 
-from .constants import BASE_URL, CONTACT_EMAIL, FAVICON, METRO_LINE_COLORS, PARIS_TZ, RER_LINE_COLORS, UMAMI
+from .constants import BASE_URL, CONTACT_EMAIL, FAVICON, METRO_LINE_COLORS, PARIS_TZ, RER_LINE_COLORS, TRAMWAY_LINE_COLORS, UMAMI
 from .ics import deduplicate_events, make_events
 from .prim import (
     classify_disruptions,
@@ -188,9 +188,13 @@ def generate_index(
     rer_all, rer_disrupted, rer_calm = _build_network_views(
         "RapidTransit", RER_LINE_COLORS, by_line, dis_by_id, dis_to_stops, metro_lines,
     )
+    tram_all, tram_disrupted, tram_calm = _build_network_views(
+        "Tramway", TRAMWAY_LINE_COLORS, by_line, dis_by_id, dis_to_stops, metro_lines,
+    )
 
     all_metro_sub = _all_sub("tousmetros.ics", "all-metro")
     all_rer_sub = _all_sub("tousrer.ics", "all-rer")
+    all_tram_sub = _all_sub("toustram.ics", "all-tram")
 
     return _ENV.get_template("index.html.j2").render(
         fetched_at_date=fetched_at[:10],
@@ -205,8 +209,12 @@ def generate_index(
         rer_disrupted=rer_disrupted,
         rer_calm=rer_calm,
         rer_all=rer_all,
+        tram_disrupted=tram_disrupted,
+        tram_calm=tram_calm,
+        tram_all=tram_all,
         all_metro_sub=all_metro_sub,
         all_rer_sub=all_rer_sub,
+        all_tram_sub=all_tram_sub,
         date_str=date_str,
         time_str=time_str,
     )

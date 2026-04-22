@@ -10,18 +10,26 @@
 <button class="sub-btn copy" onclick="copyUrl('{{ x.ics_url }}',this)" data-umami-event="copy-url" data-umami-event-line="{{ x.name }}"><img src="/icons/copy.svg" width="14" height="14" alt="" style="margin-right:.35em;flex-shrink:0">Copier le lien</button>
 {%- endmacro -%}
 {%- macro badge_class(network) -%}badge{% if network == "RapidTransit" %} badge-rer{% endif %}{%- endmacro -%}
+{%- macro badge(line, classes='', extra_style='') -%}
+{%- if line.network == "Tramway" -%}
+{%- set has_suffix = line.name|length == 3 and line.name[-1] in 'abcdefghijklmnopqrstuvwxyz' -%}
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.46 283.46" class="badge badge-tram{% if classes %} {{ classes }}{% endif %}"{% if extra_style %} style="{{ extra_style }}"{% endif %} role="img" aria-label="Tram {{ line.name }}"><path fill="#fff" d="M0,28.35h283.46v226.76H0z"/><rect fill="{{ line.bg }}" width="283.46" height="42.52" rx="14.17"/><rect fill="{{ line.bg }}" width="283.46" height="42.52" rx="14.17" y="240.94"/><text x="141.73" y="141.73" text-anchor="middle" dominant-baseline="central" fill="#25303B" font-family="system-ui,-apple-system,Arial,sans-serif" font-weight="800" font-size="140">{% if has_suffix %}{{ line.name[:2] }}<tspan font-size="95" dy="-15">{{ line.name[-1] }}</tspan>{% else %}{{ line.name }}{% endif %}</text></svg>
+{%- else -%}
+<span class="{{ badge_class(line.network) }}{% if classes %} {{ classes }}{% endif %}" style="background:{{ line.bg }};color:{{ line.fg }}{% if extra_style %};{{ extra_style }}{% endif %}">{{ line.label_html|safe }}</span>
+{%- endif -%}
+{%- endmacro -%}
 {%- macro disrupted_grid(lines) -%}
 <div class="lines-grid">{% for line in lines %}
     <div class="line-row" data-line="{{ line.name }}">
       <div class="line-header">
-        <span class="{{ badge_class(line.network) }}" style="background:{{ line.bg }};color:{{ line.fg }}">{{ line.label_html|safe }}</span>
+        {{ badge(line) }}
         <div class="line-vsep"></div>
         <div class="line-actions">{{ sub_buttons(line) }}</div>
       </div>
       {% if line.card_count == 0 -%}<p class="quiet">Aucune interruption prévue, mais cela pourrait arriver dans le futur. Abonnez-vous pour ne pas les manquer.</p>{%- else -%}<button class="dis-btn" data-dialog="{{ line.dialog_id }}" data-umami-event="accordion-open" data-umami-event-line="{{ line.name }}"><span style="font-size:.8em">▶</span> {{ line.label_text }}</button>
     <dialog id="{{ line.dialog_id }}" class="dis-dialog">
       <div class="dis-dialog-header">
-        <span class="{{ badge_class(line.network) }}" style="background:{{ line.bg }};color:{{ line.fg }};width:2rem;height:2rem;font-size:1.2rem;flex-shrink:0">{{ line.label_html|safe }}</span>
+        {{ badge(line, extra_style="width:2rem;height:2rem;font-size:1.2rem;flex-shrink:0") }}
         <span class="dis-dialog-subtitle" style="margin:0;flex:1">{{ line.label_text }}</span>
         <button class="dis-close" autofocus onclick="this.closest('dialog').close()">✕</button>
       </div>
@@ -33,18 +41,19 @@
     </dialog>{%- endif %}
     </div>{% endfor %}</div>
 {%- endmacro -%}
-{%- macro rer_expand(rer_all) -%}
+{%- macro mode_expand(lines, icon_src, icon_alt, note_text) -%}
 <details class="rer-expand">
-  <summary><span class="rer-summary-text"><span class="rer-text-long">Cliquez ici pour les</span><span class="rer-text-short">Voir</span> lignes de</span><span class="rer-summary-badges"><img src="/icons/rer.svg" class="rer-inline-icon" alt="RER" width="24" height="24">{% for line in rer_all %}<span class="badge badge-rer badge-sm" style="background:{{ line.bg }};color:{{ line.fg }}">{{ line.label_html|safe }}</span>{% endfor %}</span></summary>
-  <p class="rer-note">Les lignes de RER sont énormément impactées par les travaux du réseau. Abonnez-vous aux calendriers si l'information vous intéresse tout de même.</p>
+  <summary><span class="rer-summary-text"><span class="rer-text-long">Cliquez ici pour les</span><span class="rer-text-short">Voir</span> lignes de</span><span class="rer-summary-badges"><img src="{{ icon_src }}" class="rer-inline-icon" alt="{{ icon_alt }}" width="24" height="24">{% for line in lines %}{{ badge(line, classes="badge-sm") }}{% endfor %}</span></summary>
+  {% if note_text %}<p class="rer-note">{{ note_text }}</p>{% endif %}
   {{ caller() }}
 </details>
 {%- endmacro -%}
+{%- set rer_note = "Les lignes de RER sont énormément impactées par les travaux du réseau. Abonnez-vous aux calendriers si l'information vous intéresse tout de même." -%}
 {%- macro calm_grid(lines) -%}
 <div class="lines-grid">{% for line in lines %}
     <div class="line-row">
       <div class="line-header">
-        <span class="{{ badge_class(line.network) }}" style="background:{{ line.bg }};color:{{ line.fg }}">{{ line.label_html|safe }}</span>
+        {{ badge(line) }}
         <div class="line-vsep"></div>
         <div class="line-actions">{{ sub_buttons(line) }}</div>
       </div>
@@ -117,15 +126,19 @@
     <p class="section-note">Les opérateurs du réseau ont prévu des interruptions dues aux travaux sur ces lignes.</p>
     {% if metro_disrupted %}{{ disrupted_grid(metro_disrupted) }}{% endif %}
     {% if metro_disrupted and rer_disrupted %}<hr class="network-sep">{% endif %}
-    {% if rer_disrupted %}{% call rer_expand(rer_all) %}{{ disrupted_grid(rer_disrupted) }}{% endcall %}{% endif %}
+    {% if rer_disrupted %}{% call mode_expand(rer_all, "/icons/rer.svg", "RER", rer_note) %}{{ disrupted_grid(rer_disrupted) }}{% endcall %}{% endif %}
+    {% if (metro_disrupted or rer_disrupted) and tram_disrupted %}<hr class="network-sep">{% endif %}
+    {% if tram_disrupted %}{% call mode_expand(tram_all, "/icons/tram.svg", "Tramway", "") %}{{ disrupted_grid(tram_disrupted) }}{% endcall %}{% endif %}
   </section>{% else %}<p class="quiet" style="margin-bottom:1.5rem">Aucune interruption prévue sur le réseau.</p>{% endif %}
-  {% if metro_calm or rer_calm %}
+  {% if metro_calm or rer_calm or tram_calm %}
   <section>
     <h2 class="section-title">Autres lignes</h2>
     <p class="section-note">Aucune interruption prévue sur ces lignes. Abonnez-vous pour être notifié automatiquement si cela change.</p>
     {% if metro_calm %}{{ calm_grid(metro_calm) }}{% endif %}
     {% if metro_calm and rer_calm %}<hr class="network-sep">{% endif %}
-    {% if rer_calm %}{% call rer_expand(rer_all) %}{{ calm_grid(rer_calm) }}{% endcall %}{% endif %}
+    {% if rer_calm %}{% call mode_expand(rer_all, "/icons/rer.svg", "RER", rer_note) %}{{ calm_grid(rer_calm) }}{% endcall %}{% endif %}
+    {% if (metro_calm or rer_calm) and tram_calm %}<hr class="network-sep">{% endif %}
+    {% if tram_calm %}{% call mode_expand(tram_all, "/icons/tram.svg", "Tramway", "") %}{{ calm_grid(tram_calm) }}{% endcall %}{% endif %}
   </section>{% endif %}
 
   <section>
@@ -133,18 +146,28 @@
     <p class="section-note">Un seul abonnement pour suivre toutes les interruptions du réseau en même temps.</p>
     <div class="line-row">
       <div class="line-header">
-        <div class="all-badges">{% for line in metro_all %}{% if not loop.first %} {% endif %}<span class="{{ badge_class(line.network) }}" style="background:{{ line.bg }};color:{{ line.fg }}">{{ line.label_html|safe }}</span>{% endfor %}</div>
+        <div class="all-badges">{% for line in metro_all %}{% if not loop.first %} {% endif %}{{ badge(line) }}{% endfor %}</div>
         <div class="line-vsep"></div>
         <div class="line-actions">{{ sub_buttons(all_metro_sub) }}</div>
       </div>
     </div>
     {% if rer_all %}<hr class="network-sep">
-    {% call rer_expand(rer_all) %}
+    {% call mode_expand(rer_all, "/icons/rer.svg", "RER", rer_note) %}
     <div class="line-row">
       <div class="line-header">
-        <div class="all-badges">{% for line in rer_all %}{% if not loop.first %} {% endif %}<span class="{{ badge_class(line.network) }}" style="background:{{ line.bg }};color:{{ line.fg }}">{{ line.label_html|safe }}</span>{% endfor %}</div>
+        <div class="all-badges">{% for line in rer_all %}{% if not loop.first %} {% endif %}{{ badge(line) }}{% endfor %}</div>
         <div class="line-vsep"></div>
         <div class="line-actions">{{ sub_buttons(all_rer_sub) }}</div>
+      </div>
+    </div>
+    {% endcall %}{% endif %}
+    {% if tram_all %}<hr class="network-sep">
+    {% call mode_expand(tram_all, "/icons/tram.svg", "Tramway", "") %}
+    <div class="line-row">
+      <div class="line-header">
+        <div class="all-badges">{% for line in tram_all %}{% if not loop.first %} {% endif %}{{ badge(line) }}{% endfor %}</div>
+        <div class="line-vsep"></div>
+        <div class="line-actions">{{ sub_buttons(all_tram_sub) }}</div>
       </div>
     </div>
     {% endcall %}{% endif %}

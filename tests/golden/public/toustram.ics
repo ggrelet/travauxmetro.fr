@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ggrelet//travaux-metro//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALDESC:Interruptions et travaux planifiés sur toutes les lignes du 
+ tramway francilien. Mis à jour quotidiennement depuis les données Île-d
+ e-France Mobilités. travauxmetro.fr
+X-WR-CALNAME:Paris Tramway — Travaux
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-APPLE-CALENDAR-COLOR:#0064B0
+X-PUBLISHED-TTL:PT12H
+X-WR-TIMEZONE:Europe/Paris
+END:VCALENDAR
