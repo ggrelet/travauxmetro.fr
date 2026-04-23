@@ -31,10 +31,10 @@ jobs:
       - name: Fetch disruptions
         env:
           PRIM_TOKEN: ${{ secrets.PRIM_TOKEN }}
-        run: |
-          ARGS=""
-          [[ "${{ inputs.force }}" == "true" ]] && ARGS="--force"
-          uv run python scripts/fetch.py $ARGS
+        run: uv run python scripts/fetch.py --force
+
+      - name: Smoke-check generated output
+        run: uv run pytest tests/ -m live -v
 
       - name: Check for changes
         id: diff
@@ -42,10 +42,6 @@ jobs:
           git status --porcelain data/disruptions_hash.txt | grep -q . \
             && echo "changed=true"  >> "$GITHUB_OUTPUT" \
             || echo "changed=false" >> "$GITHUB_OUTPUT"
-
-      - name: Smoke-check generated output
-        if: steps.diff.outputs.changed == 'true' || inputs.force == true
-        run: uv run pytest tests/ -m live -v
 
       - name: Open PR if changed
         if: steps.diff.outputs.changed == 'true' || inputs.force == true

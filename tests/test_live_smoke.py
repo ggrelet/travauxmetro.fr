@@ -25,7 +25,7 @@ SNAPSHOT = ROOT / "data" / "snapshot.json"
 METRO_LINES = ["1", "2", "3", "3B", "4", "5", "6", "7", "7B",
                "8", "9", "10", "11", "12", "13", "14"]
 
-MIN_RATIO = 0.5
+MIN_RATIO = 0.9
 
 
 @pytest.fixture(scope="module")
@@ -42,6 +42,14 @@ def test_ics_parses(line: str) -> None:
     path = PUBLIC / f"ligne-{line}.ics"
     assert path.exists(), f"missing {path.name}"
     Calendar.from_ical(path.read_bytes())
+
+
+@pytest.mark.parametrize("filename", ["tousmetros.ics", "tousrer.ics", "toustram.ics"])
+def test_all_network_ics_has_events(filename: str) -> None:
+    """Guard against a deploy that drops all events for a network."""
+    cal = Calendar.from_ical((PUBLIC / filename).read_bytes())
+    events = [c for c in cal.walk() if c.name == "VEVENT"]
+    assert events, f"{filename} has zero VEVENTs"
 
 
 def test_sitemap_has_today() -> None:
