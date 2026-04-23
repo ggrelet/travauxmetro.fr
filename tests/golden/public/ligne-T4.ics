@@ -11,4 +11,316 @@ REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-APPLE-CALENDAR-COLOR:#E3B32A
 X-PUBLISHED-TTL:PT12H
 X-WR-TIMEZONE:Europe/Paris
+BEGIN:VEVENT
+SUMMARY:Tramway T4 - Travaux : Trafic interrompu entre Gargan et Aulnay-so
+ us-Bois du 26/04 - 21/06 à partir de 00h55
+DTSTART;VALUE=DATE:20260427
+DTEND;VALUE=DATE:20260427
+DTSTAMP:20260410T100000Z
+UID:c277e5a5-bcb0-48b3-a32d-23583c41f7aa_20260427T005500@travaux-metro
+CATEGORIES:Ligne T4,Travaux Métro
+DESCRIPTION:Ligne T4\n\nStations : Aulnay-sous-Bois\, Lycée Henri Sellier
+ \, L'Abbaye\, Rougemont Chanteloup\, Freinville Sevran\n\nPériode : à pa
+ rtir de 00h55   Dates : Les nuits du dimanche au lundi 26 avril\, 17 et 3
+ 1 mai\, 14 et 21 juin   Le trafic est interrompu entre Gargan et Aulnay-s
+ ous-Bois.   Reprise les lundis : le premier départ de Bondy vers Aulnay-
+ sous-Bois est à 5h06. Le premier départ de Aulnay-sous-Bois vers Bondy e
+ st à 5h04.   Un service de bus de remplacement est mis en place. Les ré
+ sultats du calculateur d'itinéraire tiennent compte de cette perturbation
+ . Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tramway T4 - Travaux : Trafic interrompu entre Gargan et Aulnay-so
+ us-Bois du 26/04 - 21/06 à partir de 00h55
+DTSTART;VALUE=DATE:20260518
+DTEND;VALUE=DATE:20260518
+DTSTAMP:20260410T100000Z
+UID:c277e5a5-bcb0-48b3-a32d-23583c41f7aa_20260518T005500@travaux-metro
+CATEGORIES:Ligne T4,Travaux Métro
+DESCRIPTION:Ligne T4\n\nStations : Aulnay-sous-Bois\, Lycée Henri Sellier
+ \, L'Abbaye\, Rougemont Chanteloup\, Freinville Sevran\n\nPériode : à pa
+ rtir de 00h55   Dates : Les nuits du dimanche au lundi 26 avril\, 17 et 3
+ 1 mai\, 14 et 21 juin   Le trafic est interrompu entre Gargan et Aulnay-s
+ ous-Bois.   Reprise les lundis : le premier départ de Bondy vers Aulnay-
+ sous-Bois est à 5h06. Le premier départ de Aulnay-sous-Bois vers Bondy e
+ st à 5h04.   Un service de bus de remplacement est mis en place. Les ré
+ sultats du calculateur d'itinéraire tiennent compte de cette perturbation
+ . Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tramway T4 - Travaux : Trafic interrompu entre Gargan et Aulnay-so
+ us-Bois du 26/04 - 21/06 à partir de 00h55
+DTSTART;VALUE=DATE:20260601
+DTEND;VALUE=DATE:20260601
+DTSTAMP:20260410T100000Z
+UID:c277e5a5-bcb0-48b3-a32d-23583c41f7aa_20260601T005500@travaux-metro
+CATEGORIES:Ligne T4,Travaux Métro
+DESCRIPTION:Ligne T4\n\nStations : Aulnay-sous-Bois\, Lycée Henri Sellier
+ \, L'Abbaye\, Rougemont Chanteloup\, Freinville Sevran\n\nPériode : à pa
+ rtir de 00h55   Dates : Les nuits du dimanche au lundi 26 avril\, 17 et 3
+ 1 mai\, 14 et 21 juin   Le trafic est interrompu entre Gargan et Aulnay-s
+ ous-Bois.   Reprise les lundis : le premier départ de Bondy vers Aulnay-
+ sous-Bois est à 5h06. Le premier départ de Aulnay-sous-Bois vers Bondy e
+ st à 5h04.   Un service de bus de remplacement est mis en place. Les ré
+ sultats du calculateur d'itinéraire tiennent compte de cette perturbation
+ . Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tramway T4 - Travaux : Trafic interrompu entre Gargan et Aulnay-so
+ us-Bois du 26/04 - 21/06 à partir de 00h55
+DTSTART;VALUE=DATE:20260615
+DTEND;VALUE=DATE:20260615
+DTSTAMP:20260410T100000Z
+UID:c277e5a5-bcb0-48b3-a32d-23583c41f7aa_20260615T005500@travaux-metro
+CATEGORIES:Ligne T4,Travaux Métro
+DESCRIPTION:Ligne T4\n\nStations : Aulnay-sous-Bois\, Lycée Henri Sellier
+ \, L'Abbaye\, Rougemont Chanteloup\, Freinville Sevran\n\nPériode : à pa
+ rtir de 00h55   Dates : Les nuits du dimanche au lundi 26 avril\, 17 et 3
+ 1 mai\, 14 et 21 juin   Le trafic est interrompu entre Gargan et Aulnay-s
+ ous-Bois.   Reprise les lundis : le premier départ de Bondy vers Aulnay-
+ sous-Bois est à 5h06. Le premier départ de Aulnay-sous-Bois vers Bondy e
+ st à 5h04.   Un service de bus de remplacement est mis en place. Les ré
+ sultats du calculateur d'itinéraire tiennent compte de cette perturbation
+ . Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tramway T4 - Travaux : Trafic interrompu entre Gargan et Aulnay-so
+ us-Bois du 20/04 au 7/05
+DTSTART;TZID=Europe/Paris:20260420T225500
+DTEND;TZID=Europe/Paris:20260421T020000
+DTSTAMP:20260410T100000Z
+UID:ec42c20a-f981-11f0-bb81-0a58a9feac02_20260420T225500@travaux-metro
+CATEGORIES:Ligne T4,Travaux Métro
+DESCRIPTION:Ligne T4\n\nStations : Aulnay-sous-Bois\, Rougemont Chanteloup
+ \, L'Abbaye\, Freinville Sevran\, Lycée Henri Sellier\n\nDu lundi 20 avri
+ l au jeudi 7 mai\, sauf les week-ends\, le trafic est interrompu entre Gar
+ gan et Aulnay-sous-Bois dans les deux sens à  partir de 22h55.   Dernie
+ r tram au départ de Aulnay-sous-Bois et Bondy est à 22h47.   Les tramwa
+ ys circulent entre Bondy et Hôpital de Montfermeil jusqu'à la fin de ser
+ vice. Ils desservent les stations entre Bondy et Gargan.   Un service de 
+ bus de substitution est mis en place\, avec desserte des gares intermédia
+ ires. Les résultats du calculateur d'itinéraire tiennent compte de cette
+  perturbation. Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
+ .fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tramway T4 - Travaux : Trafic interrompu entre Gargan et Aulnay-so
+ us-Bois du 20/04 au 7/05
+DTSTART;TZID=Europe/Paris:20260421T225500
+DTEND;TZID=Europe/Paris:20260422T020000
+DTSTAMP:20260410T100000Z
+UID:ec42c20a-f981-11f0-bb81-0a58a9feac02_20260421T225500@travaux-metro
+CATEGORIES:Ligne T4,Travaux Métro
+DESCRIPTION:Ligne T4\n\nStations : Aulnay-sous-Bois\, Rougemont Chanteloup
+ \, L'Abbaye\, Freinville Sevran\, Lycée Henri Sellier\n\nDu lundi 20 avri
+ l au jeudi 7 mai\, sauf les week-ends\, le trafic est interrompu entre Gar
+ gan et Aulnay-sous-Bois dans les deux sens à  partir de 22h55.   Dernie
+ r tram au départ de Aulnay-sous-Bois et Bondy est à 22h47.   Les tramwa
+ ys circulent entre Bondy et Hôpital de Montfermeil jusqu'à la fin de ser
+ vice. Ils desservent les stations entre Bondy et Gargan.   Un service de 
+ bus de substitution est mis en place\, avec desserte des gares intermédia
+ ires. Les résultats du calculateur d'itinéraire tiennent compte de cette
+  perturbation. Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
+ .fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tramway T4 - Travaux : Trafic interrompu entre Gargan et Aulnay-so
+ us-Bois du 20/04 au 7/05
+DTSTART;TZID=Europe/Paris:20260422T225500
+DTEND;TZID=Europe/Paris:20260423T020000
+DTSTAMP:20260410T100000Z
+UID:ec42c20a-f981-11f0-bb81-0a58a9feac02_20260422T225500@travaux-metro
+CATEGORIES:Ligne T4,Travaux Métro
+DESCRIPTION:Ligne T4\n\nStations : Aulnay-sous-Bois\, Rougemont Chanteloup
+ \, L'Abbaye\, Freinville Sevran\, Lycée Henri Sellier\n\nDu lundi 20 avri
+ l au jeudi 7 mai\, sauf les week-ends\, le trafic est interrompu entre Gar
+ gan et Aulnay-sous-Bois dans les deux sens à  partir de 22h55.   Dernie
+ r tram au départ de Aulnay-sous-Bois et Bondy est à 22h47.   Les tramwa
+ ys circulent entre Bondy et Hôpital de Montfermeil jusqu'à la fin de ser
+ vice. Ils desservent les stations entre Bondy et Gargan.   Un service de 
+ bus de substitution est mis en place\, avec desserte des gares intermédia
+ ires. Les résultats du calculateur d'itinéraire tiennent compte de cette
+  perturbation. Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
+ .fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tramway T4 - Travaux : Trafic interrompu entre Gargan et Aulnay-so
+ us-Bois du 20/04 au 7/05
+DTSTART;TZID=Europe/Paris:20260423T225500
+DTEND;TZID=Europe/Paris:20260424T020000
+DTSTAMP:20260410T100000Z
+UID:ec42c20a-f981-11f0-bb81-0a58a9feac02_20260423T225500@travaux-metro
+CATEGORIES:Ligne T4,Travaux Métro
+DESCRIPTION:Ligne T4\n\nStations : Aulnay-sous-Bois\, Rougemont Chanteloup
+ \, L'Abbaye\, Freinville Sevran\, Lycée Henri Sellier\n\nDu lundi 20 avri
+ l au jeudi 7 mai\, sauf les week-ends\, le trafic est interrompu entre Gar
+ gan et Aulnay-sous-Bois dans les deux sens à  partir de 22h55.   Dernie
+ r tram au départ de Aulnay-sous-Bois et Bondy est à 22h47.   Les tramwa
+ ys circulent entre Bondy et Hôpital de Montfermeil jusqu'à la fin de ser
+ vice. Ils desservent les stations entre Bondy et Gargan.   Un service de 
+ bus de substitution est mis en place\, avec desserte des gares intermédia
+ ires. Les résultats du calculateur d'itinéraire tiennent compte de cette
+  perturbation. Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
+ .fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tramway T4 - Travaux : Trafic interrompu entre Gargan et Aulnay-so
+ us-Bois du 20/04 au 7/05
+DTSTART;TZID=Europe/Paris:20260427T225500
+DTEND;TZID=Europe/Paris:20260428T020000
+DTSTAMP:20260410T100000Z
+UID:ec42c20a-f981-11f0-bb81-0a58a9feac02_20260427T225500@travaux-metro
+CATEGORIES:Ligne T4,Travaux Métro
+DESCRIPTION:Ligne T4\n\nStations : Aulnay-sous-Bois\, Rougemont Chanteloup
+ \, L'Abbaye\, Freinville Sevran\, Lycée Henri Sellier\n\nDu lundi 20 avri
+ l au jeudi 7 mai\, sauf les week-ends\, le trafic est interrompu entre Gar
+ gan et Aulnay-sous-Bois dans les deux sens à  partir de 22h55.   Dernie
+ r tram au départ de Aulnay-sous-Bois et Bondy est à 22h47.   Les tramwa
+ ys circulent entre Bondy et Hôpital de Montfermeil jusqu'à la fin de ser
+ vice. Ils desservent les stations entre Bondy et Gargan.   Un service de 
+ bus de substitution est mis en place\, avec desserte des gares intermédia
+ ires. Les résultats du calculateur d'itinéraire tiennent compte de cette
+  perturbation. Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
+ .fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tramway T4 - Travaux : Trafic interrompu entre Gargan et Aulnay-so
+ us-Bois du 20/04 au 7/05
+DTSTART;TZID=Europe/Paris:20260428T225500
+DTEND;TZID=Europe/Paris:20260429T020000
+DTSTAMP:20260410T100000Z
+UID:ec42c20a-f981-11f0-bb81-0a58a9feac02_20260428T225500@travaux-metro
+CATEGORIES:Ligne T4,Travaux Métro
+DESCRIPTION:Ligne T4\n\nStations : Aulnay-sous-Bois\, Rougemont Chanteloup
+ \, L'Abbaye\, Freinville Sevran\, Lycée Henri Sellier\n\nDu lundi 20 avri
+ l au jeudi 7 mai\, sauf les week-ends\, le trafic est interrompu entre Gar
+ gan et Aulnay-sous-Bois dans les deux sens à  partir de 22h55.   Dernie
+ r tram au départ de Aulnay-sous-Bois et Bondy est à 22h47.   Les tramwa
+ ys circulent entre Bondy et Hôpital de Montfermeil jusqu'à la fin de ser
+ vice. Ils desservent les stations entre Bondy et Gargan.   Un service de 
+ bus de substitution est mis en place\, avec desserte des gares intermédia
+ ires. Les résultats du calculateur d'itinéraire tiennent compte de cette
+  perturbation. Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
+ .fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tramway T4 - Travaux : Trafic interrompu entre Gargan et Aulnay-so
+ us-Bois du 20/04 au 7/05
+DTSTART;TZID=Europe/Paris:20260429T225500
+DTEND;TZID=Europe/Paris:20260430T020000
+DTSTAMP:20260410T100000Z
+UID:ec42c20a-f981-11f0-bb81-0a58a9feac02_20260429T225500@travaux-metro
+CATEGORIES:Ligne T4,Travaux Métro
+DESCRIPTION:Ligne T4\n\nStations : Aulnay-sous-Bois\, Rougemont Chanteloup
+ \, L'Abbaye\, Freinville Sevran\, Lycée Henri Sellier\n\nDu lundi 20 avri
+ l au jeudi 7 mai\, sauf les week-ends\, le trafic est interrompu entre Gar
+ gan et Aulnay-sous-Bois dans les deux sens à  partir de 22h55.   Dernie
+ r tram au départ de Aulnay-sous-Bois et Bondy est à 22h47.   Les tramwa
+ ys circulent entre Bondy et Hôpital de Montfermeil jusqu'à la fin de ser
+ vice. Ils desservent les stations entre Bondy et Gargan.   Un service de 
+ bus de substitution est mis en place\, avec desserte des gares intermédia
+ ires. Les résultats du calculateur d'itinéraire tiennent compte de cette
+  perturbation. Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
+ .fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tramway T4 - Travaux : Trafic interrompu entre Gargan et Aulnay-so
+ us-Bois du 20/04 au 7/05
+DTSTART;TZID=Europe/Paris:20260430T225500
+DTEND;TZID=Europe/Paris:20260501T020000
+DTSTAMP:20260410T100000Z
+UID:ec42c20a-f981-11f0-bb81-0a58a9feac02_20260430T225500@travaux-metro
+CATEGORIES:Ligne T4,Travaux Métro
+DESCRIPTION:Ligne T4\n\nStations : Aulnay-sous-Bois\, Rougemont Chanteloup
+ \, L'Abbaye\, Freinville Sevran\, Lycée Henri Sellier\n\nDu lundi 20 avri
+ l au jeudi 7 mai\, sauf les week-ends\, le trafic est interrompu entre Gar
+ gan et Aulnay-sous-Bois dans les deux sens à  partir de 22h55.   Dernie
+ r tram au départ de Aulnay-sous-Bois et Bondy est à 22h47.   Les tramwa
+ ys circulent entre Bondy et Hôpital de Montfermeil jusqu'à la fin de ser
+ vice. Ils desservent les stations entre Bondy et Gargan.   Un service de 
+ bus de substitution est mis en place\, avec desserte des gares intermédia
+ ires. Les résultats du calculateur d'itinéraire tiennent compte de cette
+  perturbation. Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
+ .fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tramway T4 - Travaux : Trafic interrompu entre Gargan et Aulnay-so
+ us-Bois du 20/04 au 7/05
+DTSTART;TZID=Europe/Paris:20260504T225500
+DTEND;TZID=Europe/Paris:20260505T020000
+DTSTAMP:20260410T100000Z
+UID:ec42c20a-f981-11f0-bb81-0a58a9feac02_20260504T225500@travaux-metro
+CATEGORIES:Ligne T4,Travaux Métro
+DESCRIPTION:Ligne T4\n\nStations : Aulnay-sous-Bois\, Rougemont Chanteloup
+ \, L'Abbaye\, Freinville Sevran\, Lycée Henri Sellier\n\nDu lundi 20 avri
+ l au jeudi 7 mai\, sauf les week-ends\, le trafic est interrompu entre Gar
+ gan et Aulnay-sous-Bois dans les deux sens à  partir de 22h55.   Dernie
+ r tram au départ de Aulnay-sous-Bois et Bondy est à 22h47.   Les tramwa
+ ys circulent entre Bondy et Hôpital de Montfermeil jusqu'à la fin de ser
+ vice. Ils desservent les stations entre Bondy et Gargan.   Un service de 
+ bus de substitution est mis en place\, avec desserte des gares intermédia
+ ires. Les résultats du calculateur d'itinéraire tiennent compte de cette
+  perturbation. Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
+ .fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tramway T4 - Travaux : Trafic interrompu entre Gargan et Aulnay-so
+ us-Bois du 20/04 au 7/05
+DTSTART;TZID=Europe/Paris:20260505T225500
+DTEND;TZID=Europe/Paris:20260506T020000
+DTSTAMP:20260410T100000Z
+UID:ec42c20a-f981-11f0-bb81-0a58a9feac02_20260505T225500@travaux-metro
+CATEGORIES:Ligne T4,Travaux Métro
+DESCRIPTION:Ligne T4\n\nStations : Aulnay-sous-Bois\, Rougemont Chanteloup
+ \, L'Abbaye\, Freinville Sevran\, Lycée Henri Sellier\n\nDu lundi 20 avri
+ l au jeudi 7 mai\, sauf les week-ends\, le trafic est interrompu entre Gar
+ gan et Aulnay-sous-Bois dans les deux sens à  partir de 22h55.   Dernie
+ r tram au départ de Aulnay-sous-Bois et Bondy est à 22h47.   Les tramwa
+ ys circulent entre Bondy et Hôpital de Montfermeil jusqu'à la fin de ser
+ vice. Ils desservent les stations entre Bondy et Gargan.   Un service de 
+ bus de substitution est mis en place\, avec desserte des gares intermédia
+ ires. Les résultats du calculateur d'itinéraire tiennent compte de cette
+  perturbation. Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
+ .fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tramway T4 - Travaux : Trafic interrompu entre Gargan et Aulnay-so
+ us-Bois du 20/04 au 7/05
+DTSTART;TZID=Europe/Paris:20260506T225500
+DTEND;TZID=Europe/Paris:20260507T020000
+DTSTAMP:20260410T100000Z
+UID:ec42c20a-f981-11f0-bb81-0a58a9feac02_20260506T225500@travaux-metro
+CATEGORIES:Ligne T4,Travaux Métro
+DESCRIPTION:Ligne T4\n\nStations : Aulnay-sous-Bois\, Rougemont Chanteloup
+ \, L'Abbaye\, Freinville Sevran\, Lycée Henri Sellier\n\nDu lundi 20 avri
+ l au jeudi 7 mai\, sauf les week-ends\, le trafic est interrompu entre Gar
+ gan et Aulnay-sous-Bois dans les deux sens à  partir de 22h55.   Dernie
+ r tram au départ de Aulnay-sous-Bois et Bondy est à 22h47.   Les tramwa
+ ys circulent entre Bondy et Hôpital de Montfermeil jusqu'à la fin de ser
+ vice. Ils desservent les stations entre Bondy et Gargan.   Un service de 
+ bus de substitution est mis en place\, avec desserte des gares intermédia
+ ires. Les résultats du calculateur d'itinéraire tiennent compte de cette
+  perturbation. Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
+ .fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tramway T4 - Travaux : Trafic interrompu entre Gargan et Aulnay-so
+ us-Bois du 20/04 au 7/05
+DTSTART;TZID=Europe/Paris:20260507T225500
+DTEND;TZID=Europe/Paris:20260508T020000
+DTSTAMP:20260410T100000Z
+UID:ec42c20a-f981-11f0-bb81-0a58a9feac02_20260507T225500@travaux-metro
+CATEGORIES:Ligne T4,Travaux Métro
+DESCRIPTION:Ligne T4\n\nStations : Aulnay-sous-Bois\, Rougemont Chanteloup
+ \, L'Abbaye\, Freinville Sevran\, Lycée Henri Sellier\n\nDu lundi 20 avri
+ l au jeudi 7 mai\, sauf les week-ends\, le trafic est interrompu entre Gar
+ gan et Aulnay-sous-Bois dans les deux sens à  partir de 22h55.   Dernie
+ r tram au départ de Aulnay-sous-Bois et Bondy est à 22h47.   Les tramwa
+ ys circulent entre Bondy et Hôpital de Montfermeil jusqu'à la fin de ser
+ vice. Ils desservent les stations entre Bondy et Gargan.   Un service de 
+ bus de substitution est mis en place\, avec desserte des gares intermédia
+ ires. Les résultats du calculateur d'itinéraire tiennent compte de cette
+  perturbation. Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
+ .fr/
+END:VEVENT
 END:VCALENDAR

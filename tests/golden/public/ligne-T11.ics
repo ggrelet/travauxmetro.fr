@@ -11,4 +11,18 @@ REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-APPLE-CALENDAR-COLOR:#F28E42
 X-PUBLISHED-TTL:PT12H
 X-WR-TIMEZONE:Europe/Paris
+BEGIN:VEVENT
+SUMMARY:Tramway T11 - Travaux : Trafic interrompu sur toute la ligne le sa
+ medi 11 avril
+DTSTART;TZID=Europe/Paris:20260411T040000
+DTEND;TZID=Europe/Paris:20260411T235900
+DTSTAMP:20260410T100000Z
+UID:2b940d68-b37c-4f06-8382-ea4b71b04a0a_20260411T040000@travaux-metro
+CATEGORIES:Ligne T11,Travaux Métro
+DESCRIPTION:Ligne T11\n\nLe samedi 11 avril toute la journée\, le trafic 
+ est interrompu sur toute la ligne.   Un service de bus de remplacement es
+ t mis en place. Les résultats du calculateur d'itinéraire tiennent compt
+ e de cette perturbation. Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://tr
+ avauxmetro.fr/
+END:VEVENT
 END:VCALENDAR

@@ -11,4 +11,124 @@ REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-APPLE-CALENDAR-COLOR:#00A88F
 X-PUBLISHED-TTL:PT12H
 X-WR-TIMEZONE:Europe/Paris
+BEGIN:VEVENT
+SUMMARY:Tramway T14 - Travaux : Trafic interrompu sur toute la ligne du 20
+ .04 au 24.04 entre 11h et 12h
+DTSTART;TZID=Europe/Paris:20260420T110000
+DTEND;TZID=Europe/Paris:20260420T120000
+DTSTAMP:20260410T100000Z
+UID:9332cb50-1c0a-11f1-8a6f-0a58a9feac02_20260420T110000@travaux-metro
+CATEGORIES:Ligne T14,Travaux Métro
+DESCRIPTION:Ligne T14\n\nDu lundi 20 avril au vendredi 24 avril\, le trafi
+ c est interrompu sur toute la ligne entre 11h et 12h.   Un service de bus
+  de remplacement est mis en place\, avec desserte des stations intermédia
+ ires. Les résultats du calculateur d'itinéraire tiennent compte de cette
+  perturbation. Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
+ .fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tramway T14 - Travaux : Trafic interrompu sur toute la ligne du 20
+ .04 au 24.04 entre 11h et 12h
+DTSTART;TZID=Europe/Paris:20260421T110000
+DTEND;TZID=Europe/Paris:20260421T120000
+DTSTAMP:20260410T100000Z
+UID:9332cb50-1c0a-11f1-8a6f-0a58a9feac02_20260421T110000@travaux-metro
+CATEGORIES:Ligne T14,Travaux Métro
+DESCRIPTION:Ligne T14\n\nDu lundi 20 avril au vendredi 24 avril\, le trafi
+ c est interrompu sur toute la ligne entre 11h et 12h.   Un service de bus
+  de remplacement est mis en place\, avec desserte des stations intermédia
+ ires. Les résultats du calculateur d'itinéraire tiennent compte de cette
+  perturbation. Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
+ .fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tramway T14 - Travaux : Trafic interrompu sur toute la ligne du 20
+ .04 au 24.04 entre 11h et 12h
+DTSTART;TZID=Europe/Paris:20260422T110000
+DTEND;TZID=Europe/Paris:20260422T120000
+DTSTAMP:20260410T100000Z
+UID:9332cb50-1c0a-11f1-8a6f-0a58a9feac02_20260422T110000@travaux-metro
+CATEGORIES:Ligne T14,Travaux Métro
+DESCRIPTION:Ligne T14\n\nDu lundi 20 avril au vendredi 24 avril\, le trafi
+ c est interrompu sur toute la ligne entre 11h et 12h.   Un service de bus
+  de remplacement est mis en place\, avec desserte des stations intermédia
+ ires. Les résultats du calculateur d'itinéraire tiennent compte de cette
+  perturbation. Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
+ .fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tramway T14 - Travaux : Trafic interrompu sur toute la ligne du 20
+ .04 au 24.04 entre 11h et 12h
+DTSTART;TZID=Europe/Paris:20260423T110000
+DTEND;TZID=Europe/Paris:20260423T120000
+DTSTAMP:20260410T100000Z
+UID:9332cb50-1c0a-11f1-8a6f-0a58a9feac02_20260423T110000@travaux-metro
+CATEGORIES:Ligne T14,Travaux Métro
+DESCRIPTION:Ligne T14\n\nDu lundi 20 avril au vendredi 24 avril\, le trafi
+ c est interrompu sur toute la ligne entre 11h et 12h.   Un service de bus
+  de remplacement est mis en place\, avec desserte des stations intermédia
+ ires. Les résultats du calculateur d'itinéraire tiennent compte de cette
+  perturbation. Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
+ .fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tramway T14 - Travaux : Trafic interrompu sur toute la ligne du 20
+ .04 au 24.04 entre 11h et 12h
+DTSTART;TZID=Europe/Paris:20260424T110000
+DTEND;TZID=Europe/Paris:20260424T120000
+DTSTAMP:20260410T100000Z
+UID:9332cb50-1c0a-11f1-8a6f-0a58a9feac02_20260424T110000@travaux-metro
+CATEGORIES:Ligne T14,Travaux Métro
+DESCRIPTION:Ligne T14\n\nDu lundi 20 avril au vendredi 24 avril\, le trafi
+ c est interrompu sur toute la ligne entre 11h et 12h.   Un service de bus
+  de remplacement est mis en place\, avec desserte des stations intermédia
+ ires. Les résultats du calculateur d'itinéraire tiennent compte de cette
+  perturbation. Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro
+ .fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tramway T14 - Travaux : Trafic interrompu sur toute la ligne du 17
+ /04 au 19/04 à partir de 22h55
+DTSTART;TZID=Europe/Paris:20260417T225500
+DTEND;TZID=Europe/Paris:20260418T160000
+DTSTAMP:20260410T100000Z
+UID:d99bd000-f964-11f0-8d1c-0a58a9feac02_20260417T225500@travaux-metro
+CATEGORIES:Ligne T14,Travaux Métro
+DESCRIPTION:Ligne T14\n\nDu vendredi 17 avril 22h55 au dimanche 19 avril 1
+ 6h\, le trafic est interrompu sur l'ensemble de la ligne.   Un service de
+  bus de substitution est mis en place\, avec desserte des gares intermédi
+ aires. Les résultats du calculateur d'itinéraire tiennent compte de cett
+ e perturbation. Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetr
+ o.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tramway T14 - Travaux : Trafic interrompu sur toute la ligne du 17
+ /04 au 19/04 à partir de 22h55
+DTSTART;TZID=Europe/Paris:20260418T225500
+DTEND;TZID=Europe/Paris:20260419T160000
+DTSTAMP:20260410T100000Z
+UID:d99bd000-f964-11f0-8d1c-0a58a9feac02_20260418T225500@travaux-metro
+CATEGORIES:Ligne T14,Travaux Métro
+DESCRIPTION:Ligne T14\n\nDu vendredi 17 avril 22h55 au dimanche 19 avril 1
+ 6h\, le trafic est interrompu sur l'ensemble de la ligne.   Un service de
+  bus de substitution est mis en place\, avec desserte des gares intermédi
+ aires. Les résultats du calculateur d'itinéraire tiennent compte de cett
+ e perturbation. Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetr
+ o.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tramway T14 - Travaux : Trafic interrompu sur toute la ligne du 17
+ /04 au 19/04 à partir de 22h55
+DTSTART;TZID=Europe/Paris:20260419T225500
+DTEND;TZID=Europe/Paris:20260420T160000
+DTSTAMP:20260410T100000Z
+UID:d99bd000-f964-11f0-8d1c-0a58a9feac02_20260419T225500@travaux-metro
+CATEGORIES:Ligne T14,Travaux Métro
+DESCRIPTION:Ligne T14\n\nDu vendredi 17 avril 22h55 au dimanche 19 avril 1
+ 6h\, le trafic est interrompu sur l'ensemble de la ligne.   Un service de
+  bus de substitution est mis en place\, avec desserte des gares intermédi
+ aires. Les résultats du calculateur d'itinéraire tiennent compte de cett
+ e perturbation. Motif : Travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetr
+ o.fr/
+END:VEVENT
 END:VCALENDAR

@@ -13,17 +13,185 @@ X-PUBLISHED-TTL:PT12H
 X-WR-TIMEZONE:Europe/Paris
 BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
+DTSTART;TZID=Europe/Paris:20260407T224500
+DTEND;TZID=Europe/Paris:20260408T020000
+DTSTAMP:20260410T100000Z
+UID:13be4ae8-02c9-11f1-9a5b-0a58a9feac02_20260407T224500@travaux-metro
+CATEGORIES:Ligne B,Travaux Métro
+DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
+ , La Courneuve - Aubervilliers\, Aéroport Charles de Gaulle 2 (Terminal 2
+ )\, Drancy\, Villeparisis - Mitry-le-Neuf\, Aulnay-sous-Bois\, Le Bourget\
+ , Gare du Nord\, Sevran Beaudottes\, Châtelet - Les Halles\, Aéroport CD
+ G 1 (Terminal 3) - RER\, Villepinte\, Mitry - Claye\, Parc des Expositions
+ \, Sevran - Livry\, Le Blanc-Mesnil\n\nArrêt(s) non desservi(s)\n\nPério
+ de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
+ 8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
+ 026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
+ aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
+ us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
+  d'informations\, consultez le site du RER B Motif : travaux sur le résea
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
+DTSTART;TZID=Europe/Paris:20260408T224500
+DTEND;TZID=Europe/Paris:20260409T020000
+DTSTAMP:20260410T100000Z
+UID:13be4ae8-02c9-11f1-9a5b-0a58a9feac02_20260408T224500@travaux-metro
+CATEGORIES:Ligne B,Travaux Métro
+DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
+ , La Courneuve - Aubervilliers\, Aéroport Charles de Gaulle 2 (Terminal 2
+ )\, Drancy\, Villeparisis - Mitry-le-Neuf\, Aulnay-sous-Bois\, Le Bourget\
+ , Gare du Nord\, Sevran Beaudottes\, Châtelet - Les Halles\, Aéroport CD
+ G 1 (Terminal 3) - RER\, Villepinte\, Mitry - Claye\, Parc des Expositions
+ \, Sevran - Livry\, Le Blanc-Mesnil\n\nArrêt(s) non desservi(s)\n\nPério
+ de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
+ 8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
+ 026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
+ aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
+ us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
+  d'informations\, consultez le site du RER B Motif : travaux sur le résea
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
+DTSTART;TZID=Europe/Paris:20260409T224500
+DTEND;TZID=Europe/Paris:20260410T020000
+DTSTAMP:20260410T100000Z
+UID:13be4ae8-02c9-11f1-9a5b-0a58a9feac02_20260409T224500@travaux-metro
+CATEGORIES:Ligne B,Travaux Métro
+DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
+ , La Courneuve - Aubervilliers\, Aéroport Charles de Gaulle 2 (Terminal 2
+ )\, Drancy\, Villeparisis - Mitry-le-Neuf\, Aulnay-sous-Bois\, Le Bourget\
+ , Gare du Nord\, Sevran Beaudottes\, Châtelet - Les Halles\, Aéroport CD
+ G 1 (Terminal 3) - RER\, Villepinte\, Mitry - Claye\, Parc des Expositions
+ \, Sevran - Livry\, Le Blanc-Mesnil\n\nArrêt(s) non desservi(s)\n\nPério
+ de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
+ 8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
+ 026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
+ aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
+ us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
+  d'informations\, consultez le site du RER B Motif : travaux sur le résea
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
+DTSTART;TZID=Europe/Paris:20260410T224500
+DTEND;TZID=Europe/Paris:20260411T020000
+DTSTAMP:20260410T100000Z
+UID:13be4ae8-02c9-11f1-9a5b-0a58a9feac02_20260410T224500@travaux-metro
+CATEGORIES:Ligne B,Travaux Métro
+DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
+ , La Courneuve - Aubervilliers\, Aéroport Charles de Gaulle 2 (Terminal 2
+ )\, Drancy\, Villeparisis - Mitry-le-Neuf\, Aulnay-sous-Bois\, Le Bourget\
+ , Gare du Nord\, Sevran Beaudottes\, Châtelet - Les Halles\, Aéroport CD
+ G 1 (Terminal 3) - RER\, Villepinte\, Mitry - Claye\, Parc des Expositions
+ \, Sevran - Livry\, Le Blanc-Mesnil\n\nArrêt(s) non desservi(s)\n\nPério
+ de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
+ 8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
+ 026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
+ aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
+ us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
+  d'informations\, consultez le site du RER B Motif : travaux sur le résea
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
+DTSTART;TZID=Europe/Paris:20260413T224500
+DTEND;TZID=Europe/Paris:20260414T020000
+DTSTAMP:20260410T100000Z
+UID:13be4ae8-02c9-11f1-9a5b-0a58a9feac02_20260413T224500@travaux-metro
+CATEGORIES:Ligne B,Travaux Métro
+DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
+ , La Courneuve - Aubervilliers\, Aéroport Charles de Gaulle 2 (Terminal 2
+ )\, Drancy\, Villeparisis - Mitry-le-Neuf\, Aulnay-sous-Bois\, Le Bourget\
+ , Gare du Nord\, Sevran Beaudottes\, Châtelet - Les Halles\, Aéroport CD
+ G 1 (Terminal 3) - RER\, Villepinte\, Mitry - Claye\, Parc des Expositions
+ \, Sevran - Livry\, Le Blanc-Mesnil\n\nArrêt(s) non desservi(s)\n\nPério
+ de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
+ 8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
+ 026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
+ aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
+ us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
+  d'informations\, consultez le site du RER B Motif : travaux sur le résea
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
+DTSTART;TZID=Europe/Paris:20260414T224500
+DTEND;TZID=Europe/Paris:20260415T020000
+DTSTAMP:20260410T100000Z
+UID:13be4ae8-02c9-11f1-9a5b-0a58a9feac02_20260414T224500@travaux-metro
+CATEGORIES:Ligne B,Travaux Métro
+DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
+ , La Courneuve - Aubervilliers\, Aéroport Charles de Gaulle 2 (Terminal 2
+ )\, Drancy\, Villeparisis - Mitry-le-Neuf\, Aulnay-sous-Bois\, Le Bourget\
+ , Gare du Nord\, Sevran Beaudottes\, Châtelet - Les Halles\, Aéroport CD
+ G 1 (Terminal 3) - RER\, Villepinte\, Mitry - Claye\, Parc des Expositions
+ \, Sevran - Livry\, Le Blanc-Mesnil\n\nArrêt(s) non desservi(s)\n\nPério
+ de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
+ 8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
+ 026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
+ aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
+ us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
+  d'informations\, consultez le site du RER B Motif : travaux sur le résea
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
+DTSTART;TZID=Europe/Paris:20260415T224500
+DTEND;TZID=Europe/Paris:20260416T020000
+DTSTAMP:20260410T100000Z
+UID:13be4ae8-02c9-11f1-9a5b-0a58a9feac02_20260415T224500@travaux-metro
+CATEGORIES:Ligne B,Travaux Métro
+DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
+ , La Courneuve - Aubervilliers\, Aéroport Charles de Gaulle 2 (Terminal 2
+ )\, Drancy\, Villeparisis - Mitry-le-Neuf\, Aulnay-sous-Bois\, Le Bourget\
+ , Gare du Nord\, Sevran Beaudottes\, Châtelet - Les Halles\, Aéroport CD
+ G 1 (Terminal 3) - RER\, Villepinte\, Mitry - Claye\, Parc des Expositions
+ \, Sevran - Livry\, Le Blanc-Mesnil\n\nArrêt(s) non desservi(s)\n\nPério
+ de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
+ 8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
+ 026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
+ aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
+ us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
+  d'informations\, consultez le site du RER B Motif : travaux sur le résea
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
+DTSTART;TZID=Europe/Paris:20260416T224500
+DTEND;TZID=Europe/Paris:20260417T020000
+DTSTAMP:20260410T100000Z
+UID:13be4ae8-02c9-11f1-9a5b-0a58a9feac02_20260416T224500@travaux-metro
+CATEGORIES:Ligne B,Travaux Métro
+DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
+ , La Courneuve - Aubervilliers\, Aéroport Charles de Gaulle 2 (Terminal 2
+ )\, Drancy\, Villeparisis - Mitry-le-Neuf\, Aulnay-sous-Bois\, Le Bourget\
+ , Gare du Nord\, Sevran Beaudottes\, Châtelet - Les Halles\, Aéroport CD
+ G 1 (Terminal 3) - RER\, Villepinte\, Mitry - Claye\, Parc des Expositions
+ \, Sevran - Livry\, Le Blanc-Mesnil\n\nArrêt(s) non desservi(s)\n\nPério
+ de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
+ 8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
+ 026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
+ aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
+ us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
+  d'informations\, consultez le site du RER B Motif : travaux sur le résea
+ u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260417T224500
 DTEND;TZID=Europe/Paris:20260418T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13be4ae8-02c9-11f1-9a5b-0a58a9feac02_20260417T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Drancy\, Le Bla
- nc-Mesnil\, Parc des Expositions\, Aéroport CDG 1 (Terminal 3) - RER\, Se
- vran Beaudottes\, Sevran - Livry\, La Plaine Stade de France\, Le Bourget\
- , La Courneuve - Aubervilliers\, Mitry - Claye\, Villepinte\, Villeparisis
-  - Mitry-le-Neuf\, Gare du Nord\, Vert Galant\, Aéroport Charles de Gaull
- e 2 (Terminal 2)\, Aulnay-sous-Bois\n\nArrêt(s) non desservi(s)\n\nPério
+DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
+ , La Courneuve - Aubervilliers\, Aéroport Charles de Gaulle 2 (Terminal 2
+ )\, Drancy\, Villeparisis - Mitry-le-Neuf\, Aulnay-sous-Bois\, Le Bourget\
+ , Gare du Nord\, Sevran Beaudottes\, Châtelet - Les Halles\, Aéroport CD
+ G 1 (Terminal 3) - RER\, Villepinte\, Mitry - Claye\, Parc des Expositions
+ \, Sevran - Livry\, Le Blanc-Mesnil\n\nArrêt(s) non desservi(s)\n\nPério
  de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
  8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
  026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
@@ -36,15 +204,15 @@ BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260420T224500
 DTEND;TZID=Europe/Paris:20260421T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13be4ae8-02c9-11f1-9a5b-0a58a9feac02_20260420T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Drancy\, Le Bla
- nc-Mesnil\, Parc des Expositions\, Aéroport CDG 1 (Terminal 3) - RER\, Se
- vran Beaudottes\, Sevran - Livry\, La Plaine Stade de France\, Le Bourget\
- , La Courneuve - Aubervilliers\, Mitry - Claye\, Villepinte\, Villeparisis
-  - Mitry-le-Neuf\, Gare du Nord\, Vert Galant\, Aéroport Charles de Gaull
- e 2 (Terminal 2)\, Aulnay-sous-Bois\n\nArrêt(s) non desservi(s)\n\nPério
+DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
+ , La Courneuve - Aubervilliers\, Aéroport Charles de Gaulle 2 (Terminal 2
+ )\, Drancy\, Villeparisis - Mitry-le-Neuf\, Aulnay-sous-Bois\, Le Bourget\
+ , Gare du Nord\, Sevran Beaudottes\, Châtelet - Les Halles\, Aéroport CD
+ G 1 (Terminal 3) - RER\, Villepinte\, Mitry - Claye\, Parc des Expositions
+ \, Sevran - Livry\, Le Blanc-Mesnil\n\nArrêt(s) non desservi(s)\n\nPério
  de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
  8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
  026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
@@ -57,15 +225,15 @@ BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260421T224500
 DTEND;TZID=Europe/Paris:20260422T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13be4ae8-02c9-11f1-9a5b-0a58a9feac02_20260421T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Drancy\, Le Bla
- nc-Mesnil\, Parc des Expositions\, Aéroport CDG 1 (Terminal 3) - RER\, Se
- vran Beaudottes\, Sevran - Livry\, La Plaine Stade de France\, Le Bourget\
- , La Courneuve - Aubervilliers\, Mitry - Claye\, Villepinte\, Villeparisis
-  - Mitry-le-Neuf\, Gare du Nord\, Vert Galant\, Aéroport Charles de Gaull
- e 2 (Terminal 2)\, Aulnay-sous-Bois\n\nArrêt(s) non desservi(s)\n\nPério
+DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
+ , La Courneuve - Aubervilliers\, Aéroport Charles de Gaulle 2 (Terminal 2
+ )\, Drancy\, Villeparisis - Mitry-le-Neuf\, Aulnay-sous-Bois\, Le Bourget\
+ , Gare du Nord\, Sevran Beaudottes\, Châtelet - Les Halles\, Aéroport CD
+ G 1 (Terminal 3) - RER\, Villepinte\, Mitry - Claye\, Parc des Expositions
+ \, Sevran - Livry\, Le Blanc-Mesnil\n\nArrêt(s) non desservi(s)\n\nPério
  de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
  8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
  026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
@@ -78,15 +246,15 @@ BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260422T224500
 DTEND;TZID=Europe/Paris:20260423T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13be4ae8-02c9-11f1-9a5b-0a58a9feac02_20260422T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Drancy\, Le Bla
- nc-Mesnil\, Parc des Expositions\, Aéroport CDG 1 (Terminal 3) - RER\, Se
- vran Beaudottes\, Sevran - Livry\, La Plaine Stade de France\, Le Bourget\
- , La Courneuve - Aubervilliers\, Mitry - Claye\, Villepinte\, Villeparisis
-  - Mitry-le-Neuf\, Gare du Nord\, Vert Galant\, Aéroport Charles de Gaull
- e 2 (Terminal 2)\, Aulnay-sous-Bois\n\nArrêt(s) non desservi(s)\n\nPério
+DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
+ , La Courneuve - Aubervilliers\, Aéroport Charles de Gaulle 2 (Terminal 2
+ )\, Drancy\, Villeparisis - Mitry-le-Neuf\, Aulnay-sous-Bois\, Le Bourget\
+ , Gare du Nord\, Sevran Beaudottes\, Châtelet - Les Halles\, Aéroport CD
+ G 1 (Terminal 3) - RER\, Villepinte\, Mitry - Claye\, Parc des Expositions
+ \, Sevran - Livry\, Le Blanc-Mesnil\n\nArrêt(s) non desservi(s)\n\nPério
  de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
  8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
  026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
@@ -99,15 +267,15 @@ BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260423T224500
 DTEND;TZID=Europe/Paris:20260424T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13be4ae8-02c9-11f1-9a5b-0a58a9feac02_20260423T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Drancy\, Le Bla
- nc-Mesnil\, Parc des Expositions\, Aéroport CDG 1 (Terminal 3) - RER\, Se
- vran Beaudottes\, Sevran - Livry\, La Plaine Stade de France\, Le Bourget\
- , La Courneuve - Aubervilliers\, Mitry - Claye\, Villepinte\, Villeparisis
-  - Mitry-le-Neuf\, Gare du Nord\, Vert Galant\, Aéroport Charles de Gaull
- e 2 (Terminal 2)\, Aulnay-sous-Bois\n\nArrêt(s) non desservi(s)\n\nPério
+DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
+ , La Courneuve - Aubervilliers\, Aéroport Charles de Gaulle 2 (Terminal 2
+ )\, Drancy\, Villeparisis - Mitry-le-Neuf\, Aulnay-sous-Bois\, Le Bourget\
+ , Gare du Nord\, Sevran Beaudottes\, Châtelet - Les Halles\, Aéroport CD
+ G 1 (Terminal 3) - RER\, Villepinte\, Mitry - Claye\, Parc des Expositions
+ \, Sevran - Livry\, Le Blanc-Mesnil\n\nArrêt(s) non desservi(s)\n\nPério
  de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
  8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
  026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
@@ -120,15 +288,15 @@ BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260424T224500
 DTEND;TZID=Europe/Paris:20260425T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13be4ae8-02c9-11f1-9a5b-0a58a9feac02_20260424T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Drancy\, Le Bla
- nc-Mesnil\, Parc des Expositions\, Aéroport CDG 1 (Terminal 3) - RER\, Se
- vran Beaudottes\, Sevran - Livry\, La Plaine Stade de France\, Le Bourget\
- , La Courneuve - Aubervilliers\, Mitry - Claye\, Villepinte\, Villeparisis
-  - Mitry-le-Neuf\, Gare du Nord\, Vert Galant\, Aéroport Charles de Gaull
- e 2 (Terminal 2)\, Aulnay-sous-Bois\n\nArrêt(s) non desservi(s)\n\nPério
+DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
+ , La Courneuve - Aubervilliers\, Aéroport Charles de Gaulle 2 (Terminal 2
+ )\, Drancy\, Villeparisis - Mitry-le-Neuf\, Aulnay-sous-Bois\, Le Bourget\
+ , Gare du Nord\, Sevran Beaudottes\, Châtelet - Les Halles\, Aéroport CD
+ G 1 (Terminal 3) - RER\, Villepinte\, Mitry - Claye\, Parc des Expositions
+ \, Sevran - Livry\, Le Blanc-Mesnil\n\nArrêt(s) non desservi(s)\n\nPério
  de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
  8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
  026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
@@ -141,15 +309,15 @@ BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260427T224500
 DTEND;TZID=Europe/Paris:20260428T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13be4ae8-02c9-11f1-9a5b-0a58a9feac02_20260427T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Drancy\, Le Bla
- nc-Mesnil\, Parc des Expositions\, Aéroport CDG 1 (Terminal 3) - RER\, Se
- vran Beaudottes\, Sevran - Livry\, La Plaine Stade de France\, Le Bourget\
- , La Courneuve - Aubervilliers\, Mitry - Claye\, Villepinte\, Villeparisis
-  - Mitry-le-Neuf\, Gare du Nord\, Vert Galant\, Aéroport Charles de Gaull
- e 2 (Terminal 2)\, Aulnay-sous-Bois\n\nArrêt(s) non desservi(s)\n\nPério
+DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
+ , La Courneuve - Aubervilliers\, Aéroport Charles de Gaulle 2 (Terminal 2
+ )\, Drancy\, Villeparisis - Mitry-le-Neuf\, Aulnay-sous-Bois\, Le Bourget\
+ , Gare du Nord\, Sevran Beaudottes\, Châtelet - Les Halles\, Aéroport CD
+ G 1 (Terminal 3) - RER\, Villepinte\, Mitry - Claye\, Parc des Expositions
+ \, Sevran - Livry\, Le Blanc-Mesnil\n\nArrêt(s) non desservi(s)\n\nPério
  de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
  8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
  026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
@@ -162,15 +330,15 @@ BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260428T224500
 DTEND;TZID=Europe/Paris:20260429T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13be4ae8-02c9-11f1-9a5b-0a58a9feac02_20260428T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Drancy\, Le Bla
- nc-Mesnil\, Parc des Expositions\, Aéroport CDG 1 (Terminal 3) - RER\, Se
- vran Beaudottes\, Sevran - Livry\, La Plaine Stade de France\, Le Bourget\
- , La Courneuve - Aubervilliers\, Mitry - Claye\, Villepinte\, Villeparisis
-  - Mitry-le-Neuf\, Gare du Nord\, Vert Galant\, Aéroport Charles de Gaull
- e 2 (Terminal 2)\, Aulnay-sous-Bois\n\nArrêt(s) non desservi(s)\n\nPério
+DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
+ , La Courneuve - Aubervilliers\, Aéroport Charles de Gaulle 2 (Terminal 2
+ )\, Drancy\, Villeparisis - Mitry-le-Neuf\, Aulnay-sous-Bois\, Le Bourget\
+ , Gare du Nord\, Sevran Beaudottes\, Châtelet - Les Halles\, Aéroport CD
+ G 1 (Terminal 3) - RER\, Villepinte\, Mitry - Claye\, Parc des Expositions
+ \, Sevran - Livry\, Le Blanc-Mesnil\n\nArrêt(s) non desservi(s)\n\nPério
  de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
  8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
  026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
@@ -183,15 +351,15 @@ BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260429T224500
 DTEND;TZID=Europe/Paris:20260430T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13be4ae8-02c9-11f1-9a5b-0a58a9feac02_20260429T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Drancy\, Le Bla
- nc-Mesnil\, Parc des Expositions\, Aéroport CDG 1 (Terminal 3) - RER\, Se
- vran Beaudottes\, Sevran - Livry\, La Plaine Stade de France\, Le Bourget\
- , La Courneuve - Aubervilliers\, Mitry - Claye\, Villepinte\, Villeparisis
-  - Mitry-le-Neuf\, Gare du Nord\, Vert Galant\, Aéroport Charles de Gaull
- e 2 (Terminal 2)\, Aulnay-sous-Bois\n\nArrêt(s) non desservi(s)\n\nPério
+DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
+ , La Courneuve - Aubervilliers\, Aéroport Charles de Gaulle 2 (Terminal 2
+ )\, Drancy\, Villeparisis - Mitry-le-Neuf\, Aulnay-sous-Bois\, Le Bourget\
+ , Gare du Nord\, Sevran Beaudottes\, Châtelet - Les Halles\, Aéroport CD
+ G 1 (Terminal 3) - RER\, Villepinte\, Mitry - Claye\, Parc des Expositions
+ \, Sevran - Livry\, Le Blanc-Mesnil\n\nArrêt(s) non desservi(s)\n\nPério
  de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
  8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
  026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
@@ -204,15 +372,15 @@ BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260430T224500
 DTEND;TZID=Europe/Paris:20260501T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13be4ae8-02c9-11f1-9a5b-0a58a9feac02_20260430T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Drancy\, Le Bla
- nc-Mesnil\, Parc des Expositions\, Aéroport CDG 1 (Terminal 3) - RER\, Se
- vran Beaudottes\, Sevran - Livry\, La Plaine Stade de France\, Le Bourget\
- , La Courneuve - Aubervilliers\, Mitry - Claye\, Villepinte\, Villeparisis
-  - Mitry-le-Neuf\, Gare du Nord\, Vert Galant\, Aéroport Charles de Gaull
- e 2 (Terminal 2)\, Aulnay-sous-Bois\n\nArrêt(s) non desservi(s)\n\nPério
+DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
+ , La Courneuve - Aubervilliers\, Aéroport Charles de Gaulle 2 (Terminal 2
+ )\, Drancy\, Villeparisis - Mitry-le-Neuf\, Aulnay-sous-Bois\, Le Bourget\
+ , Gare du Nord\, Sevran Beaudottes\, Châtelet - Les Halles\, Aéroport CD
+ G 1 (Terminal 3) - RER\, Villepinte\, Mitry - Claye\, Parc des Expositions
+ \, Sevran - Livry\, Le Blanc-Mesnil\n\nArrêt(s) non desservi(s)\n\nPério
  de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
  8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
  026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
@@ -225,15 +393,15 @@ BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260504T224500
 DTEND;TZID=Europe/Paris:20260505T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13c56dbe-02c9-11f1-9a5b-0a58a9feac02_20260504T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Drancy\, Le Bla
- nc-Mesnil\, Parc des Expositions\, Aéroport CDG 1 (Terminal 3) - RER\, Se
- vran Beaudottes\, Sevran - Livry\, La Plaine Stade de France\, Le Bourget\
- , La Courneuve - Aubervilliers\, Mitry - Claye\, Villepinte\, Villeparisis
-  - Mitry-le-Neuf\, Gare du Nord\, Vert Galant\, Aéroport Charles de Gaull
- e 2 (Terminal 2)\, Aulnay-sous-Bois\n\nArrêt(s) non desservi(s)\n\nPério
+DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
+ , La Courneuve - Aubervilliers\, Aéroport Charles de Gaulle 2 (Terminal 2
+ )\, Drancy\, Villeparisis - Mitry-le-Neuf\, Aulnay-sous-Bois\, Le Bourget\
+ , Gare du Nord\, Sevran Beaudottes\, Châtelet - Les Halles\, Aéroport CD
+ G 1 (Terminal 3) - RER\, Villepinte\, Mitry - Claye\, Parc des Expositions
+ \, Sevran - Livry\, Le Blanc-Mesnil\n\nArrêt(s) non desservi(s)\n\nPério
  de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
  8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
  026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
@@ -246,15 +414,15 @@ BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260505T224500
 DTEND;TZID=Europe/Paris:20260506T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13c56dbe-02c9-11f1-9a5b-0a58a9feac02_20260505T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Drancy\, Le Bla
- nc-Mesnil\, Parc des Expositions\, Aéroport CDG 1 (Terminal 3) - RER\, Se
- vran Beaudottes\, Sevran - Livry\, La Plaine Stade de France\, Le Bourget\
- , La Courneuve - Aubervilliers\, Mitry - Claye\, Villepinte\, Villeparisis
-  - Mitry-le-Neuf\, Gare du Nord\, Vert Galant\, Aéroport Charles de Gaull
- e 2 (Terminal 2)\, Aulnay-sous-Bois\n\nArrêt(s) non desservi(s)\n\nPério
+DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
+ , La Courneuve - Aubervilliers\, Aéroport Charles de Gaulle 2 (Terminal 2
+ )\, Drancy\, Villeparisis - Mitry-le-Neuf\, Aulnay-sous-Bois\, Le Bourget\
+ , Gare du Nord\, Sevran Beaudottes\, Châtelet - Les Halles\, Aéroport CD
+ G 1 (Terminal 3) - RER\, Villepinte\, Mitry - Claye\, Parc des Expositions
+ \, Sevran - Livry\, Le Blanc-Mesnil\n\nArrêt(s) non desservi(s)\n\nPério
  de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
  8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
  026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
@@ -267,15 +435,15 @@ BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260506T224500
 DTEND;TZID=Europe/Paris:20260507T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13c56dbe-02c9-11f1-9a5b-0a58a9feac02_20260506T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Drancy\, Le Bla
- nc-Mesnil\, Parc des Expositions\, Aéroport CDG 1 (Terminal 3) - RER\, Se
- vran Beaudottes\, Sevran - Livry\, La Plaine Stade de France\, Le Bourget\
- , La Courneuve - Aubervilliers\, Mitry - Claye\, Villepinte\, Villeparisis
-  - Mitry-le-Neuf\, Gare du Nord\, Vert Galant\, Aéroport Charles de Gaull
- e 2 (Terminal 2)\, Aulnay-sous-Bois\n\nArrêt(s) non desservi(s)\n\nPério
+DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
+ , La Courneuve - Aubervilliers\, Aéroport Charles de Gaulle 2 (Terminal 2
+ )\, Drancy\, Villeparisis - Mitry-le-Neuf\, Aulnay-sous-Bois\, Le Bourget\
+ , Gare du Nord\, Sevran Beaudottes\, Châtelet - Les Halles\, Aéroport CD
+ G 1 (Terminal 3) - RER\, Villepinte\, Mitry - Claye\, Parc des Expositions
+ \, Sevran - Livry\, Le Blanc-Mesnil\n\nArrêt(s) non desservi(s)\n\nPério
  de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
  8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
  026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
@@ -288,15 +456,15 @@ BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260507T224500
 DTEND;TZID=Europe/Paris:20260508T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13c56dbe-02c9-11f1-9a5b-0a58a9feac02_20260507T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Drancy\, Le Bla
- nc-Mesnil\, Parc des Expositions\, Aéroport CDG 1 (Terminal 3) - RER\, Se
- vran Beaudottes\, Sevran - Livry\, La Plaine Stade de France\, Le Bourget\
- , La Courneuve - Aubervilliers\, Mitry - Claye\, Villepinte\, Villeparisis
-  - Mitry-le-Neuf\, Gare du Nord\, Vert Galant\, Aéroport Charles de Gaull
- e 2 (Terminal 2)\, Aulnay-sous-Bois\n\nArrêt(s) non desservi(s)\n\nPério
+DESCRIPTION:Ligne B\n\nStations : La Plaine Stade de France\, Vert Galant\
+ , La Courneuve - Aubervilliers\, Aéroport Charles de Gaulle 2 (Terminal 2
+ )\, Drancy\, Villeparisis - Mitry-le-Neuf\, Aulnay-sous-Bois\, Le Bourget\
+ , Gare du Nord\, Sevran Beaudottes\, Châtelet - Les Halles\, Aéroport CD
+ G 1 (Terminal 3) - RER\, Villepinte\, Mitry - Claye\, Parc des Expositions
+ \, Sevran - Livry\, Le Blanc-Mesnil\n\nArrêt(s) non desservi(s)\n\nPério
  de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
  8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
  026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
@@ -309,175 +477,135 @@ BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260511T224500
 DTEND;TZID=Europe/Paris:20260512T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13cc5dea-02c9-11f1-9a5b-0a58a9feac02_20260511T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Drancy\, Le Bla
- nc-Mesnil\, Parc des Expositions\, Aéroport CDG 1 (Terminal 3) - RER\, Se
- vran Beaudottes\, Sevran - Livry\, La Plaine Stade de France\, Le Bourget\
- , La Courneuve - Aubervilliers\, Mitry - Claye\, Villepinte\, Villeparisis
-  - Mitry-le-Neuf\, Gare du Nord\, Vert Galant\, Aéroport Charles de Gaull
- e 2 (Terminal 2)\, Aulnay-sous-Bois\n\nArrêt(s) non desservi(s)\n\nPério
- de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
- 8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
- 026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
- aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
- us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
-  d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
+ à partir de 22h45. Dates : du lundi 05 janvier au jeudi 28 mai sauf les 0
+ 5 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2026. Le trafic e
+ st interrompu entre Châtelet Les Halles et Aérop. C De Gaulle 2 et entre
+  Châtelet Les Halles et Mitry - Claye. Un dispositif de bus de remplaceme
+ nt sera mis en place au départ du Gare du Nord. Pour plus d'informations\
+ , consultez le site du RER B Motif : travaux sur le réseau ferroviaire.\n
+ \nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260512T224500
 DTEND;TZID=Europe/Paris:20260513T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13cc5dea-02c9-11f1-9a5b-0a58a9feac02_20260512T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Drancy\, Le Bla
- nc-Mesnil\, Parc des Expositions\, Aéroport CDG 1 (Terminal 3) - RER\, Se
- vran Beaudottes\, Sevran - Livry\, La Plaine Stade de France\, Le Bourget\
- , La Courneuve - Aubervilliers\, Mitry - Claye\, Villepinte\, Villeparisis
-  - Mitry-le-Neuf\, Gare du Nord\, Vert Galant\, Aéroport Charles de Gaull
- e 2 (Terminal 2)\, Aulnay-sous-Bois\n\nArrêt(s) non desservi(s)\n\nPério
- de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
- 8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
- 026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
- aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
- us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
-  d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
+ à partir de 22h45. Dates : du lundi 05 janvier au jeudi 28 mai sauf les 0
+ 5 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2026. Le trafic e
+ st interrompu entre Châtelet Les Halles et Aérop. C De Gaulle 2 et entre
+  Châtelet Les Halles et Mitry - Claye. Un dispositif de bus de remplaceme
+ nt sera mis en place au départ du Gare du Nord. Pour plus d'informations\
+ , consultez le site du RER B Motif : travaux sur le réseau ferroviaire.\n
+ \nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260513T224500
 DTEND;TZID=Europe/Paris:20260514T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13cc5dea-02c9-11f1-9a5b-0a58a9feac02_20260513T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Drancy\, Le Bla
- nc-Mesnil\, Parc des Expositions\, Aéroport CDG 1 (Terminal 3) - RER\, Se
- vran Beaudottes\, Sevran - Livry\, La Plaine Stade de France\, Le Bourget\
- , La Courneuve - Aubervilliers\, Mitry - Claye\, Villepinte\, Villeparisis
-  - Mitry-le-Neuf\, Gare du Nord\, Vert Galant\, Aéroport Charles de Gaull
- e 2 (Terminal 2)\, Aulnay-sous-Bois\n\nArrêt(s) non desservi(s)\n\nPério
- de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
- 8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
- 026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
- aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
- us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
-  d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
+ à partir de 22h45. Dates : du lundi 05 janvier au jeudi 28 mai sauf les 0
+ 5 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2026. Le trafic e
+ st interrompu entre Châtelet Les Halles et Aérop. C De Gaulle 2 et entre
+  Châtelet Les Halles et Mitry - Claye. Un dispositif de bus de remplaceme
+ nt sera mis en place au départ du Gare du Nord. Pour plus d'informations\
+ , consultez le site du RER B Motif : travaux sur le réseau ferroviaire.\n
+ \nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260518T224500
 DTEND;TZID=Europe/Paris:20260519T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13d33cf0-02c9-11f1-9a5b-0a58a9feac02_20260518T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Drancy\, Le Bla
- nc-Mesnil\, Parc des Expositions\, Aéroport CDG 1 (Terminal 3) - RER\, Se
- vran Beaudottes\, Sevran - Livry\, La Plaine Stade de France\, Le Bourget\
- , La Courneuve - Aubervilliers\, Mitry - Claye\, Villepinte\, Villeparisis
-  - Mitry-le-Neuf\, Gare du Nord\, Vert Galant\, Aéroport Charles de Gaull
- e 2 (Terminal 2)\, Aulnay-sous-Bois\n\nArrêt(s) non desservi(s)\n\nPério
- de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
- 8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
- 026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
- aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
- us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
-  d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
+ à partir de 22h45. Dates : du lundi 05 janvier au jeudi 28 mai sauf les 0
+ 5 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2026. Le trafic e
+ st interrompu entre Châtelet Les Halles et Aérop. C De Gaulle 2 et entre
+  Châtelet Les Halles et Mitry - Claye. Un dispositif de bus de remplaceme
+ nt sera mis en place au départ du Gare du Nord. Pour plus d'informations\
+ , consultez le site du RER B Motif : travaux sur le réseau ferroviaire.\n
+ \nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260519T224500
 DTEND;TZID=Europe/Paris:20260520T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13d33cf0-02c9-11f1-9a5b-0a58a9feac02_20260519T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Drancy\, Le Bla
- nc-Mesnil\, Parc des Expositions\, Aéroport CDG 1 (Terminal 3) - RER\, Se
- vran Beaudottes\, Sevran - Livry\, La Plaine Stade de France\, Le Bourget\
- , La Courneuve - Aubervilliers\, Mitry - Claye\, Villepinte\, Villeparisis
-  - Mitry-le-Neuf\, Gare du Nord\, Vert Galant\, Aéroport Charles de Gaull
- e 2 (Terminal 2)\, Aulnay-sous-Bois\n\nArrêt(s) non desservi(s)\n\nPério
- de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
- 8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
- 026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
- aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
- us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
-  d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
+ à partir de 22h45. Dates : du lundi 05 janvier au jeudi 28 mai sauf les 0
+ 5 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2026. Le trafic e
+ st interrompu entre Châtelet Les Halles et Aérop. C De Gaulle 2 et entre
+  Châtelet Les Halles et Mitry - Claye. Un dispositif de bus de remplaceme
+ nt sera mis en place au départ du Gare du Nord. Pour plus d'informations\
+ , consultez le site du RER B Motif : travaux sur le réseau ferroviaire.\n
+ \nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260520T224500
 DTEND;TZID=Europe/Paris:20260521T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13d33cf0-02c9-11f1-9a5b-0a58a9feac02_20260520T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Drancy\, Le Bla
- nc-Mesnil\, Parc des Expositions\, Aéroport CDG 1 (Terminal 3) - RER\, Se
- vran Beaudottes\, Sevran - Livry\, La Plaine Stade de France\, Le Bourget\
- , La Courneuve - Aubervilliers\, Mitry - Claye\, Villepinte\, Villeparisis
-  - Mitry-le-Neuf\, Gare du Nord\, Vert Galant\, Aéroport Charles de Gaull
- e 2 (Terminal 2)\, Aulnay-sous-Bois\n\nArrêt(s) non desservi(s)\n\nPério
- de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
- 8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
- 026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
- aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
- us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
-  d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
+ à partir de 22h45. Dates : du lundi 05 janvier au jeudi 28 mai sauf les 0
+ 5 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2026. Le trafic e
+ st interrompu entre Châtelet Les Halles et Aérop. C De Gaulle 2 et entre
+  Châtelet Les Halles et Mitry - Claye. Un dispositif de bus de remplaceme
+ nt sera mis en place au départ du Gare du Nord. Pour plus d'informations\
+ , consultez le site du RER B Motif : travaux sur le réseau ferroviaire.\n
+ \nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260521T224500
 DTEND;TZID=Europe/Paris:20260522T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13d33cf0-02c9-11f1-9a5b-0a58a9feac02_20260521T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Drancy\, Le Bla
- nc-Mesnil\, Parc des Expositions\, Aéroport CDG 1 (Terminal 3) - RER\, Se
- vran Beaudottes\, Sevran - Livry\, La Plaine Stade de France\, Le Bourget\
- , La Courneuve - Aubervilliers\, Mitry - Claye\, Villepinte\, Villeparisis
-  - Mitry-le-Neuf\, Gare du Nord\, Vert Galant\, Aéroport Charles de Gaull
- e 2 (Terminal 2)\, Aulnay-sous-Bois\n\nArrêt(s) non desservi(s)\n\nPério
- de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
- 8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
- 026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
- aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
- us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
-  d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
+ à partir de 22h45. Dates : du lundi 05 janvier au jeudi 28 mai sauf les 0
+ 5 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2026. Le trafic e
+ st interrompu entre Châtelet Les Halles et Aérop. C De Gaulle 2 et entre
+  Châtelet Les Halles et Mitry - Claye. Un dispositif de bus de remplaceme
+ nt sera mis en place au départ du Gare du Nord. Pour plus d'informations\
+ , consultez le site du RER B Motif : travaux sur le réseau ferroviaire.\n
+ \nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260522T224500
 DTEND;TZID=Europe/Paris:20260523T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13d33cf0-02c9-11f1-9a5b-0a58a9feac02_20260522T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Drancy\, Le Bla
- nc-Mesnil\, Parc des Expositions\, Aéroport CDG 1 (Terminal 3) - RER\, Se
- vran Beaudottes\, Sevran - Livry\, La Plaine Stade de France\, Le Bourget\
- , La Courneuve - Aubervilliers\, Mitry - Claye\, Villepinte\, Villeparisis
-  - Mitry-le-Neuf\, Gare du Nord\, Vert Galant\, Aéroport Charles de Gaull
- e 2 (Terminal 2)\, Aulnay-sous-Bois\n\nArrêt(s) non desservi(s)\n\nPério
- de : en semaine à partir de 22h45. Dates : du lundi 05 janvier au jeudi 2
- 8 mai sauf les 05 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2
- 026. Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De G
- aulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de b
- us de remplacement sera mis en place au départ du Gare du Nord. Pour plus
-  d'informations\, consultez le site du RER B Motif : travaux sur le résea
- u ferroviaire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
+ à partir de 22h45. Dates : du lundi 05 janvier au jeudi 28 mai sauf les 0
+ 5 février\, 06 avril et les 01\, 08\, 14\, 15 et 25 mai 2026. Le trafic e
+ st interrompu entre Châtelet Les Halles et Aérop. C De Gaulle 2 et entre
+  Châtelet Les Halles et Mitry - Claye. Un dispositif de bus de remplaceme
+ nt sera mis en place au départ du Gare du Nord. Pour plus d'informations\
+ , consultez le site du RER B Motif : travaux sur le réseau ferroviaire.\n
+ \nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260526T224500
 DTEND;TZID=Europe/Paris:20260527T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13db985a-02c9-11f1-9a5b-0a58a9feac02_20260526T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
 DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
@@ -493,7 +621,7 @@ BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260527T224500
 DTEND;TZID=Europe/Paris:20260528T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13db985a-02c9-11f1-9a5b-0a58a9feac02_20260527T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
 DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
@@ -509,7 +637,7 @@ BEGIN:VEVENT
 SUMMARY:RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 05/01-28/05
 DTSTART;TZID=Europe/Paris:20260528T224500
 DTEND;TZID=Europe/Paris:20260529T020000
-DTSTAMP:20260422T225349Z
+DTSTAMP:20260410T100000Z
 UID:13db985a-02c9-11f1-9a5b-0a58a9feac02_20260528T224500@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
 DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine 
@@ -522,137 +650,67 @@ DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : en semaine
  \nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B : Aulnay-sous-Bois <-> Mitry - Claye 02-03/05 et 30-31/05
-DTSTART;VALUE=DATE:20260530
-DTEND;VALUE=DATE:20260531
-DTSTAMP:20260422T225349Z
-UID:69227e01-73d9-484c-9b8d-947a5d06da82_20260530T030000@travaux-metro
+SUMMARY:RER B : Denfert <-> La Croix de Berny/Robinson 04-06 et 18-19/04
+DTSTART;VALUE=DATE:20260418
+DTEND;VALUE=DATE:20260419
+DTSTAMP:20260410T100000Z
+UID:41240dc8-2e7b-4795-8873-bec71d2349fa_20260418T030000@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : les week-en
- ds\, toute la journée. Dates : du samedi 02 au dimanche 03 mai et du same
- di 30 au dimanche 31 mai. Le trafic est interrompu entre Aulnay-sous-Bois 
- et Mitry - Claye. Un service de bus de remplacement est mis en place\, ave
- c desserte des gares intermédiaires. Les horaires du calculateur d'itiné
- raire tiennent compte des travaux. Motif : travaux sur le réseau ferrovia
- ire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : Les week en
+ ds Dates : du samedi 04 au lundi 06 avril et du samedi 18 au dimanche 19 a
+ vril. Le trafic est interrompu entre Denfert Rochereau et La Croix de Bern
+ y\, et entre Denfert Rochereau et Robinson Un service de bus de remplaceme
+ nt est mis en place au départ de Porte d'Orléans accessible depuis Denfe
+ rt via la ligne de métro 4 Les horaires du calculateur d'itinéraire tien
+ nent compte des travaux. Motif: Travaux de modernisation du réseau\n\nCau
+ se : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B : Aulnay-sous-Bois <-> Mitry - Claye 02-03/05 et 30-31/05
-DTSTART;VALUE=DATE:20260531
-DTEND;VALUE=DATE:20260601
-DTSTAMP:20260422T225349Z
-UID:69227e01-73d9-484c-9b8d-947a5d06da82_20260531T030000@travaux-metro
+SUMMARY:RER B : Denfert <-> La Croix de Berny/Robinson 04-06 et 18-19/04
+DTSTART;VALUE=DATE:20260419
+DTEND;VALUE=DATE:20260420
+DTSTAMP:20260410T100000Z
+UID:41240dc8-2e7b-4795-8873-bec71d2349fa_20260419T030000@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : les week-en
- ds\, toute la journée. Dates : du samedi 02 au dimanche 03 mai et du same
- di 30 au dimanche 31 mai. Le trafic est interrompu entre Aulnay-sous-Bois 
- et Mitry - Claye. Un service de bus de remplacement est mis en place\, ave
- c desserte des gares intermédiaires. Les horaires du calculateur d'itiné
- raire tiennent compte des travaux. Motif : travaux sur le réseau ferrovia
- ire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : Les week en
+ ds Dates : du samedi 04 au lundi 06 avril et du samedi 18 au dimanche 19 a
+ vril. Le trafic est interrompu entre Denfert Rochereau et La Croix de Bern
+ y\, et entre Denfert Rochereau et Robinson Un service de bus de remplaceme
+ nt est mis en place au départ de Porte d'Orléans accessible depuis Denfe
+ rt via la ligne de métro 4 Les horaires du calculateur d'itinéraire tien
+ nent compte des travaux. Motif: Travaux de modernisation du réseau\n\nCau
+ se : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B : Aulnay-sous-Bois <-> Mitry - Claye 02-03/05 et 30-31/05
-DTSTART;VALUE=DATE:20260502
-DTEND;VALUE=DATE:20260503
-DTSTAMP:20260422T225349Z
-UID:a07bf5da-d5db-4157-ac94-776d9df12884_20260502T030000@travaux-metro
+SUMMARY:RER B : Denfert <-> La Croix de Berny/Robinson 04-06 et 18-19/04
+DTSTART;VALUE=DATE:20260405
+DTEND;VALUE=DATE:20260406
+DTSTAMP:20260410T100000Z
+UID:83228534-a303-44d3-9969-98a6e6a287d5_20260405T030000@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : les week-en
- ds\, toute la journée. Dates : du samedi 02 au dimanche 03 mai et du same
- di 30 au dimanche 31 mai. Le trafic est interrompu entre Aulnay-sous-Bois 
- et Mitry - Claye. Un service de bus de remplacement est mis en place\, ave
- c desserte des gares intermédiaires. Les horaires du calculateur d'itiné
- raire tiennent compte des travaux. Motif : travaux sur le réseau ferrovia
- ire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : Les week en
+ ds Dates : du samedi 04 au lundi 06 avril et du samedi 18 au dimanche 19 a
+ vril. Le trafic est interrompu entre Denfert Rochereau et La Croix de Bern
+ y\, et entre Denfert Rochereau et Robinson Un service de bus de remplaceme
+ nt est mis en place au départ de Porte d'Orléans accessible depuis Denfe
+ rt via la ligne de métro 4 Les horaires du calculateur d'itinéraire tien
+ nent compte des travaux. Motif: Travaux de modernisation du réseau\n\nCau
+ se : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:RER B : Aulnay-sous-Bois <-> Mitry - Claye 02-03/05 et 30-31/05
-DTSTART;VALUE=DATE:20260503
-DTEND;VALUE=DATE:20260504
-DTSTAMP:20260422T225349Z
-UID:a07bf5da-d5db-4157-ac94-776d9df12884_20260503T030000@travaux-metro
+SUMMARY:RER B : Denfert <-> La Croix de Berny/Robinson 04-06 et 18-19/04
+DTSTART;VALUE=DATE:20260406
+DTEND;VALUE=DATE:20260407
+DTSTAMP:20260410T100000Z
+UID:83228534-a303-44d3-9969-98a6e6a287d5_20260406T030000@travaux-metro
 CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : les week-en
- ds\, toute la journée. Dates : du samedi 02 au dimanche 03 mai et du same
- di 30 au dimanche 31 mai. Le trafic est interrompu entre Aulnay-sous-Bois 
- et Mitry - Claye. Un service de bus de remplacement est mis en place\, ave
- c desserte des gares intermédiaires. Les horaires du calculateur d'itiné
- raire tiennent compte des travaux. Motif : travaux sur le réseau ferrovia
- ire.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER B : Paris Nord <-> Denfert Rochereau 02/05
-DTSTART;TZID=Europe/Paris:20260502T230000
-DTEND;TZID=Europe/Paris:20260503T020000
-DTSTAMP:20260422T225349Z
-UID:b22e1810-d640-42af-9fd8-ecbdf32dcd5a_20260502T230000@travaux-metro
-CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Luxembourg\, Sa
- int-Michel Notre-Dame\, Gare du Nord\, Denfert-Rochereau\, Port Royal\n\nA
- rrêt(s) non desservi(s)\n\nPériode : de 23h à fin de service. Dates : L
- e samedi 02 mai. Le trafic est interrompu entre Paris Gare du Nord et Denf
- ert Rochereau. Des moyens alternatifs sont mis en place avec renfort de li
- gnes de bus et métro. Les horaires du calculateur d'itinéraire tiennent 
- compte des travaux. Motif: Travaux\n\nCause : TRAVAUX\n\nhttps://travauxme
- tro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER B : Paris Nord <-> Denfert Rochereau 02/05
-DTSTART;TZID=Europe/Paris:20260503T230000
-DTEND;TZID=Europe/Paris:20260504T020000
-DTSTAMP:20260422T225349Z
-UID:b22e1810-d640-42af-9fd8-ecbdf32dcd5a_20260503T230000@travaux-metro
-CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nStations : Châtelet - Les Halles\, Luxembourg\, Sa
- int-Michel Notre-Dame\, Gare du Nord\, Denfert-Rochereau\, Port Royal\n\nA
- rrêt(s) non desservi(s)\n\nPériode : de 23h à fin de service. Dates : L
- e samedi 02 mai. Le trafic est interrompu entre Paris Gare du Nord et Denf
- ert Rochereau. Des moyens alternatifs sont mis en place avec renfort de li
- gnes de bus et métro. Les horaires du calculateur d'itinéraire tiennent 
- compte des travaux. Motif: Travaux\n\nCause : TRAVAUX\n\nhttps://travauxme
- tro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER B : Paris Nord <-> Aéroport CDG2/Mitry - Claye du 08 au 10/05
-DTSTART;VALUE=DATE:20260508
-DTEND;VALUE=DATE:20260509
-DTSTAMP:20260422T225349Z
-UID:bd490c04-5c4b-436e-959f-c59992666792_20260508T030000@travaux-metro
-CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : les vendred
- i\, samedi\, dimanche\, toute la journée. Dates : du vendredi 08 au diman
- che 10 mai. Le trafic est interrompu entre Paris Gare du Nord et Aérop. C
-  De Gaulle 2 et entre Aulnay-sous-Bois et Mitry - Claye. Des moyens altern
- atifs sont mis en place. Les horaires du calculateur d'itinéraire tiennen
- t compte des travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER B : Paris Nord <-> Aéroport CDG2/Mitry - Claye du 08 au 10/05
-DTSTART;VALUE=DATE:20260509
-DTEND;VALUE=DATE:20260510
-DTSTAMP:20260422T225349Z
-UID:bd490c04-5c4b-436e-959f-c59992666792_20260509T030000@travaux-metro
-CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : les vendred
- i\, samedi\, dimanche\, toute la journée. Dates : du vendredi 08 au diman
- che 10 mai. Le trafic est interrompu entre Paris Gare du Nord et Aérop. C
-  De Gaulle 2 et entre Aulnay-sous-Bois et Mitry - Claye. Des moyens altern
- atifs sont mis en place. Les horaires du calculateur d'itinéraire tiennen
- t compte des travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:RER B : Paris Nord <-> Aéroport CDG2/Mitry - Claye du 08 au 10/05
-DTSTART;VALUE=DATE:20260510
-DTEND;VALUE=DATE:20260511
-DTSTAMP:20260422T225349Z
-UID:bd490c04-5c4b-436e-959f-c59992666792_20260510T030000@travaux-metro
-CATEGORIES:Ligne B,Travaux Métro
-DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : les vendred
- i\, samedi\, dimanche\, toute la journée. Dates : du vendredi 08 au diman
- che 10 mai. Le trafic est interrompu entre Paris Gare du Nord et Aérop. C
-  De Gaulle 2 et entre Aulnay-sous-Bois et Mitry - Claye. Des moyens altern
- atifs sont mis en place. Les horaires du calculateur d'itinéraire tiennen
- t compte des travaux.\n\nCause : TRAVAUX\n\nhttps://travauxmetro.fr/
+DESCRIPTION:Ligne B\n\nArrêt(s) non desservi(s)\n\nPériode : Les week en
+ ds Dates : du samedi 04 au lundi 06 avril et du samedi 18 au dimanche 19 a
+ vril. Le trafic est interrompu entre Denfert Rochereau et La Croix de Bern
+ y\, et entre Denfert Rochereau et Robinson Un service de bus de remplaceme
+ nt est mis en place au départ de Porte d'Orléans accessible depuis Denfe
+ rt via la ligne de métro 4 Les horaires du calculateur d'itinéraire tien
+ nent compte des travaux. Motif: Travaux de modernisation du réseau\n\nCau
+ se : TRAVAUX\n\nhttps://travauxmetro.fr/
 END:VEVENT
 END:VCALENDAR
