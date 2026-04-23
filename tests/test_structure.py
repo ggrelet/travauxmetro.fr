@@ -18,6 +18,10 @@ from conftest import FIXTURE_PRIM, PINNED_NOW, ROOT
 
 METRO_LINES = ["1", "2", "3", "3B", "4", "5", "6", "7", "7B",
                "8", "9", "10", "11", "12", "13", "14"]
+RER_LINES = ["A", "B", "C", "D", "E"]
+TRAM_LINES = ["T1", "T2", "T3a", "T3b", "T4", "T5", "T6", "T7",
+              "T8", "T9", "T10", "T11", "T12", "T13", "T14"]
+ALL_LINES = METRO_LINES + RER_LINES + TRAM_LINES
 
 
 @pytest.fixture(scope="module")
@@ -36,8 +40,7 @@ def generated(tmp_path_factory) -> Path:
 
 def test_index_html_has_all_lines(generated: Path) -> None:
     html = (generated / "public" / "index.html").read_text()
-    for line in METRO_LINES:
-        # Every line should appear as a badge (bg-colored circle)
+    for line in ALL_LINES:
         assert f"ligne-{line}.ics" in html, f"Line {line} missing from index.html"
 
 
@@ -55,7 +58,7 @@ def test_index_html_has_json_ld(generated: Path) -> None:
     assert '"dateModified"' in html
 
 
-@pytest.mark.parametrize("line", METRO_LINES)
+@pytest.mark.parametrize("line", ALL_LINES)
 def test_ics_parses(generated: Path, line: str) -> None:
     path = generated / "public" / f"ligne-{line}.ics"
     assert path.exists(), f"Missing {path.name}"
@@ -64,8 +67,9 @@ def test_ics_parses(generated: Path, line: str) -> None:
     assert cal.get("X-WR-CALNAME") or cal.get("PRODID")
 
 
-def test_tousmetros_ics_parses(generated: Path) -> None:
-    cal = Calendar.from_ical((generated / "public" / "tousmetros.ics").read_bytes())
+@pytest.mark.parametrize("filename", ["tousmetros.ics", "tousrer.ics", "toustram.ics"])
+def test_all_network_ics_parses(generated: Path, filename: str) -> None:
+    cal = Calendar.from_ical((generated / "public" / filename).read_bytes())
     assert cal.get("PRODID")
 
 
