@@ -39,6 +39,7 @@
   <script defer src="https://cloud.umami.is/script.js" data-website-id="ef00b128-53c5-49eb-a0e9-e4da83748a67"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; }
+    html { scrollbar-gutter: stable; }
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; color: #222; line-height: 1.5; background: #f7f7f7; }
     h1 { margin-bottom: .25rem; font-size: 2.8rem; }
     @media (max-width: 600px) { h1 { font-size: 1.9rem; } }
@@ -991,11 +992,15 @@
   document.querySelectorAll('.dis-dialog').forEach(dlg => {
     document.body.insertBefore(dlg, document.body.firstChild);
   });
+  function lockBackgroundScroll() {
+    document.documentElement.style.overflow = 'hidden';
+  }
+  function unlockBackgroundScroll() {
+    document.documentElement.style.overflow = '';
+  }
   document.querySelectorAll('.dis-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      const sw = window.innerWidth - document.documentElement.clientWidth;
-      if (sw) document.body.style.paddingRight = sw + 'px';
-      document.documentElement.style.overflow = 'hidden';
+      lockBackgroundScroll();
       const siv = Element.prototype.scrollIntoView;
       Element.prototype.scrollIntoView = () => {};
       document.getElementById(btn.dataset.dialog).showModal();
@@ -1004,14 +1009,8 @@
   });
   document.querySelectorAll('.dis-dialog').forEach(dlg => {
     dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
-    dlg.addEventListener('close', () => {
-      document.documentElement.style.overflow = '';
-      document.body.style.paddingRight = '';
-    });
+    dlg.addEventListener('close', unlockBackgroundScroll);
   });
-  document.addEventListener('touchmove', function(e) {
-    if (e.scale !== 1) e.preventDefault();
-  }, { passive: false });
   document.addEventListener('gesturestart', function(e) { e.preventDefault(); });
   document.addEventListener('gesturechange', function(e) { e.preventDefault(); });
   </script>

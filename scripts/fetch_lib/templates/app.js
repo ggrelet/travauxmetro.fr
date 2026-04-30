@@ -34,11 +34,15 @@
   document.querySelectorAll('.dis-dialog').forEach(dlg => {
     document.body.insertBefore(dlg, document.body.firstChild);
   });
+  function lockBackgroundScroll() {
+    document.documentElement.style.overflow = 'hidden';
+  }
+  function unlockBackgroundScroll() {
+    document.documentElement.style.overflow = '';
+  }
   document.querySelectorAll('.dis-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      const sw = window.innerWidth - document.documentElement.clientWidth;
-      if (sw) document.body.style.paddingRight = sw + 'px';
-      document.documentElement.style.overflow = 'hidden';
+      lockBackgroundScroll();
       const siv = Element.prototype.scrollIntoView;
       Element.prototype.scrollIntoView = () => {};
       document.getElementById(btn.dataset.dialog).showModal();
@@ -47,13 +51,7 @@
   });
   document.querySelectorAll('.dis-dialog').forEach(dlg => {
     dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
-    dlg.addEventListener('close', () => {
-      document.documentElement.style.overflow = '';
-      document.body.style.paddingRight = '';
-    });
+    dlg.addEventListener('close', unlockBackgroundScroll);
   });
-  document.addEventListener('touchmove', function(e) {
-    if (e.scale !== 1) e.preventDefault();
-  }, { passive: false });
   document.addEventListener('gesturestart', function(e) { e.preventDefault(); });
   document.addEventListener('gesturechange', function(e) { e.preventDefault(); });
