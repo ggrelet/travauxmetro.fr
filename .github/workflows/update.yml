@@ -9,6 +9,10 @@ on:
         description: 'Force PR even if no data change'
         type: boolean
         default: false
+      skip_count_check:
+        description: 'Skip the day-over-day disruption count guard'
+        type: boolean
+        default: false
 
 jobs:
   update:
@@ -34,7 +38,7 @@ jobs:
         run: uv run python scripts/fetch.py --force
 
       - name: Smoke-check generated output
-        run: uv run pytest tests/ -m live -v
+        run: uv run pytest tests/ -m live -v ${{ inputs.skip_count_check && '--deselect tests/test_live_smoke.py::test_disruption_count_not_collapsed' || '' }}
 
       - name: Check for changes
         id: diff
