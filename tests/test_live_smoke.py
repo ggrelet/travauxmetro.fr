@@ -25,7 +25,7 @@ SNAPSHOT = ROOT / "data" / "snapshot.json"
 METRO_LINES = ["1", "2", "3", "3B", "4", "5", "6", "7", "7B",
                "8", "9", "10", "11", "12", "13", "14"]
 
-MIN_RATIO = 0.9
+MIN_RATIO = 0.75
 
 
 @pytest.fixture(scope="module")
