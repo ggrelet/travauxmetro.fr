@@ -2,8 +2,9 @@
 
 import re
 import sys
+from datetime import datetime, timedelta
 
-from icalendar import Calendar, Event
+from icalendar import Calendar, Event, Timezone, TimezoneDaylight, TimezoneStandard
 
 from .constants import BASE_URL, ROOT, _utc_now
 from .prim import normalize_period, parse_dt, strip_html
@@ -53,6 +54,42 @@ def _nearest_google_color(hex_color: str) -> str:
     )
 
 
+def _paris_vtimezone() -> Timezone:
+    """A minimal, RFC-5545 VTIMEZONE for Europe/Paris.
+
+    Hand-built with RRULE-based EU DST rules rather than generated from the OS
+    tz database, so the output is byte-stable across machines (tzdata versions
+    differ between dev and CI). Two purposes:
+
+    1. Events emit DTSTART;TZID=Europe/Paris, and the RFC requires any referenced
+       TZID to be defined in the calendar — without this, the calendars are
+       technically non-compliant.
+    2. It guarantees every calendar has >=1 component, so feeds for lines with no
+       current works are still valid (an empty VCALENDAR is not) and don't get
+       rejected by strict parsers like Apple Calendar.
+    """
+    tz = Timezone()
+    tz.add("tzid", "Europe/Paris")
+
+    std = TimezoneStandard()
+    std.add("dtstart", datetime(1996, 10, 27, 3, 0, 0))
+    std.add("tzoffsetfrom", timedelta(hours=2))
+    std.add("tzoffsetto", timedelta(hours=1))
+    std.add("tzname", "CET")
+    std.add("rrule", {"freq": "yearly", "bymonth": 10, "byday": "-1SU"})
+
+    dst = TimezoneDaylight()
+    dst.add("dtstart", datetime(1981, 3, 29, 2, 0, 0))
+    dst.add("tzoffsetfrom", timedelta(hours=1))
+    dst.add("tzoffsetto", timedelta(hours=2))
+    dst.add("tzname", "CEST")
+    dst.add("rrule", {"freq": "yearly", "bymonth": 3, "byday": "-1SU"})
+
+    tz.add_component(std)
+    tz.add_component(dst)
+    return tz
+
+
 def make_calendar(name: str, bg_color: str, description: str = "") -> Calendar:
     cal = Calendar()
     cal.add("prodid", "-//ggrelet//travaux-metro//FR")
@@ -65,6 +102,7 @@ def make_calendar(name: str, bg_color: str, description: str = "") -> Calendar:
     cal.add("x-apple-calendar-color", bg_color)
     cal.add("x-published-ttl", "PT12H")
     cal.add("refresh-interval;value=duration", "PT12H")
+    cal.add_component(_paris_vtimezone())
     return cal
 
 
