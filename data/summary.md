@@ -1,30 +1,40 @@
-## Travaux métro — 26-06-2026
+## Travaux métro — 27-06-2026
 
-### ![RER A](https://img.shields.io/badge/-RER%20A-E3051C?style=flat) &nbsp;｜&nbsp; ![-1](https://img.shields.io/badge/-%E2%88%921-d73a49?style=flat)
-
-**Supprimé**
-
-- 20-06-2026 → 21-06-2026
-
-### ![RER D](https://img.shields.io/badge/-RER%20D-00814F?style=flat) &nbsp;｜&nbsp; ![+2](https://img.shields.io/badge/-%2B2-28a745?style=flat)
+### ![RER B](https://img.shields.io/badge/-RER%20B-5291CE?style=flat) &nbsp;｜&nbsp; ![+1](https://img.shields.io/badge/-%2B1-28a745?style=flat) ![-1](https://img.shields.io/badge/-%E2%88%921-d73a49?style=flat)
 
 **Ajouté**
 
-- **RER D : Villeneuve St-G <> Melun interrompu du 25/07 au 26/07** — 25-07-2026 → 26-07-2026
-  <details><summary>Détails</summary><br>🚉 Le Vert de Maisons, Villeneuve-Saint-Georges, Villeneuve Triage, Gare de Lyon, Créteil Pompadour, Maisons-Alfort - Alfortville<br>Trafic perturbé<br>Période : de 23h10 à 05h20. Dates : du samedi 25 au dimanche 26 juillet. Le trafic est interrompu entre Villeneuve Saint Georges et Melun. Un service de bus de remplacement est mis en place, avec desserte des gares intermédiaires. Le trafic est également allégé entre Paris Gare de Lyon et Villeneuve Saint Georges, prévoir un train sur deux.  Les horaires du calculateur d'itinéraire tiennent compte des travaux. Motif : travaux sur le réseau ferroviaire.</details>
-- **RER D : Villeneuve St-G <> Melun interrompu du 25/07 au 26/07** — 25-07-2026 → 26-07-2026
-  <details><summary>Détails</summary><br>🚉 Melun, Villeneuve-Saint-Georges, Yerres, Savigny-le-Temple - Nandy, Le Mée, Lieusaint - Moissy, Brunoy, Boussy-Saint-Antoine, Cesson, Combs-la-Ville - Quincy, Montgeron - Crosne<br>Arrêt(s) non desservi(s)<br>Période : de 23h10 à 05h20. Dates : du samedi 25 au dimanche 26 juillet. Le trafic est interrompu entre Villeneuve Saint Georges et Melun. Un service de bus de remplacement est mis en place, avec desserte des gares intermédiaires. Le trafic est également allégé entre Paris Gare de Lyon et Villeneuve Saint Georges, prévoir un train sur deux.  Les horaires du calculateur d'itinéraire tiennent compte des travaux. Motif : travaux sur le réseau ferroviaire.</details>
+- **RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 01/06-31/12** — 23-06-2026 → 31-12-2026
+  <details><summary>Détails</summary><br>🚉 Aulnay-sous-Bois, Aéroport CDG 1 (Terminal 3) - RER, Aéroport Charles de Gaulle 2 (Terminal 2), Sevran - Beaudottes, Villepinte, Châtelet - Les Halles, Le Bourget, Sevran - Livry, Gare du Nord, Drancy, Mitry - Claye, La Plaine Stade de France, Parc des Expositions, La Courneuve - Aubervilliers, Vert-Galant, Villeparisis - Mitry-le-Neuf, Le Blanc-Mesnil<br>Arrêt(s) non desservi(s)<br>Période : en semaine à partir de 22h45. Dates : du lundi 1er juin au jeudi 31 décembre Le trafic est interrompu entre Châtelet Les Halles et Aérop. C De Gaulle 2 et entre Châtelet Les Halles et Mitry - Claye. Un dispositif de bus de remplacement sera mis en place au départ du Gare du Nord. Pour plus d'informations, consultez le site du RER B Motif : travaux sur le réseau ferroviaire.</details>
+
+**Supprimé**
+
+- 22-06-2026 → 31-12-2026
+
+### ![RER D](https://img.shields.io/badge/-RER%20D-00814F?style=flat) &nbsp;｜&nbsp; ![+1](https://img.shields.io/badge/-%2B1-28a745?style=flat) ![-4](https://img.shields.io/badge/-%E2%88%924-d73a49?style=flat)
+
+**Ajouté**
+
+- **RER D : Entre Paris Nord et Paris Lyon interrompu 25/07 au 16/08.** — 25-07-2026 → 17-08-2026
+  <details><summary>Détails</summary><br>Arrêt(s) non desservi(s)<br>Période : toute la journée en semaine et le week-end. Dates : du samedi 25 juillet au dimanche 16 août. Le trafic est interrompu entre Paris Gare du Nord et Paris Gare de Lyon. La gare de Stade de France ne sera pas desservie dans les deux sens. Le trafic est allégé entre Paris Gare du Nord et Creil. Les trains en direction de Melun et Corbeil-Essonnes circulent au départ de Paris Gare de Lyon Grandes Lignes. Les trains en direction de Villiers le Bel, Gousainville, Orry la Ville  et Creil  circulent au départ de Paris Gare du Nord Grandes Lignes. Les horaires du calculateur d'itinéraire tiennent compte des travaux. Motif : travaux sur le réseau ferroviaire.</details>
+
+**Supprimé**
+
+- 22-06-2026 → 26-06-2026
+- 22-06-2026 → 27-06-2026
+- 22-06-2026 → 27-06-2026
+- 22-06-2026 → 27-06-2026
 
 ### ![RER E](https://img.shields.io/badge/-RER%20E-C04191?style=flat) &nbsp;｜&nbsp; ![+1](https://img.shields.io/badge/-%2B1-28a745?style=flat) ![-1](https://img.shields.io/badge/-%E2%88%921-d73a49?style=flat)
 
 **Ajouté**
 
-- **RER E : Nanterre – Villiers/Tournan 23/05-7/06 et les 20 et 27/06** — 27-06-2026 → 28-06-2026
-  <details><summary>Détails</summary><br>🚉 Val de Fontenay, Les Yvris Noisy-le-Grand, Les Boullereaux Champigny, Pantin, Émerainville - Pontault-Combault, Neuilly - Porte Maillot, Ozoir-la-Ferrière, Magenta, Nanterre-La-Folie, Nogent - Le Perreux, La Défense, Noisy-le-Sec, Haussmann Saint-Lazare, Villiers-sur-Marne - Le Plessis-Trévise, Gretz-Armainvilliers, Rosny-sous-Bois, Rosa Parks, Tournan, Rosny Bois Perrier, Roissy-en-Brie<br>Trafic perturbé<br>Période : le week-end à partir de 22h30 Dates : du samedi 23 mai au dimanche 7 juin et les samdis 20 et 27 juin Le trafic est interrompu entre Nanterre-la-Folie et Villiers-sur-Marne et entre Nanterre-la-Folie et Tournan. Les samedis, le dernier train VONY, au départ de Nanterre-la-Folie est prévu à 22h41. Le dernier train NOVY, au départ de Villiers-sur-Marne est prévu à 22h03. Les dimanches, le dernier train TONU, au départ de Nanterre-la-Folie est prévu à 22h26. Le dernier train NOVY, au départ de Villiers-sur-Marne est prévu à 22h03. Un service de bus de remplacement est mis en place avec desserte des gares intermédiaires.  Les horaires du calculateur d'itinéraire tiennent compte des travaux. Motif : travaux sur le réseau ferroviaire (maintenance de la voie entre Paris et Nogent, maintenance des installations électriques entre Nogent et Gretz).</details>
+- **RER E : Nanterre - Chelles 15/06 - 4/09** — 23-06-2026 → 05-09-2026
+  <details><summary>Détails</summary><br>🚉 Rosa Parks, Le Raincy - Villemomble - Montfermeil, Gagny, Le Chénay Gagny, Chelles - Gournay, Bondy, Pantin, Nanterre-La-Folie, Noisy-le-Sec, Neuilly - Porte Maillot, Magenta, Haussmann Saint-Lazare, La Défense<br>Trafic perturbé<br>Période : en semaine à partir de 22h45 Dates : du lundi 15 juin au vendredi 4 septembre Le trafic est interrompu entre Nanterre-la-Folie et Chelles Gournay.   Le dernier train NOCY de Chelles Gournay vers Nanterre-la-Folie est à 22h33. Le dernier train CONY de Nanterre-la-Folie vers Chelles Gournay est à 22h49, sauf du 15 au 16 juin, le dernier train CONY de Nanterre-la-Folie à Chelles Gournay est à 22h38. Un service de bus de remplacement est mis en place avec desserte des gares intermédiaires : - De Chelles Gournay à Paris Gare de l'Est, - De Paris, rejoignez par la ligne 5 du métro Bobigny Pablo Picasso d'où partent les bus à destination de Chelles Gournay. Les horaires du calculateur d'itinéraire tiennent compte des travaux. Motif : travaux sur le réseau ferroviaire</details>
 
 **Supprimé**
 
-- 20-06-2026 → 28-06-2026
+- 22-06-2026 → 05-09-2026
 
 ---
 **Source :** [Île-de-France Mobilités — PRIM](https://prim.iledefrance-mobilites.fr/en/apis/idfm-disruptions_bulk)
