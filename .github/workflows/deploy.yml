@@ -26,12 +26,12 @@ jobs:
   test:
     uses: ./.github/workflows/ci.yml
 
-  deploy:
+  # Upload and deploy run in separate jobs: deploy-pages looks the artifact up
+  # once, without retrying, and fails if it runs right after the upload.
+  # https://github.com/actions/deploy-pages/issues/451
+  build:
     needs: test
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - uses: actions/checkout@v6
@@ -51,5 +51,22 @@ jobs:
         with:
           path: public/
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url || steps.retry.outputs.page_url }}
+
+    steps:
       - id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+
+      - name: Wait before retrying
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 60
+
+      - id: retry
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v5
